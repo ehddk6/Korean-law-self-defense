@@ -1,0 +1,47 @@
+{
+  "answer_contract": {
+    "deadline_date": "계산 가능한 경우 YYYY-MM-DD, 아니면 null",
+    "decision_status": "ready|conditional|abstain",
+    "rule_answer": "아래 선택지 중 하나",
+    "rule_answer_options": [
+      "address-or-workplace-service",
+      "article-14-fact-dependent",
+      "defendant-general-forum",
+      "effective-upon-dispatch",
+      "individual-address-forum",
+      "ip-special-forum-subject-to-statute",
+      "knowledge-date-required",
+      "one-year-lodging-claim",
+      "personal-delivery-required",
+      "place-of-performance-special-forum",
+      "postal-service-after-article-186-failure",
+      "public-service-requires-statutory-ground",
+      "real-estate-location-special-forum",
+      "starts-when-right-exercisable",
+      "substitute-service-needs-capable-recipient",
+      "ten-year-ordinary-claim",
+      "three-year-interest-claim",
+      "three-year-tort-knowledge-period",
+      "tort-place-special-forum",
+      "verify-specific-addendum"
+    ]
+  },
+  "domain": "privacy-it-intellectual-property",
+  "facts": {
+    "dispatch_date": "2025-08-03",
+    "sent_under_article_187": true
+  },
+  "format": "legal-workbench-temporal-input-v1",
+  "kind": "service",
+  "official_rule": {
+    "article": "제189조",
+    "article_text": "제189조(발신주의) 제185조제2항 또는 제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다.\n189\nN\n[ACCOUNT_001]\n조문\n일부개정\n발신주의\n[ACCOUNT_002]",
+    "law_name": "민사소송법",
+    "local_redaction_categories": [
+      "ACCOUNT"
+    ]
+  },
+  "question": "제187조 우편송달은 언제 송달된 것으로 보는가?",
+  "scenario_id": "case-143",
+  "task": "제시된 공식 조문과 사실만으로 판단하고 필요한 사실·특별규정이 빠졌으면 보류하라."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "korean-legal-workbench-mcp-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pinned local runtime for the Korean Law MCP server",
+  "dependencies": {
+    "korean-law-mcp": "4.7.4"
+  },
+  "overrides": {
+    "adm-zip": "0.6.0",
+    "@hono/node-server": "2.0.11",
+    "fast-uri": "4.1.1",
+    "sharp": "0.35.3"
+  }
+}

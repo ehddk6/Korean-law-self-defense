@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "상법이 주주명부제도를 둔 이유 / 주주명부상 주주만이 의결권 등 주주권을 행사할 수 있는지 여부(원칙적 적극) 및 이 경우 회사가 주주명부상 주주의 주주권 행사를 부인하거나 주주명부에 기재를 마치지 아니한 자의 주주권 행사를 인정할 수 있는지 여부(원칙적 소극)"
+  ],
+  "expected_issues": [
+    "상법이 주주명부제도를 둔 이유 / 주주명부상 주주만이 의결권 등 주주권을 행사할 수 있는지 여부(원칙적 적극) 및 이 경우 회사가 주주명부상 주주의 주주권 행사를 부인하거나 주주명부에 기재를 마치지 아니한 자의 주주권 행사를 인정할 수 있는지 여부(원칙적 소극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2015다50439",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-034",
+  "source_sha256": "8aaed76e71c47b4682b02e5bfe021c6ec02b4cc6ef635f88378cf81cedbd2401"
+}

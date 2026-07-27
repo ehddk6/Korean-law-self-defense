@@ -1,0 +1,13 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "지식재산권 특별재판적과 전속관할 확인"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "source_sha256": "8abc47fb9f25bd6dcf19a9e8af4d8d3bcee5adc54d7cda5718da92e5557f8b55"
+}

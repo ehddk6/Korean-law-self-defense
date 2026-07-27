@@ -1,0 +1,357 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-026": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2cfa4356511e595ec737d0307b745b2b3c7f1a8a36eda9a3d8fb35db43e9d4e6",
+      "fixture_sha256": "622ee63a0624690bc8b69d8bf81a51b03b70d79fd844b99ec2450a1ba839c507",
+      "notes": "해시 연결이 유효하고 상고기각 주문과 affirmed가 일치한다. fixture 비식별·결론가림 및 원문 근거도 확인된다.",
+      "source_sha256": "2b3a5e05988d9214382e320086da0934cb24fa787c8a3a7ac5823d1269765f6f"
+    },
+    "case-027": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "42550d5a4509dcf5b05f56a0aac58f0677b4250c24b159bc2769c173daa29b28",
+      "fixture_sha256": "6c2d76d1439b8ca8af6c64a909b9b7d67605ece2abc5c94e6a5c18537967404b",
+      "notes": "해시 연결이 유효하고 일부 파기환송·일부 상고기각 주문과 mixed가 일치한다. fixture와 근거도 적정하다.",
+      "source_sha256": "1868622d0988bf1d499b2cd1476454fee394adc710835bef2c511b11c99ba9fb"
+    },
+    "case-028": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "88de413d28c60a463c18f05782df8bf087ad5f9cdcb82e4ce0f70bd36ba8f784",
+      "fixture_sha256": "a4de3685bff6acaf19c953fdbfa7ec40c796b3f87b8440940bdb5d624b121728",
+      "notes": "해시 연결이 유효하고 상고 전부 기각 주문과 affirmed가 일치한다. 결론가림·비식별·근거 지지도 충족한다.",
+      "source_sha256": "b2e4e1e03a2ee4d4f0d5889daec08df4c8cc05245ad005c4be9755ead4bb31a4"
+    },
+    "case-029": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e4b4769d93b053d09449f9ddf6f0763274c0351dfb0cbe2b0ef89c9bd50cf1b1",
+      "fixture_sha256": "97742511da3d974d021dc9c0ff0e8b032d1e79aada34751618e57aceb768af79",
+      "notes": "해시 연결이 유효하고 원심 파기환송 주문과 reversed-remanded가 일치한다. fixture와 gold 근거도 적정하다.",
+      "source_sha256": "88b018fa05b9022816288dc0b1586e5636f4a3b8e369cbdd3cf9b6f7485cab9d"
+    },
+    "case-030": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "24c213d4bc7d20a8e9059989cd593623a5c6cf22c5ff18a1493eb46ab320dfc8",
+      "fixture_sha256": "13e309965cb10e40edc0f24e759d037a6a6f7dda9700e1a17f1813e8cc0364f2",
+      "notes": "해시 연결이 유효하고 상고기각 주문과 affirmed가 일치한다. 마스킹된 근거도 원문 내용으로 지지된다.",
+      "source_sha256": "d63e0c1499e9ad39032c45a05ae36ea1415631c4f5fe6b20c245066dee07324e"
+    },
+    "case-031": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "30c35f652ce171161cd4de91a7541c8ee38fcbc2d8686bea6e5a45e78ac31c6f",
+      "fixture_sha256": "227787dacbaac99a354a048de4b8bcb6062a726c65f8ffaf6372af79c8f88ce1",
+      "notes": "해시 연결이 유효하고 일부 소송종료·나머지 상고기각 주문과 mixed가 일치한다. fixture와 근거도 적정하다.",
+      "source_sha256": "17f9b65e30e95b13519313366ec2114d066f90b651ffcbc94136cca2ba17a4a6"
+    },
+    "case-032": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "071d5d4e38b66cda3eaca40bb8f327d93e0f7aa7e42ae68a29791806da4b41ba",
+      "fixture_sha256": "39e7e5b43ec5a7e0906a4ba41de1de5f4c9540f55aed2d395fa9b2de8370ee78",
+      "notes": "해시 연결이 유효하고 제1심 취소 및 결의무효 확인 주문과 granted가 일치한다. 나머지 검사도 통과한다.",
+      "source_sha256": "ca4561268fc3066eb6ad780282c83d30470925d5c65e812f801ff8c89123a42a"
+    },
+    "case-033": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "171cc573d5e5650467e60b151bdd72d4b0040136bd0c1d232ec54539c01745e2",
+      "fixture_sha256": "22222bb9f53ad65c592e7c3c06499ebb5f76700be7ad7aa2889a320ccc7e5ee9",
+      "notes": "해시 연결이 유효하고 제1심 취소 및 명의개서 이행 주문과 granted가 일치한다. fixture와 근거도 적정하다.",
+      "source_sha256": "6f8cde823a1f983fcb915f53262f169a0cd507bd6500fd4e8eb437dc7295a3f5"
+    },
+    "case-034": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "58d8bd3ef523ab2e33a65965b16dd9c5c04add4f0f4767ced458f3d094761625",
+      "fixture_sha256": "18c0af5342e4c697e3786eb92e0f0953f2556646e35d6d45ba1b3b23c2f26ecd",
+      "notes": "해시 연결이 유효하고 원심 파기환송 주문과 reversed-remanded가 일치한다. 결론가림과 원문 지지도 충족한다.",
+      "source_sha256": "8aaed76e71c47b4682b02e5bfe021c6ec02b4cc6ef635f88378cf81cedbd2401"
+    },
+    "case-035": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7549dd5cc842136e712ba8fd63bcfd8e704bc1f17cc5406c437e6a8a838f9ee0",
+      "fixture_sha256": "286bc9035cee7ce125de0ade627498c647357087e66b8e281e156c894a009f9e",
+      "notes": "해시 연결이 유효하고 상고기각 주문과 affirmed가 일치한다. fixture 비식별·결론가림 및 근거 지지도 확인된다.",
+      "source_sha256": "f6f1ce68437ba4a27f90a6469f7ad58a5f8250182d5bb8a8e66d98119b9b5c60"
+    },
+    "case-036": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "69ad8d5a84e9407a589680f7144aa55f3a719a0a0a0b2e6d17de24897f801f63",
+      "fixture_sha256": "e66638ebaf47f431624f705df227eb2040405024314ff97eca689371ec44f398",
+      "notes": "해시 연결이 유효하고 상고 전부 기각 주문과 affirmed가 일치한다. fixture와 issues/adverse 근거도 적정하다.",
+      "source_sha256": "70b06f7aa2d45e99ce71bf052bc8c4a0c1f01a613d1a9850eeaa694c90cdb9eb"
+    },
+    "case-037": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bbc8277e5fb9a4ed0da9981faae6944b5b1b30f461c45afee4c43c69fc69b164",
+      "fixture_sha256": "dda5fe7bae1ecf8fbef0a67b6469d8f63e6c4aabd85da72cfd3fc461ca17f41d",
+      "notes": "해시 연결이 유효하고 소 각하 부분 외 나머지 파기환송 주문과 reversed-remanded가 일치한다. 나머지도 통과한다.",
+      "source_sha256": "d097ab7a841da177ce61194d0f1dba834320c3edf73154a6f806758d09654201"
+    },
+    "case-038": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "876253e83d9a69dfbd46626fb1e7222a66c3c50b8dde8863291c16dfd239fc06",
+      "fixture_sha256": "646fa62472fe71c2379a205e33ddb3afb01ed5053059e0b7918db2b640af302b",
+      "notes": "해시 연결이 유효하고 원고 청구 전부 기각 주문과 dismissed 표지가 부합한다. fixture와 원문 근거도 적정하다.",
+      "source_sha256": "b2743ee3b0131469769dfb10dc6bcf9ba6ad361c7536c4b97aa3f818c2c5a3a1"
+    },
+    "case-039": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2a33ff0858b5816cc20c48a068efdb2eb09759fbc069e88b06bbd4efc389b593",
+      "fixture_sha256": "0981a09805ccab22fb49d562fc808498415187f1e54ec9b0c7a86e45fab9961a",
+      "notes": "해시 연결이 유효하고 원심·제1심 취소 후 주위적·예비적 소 각하 주문과 mixed가 부합한다. 나머지도 통과한다.",
+      "source_sha256": "da3ac119e711b267974e5672e019db254be3785ed17014eb989226f6e3d4c717"
+    },
+    "case-040": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "98bc46921fcdb410efb2fabe6e2489c35d5c6c84038f592bdf95b24990bf892a",
+      "fixture_sha256": "53e4e0050f4f12c5239308d23a168e095d1cb1c7701f9a85cf259cfdaec31d67",
+      "notes": "해시 연결이 유효하고 상고기각 주문과 affirmed가 일치한다. 충분한 분석 맥락, 비식별성, 원문 지지를 확인했다.",
+      "source_sha256": "db08ea95e389577b3e5109f1a3a3503ef15b26b7e8db30b34f05e90b3a262a0b"
+    },
+    "case-041": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "78c47ff1bdef43e1185f5e739db28cfe41dc947cfddf51a5ba94a0d066f64d8b",
+      "fixture_sha256": "4f9bed19cec89c1cb5ed3d973e80dd77e4781dd4716ff0458e27e5167ea70bd0",
+      "notes": "해시 연결이 유효하고 상고기각 주문과 affirmed가 일치한다. fixture 결론가림·비식별 및 원문 근거도 적정하다.",
+      "source_sha256": "df9d5c1f8df91246fe17996dc99c0d6eaf76515c51532e717c40a68925a3b609"
+    },
+    "case-042": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "79ef2b48349a6ac8606a1e409844d93d9c739df1c0916638ebdfc4ec78309a13",
+      "fixture_sha256": "63d2149e8423b2129c6c36d7533969deb3a7046cff60f5e114dcdb9ac580f004",
+      "notes": "해시 연결이 유효하고 쌍방 상고기각 주문과 affirmed가 일치한다. fixture 및 issues/adverse 근거도 적정하다.",
+      "source_sha256": "522d723a4a3f7b50418fede0765126edd58fc643123610c6338fd485fed3c0f3"
+    },
+    "case-043": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "988fb31627192f3fba9748bd7d41fda8730ba9ffb777db1249a23510a47de60c",
+      "fixture_sha256": "9f429ea9bbf1080b683dcee469d8e849721d7c579eb2c3c7924364d12c701ed7",
+      "notes": "해시 연결이 유효하고 원심 파기환송 주문과 reversed-remanded가 일치한다. 나머지 검사도 모두 통과한다.",
+      "source_sha256": "7e21f2dff45a88c44200e898d6f1fd3dfbe9d2594f5e507a749a82e6dce4cf56"
+    },
+    "case-044": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b622b85073389a47e4b855bfb2fda740a92d83792303a061ade9f3a8654e8786",
+      "fixture_sha256": "e6dd0c6909fbb52ccdbbb027d87437b25fd03aaa37f51dabf05882adb72e7994",
+      "notes": "해시 연결이 유효하고 피고인들·검사의 상고 전부 기각 주문과 affirmed가 일치한다. 나머지도 통과한다.",
+      "source_sha256": "99a7934de1faef75766488b522692cb9a9a361b4fa81ae73d6d0eba3ea372dba"
+    },
+    "case-045": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "223c2d996be57ef0461f95caf106658dfabd3b6fac2d41dd098f3b2e5b08f3ac",
+      "fixture_sha256": "800ba4fc4d339bd7af5aad749d627c8ba21157d46efd03fdd06e4b67d34d6fd5",
+      "notes": "해시 연결이 유효하고 위법수집증거 사안의 원심 파기환송 주문과 reversed-remanded가 일치한다. 나머지도 통과한다.",
+      "source_sha256": "014612cf52ee31d8cc81335be90b8692eb7e227127a808ffc745e757dce723ee"
+    },
+    "case-046": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "dab108aa2871842ca9baab7fe23fd7801e5e1f3ee11696084fbcb558bf856190",
+      "fixture_sha256": "1c0f6b61277a41b01e8b8bb8bb63af85039723b97062d48372fa40453ff0896b",
+      "notes": "해시 연결이 유효하고 검사 상고기각 주문과 affirmed가 일치한다. fixture는 300자 이상 맥락과 결론가림·비식별성을 충족한다.",
+      "source_sha256": "10ddd7492891289bf348966e4b1f8c2988b6c581f1e577962ad19d7dc367302b"
+    },
+    "case-047": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f863d50f15b2cdefbad157a301d45ed777662e2d6f5283af5232bc6d7ae6f2b6",
+      "fixture_sha256": "99cd07664a9917e4584d0cdbfb16271a542382aa786bc5a330f7cfe188838ada",
+      "notes": "해시 연결이 유효하고 원심 파기환송 주문과 reversed-remanded가 일치한다. fixture와 원문 근거도 적정하다.",
+      "source_sha256": "fb899a3948fd67a4099096a08e87f1edcdb1299c628276013bad3402dfb86578"
+    },
+    "case-048": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "5589ba2d05680410c86dd16f8aeac873441431b040bdd3cca8c6ef8fd58905e3",
+      "fixture_sha256": "dcd4d2e1ee7697c5113cacb6bdb0dd7a04626bc110d7f452adc1b1613e82c9cf",
+      "notes": "해시 연결이 유효하고 과세관청 상고기각 주문과 affirmed가 일치한다. 결론가림·비식별 및 원문 지지도 충족한다.",
+      "source_sha256": "bea07482b0168ad3656ac8f6b9dd959cbbf6e264c464b2877548584abd250a7f"
+    },
+    "case-049": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "69ea21ed29af93a6148d9b13d975c31bf7619f6e71f1abc15e5722d45a113a80",
+      "fixture_sha256": "707403931367dc62b34cdd75ba295ae2033e0fe9934ad667042d1aa8c30d3300",
+      "notes": "해시 연결이 유효하고 원심 파기환송 주문과 reversed-remanded가 일치한다. fixture 및 issues/adverse 근거도 적정하다.",
+      "source_sha256": "f5748df5d0e98ae0995b0a2cef7294ee17b447e5b8ef7b07b7dd5268cc5698b9"
+    },
+    "case-050": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d3f2785079b23cceda9858a09bbbc277be2f09bdaf09777a47720cf6fa1e1127",
+      "fixture_sha256": "a284b366424d216bf87b8ba8018bc3e43d86658c890fbb38729fa5d524583487",
+      "notes": "해시 연결이 유효하고 무죄 주문과 granted가 일치한다. fixture에 직접 결론·식별정보가 없고 원문 근거도 충분하다.",
+      "source_sha256": "31aa3e2690e7bcd760df9a44595cb13233b7083cef59d08203314a08606bc512"
+    }
+  }
+}

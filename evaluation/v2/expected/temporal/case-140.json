@@ -1,0 +1,13 @@
+{
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "불법행위지 특별재판적"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "tort-place-special-forum",
+  "scenario_id": "case-140",
+  "source_sha256": "7977eac4c2496ea1925e9ad5572a4c981fdcc9b4f55555a10876e416939a69ed"
+}

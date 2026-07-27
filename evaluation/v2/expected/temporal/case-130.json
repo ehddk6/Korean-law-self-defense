@@ -1,0 +1,13 @@
+{
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "사람의 주소에 따른 보통재판적"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "individual-address-forum",
+  "scenario_id": "case-130",
+  "source_sha256": "eab2ea2ee181d5ed87f2a29dc44ab5674c5bcf7f41c1bca61cc650b00e0ba5fe"
+}

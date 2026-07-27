@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-031": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b1b11b368a2bbe2f3f172347808f2cf3f377f711de3d23e7167bd3c084584c66",
+      "fixture_sha256": "227787dacbaac99a354a048de4b8bcb6062a726c65f8ffaf6372af79c8f88ce1",
+      "notes": "해시 연결과 mixed 주문 및 쟁점·불리사항은 원문과 일치한다. 다만 fixture에 선정자 3의 소가 사망으로 종료되었다는 목표 주문의 직접 결론이 남아 있다.",
+      "source_sha256": "17f9b65e30e95b13519313366ec2114d066f90b651ffcbc94136cca2ba17a4a6"
+    },
+    "case-032": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "64a4d568c7379c5f28ba55239e43cf0d94b321b236d10a9720ef04902e48e678",
+      "fixture_sha256": "39e7e5b43ec5a7e0906a4ba41de1de5f4c9540f55aed2d395fa9b2de8370ee78",
+      "notes": "해시 연결이 유효하고, 결의 무효 확인을 인용한 주문과 granted가 일치한다. fixture는 사건 식별자와 주문 없이 사실·당사자 주장만 제공하며 비식별 토큰 외 개인정보가 없다.",
+      "source_sha256": "ca4561268fc3066eb6ad780282c83d30470925d5c65e812f801ff8c89123a42a"
+    },
+    "case-033": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "203c7680292d237f69d2298c01d26b731f6095231fe2f77707ab5884a0e00555",
+      "fixture_sha256": "22222bb9f53ad65c592e7c3c06499ebb5f76700be7ad7aa2889a320ccc7e5ee9",
+      "notes": "해시 연결이 유효하고, 명의개서절차 이행 인용 주문과 granted가 일치한다. fixture에는 사실과 원고 주장만 있고 목표 주문·직접 결론 및 개인정보 패턴이 없다.",
+      "source_sha256": "6f8cde823a1f983fcb915f53262f169a0cd507bd6500fd4e8eb437dc7295a3f5"
+    },
+    "case-034": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "4a4d212965ff21a37a5718921e052a95c19ea55162eb809b84f30719d9a99d81",
+      "fixture_sha256": "18c0af5342e4c697e3786eb92e0f0953f2556646e35d6d45ba1b3b23c2f26ecd",
+      "notes": "해시 연결이 유효하고, 원심 파기·환송 주문과 reversed-remanded가 일치한다. fixture는 사건번호·source ID·주문과 파기 결론을 제거하면서 충분한 사실·법리를 남겼다.",
+      "source_sha256": "8aaed76e71c47b4682b02e5bfe021c6ec02b4cc6ef635f88378cf81cedbd2401"
+    },
+    "case-035": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "93053f9b20a40538327219d5910354d7f0006a5f3e5e512a605f45f018c48c94",
+      "fixture_sha256": "286bc9035cee7ce125de0ade627498c647357087e66b8e281e156c894a009f9e",
+      "notes": "해시 연결이 유효하고, 상고기각 주문과 affirmed가 일치한다. fixture는 주문과 대법원의 최종 결론 없이 법리·사실·원심 판단을 제공하며 개인정보 패턴이 없다.",
+      "source_sha256": "f6f1ce68437ba4a27f90a6469f7ad58a5f8250182d5bb8a8e66d98119b9b5c60"
+    }
+  }
+}

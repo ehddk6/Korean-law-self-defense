@@ -1,0 +1,13 @@
+{
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "부동산 소재지 특별재판적"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "source_sha256": "9735cfcc2ec1609591a23b480f89f6e216147d9ca12d1f4d3f20f9746294973b"
+}

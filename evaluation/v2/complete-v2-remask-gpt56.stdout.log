@@ -1,0 +1,295 @@
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-001-005.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-006-010.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-011-015.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-016-020.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-021-025.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-026-030.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-031-035.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-036-040.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-041-045.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-046-050.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-051-055.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-056-060.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-061-065.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-066-070.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-071-075.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-076-080.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-081-085.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-086-090.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-091-095.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-096-100.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-101-105.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-106-110.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-111-115.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-116-120.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "applied": 120
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "e61cedfdf78f52ddda30f9b9c9ac39834bdc925f5fcb25210f946f29aeadf4f7"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-001-025.json",
+    "output_sha256": "22bf8261a7d03cf47aa2a7bf71e8a50d0fe54983d23af2cc7952a08fdd55d7fa",
+    "reviewed": 25,
+    "approved": 9,
+    "rejected": [
+      "case-001",
+      "case-004",
+      "case-005",
+      "case-006",
+      "case-009",
+      "case-011",
+      "case-012",
+      "case-013",
+      "case-014",
+      "case-015",
+      "case-016",
+      "case-017",
+      "case-018",
+      "case-019",
+      "case-020",
+      "case-021"
+    ],
+    "reviewer_id": "reviewer-a-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-051-075.json",
+    "output_sha256": "79ee7f932ed23865b7df3711eb5a0541e920f02310a539e6b327201b84da50e5",
+    "reviewed": 25,
+    "approved": 24,
+    "rejected": [
+      "case-052"
+    ],
+    "reviewer_id": "reviewer-a-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-076-100.json",
+    "output_sha256": "6c2e203fe1666c93f0e8c65cd8152e7f4cdc6be61ae7739477fd13d1df45dfc0",
+    "reviewed": 25,
+    "approved": 20,
+    "rejected": [
+      "case-080",
+      "case-092",
+      "case-093",
+      "case-094",
+      "case-095"
+    ],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": false,
+  "error": "ValueError",
+  "message": "승인되지 않은 gold review가 있습니다: case-001"
+}

@@ -1,0 +1,47 @@
+{
+  "answer_contract": {
+    "deadline_date": "계산 가능한 경우 YYYY-MM-DD, 아니면 null",
+    "decision_status": "ready|conditional|abstain",
+    "rule_answer": "아래 선택지 중 하나",
+    "rule_answer_options": [
+      "address-or-workplace-service",
+      "article-14-fact-dependent",
+      "defendant-general-forum",
+      "effective-upon-dispatch",
+      "individual-address-forum",
+      "ip-special-forum-subject-to-statute",
+      "knowledge-date-required",
+      "one-year-lodging-claim",
+      "personal-delivery-required",
+      "place-of-performance-special-forum",
+      "postal-service-after-article-186-failure",
+      "public-service-requires-statutory-ground",
+      "real-estate-location-special-forum",
+      "starts-when-right-exercisable",
+      "substitute-service-needs-capable-recipient",
+      "ten-year-ordinary-claim",
+      "three-year-interest-claim",
+      "three-year-tort-knowledge-period",
+      "tort-place-special-forum",
+      "verify-specific-addendum"
+    ]
+  },
+  "domain": "family-inheritance-guardianship",
+  "facts": {
+    "intellectual_property_claim": true,
+    "specific_court_facts_complete": false
+  },
+  "format": "legal-workbench-temporal-input-v1",
+  "kind": "jurisdiction",
+  "official_rule": {
+    "article": "제24조",
+    "article_text": "제24조(지식재산권 등에 관한 특별재판적)\n24\nN\n[ACCOUNT_001]\n조문\n일부개정\n지식재산권 등에 관한 특별재판적\n[제목개정 2011.5.19]\n[ACCOUNT_002]\n①특허권, 실용신안권, 디자인권, 상표권, 품종보호권(이하 \"특허권등\"이라 한다)을 제외한 지식재산권과 국제거래에 관한 소를 제기하는 경우에는 제2조 내지 제23조의 규정에 따른 관할법원 소재지를 관할하는 고등법원이 있는 곳의 지방법원에 제기할 수 있다. 다만, 서울고등법원이 있는 곳의 지방법원은 서울중앙지방법원으로 한정한다. <개정 2011.5.19, 2015.12.1>\n①\n② 특허권등의 지식재산권에 관한 소를 제기하는 경우에는 제2조부터 제23조까지의 규정에 따른 관할법원 소재지를 관할하는 고등법원이 있는 곳의 지방법원의 전속관할로 한다. 다만, 서울고등법원이 있는 곳의 지방법원은 서울중앙지방법원으로 한정한다. <신설 2015.12.1>\n②\n③ 제2항에도 불구하고 당사자는 서울중앙지방법원에 특허권등의 지식재산권에 관한 소를 제기할 수 있다. <신설 2015.12.1>\n③",
+    "law_name": "민사소송법",
+    "local_redaction_categories": [
+      "ACCOUNT"
+    ]
+  },
+  "question": "지식재산권 소송의 특별재판적을 판단하려면 무엇을 확인해야 하는가?",
+  "scenario_id": "case-150",
+  "task": "제시된 공식 조문과 사실만으로 판단하고 필요한 사실·특별규정이 빠졌으면 보류하라."
+}

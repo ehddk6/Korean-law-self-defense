@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-046": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bdd4c5b23190cc29a4be9522fb56168b339cb706fb08daee1e9678dac6717487",
+      "fixture_sha256": "1c0f6b61277a41b01e8b8bb8bb63af85039723b97062d48372fa40453ff0896b",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 맞고, 쟁점·불리 논거는 원문 법리에 의해 지지된다. fixture에는 목표 주문·사건번호·source ID·직접 결론 및 개인정보가 없다.",
+      "source_sha256": "10ddd7492891289bf348966e4b1f8c2988b6c581f1e577962ad19d7dc367302b"
+    },
+    "case-047": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "9579787be444f4b093e0541453782ad2bbb28f5b5bc4fdecfe68dd6fc5571716",
+      "fixture_sha256": "99cd07664a9917e4584d0cdbfb16271a542382aa786bc5a330f7cfe188838ada",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심파기·환송으로 reversed-remanded와 맞고, 쟁점·불리 논거가 원문 사실과 법리에 의해 지지된다. fixture는 충분한 사실관계만 남기고 식별자·주문·직접 결론을 제거했다.",
+      "source_sha256": "fb899a3948fd67a4099096a08e87f1edcdb1299c628276013bad3402dfb86578"
+    },
+    "case-048": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "3fecb514be29bf985a81befd2f9c42b3481205d28db430e00f7bbcf399a799d2",
+      "fixture_sha256": "dcd4d2e1ee7697c5113cacb6bdb0dd7a04626bc110d7f452adc1b1613e82c9cf",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 맞고, 과세전적부심사 관련 쟁점·불리 논거는 원문에 근거한다. fixture의 원심 판단 서술은 목표 대법원 주문·직접 결론 누출이 아니며 개인정보도 없다.",
+      "source_sha256": "bea07482b0168ad3656ac8f6b9dd959cbbf6e264c464b2877548584abd250a7f"
+    },
+    "case-049": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fdeb03fba69dac6400a99a7ff88074fd18286b512db40d38d17f1a32ed1dbc0a",
+      "fixture_sha256": "707403931367dc62b34cdd75ba295ae2033e0fe9934ad667042d1aa8c30d3300",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심파기·환송으로 reversed-remanded와 맞고, 쟁점·불리 논거는 회생절차와 사기죄에 관한 원문으로 지지된다. fixture는 목표 주문·직접 결론과 식별정보를 제거했다.",
+      "source_sha256": "f5748df5d0e98ae0995b0a2cef7294ee17b447e5b8ef7b07b7dd5268cc5698b9"
+    },
+    "case-050": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7daba8766fe6c6e6b3b450eeab76f495f49aa52944df3cb3258527659c1c99d2",
+      "fixture_sha256": "a284b366424d216bf87b8ba8018bc3e43d86658c890fbb38729fa5d524583487",
+      "notes": "무결성 증명과 source 연결이 일치하고 공식 무죄 주문은 granted와 부합하며 쟁점·불리 논거도 원문으로 지지된다. 다만 fixture가 피고인이 전화금융사기를 알면서 가담했다고 단정하기 어렵다는 목표 법원의 직접적인 무죄 결론을 그대로 포함해 blind 요건을 충족하지 못한다.",
+      "source_sha256": "31aa3e2690e7bcd760df9a44595cb13233b7083cef59d08203314a08606bc512"
+    }
+  }
+}

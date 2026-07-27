@@ -1,0 +1,8 @@
+{
+  "text": "[PERSON_001]은 2026-01-01에 계약서를 작성했다.",
+  "status": "confirmed",
+  "evidence_ids": ["ev_example"],
+  "occurred_at": "2026-01-01",
+  "actor_token": "[PERSON_001]",
+  "confidence": "high"
+}

@@ -1,0 +1,41 @@
+{
+  "adverse_authority_recall": 0.25,
+  "certification_eligible": false,
+  "created_at": "2026-07-26T08:57:24+00:00",
+  "decision_statuses": {
+    "abstain": 10,
+    "conditional": 7,
+    "ready": 5
+  },
+  "document_validation": 1.0,
+  "exact_metrics": {
+    "fabricated_citations": 0,
+    "high_confidence_errors": 0,
+    "pii_leaks": 0,
+    "unsupported_confirmed_facts": 0,
+    "verified_deadline_errors": 0,
+    "wrong_applicable_law": 0
+  },
+  "format": "legal-workbench-development-probe-report-v1",
+  "issue_recall": 0.8333333333333334,
+  "kind_rows": {
+    "applicable-law": 2,
+    "conflicting-evidence": 2,
+    "fabricated-citation": 2,
+    "jurisdiction": 2,
+    "limitation": 2,
+    "masked-official-decision": 2,
+    "ocr-corruption": 2,
+    "pii-leakage": 2,
+    "prompt-injection": 2,
+    "service": 2,
+    "transitional-provision": 2
+  },
+  "manifest_sha256": "b26e8e2466ca5b9937240d1280d1e9d3767f7ea10f35b8324800a363c807a4c1",
+  "pii_detections_before_sanitization": 0,
+  "policy_adjusted_rows": 8,
+  "results_sha256": "963905150b25157d2e0cbf997b9efdcdca898b0ec0cd9979bb89e56304e7a254",
+  "row_count": 22,
+  "scenario_count": 22,
+  "traceability": 0.7272727272727273
+}

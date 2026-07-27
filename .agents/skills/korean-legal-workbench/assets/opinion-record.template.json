@@ -1,0 +1,17 @@
+{
+  "status": "abstain",
+  "conclusion": "핵심 사실 또는 P1 원문 부족으로 판단을 보류한다.",
+  "assumptions": [],
+  "favorable_scenario": "확인 필요",
+  "contested_scenario": "확인 필요",
+  "adverse_scenario": "확인 필요",
+  "fact_ids": [],
+  "authority_ids": [],
+  "issue_ids": [],
+  "changes_outcome_if": [],
+  "source_coverage": "incomplete",
+  "primary_analysis_ref": null,
+  "independent_analysis_ref": null,
+  "applicable_law_verified": false,
+  "adverse_authority_reviewed": false
+}

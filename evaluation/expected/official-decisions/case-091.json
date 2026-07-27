@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[1] 채무자 회생 및 파산에 관한 법률(이하 ‘법’이라 한다) 제621조 제1항은 개인회생절차에서 변제계획인가 후 채무자가 인가된 변제계획을 이행할 수 없음이 명백한 때 등의 사유가 있는 때에는 법원은 개인회생절차를 폐지하여야 한다고 규정하고 있다."
+  ],
+  "expected_issues": [
+    "개인회생절차폐지결정이 확정된 경우 개인회생절차가 종료하는지 여부(적극)",
+    "채무자 회생 및 파산에 관한 법률 제624조 제2항에 따른 면책신청의 종기(=개인회생절차 종료 전)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2012마811",
+  "outcome": "affirmed",
+  "scenario_id": "case-091",
+  "source_sha256": "69ae0e9976aa652895108a2e69e0efaa0ed93219e3facece527472fff0010da6"
+}

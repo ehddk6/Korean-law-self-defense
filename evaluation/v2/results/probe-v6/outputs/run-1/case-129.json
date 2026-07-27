@@ -1,0 +1,39 @@
+{
+  "adverse_points": [
+    "tax-customs 영역으로 표시되어 있으나 조세·관세 특별규정 적용 여부가 제시되지 않았다.",
+    "정지, 중단 외 예외 사유는 제시되지 않았다."
+  ],
+  "citations": [
+    "제163조(3년의 단기소멸시효) 다음 각호의 채권은 3년간 행사하지 아니하면 소멸시효가 완성한다.",
+    "1.  이자, 부양료, 급료, 사용료 기타 1년 이내의 기간으로 정한 금전 또는 물건의 지급을 목적으로 한 채권",
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다.",
+    "제157조(기간의 기산점) 기간을 일, 주, 월 또는 연으로 정한 때에는 기간의 초일은 산입하지 아니한다.",
+    "②주, 월 또는 연의 처음으로부터 기간을 기산하지 아니하는 때에는 최후의 주, 월 또는 연에서 그 기산일에 해당한 날의 전일로 기간이 만료한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민법 제163조 제1호, 제166조 제1항, 제157조, 제160조 제1항·제2항.",
+    "필수 사실: interest_due_within_one_year, right_exercisable_date, interruption.",
+    "예외: tax-customs 영역의 특별규정 적용 여부가 제시되지 않아 ready로 단정하지 않는다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "supported_facts": [
+    {
+      "claim": "1년 이내 기간으로 정한 이자 채권이다.",
+      "evidence_excerpt": "\"interest_due_within_one_year\": true"
+    },
+    {
+      "claim": "권리행사 가능일은 2026-05-10이다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-05-10\""
+    },
+    {
+      "claim": "시효 중단은 없다.",
+      "evidence_excerpt": "\"interruption\": false"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-current",
+  "reviewer_model": "gpt-5.4",
+  "reviews": {
+    "case-061": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7a00f78fb8537a52e8a72b8c654261385f1948506f5cb052a696ee7a1f599802",
+      "fixture_sha256": "4a26f22fc923fd0bb6afa44a843bd4404ca43666a67d119593131f327c9888d3",
+      "notes": "해시 연결과 mixed 주문, expected 쟁점/불리논리는 source와 일치하나 fixture에 참가인 2 기대권 부정 등 직접 결론이 남아 blind 실패.",
+      "source_sha256": "c017dbe53106f0146f41443aa0f260354a4e91e04aaba4299c801b7d852fdad3"
+    },
+    "case-062": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "67d18ddd1838cab99e30629120a080e93857bdc1a009def970201422369e5b1f",
+      "fixture_sha256": "be278f09554acb151c2071eabcaa9a382b7ed637315eab873e8c2e5656f982f5",
+      "notes": "해시 연결, affirmed 주문, expected 쟁점/불리논리는 맞지만 fixture에 기대권 인정·합리적 이유 부정이 직접 서술되어 blind 실패.",
+      "source_sha256": "26de6b3cdcbac73bb262799f6eee0380de06506b3ab273ae8599570b5d8f6ae1"
+    },
+    "case-063": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b257271f54dcc2bc6140b22786b04a4e211a6b00e2a809bc41e44f1390a8e3c3",
+      "fixture_sha256": "7c90acf6975fdee45c3e9867e296ca1e18b65236fd4a24d965cc9b18c14577c5",
+      "notes": "해시 연결과 reversed-remanded 주문이 맞고 expected 쟁점/불리논리는 source로 지지된다. fixture는 사건번호·source ID·주문이 제거되고 분석 맥락은 충분하며 직접 결론 노출은 없다.",
+      "source_sha256": "6c30aeb0129702c7359b45cf30bf0c2fcec0a5cbd8c7a24609536c24f37f2574"
+    },
+    "case-064": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "074535251b41810a7e20535beabaaffd69f98c7ce45c2a4e455b6c1ac206e1a9",
+      "fixture_sha256": "e75b2f803106680ff9d08f8861f37d39d35e2fe83aff9defbcebc15b76dbb6f8",
+      "notes": "해시 연결과 affirmed 주문, expected 쟁점/불리논리는 맞지만 fixture에 재고용 기대권 인정이 직접 남아 blind 실패.",
+      "source_sha256": "4a1961b0bca008af4c703b51a1adecf0acfabed6c38c0b336de44b83fc0c59a9"
+    },
+    "case-065": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d2efb92b33a6bc038fe5d8800fd554a761780d8bee7371c2656daa59296f6385",
+      "fixture_sha256": "be3eb8957e5449d2f67b3202f6e5e247783ba47660853981f014c7ab4f095730",
+      "notes": "해시 연결과 mixed 주문은 맞고 source 근거도 충분하나 fixture에 제1 징계사유 부정·제2 징계사유 긍정 등 직접 결론이 남아 blind 실패.",
+      "source_sha256": "e4f88f46b3cc7077497b908c69b8acc10c0b8a8341497c2328564b864969507e"
+    },
+    "case-066": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "75b050a72ee3b3aa2172a74b73d06349a8ccdb2a9e6b6e3d6b91bd287e2bbf8b",
+      "fixture_sha256": "4360f82eb76890da31c17cd30ad48040000299c0d2939b091c924fee30ea179a",
+      "notes": "해시 연결과 reversed-remanded 주문, expected 쟁점/불리논리는 source와 합치하지만 fixture에 원심판단을 수긍하기 어렵다는 직접 결론이 남아 blind 실패.",
+      "source_sha256": "1094dc56f606314940c6eccbbcbbc4d8fac2c0dc0cc042128429db4ae493c37e"
+    },
+    "case-067": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f235c8dc29c60bdead03b50d24ab1024e0ea0019420a058339bd88ec2a98ca13",
+      "fixture_sha256": "bcf3cdfb5ac0976bfc4402cefbd2edf1d88622e7d456031e8d0c1db01df0fa70",
+      "notes": "해시 연결과 reversed-remanded 주문은 맞고 source 근거도 있다. 다만 fixture에 원심 판단을 수긍하기 어렵다는 직접 결론과 핵심 판단이 남아 blind 실패.",
+      "source_sha256": "5fa63587064d3c4ca2f7e36dd3ec58fc6097c5f4a1582254c922e299400f0e73"
+    },
+    "case-068": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b9b9c94a0dcc1ad641f8573f27e40d8f70c26e1ac74642f7ac292bf1afb5c54f",
+      "fixture_sha256": "c730d0a59e62932e829013761e98f5ad442a86880cdc95276f476249067f7eaa",
+      "notes": "해시 연결과 reversed-remanded 주문, expected 쟁점/불리논리는 맞지만 fixture에 긴박한 경영상 필요성 충족이라는 직접 판단이 남아 blind 실패.",
+      "source_sha256": "91c28d15fa5781f48040a36280bb9cd183b219626f193620d1d379b892196839"
+    },
+    "case-069": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "268b7f5ded7d5bf49d407a610298433c074fd799a1261ad8357742b14fabdf53",
+      "fixture_sha256": "cb87f6c2f29181f9806a29b0cf9836988b933ae348706c059321a3d692b86808",
+      "notes": "해시 연결과 reversed-remanded 주문은 맞고 source 지지도 충분하나 fixture에 해고사유 특정·방어권 충분 등 직접 결론이 남아 blind 실패.",
+      "source_sha256": "bdc0668105abb15dc6e94cf5b733e1efca789055963428d824284c84320eaf88"
+    },
+    "case-070": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6c7837c41f7bfb5cdb0463cb3f8ee237ed25b1127dfe54ccda02de679a89bbfd",
+      "fixture_sha256": "e04dc3e398ccc2f75011ffd4ea2a71c9553b9b5071a50bedd1ccdaeed435e280",
+      "notes": "해시 연결과 reversed-remanded 주문은 맞고 expected 쟁점/불리논리도 source에 있다. 다만 fixture에 근로자 해당성이 타당하다는 직접 결론이 남아 blind 실패.",
+      "source_sha256": "4189938079f49508e854b0d7cfaf428d69f7f98c00beeddc9bdbba2da5dc603b"
+    },
+    "case-071": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "9b2701ef65dd66f6baee2ebd851f66ab1b7d14254985ce14f7b9ac6aed5ce540",
+      "fixture_sha256": "3e9b6de6d764bbcae57b9e5f2a64206342c6da18662aba25c2def8f9edb36d61",
+      "notes": "해시 연결과 affirmed 주문, expected 쟁점/불리논리는 모두 맞지만 fixture에 분양권 보유 시기를 분양계약일로 본다는 직접 결론이 남아 blind 실패.",
+      "source_sha256": "96296a8711d66a14203eed06e34f164408dd9923575772b03fc4136cb56bf571"
+    },
+    "case-072": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "06202a581c2af148f230e380b46929ecf1853a0825ccfffcc125737f7816ed5f",
+      "fixture_sha256": "ff14218edc8256926ea02f7db104ca4a9b73c1c8e77939c09a396f025ee29a29",
+      "notes": "해시 연결과 affirmed 주문은 맞고 source도 expected를 지지한다. 그러나 fixture에 장애인 고용부담금이 제재 공과금이 아니라는 직접 결론이 남아 blind 실패.",
+      "source_sha256": "efa04d321281f9b7b272c3cf7e56539721e68fe067628d1f6f5eab2d0797614b"
+    },
+    "case-073": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f365d99bc012bdcbbf1e381edb48f03bf9ce3e59130c29b37ac6fc72859bcc75",
+      "fixture_sha256": "d709ad5965367742dc54811effd9b9ffb5d271e932fef94b2fcee5dfd9c5ae28",
+      "notes": "해시 연결과 affirmed 주문, expected 쟁점/불리논리는 source와 일치하나 fixture에 절차 이행이 필수 요건이라는 직접 결론이 남아 blind 실패.",
+      "source_sha256": "818373c022cd8d3de458ebbbe0c3431dec11d662d8baa76b4701531ed8cd19cf"
+    },
+    "case-074": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c96da94c01b0a016281f214693fbb586596695d51dfa7d6511373e9344b2f603",
+      "fixture_sha256": "b6707f75ddfed4f2d462351fab2729afb1f8beed6d35f09dde722422bbe09ddc",
+      "notes": "해시 연결과 reversed-remanded 주문, expected 쟁점/불리논리는 맞다. 다만 fixture에 세탁물 전량 위탁 부정과 환수처분 기속행위성 등 직접 결론이 남아 blind 실패.",
+      "source_sha256": "13de94ada637e728669c560bba8e52711ec728b39856360ffc38b48dec806fe0"
+    },
+    "case-075": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d2b94886c815f8e132b91c6c9d0758bd18aa20e2385516d03707584f3a0c3dde",
+      "fixture_sha256": "4e263576dec8d55c4b465102d9fd54a2fe00af8b6ed005698add550dd6389cef",
+      "notes": "해시 연결과 affirmed 주문은 맞고 expected 쟁점/불리논리는 source로 지지된다. 그러나 fixture에 감면결정 있는 투자에 한해 감면 적용된다는 직접 결론이 남아 blind 실패.",
+      "source_sha256": "9a1784dea8493ec8a3f9cc2979b653aad17b8833326795cb13b66c4c6aa2175a"
+    }
+  }
+}

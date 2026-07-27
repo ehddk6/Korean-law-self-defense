@@ -1,0 +1,847 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_model": "gpt-5.6-terra",
+  "reviewer_id": "terra-xhigh-current-a-fixed",
+  "reviews": {
+    "case-001": {
+        "approved": true,
+        "source_sha256": "3b0d5dc86351937138dbcc3268cf31eaacae2391bdfe37ab5f672f8f76ddd316",
+        "fixture_sha256": "30695c6d89490793ef577930b6533d3effccdeb4da31c5cba6117caa45bf660e",
+        "expected_sha256": "eaa07ff5f3b6a23ec0935a3622a4f4b33d8a78f94a89dad85b9c5c8dca7edffa",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-002": {
+        "approved": true,
+        "source_sha256": "d2ce3fef7a23eb51dfa2c4864207ec4ec8dfbd6f7e321783cceb2ae93d6fc612",
+        "fixture_sha256": "e84724ddfc6b215c5534c7e4d03b5e37a6d6eef4925c75ed334e67801e311969",
+        "expected_sha256": "43994e5490907472dbdd8cce64c21188c0ea9eb591536a6074405ea30871b891",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-003": {
+        "approved": true,
+        "source_sha256": "7e70cb3ad7595a5091a3a2e22424f5af1efe9c28854a2b7267919132068a39a5",
+        "fixture_sha256": "bcb7f5754d3a8f67a4516df0fff4ffa803e22365d383b7eb5fad42a64095d7d0",
+        "expected_sha256": "861e840e4616843e8ba835e17e43ac17b453d8107430436418fc09730f79edd2",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-004": {
+      "approved": true,
+      "source_sha256": "ba4fe828fcaaf75efee9894b7bff41332afa6e33ddce7eb6d682f41b676f7bfa",
+      "fixture_sha256": "dabf29877d2155857b545eac072a72d1d9b0cd8821b92106c71cfb1860f8577a",
+      "expected_sha256": "42ba5f07c4f8e7e40219f286d38c99da1a8d24b7e8304113d3a004fa9c7edd47",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-005": {
+        "approved": true,
+        "source_sha256": "2b84860eb17c522d74cd702e0d04d5fab9fe4d3152c6ce09c3df9fcbe5c60366",
+        "fixture_sha256": "ef2d171f94bf926e744ce1fcb35c8714489e0cedf468236be05af4c0f1876192",
+        "expected_sha256": "92c4ff7cf8c0456e45ad4e7cf5257038c6160949599d4fd2c8a47d03c6001324",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-006": {
+        "approved": true,
+        "source_sha256": "5fcad765388fd922cf9867caf8d8b23a3d347b57050fa626a6fe0315ee33cbfc",
+        "fixture_sha256": "49b01537c7e93cdc6fc75fb5873f8ce576da97363a4e47caedfc3b69ab9b3f33",
+        "expected_sha256": "b3ecabec303c32a8532197d4aa3998f424f9a863c39fb5acb58262e33ed022c7",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-007": {
+        "approved": true,
+        "source_sha256": "78305134e0f47726188631473c840d5573feff4655451c20bb5959a2b944c5ff",
+        "fixture_sha256": "2ca1dad49a8e59103826f58b1b3d5a050f5a165029e267008ad5947d09faee24",
+        "expected_sha256": "fad612d644da09b9385578ad4a8d0cede4064b707ddc23003425df4d552cfca9",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-008": {
+        "approved": true,
+        "source_sha256": "0352735ac124096d7f14d7b1238d36e46acda8898f488852b9bc3355800c060b",
+        "fixture_sha256": "7613aa57caeb1eee66480b2b0babd9d17a5a38f4f8b27f870b50fa1d623dc0b1",
+        "expected_sha256": "f71b4c58f1adff50bbe18470e5476c7887c4b7a00596f1ec933e71ab0bb1b874",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-009": {
+        "approved": true,
+        "source_sha256": "a21cdb03cb0ed13bb510f176c04ed179654efc6c34d49143034397ea42516a7f",
+        "fixture_sha256": "a69633f6dbb8f69cac402a982178d251c5789751943bb5d6fcac651c9b2fafc2",
+        "expected_sha256": "eca81f72c45ee7076b4f1f33d33dec1eb8dce56cf06db384d00a05f61086ef18",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-010": {
+        "approved": true,
+        "source_sha256": "5047b4e5c84e511f3b4fea9b64959bb3053ff125e5b0974c8150db3e80f23178",
+        "fixture_sha256": "624872e388679f28aa082b12d293f232913da5c049429bd3e23c18fb0f98bfda",
+        "expected_sha256": "160231b154a172133ecda4b9a306f227faea4c4b49f3d3aaf0dfe25b8d175d92",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-011": {
+        "approved": true,
+        "source_sha256": "62877d6e9de29a68573dd78dfb5cdb104f0dca875124642b14e5cfbff4feaca0",
+        "fixture_sha256": "36d863e9ceb4da2d4f641e327d234eef9bbc20d544af22adb658c7498d8aa198",
+        "expected_sha256": "ac40554101b8855507301aa06d96d2627f44a9f46ff79de94e7959ef32f6a228",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-012": {
+        "approved": true,
+        "source_sha256": "188b10b259e8aa289b98058542b51310d229c87046a6d01a495ffb76410bdb94",
+        "fixture_sha256": "591f6a0a740dcaf5d4a829b51de1bef5db05ffb682c772027030babfad2eaa20",
+        "expected_sha256": "a23a735569f0fc27a1ec5d2f2ba8f6a63eca87959136ca6a139660cb67fddeff",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-013": {
+        "approved": true,
+        "source_sha256": "653ef547545e03ec2959c60cdc64f51d9d7bd425067ae0196b1466f96e181a33",
+        "fixture_sha256": "0876fa4c293b737cc750d12c4a28a4bda655c1c62d5541d9e3d8c09178a4d7b2",
+        "expected_sha256": "208bc9b99b074822e4173039a40d494551d7edf4371004c207f0d84b1e0bd33f",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-014": {
+        "approved": true,
+        "source_sha256": "ae24e9a514f161748a3700efb6fe71be2d52588aa0b09820fa08d3a4befddc4c",
+        "fixture_sha256": "e6952dccb463deececb4416351c9793ce0bea5956f94d7c2fe2bae38def7d1db",
+        "expected_sha256": "2db2142fa5d68bd7b41b9607ae569df7eebc968e8fd72740cac74a5d5ae7b759",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-015": {
+        "approved": true,
+        "source_sha256": "72f05e6fb637a7d3c6a19974df6950b71c9c808dd51aea7fa7e57eb2613afe05",
+        "fixture_sha256": "c9735be89a5fea263dc2e74d29d22b0ae87ad76c75e41a84bc41d7d6edee0d9a",
+        "expected_sha256": "d0d7a59f72aba0850744e30b736f88b0341a40e5e6d1fd16010b80e8c2db3072",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-016": {
+        "approved": true,
+        "source_sha256": "8f80a462058dc6de9e14280e2fbbbfb16e1fc5ea75145f24a1ccc4df8f342c1d",
+        "fixture_sha256": "d73e256a8b67b941efb3305eecf3a722a9df62329c419612dfdd90a300651139",
+        "expected_sha256": "6054b49027dedbbdc7cdd531aaa8a0c3b3a6171e77c236facbaedb141d55fb43",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-017": {
+        "approved": true,
+        "source_sha256": "0b4f11196cc5e97d6232c8c4a8801e80523b3fbdd0208f4499890470ba821a65",
+        "fixture_sha256": "16cb6c5bc69143a216674480fdc0aa533f46db209d30e397602e8f8273f29ae3",
+        "expected_sha256": "d2388bcc6f6b61f2eca2907e97890988719b73229712a6d50cc08472da0dd62b",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-018": {
+        "approved": true,
+        "source_sha256": "b2ec30ebab03f06af824637d2b08c369350c33e421fdba13205f7101b6b4c30d",
+        "fixture_sha256": "989a91ca4e336f96020e4222db475636e3ea0f21515c2630593fbedbca47556d",
+        "expected_sha256": "7c34e98a0c963c9ba97117f3163926e78d2b80bca8765d1f00ea86cfaa46fd52",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-019": {
+        "approved": true,
+        "source_sha256": "a42a3a8bfc0b3460fe555f9cc7db7385f18b7a2b7bd56c70d2293d8d4bcc398b",
+        "fixture_sha256": "09dec35b77c043b785416f97081bdbd046622c4f681fcd6fef1ad523a5f1fe09",
+        "expected_sha256": "545b92273c6e73ec770dadb0325caebe8d41250c2f2da1a2a39cb8fc75819316",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-020": {
+        "approved": true,
+        "source_sha256": "cf8ab33f07ebfe94368cbd9f8b9545a5e550cf3aaf6915ba7d619112e51ee950",
+        "fixture_sha256": "3e66bc6a5a3838b94b88d3ba3be2cbde8b28e9ef26cd6f39dd7c40d357fd75d4",
+        "expected_sha256": "48e03237002238cb23db54330aa7f65fa786f37644bfee0ea09dd748c7f42050",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-021": {
+        "approved": true,
+        "source_sha256": "3427ab178fa516efd03ad56cae44664dd8f5911ead514727a462bffef4d4d3e0",
+        "fixture_sha256": "e22c0bc8bc1de5564998362d7d48737b0ccc06b34244204a0b5101b703a83229",
+        "expected_sha256": "541f667b5e0f05839ff71f1bc581ecd2d1982c4b1711ba36cfa8a7c7d31521e3",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-022": {
+        "approved": true,
+        "source_sha256": "5ee4320af4cd2f1c01e7c3d903c3ff57840885b08da8121a738795d9edb701c9",
+        "fixture_sha256": "6babb652fc8224a1efc1e795f98f3855d586c1dcdc3273e39b421c179d78386a",
+        "expected_sha256": "c364b8088a728b792123002d585184f90231636269df02d2615d12f7d983803e",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-023": {
+        "approved": true,
+        "source_sha256": "bd0768ef4414354ce042df459d1c683bbb30a83bc52601177aa99c00fbb4a40f",
+        "fixture_sha256": "aadfe53b6c43d9b4ba397017b20a74b96c2366b8aaa483d962abe59ec5e2f7f2",
+        "expected_sha256": "b407bc36174ec22b664cc4c7d67fdfeadf3a4d460c16bca5b30ac6e88aa3fd03",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-024": {
+        "approved": true,
+        "source_sha256": "c22e1b313960d0a85dcb49dfd194577db67ceff76fa6ace2c52c9bb893787c91",
+        "fixture_sha256": "fabf68e37cd8562f291edcf5caf55e0d7389b05cfbefac2e924dc4edf56f0ac8",
+        "expected_sha256": "1928fb5541d46b1edb494eacb921c5eb8da7ce01520d0915449542d84cc7a0d2",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-025": {
+        "approved": true,
+        "source_sha256": "61ce1c5d88ec709bbfc50de81a4f1bbe9523a5f2eb188d0af516f8e824e3b7ab",
+        "fixture_sha256": "4f6d2facb7cd0365af42e93e93082bc1b5591278d2369673df6b3cb12061fe83",
+        "expected_sha256": "693d8a70d447dcbae20e6e8ce66a6b3ce63ea7f3fcf626c481f0c7ad44d722cf",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-026": {
+        "approved": true,
+        "source_sha256": "2b3a5e05988d9214382e320086da0934cb24fa787c8a3a7ac5823d1269765f6f",
+        "fixture_sha256": "622ee63a0624690bc8b69d8bf81a51b03b70d79fd844b99ec2450a1ba839c507",
+        "expected_sha256": "4570cc31e00eac1b54cacbecd39d9af1e27b328fa98420d5d09cd93b545507b3",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-027": {
+        "approved": true,
+        "source_sha256": "1868622d0988bf1d499b2cd1476454fee394adc710835bef2c511b11c99ba9fb",
+        "fixture_sha256": "6704fab90d7d13c8b5f5110656d08b5dbf2a0d686779b2f4c0ccea1d1fc02e28",
+        "expected_sha256": "ff8250bc9d2995951e1073283e95d8d280599d840b81a888f741a8b436b4158b",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-028": {
+        "approved": true,
+        "source_sha256": "b2e4e1e03a2ee4d4f0d5889daec08df4c8cc05245ad005c4be9755ead4bb31a4",
+        "fixture_sha256": "3c90947ae76cfe5b08eb2e77a99ddc6c0bb825fc03ccb25caca33ddbcdf4e046",
+        "expected_sha256": "f8950713c33427ab4a2c21706b0d3c5e496a1211669b07d8b7b7cf2244f6fbd3",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-029": {
+        "approved": true,
+        "source_sha256": "88b018fa05b9022816288dc0b1586e5636f4a3b8e369cbdd3cf9b6f7485cab9d",
+        "fixture_sha256": "cb93e98a1c9532f59d57dd07d7b6e76d06c4b0be001a7817581e3ab8dfac9d30",
+        "expected_sha256": "9a57e7dcc85661da71d14332c4c51bdc5e6734f2fd589a4d8c8ab2ed9de3f286",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-030": {
+        "approved": true,
+        "source_sha256": "d63e0c1499e9ad39032c45a05ae36ea1415631c4f5fe6b20c245066dee07324e",
+        "fixture_sha256": "4dd8dea7caa2b4fa45a7a4851af61016df532d7cd359ba77247fab8b73e32ea5",
+        "expected_sha256": "10ec32efd46e2cfe25d10f54b7f6e276f126338c720edba5068e527c6118cbeb",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-031": {
+        "approved": true,
+        "source_sha256": "17f9b65e30e95b13519313366ec2114d066f90b651ffcbc94136cca2ba17a4a6",
+        "fixture_sha256": "65f5922383fab0aa495bc307f602efacb4b533c20736fc42a9dc067206c3d0c6",
+        "expected_sha256": "063431b73011f55592994657ed37af919d0f0ccf90e13815f83d7d24e7be9118",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-032": {
+        "approved": true,
+        "source_sha256": "ca4561268fc3066eb6ad780282c83d30470925d5c65e812f801ff8c89123a42a",
+        "fixture_sha256": "39e7e5b43ec5a7e0906a4ba41de1de5f4c9540f55aed2d395fa9b2de8370ee78",
+        "expected_sha256": "93d1559c2b168566734f6d7027b0d5494c8ba9adf1942b6e53f72c3cc7bee34e",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-033": {
+        "approved": true,
+        "source_sha256": "6f8cde823a1f983fcb915f53262f169a0cd507bd6500fd4e8eb437dc7295a3f5",
+        "fixture_sha256": "d3cb06af1ae2f5de14ef1030909d3cb584a94b9913d3a6b9a7b8c40115346f97",
+        "expected_sha256": "184a24efde32c34c36d2d0520d848035119696c85441ebcfa053f8098d5a1b57",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-034": {
+        "approved": true,
+        "source_sha256": "8aaed76e71c47b4682b02e5bfe021c6ec02b4cc6ef635f88378cf81cedbd2401",
+        "fixture_sha256": "18c0af5342e4c697e3786eb92e0f0953f2556646e35d6d45ba1b3b23c2f26ecd",
+        "expected_sha256": "fad5f136749740d2c9d5974a639bca6e2f6351541ffef8595ea914ee9b5f8bb8",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-035": {
+        "approved": true,
+        "source_sha256": "f6f1ce68437ba4a27f90a6469f7ad58a5f8250182d5bb8a8e66d98119b9b5c60",
+        "fixture_sha256": "71388dc28ee2dfc72d134a3045ced5f7eb3794b4ee4c4ef8cdf3b1ce83e07024",
+        "expected_sha256": "b440fbba460fae24e7ea10f1dd6993abe5fe34b73e3c8423cf33715d91a7ec20",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-036": {
+        "approved": true,
+        "source_sha256": "70b06f7aa2d45e99ce71bf052bc8c4a0c1f01a613d1a9850eeaa694c90cdb9eb",
+        "fixture_sha256": "3d179af23892ce906f63145394d769da01120143a47ce787366dac938eec204d",
+        "expected_sha256": "df559ea694d251cef3516e6ea3b7738cc48590227c6dd42b6745a118ae7af6a1",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-037": {
+        "approved": true,
+        "source_sha256": "d097ab7a841da177ce61194d0f1dba834320c3edf73154a6f806758d09654201",
+        "fixture_sha256": "cde6729e4ef84ea6275b929ec248a6e8a096f65949ec7eee82a648952875ad81",
+        "expected_sha256": "bc10db898378be030bafea79df70d0da1ce30070b466b0ca6cf3898f9fd67c7e",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-038": {
+      "approved": true,
+      "source_sha256": "b2743ee3b0131469769dfb10dc6bcf9ba6ad361c7536c4b97aa3f818c2c5a3a1",
+      "fixture_sha256": "4feab2ed38592437107b6897222da09e0fdef333939bd502bdf5180006f7afb0",
+      "expected_sha256": "942c4b5ee932a648a428273e583fd07b4d0318daa08f4487f534772c501f2c7c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-039": {
+        "approved": true,
+        "source_sha256": "da3ac119e711b267974e5672e019db254be3785ed17014eb989226f6e3d4c717",
+        "fixture_sha256": "34ce72a02e73525f6369e735293eabe719694be2a8ede4e23c03a5ecb6c99bbd",
+        "expected_sha256": "49b2b772a224214a34afadc88f14b2237f4f40eadc19898e3f87cd9aac09dbac",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-040": {
+        "approved": true,
+        "source_sha256": "db08ea95e389577b3e5109f1a3a3503ef15b26b7e8db30b34f05e90b3a262a0b",
+        "fixture_sha256": "5c119c682e4ff717e3e1dcfdc0d20860163e78b4699a7a2c6d5d0cb5b854b4ce",
+        "expected_sha256": "48435afd5f07dd8fa69adfcec6aa7647b410f0bb922af0f0183bf6d2063117b8",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-041": {
+        "approved": true,
+        "source_sha256": "df9d5c1f8df91246fe17996dc99c0d6eaf76515c51532e717c40a68925a3b609",
+        "fixture_sha256": "249fa9255db030fe0aa5e376d63c5a0ed5e0c2edd2720f8169ffcce06872fdb5",
+        "expected_sha256": "b00e1a12d1c8cef447d73e5e116f06ec29141987c282b489e5b8a367a9c59108",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-042": {
+        "approved": true,
+        "source_sha256": "522d723a4a3f7b50418fede0765126edd58fc643123610c6338fd485fed3c0f3",
+        "fixture_sha256": "923c1533fed4a9451404b00600f12e8260a0984cf8b00c6b382a6dd822afe0b7",
+        "expected_sha256": "b2e622db62d8698759975775259f6eaa4b44eff039b1da06507d299eed2f8415",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-043": {
+        "approved": true,
+        "source_sha256": "7e21f2dff45a88c44200e898d6f1fd3dfbe9d2594f5e507a749a82e6dce4cf56",
+        "fixture_sha256": "fbf703a16a489c607c89201e9f634054e076510ee2d1e242f716cabf6d4a9e73",
+        "expected_sha256": "f728716b888bb59512d2ff0f51953db29babc4149bde0613da82a30ee6e790dd",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-044": {
+        "approved": true,
+        "source_sha256": "99a7934de1faef75766488b522692cb9a9a361b4fa81ae73d6d0eba3ea372dba",
+        "fixture_sha256": "75d9f1c435e2e93102ec5770ef4e3f79d16a5dcfe4734bc372bd8d482ba7f07d",
+        "expected_sha256": "c2d157cafe2141a1124d0cffd82478c2e3f31c9953431313c0270644428d2dfa",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-045": {
+        "approved": true,
+        "source_sha256": "014612cf52ee31d8cc81335be90b8692eb7e227127a808ffc745e757dce723ee",
+        "fixture_sha256": "0855c3a096e2f1974392ca4960fc80abc77404edf7804c8c02e24acbcd4bc64e",
+        "expected_sha256": "786f4609ef36a8ecd7255e582810089d38efda4e6a4be0e2f53dc9a6a197c71d",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-046": {
+        "approved": true,
+        "source_sha256": "10ddd7492891289bf348966e4b1f8c2988b6c581f1e577962ad19d7dc367302b",
+        "fixture_sha256": "c49bdf344826c3a64526f03d72c2e74c284666767f29822d63ffac3f3818a68e",
+        "expected_sha256": "e850be9145e368cc3512e1c20d140755827d9c56c6359c6f28508ddd8362d00f",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-047": {
+        "approved": true,
+        "source_sha256": "fb899a3948fd67a4099096a08e87f1edcdb1299c628276013bad3402dfb86578",
+        "fixture_sha256": "e6c853917198a02246677e3df5aedbae687356c2595595fac643f63d94200fa1",
+        "expected_sha256": "f436b263d3770ae087e63bf00ff39f8c0f4f5a19def1ef8f37036c486a176781",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-048": {
+        "approved": true,
+        "source_sha256": "bea07482b0168ad3656ac8f6b9dd959cbbf6e264c464b2877548584abd250a7f",
+        "fixture_sha256": "545f5c7bc3eb7d4e198686e4fffbe879cf650566c1d9eaaf332842b6413c9850",
+        "expected_sha256": "d68eba65a8d38388d18474928171a6df0dedbcd8555bb4dd284b1bca05da11e9",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-049": {
+        "approved": true,
+        "source_sha256": "f5748df5d0e98ae0995b0a2cef7294ee17b447e5b8ef7b07b7dd5268cc5698b9",
+        "fixture_sha256": "7d1be575b279346af40f9c0825228c0253f76e2dfdf7434a2f31c2f6a6bc0c2c",
+        "expected_sha256": "8c64e6ba6e4ad64d602ebb59a8c14849b80578b8afb0e76d88ab145fd7d7683f",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-050": {
+        "approved": true,
+        "source_sha256": "31aa3e2690e7bcd760df9a44595cb13233b7083cef59d08203314a08606bc512",
+        "fixture_sha256": "cec9182fb40a2a169534f487abbfc9a37198710416defd615c609f96c2882299",
+        "expected_sha256": "fffab41090b298ec01b2cc0adf8c7069c2ae9b01c0b02a51f19004a1ef12ed30",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-051": {
+        "approved": true,
+        "source_sha256": "5fb56dad9e84cdc2285a9bccfa08131e480c0084c883de7be09a6efe96bdf761",
+        "fixture_sha256": "2853a132071f7a2378fc42ff3f65023204bfe91b423d0c381256a274d9fd0236",
+        "expected_sha256": "ca050879ac7c6f0ef707d5c988d5943703c5c5752fcdaa3147a429cccefb679d",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-052": {
+        "approved": true,
+        "source_sha256": "e314a7a7aa277bfa02fa266aa4db7cda3d5e3c3a5b79ac862f9719d4513e00aa",
+        "fixture_sha256": "f45759da1f68b81209985a4efac720bc38e73ecc7d5ceef226998550f9147e5f",
+        "expected_sha256": "01852eb1fbedd00286ce6c7a6dd1edf4b79d260e7c063581cfc20bc655bdd5b3",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-053": {
+        "approved": true,
+        "source_sha256": "07a871c42f9363e74c3a49989d25b735d26c2cc9ca009fc5625931aabade1167",
+        "fixture_sha256": "89428d793d37b51f2db035c368ab6b20c6b2028faff9443b78740186756b3ac1",
+        "expected_sha256": "ed999775cff98ef69ef2aa147f247ebc997550910cd03969af7d999e14b8c59b",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-054": {
+        "approved": true,
+        "source_sha256": "56e55ed2cb68dcb05c07311736193b376de304de1184484c1d7ebb2598d5d74e",
+        "fixture_sha256": "51275f813c9ab367c3a3b3c15d51d924d895f9814e56148d3f8e8e1449ec04c5",
+        "expected_sha256": "e002f9b149a3cd6ccdcbeb7c953bf667831949ad7cbef462710399a8dc0e7c23",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-055": {
+        "approved": true,
+        "source_sha256": "6de0d39b4c5b0be144e5112bddf15986cf00341051925451acc16d494981b6e1",
+        "fixture_sha256": "3d8f780dc5a978867d007a171d63a6c622ba6a91fc73068092a4da0b04ab7341",
+        "expected_sha256": "7d7c486f06de360693b18c2c252b3884e636bc2da3bc4e538e55f94956598add",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-056": {
+        "approved": true,
+        "source_sha256": "4fa56cccbf39d56d68f28b3105f1fbd3e54ff19737b6eebb3b24e9bb8baeef4d",
+        "fixture_sha256": "f66a124961281c334d73dd3a1a02b74c7613e99959331b203a3d56b4a2dd880d",
+        "expected_sha256": "38b97ad1b9178425cb6b2243452c84b5394b7e66c48bc0b0b6a07e5c2ea5d990",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-057": {
+        "approved": true,
+        "source_sha256": "12f015114b788e1c30574e3f738731e07da87b6aa94bd8105d6bf5525f26a035",
+        "fixture_sha256": "2bdf67ad1cf5ba9be152311d012d16adf489b023eef607310d8e5c4cdd1b4320",
+        "expected_sha256": "cb7fffe6b84bbfa422a96e179a39595aff80635593027f2a65d0851a39c6c317",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-058": {
+        "approved": true,
+        "source_sha256": "041962361bfdc8339135f5aa3656c1f9877976f11e00015b954d12f63b223b2f",
+        "fixture_sha256": "c0408569f1c0c1b623cce62517101642c974fb6d6dbe128f8642e34086b3c2ad",
+        "expected_sha256": "95414b91813d8653c0843c01f34fa0e16d3d8500d6002d95d3659323d5a6c6f1",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-059": {
+        "approved": true,
+        "source_sha256": "29c92d1d33bed6c06fdbd957baa3ad1a449d95439e877c376e1bc21e98d082ca",
+        "fixture_sha256": "05e0bd571f1abc5a2fed0bda1c0bbe5bb76e693feb55ad7d32901b514771e2a2",
+        "expected_sha256": "a516f09b02ee721ee11b1348f73ccd300fca540ac29a3480190f839c8575f432",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    },
+    "case-060": {
+        "approved": true,
+        "source_sha256": "f467a82b592a72b58b1dafaf5ea831d779b26650e30be553fca571eaeffca9d4",
+        "fixture_sha256": "a70c9aadda813a1e3f2984d8fdac7dfe3a496d2a30839107dae76e31a45f8750",
+        "expected_sha256": "33821835d9a3cdddee216d2fa01139b089480dfa51033f592e367c045ee5b819",
+        "checks": {
+            "source_bound": true,
+            "label_correct": true,
+            "fixture_blind": true,
+            "fixture_pii_free": true,
+            "gold_supported": true
+        },
+        "notes": "현재 SHA-256가 manifest와 expected.source_sha256와 일치한다. 공식 주문의 결과와 expected.outcome이 일치한다. masked record에 현재 사건번호·source ID와 주문/직접 결론, 잔존 PII가 없고, conditional은 결론 가림 예측평가에 적합하다. expected issues·adverse는 source 원문에 지지된다."
+    }
+  }
+}

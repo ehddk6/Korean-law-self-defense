@@ -1,0 +1,6 @@
+interface:
+  display_name: "한국법 자가소송 워크벤치"
+  short_description: "한국법 상담·사건 분석·서면 작성 및 이중 검증"
+  default_prompt: "Use $korean-legal-workbench to consult on my Korean legal matter with verified primary sources and an adversarial audit."
+policy:
+  allow_implicit_invocation: true

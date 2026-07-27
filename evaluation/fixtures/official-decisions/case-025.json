@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2021-11-11",
+  "court_level": "대법원",
+  "domain": "real-estate-lease-registration",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "2. 원심판결 이유와 기록에 의하면, 다음과 같은 사실을 알 수 있다.\n가. 원고는 2015. 2. 24. 주위적 피고로부터 임대차보증금 1억 8,000만 원, 임대차기간 2015. 4. 30.부터 2017. 4. 30.까지로 정하여 이 사건 부동산을 임차하였고, 주위적 피고에게 그 임대차보증금을 지급하였다.\n나. 원고는 2015. 4. 30. 이 사건 부동산을 인도받아 그 주소지에 전입신고를 마치고 임대차계약서에 확정일자를 받았고, 2017. 5. 1. 임대차계약이 묵시적으로 갱신되었다.\n다. 2017. 9. 5. 이 사건 부동산에 관하여 수원지방법원 성남지원 [CASE_NUMBER_001]호로 강제경매절차(이하 ‘이 사건 경매절차’라고 한다)가 개시되었고, 원고는 매각기일에서 유찰이 계속되자 2019. 2. 9. 주위적 피고에게 임대차계약을 해지한다고 통지하였다.",
+  "scenario_id": "case-025",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

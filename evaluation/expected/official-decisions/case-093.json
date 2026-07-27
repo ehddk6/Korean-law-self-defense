@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[2] 개인회생절차 개시신청 기각결정에 대한 항고심에서 심문기일 전에 항고인이 제출한 서면과 자료를 고려하지 아니한 채 제1심까지의 사정만을 토대로 항고를 기각한 원심결정을 파기한 사례"
+  ],
+  "expected_issues": [
+    "개인회생절차 개시신청 기각결정에 대한 항고심에서 심문 종결시 또는 결정 고지시까지 제출된 사실과 자료를 토대로 항고이유의 당부를 판단하여야 하는지 여부(적극)",
+    "개인회생절차 개시신청 기각결정에 대한 항고심에서 심문기일 전에 항고인이 제출한 서면과 자료를 고려하지 아니한 채 제1심까지의 사정만을 토대로 항고를 기각한 원심결정을 파기한 사례"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2010마1980",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-093",
+  "source_sha256": "ffdc5ec7cd21e5850b8d7ffbcd6dcc5395ce6f5772ed4692849cb8d178688010"
+}

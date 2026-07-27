@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "result": {
+    "applied": 120
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "e2bbd8b22eef151e397054a4d207e1e7521da4e925c45015461ed27a0f872d9f"
+  }
+}
+{
+  "ok": false,
+  "error": "RuntimeError",
+  "message": "독립 gold review 실행 실패: Codex 사용 한도에 도달했습니다. 재시도 가능 시각: Aug 2nd, 2026 8:29 AM."
+}

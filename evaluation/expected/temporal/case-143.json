@@ -1,0 +1,13 @@
+{
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "발신주의에 따른 효력 발생 시점"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "source_sha256": "b26e026677e7f63b84135702a5bf4e296f5ebac0565c562271d788bbea3c2b14"
+}

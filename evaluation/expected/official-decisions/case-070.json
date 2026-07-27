@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "을 배척하였다. 이러한 원심의 판단에는 근로기준법상 근로자성 판단 기준에 관한 법리를 오해하여 필요한 심리를 다하지 아니함으로써 판결 결과에 영향을 미친 잘못이 있다. 이 점을 지적하는 상고이유 주장은 이유 있다."
+  ],
+  "expected_issues": [
+    "근로기준법상의 근로자에 해당하는지 판단하는 기준 및 이때 종속적인 관계가 있는지 판단하는 방법",
+    "甲이 보험회사인 乙 주식회사와 지점장 추가업무 위탁계약을 체결하고 乙 회사의 위탁계약형 지점장으로 담당 지점의 운영·관리를 총괄하면서 보험설계사 도입·교육 및 관리, 보험모집 지원 업무, 보험계약에 대한 유지·관리 등의 업무를 수행하다가 추가업무 위탁계약을 해지한다는 통지를 받은 사안에서, 甲이 임금을 목적으로 종속적인 관계에서 乙 회사에 근로를 제공한 근로자에 해당한다고 한 사례"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2021두33715",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-070",
+  "source_sha256": "4189938079f49508e854b0d7cfaf428d69f7f98c00beeddc9bdbba2da5dc603b"
+}

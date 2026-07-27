@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2024-12-12",
+  "court_level": "대법원",
+  "domain": "insurance-consumer-damages",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "원심판결 이유와 기록에 의하면 다음과 같은 사실을 알 수 있다.\n1) 피고 1은 원고 소속 보험설계사인 소외 1의 권유에 따라 원고와 2014. 4. 2. 및 2015. 4. 23. 남편인 소외 2(이하 ‘망인’이라 한다)를 피보험자로, 망인의 법정상속인을 사망보험금의 수익자로 하는 원심 판시 별지 목록 제2항 기재 각 보험계약(이하 같은 목록 제2항의 가. (보험계약명 1 생략)종합보험을 ‘제1보험계약’, 나. (보험계약명 2 생략)운전자보험을 ‘제2보험계약’이라 하고, 위 각 계약을 통틀어 ‘이 사건 각 보험계약’이라 한다)을 체결하였다. 이 사건 각 보험계약에는 ‘피보험자가 보험기간 중",
+  "scenario_id": "case-017",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

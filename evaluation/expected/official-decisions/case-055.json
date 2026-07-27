@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "민법 제840조 제6호에서 정한 이혼사유인 ‘혼인을 계속하기 어려운 중대한 사유가 있을 때’의 의미 및 판단 기준 / 부부의 혼인관계가 돌이킬 수 없을 정도로 파탄되었다고 인정되는 경우, 이혼 청구를 허용하여야 하는지 여부(원칙적 적극)"
+  ],
+  "expected_issues": [
+    "민법 제840조 제6호에서 정한 이혼사유인 ‘혼인을 계속하기 어려운 중대한 사유가 있을 때’의 의미 및 판단 기준 / 부부의 혼인관계가 돌이킬 수 없을 정도로 파탄되었다고 인정되는 경우, 이혼 청구를 허용하여야 하는지 여부(원칙적 적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2022므10932",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-055",
+  "source_sha256": "6de0d39b4c5b0be144e5112bddf15986cf00341051925451acc16d494981b6e1"
+}

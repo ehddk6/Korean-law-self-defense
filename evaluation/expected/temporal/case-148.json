@@ -1,0 +1,13 @@
+{
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "공시송달 요건과 사유 소명"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "public-service-requires-statutory-ground",
+  "scenario_id": "case-148",
+  "source_sha256": "faf78d1970eacf37df57d828c3d7f423a9271fb57fbdf86f380b13f7f91cda18"
+}

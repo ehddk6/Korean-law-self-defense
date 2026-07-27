@@ -1,0 +1,26 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-07-26T08:55:25+00:00",
+  "decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "masked-official-decision"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-1",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-002"
+}

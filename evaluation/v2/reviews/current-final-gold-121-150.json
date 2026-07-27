@@ -1,0 +1,427 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_model": "gpt-5.6-terra",
+  "reviewer_id": "terra-xhigh-current-c-fixed",
+  "reviews": {
+    "case-121": {
+      "approved": true,
+      "source_sha256": "fc6400a197698335e4a51dd599feb87dd3bcedf1638304054c2c3a9b007c9fbe",
+      "fixture_sha256": "aa12ec7bf628a247cddde7904c1031fb5bfd5acde439bdf2fd99733e4b737bf6",
+      "expected_sha256": "7647a3ab0711ea81a52957d952e2140d8a44e287e67600de5ce4fc4d37144692",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "제14조 제1항의 계속 법률관계·특별규정 유보를 대조했다. 조건부 법리와 null 기한이 맞고, 쟁점·불리점은 특별규정 확인 필요성으로 지지된다."
+    },
+    "case-122": {
+      "approved": true,
+      "source_sha256": "ffed21cd4210cdb24adf107abdcf988970b7d1116c202d65fb47fa5e836ee897",
+      "fixture_sha256": "b0cddfd2816c68cc1f85ea5c383696f68065d999ef381bd9bbc311dd2362d7e5",
+      "expected_sha256": "c82ab5c1af1d669e7ea5056df6656394f8d6f8c443502813dcce13561ecc595d",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "특정 개정법률·부칙 원문과 시행일이 입력에 없으므로 abstain/verify-specific-addendum 및 null 기한이 맞다. selected_article=null은 이 결손형 fixture와 일치한다."
+    },
+    "case-123": {
+      "approved": true,
+      "source_sha256": "147035de0657e04e1133833f64856cd755d94f6ecccec0f893611862c126ceb8",
+      "fixture_sha256": "e60d70bcdc18f67020089e27401cbfd3db22083462f8daf833ea5d2a63ce3ce3",
+      "expected_sha256": "ba525828d0b8b21e5979a833452ec311f8569106ae40af80488f8ab903cb2295",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제178조의 등본·부본 교부 원칙에 맞는 ready/personal-delivery-required이며 기한 산정 대상이 아니다."
+    },
+    "case-124": {
+      "approved": true,
+      "source_sha256": "455e780e73ea5a60ba08b13ab03dbaf9d72b89e5447a59ebefca17dec048519f",
+      "fixture_sha256": "e551f96652a51a42853ca6f06babbb64f65d96daea9881c96d203aa282cca8b3",
+      "expected_sha256": "de31d6950a87e8594ff05b83e32c2dc4254a5d57e96e1b2eb211c1f2f950d9fd",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민법 제162조와 제157·160·166조를 적용해 2026-04-10부터 10년의 만료일 2036-04-10을 재계산했다. 해당 일은 목요일로 휴일 이월 문제가 없다."
+    },
+    "case-125": {
+      "approved": true,
+      "source_sha256": "a52c09a538db36e22053afce19f5448ed380378090b9c3448963fcf5a8dfd36f",
+      "fixture_sha256": "bde4b34e350eafea718410643d3041d23c3828a850de5185f5be775ea72cef47",
+      "expected_sha256": "413edad82657d03df0e5f0bc1b7beeeec11e24be8471581fd0734a44f0ca07ac",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제2조의 피고 보통재판적 기본 규칙과 조건부 라벨이 맞고, 구체 법원 특정에 필요한 위치 사실은 제공되지 않았다."
+    },
+    "case-126": {
+      "approved": true,
+      "source_sha256": "067e7f14eb3a611c136328e26854973c7e3362af6c74372164dc9aaa8035f8d4",
+      "fixture_sha256": "a2aad6a871b3399225fcf7f862ff0622fdd2f48ec09e0326ba7ece40c5e3a06d",
+      "expected_sha256": "1925dd628110104c91f46d6fbd3a9779f7955620bf694019cbc1d17096ebeb2d",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "제14조 제2항의 신청처분 당시법 원칙과 특별규정·곤란한 사정 예외를 대조했다. 조건부 article-14-fact-dependent가 맞다."
+    },
+    "case-127": {
+      "approved": true,
+      "source_sha256": "221e1af25cf955dda0bcbaf3052128faaea7f10ed71f2a999f01bb445e974bab",
+      "fixture_sha256": "a6e8ce06c6d7e38483f9b68f58394725b7910bd58a99144a89084d6d201015e6",
+      "expected_sha256": "d85381247b369efd9e294b3cf587780670d19ef2bcf935ab0c144a71bce051f3",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "특정 상법 개정 부칙·시행일·적용례가 제공되지 않아 abstain/verify-specific-addendum 및 null 기한이 맞다."
+    },
+    "case-128": {
+      "approved": true,
+      "source_sha256": "60f6b2e1450fe7f9769d3ab0698cbd08a2d30260eea6acbed0e3c829a25a4a1c",
+      "fixture_sha256": "c803d9fb263aff751acd1a8c4eccba7d35651ce393da9415b50a22f27d1f7880",
+      "expected_sha256": "01ae5f18e816f16e5f31943e7670dad33d3e806171a4d3a6b5ce02ff8a71f5e7",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제183조의 주소등 송달장소 원칙에 맞는 ready/address-or-workplace-service이며 기한 산정 대상이 아니다."
+    },
+    "case-129": {
+      "approved": true,
+      "source_sha256": "b0cedf92f3181c25b20e7dc42ceb8cd4df4d68d67055815c2902ac7030ed331b",
+      "fixture_sha256": "8fbb2eac0eebb7d74919461053e3b30985c98204ab90e797721d7d5ef7305aba",
+      "expected_sha256": "c6c686fe7bb092d15e708c3d81f54fac2a5646d1d4916fe1a2f40621183d1600",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민법 제163조 제1호와 제157·160·166조를 적용해 2026-05-10부터 3년의 만료일 2029-05-10을 재계산했다. 해당 일은 목요일이다."
+    },
+    "case-130": {
+      "approved": true,
+      "source_sha256": "eab2ea2ee181d5ed87f2a29dc44ab5674c5bcf7f41c1bca61cc650b00e0ba5fe",
+      "fixture_sha256": "d72665f3f86a51f64d6a969c6affde839b5280685247ad5efd0da5377bd0e12c",
+      "expected_sha256": "d41e051b42b8f06f2f2dd6c0b854ae9f3cc7f02666ddaafe6b7514d9fdda47f4",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제3조의 개인 피고 주소 기준 보통재판적에 맞는 ready/individual-address-forum이다."
+    },
+    "case-131": {
+      "approved": true,
+      "source_sha256": "d1719d225a9fea59e921920dee648d3093894bd90f19c41e64a1355bf1211c49",
+      "fixture_sha256": "0f26224025525ebe8c2b18c3eef1520ed0486b1988c70197b16024f433b6cff3",
+      "expected_sha256": "91c75551ed2cdbd6e954c215671a17a67acb2253c3ad942acad083eb47d41d64",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "제14조 제2항의 처분 당시법 원칙과 적용곤란 특별사정 예외를 대조했다. 제공 사실만으로 특정 적용법을 단정하지 않는 조건부 라벨이 맞다."
+    },
+    "case-132": {
+      "approved": true,
+      "source_sha256": "f48a1987cebda7ebbd3a653cfcf329e197910dd347833fb6a0b75869757880e9",
+      "fixture_sha256": "9c238b0502a1ddd7b7a97790551a16841a6fef85f252859b9464fd0a16af555a",
+      "expected_sha256": "2113e0ec4689cbf569893d44456383a5ab84de17adbbc1625e729388dcc3f0de",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "특정 형법 개정 부칙·시행일·적용례가 제공되지 않아 abstain/verify-specific-addendum 및 null 기한이 맞다."
+    },
+    "case-133": {
+      "approved": true,
+      "source_sha256": "2f980c918792f0fa7ee790d61b98ea734fd6bf09dbcadffacaae4e7069b9be68",
+      "fixture_sha256": "258ac18e782bdb6bb5b54d0272d704dc4d73e7cf9072702cf62be3d4c9102e01",
+      "expected_sha256": "2a7ea90ab41e02393d604cb2a4bfdcda03c2d4a88c21fcfa6781c1637c396287",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제186조 제1항은 동거 수령인의 사리분별 능력을 요구한다. capacity_confirmed=false이므로 재생성 expected의 abstain 및 substitute-service-needs-capable-recipient가 조문·사실·보류 기준과 일치한다. 기한은 산정 대상이 아니며, 쟁점·불리점도 요건 미확인을 정확히 반영한다."
+    },
+    "case-134": {
+      "approved": true,
+      "source_sha256": "e753a85453019bd6170a9fcff3a2306d1591d246cacfdad06a046182413b04c3",
+      "fixture_sha256": "74436c588f7765638c960fe0048b923d7150eca8690e566b6d930de1d653d5b4",
+      "expected_sha256": "ebd6129cfd345dd48edea93c82b2dc797bed7928987f15b13fb33f1b1e2ba29c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민법 제164조 제1호와 제157·160·166조를 적용해 2026-06-10부터 1년의 만료일 2027-06-10을 재계산했다. 해당 일은 목요일이다."
+    },
+    "case-135": {
+      "approved": true,
+      "source_sha256": "2da19ce297ed329e9c039a0096f53ecc28ca52e95ed5c3ca04fb624f8227ea66",
+      "fixture_sha256": "2575815fd834559ec6701775de1df8688741117da02c0f31ed8b200d3aec37cf",
+      "expected_sha256": "2e5e9312cae8148b4e73f604def4696e8cda36c24a91a5d15fa7e67f78a3c8c8",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제8조의 재산권 청구 의무이행지 특별재판적에 맞는 ready/place-of-performance-special-forum이다."
+    },
+    "case-136": {
+      "approved": true,
+      "source_sha256": "2f6330b18de1ffd9728ef24f4bb2332556c7110d12d87dda4d23d258a0c2f928",
+      "fixture_sha256": "4c7559e8529975991481daea7d50161af0fcc2dde04cb99a1ff6f07924ee3494",
+      "expected_sha256": "c87fbf2e33a39f7509059ee1203761f66f4f509f0fbb915fd84fb8615d80a7ef",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "제14조 제3항의 행위시법 원칙과 이후 법령변경 예외를 대조했다. 개정 후 제재 사안의 조건부 article-14-fact-dependent가 맞다."
+    },
+    "case-137": {
+      "approved": true,
+      "source_sha256": "abf1b620104aa802195f0e777bebdb5e904f26a3eb4cb2b5b3bab4bb546b11c5",
+      "fixture_sha256": "d5a4d9c3e5a0dc14c4f5f798fc4671eaae4c91841e7b3b9fb1bd50f1c0c5a940",
+      "expected_sha256": "23c75ce448e6d9912a5cd11ca1380e5e9ae0c1ce3dd6b83aea85db1d3655c989",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "특정 근로기준법 개정 부칙·시행일·적용례가 제공되지 않아 abstain/verify-specific-addendum 및 null 기한이 맞다."
+    },
+    "case-138": {
+      "approved": true,
+      "source_sha256": "d1fbc7666858fecfbbd1d1d31b62555c4601da9b1c148fd6962c933666683d79",
+      "fixture_sha256": "3278ff1c388ba3d5dd9c71159313bc006ec6a4bf36c5dda5428a7efbd1ef751d",
+      "expected_sha256": "43511b0752e0f9d6e25ab298e3e87a3890c999ab7ca173531944086d32d0bf45",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제187조의 제186조 송달불능 선행요건과 법원사무관등의 발송 요건에 맞는 조건부 라벨이다."
+    },
+    "case-139": {
+      "approved": true,
+      "source_sha256": "b5f59ecddd1c11bb67c086664643d5c5885fcd2fd1d8418585649ceaee9ec11e",
+      "fixture_sha256": "935689b2293d6c0e27b85f6e5582e3633874328b1b3020e0afb591cd9290b0ac",
+      "expected_sha256": "72760d71fccd2e8198e7ad7c57c10142685b61623b33682dd29cb6a4497264ae",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민법 제166조 제1항상 권리행사 가능일이 시효 기산점이다. right_exercisable_date=null이므로 재생성 expected의 abstain, starts-when-right-exercisable 및 deadline_date=null이 조문·사실·보류 기준과 일치한다. 쟁점·불리점도 기산점 결손을 정확히 반영한다."
+    },
+    "case-140": {
+      "approved": true,
+      "source_sha256": "7977eac4c2496ea1925e9ad5572a4c981fdcc9b4f55555a10876e416939a69ed",
+      "fixture_sha256": "c404b02c1491a48855b6bc7a13cf26c8475291e7ab4dfa13dd1b87c7b0496a75",
+      "expected_sha256": "8d69fd4cb9c478e6a573d07d2c47dc30d4c6a10bca0340f65bfeab7b13b40d1a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제18조 제1항의 불법행위지 특별재판적에 맞는 ready/tort-place-special-forum이다."
+    },
+    "case-141": {
+      "approved": true,
+      "source_sha256": "c72e6d0c1bc13eee8ed4e5cdc5b7e6ec66981318f48d318923d8e3f88c797fa9",
+      "fixture_sha256": "eaa3807f84b76c343d0f74fe9e7fc1502a2b1d3c6571b51b94dfaacd4b64ce5a",
+      "expected_sha256": "fb164c86aaabb0120967a07aa4181609c64adb2a400e3bc1d96f107ec8887546",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "제14조 제3항 단서의 사후 경한 제재기준 적용과 특별규정 예외를 대조했다. 조건부 article-14-fact-dependent가 맞다."
+    },
+    "case-142": {
+      "approved": true,
+      "source_sha256": "11d95ef0ad42c97b83fcbc544b25b891efea90c7fcffbf66ede84fdac0ce45d8",
+      "fixture_sha256": "d01a88457286ee1ed037b161c322d9e0b9346420304de3239f0d73f2f35a5c81",
+      "expected_sha256": "748f2e8dd25e102b522edc51e76d70c3d06305a8a11e83271e5b6cdf88775f00",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "특정 국세기본법 개정 부칙·시행일·적용례가 제공되지 않아 abstain/verify-specific-addendum 및 null 기한이 맞다."
+    },
+    "case-143": {
+      "approved": true,
+      "source_sha256": "b26e026677e7f63b84135702a5bf4e296f5ebac0565c562271d788bbea3c2b14",
+      "fixture_sha256": "4e6b36cf3f3d437e0689b067cf97a968e550d82bd1a5e1d310f81d4ba1008b7b",
+      "expected_sha256": "8a4f4a5d47ec7a127d04d5ac4f87cad03dcba8a5da22f82ff78054c7b58882f3",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제189조를 2025-08-03 행위일(현행 조문 시행일 2025-07-12 이후)에 대조했다. ready/effective-upon-dispatch가 맞고 deadline_date는 비시효 항목이라 null이다."
+    },
+    "case-144": {
+      "approved": true,
+      "source_sha256": "4aa66b82f9346d101a8e393aa54e8a4e7f8036000778d0378df6fa602ed43d9e",
+      "fixture_sha256": "db8b1b511fbd6bc4641f2785b1c6d98c06a230999c6eacad0d14b00bf4e2da5a",
+      "expected_sha256": "d59a875ed69d419806f47634d8eb553bad8a0c49b5afbd083356f3976d20e5fc",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민법 제766조 제1항과 제157·160조를 적용해 안 날 2026-04-10부터 3년의 만료일 2029-04-10을 재계산했다. 해당 일은 화요일이다."
+    },
+    "case-145": {
+      "approved": true,
+      "source_sha256": "9735cfcc2ec1609591a23b480f89f6e216147d9ca12d1f4d3f20f9746294973b",
+      "fixture_sha256": "261e8e2bb75e717fb35590463ad5929b898265cfd1986d5202dd559964e83c49",
+      "expected_sha256": "d1a0a6849c9ab6a42b6f691b2493904d3acc7356744f3a753bc40f6730017b66",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제20조의 부동산 소재지 특별재판적에 맞는 ready/real-estate-location-special-forum이다."
+    },
+    "case-146": {
+      "approved": true,
+      "source_sha256": "537afa71a693c57895e0214accbb982e6b449bc3111ff67d4f37b82859f07317",
+      "fixture_sha256": "a1ea79a79d5d7579a654554d0ac885f5b8eb77ec1e21a8e5abb7964dcf22bd39",
+      "expected_sha256": "8d36405dfd9a779cb20a709490872cd254991fa896dd8bb759bc77302605cf7a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "행정기본법 제14조는 특별규정을 우선시한다. special_rule_claimed_but_missing=true이고 원문이 없으므로 재생성 expected의 abstain 및 article-14-fact-dependent가 조문·사실·보류 기준과 일치한다. 기한은 산정 대상이 아니며, 쟁점·불리점도 특별규정 결손을 정확히 반영한다."
+    },
+    "case-147": {
+      "approved": true,
+      "source_sha256": "bf5fe80591f83ed2b62a29f51c5743f8b3bd721d06a9fc66adcd230389faf7ba",
+      "fixture_sha256": "f919188bfe48e132bf6cde1addb94468fbe26f56f524d186b175a164251bdb76",
+      "expected_sha256": "cc56ecb7334931716f93455297c6f04d37459d382c498c1717b8ace9f323cf6a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "특정 개인정보 보호법 개정 부칙·시행일·적용례가 제공되지 않아 abstain/verify-specific-addendum 및 null 기한이 맞다."
+    },
+    "case-148": {
+      "approved": true,
+      "source_sha256": "faf78d1970eacf37df57d828c3d7f423a9271fb57fbdf86f380b13f7f91cda18",
+      "fixture_sha256": "84d6353ca5f74ea9a807c60595047d843af69d64e1db5ab695cc52341a60f985",
+      "expected_sha256": "e947738e03f4ec59d2cb3c121ec6f461b61fec5c7f79977e299980e8a547ec16",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제194조 제1·2항은 주소등 불명 요건과 신청 사유의 소명을 요구한다. supporting_evidence_provided=false이므로 재생성 expected의 abstain 및 public-service-requires-statutory-ground가 조문·사실·보류 기준과 일치한다. 기한은 산정 대상이 아니며, 쟁점·불리점도 소명 결손을 정확히 반영한다."
+    },
+    "case-149": {
+      "approved": true,
+      "source_sha256": "16d4a70f15bb604927d575b06bdd0e009d1dbab7d2c61850fae410afb1d91882",
+      "fixture_sha256": "b314a2ba7121a8f14cbeb95a1e9b94215ae8cb0e31657560e0649e9dc98463a8",
+      "expected_sha256": "06f62bbff47f4195669b59d52f2776ff6dabc6b5e910888b6ff3282b3dc00a68",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민법 제766조의 주관적 3년 기산점은 손해와 가해자를 안 날이다. knowledge_date=null이므로 abstain/knowledge-date-required 및 null 기한이 맞다."
+    },
+    "case-150": {
+      "approved": true,
+      "source_sha256": "8abc47fb9f25bd6dcf19a9e8af4d8d3bcee5adc54d7cda5718da92e5557f8b55",
+      "fixture_sha256": "cee63fcb5b4590bf8e94aad7b4b3aec4150ade11201b337799c1d2d458c5827b",
+      "expected_sha256": "bcb145745b9e14b871400fa00a74542ed21e8d05f0e39f7292d1afb1e1e1a6e6",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "민사소송법 제24조는 특허권등 여부와 관할법원 소재지에 따라 갈린다. specific_court_facts_complete=false에 대한 조건부 ip-special-forum-subject-to-statute가 맞다."
+    }
+  }
+}

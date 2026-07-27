@@ -1,0 +1,17 @@
+{
+  "title": "공식 근거 제목",
+  "source_tier": "P1",
+  "official_url": "https://www.law.go.kr/",
+  "retrieved_at": "2026-01-01T00:00:00+00:00",
+  "source_text_file": "C:/LegalWorksets/.../official-source.txt",
+  "citation": "법령명 제00조 또는 법원 0000. 0. 0. 선고 0000 사건",
+  "effective_from": "2026-01-01",
+  "verification_url": "https://lx.scourt.go.kr/",
+  "verification_text_file": "C:/LegalWorksets/.../official-verification.txt",
+  "verified_at": "2026-01-01T00:00:00+00:00",
+  "mcp_server": "korean-law",
+  "mcp_version": "4.7.4",
+  "mcp_tool": "get_law_text",
+  "mcp_verified_at": "2026-01-01T00:00:00+00:00",
+  "negative_search_only": false
+}

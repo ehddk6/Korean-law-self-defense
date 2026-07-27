@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-091": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2310960d900ea0eef4a1499df5ba661ee48bb03dbce67d8afa9554f110fb4f87",
+      "fixture_sha256": "9cc3dfca701593b88a35e0a0a51186d952bd2e5955eda72cbd6fb8df201aeffd",
+      "notes": "무결성 연결이 유효하고 공식 기각 주문과 affirmed가 일치한다. fixture는 사건 식별자·주문·사건별 최종 판단을 제거했으며, 쟁점과 adverse는 원문 근거로 지지된다.",
+      "source_sha256": "69ae0e9976aa652895108a2e69e0efaa0ed93219e3facece527472fff0010da6"
+    },
+    "case-092": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8093c8d772485bcec6e5a754f5c7d209f815e4e1ffcbe7efc188e00632fc77fb",
+      "fixture_sha256": "25ef05f5f3eed9631b82eb21ec2e5d987f4597e4c0c642d391f54a871e9f419b",
+      "notes": "무결성 연결, 파기환송 표지, 원문 근거와 개인정보 검사는 통과한다. 다만 fixture에 원심 판단이 재판에 영향을 미친 위법이라는 사건별 직접 결론이 남아 outcome을 누출한다.",
+      "source_sha256": "c5391f4560012019004c3cc7048040c050165b07edcf13476f9a0e79da24311c"
+    },
+    "case-093": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "80ff70dab04f6eda2ddce6e0cf61d2a0ee343d744d8a2d7fe77c9d8ed5badad4",
+      "fixture_sha256": "424976e47c3c44a427c19777cb0c842b68d032515d21b337c993cb2f25f44486",
+      "notes": "무결성 연결과 공식 파기환송 주문이 expected와 일치한다. fixture에는 충분한 법리·사실 맥락만 남고 주문과 최종 결론은 없으며, 쟁점과 adverse가 원문으로 지지된다.",
+      "source_sha256": "ffdc5ec7cd21e5850b8d7ffbcd6dcc5395ce6f5772ed4692849cb8d178688010"
+    },
+    "case-094": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b38407a53f7b0603e6f0111d4108c0866b153406072bf1fe364d66e8e8e8fc9f",
+      "fixture_sha256": "eccff2e6196edd7945aacf8bc054fce886b366e3e30469d8abc53c27bd635b1e",
+      "notes": "무결성 연결과 파기환송 표지가 일치한다. fixture는 사건번호·source ID·주문·사건별 최종 판단을 가렸고 개인정보 패턴이 없으며, expected 쟁점과 adverse는 원문에 근거한다.",
+      "source_sha256": "40ddd0797f3c88f4850d8dd669629e946529db167233006f75a962e0e5ec9188"
+    },
+    "case-095": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "5af1a7dbc29cbd4823bae3233173c39489214478b8f15113f8e15469eafe8f90",
+      "fixture_sha256": "529056a449cfe5fa3f97634919095616ddcd53af9c2068d746535e56b874078d",
+      "notes": "무결성 연결과 공식 파기환송 주문이 expected와 일치한다. fixture는 현재 사건 식별자와 주문·최종 결론을 제거했고 비식별 마스킹을 사용했으며, 모든 쟁점과 adverse가 원문으로 지지된다.",
+      "source_sha256": "38d714d23746b0fcfe0c441bcc895337dd727cc55f8a94c19e54f4bcb9bdc874"
+    }
+  }
+}

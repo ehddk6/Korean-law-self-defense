@@ -1,0 +1,14 @@
+{
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "일반 채권 10년 소멸시효와 기간 계산"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "source_sha256": "455e780e73ea5a60ba08b13ab03dbaf9d72b89e5447a59ebefca17dec048519f"
+}

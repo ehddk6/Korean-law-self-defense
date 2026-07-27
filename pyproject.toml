@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "korean-legal-workbench"
+version = "0.1.0"
+description = "Privacy-first Korean legal self-representation workbench for Codex"
+requires-python = ">=3.12"
+dependencies = [
+  "lxml>=5.3,<7",
+  "pypdf>=5.9,<7",
+  "python-docx>=1.2,<2",
+  "reportlab>=4.4,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.4,<10", "pytest-cov>=6,<8", "pyyaml>=6.0,<7"]
+hwp = ["olefile>=0.47,<1", "pyhwp>=0.1b15"]
+
+[project.scripts]
+legal = "legal_workbench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["legal_workbench*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

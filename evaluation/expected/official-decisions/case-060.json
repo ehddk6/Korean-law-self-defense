@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "민법 제815조 제1호가 혼인무효의 사유로 규정하는 ‘당사자 간에 혼인의 합의가 없는 때’란 당사자 사이에 사회관념상 부부라고 인정되는 정신적·육체적 결합을 생기게 할 의사의 합치가 없는 경우를 의미한다."
+  ],
+  "expected_issues": [
+    "우리나라 국민이 외국인 배우자에 대하여 혼인의 의사가 없다는 이유로 혼인무효 소송을 제기한 경우, 외국인 배우자의 혼인의사 유무를 판단할 때 고려하여야 할 사항"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2019므11584, 11591",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-060",
+  "source_sha256": "f467a82b592a72b58b1dafaf5ea831d779b26650e30be553fca571eaeffca9d4"
+}

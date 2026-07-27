@@ -1,0 +1,357 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-051": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fd1379a0d78af3b031e15c82b3d106afdc19bd8bbdfebc7308ee8472b32a23c7",
+      "fixture_sha256": "d26801bce23942311e08747e1fdbb1f62884b04300714669dbe066dd88d9c621",
+      "notes": "재산분할 부분 파기환송·나머지 상고기각 주문과 mixed가 일치하며, 취하 효력 쟁점과 반대논거가 원문에 지지된다. fixture에는 사건번호·source ID·목표 주문이 없다.",
+      "source_sha256": "5fb56dad9e84cdc2285a9bccfa08131e480c0084c883de7be09a6efe96bdf761"
+    },
+    "case-052": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "494cb2a9dab00cab82a6276b05df966a3f3237a1825ce0e9757c81544dc16eeb",
+      "fixture_sha256": "f9c136ee2c7926a3d6fa5040654018b2ccbf257210ccea204fea9a1701be00df",
+      "notes": "주문과 mixed 및 쟁점·반대논거는 원문에 부합한다. 그러나 fixture가 현재 사건의 재산분할청구 부분은 소송수계 대상이 아니라고 직접 결론내려 목표 판단을 누출한다.",
+      "source_sha256": "e314a7a7aa277bfa02fa266aa4db7cda3d5e3c3a5b79ac862f9719d4513e00aa"
+    },
+    "case-053": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "33beafbf71f488bcdf4047e129e518cb2154e06a3093cc17d8bdf48615049103",
+      "fixture_sha256": "c6f51b455e2fa9825d91dd5b3fb72816fa4d491e2c7e384a443a21b245715689",
+      "notes": "재항고 기각 주문과 affirmed가 일치하고 문서제출명령·통신비밀 쟁점 및 양측 논거가 원문에 지지된다. fixture는 목표 결론 없이 사실과 상충 법규를 제시한다.",
+      "source_sha256": "07a871c42f9363e74c3a49989d25b735d26c2cc9ca009fc5625931aabade1167"
+    },
+    "case-054": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f7807679293df0348e75f1803579fc50570f3fe6cdee26a2294385a66ea4a882",
+      "fixture_sha256": "688f0e40f868669fb8042c5c66498e23b2aecf74fe3a6a8ec881e70e5c8f2144",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치하며 유책배우자 예외와 혼인계속의사 쟁점이 원문에 지지된다. fixture는 일반 법리만 남기고 사건 결론을 제거했다.",
+      "source_sha256": "56e55ed2cb68dcb05c07311736193b376de304de1184484c1d7ebb2598d5d74e"
+    },
+    "case-055": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "a99495c486d95d0e3124ad2a65aee4a6392e567cd01d582fc363ded8e8a8fb61",
+      "fixture_sha256": "cc75d76f355fe4baff600502c125175c7063a052fc4d70b794a6ab74fec93ce1",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. 혼인파탄 판단요소와 유책배우자 예외 및 반대논거가 원문 법리에 지지되고 fixture에는 사건 결론이 없다.",
+      "source_sha256": "6de0d39b4c5b0be144e5112bddf15986cf00341051925451acc16d494981b6e1"
+    },
+    "case-056": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "5bfd26a06ad68a4ebe2de5751a5307f1484666f99c2647806cf9e69c56521076",
+      "fixture_sha256": "b331caaa819926a2819664692e0cc888bd3d46ffae4b491e33f1b134c8d50f1e",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치하며 유책 희석·쌍방 책임 쟁점과 반대논거가 원문에 지지된다. fixture는 분석 가능한 법리만 남겼다.",
+      "source_sha256": "4fa56cccbf39d56d68f28b3105f1fbd3e54ff19737b6eebb3b24e9bb8baeef4d"
+    },
+    "case-057": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fec44a67ed283f465e09d7e06dbb0cd02d63ce7785f1c0652e234c6cc3ee09e4",
+      "fixture_sha256": "2d42b926197cf9f6a2c647e8a900f51604fcbbc10a5c3300b20abd1845bb838d",
+      "notes": "상고기각 주문과 affirmed가 일치하며 유책성 약화와 혼인계속의사 쟁점 및 반대논거가 원문에 지지된다. fixture에 목표 주문·사건 식별자가 없다.",
+      "source_sha256": "12f015114b788e1c30574e3f738731e07da87b6aa94bd8105d6bf5525f26a035"
+    },
+    "case-058": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "be0d845611bdbd0b2732c43a2cfd83780fc0803a64730e25cbdbfd98c9703f71",
+      "fixture_sha256": "7f083f87952a83e8740917ae18c2d60cd01d39fdd192e2c2c8ce4902861e6d10",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. fixture는 300자 이상의 가족관계·해외사업·치료 사실을 제공하면서 목표 판단 직전에 차단되었고, 쟁점·반대논거도 원문 사실로 지지된다.",
+      "source_sha256": "041962361bfdc8339135f5aa3656c1f9877976f11e00015b954d12f63b223b2f"
+    },
+    "case-059": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6b525714be7046457d2c6de67e0943677e8ecfdfab4ff147538d5a92cec410c1",
+      "fixture_sha256": "fb45381e883f145fbb59a46cbbce21c7a322debe469b28a8ebaa5a7ff7ee8566",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치하며 별거·태양광사업·토지조정 쟁점과 반대논거가 원문 사실에 지지된다. fixture에는 목표 결론이 없다.",
+      "source_sha256": "29c92d1d33bed6c06fdbd957baa3ad1a449d95439e877c376e1bc21e98d082ca"
+    },
+    "case-060": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "5c3a2c26ce1f3fcb4c8303c6b77fd5be875b20921bd9cc3fcb046be8069969f2",
+      "fixture_sha256": "a70c9aadda813a1e3f2984d8fdac7dfe3a496d2a30839107dae76e31a45f8750",
+      "notes": "주요 부분 파기환송 주문과 reversed-remanded가 일치한다. 혼인의사·혼인무효 및 외국인 배우자 판단 쟁점과 반대논거가 원문에 지지되고 fixture는 원심 판단 전에서 끝난다.",
+      "source_sha256": "f467a82b592a72b58b1dafaf5ea831d779b26650e30be553fca571eaeffca9d4"
+    },
+    "case-061": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "51c1d069cda5a8c69c8f4a69ddbb995a98566fc4deb4cfe232bc3dc5143b158e",
+      "fixture_sha256": "7dc1c5d9c28708ed7c9f93a0b39f950b3987612c1756bae7f7fcb9de27286cd1",
+      "notes": "참가인 2 부분 파기환송·나머지 상고기각 주문과 mixed가 일치한다. 촉탁직 갱신·재고용 기대권 쟁점과 양측 논거가 원문에 지지되며 생년월일은 생략 처리됐다.",
+      "source_sha256": "c017dbe53106f0146f41443aa0f260354a4e91e04aaba4299c801b7d852fdad3"
+    },
+    "case-062": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2f454d7bd6cb1201b2144049881968dc782b82a800d9a00238083058024bcf6d",
+      "fixture_sha256": "46c8a7d6e4a59864a9101364bddbf07b413beaf9113501d9af8197cde611e22f",
+      "notes": "상고기각 주문과 affirmed가 일치하며 정규직 전환 기대권과 합의서 거부의 합리성 쟁점·반대논거가 원문에 지지된다. fixture는 사실관계만 제시한다.",
+      "source_sha256": "26de6b3cdcbac73bb262799f6eee0380de06506b3ab273ae8599570b5d8f6ae1"
+    },
+    "case-063": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d25374861145ea828a0661865aba3ac755b652f9721d0d882195e05a4c53ce48",
+      "fixture_sha256": "9182d50f1ec6787f6cae34571544fcd2bcdc56a60ff318dd475c9662672a2dd3",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치하며 복직명령·업무지시 거부·복수 징계사유 쟁점과 반대논거가 원문에 지지된다. fixture에는 대법원 결론이 없다.",
+      "source_sha256": "6c30aeb0129702c7359b45cf30bf0c2fcec0a5cbd8c7a24609536c24f37f2574"
+    },
+    "case-064": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f8dcb6a215cf33322b6aa4af05bf183379b5ababe07b0baa13b50482b3c35edf",
+      "fixture_sha256": "637ff8120d8b901ce70b21f573bc8c20e552e5e26149c770d872e3496fccd25f",
+      "notes": "상고기각 주문과 affirmed가 일치한다. 재고용 관행·기대권·정년 후 임금 쟁점과 반대논거가 원문에 지지되고 fixture는 사실과 당사자 주장까지만 제공한다.",
+      "source_sha256": "4a1961b0bca008af4c703b51a1adecf0acfabed6c38c0b336de44b83fc0c59a9"
+    },
+    "case-065": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b6f7ec939008c7c729d990e795ee16b4dc1010ed3ead8d159e418a4cec2efc30",
+      "fixture_sha256": "835fa347298fb245dc1e0a8e68173314a654c2c5a171b3f4999d08367072804d",
+      "notes": "부당해고 부분 파기환송·나머지 상고기각 주문과 mixed가 일치한다. 성과급 재분배·감사방해·징계양정 쟁점과 반대논거가 원문에 지지되며 fixture의 결론은 원심 판단으로 식별된다.",
+      "source_sha256": "e4f88f46b3cc7077497b908c69b8acc10c0b8a8341497c2328564b864969507e"
+    },
+    "case-066": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2f9ae17b9407925739763c71cace9f3464aeba4f3603d270bc7bf7056a747639",
+      "fixture_sha256": "89ba75e04be2abb390c25433a68b1eaf0c6771e7d4ac8a09ae14e2d8207a7586",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. 해고 존재와 노동위원회 판단 쟁점·반대논거가 원문에 지지되고 fixture는 300자 이상의 사실 맥락 뒤 목표 판단 전에 끝난다.",
+      "source_sha256": "1094dc56f606314940c6eccbbcbbc4d8fac2c0dc0cc042128429db4ae493c37e"
+    },
+    "case-067": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "9dc30cbdd34c603f4f9ca46e03368c4014f1c8262da846e48b4c98415a021b21",
+      "fixture_sha256": "1a29c76546de9ad9cfc433cb482fea31cde171471c7ba2142b57dc5e6a493106",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치하며 취업규칙 불이익변경과 인사위원회 공정성 쟁점·반대논거가 원문에 지지된다. fixture에는 대법원 판단이 없다.",
+      "source_sha256": "5fa63587064d3c4ca2f7e36dd3ec58fc6097c5f4a1582254c922e299400f0e73"
+    },
+    "case-068": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "592ae78030b0fb0af8b64227824e345a3fcbab43fa505f2307ffcba4bad3da33",
+      "fixture_sha256": "7a9d12fe06e4fea4c994f5b3abb17d16ee368ddafa775b6e2f6bff3cccb4166e",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. 경영상 필요·대상자 선정·노조 협의 쟁점과 반대논거가 원문에 지지되고 fixture는 하급심 판단과 쟁점까지만 제시한다.",
+      "source_sha256": "91c28d15fa5781f48040a36280bb9cd183b219626f193620d1d379b892196839"
+    },
+    "case-069": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b8fba5992e179b5e890d592a88a48711ed454430be6d6b4523a9aeaedbad6e6b",
+      "fixture_sha256": "1e26eae49c896af55fdbc41913b1f5f392399c9e8220a5f4623a3240406d819a",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. 해고사유 특정과 방어 가능성 쟁점·반대논거가 원문에 지지되며 fixture는 원심 판단만 제시하고 목표 결론은 제거했다.",
+      "source_sha256": "bdc0668105abb15dc6e94cf5b733e1efca789055963428d824284c84320eaf88"
+    },
+    "case-070": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6cfd99aa2537f5b998ed42dba75451f3eb029aeb22b87d464916a3af6aae2e6f",
+      "fixture_sha256": "422e463a2e9d88dae9399ae7a68bf404182b54d5af96aacf11ead0143158aba1",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. 보험설계사 위촉형식·TRI 조직·직무변경에 관한 쟁점과 반대논거가 원문에 지지되고 fixture에는 목표 판단이 없다.",
+      "source_sha256": "4189938079f49508e854b0d7cfaf428d69f7f98c00beeddc9bdbba2da5dc603b"
+    },
+    "case-071": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "10be895a50c25838bcce94a47b6c20414d2a63aa05e3b900c6cd3dd09732dc83",
+      "fixture_sha256": "cc193e3aed0be3703becb7213593eba0aaf2e7869be77e56340108b8d92d3e51",
+      "notes": "상고기각 주문과 affirmed가 일치하며 분양권 보유시기·주택 수·비과세 쟁점과 반대논거가 원문에 지지된다. 주소·동호수·아파트명은 생략되고 목표 결론도 없다.",
+      "source_sha256": "96296a8711d66a14203eed06e34f164408dd9923575772b03fc4136cb56bf571"
+    },
+    "case-072": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bfc8f0a89a4b13cac99551e8ad55a7612505adbef734d157b34f27a8caf36ee8",
+      "fixture_sha256": "54add977b03edaf735a0fde3d993fc47ad94d45ef01b9424a9da0fcc6b640893",
+      "notes": "상고기각 주문과 affirmed가 일치한다. 장애인 고용부담금의 제재성·손금산입·경정거부 쟁점과 반대논거가 원문에 지지되며 fixture는 처분 경위만 제시한다.",
+      "source_sha256": "efa04d321281f9b7b272c3cf7e56539721e68fe067628d1f6f5eab2d0797614b"
+    },
+    "case-073": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e95a25a45f9ba9e20ebc530e39fcaa9b437437411ce4b8ea58d77e88dd7acf8c",
+      "fixture_sha256": "2ea215c8fbababd357ed3196181fbcdce83d6a8d70dc1a552ee96c8593d3ac01",
+      "notes": "상고 모두 기각 주문과 affirmed가 일치한다. 주식매수선택권 비과세·절차요건·환급 쟁점과 반대논거가 원문에 지지되며 회사명은 마스킹되고 목표 결론은 없다.",
+      "source_sha256": "818373c022cd8d3de458ebbbe0c3431dec11d662d8baa76b4701531ed8cd19cf"
+    },
+    "case-074": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "de1c66f78f469e5782f9593d608337523b936b5799ca0f883d046f44ec5d9b57",
+      "fixture_sha256": "f30cd67bb9a8a34d86d245c77d12906df6fb302a64a16887731c773833673c60",
+      "notes": "전부 파기환송 주문과 reversed-remanded가 일치한다. 세탁물 전량 위탁·부당청구·환수 범위 쟁점과 반대논거가 원문에 지지되며 시설 상호는 생략되고 목표 판단은 없다.",
+      "source_sha256": "13de94ada637e728669c560bba8e52711ec728b39856360ffc38b48dec806fe0"
+    },
+    "case-075": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bdc27e2af945850a73dd17fada60a6a6e9c8c74a3e6c068438810ff03644ffdc",
+      "fixture_sha256": "eff2dd7f28bc6e8c8c6991cac5c0032506bbfbdfe59569ffb73d8a7ba6a78dca",
+      "notes": "상고기각 주문과 affirmed가 일치한다. 감면대상 증자·외국인투자비율·조약 제한세율 쟁점과 반대논거가 원문에 지지되며 fixture는 사실과 양측 산식만 제공한다.",
+      "source_sha256": "9a1784dea8493ec8a3f9cc2979b653aad17b8833326795cb13b66c4c6aa2175a"
+    }
+  }
+}

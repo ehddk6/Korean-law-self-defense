@@ -1,0 +1,39 @@
+{
+  "adverse_points": [
+    "부칙 조문 내용이 제공되지 않았다.",
+    "개정일이 특정되지 않았다.",
+    "개정 전 사실인지, 개정 후 효과인지 판단할 사실이 부족하다.",
+    "특별 경과규정이나 예외규정 존재 여부를 확인할 수 없다."
+  ],
+  "citations": [
+    "\"law_name\": \"민법\"",
+    "\"article\": \"부칙\"",
+    "\"article_text\": null"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 민법 부칙이나 article_text가 null이다.",
+    "필수 사실: 부칙 원문, 개정일, 문제된 사실 발생일, 적용 대상 경과규정이 필요하다.",
+    "예외: 특별 경과규정이 있으면 개정 전 사실에도 개정법 적용 여부가 달라질 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-122",
+  "supported_facts": [
+    {
+      "claim": "부칙 원문이 제공되지 않았다.",
+      "evidence_excerpt": "\"article_text\": null"
+    },
+    {
+      "claim": "부칙 문언이 제공되지 않았다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    },
+    {
+      "claim": "개정일이 알려지지 않았다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[1] 해고란 실제 사업장에서 불리는 명칭이나 절차에 관계없이 근로자의 의사에 반하여 사용자의 일방적 의사에 의하여 이루어지는 모든 근로계약관계의 종료를 의미한다."
+  ],
+  "expected_issues": [
+    "해고의 의미 및 묵시적 의사표시에 의한 해고가 있는지 판단하는 방법",
+    "전세버스 운송사업을 하는 甲 유한회사의 관리팀장이 버스 운전원 乙의 통근버스 무단결행을 지적하는 과정에서 乙과 말다툼을 하면서 乙에게 ‘사표를 쓰라.’는 말을 수차례 반복하였고 乙은 다음 날부터 출근하지 않았는데, 甲 회사는 이를 문제 삼지 않다가 약 3달 뒤 乙에게 ‘해고한 적이 없으니 원하면 언제든지 출근하여 근무할 수 있으므로 속히 출근하여 근무하기 바란다.’는 취지의 통지를 한 사안에서, 甲 회사가 乙을 해고한 것으로 "
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2022두57695",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-066",
+  "source_sha256": "1094dc56f606314940c6eccbbcbbc4d8fac2c0dc0cc042128429db4ae493c37e"
+}

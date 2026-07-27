@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "주식매수선택권은 그 행사 여부가 전적으로 이를 부여받은 임직원의 선택에 맡겨져 있어 단순히 주식매수선택권의 부여 자체만으로는 어떠한 소득이 발생되었다고 볼 수 없고 주식매수선택권을 행사하여 주식을 취득할 때에 비로소 해당 주식의 시가와 주식매수선택권 행사가액의 차액에 상당하는 경제적 이익이 확정 내지 현실화된다."
+  ],
+  "expected_issues": [
+    "벤처기업 주식매수선택권 행사이익에 대한 과세특례를 정한 취지 / 구 조세특례제한법 시행령 제14조의4 제2항 및 제3항이 정한 방식 및 절차를 이행하는 것이 구 조세특례제한법 제16조의4 제1항 및 제2항에 따라 적격주식매수선택권에 대하여 주식매수선택권 행사 시 소득세가 과세되지 않기 위한 필수적 요건에 해당하는지 여부(적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2025두35079",
+  "outcome": "affirmed",
+  "scenario_id": "case-073",
+  "source_sha256": "818373c022cd8d3de458ebbbe0c3431dec11d662d8baa76b4701531ed8cd19cf"
+}

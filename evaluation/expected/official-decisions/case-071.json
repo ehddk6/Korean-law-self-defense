@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "이러한 규정의 문언 내용과 체계, 입법 취지 등에 비추어 살펴보면, 구 소득세법 제104조 제7항 제4호의 ‘1세대가 보유한 주택 등 수의 합이 3 이상인 경우’에 해당하는지를 판단할 때, 분양권은 청약당첨일부터가 아니라 분양계약일부터 이를 보유한 것으로 보아야 한다."
+  ],
+  "expected_issues": [
+    "구 소득세법 제104조 제7항 제4호의 입법 취지 / 구 소득세법 제104조 제7항 제4호의 ‘1세대가 보유한 주택 등 수의 합이 3 이상인 경우’에 해당하는지를 판단할 때, 분양권의 취득 시기(=분양계약일)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2024두54560",
+  "outcome": "affirmed",
+  "scenario_id": "case-071",
+  "source_sha256": "96296a8711d66a14203eed06e34f164408dd9923575772b03fc4136cb56bf571"
+}

@@ -1,0 +1,43 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "당사자가 근로계약이 아니라 보험설계사 위촉계약을 체결했으므로 독립적인 보험설계사 관계였다고 볼 형식적 근거가 있다.",
+    "PSM의 업무가 보험인원 모집·관리를 중심으로 하는 매니저 직무였다는 점은 실적과 영업 자율성이 중시되는 독립 업무라는 논거가 될 수 있다."
+  ],
+  "expected_issues": [
+    "보험설계사 위촉계약을 체결한 노무제공자가 근로기준법상 근로자에 해당하는지",
+    "회사가 교육과 현장 경험을 거쳐 장기적으로 관리자로 양성하려 한 TRI 조직 편입이 종속적 근로관계를 뒷받침하는지",
+    "FP에서 PSM과 지점장 보조업무를 하는 AM으로 이어진 직무 변경과 계속 근무가 근로자성 판단에 미치는 영향"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "gold_evidence": {
+    "adverse_points": [
+      {
+        "evidence_excerpt": "참가인과 보험설계사 위촉계약을 체결한 후, 2010.",
+        "text": "당사자가 근로계약이 아니라 보험설계사 위촉계약을 체결했으므로 독립적인 보험설계사 관계였다고 볼 형식적 근거가 있다."
+      },
+      {
+        "evidence_excerpt": "1.부터 참가인의 TRI△△지점에서 PSM(Pro Sales Manager, 보험인원 모집 및 관리업무를 하는 매니저 직급)으로 근무하였으며, 2013.",
+        "text": "PSM의 업무가 보험인원 모집·관리를 중심으로 하는 매니저 직무였다는 점은 실적과 영업 자율성이 중시되는 독립 업무라는 논거가 될 수 있다."
+      }
+    ],
+    "issues": [
+      {
+        "evidence_excerpt": "참가인과 보험설계사 위촉계약을 체결한 후, 2010.",
+        "text": "보험설계사 위촉계약을 체결한 노무제공자가 근로기준법상 근로자에 해당하는지"
+      },
+      {
+        "evidence_excerpt": "참가인은 2010년 ‘FP(Financial Planner) 인턴십’ 제도를 도입하여 대학교 졸업예정자와 졸업자 등을 모집하고 실습교육을 실시한 다음 현장 경험을 거쳐 장기적으로 영업관리자나 재무설계전문가로 양성하는 ‘TRI(Trust Respect Innovation) 조직’을 마련하기로 하였다.",
+        "text": "회사가 교육과 현장 경험을 거쳐 장기적으로 관리자로 양성하려 한 TRI 조직 편입이 종속적 근로관계를 뒷받침하는지"
+      },
+      {
+        "evidence_excerpt": "1.부터는 참가인의 □□지점 등에서 AM(Assistant Manager, 지점장의 업무를 보조하는 총무 직급)으로 근무하였다.",
+        "text": "FP에서 PSM과 지점장 보조업무를 하는 AM으로 이어진 직무 변경과 계속 근무가 근로자성 판단에 미치는 영향"
+      }
+    ]
+  },
+  "official_case_number": "2021두33715",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-070",
+  "source_sha256": "4189938079f49508e854b0d7cfaf428d69f7f98c00beeddc9bdbba2da5dc603b"
+}

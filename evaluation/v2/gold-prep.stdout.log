@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-006-010.json",
+    "reviewed": 5,
+    "model": "gpt-5.4"
+  }
+}
+{
+  "ok": false,
+  "error": "ValueError",
+  "message": "gold 증류 issues가 fixture로 추적되지 않습니다."
+}

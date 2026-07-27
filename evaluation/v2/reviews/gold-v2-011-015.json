@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-011": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d48b43c601c3066c9290940d99bf7661600c66066fd87f34a96d1da227b360d3",
+      "fixture_sha256": "c307ec3f6ace1f84e6d8e7368085dd456b45c88637df6594bfeabdc27bc9610b",
+      "notes": "해시 연결이 유효하고 파기환송 주문, 쟁점·불리 논거가 원문과 일치한다. fixture는 사건 식별자와 목표 결론을 제거했으며 분석 맥락은 충분하고 개인정보 패턴이 없다.",
+      "source_sha256": "62877d6e9de29a68573dd78dfb5cdb104f0dca875124642b14e5cfbff4feaca0"
+    },
+    "case-012": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "662116daeb263267a645d0eb04b67e8602ab619b65590c66c3a739aa42589ccc",
+      "fixture_sha256": "385b1960335cad25b29f4fb8a243e7de8579896751929bd32d8e555bc153531d",
+      "notes": "해시 연결이 유효하고 파기환송 주문 및 설명의무 관련 쟁점·논거가 원문으로 지지된다. fixture의 식별 정보는 비식별 토큰으로 치환됐고 목표 결론과 개인정보 누출이 없다.",
+      "source_sha256": "188b10b259e8aa289b98058542b51310d229c87046a6d01a495ffb76410bdb94"
+    },
+    "case-013": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ed540ff2c861bdbfcad9f06b8101c694ba4f55736dd62bd16c6cd85d53ddf3ae",
+      "fixture_sha256": "78e13ca0cb358b4fae5d20091cb204ea17315ac27d5473b6b156d0029ca74790",
+      "notes": "해시 연결이 유효하고 상고기각 주문과 보험수익자·상속지분·변제공탁 쟁점이 원문과 일치한다. fixture는 목표 결론과 사건 식별자를 가렸고 생년월일은 비식별 토큰이다.",
+      "source_sha256": "653ef547545e03ec2959c60cdc64f51d9d7bd425067ae0196b1466f96e181a33"
+    },
+    "case-014": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "188024559f1d20042fd0818e49a8a0ece80e273e44c42f4a84aa6adf37991806",
+      "fixture_sha256": "74a45b629b645efc96e5361e554ed95a466ff4ecb7000c34f258457a8dd2aa4f",
+      "notes": "해시 연결이 유효하고 파기환송 주문 및 자살 면책·자유로운 의사결정능력 쟁점이 원문으로 지지된다. fixture는 목표 판단부를 제거하면서 충분한 사실·약관 맥락을 보존했고 개인정보가 없다.",
+      "source_sha256": "ae24e9a514f161748a3700efb6fe71be2d52588aa0b09820fa08d3a4befddc4c"
+    },
+    "case-015": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "3adcb8f15f54ce460fe1085863bee9feca229fbe2da64f61464935483b5e2927",
+      "fixture_sha256": "22db7663542930a8a615660315ed81ee65ae7235aa1f2062046f6a10c504bf41",
+      "notes": "해시 연결이 유효하고 파기환송 주문 및 고지의무 위반과 보험사고 인과관계 쟁점·논거가 원문으로 지지된다. fixture는 목표 결론과 식별자를 제거했고 개인정보 패턴이 없다.",
+      "source_sha256": "72f05e6fb637a7d3c6a19974df6950b71c9c808dd51aea7fa7e57eb2613afe05"
+    }
+  }
+}

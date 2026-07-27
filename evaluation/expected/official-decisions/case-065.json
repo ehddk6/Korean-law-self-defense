@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "취업규칙은 노사 간의 집단적인 법률관계를 규정하는 법규범의 성격을 갖는 것이므로 명확한 증거가 없는 한 그 문언의 객관적 의미를 무시하게 되는 사실인정이나 해석은 신중하고 엄격하여야 한다."
+  ],
+  "expected_issues": [
+    "근로자의 어떤 비위행위가 징계처분의 근거로 삼은 징계사유인지 결정하는 기준 및 그 비위행위가 정당한 징계사유에 해당하는지 판단하는 방법 / 취업규칙의 법적 성격 및 해석 원칙",
+    "근로자는 근로계약에 부수하는 신의칙상 의무로서 근로관계에서 발생한 위법행위 여부 등에 관한 사용자의 조사에 협조할 의무를 부담하는지 여부(적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2019두30270",
+  "outcome": "mixed",
+  "scenario_id": "case-065",
+  "source_sha256": "e4f88f46b3cc7077497b908c69b8acc10c0b8a8341497c2328564b864969507e"
+}

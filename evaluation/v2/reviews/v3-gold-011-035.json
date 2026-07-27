@@ -1,0 +1,357 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-current",
+  "reviewer_model": "gpt-5.4",
+  "reviews": {
+    "case-011": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ac40554101b8855507301aa06d96d2627f44a9f46ff79de94e7959ef32f6a228",
+      "fixture_sha256": "3c601345169b7ee4296f0437c76848992ba7bc9a79100f218ef105e78b877f11",
+      "notes": "해시 연결·주문 파기환송·쟁점/불리논리 모두 source로 확인, fixture는 결론 가림 유지.",
+      "source_sha256": "62877d6e9de29a68573dd78dfb5cdb104f0dca875124642b14e5cfbff4feaca0"
+    },
+    "case-012": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "a23a735569f0fc27a1ec5d2f2ba8f6a63eca87959136ca6a139660cb67fddeff",
+      "fixture_sha256": "9f6a5b6f1a8953f069307950936cbf939eecd5f44d3db0e59c9befb6536c7a9d",
+      "notes": "해시 연결 정상, source 주문은 파기환송, expected 쟁점·불리논리도 source 문언으로 지지됨.",
+      "source_sha256": "188b10b259e8aa289b98058542b51310d229c87046a6d01a495ffb76410bdb94"
+    },
+    "case-013": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": false,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "208bc9b99b074822e4173039a40d494551d7edf4371004c207f0d84b1e0bd33f",
+      "fixture_sha256": "11ebe841790fd72e45396711d417b13914e7932507425e4b50bafd8da63b9a7d",
+      "notes": "주문·쟁점·해시 연결은 맞지만 fixture에 '2006. 10. 18.' 출생일이 남아 있어 PII free로 볼 수 없음.",
+      "source_sha256": "653ef547545e03ec2959c60cdc64f51d9d7bd425067ae0196b1466f96e181a33"
+    },
+    "case-014": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": false,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2db2142fa5d68bd7b41b9607ae569df7eebc968e8fd72740cac74a5d5ae7b759",
+      "fixture_sha256": "390d54166b69433538e3bb28e1c14f5d373e5545aea83a9c370d186e2bec2dc2",
+      "notes": "주문·쟁점·해시 연결은 맞지만 fixture에 '1991년생' 출생연도 식별 패턴이 남아 있어 PII free 불가.",
+      "source_sha256": "ae24e9a514f161748a3700efb6fe71be2d52588aa0b09820fa08d3a4befddc4c"
+    },
+    "case-015": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d0d7a59f72aba0850744e30b736f88b0341a40e5e6d1fd16010b80e8c2db3072",
+      "fixture_sha256": "b1d77a41f6cc75454f0b837517d0188a06dd13bd5cdbe467349d849e85b7858c",
+      "notes": "파기환송 주문과 expected 일치, 고지의무/인과관계 쟁점과 adverse 인용도 source에 존재.",
+      "source_sha256": "72f05e6fb637a7d3c6a19974df6950b71c9c808dd51aea7fa7e57eb2613afe05"
+    },
+    "case-016": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6054b49027dedbbdc7cdd531aaa8a0c3b3a6171e77c236facbaedb141d55fb43",
+      "fixture_sha256": "4cab3c098b0a7fd9e259ae864983d2af0902e9ed016c45e06c9c153294565840",
+      "notes": "source 주문은 일부 파기환송으로 reversed-remanded 적합, expected 쟁점/불리논리도 원문 근거 있음.",
+      "source_sha256": "8f80a462058dc6de9e14280e2fbbbfb16e1fc5ea75145f24a1ccc4df8f342c1d"
+    },
+    "case-017": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d2388bcc6f6b61f2eca2907e97890988719b73229712a6d50cc08472da0dd62b",
+      "fixture_sha256": "1887809154137d1a95db4c9532a8ef256c74686135d9051332aa3916ea9c786a",
+      "notes": "일부 파기환송+일부 상고기각이라 mixed 적절, expected 이슈와 adverse 모두 source에 확인됨.",
+      "source_sha256": "0b4f11196cc5e97d6232c8c4a8801e80523b3fbdd0208f4499890470ba821a65"
+    },
+    "case-018": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7c34e98a0c963c9ba97117f3163926e78d2b80bca8765d1f00ea86cfaa46fd52",
+      "fixture_sha256": "4bc9d4bf5dfdce122d48ad5ff18b3eef09a2e69322d2793141dba133c151c538",
+      "notes": "파기환송 주문과 expected 일치, 통지의무 판단 기준/인용 문구가 source에 직접 있다.",
+      "source_sha256": "b2ec30ebab03f06af824637d2b08c369350c33e421fdba13205f7101b6b4c30d"
+    },
+    "case-019": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "545b92273c6e73ec770dadb0325caebe8d41250c2f2da1a2a39cb8fc75819316",
+      "fixture_sha256": "2fdb11935d363a625f01e6532089c0aac4100bc24bff71315eda6d25a04d34e8",
+      "notes": "상고기각 주문으로 affirmed 적합, 상해보험 무효/변론재개 예외 쟁점과 adverse가 source에 부합.",
+      "source_sha256": "a42a3a8bfc0b3460fe555f9cc7db7385f18b7a2b7bd56c70d2293d8d4bcc398b"
+    },
+    "case-020": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "48e03237002238cb23db54330aa7f65fa786f37644bfee0ea09dd748c7f42050",
+      "fixture_sha256": "d3beb6b7e6cb0c674148ebd1569f386c5f02e0cdbabcd4e834d32f978e4e6f5c",
+      "notes": "source는 상고기각, 하자담보책임기간·보증보험 쟁점과 quoted adverse 모두 원문으로 지지됨.",
+      "source_sha256": "cf8ab33f07ebfe94368cbd9f8b9545a5e550cf3aaf6915ba7d619112e51ee950"
+    },
+    "case-021": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "541f667b5e0f05839ff71f1bc581ecd2d1982c4b1711ba36cfa8a7c7d31521e3",
+      "fixture_sha256": "791b043ff4b77ac9299e2e5b2a7a3101a66e8a34db280f07901783b155b49e95",
+      "notes": "파기환송 주문과 expected 일치, 갱신요구·해지통지 효력 시점 쟁점이 source reasoning에 명시됨.",
+      "source_sha256": "3427ab178fa516efd03ad56cae44664dd8f5911ead514727a462bffef4d4d3e0"
+    },
+    "case-022": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c364b8088a728b792123002d585184f90231636269df02d2615d12f7d983803e",
+      "fixture_sha256": "c02ceefa14f648f52ccb22783c3974df350be7dc18bbda7e24698034cd52f924",
+      "notes": "source 주문은 파기환송, 다가구주택 중개업자 의무·오정보 제공 법리와 adverse 문구 모두 확인됨.",
+      "source_sha256": "5ee4320af4cd2f1c01e7c3d903c3ff57840885b08da8121a738795d9edb701c9"
+    },
+    "case-023": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b407bc36174ec22b664cc4c7d67fdfeadf3a4d460c16bca5b30ac6e88aa3fd03",
+      "fixture_sha256": "87df1b0539a6919166804da290c0173bc21cf3efa7509537295b24b8dee0b761",
+      "notes": "파기환송 주문 일치, 상가임대차법 제9조 제2항 관련 쟁점·불리논리는 source 문언 그대로다.",
+      "source_sha256": "bd0768ef4414354ce042df459d1c683bbb30a83bc52601177aa99c00fbb4a40f"
+    },
+    "case-024": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1928fb5541d46b1edb494eacb921c5eb8da7ce01520d0915449542d84cc7a0d2",
+      "fixture_sha256": "0d12d9488331d3589f03378368d93555b0db5b50dcd60a9983bba088e59d378b",
+      "notes": "source는 파기환송, 신탁부동산 중개설명 의무 관련 issue/adverse가 원문과 합치한다.",
+      "source_sha256": "c22e1b313960d0a85dcb49dfd194577db67ceff76fa6ace2c52c9bb893787c91"
+    },
+    "case-025": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "693d8a70d447dcbae20e6e8ce66a6b3ce63ea7f3fcf626c481f0c7ad44d722cf",
+      "fixture_sha256": "1e32d725c7298ed6d8f3a743cc94319e0fe293f43bea8bb225e4335a234e8491",
+      "notes": "파기환송 주문 확인, 임대인 지위승계·이의제기 법리 및 인용 adverse가 source에 있다.",
+      "source_sha256": "61ce1c5d88ec709bbfc50de81a4f1bbe9523a5f2eb188d0af516f8e824e3b7ab"
+    },
+    "case-026": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "4570cc31e00eac1b54cacbecd39d9af1e27b328fa98420d5d09cd93b545507b3",
+      "fixture_sha256": "622ee63a0624690bc8b69d8bf81a51b03b70d79fd844b99ec2450a1ba839c507",
+      "notes": "상고기각 주문으로 affirmed 적절, 특례기간 연체차임 충당 법리와 adverse 문구가 source로 뒷받침됨.",
+      "source_sha256": "2b3a5e05988d9214382e320086da0934cb24fa787c8a3a7ac5823d1269765f6f"
+    },
+    "case-027": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e297aabddabf324679d85697a7d9bef51bd225916f9da4d1bd8bf0065b15d1be",
+      "fixture_sha256": "160ab8f5702479a688bb6851bdc0cfa8b067f91f4c21b06cc839a2bc488e5d7b",
+      "notes": "원고들 패소 부분 파기환송+피고 상고기각이라 mixed 타당, issue/adverse도 source 일치.",
+      "source_sha256": "1868622d0988bf1d499b2cd1476454fee394adc710835bef2c511b11c99ba9fb"
+    },
+    "case-028": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f8950713c33427ab4a2c21706b0d3c5e496a1211669b07d8b7b7cf2244f6fbd3",
+      "fixture_sha256": "a4de3685bff6acaf19c953fdbfa7ec40c796b3f87b8440940bdb5d624b121728",
+      "notes": "상고기각 주문과 affirmed 일치, 대항력 유지·양수인 상대 임대차 존속 쟁점이 source에 명확하다.",
+      "source_sha256": "b2e4e1e03a2ee4d4f0d5889daec08df4c8cc05245ad005c4be9755ead4bb31a4"
+    },
+    "case-029": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "9a57e7dcc85661da71d14332c4c51bdc5e6734f2fd589a4d8c8ab2ed9de3f286",
+      "fixture_sha256": "76bfb39875b86386a8ae2000c4e6ae1ca28fe2c4e11dd019d5fb4ecd03c3b476",
+      "notes": "source 주문은 파기환송, 명의신탁 주택 임차권 대항력·승계집행문 관련 expected가 원문 근거 있음.",
+      "source_sha256": "88b018fa05b9022816288dc0b1586e5636f4a3b8e369cbdd3cf9b6f7485cab9d"
+    },
+    "case-030": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "10ec32efd46e2cfe25d10f54b7f6e276f126338c720edba5068e527c6118cbeb",
+      "fixture_sha256": "e337d6d63c8749e2e2dea6ef9b9665ae02ffb7f3df2e694dadeec0d0af924360",
+      "notes": "상고기각 주문과 affirmed 일치, 민법 제756조 사용관계 법리와 adverse 인용문도 source에 존재.",
+      "source_sha256": "d63e0c1499e9ad39032c45a05ae36ea1415631c4f5fe6b20c245066dee07324e"
+    },
+    "case-031": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "063431b73011f55592994657ed37af919d0f0ccf90e13815f83d7d24e7be9118",
+      "fixture_sha256": "227787dacbaac99a354a048de4b8bcb6062a726c65f8ffaf6372af79c8f88ce1",
+      "notes": "선정자 3 부분 소송종료+나머지 상고기각으로 mixed 적절, 주주권·소송종료 쟁점이 source로 확인됨.",
+      "source_sha256": "17f9b65e30e95b13519313366ec2114d066f90b651ffcbc94136cca2ba17a4a6"
+    },
+    "case-032": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "93d1559c2b168566734f6d7027b0d5494c8ba9adf1942b6e53f72c3cc7bee34e",
+      "fixture_sha256": "39e7e5b43ec5a7e0906a4ba41de1de5f4c9540f55aed2d395fa9b2de8370ee78",
+      "notes": "제1심 취소 후 청구 인용이어서 granted 적합, expected 쟁점/인용문은 source 사실·판단 부분에 있다.",
+      "source_sha256": "ca4561268fc3066eb6ad780282c83d30470925d5c65e812f801ff8c89123a42a"
+    },
+    "case-033": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "184a24efde32c34c36d2d0520d848035119696c85441ebcfa053f8098d5a1b57",
+      "fixture_sha256": "22222bb9f53ad65c592e7c3c06499ebb5f76700be7ad7aa2889a320ccc7e5ee9",
+      "notes": "제1심 취소 후 명의개서절차 이행 명령으로 granted 맞고, 해제·제3자 대항요건 관련 expected도 source 지지됨.",
+      "source_sha256": "6f8cde823a1f983fcb915f53262f169a0cd507bd6500fd4e8eb437dc7295a3f5"
+    },
+    "case-034": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fad5f136749740d2c9d5974a639bca6e2f6351541ffef8595ea914ee9b5f8bb8",
+      "fixture_sha256": "18c0af5342e4c697e3786eb92e0f0953f2556646e35d6d45ba1b3b23c2f26ecd",
+      "notes": "원심 파기환송 주문과 expected 일치, 주주명부상 주주권 법리와 인용 adverse가 source 그대로다.",
+      "source_sha256": "8aaed76e71c47b4682b02e5bfe021c6ec02b4cc6ef635f88378cf81cedbd2401"
+    },
+    "case-035": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b440fbba460fae24e7ea10f1dd6993abe5fe34b73e3c8423cf33715d91a7ec20",
+      "fixture_sha256": "286bc9035cee7ce125de0ade627498c647357087e66b8e281e156c894a009f9e",
+      "notes": "상고기각 주문으로 affirmed 적합, 감사 선임 정족수 쟁점과 adverse 문구가 source에 확인된다.",
+      "source_sha256": "f6f1ce68437ba4a27f90a6469f7ad58a5f8250182d5bb8a8e66d98119b9b5c60"
+    }
+  }
+}

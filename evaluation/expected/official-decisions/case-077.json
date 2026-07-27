@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "재건축 주택의 취득가격 산정 시, 조합 운영을 위한 필수 절차 비용(총회·대의원회비)과 기존 부동산 취득 비용은 과세표준에 포함되나, 이사회의비·선거관리비 등 일반 관리비와 건물과 분리 가능한 커뮤니티 시설물(음향·주방시설) 설치비는 제외하는 것이 타당함"
+  ],
+  "expected_issues": [
+    "재건축 주택의 취득가격 산정 시, 조합 운영을 위한 필수 절차 비용(총회·대의원회비)과 기존 부동산 취득 비용은 과세표준에 포함되나, 이사회의비·선거관리비 등 일반 관리비와 건물과 분리 가능한 커뮤니티 시설물(음향·주방시설) 설치비는 제외하는 것이 타당함"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2025두34052",
+  "outcome": "affirmed",
+  "scenario_id": "case-077",
+  "source_sha256": "adab6981585906c5b50e9a597096093ceff38f884c1b8e113e263dfb9a87844b"
+}

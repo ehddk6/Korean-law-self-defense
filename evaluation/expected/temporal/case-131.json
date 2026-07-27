@@ -1,0 +1,13 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "법령등의 시간적 적용 범위와 특별규정·신청처분·제재처분 예외"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "source_sha256": "d1719d225a9fea59e921920dee648d3093894bd90f19c41e64a1355bf1211c49"
+}

@@ -1,0 +1,357 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-current",
+  "reviewer_model": "gpt-5.4",
+  "reviews": {
+    "case-026": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "4570cc31e00eac1b54cacbecd39d9af1e27b328fa98420d5d09cd93b545507b3",
+      "fixture_sha256": "622ee63a0624690bc8b69d8bf81a51b03b70d79fd844b99ec2450a1ba839c507",
+      "notes": "attestation 2종과 expected.source_sha256 연결이 일치한다. source 주문은 상고기각이고 특례기간 차임 후순위 충당 쟁점·불리 논리가 expected와 맞으며 fixture는 사건번호·source ID·주문 직결론 없이 맥락이 충분하고 PII 패턴도 없다.",
+      "source_sha256": "2b3a5e05988d9214382e320086da0934cb24fa787c8a3a7ac5823d1269765f6f"
+    },
+    "case-027": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e297aabddabf324679d85697a7d9bef51bd225916f9da4d1bd8bf0065b15d1be",
+      "fixture_sha256": "6c2d76d1439b8ca8af6c64a909b9b7d67605ece2abc5c94e6a5c18537967404b",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 원고들 패소 부분 파기환송+피고 상고기각으로 mixed에 부합하고 불가분채권·전부명령 쟁점 및 adverse가 source에 직접 있다. fixture는 현재 사건번호·source ID·주문이 제거되어 있고 PII 패턴이 없다.",
+      "source_sha256": "1868622d0988bf1d499b2cd1476454fee394adc710835bef2c511b11c99ba9fb"
+    },
+    "case-028": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f8950713c33427ab4a2c21706b0d3c5e496a1211669b07d8b7b7cf2244f6fbd3",
+      "fixture_sha256": "a4de3685bff6acaf19c953fdbfa7ec40c796b3f87b8440940bdb5d624b121728",
+      "notes": "인덱스 attestation과 expected.source_sha256이 일치한다. source 주문은 상고기각이고 금융기관 양수 후 대항력 유지 쟁점과 adverse 문구가 source issues/holding에 그대로 있다. fixture는 사건번호·source ID·주문 없이 300자 이상 맥락이 있고 PII 패턴이 없다.",
+      "source_sha256": "b2e4e1e03a2ee4d4f0d5889daec08df4c8cc05245ad005c4be9755ead4bb31a4"
+    },
+    "case-029": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "9a57e7dcc85661da71d14332c4c51bdc5e6734f2fd589a4d8c8ab2ed9de3f286",
+      "fixture_sha256": "97742511da3d974d021dc9c0ff0e8b032d1e79aada34751618e57aceb768af79",
+      "notes": "attestation 2종과 source_sha 연결이 맞다. source 주문은 원심판결 파기환송으로 reversed-remanded에 맞고 계약명의신탁 임차권 대항·승계집행문 쟁점과 adverse 사실이 source에 뒷받침된다. fixture는 현재 사건번호·source ID·직접 결론이 빠져 있고 PII 패턴이 없다.",
+      "source_sha256": "88b018fa05b9022816288dc0b1586e5636f4a3b8e369cbdd3cf9b6f7485cab9d"
+    },
+    "case-030": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "10ec32efd46e2cfe25d10f54b7f6e276f126338c720edba5068e527c6118cbeb",
+      "fixture_sha256": "13e309965cb10e40edc0f24e759d037a6a6f7dda9700e1a17f1813e8cc0364f2",
+      "notes": "attestation과 expected.source_sha256 연결이 일치한다. source 주문은 상고기각이고 민법 756조 사용관계·지휘감독 기준 쟁점과 adverse가 source issues/holding에 있다. fixture는 사건번호·source ID·주문 직결론 없이 분석 가능한 맥락만 남았고 PII 패턴이 없다.",
+      "source_sha256": "d63e0c1499e9ad39032c45a05ae36ea1415631c4f5fe6b20c245066dee07324e"
+    },
+    "case-031": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "063431b73011f55592994657ed37af919d0f0ccf90e13815f83d7d24e7be9118",
+      "fixture_sha256": "227787dacbaac99a354a048de4b8bcb6062a726c65f8ffaf6372af79c8f88ce1",
+      "notes": "인덱스 attestation과 source_sha 연결이 맞다. source 주문은 선정자 3 부분 소송종료 선언+나머지 상고기각으로 mixed에 부합하고 주주명부상 주주권 쟁점 및 adverse 문구가 source에 있다. fixture는 현재 사건번호·source ID·주문이 제거되어 있고 PII 패턴이 없다.",
+      "source_sha256": "17f9b65e30e95b13519313366ec2114d066f90b651ffcbc94136cca2ba17a4a6"
+    },
+    "case-032": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "93d1559c2b168566734f6d7027b0d5494c8ba9adf1942b6e53f72c3cc7bee34e",
+      "fixture_sha256": "39e7e5b43ec5a7e0906a4ba41de1de5f4c9540f55aed2d395fa9b2de8370ee78",
+      "notes": "attestation 2종과 expected.source_sha256이 일치한다. source 주문은 제1심 취소 후 무효확인 인용으로 granted에 맞고 공탁조건 성취 간주 논리와 관련 adverse가 source 본문에 있다. fixture는 사건번호·source ID·직접 결론이 제거되어 있으며 PII 패턴이 없다.",
+      "source_sha256": "ca4561268fc3066eb6ad780282c83d30470925d5c65e812f801ff8c89123a42a"
+    },
+    "case-033": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "184a24efde32c34c36d2d0520d848035119696c85441ebcfa053f8098d5a1b57",
+      "fixture_sha256": "22222bb9f53ad65c592e7c3c06499ebb5f76700be7ad7aa2889a320ccc7e5ee9",
+      "notes": "attestation과 source_sha 연결이 맞다. source는 주권발행 전 주식양도·계약해제 후 제3자 보호 문제를 다루고 expected issues/adverse가 source issues/holding에 직접 대응한다. fixture는 현재 사건번호·source ID·주문 직결론을 드러내지 않고 PII 패턴도 없다.",
+      "source_sha256": "6f8cde823a1f983fcb915f53262f169a0cd507bd6500fd4e8eb437dc7295a3f5"
+    },
+    "case-034": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fad5f136749740d2c9d5974a639bca6e2f6351541ffef8595ea914ee9b5f8bb8",
+      "fixture_sha256": "18c0af5342e4c697e3786eb92e0f0953f2556646e35d6d45ba1b3b23c2f26ecd",
+      "notes": "attestation 2종과 expected.source_sha256 연결이 일치한다. source 주문은 원심판결 파기환송으로 reversed-remanded에 맞고 주주명부제도·주주권 행사 쟁점과 adverse 문구가 source에 그대로 있다. fixture는 사건번호·source ID·주문 없이 충분한 맥락만 남겼고 PII 패턴이 없다.",
+      "source_sha256": "8aaed76e71c47b4682b02e5bfe021c6ec02b4cc6ef635f88378cf81cedbd2401"
+    },
+    "case-035": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b440fbba460fae24e7ea10f1dd6993abe5fe34b73e3c8423cf33715d91a7ec20",
+      "fixture_sha256": "286bc9035cee7ce125de0ade627498c647357087e66b8e281e156c894a009f9e",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 상고기각이고 감사 선임시 3% 초과 주식 산입 여부 쟁점과 adverse가 source issues/holding에 직접 지지된다. fixture는 현재 사건번호·source ID·주문을 노출하지 않고 PII 패턴도 없다.",
+      "source_sha256": "f6f1ce68437ba4a27f90a6469f7ad58a5f8250182d5bb8a8e66d98119b9b5c60"
+    },
+    "case-036": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "df559ea694d251cef3516e6ea3b7738cc48590227c6dd42b6745a118ae7af6a1",
+      "fixture_sha256": "e66638ebaf47f431624f705df227eb2040405024314ff97eca689371ec44f398",
+      "notes": "attestation 2종과 expected.source_sha256이 일치한다. source 주문은 상고기각이고 주주총회결의 부존재확인 이익·주주지위 상실 원고적격 쟁점 및 adverse 사례 설명이 source issues에 있다. fixture는 사건번호·source ID·직접 결론 없이 충분한 맥락을 유지하고 PII 패턴이 없다.",
+      "source_sha256": "70b06f7aa2d45e99ce71bf052bc8c4a0c1f01a613d1a9850eeaa694c90cdb9eb"
+    },
+    "case-037": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bc10db898378be030bafea79df70d0da1ce30070b466b0ca6cf3898f9fd67c7e",
+      "fixture_sha256": "dda5fe7bae1ecf8fbef0a67b6469d8f63e6c4aabd85da72cfd3fc461ca17f41d",
+      "notes": "attestation과 source_sha 연결이 맞다. source는 주식병합 후 신주권 동일성·6개월 경과 시 주식양도 효력 쟁점을 다루고 expected issues/adverse가 source issues/holding에 직접 대응한다. fixture는 사건번호·source ID·주문 직결론을 숨기고 PII 패턴도 없다.",
+      "source_sha256": "d097ab7a841da177ce61194d0f1dba834320c3edf73154a6f806758d09654201"
+    },
+    "case-038": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "942c4b5ee932a648a428273e583fd07b4d0318daa08f4487f534772c501f2c7c",
+      "fixture_sha256": "646fa62472fe71c2379a205e33ddb3afb01ed5053059e0b7918db2b640af302b",
+      "notes": "attestation 2종과 expected.source_sha256 연결이 일치한다. source 주문은 원고들 청구 기각으로 dismissed에 맞고 주주제안권 침해와 별도 이사선임결의 취소 불가 쟁점·adverse가 source에 있다. fixture는 현재 사건번호·source ID·주문이 제거되어 있고 PII 패턴이 없다.",
+      "source_sha256": "b2743ee3b0131469769dfb10dc6bcf9ba6ad361c7536c4b97aa3f818c2c5a3a1"
+    },
+    "case-039": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "49b2b772a224214a34afadc88f14b2237f4f40eadc19898e3f87cd9aac09dbac",
+      "fixture_sha256": "0981a09805ccab22fb49d562fc808498415187f1e54ec9b0c7a86e45fab9961a",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 원심파기+제1심취소+소 각하로 mixed에 부합하고 골프장 이용혜택 결의 부적법 쟁점과 adverse가 source issues/holding에 있다. fixture는 사건번호·source ID·직접 결론이 제거되어 있고 PII 패턴이 없다.",
+      "source_sha256": "da3ac119e711b267974e5672e019db254be3785ed17014eb989226f6e3d4c717"
+    },
+    "case-040": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "48435afd5f07dd8fa69adfcec6aa7647b410f0bb922af0f0183bf6d2063117b8",
+      "fixture_sha256": "53e4e0050f4f12c5239308d23a168e095d1cb1c7701f9a85cf259cfdaec31d67",
+      "notes": "attestation 2종과 expected.source_sha256이 일치한다. source 주문은 상고기각이고 의결권 포괄위임·질권자 의결권 행사 쟁점과 adverse 문구가 source issues에 있다. fixture는 사건번호·source ID·주문 직결론 없이 충분한 맥락을 주며 PII 패턴도 없다.",
+      "source_sha256": "db08ea95e389577b3e5109f1a3a3503ef15b26b7e8db30b34f05e90b3a262a0b"
+    },
+    "case-041": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b00e1a12d1c8cef447d73e5e116f06ec29141987c282b489e5b8a367a9c59108",
+      "fixture_sha256": "4f9bed19cec89c1cb5ed3d973e80dd77e4781dd4716ff0458e27e5167ea70bd0",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 상고기각이고 사기죄와 업무방해죄의 죄수 쟁점 및 adverse가 source issues/record에 직접 있다. fixture는 현재 사건번호·source ID·주문이 없고 300자 이상 분석 맥락이 있으며 PII 패턴이 없다.",
+      "source_sha256": "df9d5c1f8df91246fe17996dc99c0d6eaf76515c51532e717c40a68925a3b609"
+    },
+    "case-042": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b2e622db62d8698759975775259f6eaa4b44eff039b1da06507d299eed2f8415",
+      "fixture_sha256": "63d2149e8423b2129c6c36d7533969deb3a7046cff60f5e114dcdb9ac580f004",
+      "notes": "attestation 2종과 expected.source_sha256 연결이 일치한다. source 주문은 상고기각이고 재산국외도피 고의 부정 법리와 adverse 문구가 source full_text/holding에 그대로 있다. fixture는 사건번호·source ID·직접 결론 없이 법리·사실 맥락을 남겼고 PII 패턴이 없다.",
+      "source_sha256": "522d723a4a3f7b50418fede0765126edd58fc643123610c6338fd485fed3c0f3"
+    },
+    "case-043": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f728716b888bb59512d2ff0f51953db29babc4149bde0613da82a30ee6e790dd",
+      "fixture_sha256": "9f429ea9bbf1080b683dcee469d8e849721d7c579eb2c3c7924364d12c701ed7",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 원심판결 파기환송으로 reversed-remanded에 맞고 보이스피싱 현금수거책 공모·고의 판단 법리와 adverse가 source issues에 직접 있다. fixture는 현재 사건번호·source ID·주문 직결론이 제거되어 있고 PII 패턴이 없다.",
+      "source_sha256": "7e21f2dff45a88c44200e898d6f1fd3dfbe9d2594f5e507a749a82e6dce4cf56"
+    },
+    "case-044": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c2d157cafe2141a1124d0cffd82478c2e3f31c9953431313c0270644428d2dfa",
+      "fixture_sha256": "e6dd0c6909fbb52ccdbbb027d87437b25fd03aaa37f51dabf05882adb72e7994",
+      "notes": "attestation 2종과 expected.source_sha256이 일치한다. source 주문은 상고기각이고 전기통신금융사기죄와 사기죄의 특별법 관계 부정·상상적 경합 쟁점이 source issues와 일치한다. fixture는 사건번호·source ID·주문을 드러내지 않고 PII 패턴도 없다.",
+      "source_sha256": "99a7934de1faef75766488b522692cb9a9a361b4fa81ae73d6d0eba3ea372dba"
+    },
+    "case-045": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "786f4609ef36a8ecd7255e582810089d38efda4e6a4be0e2f53dc9a6a197c71d",
+      "fixture_sha256": "800ba4fc4d339bd7af5aad749d627c8ba21157d46efd03fdd06e4b67d34d6fd5",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 파기환송으로 reversed-remanded에 부합하고 전자정보 압수·수색 위법, 무관정보 보관, 2차적 증거 배제 쟁점과 adverse가 source issues/holding에 있다. fixture의 010-****-****·[ADDRESS_001]는 허용된 비식별 표기이며 다른 PII 패턴은 없다.",
+      "source_sha256": "014612cf52ee31d8cc81335be90b8692eb7e227127a808ffc745e757dce723ee"
+    },
+    "case-046": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e850be9145e368cc3512e1c20d140755827d9c56c6359c6f28508ddd8362d00f",
+      "fixture_sha256": "1c0f6b61277a41b01e8b8bb8bb63af85039723b97062d48372fa40453ff0896b",
+      "notes": "attestation 2종과 expected.source_sha256 연결이 일치한다. source 주문은 상고기각이고 전기통신금융사기죄와 사기죄의 특별법 관계 부정·상상적 경합 쟁점이 source issues와 일치한다. fixture는 직접 결론 없이 법리만 남긴 블라인드 입력이고 PII 패턴이 없다.",
+      "source_sha256": "10ddd7492891289bf348966e4b1f8c2988b6c581f1e577962ad19d7dc367302b"
+    },
+    "case-047": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f436b263d3770ae087e63bf00ff39f8c0f4f5a19def1ef8f37036c486a176781",
+      "fixture_sha256": "99cd07664a9917e4584d0cdbfb16271a542382aa786bc5a330f7cfe188838ada",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 파기환송으로 reversed-remanded에 맞고 보이스피싱 현금수거책의 공모·고의 판단 기준과 adverse가 source issues/full_text에 직접 있다. fixture는 현재 사건번호·source ID·주문을 제거했고 PII 패턴도 없다.",
+      "source_sha256": "fb899a3948fd67a4099096a08e87f1edcdb1299c628276013bad3402dfb86578"
+    },
+    "case-048": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d68eba65a8d38388d18474928171a6df0dedbcd8555bb4dd284b1bca05da11e9",
+      "fixture_sha256": "dcd4d2e1ee7697c5113cacb6bdb0dd7a04626bc110d7f452adc1b1613e82c9cf",
+      "notes": "attestation 2종과 expected.source_sha256이 일치한다. source 주문은 상고기각이고 과세예고통지·과세전적부심사 기회 박탈 법리와 adverse가 source issues/holding에 지지된다. fixture는 사건번호·source ID·직접 결론 없이 충분한 맥락을 유지하고 PII 패턴이 없다.",
+      "source_sha256": "bea07482b0168ad3656ac8f6b9dd959cbbf6e264c464b2877548584abd250a7f"
+    },
+    "case-049": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8c64e6ba6e4ad64d602ebb59a8c14849b80578b8afb0e76d88ab145fd7d7683f",
+      "fixture_sha256": "707403931367dc62b34cdd75ba295ae2033e0fe9934ad667042d1aa8c30d3300",
+      "notes": "attestation과 source_sha 연결이 맞다. source 주문은 파기환송으로 reversed-remanded에 맞고 회생계획인가 사기 성립요건 및 상당성 기준 쟁점·adverse가 source issues와 부합한다. fixture는 현재 사건번호·source ID·주문 직결론을 숨기고 PII 패턴도 없다.",
+      "source_sha256": "f5748df5d0e98ae0995b0a2cef7294ee17b447e5b8ef7b07b7dd5268cc5698b9"
+    },
+    "case-050": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fffab41090b298ec01b2cc0adf8c7069c2ae9b01c0b02a51f19004a1ef12ed30",
+      "fixture_sha256": "a284b366424d216bf87b8ba8018bc3e43d86658c890fbb38729fa5d524583487",
+      "notes": "attestation 2종과 expected.source_sha256 연결이 일치한다. source 주문은 무죄로 expected outcome granted와 부합하고 작업대출 오인·보이스피싱 고의 부정 사정이 expected issue/adverse를 지지한다. fixture는 사건번호·source ID·주문 직결론이 제거되어 있으며 PII 패턴이 없다.",
+      "source_sha256": "31aa3e2690e7bcd760df9a44595cb13233b7083cef59d08203314a08606bc512"
+    }
+  }
+}

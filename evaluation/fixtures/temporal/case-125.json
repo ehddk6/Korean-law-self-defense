@@ -1,0 +1,46 @@
+{
+  "answer_contract": {
+    "deadline_date": "계산 가능한 경우 YYYY-MM-DD, 아니면 null",
+    "decision_status": "ready|conditional|abstain",
+    "rule_answer": "아래 선택지 중 하나",
+    "rule_answer_options": [
+      "address-or-workplace-service",
+      "article-14-fact-dependent",
+      "defendant-general-forum",
+      "effective-upon-dispatch",
+      "individual-address-forum",
+      "ip-special-forum-subject-to-statute",
+      "knowledge-date-required",
+      "one-year-lodging-claim",
+      "personal-delivery-required",
+      "place-of-performance-special-forum",
+      "postal-service-after-article-186-failure",
+      "public-service-requires-statutory-ground",
+      "real-estate-location-special-forum",
+      "starts-when-right-exercisable",
+      "substitute-service-needs-capable-recipient",
+      "ten-year-ordinary-claim",
+      "three-year-interest-claim",
+      "three-year-tort-knowledge-period",
+      "tort-place-special-forum",
+      "verify-specific-addendum"
+    ]
+  },
+  "domain": "criminal-investigation-procedure",
+  "facts": {
+    "defendant_general_forum_known": true
+  },
+  "format": "legal-workbench-temporal-input-v1",
+  "kind": "jurisdiction",
+  "official_rule": {
+    "article": "제2조",
+    "article_text": "제2조(보통재판적) 소(訴)는 피고의 보통재판적(普通裁判籍)이 있는 곳의 법원이 관할한다.\n2\nN\n[ACCOUNT_001]\n조문\n일부개정\n보통재판적\n[ACCOUNT_002]",
+    "law_name": "민사소송법",
+    "local_redaction_categories": [
+      "ACCOUNT"
+    ]
+  },
+  "question": "특별재판적 사실이 없을 때 기본 관할은 무엇인가?",
+  "scenario_id": "case-125",
+  "task": "제시된 공식 조문과 사실만으로 판단하고 필요한 사실·특별규정이 빠졌으면 보류하라."
+}

@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-086": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6db3d70a8a772aff6a0b7e3e81bc06a14f6e8cc09151cc3709be259960d556a5",
+      "fixture_sha256": "3d8621ca6bf39cfa66c8da5b16c70370d228ce7ad17241cc986b50358754f790",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 원심파기·환송으로 expected와 일치하며, 쟁점·불리 논거는 원문에 직접 근거한다. fixture는 사건번호·source ID·주문·대법원 결론과 개인정보 패턴 없이 충분한 법리·사실 맥락을 제공한다.",
+      "source_sha256": "ce990dd83f493dc8a0d2a160085f98353f22819c7fcf14540a2d9260d8e81ec4"
+    },
+    "case-087": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f0bed774a406dfaa74f9896e4d9005b3662318fa5be4ce538c8d4a92adcecf34",
+      "fixture_sha256": "6a2f44a63d7eee60b6464e1195969e14966367406d7dce93125ce8b96e2b55cc",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 일치하고, 배당간주·조세부담률·특수관계 쟁점과 불리 논거가 원문으로 지지된다. fixture는 식별자·주문·직접 결론 및 개인정보를 제거했고 분석 맥락이 충분하다.",
+      "source_sha256": "ef161afe68d55e03b3b37ead11ca2c4574164fa0ca856686b190f1bab8821a33"
+    },
+    "case-088": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e1abb54ffdb088e1a83ec960c042a4dc9bddf5a3652710e37e0378601f196818",
+      "fixture_sha256": "ee8441717dbb652ff363d1d4cfbd567989c17bbe5b555d2144e9e0ec2c5f2299",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 일치하며, 재건축주택 장기보유공제와 거주기간 산정 쟁점·반대 논거가 원문에 근거한다. fixture에는 목표 식별자·주문·직접 결론·개인정보가 없고 충분한 맥락이 있다.",
+      "source_sha256": "5f15f4ee2492851a0133896d966ac1670154c7b9e6e3f3040d512e82c0fa90fb"
+    },
+    "case-089": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "afccec8b4c2f30f59ec271fe56f2d47741d7ed125350ee8113ecc6da1b14c0df",
+      "fixture_sha256": "f8623563336535fa7169b0fb23fe73934f0cdab172f0e495856f40154b35f7f8",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 상고 모두 기각으로 affirmed와 일치하고, 신탁·위탁자 지위 이전·취득세 과세 쟁점 및 불리 논거가 원문으로 지지된다. fixture는 식별자·주문·직접 결론과 개인정보 없이 충분한 사실관계를 담았다.",
+      "source_sha256": "288a35a7c82c9358be9656d1262846788de377acb6394891a514b5c95d70056e"
+    },
+    "case-090": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c20fd16457235249792a2c7f1025cced0c981d690b49dfce11944eca5b0bedef",
+      "fixture_sha256": "b96739e59f1fe17f3b3d9c5ff31ec25a6feb01a0a276f99973330831224eeea3",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 피고 패소부분 파기환송과 원고들 상고기각이 병존하여 mixed와 일치한다. 비상장주식 평가·불확정채무·이자비용 쟁점과 불리 논거는 원문에 근거하며 fixture도 식별자·주문·직접 결론·개인정보 없이 충분하다.",
+      "source_sha256": "ea066fe4686270bee783247f98105b8c3e69aa18dc2d0995a63b95b97a08cf4d"
+    }
+  }
+}

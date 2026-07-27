@@ -1,0 +1,147 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-current",
+  "reviewer_model": "gpt-5.4",
+  "reviews": {
+    "case-001": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "eaa07ff5f3b6a23ec0935a3622a4f4b33d8a78f94a89dad85b9c5c8dca7edffa",
+      "fixture_sha256": "0f8e168c7ed375ddc3e9d449de73879505f2f911223ab34b2a67dce502742c09",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 주문의 상고 모두 기각은 outcome affirmed와 부합. fixture에 사건번호·source ID·주문 미노출, PII 패턴 미검출, expected issues/adverse는 source issues·holding_summary·본문으로 지지됨.",
+      "source_sha256": "3b0d5dc86351937138dbcc3268cf31eaacae2391bdfe37ab5f672f8f76ddd316"
+    },
+    "case-002": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "19be85ee3d5c4c64c2a899cec704976e94761ee02cb0799c0f64e36879dc6656",
+      "fixture_sha256": "7df43ae2d3f7ab8fa65de7cc0ee262a740cabe9ee23faf2872db0d1a4b549b86",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 원고 10~13 부분 파기환송과 피고 상고 기각이 병존해 outcome mixed가 맞다. fixture는 사건번호·ID·주문 제거 상태이고 PII 패턴은 미검출되며, expected issues/adverse는 source issues·holding_summary·본문으로 뒷받침된다.",
+      "source_sha256": "d2ce3fef7a23eb51dfa2c4864207ec4ec8dfbd6f7e321783cceb2ae93d6fc612"
+    },
+    "case-003": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "861e840e4616843e8ba835e17e43ac17b453d8107430436418fc09730f79edd2",
+      "fixture_sha256": "28c62627c8981962e727a3a3b15c8a839648d6e769db9c7ec1b46264b29af2ab",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 주문의 원심판결 파기·환송은 outcome reversed-remanded와 일치. fixture에 사건번호·ID·주문이 없고 PII 패턴 미검출, expected issues/adverse는 source issues 및 본문 법리로 지지된다.",
+      "source_sha256": "7e70cb3ad7595a5091a3a2e22424f5af1efe9c28854a2b7267919132068a39a5"
+    },
+    "case-004": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "42ba5f07c4f8e7e40219f286d38c99da1a8d24b7e8304113d3a004fa9c7edd47",
+      "fixture_sha256": "94cad377a64915b3348517b2fcf04fc6a2af39705f63651e66a122716136a2d0",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 주문의 원고들 청구 전부 기각은 outcome dismissed와 부합. fixture에서 사건번호·ID·주문은 제거되어 있고 PII 패턴은 미검출되며, expected issues/adverse는 source issues·holding_summary로 지지된다.",
+      "source_sha256": "ba4fe828fcaaf75efee9894b7bff41332afa6e33ddce7eb6d682f41b676f7bfa"
+    },
+    "case-005": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "92c4ff7cf8c0456e45ad4e7cf5257038c6160949599d4fd2c8a47d03c6001324",
+      "fixture_sha256": "2ead326c19db7932d2f4faad2065e85b2ff7e2d71e4f61ddbe841defe4ebadba",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 일부 취소·지급명령과 나머지 항소 기각이 함께 있어 outcome mixed가 맞다. fixture는 사건번호·ID·주문을 드러내지 않고 PII 패턴도 미검출이며, expected issues/adverse는 source holding_summary·issues·본문에 근거한다.",
+      "source_sha256": "2b84860eb17c522d74cd702e0d04d5fab9fe4d3152c6ce09c3df9fcbe5c60366"
+    },
+    "case-006": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b3ecabec303c32a8532197d4aa3998f424f9a863c39fb5acb58262e33ed022c7",
+      "fixture_sha256": "7764c957d80384d4db206e88c1df2980bc4904421a6cdb42cf64bc411fe6dd9b",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 방화문 부분만 파기환송하고 나머지 상고는 기각하여 outcome mixed와 부합. fixture에 사건번호·ID·주문은 없고 계정/판례는 placeholder만 남았으며 PII 패턴 미검출, expected issues/adverse는 source issues·holding_summary·본문으로 지지된다.",
+      "source_sha256": "5fcad765388fd922cf9867caf8d8b23a3d347b57050fa626a6fe0315ee33cbfc"
+    },
+    "case-007": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fad612d644da09b9385578ad4a8d0cede4064b707ddc23003425df4d552cfca9",
+      "fixture_sha256": "9ccbeafda6ecfb3a7c7ea9c909336066fc2e14f393fcb8baccc1fb68710daf10",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 주문의 상고 모두 기각은 outcome affirmed와 일치. fixture는 사건번호·ID·주문 제거 상태이고 PII 패턴 미검출, expected issues/adverse는 source issues·holding_summary·본문으로 지지된다.",
+      "source_sha256": "78305134e0f47726188631473c840d5573feff4655451c20bb5959a2b944c5ff"
+    },
+    "case-008": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f71b4c58f1adff50bbe18470e5476c7887c4b7a00596f1ec933e71ab0bb1b874",
+      "fixture_sha256": "de99f6c38c707280e57d1488519034caa5b99073a82b918ddce5183f5cd77f29",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 2013.11.22. 이전 부분만 파기환송하고 나머지 상고는 기각하여 outcome mixed가 맞다. fixture에 사건번호·ID·주문 미노출, PII 패턴 미검출, expected issues/adverse는 source issues·holding_summary·본문으로 지지된다.",
+      "source_sha256": "0352735ac124096d7f14d7b1238d36e46acda8898f488852b9bc3355800c060b"
+    },
+    "case-009": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "eca81f72c45ee7076b4f1f33d33dec1eb8dce56cf06db384d00a05f61086ef18",
+      "fixture_sha256": "aa023b96f569f3f416fcb350564428da3afe30c8020d2c736f2bf8872a737530",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 주문의 원심판결 파기·환송은 outcome reversed-remanded와 일치. fixture는 사건번호·ID·주문을 드러내지 않고 PII 패턴도 미검출이며, expected issues/adverse는 source issues·holding_summary·본문에 의해 지지된다.",
+      "source_sha256": "a21cdb03cb0ed13bb510f176c04ed179654efc6c34d49143034397ea42516a7f"
+    },
+    "case-010": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "160231b154a172133ecda4b9a306f227faea4c4b49f3d3aaf0dfe25b8d175d92",
+      "fixture_sha256": "f9b2c075264acd30e01baa2989870623ca4d2f009cb6ab750cb5ab94f38285ab",
+      "notes": "attestation 2개 true 및 expected.source_sha256 일치. 주문의 상고 기각은 outcome affirmed와 부합. fixture에 사건번호·ID·주문 미노출, PII 패턴 미검출, expected issues/adverse는 source issues·holding_summary·본문으로 지지된다.",
+      "source_sha256": "5047b4e5c84e511f3b4fea9b64959bb3053ff125e5b0974c8150db3e80f23178"
+    }
+  }
+}

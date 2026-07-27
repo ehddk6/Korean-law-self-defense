@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-006": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1006af8c244bfd243e75e27f3c44377cac31b45704a48d8533dec47b14a93d65",
+      "fixture_sha256": "8875f2c4c05eb6629d4804633489a143a96b8d4bfd9306c784e2ce590c2ecf81",
+      "notes": "무결성 증명과 source 연결이 일치한다. 일부 파기환송·나머지 기각 주문은 mixed와 일치하며, fixture는 사건 식별자와 결론을 제거하고 584자의 분석 맥락을 제공한다. 개인정보 패턴이 없고 issues/adverse는 원문 사실로 지지된다.",
+      "source_sha256": "5fcad765388fd922cf9867caf8d8b23a3d347b57050fa626a6fe0315ee33cbfc"
+    },
+    "case-007": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d570592a4530a0b68472e51d3a94f10792e41dde7cadc5b70a3deae47818ffa0",
+      "fixture_sha256": "9ccbeafda6ecfb3a7c7ea9c909336066fc2e14f393fcb8baccc1fb68710daf10",
+      "notes": "무결성 증명과 source 연결이 일치한다. 상고 전부 기각 주문은 affirmed와 일치한다. fixture는 목표 사건번호·source ID·주문·대법원의 직접 결론을 제거했고 충분한 맥락과 비식별 토큰만 포함한다. issues/adverse도 원문으로 지지된다.",
+      "source_sha256": "78305134e0f47726188631473c840d5573feff4655451c20bb5959a2b944c5ff"
+    },
+    "case-008": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "a1ced3cbac81c33d493769528242466a00fbe15c9cb13e26e40de37117b5f95c",
+      "fixture_sha256": "de99f6c38c707280e57d1488519034caa5b99073a82b918ddce5183f5cd77f29",
+      "notes": "무결성 증명과 source 연결이 일치하고, 일부 파기환송·나머지 기각 주문은 mixed와 일치한다. 개인정보 패턴은 없으며 issues/adverse도 원문으로 지지된다. 다만 fixture의 ‘대법원의 판단’ 부분에 ‘원심의 위와 같은 판단은 수긍하기 어렵다’는 목표 법원의 직접 결론이 남아 있어 fixture_blind=false이다.",
+      "source_sha256": "0352735ac124096d7f14d7b1238d36e46acda8898f488852b9bc3355800c060b"
+    },
+    "case-009": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ee0f61c57236e1450ab50dac5ce74a9c05fd5ccd135d56bcd0a9ecd3c80b8802",
+      "fixture_sha256": "78f9faef54ed52c9e91a049727c3eb1dfdbc3b3a34261d3cfa73cf693e5b9c15",
+      "notes": "무결성 증명과 source 연결이 일치한다. 원심판결 전부 파기·환송 주문은 reversed-remanded와 일치한다. fixture는 목표 식별자·주문·대법원 결론을 제거하면서 충분한 사실과 원심 판단을 제공하고 개인정보가 없다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "a21cdb03cb0ed13bb510f176c04ed179654efc6c34d49143034397ea42516a7f"
+    },
+    "case-010": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "80141458555212c9e8de10cff2cc406c6b3e1351c88b97fe00e8be7d2f72743a",
+      "fixture_sha256": "f746ab372334e95a6d3d24f4c4db1727dcbc3694c93064add0492412f18f9987",
+      "notes": "무결성 증명과 source 연결이 일치한다. 상고 기각 주문은 affirmed와 일치한다. fixture는 목표 사건번호·source ID·주문·직접 결론을 제거하고 충분한 사실·법리를 제공하며, 비식별 사건번호 토큰 외 개인정보 패턴이 없다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "5047b4e5c84e511f3b4fea9b64959bb3053ff125e5b0974c8150db3e80f23178"
+    }
+  }
+}

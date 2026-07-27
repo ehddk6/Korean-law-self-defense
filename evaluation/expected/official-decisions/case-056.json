@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "예외적으로 유책배우자의 이혼청구를 허용할 수 있는 경우 및 그 판단 기준 / 이때 고려하여야 할 사항"
+  ],
+  "expected_issues": [
+    "예외적으로 유책배우자의 이혼청구를 허용할 수 있는 경우 및 그 판단 기준 / 이때 고려하여야 할 사항"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2022므10109",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-056",
+  "source_sha256": "4fa56cccbf39d56d68f28b3105f1fbd3e54ff19737b6eebb3b24e9bb8baeef4d"
+}

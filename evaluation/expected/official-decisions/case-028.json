@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "주택임차인은 주택임대차보호법 제3조 제1항에서 정한 주택의 인도와 주민등록을 구비하면 대항력을 취득하고 대항요건이 존속되는 한 대항력은 계속 유지된다."
+  ],
+  "expected_issues": [
+    "주택임대차보호법 제3조의2 제7항에서 정한 금융기관이 임차인으로부터 보증금반환채권을 계약으로 양수하여 양수한 금액의 범위에서 우선변제권을 승계한 다음 경매절차에서 배당요구를 하여 보증금 중 일부를 배당받은 경우, 주택임대차의 대항요건이 존속되는 한 임차인은 보증금반환채권을 양수한 금융기관이 보증금 잔액을 반환받을 때까지 임차주택의 양수인을 상대로 임대차관계의 존속을 주장할 수 있는지 여부(적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2022다255126",
+  "outcome": "affirmed",
+  "scenario_id": "case-028",
+  "source_sha256": "b2e4e1e03a2ee4d4f0d5889daec08df4c8cc05245ad005c4be9755ead4bb31a4"
+}

@@ -1,0 +1,23 @@
+{
+  "question": "상담받고 싶은 법률 문제",
+  "pii_reviewed": false,
+  "goal": "원하는 결과",
+  "domain": "civil-contract-tort",
+  "event_dates": [],
+  "service_dates": [],
+  "current_procedure": "pre-dispute",
+  "known_facts": [],
+  "opponent_claims": [],
+  "unknowns": [],
+  "evidence_tokens": [],
+  "urgent_flags": [],
+  "result_gate_example": {
+    "critical_facts": [{"text": "핵심 사실", "status": "confirmed", "evidence_ids": ["[DOC_001]"]}],
+    "critical_issues": [{"title": "핵심 쟁점", "authority_ids": ["auth_..."]}],
+    "authorities": [],
+    "applicable_law_verified": false,
+    "adverse_authority_reviewed": false,
+    "independent_analysis_ref": null,
+    "mcp_status": "not-verified"
+  }
+}

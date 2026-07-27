@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-076": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "85ccb1cfd9cad5ebd311118eb0b7f3fb5d55528cc10f0d7c2fdfebf3e64120ec",
+      "fixture_sha256": "d97424e7ef50476d2a4a81760842cc86a9ae2931ad45a61df575fc488299cc41",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed가 맞고, 쟁점·불리한 논리는 원문 근거가 있다. fixture에는 사건번호·source ID·주문·직접 결론 및 개인정보가 없다.",
+      "source_sha256": "434d4400c3a9143a33dee6c5c55dd43307ff5d7033ade0160c9e1b2fedbac476"
+    },
+    "case-077": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b11519be74809875a239a6da609e58f69f675e091f12723efc74c63bfc199237",
+      "fixture_sha256": "b555584f768510ef22e2c2cea0ee558f4dd094a98459515bc12a43d8fd7117a7",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 쌍방 상고기각으로 affirmed가 맞으며 모든 쟁점·불리한 논리가 원문에 있다. fixture는 목표 대법원 결론을 제거했고 개인정보가 없다.",
+      "source_sha256": "adab6981585906c5b50e9a597096093ceff38f884c1b8e113e263dfb9a87844b"
+    },
+    "case-078": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "5aa7f77999471e0a975e86908ae1a3a5e78900fd293cdb793070cefc0b2a9608",
+      "fixture_sha256": "2a37d5d2d0c5b528ad39cd4e59edf34737b06dd04d4dcaeded239393e37fc2b3",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed가 맞고 기대 쟁점·불리한 논리는 원문에서 지지된다. fixture의 성명은 부분 마스킹되어 있으며 목표 주문·직접 결론은 없다.",
+      "source_sha256": "cd65834dee618c88918fed7f5e31144c5ebc0cd3c4d1201af4d6b444d17a6ec5"
+    },
+    "case-079": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ad8bfa96077e00235b981d5fdbc829b389f008b6280b624ab8328a0054ed9f59",
+      "fixture_sha256": "12bd946ec78c3ebb8230832ae6a632090788aff7dd2998de8f59d27479637c9a",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심파기·환송으로 reversed-remanded가 맞고 쟁점·양면 논리가 원문에 있다. fixture에는 원심 판단만 남아 있고 목표 대법원 주문·직접 결론과 개인정보는 없다.",
+      "source_sha256": "a4333831d7abbfab1df6676e3560044c0fc6f9f92f1b8ddedf58e70be7a5b541"
+    },
+    "case-080": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b4b4cfc090411d058aa9a3fbcab55ba1dab47f98e2d0405ebe2657048749b54c",
+      "fixture_sha256": "debab95b49d9edf6736c7aa233ceff9c9881c20ad670fe5abe7043fd507d49c7",
+      "notes": "무결성 증명과 source 연결이 일치하고, 공식 주문상 처분취소이므로 granted가 맞으며 쟁점·불리한 논리도 원문에 있다. 그러나 fixture에 '상당인과관계를 인정할 수 있다'와 '피고의 이 사건 처분은 위법하다'는 목표 직접 결론이 명시되어 fixture_blind에 실패한다.",
+      "source_sha256": "bcf0e0cd1a6f34cf97491d5bb38db0abd5775112027c9a240e06fbb5a5cc09db"
+    }
+  }
+}

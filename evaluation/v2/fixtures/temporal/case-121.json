@@ -1,0 +1,46 @@
+{
+  "answer_contract": {
+    "deadline_date": "계산 가능한 경우 YYYY-MM-DD, 아니면 null",
+    "decision_status": "ready|conditional|abstain",
+    "rule_answer": "아래 선택지 중 하나",
+    "rule_answer_options": [
+      "address-or-workplace-service",
+      "article-14-fact-dependent",
+      "defendant-general-forum",
+      "effective-upon-dispatch",
+      "individual-address-forum",
+      "ip-special-forum-subject-to-statute",
+      "knowledge-date-required",
+      "one-year-lodging-claim",
+      "personal-delivery-required",
+      "place-of-performance-special-forum",
+      "postal-service-after-article-186-failure",
+      "public-service-requires-statutory-ground",
+      "real-estate-location-special-forum",
+      "starts-when-right-exercisable",
+      "substitute-service-needs-capable-recipient",
+      "ten-year-ordinary-claim",
+      "three-year-interest-claim",
+      "three-year-tort-knowledge-period",
+      "tort-place-special-forum",
+      "verify-specific-addendum"
+    ]
+  },
+  "domain": "civil-contract-tort",
+  "facts": {
+    "relation_continues_after_effective_date": true
+  },
+  "format": "legal-workbench-temporal-input-v1",
+  "kind": "applicable-law",
+  "official_rule": {
+    "article": "제14조",
+    "article_text": "제14조(법 적용의 기준)\n14\nN\n[ACCOUNT_001]\n조문\n일부개정\n법 적용의 기준\n[ACCOUNT_002]\n① 새로운 법령등은 법령등에 특별한 규정이 있는 경우를 제외하고는 그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다.\n①\n② 당사자의 신청에 따른 처분은 법령등에 특별한 규정이 있거나 처분 당시의 법령등을 적용하기 곤란한 특별한 사정이 있는 경우를 제외하고는 처분 당시의 법령등에 따른다.\n②\n③ 법령등을 위반한 행위의 성립과 이에 대한 제재처분은 법령등에 특별한 규정이 있는 경우를 제외하고는 법령등을 위반한 행위 당시의 법령등에 따른다. 다만, 법령등을 위반한 행위 후 법령등의 변경에 의하여 그 행위가 법령등을 위반한 행위에 해당하지 아니하거나 제재처분 기준이 가벼워진 경우로서 해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다.\n③",
+    "law_name": "행정기본법",
+    "local_redaction_categories": [
+      "ACCOUNT"
+    ]
+  },
+  "question": "법 개정 전 시작해 개정 후 계속되는 법률관계에 어느 법이 적용되는가?",
+  "scenario_id": "case-121",
+  "task": "제시된 공식 조문과 사실만으로 판단하고 필요한 사실·특별규정이 빠졌으면 보류하라."
+}

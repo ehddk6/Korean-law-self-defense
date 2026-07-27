@@ -1,0 +1,357 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-101": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "90b03d84e21132e0b400a289170ab2b1f638ed5c6efd0e3cb1788081072b98bf",
+      "fixture_sha256": "71158296ce254d043f094c5a8cdea12dd28a7c6ffddd714859f10c541e9e6528",
+      "notes": "해시 연결 정상. 상고기각 주문과 affirmed가 일치하고, 가림·PII 및 쟁점·불리 논거의 원문 지지를 확인했다.",
+      "source_sha256": "0370a587057790ed5fe6d87e08fa04c17696dc4c2c782a8220bb156efc617dd3"
+    },
+    "case-102": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ac54cd5360d255df33850173e492dcb8fa2947271a65f2f07f9cf1191a6290b0",
+      "fixture_sha256": "5c79eb1efc224874ae5f2f30f095b0c1840aff1be50623f153a0c00f56ac3395",
+      "notes": "해시 연결 정상. 상고기각 주문과 affirmed가 일치하며 fixture 가림·PII 및 gold 근거가 모두 적정하다.",
+      "source_sha256": "2471319cda2dc9c6ff3f7f78493910f82876abcf9e17a00439ce5c54b776b27f"
+    },
+    "case-103": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "cc6bda8029514a38ac1dbfbcb1446c51927b7ca61cafb73277daf4a81aec72b6",
+      "fixture_sha256": "d25c2daecf316471ee34888ad6b32ba4e1929b386930f0bcd0c0abb6d02cdcf6",
+      "notes": "해시 연결 정상. 파기환송 주문과 reversed-remanded가 일치하고 fixture 및 gold 근거도 적정하다.",
+      "source_sha256": "4e829233b17b31373a2491248146ba8431c1a4206ed29a98e85f2a6cbde4ba46"
+    },
+    "case-104": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "86995185dd1cc0a2d86be74779a0d574e933477aec14ccd74fc0e6c3435ddf46",
+      "fixture_sha256": "2ea735cac5d7f1c1cdcc79c98bd064ba9c67720f642a391523c22860463a84d6",
+      "notes": "상고기각과 affirmed가 일치한다. 전체 매출액 산정 등 쟁점·불리 논거는 원문 사실관계와 판단에서 지지된다.",
+      "source_sha256": "38c1e0588f9da6047ef64bb91484b4d7502ba7e59feebf69ee9c4c6bca599521"
+    },
+    "case-105": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "39c33abd7a32fa784565119de6556fc12f0f3b9bee08849dde939affd9c9064e",
+      "fixture_sha256": "79bf6035ecd8f8273f1c34c73ef815a4ace29e0dd12892dfe8752c3281bf3265",
+      "notes": "해시 연결 정상. 상고기각 주문, outcome, 가림 상태, PII 부재 및 gold 근거가 모두 확인된다.",
+      "source_sha256": "686063c9aa9d0e22677d7bc22bbbf78e4f75374844e54277e8aca9803ebf7d40"
+    },
+    "case-106": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e8553ab83aa6158377723d95ea23312d1b5d0983b525ea199146b82654c4dc68",
+      "fixture_sha256": "2a36e0c922d24eb29f797ba652e53728b31711dc56796376e238161b2f24e561",
+      "notes": "파기환송과 reversed-remanded가 일치한다. 영상정보 직접 훼손자의 처벌대상 여부는 원문 판시로 지지된다.",
+      "source_sha256": "daa477571b5447176aba969306214319d54dcaf1f6488c5b7b88cc6347882a0c"
+    },
+    "case-107": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1ad1b4e03095e3e8dd85d9e1486d25a3923c21aba48eba48bf93e64c5452f0d9",
+      "fixture_sha256": "18b2ae64127546a15bc47bbd93295c6e431d7be9e069ba59e4c3ba47d365b3a1",
+      "notes": "무죄 주문과 granted 표지가 일치한다. 개인정보 처리업무 관련성 및 누설·유출 쟁점은 원문에서 지지된다.",
+      "source_sha256": "e0547bd936b74105af0368caf95cae84c2de99b5aebde1f10a42dc0e17d2c9f0"
+    },
+    "case-108": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "97138768963167e518bf0225a1d76ddd343378acecaabe2feecad9d5d24b6da5",
+      "fixture_sha256": "685e1b68cbccff8eed61e522ff468b319e0c950d6fb3040ceae4cc4a8321cf8a",
+      "notes": "무죄 주문과 granted 표지가 일치한다. 직원조회 정보의 업무 관련성 등 expected 쟁점은 원문 판단으로 지지된다.",
+      "source_sha256": "d4f8b80a544de0f314d226f91681f592eb21fab2b9c2d90a252b37f546a57bdf"
+    },
+    "case-109": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b69638cf94a3573259c1a8723ea429b5827a2002b053f90a095adc0ec7be8792",
+      "fixture_sha256": "f927d1139997b1645d60792d76ef18cd11959171bde2afe34b2610b341c41065",
+      "notes": "공식 유죄 주문과 granted 표지가 일치한다. 주문·직접 결론은 가려졌고 분석 맥락과 원문 gold 근거가 충분하다.",
+      "source_sha256": "cbca0402c937161724db4c0dd8799302ab8b01f4c2e596e5460b5c4c7a90a746"
+    },
+    "case-110": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1a3d7091c9a5a51862c5e244a731a959f26ebca885ba0d40cff8723887059768",
+      "fixture_sha256": "a12e544d596d4d574744b7b1953ee8e9f762a6bd25aaefd05f6df305f61d42c0",
+      "notes": "상고 모두 기각 주문과 affirmed가 일치한다. 해시 연결, fixture 가림·PII 및 원문 근거가 모두 적정하다.",
+      "source_sha256": "d31f1bbb209f59ffc5b25d19ad0f08851662667f422598cfe8d6af61f62648a2"
+    },
+    "case-111": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "40247fe9e5802dfc55c762125585f1e94b7312bb508245f28dd51ed143e95e34",
+      "fixture_sha256": "5897144d9c8bdc169e1c3b98ba1e40b9d5f6b08ce83986fcf042b24b1f3f6322",
+      "notes": "피고 패소 부분 파기환송 주문과 reversed-remanded가 일치하며 가림·PII·gold 근거도 적정하다.",
+      "source_sha256": "3a177ef42ebec556dd5e71e16f333517c75ac4e70e7a76ba4fbea2777a893d31"
+    },
+    "case-112": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "554d9a391f8651c1164637926154d453037ac775e6c74391887de0145cd42c8c",
+      "fixture_sha256": "3c6dec78c5fff6f2a43668b326c25d0e15e3c36ba63ce795c393bfd9974549e0",
+      "notes": "난민인정불허처분 취소 주문과 granted가 일치한다. 해시·가림·PII 및 쟁점 근거가 모두 확인된다.",
+      "source_sha256": "eaf4f2618e32010136cf7dbf740f598d5535886d4d1858edf625d9ae1237c738"
+    },
+    "case-113": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f5ae1d7dc05dc98c4b0f4b96ee89c1ccf3ba14372f107029f378ae4c823b12b1",
+      "fixture_sha256": "2a3ec3173eba45128e381ae0f1fdebcae393fc823eb82a6df3c49c282d02b82a",
+      "notes": "일부 면소 제외 나머지 파기 주문과 mixed가 일치한다. 선행 확정판결 관련 논거도 원문 사실관계로 지지된다.",
+      "source_sha256": "51d179a2f06b23dec9f0814e6ee77dc7c65566b81f7e06c5bf5fdb2431c8ee4c"
+    },
+    "case-114": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "dde5bf3a2959c23346d299ee21459deccd4a6a175d2c1ffc4d414239c37fd98a",
+      "fixture_sha256": "1014075e7d04642112f0aba059e8ad0bb593376c641931b608923e2f8325690b",
+      "notes": "재항고기각 주문과 affirmed가 일치한다. fixture 가림·PII 부재와 expected 근거의 원문 지지를 확인했다.",
+      "source_sha256": "268bd7109c767a9a8ba4c9ff96b37fd842b90a85522922d81190adfbf10fc0b5"
+    },
+    "case-115": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1b4ac5ef658d1541b6d71b8c1cd0390337ef9becf797f6301495ded72948b0c5",
+      "fixture_sha256": "f9812c30f73e8f55794ecea6c9a2b14effc47734f8036e80f0eaa0c9edb2d66c",
+      "notes": "복합 주문과 mixed가 일치한다. 정식이사 선택 재량 등 불리 논거는 원문에 명시되어 있고 가림·PII도 적정하다.",
+      "source_sha256": "5a059ae403e6ac03ae1da247557df97bdc21667f720156d13dd5eca69d7e7b50"
+    },
+    "case-116": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "408c9900972c9cee2fd4cc6dc438cd082ba7f654c1e18647847480cc07da5430",
+      "fixture_sha256": "dafa841aabbeece9e3ca9fa76764307f402316f60cebb7370abbbdd7d467bcc4",
+      "notes": "상고기각 주문과 affirmed가 일치한다. 해시 연결, fixture 가림·PII 및 expected 원문 근거가 모두 확인된다.",
+      "source_sha256": "5a21ed51af512521d2077f50cb378bfb17ecae5e513b33c2125a66c18374f26c"
+    },
+    "case-117": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b60f117ecf23bdc2ed21d4cdf96cdefb6e7cd3ffe366d632f9029205a706adbf",
+      "fixture_sha256": "7aeabdbca8c93d0c46f9a7066e752e77b15e395967ca043a2ca92967b6667c31",
+      "notes": "특별항고기각 주문과 affirmed가 일치한다. 직접 결론은 제거되었고 분석 맥락·PII·gold 근거가 적정하다.",
+      "source_sha256": "f3cbff6bd6ad1317593831bcd20b7bf680e4a6de353af42e3f68fcb8466e285c"
+    },
+    "case-118": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "4d2c26a6109ce989c2f75d83eee92ac376ffffb9de408fd43f49cd11d4850d9f",
+      "fixture_sha256": "e679d08c1e0ad3e11f87916191b630d1f73e2caa4aa8ce72cfee20236d975b62",
+      "notes": "원심·제1심 취소 및 환송 주문과 reversed-remanded가 일치한다. 환수 기준·통지 쟁점은 원문으로 지지된다.",
+      "source_sha256": "b6a338afe0498bf296ab660f8bd2c242b086b9536ac16c29a8484c984ae331b3"
+    },
+    "case-119": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e29c318141eca6d17b8facfdbb4fe347307cab76d782b8946481c9e1e497e0bf",
+      "fixture_sha256": "2a5187a788fc4647a9d158580a8e61ca7e3c17cd2491b1eb7dfd155261af459c",
+      "notes": "파기환송 주문과 reversed-remanded가 일치한다. 해시·가림·PII 및 expected 쟁점·불리 논거가 모두 적정하다.",
+      "source_sha256": "8c16519d33c45a3a767209fe00a1e794bd32d5b06f0ea8fb56c51cb615fe784b"
+    },
+    "case-120": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d018719ebabd56d984926e8d29ee821df0bfa588a24357f9fb4d8eb5d0106b61",
+      "fixture_sha256": "a2fd85af03c028ad6f4260fc4df6b5bacb60568dfe71455329c469e4ae95bec4",
+      "notes": "쌍방 상고기각 주문과 affirmed가 일치한다. fixture와 expected의 가림·PII·원문 근거도 모두 적정하다.",
+      "source_sha256": "dc8a2ddec0e551ec055ceb7a245caf0d45a7d0a5f7a38c5a53aca111b067ddd0"
+    },
+    "case-121": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7647a3ab0711ea81a52957d952e2140d8a44e287e67600de5ce4fc4d37144692",
+      "fixture_sha256": "d61b7ae31dd90597d266c984c356a554bec806dbeea7de7fdfa06e6e987bdfa3",
+      "notes": "행정기본법 제14조와 계속 중 법률관계 사실만으로는 예외 확인이 필요하므로 conditional/article-14-fact-dependent가 타당하다.",
+      "source_sha256": "fc6400a197698335e4a51dd599feb87dd3bcedf1638304054c2c3a9b007c9fbe"
+    },
+    "case-122": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c82ab5c1af1d669e7ea5056df6656394f8d6f8c443502813dcce13561ecc595d",
+      "fixture_sha256": "7ba5d7b96c53fe95fafa9ad612caff37baaede201b13612fe41396627b6b7623",
+      "notes": "특정 부칙 원문·개정일이 없어 abstain/verify-specific-addendum가 타당하며, 의도된 결손은 fixture_blind 실패가 아니다.",
+      "source_sha256": "ffed21cd4210cdb24adf107abdcf988970b7d1116c202d65fb47fa5e836ee897"
+    },
+    "case-123": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ba525828d0b8b21e5979a833452ec311f8569106ae40af80488f8ab903cb2295",
+      "fixture_sha256": "4e643406722e8730f11c741bbb33eb1540129066b28e2febec2bf30b670f84c6",
+      "notes": "민사소송법 제178조의 송달받을 사람에 대한 서류 등본·부본 교부 원칙과 ready/personal-delivery-required가 일치한다.",
+      "source_sha256": "147035de0657e04e1133833f64856cd755d94f6ecccec0f893611862c126ceb8"
+    },
+    "case-124": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "de31d6950a87e8594ff05b83e32c2dc4254a5d57e96e1b2eb211c1f2f950d9fd",
+      "fixture_sha256": "ac0705bf5f63dfc059ec30d92f1566425399879b50d461a74d4466507a1faebb",
+      "notes": "민법상 일반채권 10년, 권리행사 가능일 2026-04-10 및 중단 없음에 따라 2036-04-10 계산이 일치한다.",
+      "source_sha256": "455e780e73ea5a60ba08b13ab03dbaf9d72b89e5447a59ebefca17dec048519f"
+    },
+    "case-125": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "413edad82657d03df0e5f0bc1b7beeeec11e24be8471581fd0734a44f0ca07ac",
+      "fixture_sha256": "75bbd89a008743296315dcc6f5f4a4749df7568f44d1f8b1a7940f68c1fe1236",
+      "notes": "민사소송법 제2조의 피고 보통재판적 원칙과 conditional/defendant-general-forum이 일치하고 추가 사실 필요성도 적절하다.",
+      "source_sha256": "a52c09a538db36e22053afce19f5448ed380378090b9c3448963fcf5a8dfd36f"
+    }
+  }
+}

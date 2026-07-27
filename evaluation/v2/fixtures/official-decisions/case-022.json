@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2023-11-30",
+  "court_level": "대법원",
+  "domain": "real-estate-lease-registration",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "2. 원심판결 이유와 기록에 의하면 다음 사실을 알 수 있다.\n가. 이 사건 다가구주택은 총 16가구로 이루어져 채권최고액 합계 780,000,000원의 근저당권이 설정되어 있는 상태였는데, 원고는 2018. 4. 27. 위 다가구주택 중 (호수 생략)을 임대차보증금 90,000,000원에 임차하였다.\n나. 피고 1은 공인중개사법에 의한 중개업자로서 이 사건 임대차계약을 중개하면서, 원고에게 당시 이 사건 다가구주택의 부동산등기부에 기재된 근저당권에 관하여는 채권최고액을 고지하고 실제 피담보채무액을 600,000,000원이라고 설명하였으나, 위 주택에 거주하던 다른 임차인의 임대차보증금 액수, 임대차의 시기와 종기 등에 관한 사항을 구체적으로 확인하여 원고에게 설명하거나 그 근거자료를 제시하지 않았다.",
+  "scenario_id": "case-022",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

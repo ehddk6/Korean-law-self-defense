@@ -1,0 +1,567 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_model": "gpt-5.6-terra",
+  "reviewer_id": "terra-max-approve-b",
+  "reviews": {
+    "case-061": {
+      "approved": true,
+      "source_sha256": "c017dbe53106f0146f41443aa0f260354a4e91e04aaba4299c801b7d852fdad3",
+      "fixture_sha256": "2af36e6e773731eff9d18b86b9295963141f690dc2fc38b6be94952884489f71",
+      "expected_sha256": "7a00f78fb8537a52e8a72b8c654261385f1948506f5cb052a696ee7a1f599802",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official compound order supports outcome=mixed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-062": {
+      "approved": true,
+      "source_sha256": "26de6b3cdcbac73bb262799f6eee0380de06506b3ab273ae8599570b5d8f6ae1",
+      "fixture_sha256": "c0660817d7373cbbf57058d057fe4dd4c460fba17b92a0a741c7703b0e946868",
+      "expected_sha256": "67d18ddd1838cab99e30629120a080e93857bdc1a009def970201422369e5b1f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-063": {
+      "approved": true,
+      "source_sha256": "6c30aeb0129702c7359b45cf30bf0c2fcec0a5cbd8c7a24609536c24f37f2574",
+      "fixture_sha256": "5801f3f5edf2ac6ca0ed2e7d82dad001d3fb1063085c37628171bec01191dc39",
+      "expected_sha256": "b257271f54dcc2bc6140b22786b04a4e211a6b00e2a809bc41e44f1390a8e3c3",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-064": {
+      "approved": true,
+      "source_sha256": "4a1961b0bca008af4c703b51a1adecf0acfabed6c38c0b336de44b83fc0c59a9",
+      "fixture_sha256": "4a30e33debd88e745adc98907b0201dad59549090a584753459140c122980b13",
+      "expected_sha256": "074535251b41810a7e20535beabaaffd69f98c7ce45c2a4e455b6c1ac206e1a9",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-065": {
+      "approved": true,
+      "source_sha256": "e4f88f46b3cc7077497b908c69b8acc10c0b8a8341497c2328564b864969507e",
+      "fixture_sha256": "fa34e9f1d09e4b19c98693e20df7079a4aca33da60252f7861029f36a64d8754",
+      "expected_sha256": "d2efb92b33a6bc038fe5d8800fd554a761780d8bee7371c2656daa59296f6385",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official compound order supports outcome=mixed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-066": {
+      "approved": true,
+      "source_sha256": "1094dc56f606314940c6eccbbcbbc4d8fac2c0dc0cc042128429db4ae493c37e",
+      "fixture_sha256": "c297c8f87cf21ab721588ec7d6f62193bf800f5574505e661c911b0df94f2a2c",
+      "expected_sha256": "75b050a72ee3b3aa2172a74b73d06349a8ccdb2a9e6b6e3d6b91bd287e2bbf8b",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-067": {
+      "approved": true,
+      "source_sha256": "5fa63587064d3c4ca2f7e36dd3ec58fc6097c5f4a1582254c922e299400f0e73",
+      "fixture_sha256": "e329827aa416888dd013a25b6a64a8c5e11818ee417e5d1c92a094746c2bbbe3",
+      "expected_sha256": "f235c8dc29c60bdead03b50d24ab1024e0ea0019420a058339bd88ec2a98ca13",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-068": {
+      "approved": true,
+      "source_sha256": "91c28d15fa5781f48040a36280bb9cd183b219626f193620d1d379b892196839",
+      "fixture_sha256": "1ae000a38cc931c71194b7d59979624a6cb39727b4f2f1bca452230525cec95c",
+      "expected_sha256": "b9b9c94a0dcc1ad641f8573f27e40d8f70c26e1ac74642f7ac292bf1afb5c54f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-069": {
+      "approved": true,
+      "source_sha256": "bdc0668105abb15dc6e94cf5b733e1efca789055963428d824284c84320eaf88",
+      "fixture_sha256": "94818f732c04a7ce4b953e4f208bb1ac95918a9ff6204d81205527dc97d4f6a1",
+      "expected_sha256": "268b7f5ded7d5bf49d407a610298433c074fd799a1261ad8357742b14fabdf53",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-070": {
+      "approved": true,
+      "source_sha256": "4189938079f49508e854b0d7cfaf428d69f7f98c00beeddc9bdbba2da5dc603b",
+      "fixture_sha256": "1fa2f0b367e17c1591996f3461016dce065f36efd5e0c32d3c8235f4494ec517",
+      "expected_sha256": "6c7837c41f7bfb5cdb0463cb3f8ee237ed25b1127dfe54ccda02de679a89bbfd",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-071": {
+      "approved": true,
+      "source_sha256": "96296a8711d66a14203eed06e34f164408dd9923575772b03fc4136cb56bf571",
+      "fixture_sha256": "3e9b6de6d764bbcae57b9e5f2a64206342c6da18662aba25c2def8f9edb36d61",
+      "expected_sha256": "9b2701ef65dd66f6baee2ebd851f66ab1b7d14254985ce14f7b9ac6aed5ce540",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-072": {
+      "approved": true,
+      "source_sha256": "efa04d321281f9b7b272c3cf7e56539721e68fe067628d1f6f5eab2d0797614b",
+      "fixture_sha256": "032efcec07726049a8d56ad6271da8de29ce213224e36e6ad51b60fc3998fb45",
+      "expected_sha256": "06202a581c2af148f230e380b46929ecf1853a0825ccfffcc125737f7816ed5f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-073": {
+      "approved": true,
+      "source_sha256": "818373c022cd8d3de458ebbbe0c3431dec11d662d8baa76b4701531ed8cd19cf",
+      "fixture_sha256": "a966026110abd72f9e939b07ad676f41bbc11182c5153ca19e2c06ce2cf89b1c",
+      "expected_sha256": "f365d99bc012bdcbbf1e381edb48f03bf9ce3e59130c29b37ac6fc72859bcc75",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-074": {
+      "approved": true,
+      "source_sha256": "13de94ada637e728669c560bba8e52711ec728b39856360ffc38b48dec806fe0",
+      "fixture_sha256": "24f6abe8aad0655b74a050dea5e39e835c66f4ae5e70f25f6ff3acf4824ca64d",
+      "expected_sha256": "c96da94c01b0a016281f214693fbb586596695d51dfa7d6511373e9344b2f603",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-075": {
+      "approved": true,
+      "source_sha256": "9a1784dea8493ec8a3f9cc2979b653aad17b8833326795cb13b66c4c6aa2175a",
+      "fixture_sha256": "c564414febe0a5d03884bcbf6b48921b99a2768d0a63c80e6a4cd7b46a586b34",
+      "expected_sha256": "d2b94886c815f8e132b91c6c9d0758bd18aa20e2385516d03707584f3a0c3dde",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-076": {
+      "approved": true,
+      "source_sha256": "434d4400c3a9143a33dee6c5c55dd43307ff5d7033ade0160c9e1b2fedbac476",
+      "fixture_sha256": "08ec14adc50e1ff25f6d496c705fe06ea2cc5ee1fd103c5ab484f486f27e9853",
+      "expected_sha256": "5b082700349bebdf31a3685f66f0a9231ed2b1289725c2392622105110b5237a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-077": {
+      "approved": true,
+      "source_sha256": "adab6981585906c5b50e9a597096093ceff38f884c1b8e113e263dfb9a87844b",
+      "fixture_sha256": "728e359a9ac52b003136191121ad39167f3f033a8dec7aea4e3329ddccf7d3df",
+      "expected_sha256": "0457e598978ef262ea0f9975d7fc85e23d69021826f1c01894fd1f75dde3130c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-078": {
+      "approved": true,
+      "source_sha256": "cd65834dee618c88918fed7f5e31144c5ebc0cd3c4d1201af4d6b444d17a6ec5",
+      "fixture_sha256": "b8718feef1cc086796d0ba42ee14ed06137c0294689ee4bce581e070dc53f269",
+      "expected_sha256": "e1179aff297c4feec5bd8eea636b6dac39c4d7dc236d9a04107e880357a27661",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-079": {
+      "approved": true,
+      "source_sha256": "a4333831d7abbfab1df6676e3560044c0fc6f9f92f1b8ddedf58e70be7a5b541",
+      "fixture_sha256": "c78cb2843ef7b442952c5ec16c266a9c7a43ef075377d85955179307632437f5",
+      "expected_sha256": "ef925cddffafb39408b890f9c6599e5cf5b4cbce5ae4acf8b3458aade8ed0b6c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-080": {
+      "approved": true,
+      "source_sha256": "bcf0e0cd1a6f34cf97491d5bb38db0abd5775112027c9a240e06fbb5a5cc09db",
+      "fixture_sha256": "486491e27b8b52f937d382cd5a8848799907023dbeb469b736153aefbc77d9c4",
+      "expected_sha256": "abee37120124553cdf960bcc8bfc89afe38d04b86e09bf88f504c28f2530f525",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=granted; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding s…4899 tokens truncated…r a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-101": {
+      "approved": true,
+      "source_sha256": "0370a587057790ed5fe6d87e08fa04c17696dc4c2c782a8220bb156efc617dd3",
+      "fixture_sha256": "8227ceb3a786e42bd8171047cda8b51f431909b3d32f7f83febf57ccf6f53558",
+      "expected_sha256": "f7dab0697a97da132a2af27237b1a8778a2bdab4d62dcf5e869a2ef6b0e5b89b",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-102": {
+      "approved": true,
+      "source_sha256": "2471319cda2dc9c6ff3f7f78493910f82876abcf9e17a00439ce5c54b776b27f",
+      "fixture_sha256": "823afda1b327e3ffa3c2b4ec41828fc95726bf6dd7778f0deb8722b15da0b73e",
+      "expected_sha256": "98287c60c6973da020e77e2c6e2dd5dca5cc9e1c56a8fafc253b79ed018b2f58",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-103": {
+      "approved": true,
+      "source_sha256": "4e829233b17b31373a2491248146ba8431c1a4206ed29a98e85f2a6cbde4ba46",
+      "fixture_sha256": "d2d50d26c303d416c173c306f4fdb0b96ffba8350d2ab952b489a278660248ac",
+      "expected_sha256": "d3320860b71382d2a9815d0488b3a1e2638c1c13eeea311f641102965ed0adde",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-104": {
+      "approved": true,
+      "source_sha256": "38c1e0588f9da6047ef64bb91484b4d7502ba7e59feebf69ee9c4c6bca599521",
+      "fixture_sha256": "cce9248550d66df90f509391446fddc23869a38fb622a25df1fc12a5f471f0f8",
+      "expected_sha256": "e345ceb8d0d126a6335c76b57f6f64f98975772d761c7a68e050a9ee4fa52643",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-105": {
+      "approved": true,
+      "source_sha256": "686063c9aa9d0e22677d7bc22bbbf78e4f75374844e54277e8aca9803ebf7d40",
+      "fixture_sha256": "c8f741abfaf76eb3b4ddb87f2fb7c3ac52d2a6949817222cec5a81bb26213344",
+      "expected_sha256": "ad245647ada642ef06efef5519cd5050756274bf6b1a57a13d3cd619c547b1ab",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-106": {
+      "approved": true,
+      "source_sha256": "daa477571b5447176aba969306214319d54dcaf1f6488c5b7b88cc6347882a0c",
+      "fixture_sha256": "bcba8fca017174377fd6bb98419cbd47cd60f89fe8907fd8c7090a44f9249e9f",
+      "expected_sha256": "497222f8dd6ec851bba9995dd5b95c25297bb9697ef4e84ffb918670ac0f1bca",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-107": {
+      "approved": true,
+      "source_sha256": "e0547bd936b74105af0368caf95cae84c2de99b5aebde1f10a42dc0e17d2c9f0",
+      "fixture_sha256": "024e4a8b8d4991a8074475516e05c958408d6a23bdf644677c3fd04205c44c5a",
+      "expected_sha256": "9402b1b669d8924c6ff523f9fe1626204bb3dd54423c06e8b8e7a926c79d0a4a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=granted; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-108": {
+      "approved": true,
+      "source_sha256": "d4f8b80a544de0f314d226f91681f592eb21fab2b9c2d90a252b37f546a57bdf",
+      "fixture_sha256": "11f1447c21eb05f11b88e5a07c525b3f5bc8e6968ebfda0ad1f35de9e4b6ae7a",
+      "expected_sha256": "aaa3c1bc2f38d34bc08603f9011878a0a6f3f6b06ba7f0b0df11261b8bdc28bc",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=granted; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-109": {
+      "approved": true,
+      "source_sha256": "cbca0402c937161724db4c0dd8799302ab8b01f4c2e596e5460b5c4c7a90a746",
+      "fixture_sha256": "5b5e384dc955d455fa8ef4895453f5e237773d96fc159114212796f1ddc37298",
+      "expected_sha256": "3b1ffdadc0a15fbbcb7b4f4a99d445d99abd7759a74583102bfb1c2356c1b2ff",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=granted; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-110": {
+      "approved": true,
+      "source_sha256": "d31f1bbb209f59ffc5b25d19ad0f08851662667f422598cfe8d6af61f62648a2",
+      "fixture_sha256": "d35bd83f02804c97e433ba33aa35f7b6c2c17c130963dacba9e28213a5097576",
+      "expected_sha256": "e2317ad3c1bcd0deda8d59f9193a62251c99befa259762880cd9df6164a0f010",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-111": {
+      "approved": true,
+      "source_sha256": "3a177ef42ebec556dd5e71e16f333517c75ac4e70e7a76ba4fbea2777a893d31",
+      "fixture_sha256": "4c70a13bb08f7dec608518b640df2d68caff66d5a3ad64f62a3857f3f488990e",
+      "expected_sha256": "b4dc9e31fb66bef6e6cd8ebebe9c221dc5de8b5f16c1fe133becdac6a20d6e72",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-112": {
+      "approved": true,
+      "source_sha256": "eaf4f2618e32010136cf7dbf740f598d5535886d4d1858edf625d9ae1237c738",
+      "fixture_sha256": "3c6dec78c5fff6f2a43668b326c25d0e15e3c36ba63ce795c393bfd9974549e0",
+      "expected_sha256": "51ce0b2703ccaa26fff474a05ed8a8e29b4876fd411630344a474169f7078662",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=granted; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-113": {
+      "approved": true,
+      "source_sha256": "51d179a2f06b23dec9f0814e6ee77dc7c65566b81f7e06c5bf5fdb2431c8ee4c",
+      "fixture_sha256": "3cf6151b264dbdaee0ece0c6302c9981830302cabcbda13e5c39b1b52f5fad7d",
+      "expected_sha256": "2c65d81abcdc57a7bdc2e4dba5bff73b296b9209a7421d1c904e449bed2cf0b9",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official compound order supports outcome=mixed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-114": {
+      "approved": true,
+      "source_sha256": "268bd7109c767a9a8ba4c9ff96b37fd842b90a85522922d81190adfbf10fc0b5",
+      "fixture_sha256": "57d4143a3a42de14441b05ee5a74b663c88dce429727472bddc0e47255332eae",
+      "expected_sha256": "71621291d51ff2994c311eabe467b227ae37daf3be2e9cf77df36000cf7b8ddf",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-115": {
+      "approved": true,
+      "source_sha256": "5a059ae403e6ac03ae1da247557df97bdc21667f720156d13dd5eca69d7e7b50",
+      "fixture_sha256": "665822d9d05f2ecaff34947bf3fe771b0b0416dc40f9a25855fb6194ba4fd8ea",
+      "expected_sha256": "4770c84fb7384fccfe5b406860643fcd9f4ba3532a49b3523e6c7ac056cb5f2c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official compound order supports outcome=mixed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-116": {
+      "approved": true,
+      "source_sha256": "5a21ed51af512521d2077f50cb378bfb17ecae5e513b33c2125a66c18374f26c",
+      "fixture_sha256": "5e73fa99d1b0bc12f355b5e9276cc9d1e8e0272f7de229776f75fabb11b2a834",
+      "expected_sha256": "587e7dd5248a02ba50ff79c99764def509865b1ac60c04fc0f90688ca9ad9a7e",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-117": {
+      "approved": true,
+      "source_sha256": "f3cbff6bd6ad1317593831bcd20b7bf680e4a6de353af42e3f68fcb8466e285c",
+      "fixture_sha256": "7aeabdbca8c93d0c46f9a7066e752e77b15e395967ca043a2ca92967b6667c31",
+      "expected_sha256": "a10b9e457daaa9f2c2737e64b4d5703d3c7bf3c6d6c258768c02cbe55cb4b73c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-118": {
+      "approved": true,
+      "source_sha256": "b6a338afe0498bf296ab660f8bd2c242b086b9536ac16c29a8484c984ae331b3",
+      "fixture_sha256": "a685cb6af988674b9d0776e13509b6eaa2f7f64300a6504ce2c3598d1e00aef2",
+      "expected_sha256": "8d99d7e8b976dfdda0ebd5c27d2a2ac9e423870a50fd9865895c733d8684fb26",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-119": {
+      "approved": true,
+      "source_sha256": "8c16519d33c45a3a767209fe00a1e794bd32d5b06f0ea8fb56c51cb615fe784b",
+      "fixture_sha256": "5cf4a7fc98c395c46889c9eca0ff279a5bd19bfb88f035c381ff459e1e653a34",
+      "expected_sha256": "38a6d703897b65d2580f6a4a9a9d32ef979242ca03061f7597a9f291960fb260",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official reversal-and-remand order supports outcome=reversed-remanded; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    },
+    "case-120": {
+      "approved": true,
+      "source_sha256": "dc8a2ddec0e551ec055ceb7a245caf0d45a7d0a5f7a38c5a53aca111b067ddd0",
+      "fixture_sha256": "5f0365163e7680bbf286a4b24d24f0f53091cdeb7161310cfa1ef3f02759788c",
+      "expected_sha256": "541b84ff4d2c5f304224efceb6d929bc34f02dd9a781012b375f81bd239012bc",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current source/fixture/expected SHA-256 and expected.source_sha256 match the manifest and P1 record; official order supports outcome=affirmed; conditional is appropriate for a masked prediction fixture, not a ready determination; fixture re-derives exactly with no source identifier/order-label leak or residual PII; every expected issue/adverse text is directly present in official source text, holding summary, or issues."
+    }
+  }
+}

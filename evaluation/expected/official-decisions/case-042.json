@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "처음부터 해외에서의 사용을 예정하지 않고 즉시 국내에 반입할 목적으로 자금을 해외 송금하였다면, 국내재산을 해외로 이동하여 임의로 지배ㆍ관리한다는 재산도피의 고의가 있었다고 볼 수 없다."
+  ],
+  "expected_issues": [
+    "특정경제범죄 가중처벌 등에 관한 법률 제4조 제1항 재산국외도피죄의 성립요건 / 어떠한 행위가 같은 법 제4조의 ‘재산국외도피’에 해당하는지 판단하는 기준 / 처음부터 해외에서의 사용을 예정하지 않고 즉시 국내에 반입할 목적으로 자금을 해외 송금한 경우, 재산국외도피의 고의 유무(소극) 및 이는 처음부터 해외에서의 사용을 예정하지 않고 자금을 그와 같거나 유사한 재산적 가치를 가지는 대체물로 바꾸어 즉시 국내에 반입할 목적으로"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2025도8824",
+  "outcome": "affirmed",
+  "scenario_id": "case-042",
+  "source_sha256": "522d723a4a3f7b50418fede0765126edd58fc643123610c6338fd485fed3c0f3"
+}

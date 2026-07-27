@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "따라서 상가임대차법이 적용되는 상가건물의 임차인이 임대차 종료 이후에 보증금을 반환받기 전에 임차 목적물을 점유하고 있다고 하더라도 임차인에게 차임 상당의 부당이득이 성립한다고 할 수 없다."
+  ],
+  "expected_issues": [
+    "상가건물 임대차보호법 제9조 제2항의 취지 및 위 법이 적용되는 상가건물의 임차인이 임대차 종료 이후 보증금을 반환받기 전에 임차 목적물을 점유하고 있는 경우, 임차인에게 차임 상당의 부당이득이 성립하는지 여부(소극) / 위 법이 적용되는 임대차가 기간만료나 당사자의 합의, 해지 등으로 종료된 경우, 보증금을 반환받을 때까지 임차 목적물을 계속 점유하면서 사용·수익한 임차인이 시가에 따른 차임 상당의 부당이득금 지급 의무를 부"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2023다257600",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-023",
+  "source_sha256": "bd0768ef4414354ce042df459d1c683bbb30a83bc52601177aa99c00fbb4a40f"
+}

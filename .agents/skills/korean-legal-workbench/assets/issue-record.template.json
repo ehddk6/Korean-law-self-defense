@@ -1,0 +1,11 @@
+{
+  "title": "핵심 쟁점",
+  "legal_elements": ["요건 1", "요건 2"],
+  "burden": "입증책임 주체와 정도를 공식 근거로 확인",
+  "favorable_authority_ids": ["auth_favorable"],
+  "adverse_authority_ids": ["auth_adverse"],
+  "fact_ids": ["fact_example"],
+  "missing_facts": ["결론을 바꿀 수 있는 미확인 사실"],
+  "remedies": ["가능한 구제수단"],
+  "provisional_view": "abstain"
+}

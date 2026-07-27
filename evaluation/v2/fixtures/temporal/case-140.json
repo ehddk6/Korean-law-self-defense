@@ -1,0 +1,47 @@
+{
+  "answer_contract": {
+    "deadline_date": "계산 가능한 경우 YYYY-MM-DD, 아니면 null",
+    "decision_status": "ready|conditional|abstain",
+    "rule_answer": "아래 선택지 중 하나",
+    "rule_answer_options": [
+      "address-or-workplace-service",
+      "article-14-fact-dependent",
+      "defendant-general-forum",
+      "effective-upon-dispatch",
+      "individual-address-forum",
+      "ip-special-forum-subject-to-statute",
+      "knowledge-date-required",
+      "one-year-lodging-claim",
+      "personal-delivery-required",
+      "place-of-performance-special-forum",
+      "postal-service-after-article-186-failure",
+      "public-service-requires-statutory-ground",
+      "real-estate-location-special-forum",
+      "starts-when-right-exercisable",
+      "substitute-service-needs-capable-recipient",
+      "ten-year-ordinary-claim",
+      "three-year-interest-claim",
+      "three-year-tort-knowledge-period",
+      "tort-place-special-forum",
+      "verify-specific-addendum"
+    ]
+  },
+  "domain": "administrative-constitutional-state-liability",
+  "facts": {
+    "tort_claim": true,
+    "tort_place_known": true
+  },
+  "format": "legal-workbench-temporal-input-v1",
+  "kind": "jurisdiction",
+  "official_rule": {
+    "article": "제18조",
+    "article_text": "제18조(불법행위지의 특별재판적)\n18\nN\n[ACCOUNT_001]\n조문\n일부개정\n불법행위지의 특별재판적\n[ACCOUNT_002]\n①불법행위에 관한 소를 제기하는 경우에는 행위지의 법원에 제기할 수 있다.\n①\n②선박 또는 항공기의 충돌이나 그 밖의 사고로 말미암은 손해배상에 관한 소를 제기하는 경우에는 사고선박 또는 항공기가 맨 처음 도착한 곳의 법원에 제기할 수 있다.\n②",
+    "law_name": "민사소송법",
+    "local_redaction_categories": [
+      "ACCOUNT"
+    ]
+  },
+  "question": "불법행위지 법원에 손해배상소송을 제기할 수 있는가?",
+  "scenario_id": "case-140",
+  "task": "제시된 공식 조문과 사실만으로 판단하고 필요한 사실·특별규정이 빠졌으면 보류하라."
+}

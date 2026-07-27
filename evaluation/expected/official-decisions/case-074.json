@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "1명 추가) 두도록 규정하고 있고, 비고 7.은 이에 대한 예외로 ‘세탁물을 전량 위탁하여 처리하는 경우에는 위생원을 두지 않을 수 있다.’고 규정하고 있다."
+  ],
+  "expected_issues": [
+    "노인복지법 시행규칙 제22조 제1항 [별표 4] 제6호 비고 7.에서 말하는 ‘세탁물을 전량 위탁하여 처리하는 경우’의 의미 및 위생원이 아닌 종사자가 장기요양기관에서 발생한 세탁물 중 입소자의 개인 의류를 시설 내에서 직접 처리하는 것을 ‘세탁물을 전량 위탁하여 처리하는 경우’에 해당한다고 볼 수 있는지 여부(원칙적 소극)",
+    "구 노인장기요양보험법 제43조 제1항 제4호에 따른 부당이득 환수처분이 기속행위에 해당하는지 여부(적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2024두55723",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-074",
+  "source_sha256": "13de94ada637e728669c560bba8e52711ec728b39856360ffc38b48dec806fe0"
+}

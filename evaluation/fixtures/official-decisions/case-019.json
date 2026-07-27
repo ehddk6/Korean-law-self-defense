@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2024-11-14",
+  "court_level": "대법원",
+  "domain": "insurance-consumer-damages",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "상고이유를 판단한다.\n1. 사안의 개요\n원심판결 이유와 기록에 따르면 다음과 같은 사실을 알 수 있다.\n가. 소외인은 2009. 5. 26. 피고와 피보험자를 소외인의 배우자인 원고, 보험사고를 보험기간 중 상해사고로 2년 이내 사망 또는 후유장해 발생 등으로 하는 원심 판시 이 사건 보험계약을 체결하였다. 소외인은 이 사건 보험청약서의 ‘피보험자 자필서명’란에 원고의 이름을 기재하고 서명하였다.\n나. 원고는 2020. 12. 21. 주거지 화장실에서 넘어지면서 제5, 6흉추의 폐쇄성 골절 상해를 입었다. 원고는 이후 △△△병원에서 2021. 1. 21. 제6흉추 풍선척추성형술을 시행받고, 2021. 6. 21. \"제6흉추의 압박 정도는 62%, 후만각도는 36.3°로 측정되고, 척추 장해분류표상 ‘척추에 심한 기형을 남긴 때’에 해당한다.\"라는 진단을 받았다.",
+  "scenario_id": "case-019",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

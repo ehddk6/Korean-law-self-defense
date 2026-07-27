@@ -1,0 +1,14 @@
+{
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "권리를 행사할 수 있는 때라는 기산점"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "source_sha256": "b5f59ecddd1c11bb67c086664643d5c5885fcd2fd1d8418585649ceaee9ec11e"
+}

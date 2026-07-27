@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "result": {
+    "applied": 120
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "5590889012bdc8bf62f4617ea4ccd4732654d02e5bd56052c8324eb426943d1d"
+  }
+}

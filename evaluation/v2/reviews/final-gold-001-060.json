@@ -1,0 +1,805 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_model": "gpt-5.6-terra",
+  "reviewer_id": "terra-ultra-final-001-060",
+  "reviews": {
+    "case-001": {
+      "approved": true,
+      "source_sha256": "067529bec5771f45ba440c802b3e79902ad8b12215a2591d339fdb4f4269abba",
+      "fixture_sha256": "30695c6d89490793ef577930b6533d3effccdeb4da31c5cba6117caa45bf660e",
+      "expected_sha256": "761568d47bae5f1e5fd19b56dade5ad9d522d7164879100ce557c00d20e69831",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-002": {
+      "approved": false,
+      "source_sha256": "1a6ecfcf05f95ad9aea0de4a3221263dca8840a675ef9459591778464164c614",
+      "fixture_sha256": "e84724ddfc6b215c5534c7e4d03b5e37a6d6eef4925c75ed334e67801e311969",
+      "expected_sha256": "9071f55db6c9bccf56ba3394d34e076d45cf356d5d4f65ecd2266aabbdf8f0a2",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Official order partly reverses/remands and dismisses the defendant appeal, so the outcome is mixed, not reversed-remanded. Fixture retains the Supreme Court case-specific causation application."
+    },
+    "case-003": {
+      "approved": true,
+      "source_sha256": "2f90654479cd9a4db2b78f47d7e59aa5e233d4e33a67b5fe9f746727e8e4adde",
+      "fixture_sha256": "bcb7f5754d3a8f67a4516df0fff4ffa803e22365d383b7eb5fad42a64095d7d0",
+      "expected_sha256": "60775826020e4bbc357b7e1be0a2ff1ec05765877b592688027ab36aae088e3f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-004": {
+      "approved": false,
+      "source_sha256": "1b02e675f0ce6a5e175be9158945f204515177fb9d0cbe61268575e320f737ad",
+      "fixture_sha256": "dabf29877d2155857b545eac072a72d1d9b0cd8821b92106c71cfb1860f8577a",
+      "expected_sha256": "52d37e2f6bc96dc12a7f3cf2f09df19f5a194a0c5a74f3e9cc7149f6225d3133",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Official order dismisses all claims; expected outcome granted is incorrect."
+    },
+    "case-005": {
+      "approved": false,
+      "source_sha256": "5ff492a8aea13e7e5d81e17ae01350e421367fee74f3a24bde1ca4abfbd71631",
+      "fixture_sha256": "cef898a943312ebd17ba571912d0e22906f2b87b9d988accec055379e4172a25",
+      "expected_sha256": "b4d2a0610e99fa51542a4c3b798d3e3ecc0396023c1451c2a042dec44fcdc18b",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Official order partly reverses/remands and dismisses the plaintiffs appeals, so the outcome is mixed. Expected adverse point appends an unsupported generic suffix."
+    },
+    "case-006": {
+      "approved": true,
+      "source_sha256": "d27997a488229238233aeacee99cdbadf1d0fd93850591a47e0ab770b6d8d848",
+      "fixture_sha256": "ee6d47d1580b276936959d4f9a6484172ea6de04564f26f0e08568c1e0bdc744",
+      "expected_sha256": "33650e383db257f3b80ea555329df8ecb75a22a875e37e54da344d0f773848e7",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-007": {
+      "approved": false,
+      "source_sha256": "51092ee196ad5badc1f3180737d851c26f2a7879b0af843db0df167f4e2eac0b",
+      "fixture_sha256": "8d559c21a2d1a2ff7901076ff170d89c9593dc2b6e4f3395860a88320c02ff07",
+      "expected_sha256": "b6522f886aaabbe4a063d05b9ec4a4ff8c07e25a5071fde43319cbceb595683f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture retains the Supreme Court judgment and its statement that the lower-court reasoning is untenable, directly revealing the reversal direction."
+    },
+    "case-008": {
+      "approved": true,
+      "source_sha256": "da00fad37436eaa883860379c06d8bbebc0bafc19c792566bac6bf581ed60b6a",
+      "fixture_sha256": "3eafebcd59e4794967cea25a2c31bfdc7bb89d7e9ed289bac6dbc3f81e0c8e08",
+      "expected_sha256": "e291eb6f845907371d670df079de3b2bfca0ba19df2fca87371283af7ecbfe8f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-009": {
+      "approved": true,
+      "source_sha256": "46ee6ea4538db79f4157139036ef7f2ed969fc12a97c5e9205b7b5e40b33d31d",
+      "fixture_sha256": "ffe8e8d892b243db558e84890b0ee20241ce0a75b16dcda7277e424ade3011d1",
+      "expected_sha256": "fb26861d1482f42358f9dfa3b8948081a1d76ec940eb3ba1d09433a641911af5",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-010": {
+      "approved": true,
+      "source_sha256": "3b6e1bcb3673d0474748c94253817f983edaeb417255c1b2315d11ccefac222d",
+      "fixture_sha256": "b8cfaa490b9d155a3c36d7ae0f33a1c7589adae61cce29f4af8049ae58f9f1e0",
+      "expected_sha256": "0927f312321cb0babbae43dbc4e9ac559cd515305ba244eb79cc7700866f580c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-011": {
+      "approved": true,
+      "source_sha256": "09fc4161e1fa92a519e4dfd927e00aceb62ed9c1a0054df2aa436a9fe976763b",
+      "fixture_sha256": "36d863e9ceb4da2d4f641e327d234eef9bbc20d544af22adb658c7498d8aa198",
+      "expected_sha256": "4c64b26dfb26b77224670906dcfb405e21bacf95531249ff54364afc0b1dc5af",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-012": {
+      "approved": true,
+      "source_sha256": "449651c8f87048617180cfc7d21ac59617adbf008f24866e3eaaae4c8aba9836",
+      "fixture_sha256": "591f6a0a740dcaf5d4a829b51de1bef5db05ffb682c772027030babfad2eaa20",
+      "expected_sha256": "ff36c960febe6ed63ac290d1fc31175335fa6f22b68a9110f426c1afe8650c93",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-013": {
+      "approved": true,
+      "source_sha256": "13a3118a59732994347e309f12929affb154bdacdfe3528fcc1c3a41c5ae32fe",
+      "fixture_sha256": "0876fa4c293b737cc750d12c4a28a4bda655c1c62d5541d9e3d8c09178a4d7b2",
+      "expected_sha256": "637d8575128b6368be3e2a399674b44ab7f8e8a6eac55362adbc89ee4c15546b",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-014": {
+      "approved": false,
+      "source_sha256": "77500f5b29f02b3fc9ee69d61c1f8c9bcf3bcce344fced0f41bb0a55e03d146e",
+      "fixture_sha256": "b6d2f93cec919461f693aff85cd87816305538e745a77c57149169e7e59d33f9",
+      "expected_sha256": "81007e2217b0a382c32e332cfe02e522d1ab75ec0070a8ef0957269af4d313e0",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Official order dismisses all claims, not granted; the generic expected issue is not supported by the official source."
+    },
+    "case-015": {
+      "approved": true,
+      "source_sha256": "d3167f055d704491576008648ca9044526d6d1ed2e363787d918bded00af1513",
+      "fixture_sha256": "c9735be89a5fea263dc2e74d29d22b0ae87ad76c75e41a84bc41d7d6edee0d9a",
+      "expected_sha256": "651b10bb2eb3fe9782bfd4c8a31906c24626bc852b051941c192d10377d1e345",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-016": {
+      "approved": true,
+      "source_sha256": "f51cafa1ee5ec2754f9580514475cc2fb0472ab0d816beb4d455825d6a73dc1e",
+      "fixture_sha256": "d73e256a8b67b941efb3305eecf3a722a9df62329c419612dfdd90a300651139",
+      "expected_sha256": "7ffa17ec73cbb440803491f5a7d764cbcba2a48205e97d361baf38c741a72f40",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-017": {
+      "approved": true,
+      "source_sha256": "e46b55f015dbfa33b19f2f5afbb582d726eedfe45530e716a031949ca3a7e13a",
+      "fixture_sha256": "16cb6c5bc69143a216674480fdc0aa533f46db209d30e397602e8f8273f29ae3",
+      "expected_sha256": "66019f0bc4596dd4ba96ac2c4c2b88a1fdb36abab16686d7a6f11f0947487217",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-018": {
+      "approved": false,
+      "source_sha256": "8c5ba8dd5e4c0ee511cb3f0115b6051cc5e739bf81edf2865e65cf46e0e2708d",
+      "fixture_sha256": "989a91ca4e336f96020e4222db475636e3ea0f21515c2630593fbedbca47556d",
+      "expected_sha256": "3bb74c8f36c39183591b7ccaea3f9f0568965d89068d928ac632c7c31f5d1b57",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture states that the lower-court judgment is untenable and supplies the decisive application, directly revealing the reversal direction."
+    },
+    "case-019": {
+      "approved": true,
+      "source_sha256": "c206758e87a697ac557e310540a0db9ae1114833ab5cc94f66542ab6e043ed97",
+      "fixture_sha256": "09dec35b77c043b785416f97081bdbd046622c4f681fcd6fef1ad523a5f1fe09",
+      "expected_sha256": "9c69bf2e323628adf4fc9e7189b61e4aca18107363524e1b68adddf18954b9ed",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-020": {
+      "approved": true,
+      "source_sha256": "a4dd2f781df0b9a88b76bc0ec0d4402b4035253d75407d98273de4035c8b8cb7",
+      "fixture_sha256": "3e66bc6a5a3838b94b88d3ba3be2cbde8b28e9ef26cd6f39dd7c40d357fd75d4",
+      "expected_sha256": "329d2ddffd1618e3753689adb2e4b462276ad36db6dccaf7afa5fae52f6b8bbe",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-021": {
+      "approved": true,
+      "source_sha256": "0f9ac26c8df5cb6e2db9d9e9ac930597d74007cad16f200b4f0cfd0a9b77731e",
+      "fixture_sha256": "e22c0bc8bc1de5564998362d7d48737b0ccc06b34244204a0b5101b703a83229",
+      "expected_sha256": "af6862c0378588ea559befb552f8721e0077aa4f85c2c8a41077a1df5fa933e6",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-022": {
+      "approved": true,
+      "source_sha256": "7f11e79f0ccfef8606250280ab60dda8ecfc6ec669d1df48f5e807ccc1a0f672",
+      "fixture_sha256": "6babb652fc8224a1efc1e795f98f3855d586c1dcdc3273e39b421c179d78386a",
+      "expected_sha256": "0909cd4cdba630c55bb3b6eb09da7ecd7096605818439e61135410aaf9c6bae0",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-023": {
+      "approved": false,
+      "source_sha256": "bb7383c72dfae839b80cc741b770bcde32d38d2828bf9e1a5727ca1e68e68de8",
+      "fixture_sha256": "aadfe53b6c43d9b4ba397017b20a74b96c2366b8aaa483d962abe59ec5e2f7f2",
+      "expected_sha256": "a2cc916ab9b708a15ad6c2dff21e2731685b469eb7a7c0f6e17d19f972410120",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture states the controlling no-unjust-enrichment result and immediately contrasts the lower court, directly revealing the reversal direction."
+    },
+    "case-024": {
+      "approved": false,
+      "source_sha256": "f62e3bd2a37432b8b2bfee6f0b1e940690216fee78bf6c90b92a50ba4a0c2c81",
+      "fixture_sha256": "684d86602ba062f965c2583a055a16ec4a3b98e09bd148f792f5ed090cc581b2",
+      "expected_sha256": "df0b34f2d5b271fa92ef2902c13ba5f3cf750c144bebc093630b29cadd60187a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Official order partly reverses/remands and dismisses the defendant appeal, so the outcome is mixed, not reversed-remanded."
+    },
+    "case-025": {
+      "approved": false,
+      "source_sha256": "d12df6d4658fb4457659830323c4ce3d06b8aec42401f96d1b57291c48eeb5b8",
+      "fixture_sha256": "139272a789b12af3d09d7c450ae5c83a8ba8279733c7bc4ab66b297339c97856",
+      "expected_sha256": "55295343aeb59f3d919ff76e5de33a0b306ad61c327a24219bbff2bd24294acb",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture states that the lower-court conclusion cannot be accepted and supplies the decisive application, directly revealing the reversal direction."
+    },
+    "case-026": {
+      "approved": true,
+      "source_sha256": "c64b64db37c17984277bc56c87fd1fb6f509114e7830c51710c591b3ef76d006",
+      "fixture_sha256": "36f21b89190f219c51ff5d288d67092e06b7113aa6358c3d5ef1b33f02c0da96",
+      "expected_sha256": "c9f020527e14934d84b1a0bd8207225bd467124b01f6f29f517a82899c78f185",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-027": {
+      "approved": false,
+      "source_sha256": "042251bc697f6115b4e3c9d584957e9cf1ce370ea014eed78fa3440e2dd24867",
+      "fixture_sha256": "89464953cd2cb48650ec10d3a6e4cd38fe158e765cb74143864958d67e7c19d3",
+      "expected_sha256": "764695fcd92b9736d626a0dd2e83b01b001f1919709a0581275ec7c5b87e2c84",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Expected adverse point appends a generic requirements-or-exception suffix that is not in the official source."
+    },
+    "case-028": {
+      "approved": false,
+      "source_sha256": "4908a9e47a1b1f222ba3e456069c6c6b907dcb91762fb2766263efae7b2bd841",
+      "fixture_sha256": "4f354191d0560d96105c29f5fa02e7586806afea71e5940af1ee7d0d493e199f",
+      "expected_sha256": "36794b177060514f32e77a2be380e17dcae93f34385445195d5d83672a9df573",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Official order dismisses the plaintiffs appeal (affirmed), not granted; the generic expected issue is not supported by the official source."
+    },
+    "case-029": {
+      "approved": false,
+      "source_sha256": "87201f347eab016a50945cfd35e438377ad40b1e0a4c1dbfae4…496 tokens truncated…e87b56d70af7db3c1a6da61418b66cd90747fa9a5bda1e5a450bd0677ed4b17",
+      "fixture_sha256": "39e7e5b43ec5a7e0906a4ba41de1de5f4c9540f55aed2d395fa9b2de8370ee78",
+      "expected_sha256": "742776d0c2144183edc943db163e243a675a4b1cd3c24adf76d85fc3d56b8b2d",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-033": {
+      "approved": true,
+      "source_sha256": "75e347bbd4d7a52a7bd1efc96fccc10b604b2d0d601bdcc8f12a30fa4b151072",
+      "fixture_sha256": "d3cb06af1ae2f5de14ef1030909d3cb584a94b9913d3a6b9a7b8c40115346f97",
+      "expected_sha256": "eac5edcca8083bc183e309ba14fc259e8479a6a3fa199847e408525ef18a4b05",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-034": {
+      "approved": false,
+      "source_sha256": "40987d2eb5be3675c5a768ee5064a021c17bf4bf21a58871b68c791a90387495",
+      "fixture_sha256": "612cc998ffc533213513057613b6ff3c7b01032131b7c2bc01cba90272ea74b6",
+      "expected_sha256": "431e3611c878faaa359bb886e8a69b686fb55c58baa4f438dc1754ff3f4632ba",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Generic expected issue is not supported by the official source."
+    },
+    "case-035": {
+      "approved": false,
+      "source_sha256": "fb84713a057f21c8ca13a7a4b541a03d6c22c8e649127e650cfc7c824d6990fa",
+      "fixture_sha256": "222979eb0a920e59e4f4eb419f2291bb893172caa57a0898164b2a62a3012647",
+      "expected_sha256": "a1b5e82ec2c15272c57b206028995d581148338a5cf59b284352eb0135524f05",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture states that the lower-court judgment is untenable, directly revealing the reversal direction."
+    },
+    "case-036": {
+      "approved": false,
+      "source_sha256": "61f843b73d492c623a328d520f185ec33dbe30185459c36053407c2f4bf3734b",
+      "fixture_sha256": "d506040a58a0f1da301c17bc6b86f20c8a3405499743fe4135d6c010e43e1c11",
+      "expected_sha256": "ac5f57c0207d9302647ed285460a515f459444a74313f78d76c1d50296c96542",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Official order dismisses the action, not mixed; the generic expected issue is not supported by the official source."
+    },
+    "case-037": {
+      "approved": true,
+      "source_sha256": "d10fbb4df68c095680c334798de8d8448dde918557162c05dc0b1b3683ddbdce",
+      "fixture_sha256": "121a7c1df989f36180448188dd555cc49f653d846cf383c8ee539b798fb594fc",
+      "expected_sha256": "a09cbcea68d25cadd21bfc64963042ef74788b6b5967dd7b7beed0e57b86df36",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-038": {
+      "approved": true,
+      "source_sha256": "1421e108492d70dd879c041c986af023a67494efff42aa4e60aaffd142941c1f",
+      "fixture_sha256": "761ce54554f8e1e788b61cff4bd9f75f58d8bf1cda7e862f8c998083cc933e01",
+      "expected_sha256": "245435f8f3af73660754136cadfbd84987e5865692cd648ab59e0f55e220d38e",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-039": {
+      "approved": false,
+      "source_sha256": "cf93d7e9773e74bf384c3c69832e58bbc2cf026083c4f878c90f4b564eaad1a7",
+      "fixture_sha256": "8ae5c0cd6da491eda1b19e3b25fbe48570b264cc7b5b4fbeed2d392ec32ff358",
+      "expected_sha256": "048201679551abeb4e84c61d50fb3000ef99a066ef230aa09b191a66b06f003c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Generic expected issue is not supported by the official source."
+    },
+    "case-040": {
+      "approved": false,
+      "source_sha256": "74ff38457e0b66546ec97216a39c5e551851ed5267aebc3c9fd7bc827535e76e",
+      "fixture_sha256": "ef9718eb714abc49293864df2af80b96a4951661b79218ead36c0dac287b52a8",
+      "expected_sha256": "7247b5662d186aa09734e49f65628c77a96e3f02d617d01e310a0dae4f349bfe",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Official order dismisses all claims, not mixed."
+    },
+    "case-041": {
+      "approved": true,
+      "source_sha256": "ba1032be9ac78a8f8fc7c4f10ea2344ec208742d6845f8f3bd007cbdeaec46a8",
+      "fixture_sha256": "249fa9255db030fe0aa5e376d63c5a0ed5e0c2edd2720f8169ffcce06872fdb5",
+      "expected_sha256": "3b8889f6d75d575282ea1cf22fd8364c6c286d7ed779253d0e415542a18611e6",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-042": {
+      "approved": true,
+      "source_sha256": "d253f347c5dbe668b3c42eeb39f7ec09e15d9a6190c0a7d8f7187d2d797e0a3c",
+      "fixture_sha256": "923c1533fed4a9451404b00600f12e8260a0984cf8b00c6b382a6dd822afe0b7",
+      "expected_sha256": "a6290162834103a4e3279747138d93d80a0c4ac5fedf44c206f553388edc99aa",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-043": {
+      "approved": false,
+      "source_sha256": "c8758d0d3559418fd97fd254a4e58f47c01e50f043f0ba0273e6d70546a3d927",
+      "fixture_sha256": "9d343e7262e4821902ef1454135c34d2920bbe08614d92c89d190e37ea53a17f",
+      "expected_sha256": "5522b49b411230760d53b5d6d525b474c76f6048a7d96c2b69a5b3e1cd411899",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Generic expected issue is not supported by the official source."
+    },
+    "case-044": {
+      "approved": true,
+      "source_sha256": "dda4b9a3888bbb9052fc90130b9595fee86a7fda6f70412a8cd9a33fc93ef652",
+      "fixture_sha256": "75d9f1c435e2e93102ec5770ef4e3f79d16a5dcfe4734bc372bd8d482ba7f07d",
+      "expected_sha256": "58742999ca8d46baf9201c627946f9d533b9d99dbb8e36a69cd4ed21b9fad1a7",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-045": {
+      "approved": true,
+      "source_sha256": "19f98c7125f5f6657caacde2cb973a6265d50d1c00b4a1156c4ad7728a4aaa17",
+      "fixture_sha256": "0855c3a096e2f1974392ca4960fc80abc77404edf7804c8c02e24acbcd4bc64e",
+      "expected_sha256": "d34265e560ea4bb890f6fd3b250d4d12f08a877e7836182e78a758c1d0d884ce",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-046": {
+      "approved": true,
+      "source_sha256": "463c56d8e8a3b7160b981b16776e31ee0a8183cd0c6b770df0eb8269b019b052",
+      "fixture_sha256": "c49bdf344826c3a64526f03d72c2e74c284666767f29822d63ffac3f3818a68e",
+      "expected_sha256": "1ece372ea17a50b2ad5753cdae001fc5d0176c6b0fa52e3beb66fe824f122ac0",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-047": {
+      "approved": true,
+      "source_sha256": "ff084205a2ee9c802b3cc60a51ac626718893c1380a85245422b5c3b485f26bd",
+      "fixture_sha256": "e6c853917198a02246677e3df5aedbae687356c2595595fac643f63d94200fa1",
+      "expected_sha256": "be30738b79afd8f70342d1e6a583471115b28b056d8640d4ce8457911d78cac2",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-048": {
+      "approved": true,
+      "source_sha256": "0c7c1870a8acbab35760d8d0a917a7b8cd161360ce2e9e5b551174b886b7e887",
+      "fixture_sha256": "545f5c7bc3eb7d4e198686e4fffbe879cf650566c1d9eaaf332842b6413c9850",
+      "expected_sha256": "9319ad282b0674babdd1a8f4456cd845bdc54559178417eb0479759d451b5d50",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-049": {
+      "approved": true,
+      "source_sha256": "6c9f8b61b5855b0a00260e991acf0d2321fb03f8e47a71ef727ded74899f142d",
+      "fixture_sha256": "7d1be575b279346af40f9c0825228c0253f76e2dfdf7434a2f31c2f6a6bc0c2c",
+      "expected_sha256": "f0e6c8fafec1a9aa9f0969ce799408c33682573779809fbd23802724bf8111e9",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-050": {
+      "approved": true,
+      "source_sha256": "e8212f0a09eb2a13463fed0cb2b4c2496b9f3fab242a0d872cfa4dcd172f8862",
+      "fixture_sha256": "cec9182fb40a2a169534f487abbfc9a37198710416defd615c609f96c2882299",
+      "expected_sha256": "75dd05d5696a6637dc48c9cb67e680847418f7325efc22d70c6eb6b654b4b121",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-051": {
+      "approved": true,
+      "source_sha256": "602669e23258bf484c0a03c00bc4fe1b39b32577887adf2674250cf85e763b86",
+      "fixture_sha256": "2853a132071f7a2378fc42ff3f65023204bfe91b423d0c381256a274d9fd0236",
+      "expected_sha256": "bcd25e92fcecbb9fd55af56b33fa8dce1293a04e7cdd2fe06ea664b35f0edb34",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-052": {
+      "approved": true,
+      "source_sha256": "068d54c2591860c6c0a965485d769bd7bfd1a99b239b540069fd34f75baa83a2",
+      "fixture_sha256": "f45759da1f68b81209985a4efac720bc38e73ecc7d5ceef226998550f9147e5f",
+      "expected_sha256": "1a2e258ad0a2eafc1af1f39474b3bc78abbe4d430be97f9487aa1e85a2cf6fb2",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-053": {
+      "approved": true,
+      "source_sha256": "6d8054673049c07f1d8bbdad09e62a709a85f6739a473ccc80d21ebe2fcba230",
+      "fixture_sha256": "89428d793d37b51f2db035c368ab6b20c6b2028faff9443b78740186756b3ac1",
+      "expected_sha256": "b43edf201395c3bca1cbd18ca9e1fbe39a0451a6406c89da74d1d7a5f23958d1",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-054": {
+      "approved": false,
+      "source_sha256": "b9c86724277cba372c33b08d3cf439ad57f8d9cb46ad1b41e886fab3982c1f88",
+      "fixture_sha256": "a295a16644c6542b982da0df62359f6bb09e78f2b25c7505ccae23be0c6bd2fe",
+      "expected_sha256": "c93c1dfc6d1614d847a4939d17e4fd786e2e8fbb1b01387191bddc99375e444c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "Fixture states that the lower-court judgment is untenable, directly revealing the reversal direction; expected adverse point has an unsupported generic suffix."
+    },
+    "case-055": {
+      "approved": true,
+      "source_sha256": "49688d4eab5e52403301c1364e38ddbc5c9deb31d727c3287dddb0aacf5f42d3",
+      "fixture_sha256": "5ba44fb7fc2c6bc5dc6f2f0200ec34e94d01cc5b0dc9aa346be093701822d11e",
+      "expected_sha256": "af2e27fd39d4e4766558d674c1f2ecdd18a750c873f28a4b88498785af6b57b8",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-056": {
+      "approved": true,
+      "source_sha256": "807f7a2944bd975da7dacea54462a2ac01ebbd5e039da57f5c481b8d09dec29e",
+      "fixture_sha256": "ab2a951e2ba9e47e4a4892472760784dee8b550a807400f074be55fb8eb80d03",
+      "expected_sha256": "aa06c55fb2734874b6fb930824268fc06717f4e5877f9eb431a73a9ac199a5d8",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-057": {
+      "approved": false,
+      "source_sha256": "34df8de34fd1e93505a2c556dbf3e3d18ef2825dd276ca4021efaaebbbde705d",
+      "fixture_sha256": "89c308438532ddaace6100eb47f5cbe7df7ffc7069da5e5b54db43310751815c",
+      "expected_sha256": "90622ba52b61c4b0d1e9643eaa87c08ae7235fe13ff861de8014c954ef243103",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture supplies the case-specific conclusion that the marriage may be irretrievably broken and directs the lower-court inquiry, revealing the reversal direction."
+    },
+    "case-058": {
+      "approved": true,
+      "source_sha256": "b01363b5ef168246e6267357b15574e7154d4352fbdb215ce8eabe12b37ed84f",
+      "fixture_sha256": "defd3d8125bdcd60afc0bc5e8916cabdd4225410ff0e2d37c8eb7253d45e5c9d",
+      "expected_sha256": "15fe50c759bfb8f0ee6048bed6205bb34893d1456b4fe697da4c2737518e1912",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-059": {
+      "approved": true,
+      "source_sha256": "d427eaf0fdeecaba3b81cdf36d63357f0b4ed49cbc91b413506e4ff5b6b92f90",
+      "fixture_sha256": "05e0bd571f1abc5a2fed0bda1c0bbe5bb76e693feb55ad7d32901b514771e2a2",
+      "expected_sha256": "adb8fbb5a9ad61b8246190a42330002554f875229c420d27f4b4d671e5500678",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Current manifest hashes verified; official source URL and case number match; order label, fixture masking, PII scan, and official-source support passed."
+    },
+    "case-060": {
+      "approved": false,
+      "source_sha256": "700cf2760ccb7a19859271e1b8e9999727c43f97918f60e382e7cf40edbb1872",
+      "fixture_sha256": "52b809da7e86bda8e6f2c9db95e7d1e990ceed7b8a3f3221ef296b54a1498b38",
+      "expected_sha256": "4cc05c3213693b57bd200cf90449e9ff8731c5a7c3c44f2db2d3968f83f490f0",
+      "checks": {
+        "source_bound": true,
+        "label_correct": true,
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "Fixture supplies the case-specific conclusion and directs renewed lower-court inquiry, revealing the reversal direction."
+    }
+  }
+}

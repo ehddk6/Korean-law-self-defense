@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[다수의견] 법원은 민사소송법 제344조 이하의 규정을 근거로 통신사실확인자료에 대한 문서제출명령을 할 수 있고 전기통신사업자는 특별한 사정이 없는 한 이에 응할 의무가 있으며, 전기통신사업자가 통신비밀보호법 제3조 제1항 본문을 들어 문서제출명령의 대상이 된 통신사실확인자료의 제출을 거부하는 것에는 정당한 사유가 있다고 볼 수 없다."
+  ],
+  "expected_issues": [
+    "법원의 통신사실확인자료에 대한 문서제출명령에 대하여 전기통신사업자가 통신비밀보호법 제3조 제1항 본문을 이유로 그 자료의 제출을 거부할 수 있는지 여부(소극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2018스34",
+  "outcome": "affirmed",
+  "scenario_id": "case-053",
+  "source_sha256": "07a871c42f9363e74c3a49989d25b735d26c2cc9ca009fc5625931aabade1167"
+}

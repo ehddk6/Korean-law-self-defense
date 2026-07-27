@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "주택임대차보호법 제6조의3 제1항은 “임대인은 임차인이 제6조 제1항 전단의 기간 이내에 계약갱신을 요구할 경우 정당한 사유 없이 거절하지 못한다.”라고 하여 임차인의 계약갱신요구권을 규정하고, 같은 조 제4항은 “제1항에 따라 갱신되는 임대차의 해지에 관하여는 제6조의2를 준용한다.”라고 규정한다."
+  ],
+  "expected_issues": [
+    "임차인이 주택임대차보호법 제6조의3 제1항에 따라 임대차계약의 갱신을 요구한 경우, 갱신의 효력이 발생하는 시점(=임대인에게 갱신요구가 도달한 때) / 임차인이 위 법 제6조의2 제1항에 따라 한 계약해지의 통지가 갱신된 임대차계약 기간이 개시되기 전에 임대인에게 도달한 경우, 그 효력이 발생하는 시점(=해지통지 후 3개월이 지난 때)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2023다258672",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-021",
+  "source_sha256": "3427ab178fa516efd03ad56cae44664dd8f5911ead514727a462bffef4d4d3e0"
+}

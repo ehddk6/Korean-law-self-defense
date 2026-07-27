@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "사람은 누구나 자신의 음성이 자기 의사에 반하여 함부로 녹음, 재생, 녹취, 복제, 방송, 배포 등이 되지 아니할 권리를 가진다."
+  ],
+  "expected_issues": [
+    "상대방의 의사에 반하여 그의 음성을 녹음하거나, 녹음한 음성을 방송, 배포하는 등의 행위가 음성권을 침해하는지 여부(원칙적 적극) / 민사소송에서 대화 상대방의 동의 없이 대화를 녹음한 경우 그 녹음한 파일이나 녹취록을 증거로 사용할 수 있는지 여부(적극) 및 그러한 녹음행위가 침해방법이 부당한 경우나 녹음한 음성을 상대방의 동의 없이 방송, 배포하는 등 달성하려는 이익의 내용과 필요성, 상대방이 입게 되는 피해의 성질과 정도"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2025다204730",
+  "outcome": "affirmed",
+  "scenario_id": "case-007",
+  "source_sha256": "78305134e0f47726188631473c840d5573feff4655451c20bb5959a2b944c5ff"
+}

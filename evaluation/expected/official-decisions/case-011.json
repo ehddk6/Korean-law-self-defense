@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "다만 그 손해액이 2,000만 원 미만인 경우에는 2,000만 원으로 한다.’(제1호)는 취지로, 부상한 경우 ‘[별표 1]에서 정하는 금액의 범위에서 피해자에게 발생한 손해액."
+  ],
+  "expected_issues": [
+    "교통사고로 부상한 피해자가 치료를 받던 도중 사망한 경우의 책임보험금에 관하여 규정하고 있는 자동차손해배상 보장법 시행령 제3조 제2항 제1호의 ‘제1항 제1호와 제2호에 따른 한도금액의 합산액 범위에서 피해자에게 발생한 손해액’의 의미"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2024다238217",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-011",
+  "source_sha256": "62877d6e9de29a68573dd78dfb5cdb104f0dca875124642b14e5cfbff4feaca0"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2022-05-26",
+  "court_level": "대법원",
+  "domain": "family-inheritance-guardianship",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "2. 원심판결 이유와 기록에 의하면, 다음과 같은 사실을 알 수 있다.\n가. 원고와 피고는 (연월일 생략) 혼인신고를 마친 부부이고, 미성년 딸인 사건본인들을 두고 있다.\n나. 원고와 피고는 혼인신고 당시 같은 회사에서 근무하였는데, 피고는 2013. 3.경 퇴사 후 필리핀, 태국 등지에서 해외 사업을 추진하였다가 사업 실패 후인 2014. 4.경 다른 회사에 입사하였고, 2017. 11.경부터 현재까지 소외 회사에서 근무하고 있다.\n다. 원고는 2011. 6. 27. ‘(병명 1 생략)’, 2012. 9. 16. ‘(병명 2 생략)’ 각 진단을 받아 치료를 받았다. 그런데 그 기간이 피고의 해",
+  "scenario_id": "case-058",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

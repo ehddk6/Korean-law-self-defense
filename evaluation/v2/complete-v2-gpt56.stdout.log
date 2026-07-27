@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "result": {
+    "applied": 120
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "41bf6d1616bb56bf03a7e980940aeab2738feb164889b7dca913e8b65d1c259e"
+  }
+}
+{
+  "ok": false,
+  "error": "RuntimeError",
+  "message": "독립 gold review 실행 실패: 요청한 모델을 사용할 수 없습니다."
+}

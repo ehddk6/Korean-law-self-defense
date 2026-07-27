@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2022-04-14",
+  "court_level": "대법원",
+  "domain": "labor-industrial-accident-social-security",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "2. 원심판결 이유와 원심이 적법하게 채택한 증거에 의하면, 다음과 같은 사실을 알 수 있다.\n가. 참가인은 2010년 ‘FP(Financial Planner) 인턴십’ 제도를 도입하여 대학교 졸업예정자와 졸업자 등을 모집하고 실습교육을 실시한 다음 현장 경험을 거쳐 장기적으로 영업관리자나 재무설계전문가로 양성하는 ‘TRI(Trust Respect Innovation) 조직’을 마련하기로 하였다.\n나. 참가인의 위와 같은 사업계획에 따라 원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후, 2010. 7. 5.부터 참가인의 TRI○○지점에서 FP로 근무하였고, 2011. 12. 1.부터 참가인의 TRI△△지점에서 PSM(Pro Sales Manager, 보험인원 모집 및 관리업무를 하는 매니저 직급)으로 근무하였으며, 2013. 7. 1.부터는 참가인의 □□지점 등에서 AM(Assistant Manager, 지점장의 업무를 보조하는 총무 직급)으로 근무하였다.",
+  "scenario_id": "case-070",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

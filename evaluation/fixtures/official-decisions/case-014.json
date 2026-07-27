@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2024-07-25",
+  "court_level": "대법원",
+  "domain": "insurance-consumer-damages",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "상고이유(상고이유서 제출기간이 지난 다음 제출된 보충서면의 기재는 상고이유를 보충하는 범위에서)를 판단한다.\n1. 사안의 개요\n원심판결의 이유와 기록에 의하면 다음 사실을 알 수 있다.\n가. 소외인은 2021. 11. 30. 오피스텔 15층에서 투신하여 사망하였다. 원고들은 소외인의 부모이다.\n나. 피고는 소외인을 피보험자로 하여 사망보험금을 포함하는 보험계약을 체결한 보험회사이다. 위 보험계약 약관에서는 보험금을 지급하지 아니하는 사유로 ‘피보험자가 고의로 자신을 해친 경우’를 두는 한편, 그 예외사유로 ‘피보험자가 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우에는 보험금을 지급한다.’고 하고 있다.\n2. 원심의 판단\n원심은 판시와 같은 이유로 당시 소외인이 ‘심신상실 등’으로 자유로운 의사결정을 할 수 없는 상태에서 자살하였다고 인정하기 어렵다고 판단하여 원고들의 보험금청구를 받아들이지 않았다.",
+  "scenario_id": "case-014",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

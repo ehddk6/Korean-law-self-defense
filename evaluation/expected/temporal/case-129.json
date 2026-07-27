@@ -1,0 +1,14 @@
+{
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "이자 등 3년 단기소멸시효와 기간 계산"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "source_sha256": "b0cedf92f3181c25b20e7dc42ceb8cd4df4d68d67055815c2902ac7030ed331b"
+}

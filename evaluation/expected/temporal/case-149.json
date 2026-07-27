@@ -1,0 +1,14 @@
+{
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "주관적 기산점과 객관적 10년 기간의 구별"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "source_sha256": "16d4a70f15bb604927d575b06bdd0e009d1dbab7d2c61850fae410afb1d91882"
+}

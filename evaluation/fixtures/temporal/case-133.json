@@ -1,0 +1,48 @@
+{
+  "answer_contract": {
+    "deadline_date": "계산 가능한 경우 YYYY-MM-DD, 아니면 null",
+    "decision_status": "ready|conditional|abstain",
+    "rule_answer": "아래 선택지 중 하나",
+    "rule_answer_options": [
+      "address-or-workplace-service",
+      "article-14-fact-dependent",
+      "defendant-general-forum",
+      "effective-upon-dispatch",
+      "individual-address-forum",
+      "ip-special-forum-subject-to-statute",
+      "knowledge-date-required",
+      "one-year-lodging-claim",
+      "personal-delivery-required",
+      "place-of-performance-special-forum",
+      "postal-service-after-article-186-failure",
+      "public-service-requires-statutory-ground",
+      "real-estate-location-special-forum",
+      "starts-when-right-exercisable",
+      "substitute-service-needs-capable-recipient",
+      "ten-year-ordinary-claim",
+      "three-year-interest-claim",
+      "three-year-tort-knowledge-period",
+      "tort-place-special-forum",
+      "verify-specific-addendum"
+    ]
+  },
+  "domain": "civil-contract-tort",
+  "facts": {
+    "capacity_confirmed": false,
+    "delivered_to_housemate": true,
+    "recipient_absent": true
+  },
+  "format": "legal-workbench-temporal-input-v1",
+  "kind": "service",
+  "official_rule": {
+    "article": "제186조",
+    "article_text": "제186조(보충송달ㆍ유치송달)\n186\nN\n[ACCOUNT_001]\n조문\n일부개정\n보충송달ㆍ유치송달\n[ACCOUNT_002]\n①근무장소 외의 송달할 장소에서 송달받을 사람을 만나지 못한 때에는 그 사무원, 피용자(被用者) 또는 동거인으로서 사리를 분별할 지능이 있는 사람에게 서류를 교부할 수 있다.\n①\n②근무장소에서 송달받을 사람을 만나지 못한 때에는 제183조제2항의 다른 사람 또는 그 법정대리인이나 피용자 그 밖의 종업원으로서 사리를 분별할 지능이 있는 사람이 서류의 수령을 거부하지 아니하면 그에게 서류를 교부할 수 있다.\n②\n③서류를 송달받을 사람 또는 제1항의 규정에 의하여 서류를 넘겨받을 사람이 정당한 사유 없이 송달받기를 거부하는 때에는 송달할 장소에 서류를 놓아둘 수 있다.\n③",
+    "law_name": "민사소송법",
+    "local_redaction_categories": [
+      "ACCOUNT"
+    ]
+  },
+  "question": "부재중 동거인에게 교부한 보충송달이 유효한가?",
+  "scenario_id": "case-133",
+  "task": "제시된 공식 조문과 사실만으로 판단하고 필요한 사실·특별규정이 빠졌으면 보류하라."
+}

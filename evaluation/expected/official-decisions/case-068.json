@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "근로기준법 제24조 제1항에 따라 사용자가 경영상 이유로 근로자를 해고하기 위한 요건으로서 ‘긴박한 경영상 필요’의 의미 및 긴박한 경영상 필요가 있는지 판단하는 기준 시점(=정리해고할 당시)"
+  ],
+  "expected_issues": [
+    "근로기준법 제24조 제1항에 따라 사용자가 경영상 이유로 근로자를 해고하기 위한 요건으로서 ‘긴박한 경영상 필요’의 의미 및 긴박한 경영상 필요가 있는지 판단하는 기준 시점(=정리해고할 당시)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2017두71604",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-068",
+  "source_sha256": "91c28d15fa5781f48040a36280bb9cd183b219626f193620d1d379b892196839"
+}

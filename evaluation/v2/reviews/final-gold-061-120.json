@@ -1,0 +1,848 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_model": "gpt-5.6-terra",
+  "reviewer_id": "terra-max-final-061-120",
+  "reviews": {
+    "case-061": {
+      "approved": false,
+      "source_sha256": "7824f4102feda8ec61ac80fc0f50b28ee3a79de91589836ea728aca6cd60bbea",
+      "fixture_sha256": "2af36e6e773731eff9d18b86b9295963141f690dc2fc38b6be94952884489f71",
+      "expected_sha256": "0d4ec91096f8c8101107d5925ec8b1b88f5c795b522900bb844131a63250a372",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 일부 파기환송과 나머지 상고기각이 병존한 복합주문이므로 mixed 분류는 맞다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-062": {
+      "approved": false,
+      "source_sha256": "ea90baa0e4eea6498fe0e78d33e8f98601121420ad171633d8130ab68c9eff37",
+      "fixture_sha256": "c0660817d7373cbbf57058d057fe4dd4c460fba17b92a0a741c7703b0e946868",
+      "expected_sha256": "bd8ec1acb1bd17e8288d80637b7b3b068ded5c9e2a014d6cdafcc8535c0f966a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-063": {
+      "approved": false,
+      "source_sha256": "7cef98b439a1a674ebc7b845ae22d112b8cdbfa8399b9b2d54bd98dffaa1dff5",
+      "fixture_sha256": "5801f3f5edf2ac6ca0ed2e7d82dad001d3fb1063085c37628171bec01191dc39",
+      "expected_sha256": "59262d6b8f2cf1ad9b4ac74ac43cf43f6f911e9397a74950dbd7c23c5256e237",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-064": {
+      "approved": false,
+      "source_sha256": "050cf4900a4ca8381109d1e22c757fdfeb8ba690688ad0088b6d1b238d2cc836",
+      "fixture_sha256": "4a30e33debd88e745adc98907b0201dad59549090a584753459140c122980b13",
+      "expected_sha256": "0b4bcca85080a9f93a41bf5ccbde8a265d9a053b365cadeac684484ea44eccba",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-065": {
+      "approved": false,
+      "source_sha256": "33ad7d66e8131fc38c540a35824309e5cfd224042181335849b197220457cad3",
+      "fixture_sha256": "2187f1bf5ee30291527374c78451ca62f2b4415b0b370dbc7a34cc8de3a662e2",
+      "expected_sha256": "be9feaca628fc69c4706b4d9c2cc9701c3194fece30f0080a314138b80a9e566",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 주문은 원고 항소 기각뿐이므로 affirmed여야 하나 expected outcome은 mixed이다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issue의 일반화된 문구가 P1 source 원문에 없으므로 gold_supported=false이다."
+    },
+    "case-066": {
+      "approved": false,
+      "source_sha256": "7edd1c307f0b975cdda30eae9f71e21837a44b0942386df35d0431706724b54c",
+      "fixture_sha256": "c38563901aa2a6fab4e8ccce0604a89d9ee1067d164b3352f1186df1e6aaa5a4",
+      "expected_sha256": "a912268b1e10604e11c9e8570909783df68fbbbf62b05e6e02a66906091338ac",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-067": {
+      "approved": false,
+      "source_sha256": "b981634dae9be2246cf8a1d752ac19720a463a426fcb0c06b13cd0d065050285",
+      "fixture_sha256": "d5ba591ec12fd40557bd182a181b1267f74c8f6860a207f1c8ebe06922ba4b19",
+      "expected_sha256": "bbd6a525027ff5d613f5bbda8f1e158059fd5f9ed69036ec94e66df52f1ca678",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-068": {
+      "approved": false,
+      "source_sha256": "e17faea2c31ab4d8bbd46571e8a3aaefe76adf4893b35dca6d37bbd668c38fb8",
+      "fixture_sha256": "ca4b06b208609a35c46e682dac481d5df4b394d6f71331f24fa310be46170b44",
+      "expected_sha256": "a6136863024aa35534750430b3d0bcf4befdecac499c489ee532b02825cbfeb3",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-069": {
+      "approved": false,
+      "source_sha256": "0599d52de9d13f09dd4b223e1c33f3cc89d9fa6419d276586dae06991f3771e4",
+      "fixture_sha256": "ab5f81731d3f4e0fc78295f97c8cacf5bbab5cf023bad8b949b890d757301ad5",
+      "expected_sha256": "93a1358496b60204a33e0cb88438b13b05cd0500e97f37f28cfb68483ae4f154",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-070": {
+      "approved": false,
+      "source_sha256": "bdbee8449fd8483a8884176a0d3d8e4ff2687c2a50464eb720322945d05de43a",
+      "fixture_sha256": "ee06ef147901d0d171d7e92ae103ae2f7db8f145c1f668304e655532bef5198b",
+      "expected_sha256": "e2083824a6fbd932fa0de915f4ad87db7abcb6636a3f9023053e93091af3c930",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-071": {
+      "approved": false,
+      "source_sha256": "1371424d711f0f38c1f5e9bfb84dcee2a269c98bb002bf41aef1359db4fa1757",
+      "fixture_sha256": "3e9b6de6d764bbcae57b9e5f2a64206342c6da18662aba25c2def8f9edb36d61",
+      "expected_sha256": "82e299033a7eae1ac7351d618ec9e063957fb0190b69169222cf0ccc5830b153",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-072": {
+      "approved": false,
+      "source_sha256": "9ea58f8cf5533ecf44e243ffa545ca10c2adec061343a6c18a6c4f0b46eb4a04",
+      "fixture_sha256": "032efcec07726049a8d56ad6271da8de29ce213224e36e6ad51b60fc3998fb45",
+      "expected_sha256": "327e9882f795b6b365d6dbb458a20bf18da04114aba15c4ba882db49a0c3266f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-073": {
+      "approved": false,
+      "source_sha256": "8bcb5fa79de802b5b2d6c89b368918bc1f56abe6a024d308f6b35aefd19b8824",
+      "fixture_sha256": "a966026110abd72f9e939b07ad676f41bbc11182c5153ca19e2c06ce2cf89b1c",
+      "expected_sha256": "be614db95f0580ce6bdf8b8102f7ae961fa13c1888622cba62cbff2785ead200",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-074": {
+      "approved": false,
+      "source_sha256": "0d7ed4138f8431ddcb10fe8ad3e03e672487fe3a8a5ef921d6ddc450dcfa4d49",
+      "fixture_sha256": "24f6abe8aad0655b74a050dea5e39e835c66f4ae5e70f25f6ff3acf4824ca64d",
+      "expected_sha256": "58d21de8d852b8b4c1d3ade8beda2650a2e872348caee102fcf15e0dc6505365",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-075": {
+      "approved": false,
+      "source_sha256": "ef43f6f39aade52910f239a1ccf6f511903aface292a7a51d92a505090ba0fec",
+      "fixture_sha256": "c564414febe0a5d03884bcbf6b48921b99a2768d0a63c80e6a4cd7b46a586b34",
+      "expected_sha256": "f3eb6f811e0cbe8549073ba46e3e07a9bf6c85fd3b1632c822ba51a787ca7611",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-076": {
+      "approved": false,
+      "source_sha256": "65abf62c7ab7ba90da9f9c6b9b77f5d601987c1fd04463da16c9fbe9771ee18a",
+      "fixture_sha256": "08ec14adc50e1ff25f6d496c705fe06ea2cc5ee1fd103c5ab484f486f27e9853",
+      "expected_sha256": "846317c6cd3b794b3d97c4e9b39ec2d5cbee8c421664d8679bcaed1db0a07957",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-077": {
+      "approved": false,
+      "source_sha256": "cfccbe747c1834a2e9a0f14e813814a45be3fb840fef7677a639d5578129cd01",
+      "fixture_sha256": "728e359a9ac52b003136191121ad39167f3f033a8dec7aea4e3329ddccf7d3df",
+      "expected_sha256": "9058e502197a0b00305592cbf9e271e862dd86581e1203a3d1c487b168422387",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-078": {
+      "approved": false,
+      "source_sha256": "e74197645a4672ee9c6860277efd0c3a796bfc0abac3439def5e21878d6cdd6b",
+      "fixture_sha256": "b8718feef1cc086796d0ba42ee14ed06137c0294689ee4bce581e070dc53f269",
+      "expected_sha256": "51749dec39d637a43c145d61c1002626a32968264d7e1ca9a292522d8a68e660",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-079": {
+      "approved": false,
+      "source_sha256": "5daf0a7192d14100a7cd7dc40341e8100da0d85d18537fdac9b32690a394ef71",
+      "fixture_sha256": "c78cb2843ef7b442952c5ec16c266a9c7a43ef075377d85955179307632437f5",
+      "expected_sha256": "1560ad86b86b7d6bb7ddceb16196aa06931920cf3b700ea6e8cb82c99cb3f339",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-080": {
+      "approved": false,
+      "source_sha256": "41d4a77049166d50c29a7e07ddd7fc26a096ada3f231a5d6a1c3bee3f2f42dcb",
+      "fixture_sha256": "d71cb4bba103e2c2b367e060a458860a8b2bd3751ea487202c8f6b1135fb5517",
+      "expected_sha256": "e31e281c80b6cbe93a10c45d3a4dc36dea9c54ecd05cf3b3f7d1c9bbe11839c1",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-081": {
+      "approved": false,
+      "source_sha256": "5b774c764cd0841e011175d0dfbd57870833013fcaed521e6df5b50706963171",
+      "fixture_sha256": "a6430c43dc081bb62dc5c7e65195c3aeedf8992c8a28c18748d26af02cc11226",
+      "expected_sha256": "c7f1c77156ac8e46ff9ea267098575aeb46211c259a808f74ecf1a261d591c3c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-082": {
+      "approved": false,
+      "source_sha256": "f7606bc9ce81804c9660ee44826684dad38a0d5751faea6ca7bfa3d6413969bf",
+      "fixture_sha256": "3c585721c4e14d23044f8456cd44fe55c3d8e74e0848fbe2fae8266b7da6b636",
+      "expected_sha256": "307cedd4ed55f542b7c873aaa3ad64f6c79d5ebc54e4588b1fab5215597d6bc0",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-083": {
+      "approved": false,
+      "source_sha256": "645ba80b003e6737377fd8f7c133cfddd1fb41c8f99bac7a3f3af3bbbc1c7414",
+      "fixture_sha256": "f54e16d7668d97f09edc652486e8fe53a1c53cb96a65b82b3ffb7841202f7087",
+      "expected_sha256": "2dd5ebe1b133bd6569d14ec15a8bbb4cc524e025b2a43cb227767c7960d50d34",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-084": {
+      "approved": false,
+      "source_sha256": "7eec2ddddf1740c124395b825b6fc5d2505f7198a7debc01e154244f1ef30b08",
+      "fixture_sha256": "7f175886840d4fb90b739f5d4d0d29366f6e2797f7e20e9aeeb5e4188b6aec1b",
+      "expected_sha256": "985050f7f6fe39aa053f1c510bfcf375e1bbb4cedb61e6535b09aa7498935123",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-085": {
+      "approved": false,
+      "source_sha256": "bee0cfd113bac6d9ff743644273a82f20a036c498c27e867cf984b8343c7cbf3",
+      "fixture_sha256": "838b7b6e4c6d30824cc5a68af49bdfb8929cbee8316710c53298ba46df4e2262",
+      "expected_sha256": "73d10ba875287f455fab22dc9fb62ecec47cde55276f37fd26349266a10d6fae",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-086": {
+      "approved": false,
+      "source_sha256": "3c80858e07e5969ce38c75e84016f9b19103889acc0760db98b01e5140b9486b",
+      "fixture_sha256": "c10b114c8c6316b1d987f46c955b6dbab2df4b24a87dd9f4464cfdad5c996a44",
+      "expected_sha256": "05e039021863802f06af66a8cb045967ceb213a9b586f79f82870686350c4129",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-087": {
+      "approved": false,
+      "source_sha256": "63e590fe020f2a2cd11ebf4f530a1477651d62233bbf6f35281aec759b3569db",
+      "fixture_sha256": "3c6ee76502658c92496f1b84ae2cf4bbdcc3b05281a5b6716d6f5f9a0642637d",
+      "expected_sha256": "6fad452b922facccd85dba308d66bf26ae80ab2894f427a7fc156c46be2b01cb",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-088": {
+      "approved": false,
+      "source_sha256": "bf6855add82994f40a8bf5226b1fa3f2c24356578cd16b68fc6bab02f09a81fd",
+      "fixture_sha256": "90cce02626ec45c30e5d995e01e550bb08c3063f03c6d668d37b0e67b0812bd1",
+      "expected_sha256": "52b4d9f594c6404b88b9dec64086d2f24a69ff98311e6e074e9095941953890f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-089": {
+      "approved": false,
+      "source_sha256": "7dbdaf271b4107b48bc30bf76518b3ac388592fe642ed7d55d97f87625f1b086",
+      "fixture_sha256": "d937bf9602786c452d43a7618c048de5c38a1b43a403612e5b2cf5e10230135c",
+      "expected_sha256": "b9e0df0433bdee8668a5fb47dd20dc662cafcf5c02fc6ccaf6b18037e5dd42b8",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-090": {
+      "approved": false,
+      "source_sha256": "ee1dd46a1aabccd27ce89eb52533b227a893339c7178fb76c75eaa880c359eef",
+      "fixture_sha256": "b61037ccada01f5983344f13ae1a055638af48f7c64f02b371ab8378c42cd4e5",
+      "expected_sha256": "51ef45915b612b64bbee8245beda2c3185b46a0efb3cc1ca5cf61611789d194f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 일부 파기환송과 원고들 상고기각이 병존하므로 mixed여야 하나 expected outcome은 reversed-remanded이다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-091": {
+      "approved": false,
+      "source_sha256": "740e51965f701b1230d4a9807527bc45ac0cc1a5abe08d6083c32dda8c4a20a7",
+      "fixture_sha256": "e0ccd303be21b998a659fa1081334681eb317aac50fb0f91fa95009242892bf7",
+      "expected_sha256": "d769e1d7b8ab09b95fe39e0048418a093b41c3611d5970efbcd48b141b3ef766",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-092": {
+      "approved": false,
+      "source_sha256": "ce93a3dea18472e7a44cdd6ea858f698a411c22f61f5a0d298c9cf5bd84a4caa",
+      "fixture_sha256": "e9ce6ad25ee65707beecb3b1745ea2df04500e78593336f2e9d70dc67b7c7edf",
+      "expected_sha256": "c7eccd6cf3c990a49a74b40a363ee42a99c0c0f1f85c5827a2d400a634cfc0a2",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-093": {
+      "approved": false,
+      "source_sha256": "84fc479c71c5bdc9838d5958bdafe75b5e7944671e00da2111e03d0e9e40d569",
+      "fixture_sha256": "ec577b568b5feb876838ae736dac74a0e14169cd66abbe58cbd4d862c4f9d464",
+      "expected_sha256": "be42eb8a202be13600cde5d711b0ec66cbc832528cb8a9e5ddfee5d8f5cd6ad9",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-094": {
+      "approved": false,
+      "source_sha256": "84588711540c4c234eb81a59c0989db6df45945de8722138e2114912645f392e",
+      "fixture_sha256": "ea5b7a53e45540cf42de3269a16364e53afa6851954c5176e40785ffd08e36e9",
+      "expected_sha256": "53ea7770c7fcda2b7786a4423642ddf49b68398c5f2118c986741cf3903b7614",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-095": {
+      "approved": false,
+      "source_sha256": "fee8ccc169527810596737bc47cdae1b1664e7c9ed4967611787f257d95661e2",
+      "fixture_sha256": "5f0e0949e3be6b5daeb783d8b71850036a331fd3d839becd65e6acc408b0c846",
+      "expected_sha256": "ea6cf3c3202cb62ff3c1dd1ed18b93b603538c52724021e78a74aad351110c1a",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-096": {
+      "approved": false,
+      "source_sha256": "807b4bab56c93fe33a773c24f0d5d31987bbffeaa453c3ac20cbbc9727a6f6b2",
+      "fixture_sha256": "c045fb6cb666e51d532a3d56f7ac1d0b67cfceef31e5307e340ea939e986e34a",
+      "expected_sha256": "02a9d55fa85a925569239355d130e9ca960baa0a595f534d5105d15a2af65568",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-097": {
+      "approved": false,
+      "source_sha256": "a7a947b2132f0b48b079b67b6f97f7eab1e9a544321217f90b70245776f07a0f",
+      "fixture_sha256": "f3402d781e43a5bb7eca67b37791d9a521cdda8e7c16845058f11fe0a680927f",
+      "expected_sha256": "fe06a67ef4f596edd2b79e3ab39831186a3ae522273afa04a1c159d933ed1251",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-098": {
+      "approved": false,
+      "source_sha256": "093893b0cc7fad072c4f88e301882cdae2466d858bb73e43f7398063ab82eb30",
+      "fixture_sha256": "0994fe38ee6b0ff6270cd3ae8af95b58191b22818049d01f58c17c809a08588e",
+      "expected_sha256": "6e76d8151c5790d5e7debe5c3457dd64f22c8a4b5678e8a6beea6bb49a19dd00",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-099": {
+      "approved": false,
+      "source_sha256": "a4d0f0fb7a2ca373cf170d19492b11d4bca5835632570165036f3b36c06ca785",
+      "fixture_sha256": "7797e761b298df485673ada253d0ac445ea2f38598db266dbde3c425cfb6174e",
+      "expected_sha256": "127f32f57c31316539318d56590ebd842032bff8e3d85ba3ba37c5693c6712bb",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 일부 파기환송과 나머지 상고기각이 병존한 복합주문이므로 mixed 분류는 맞다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-100": {
+      "approved": false,
+      "source_sha256": "05ba68549d09bda03526d38e0e40850bf0a8ca84d8c8c725a4d0e8e353c51b72",
+      "fixture_sha256": "f29a7db6e098163de5df2756e98da9d3a9f54d762006b6736793360d5d79d52b",
+      "expected_sha256": "a8d501d200087b54157884cf33ce66bfc8fb7f18f54ac17e4d292cfc98bc5aca",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-101": {
+      "approved": false,
+      "source_sha256": "9241454d13516340ff915cb020ba5c2c0a6648a694e14cbb8d6e15687edddce7",
+      "fixture_sha256": "7572bb7e0ae0f6cb48265907dd641e62b250b05a6da5ac92223f15f29129155f",
+      "expected_sha256": "e2a3a9db984a68a91a481b4d54d57fccab6f8ac5fc587324eae467c2a89e7bd7",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 일부 유죄부분 파기 뒤 벌금 자판을 한 복합·파기자판 주문이므로 mixed 분류는 맞다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issue의 일반화된 문구가 P1 source 원문에 없으므로 gold_supported=false이다."
+    },
+    "case-102": {
+      "approved": false,
+      "source_sha256": "5badb971dddd04d08d9a9e8d45543394b1c7419b5b6f9528919bef84a1f68318",
+      "fixture_sha256": "e1f0b463f5bd2abdca20dc1a86e4c320cfefd5deb739d6e2aa3d3e9b007fee2e",
+      "expected_sha256": "23b6eeb64f8d654da5bd24a228f2a383725626d593f440311002105c652ee37b",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected adverse에 덧붙인 일반화 문구가 P1 source 원문에 없어 gold_supported=false이다."
+    },
+    "case-103": {
+      "approved": false,
+      "source_sha256": "9855b261d1aa51b825e7d0c023bef02d75e4d877668c7cadaa32ebc60c48ad79",
+      "fixture_sha256": "d2d50d26c303d416c173c306f4fdb0b96ffba8350d2ab952b489a278660248ac",
+      "expected_sha256": "1afdb9b3ca60ed7aa06cadad4ce5805ced6c9c53b8be4b294b267b24117dd4c3",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-104": {
+      "approved": false,
+      "source_sha256": "d6ed42fc7174302a6f38594270c0007c1db73bab39648836c51c7b9f3bac6e69",
+      "fixture_sha256": "5d038e48a62a35450140959e5bcaeef403ff81598636b353bfcf0f57609be299",
+      "expected_sha256": "f1833fadba8060b73592189aea30594ec148a44f2217eff03408fef2ede02ef3",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-105": {
+      "approved": false,
+      "source_sha256": "7bcaeeb3437c02bc04214e7c9c329e5a98a478e7abc1ab99dd775de3e0037c35",
+      "fixture_sha256": "ece2d70b112caa7280f3160fffb3681879eb54615e7327fcd4b755b7ae53d411",
+      "expected_sha256": "e15d3b6e3803e2b57a2438f63305dac573bd67536e61fc38b7a820ab53e6727e",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-106": {
+      "approved": false,
+      "source_sha256": "c627f7f35a3c9cd72ce6c3b3ed94bf8c5653e4ab33be18251e9bc78ddedfeb4c",
+      "fixture_sha256": "57d2b0fe35364fb39a4a5785516e288c566775efae19f02de2c9c4c2626cce83",
+      "expected_sha256": "ba79b6161d79a769730364026de0bff6ecdbbcb51388672dd92dd2c3363d303f",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=granted 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-107": {
+      "approved": false,
+      "source_sha256": "0794e8a018af6abea9541f3bf491fbdf3456e9361cf302710266ed6a42928837",
+      "fixture_sha256": "94990d4096a3a28d3dc4622975a7d42d0bf0ace1989129d9c47a29ae48b7034b",
+      "expected_sha256": "d3d09ffac1a117d6db1a6851cb1eacc86067d9ed8fd3fd87e58d5711d0c6e115",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=granted 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-108": {
+      "approved": false,
+      "source_sha256": "88fec37b03c063ee24130fa1208b47f7b29e43cea9dfa025027b8824ccb186cb",
+      "fixture_sha256": "9b8233fe6afb7f0b8fe2b1957b9419e746caa5faf9e255689b65ab165374745b",
+      "expected_sha256": "21780304f713703c9964bb936018dba442ee8fdc731895d5d65dd7049f30a689",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-109": {
+      "approved": false,
+      "source_sha256": "696bbc5b0f1a9969fe4b799a84f8aeb50366eba554a6e1ba047095cd34ea1b59",
+      "fixture_sha256": "1a66a45b385ca681662e56abce934b68d70f560b21cf1b534e4b112c214b5f24",
+      "expected_sha256": "73bd3472053e6d73556000513cb51ff05ac50ed859b37e02cc1a9651508d2c90",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-110": {
+      "approved": false,
+      "source_sha256": "cde978f3016ec407e4f3b3066a9821b77ea4f0062fea155a5e18ec6b7ffcebec",
+      "fixture_sha256": "5ca9b180fcfa28e3eaca659e1f3b58374a556fca3faddc982df97ee5bf7f941d",
+      "expected_sha256": "9cb82590e8f9c9778c9912cd45fa43e2dad5f1c107e7259d31184518ed4652d7",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=granted 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-111": {
+      "approved": false,
+      "source_sha256": "985996840250468add78fd1359db343a53f1aa92448f608c0d59f0da5a6c8a19",
+      "fixture_sha256": "960a9b0e44689652fc5943ab48ba1c786dba7605e19c0f598819599c5afd3a7c",
+      "expected_sha256": "6309ea444127f087de9fe1c23e2590ee92dcc21b6897da82270352cf1bd07448",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=granted 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issue의 일반화된 문구가 P1 source 원문에 없으므로 gold_supported=false이다."
+    },
+    "case-112": {
+      "approved": false,
+      "source_sha256": "3cd21c72d2d4533c4977fa2ded5c75801e6dcb808b06d2663ddcaeb0fe06992c",
+      "fixture_sha256": "3c6dec78c5fff6f2a43668b326c25d0e15e3c36ba63ce795c393bfd9974549e0",
+      "expected_sha256": "e8d18364880a1a6bdec6c8cd93563b18592cc5a71518872f80bdc2253129f561",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=granted 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-113": {
+      "approved": false,
+      "source_sha256": "21aa3d2b465ead325e9c46d3475c1496f39fcc833bd1b0d9a0536e160ab77c2c",
+      "fixture_sha256": "3cf6151b264dbdaee0ece0c6302c9981830302cabcbda13e5c39b1b52f5fad7d",
+      "expected_sha256": "1a48e3ece44369deac73b5ff3b6680f441ece3d9a19b7c143aecb897c37705f6",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 일부 파기환송과 검사의 나머지 상고기각이 병존한 복합주문이므로 mixed 분류는 맞다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-114": {
+      "approved": false,
+      "source_sha256": "8693290aa04475da0bf236c206c543162fc5258d9565ddeb04fd30e9a5ecdd19",
+      "fixture_sha256": "57d4143a3a42de14441b05ee5a74b663c88dce429727472bddc0e47255332eae",
+      "expected_sha256": "b6ddcce7519a64f70ca8a45ab1dea60f9b9505d2f2871bb6e3087d5c2673f0b4",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 재항고 기각이므로 affirmed여야 하나 expected outcome은 granted이다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-115": {
+      "approved": false,
+      "source_sha256": "d501864eb9b50a7f8e65a44196847e696bb2da3a74e78c206a54b060b1c471f5",
+      "fixture_sha256": "665822d9d05f2ecaff34947bf3fe771b0b0416dc40f9a25855fb6194ba4fd8ea",
+      "expected_sha256": "d22a62b309fb6785525722e8ef1049c43b079b4444508be8d2613e1007b7c1fc",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 일부 소송종료와 나머지 파기환송이 병존한 복합주문이므로 mixed 분류는 맞다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-116": {
+      "approved": false,
+      "source_sha256": "d75dc2b557e218675eab7aef5eadf812b956c6ca0b2ce6e55d06931f93b0d953",
+      "fixture_sha256": "5e73fa99d1b0bc12f355b5e9276cc9d1e8e0272f7de229776f75fabb11b2a834",
+      "expected_sha256": "8e26dc68025d3110ab19404e6c6a1e21aa2b45605070748e580d483511c76b05",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-117": {
+      "approved": false,
+      "source_sha256": "4980d8b82c734a682677ed3054c6fda4be8fef945ea136e981fb4ff1641179f7",
+      "fixture_sha256": "7aeabdbca8c93d0c46f9a7066e752e77b15e395967ca043a2ca92967b6667c31",
+      "expected_sha256": "849c8e88acc61e53144179446a24f56574a936c53266efe79d80b0b9c1184f17",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-118": {
+      "approved": false,
+      "source_sha256": "29cafc82e20e3878eeebb868d477e2820d69f23b2b77de281c4e9efe1555bb4f",
+      "fixture_sha256": "a685cb6af988674b9d0776e13509b6eaa2f7f64300a6504ce2c3598d1e00aef2",
+      "expected_sha256": "9a2184485fd4e3171306982c8003c9e2121bfa194b5528a8ce9d03c6c0e09e05",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 원심 파기, 제1심 취소 및 환송의 주문이므로 reversed-remanded 분류는 맞다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-119": {
+      "approved": false,
+      "source_sha256": "944701076ba9b311158490e9f39d3108e4ba0ba5fd43b652ab66f9fdc90d3eb6",
+      "fixture_sha256": "5cf4a7fc98c395c46889c9eca0ff279a5bd19bfb88f035c381ff459e1e653a34",
+      "expected_sha256": "09e2355791896197884604e9cc978a9872e48bbc78f8eeae38403deb7e34b69c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=reversed-remanded 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    },
+    "case-120": {
+      "approved": false,
+      "source_sha256": "45719e8e50319ab8f79bd8bbb220f54abd4580407b99300f41c4d147bcbcf26f",
+      "fixture_sha256": "5f0365163e7680bbf286a4b24d24f0f53091cdeb7161310cfa1ef3f02759788c",
+      "expected_sha256": "2d151e3b03462781ade0f45fa879421812b5ee262e903cbd7a0551fad493c43c",
+      "checks": {
+        "source_bound": true,
+        "label_correct": false,
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true
+      },
+      "notes": "현재 source/fixture/expected SHA-256, source URL·사건번호, expected.source_sha256가 manifest와 일치한다. 공식 주문과 expected outcome=affirmed 분류는 일치한다. 그러나 blind runner에 전달되는 fixture에는 P1 URL·공식 사건키가 없으므로 독립 P1 검증 없이 decision_status=ready를 둘 수 없고 abstain이어야 한다; label_correct=false. fixture에는 주문 직접문구·공식 사건키가 없고 잔존 PII 스캔도 0건이다. expected issues/adverse는 P1 source의 full_text·holding_summary·issues 중 원문 문구로 직접 확인된다."
+    }
+  }
+}
+

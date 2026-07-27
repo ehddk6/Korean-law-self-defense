@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "가사비송절차에 관하여 가사소송법에 특별한 규정이 없는 한 비송사건절차법 제1편의 규정을 준용하는데(가사소송법 제34조 본문), 가사소송법에 가사비송사건의 심판청구 취하에 있어서 상대방의 동의 필요 여부에 관하여 특별한 규정을 두고 있지 아니하고, 비송사건절차법은 ‘소취하에 대한 동의’에 관한 민사소송법 제266조 제2항을 준용하지 않는다."
+  ],
+  "expected_issues": [
+    "상대방이 있는 마류 가사비송사건인 재산분할심판 사건의 경우, 심판청구 취하에 상대방의 동의가 필요한지 여부(소극) 및 상대방이 취하에 부동의하였더라도 취하의 효력이 발생하는지 여부(적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2023므12218",
+  "outcome": "mixed",
+  "scenario_id": "case-051",
+  "source_sha256": "5fb56dad9e84cdc2285a9bccfa08131e480c0084c883de7be09a6efe96bdf761"
+}

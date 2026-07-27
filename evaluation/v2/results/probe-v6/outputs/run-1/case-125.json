@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "특별재판적 사실 및 특별규정 적용 여부가 제공되지 않았다.",
+    "피고의 보통재판적이 있는 구체적 장소 또는 법원이 제공되지 않았다."
+  ],
+  "citations": [
+    "제2조(보통재판적) 소(訴)는 피고의 보통재판적(普通裁判籍)이 있는 곳의 법원이 관할한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 민사소송법 제2조.",
+    "필수 사실: 피고의 보통재판적 존재 및 그 구체적 소재지.",
+    "예외: 특별재판적이나 특별규정이 있으면 달라질 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "defendant-general-forum",
+  "scenario_id": "case-125",
+  "supported_facts": [
+    {
+      "claim": "피고의 보통재판적이 알려져 있다.",
+      "evidence_excerpt": "\"defendant_general_forum_known\": true"
+    },
+    {
+      "claim": "소는 피고의 보통재판적이 있는 곳의 법원이 관할한다.",
+      "evidence_excerpt": "제2조(보통재판적) 소(訴)는 피고의 보통재판적(普通裁判籍)이 있는 곳의 법원이 관할한다."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-001": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7a7a0bc1b8a3810ba2aaa974a6b0363077af7253e5f9ecfaf0e88a3ae0a4ca1d",
+      "fixture_sha256": "0f8e168c7ed375ddc3e9d449de73879505f2f911223ab34b2a67dce502742c09",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고 모두 기각으로 affirmed와 맞고, 쟁점·불리한 논점은 원문 근거가 있다. fixture에는 현재 사건번호·source ID·주문·대법원 직접 결론 및 개인정보가 없다.",
+      "source_sha256": "3b0d5dc86351937138dbcc3268cf31eaacae2391bdfe37ab5f672f8f76ddd316"
+    },
+    "case-002": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f6e659a686dc6c71075d79f55a37ef971d53addba6ea119734933584c98be9dc",
+      "fixture_sha256": "f9893e9726581f85243b0c528a3e9d97e50f0c7283332c40e9a6e060153357a0",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 일부 파기환송과 피고 상고 기각이므로 mixed가 맞고, 쟁점·불리한 논점은 원문으로 지지된다. fixture에는 식별자·주문·최종 직접 결론 및 개인정보가 없다.",
+      "source_sha256": "d2ce3fef7a23eb51dfa2c4864207ec4ec8dfbd6f7e321783cceb2ae93d6fc612"
+    },
+    "case-003": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b5331ce52538c9bf45f419bf8232307c12f79f6ebca94bb71649e6ab6247b000",
+      "fixture_sha256": "bcb7f5754d3a8f67a4516df0fff4ffa803e22365d383b7eb5fad42a64095d7d0",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 reversed-remanded와 맞고, 쟁점·불리한 논점은 원문 근거가 있다. fixture는 사실관계와 원심 판단 전 단계만 남기고 식별자·주문·직접 결론 및 개인정보를 제거했다.",
+      "source_sha256": "7e70cb3ad7595a5091a3a2e22424f5af1efe9c28854a2b7267919132068a39a5"
+    },
+    "case-004": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "9f9c5415f3ad46d41e372a83b6178658083c42040ba9f93685ca8705a5943cde",
+      "fixture_sha256": "98ab29d7c40b151a6e0a9d330464a5ac1826ba135e704422978713bf795f779f",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원고 청구 전부 기각으로 dismissed와 맞고, 쟁점·불리한 논점은 원문으로 지지된다. fixture에는 현재 사건번호·source ID·주문·법원의 직접 결론 및 개인정보가 없고 충분한 사실·주장·법리가 있다.",
+      "source_sha256": "ba4fe828fcaaf75efee9894b7bff41332afa6e33ddce7eb6d682f41b676f7bfa"
+    },
+    "case-005": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "25806e330d50aec0bfa28808dbe4aa13db506995790bb1490354f7c8d54eae73",
+      "fixture_sha256": "2ead326c19db7932d2f4faad2065e85b2ff7e2d71e4f61ddbe841defe4ebadba",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 일부 취소·지급명령과 나머지 항소 기각이므로 mixed가 맞고, 쟁점·불리한 논점은 원문 근거가 있다. fixture에는 식별자·주문·법원 직접 결론 및 개인정보가 없다.",
+      "source_sha256": "2b84860eb17c522d74cd702e0d04d5fab9fe4d3152c6ce09c3df9fcbe5c60366"
+    }
+  }
+}

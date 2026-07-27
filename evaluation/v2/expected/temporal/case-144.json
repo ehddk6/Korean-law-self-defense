@@ -1,0 +1,14 @@
+{
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "손해·가해자를 안 날부터 3년과 기간 계산"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "source_sha256": "4aa66b82f9346d101a8e393aa54e8a4e7f8036000778d0378df6fa602ed43d9e"
+}

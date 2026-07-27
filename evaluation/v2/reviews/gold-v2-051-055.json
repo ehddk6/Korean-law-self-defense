@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-051": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fd1379a0d78af3b031e15c82b3d106afdc19bd8bbdfebc7308ee8472b32a23c7",
+      "fixture_sha256": "d26801bce23942311e08747e1fdbb1f62884b04300714669dbe066dd88d9c621",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 재산분할 부분 파기환송·나머지 상고기각은 mixed와 일치한다. fixture에는 현재 사건번호·source ID·주문·직접 결론과 개인정보가 없고 300자 이상의 사실관계가 있다. issues/adverse는 원문 사실과 법리로 지지된다.",
+      "source_sha256": "5fb56dad9e84cdc2285a9bccfa08131e480c0084c883de7be09a6efe96bdf761"
+    },
+    "case-052": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "494cb2a9dab00cab82a6276b05df966a3f3237a1825ce0e9757c81544dc16eeb",
+      "fixture_sha256": "f9c136ee2c7926a3d6fa5040654018b2ccbf257210ccea204fea9a1701be00df",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 재산분할 부분 파기·취소·환송, 수계신청 및 나머지 상고 기각은 mixed와 일치한다. fixture는 목표 식별자·주문·직접 결론과 개인정보를 제거했고 충분한 법리·사실 맥락이 있다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "e314a7a7aa277bfa02fa266aa4db7cda3d5e3c3a5b79ac862f9719d4513e00aa"
+    },
+    "case-053": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "33beafbf71f488bcdf4047e129e518cb2154e06a3093cc17d8bdf48615049103",
+      "fixture_sha256": "c6f51b455e2fa9825d91dd5b3fb72816fa4d491e2c7e384a443a21b245715689",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 재항고 기각으로 원심결정이 유지되어 affirmed와 일치한다. fixture에는 목표 사건번호·source ID·주문·직접 결론과 개인정보가 없고 충분한 사안·법조문·쟁점이 있다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "07a871c42f9363e74c3a49989d25b735d26c2cc9ca009fc5625931aabade1167"
+    },
+    "case-054": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f7807679293df0348e75f1803579fc50570f3fe6cdee26a2294385a66ea4a882",
+      "fixture_sha256": "688f0e40f868669fb8042c5c66498e23b2aecf74fe3a6a8ec881e70e5c8f2144",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 원심판결 파기·환송은 reversed-remanded와 일치한다. fixture는 목표 사건번호·source ID·주문·직접 결론과 개인정보를 제거했으며 300자 이상의 법리 맥락이 있다. issues/adverse는 원문 법리로 지지된다.",
+      "source_sha256": "56e55ed2cb68dcb05c07311736193b376de304de1184484c1d7ebb2598d5d74e"
+    },
+    "case-055": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "a99495c486d95d0e3124ad2a65aee4a6392e567cd01d582fc363ded8e8a8fb61",
+      "fixture_sha256": "cc75d76f355fe4baff600502c125175c7063a052fc4d70b794a6ab74fec93ce1",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 원심판결 파기·환송은 reversed-remanded와 일치한다. fixture에는 목표 사건번호·source ID·주문·직접 결론과 개인정보가 없고 충분한 법리 맥락이 있다. issues/adverse는 원문 법리로 실질적으로 지지된다.",
+      "source_sha256": "6de0d39b4c5b0be144e5112bddf15986cf00341051925451acc16d494981b6e1"
+    }
+  }
+}

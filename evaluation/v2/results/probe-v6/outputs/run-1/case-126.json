@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "법령등에 특별한 규정이 있는지 제공되지 않았다.",
+    "처분 당시의 법령등을 적용하기 곤란한 특별한 사정이 있는지 제공되지 않았다."
+  ],
+  "citations": [
+    "② 당사자의 신청에 따른 처분은 법령등에 특별한 규정이 있거나 처분 당시의 법령등을 적용하기 곤란한 특별한 사정이 있는 경우를 제외하고는 처분 당시의 법령등에 따른다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조 제2항.",
+    "필수 사실: 당사자의 신청에 따른 처분이고 처분 전 법이 변경된 사실은 제공되었다.",
+    "예외: 법령등에 특별한 규정이 있거나 처분 당시 법령등 적용이 곤란한 특별한 사정이 있으면 처분 당시 법 적용 원칙과 달라질 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-126",
+  "supported_facts": [
+    {
+      "claim": "처분 전 법이 변경되었다.",
+      "evidence_excerpt": "\"law_changed_before_disposition\": true"
+    },
+    {
+      "claim": "당사자의 신청이 있었다.",
+      "evidence_excerpt": "\"party_application\": true"
+    }
+  ]
+}

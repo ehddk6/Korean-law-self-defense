@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "소송절차의 중지는 법원이나 당사자에게 소송을 진행할 수 없는 사유가 생겼거나 진행에 부적당한 사유가 생겼을 때 법률상 당연히 또는 법원의 결정에 의하여 절차의 진행이 정지되는 것을 의미한다."
+  ],
+  "expected_issues": [
+    "파산선고결정에 대한 즉시항고가 제기된 이후 회생절차개시결정이 있는 경우, 즉시항고절차가 중지되는지 여부(적극)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2024마8320",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-097",
+  "source_sha256": "3f1d33ebc4244e9d64a72519272342b72efa6fbc60e4e9bca50e552e62cbfa63"
+}

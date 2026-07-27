@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "ValueError",
+  "message": "gold 증류 issues가 fixture로 추적되지 않습니다."
+}

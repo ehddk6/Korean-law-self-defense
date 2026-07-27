@@ -1,0 +1,13 @@
+{
+  "decision_status": "abstain",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "보충송달 수령인의 사리분별 능력"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "substitute-service-needs-capable-recipient",
+  "scenario_id": "case-133",
+  "source_sha256": "2f980c918792f0fa7ee790d61b98ea734fd6bf09dbcadffacaae4e7069b9be68"
+}

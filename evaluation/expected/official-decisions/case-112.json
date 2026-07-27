@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "아래와 같은 이유로 원고에게는 ‘박해를 받을 충분한 근거가 있는 공포’가 있다."
+  ],
+  "expected_issues": [
+    "미얀마 친(Chin)족 출신으로 기독교 교회의 목사로 활동하던 사람이 대규모 종교행사를 개최하다가 신병의 위협을 느끼고 도피하여 대한민국에 입국한 후 난민인정 신청을 하였으나 법무부장관이 이를 불허하는 처분을 한 사안에서, 신청인에게 ‘소수민족이라는 신분, 기독교라는 종교, 정치적 의견 등으로 인하여 박해를 받을 우려가 있다고 볼 만한 충분한 근거가 있는 공포’가 있다고 보아 위 처분을 취소한 사례"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2009구합38312",
+  "outcome": "granted",
+  "scenario_id": "case-112",
+  "source_sha256": "eaf4f2618e32010136cf7dbf740f598d5535886d4d1858edf625d9ae1237c738"
+}

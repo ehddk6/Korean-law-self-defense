@@ -1,0 +1,12 @@
+{
+  "reviewer": "Codex visual inspection + user confirmation",
+  "reviewed_at": "2026-01-01T00:00:00+09:00",
+  "documents": [
+    {
+      "filename": "complaint.pdf",
+      "passed": true,
+      "render_files": ["C:/Temp/complaint-page-001.png"],
+      "notes": "잘림, 겹침, 빈 페이지, 글꼴 깨짐 없음"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[1] 전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법상 전기통신금융사기죄의 규정이 형법상 사기죄의 규정에 대하여 특별법의 관계에 있는지 여부(소극) / 1개의 행위가 전기통신금융사기죄와 사기죄의 각 구성요건을 충족하는 경우의 죄수관계(=상상적 경합범)"
+  ],
+  "expected_issues": [
+    "전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법상 전기통신금융사기죄의 규정이 형법상 사기죄의 규정에 대하여 특별법의 관계에 있는지 여부(소극) / 1개의 행위가 전기통신금융사기죄와 사기죄의 각 구성요건을 충족하는 경우의 죄수관계(=상상적 경합범)"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2025도6811",
+  "outcome": "affirmed",
+  "scenario_id": "case-046",
+  "source_sha256": "10ddd7492891289bf348966e4b1f8c2988b6c581f1e577962ad19d7dc367302b"
+}

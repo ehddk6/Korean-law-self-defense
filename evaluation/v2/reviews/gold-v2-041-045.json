@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-041": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bc855a93a5efdabd3adc06b2ff7120168f290d4b502310a0389e26a428fa872a",
+      "fixture_sha256": "4f9bed19cec89c1cb5ed3d973e80dd77e4781dd4716ff0458e27e5167ea70bd0",
+      "notes": "해시 연결과 상고기각→affirmed는 일치하고 fixture도 주문·사건번호·식별정보를 제거했다. 다만 두 번째 adverse는 10년 미만 양형부당 주장이 부적법하다는 공식 결론 자체로서 반대 결론을 지지하지 않아 adverse gold로는 부적절하다.",
+      "source_sha256": "df9d5c1f8df91246fe17996dc99c0d6eaf76515c51532e717c40a68925a3b609"
+    },
+    "case-042": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "545c08ac6b6eac2367041f74d56582176c3ee9c45495f08a4d990020e3765e5b",
+      "fixture_sha256": "63d2149e8423b2129c6c36d7533969deb3a7046cff60f5e114dcdb9ac580f004",
+      "notes": "해시 연결이 맞고 상고 모두 기각은 affirmed와 일치한다. fixture는 현 사건번호·source ID·주문·사안 적용 결론을 제거했으며 충분한 법리 맥락과 비식별 인용 토큰만 남겼다. issues와 adverse는 원문의 재산국외도피 요건·판단요소로 지지된다.",
+      "source_sha256": "522d723a4a3f7b50418fede0765126edd58fc643123610c6338fd485fed3c0f3"
+    },
+    "case-043": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2154153d3885a3ef598b8e2fc9c4f82a3816882983d442c3301d478a4b02bdfe",
+      "fixture_sha256": "9f429ea9bbf1080b683dcee469d8e849721d7c579eb2c3c7924364d12c701ed7",
+      "notes": "해시 연결과 파기환송→reversed-remanded가 일치한다. fixture에는 주문·현 사건번호·source ID·대법원 판단이 없고 공소사실만으로 300자 이상 분석 맥락이 있다. 실명·실제 주민등록번호가 없으며 expected 쟁점과 반대 논리는 원문 사실 및 원심 무죄 판단으로 지지된다.",
+      "source_sha256": "7e21f2dff45a88c44200e898d6f1fd3dfbe9d2594f5e507a749a82e6dce4cf56"
+    },
+    "case-044": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "a47c1e0da7eb0c0547243c4d431655d19082fe6caa46a9583190e661913b68de",
+      "fixture_sha256": "e6dd0c6909fbb52ccdbbb027d87437b25fd03aaa37f51dabf05882adb72e7994",
+      "notes": "해시 연결과 상고 모두 기각→affirmed가 일치한다. fixture는 주문·현 사건번호·source ID와 검사의 상고에 대한 사안 적용 결론을 제거하면서 충분한 법리·양형 맥락을 유지했고 개인정보도 없다. expected 쟁점·반대 논리는 공식 원문에 직접 근거한다.",
+      "source_sha256": "99a7934de1faef75766488b522692cb9a9a361b4fa81ae73d6d0eba3ea372dba"
+    },
+    "case-045": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ce97160c1440c22b03106e714549991a67c02b1c3d44ccbe25952a6f1b40774f",
+      "fixture_sha256": "800ba4fc4d339bd7af5aad749d627c8ba21157d46efd03fdd06e4b67d34d6fd5",
+      "notes": "해시 연결과 파기환송→reversed-remanded가 일치한다. fixture는 대법원 주문·판단부·현 사건번호·source ID를 제거하고 사실 및 원심 논리를 충분히 보존했다. 주소 토큰과 마스킹 전화번호는 누출이 아니며, expected 쟁점·반대 논리는 원문에 직접 나타난다.",
+      "source_sha256": "014612cf52ee31d8cc81335be90b8692eb7e227127a808ffc745e757dce723ee"
+    }
+  }
+}

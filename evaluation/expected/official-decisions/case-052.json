@@ -1,0 +1,16 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[1] 이혼으로 인한 재산분할청구권은 이혼을 한 당사자의 일방이 다른 일방에 대하여 재산분할을 청구할 수 있는 권리로서 청구인의 재산에 영향을 미치지만, 순전한 재산법적 행위와 같이 볼 수는 없다."
+  ],
+  "expected_issues": [
+    "이혼으로 인한 재산분할청구권이 채권자대위권의 목적이 될 수 있는지 여부(소극) 및 파산재단에 속하는지 여부(소극)",
+    "이혼으로 인한 재산분할을 구하는 절차가 채무자 회생 및 파산에 관한 법률 제347조 제1항에 따른 수계의 대상인지 여부(원칙적 소극)",
+    "법원이 부적법한 소송수계신청을 받아들여 소송을 진행한 후 소송수계인을 당사자로 하여 선고한 판결의 효력"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2023므10861, 10878",
+  "outcome": "mixed",
+  "scenario_id": "case-052",
+  "source_sha256": "e314a7a7aa277bfa02fa266aa4db7cda3d5e3c3a5b79ac862f9719d4513e00aa"
+}

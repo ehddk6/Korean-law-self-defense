@@ -1,0 +1,357 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-current",
+  "reviewer_model": "gpt-5.4",
+  "reviews": {
+    "case-126": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1925dd628110104c91f46d6fbd3a9779f7955620bf694019cbc1d17096ebeb2d",
+      "fixture_sha256": "f6ddb7d47486d41e5e5992d7ada22a57ddbd57593742f2b235e8ca39c5092cdf",
+      "notes": "attestation과 expected.source_sha256 연결이 일치한다. 제14조 신청처분 예외 구조상 conditional/article-14-fact-dependent와 issue·adverse가 source에 지지되고 fixture는 결론·주문 누출 없이 마스킹만 있다.",
+      "source_sha256": "067e7f14eb3a611c136328e26854973c7e3362af6c74372164dc9aaa8035f8d4"
+    },
+    "case-127": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d85381247b369efd9e294b3cf587780670d19ef2bcf935ab0c144a71bce051f3",
+      "fixture_sha256": "0071f59d45339a470fc8aa69bad29413c03b18b97b5284f986b16e22e8e70677",
+      "notes": "attestation과 source_sha 연결이 맞다. fixture는 부칙 원문·개정일을 의도적으로 비워 verify-specific-addendum/abstain이 타당하고 관련 issue·adverse가 source 부칙 문맥에 지지된다; 결론 누출·PII는 없다.",
+      "source_sha256": "221e1af25cf955dda0bcbaf3052128faaea7f10ed71f2a999f01bb445e974bab"
+    },
+    "case-128": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "01ae5f18e816f16e5f31943e7670dad33d3e806171a4d3a6b5ce02ff8a71f5e7",
+      "fixture_sha256": "18358f433c881ab5aef9ad4d62d436725d141efd92d45aee8d3af362cb654293",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민사소송법 제183조의 주소등·근무장소 규정상 recipient_address 사실에 ready/address-or-workplace-service가 맞고 issue·adverse도 source에 지지된다; fixture는 블라인드와 비식별 마스킹을 유지한다.",
+      "source_sha256": "60f6b2e1450fe7f9769d3ab0698cbd08a2d30260eea6acbed0e3c829a25a4a1c"
+    },
+    "case-129": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c6c686fe7bb092d15e708c3d81f54fac2a5646d1d4916fe1a2f40621183d1600",
+      "fixture_sha256": "d8608178bfca4e6aa43e8dc5f25369ec1c9975e2f6e5a2289c4d586181f70e51",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민법 제163조·제166조와 제157·160조 계산으로 2026-05-10 기산 채권의 만료일을 2029-05-10으로 보는 gold가 source에 합치하고 fixture는 결론 누출 없이 마스킹만 포함한다.",
+      "source_sha256": "b0cedf92f3181c25b20e7dc42ceb8cd4df4d68d67055815c2902ac7030ed331b"
+    },
+    "case-130": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d41e051b42b8f06f2f2dd6c0b854ae9f3cc7f02666ddaafe6b7514d9fdda47f4",
+      "fixture_sha256": "f47741365fe90f0e529e33c19e4d552dbbf76b643b7a4f81bce0b6fb79c55b01",
+      "notes": "attestation과 source_sha 연결이 맞다. 민사소송법 제3조상 주소가 알려진 개인 피고의 보통재판적은 주소 기준이므로 ready/individual-address-forum이 타당하고 issue·adverse도 source에 지지된다; fixture 누출·PII 문제는 없다.",
+      "source_sha256": "eab2ea2ee181d5ed87f2a29dc44ab5674c5bcf7f41c1bca61cc650b00e0ba5fe"
+    },
+    "case-131": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "91c75551ed2cdbd6e954c215671a17a67acb2253c3ad942acad083eb47d41d64",
+      "fixture_sha256": "1346274d41859069f446e5bb406dc06451e498946b7c3f8f0864fc379853f070",
+      "notes": "attestation과 source_sha 연결이 일치한다. 제14조 제2항의 곤란한 특별사정 예외 때문에 conditional/article-14-fact-dependent가 맞고 issue·adverse도 source 문언에 지지된다; fixture는 결론·주문 누출 없이 마스킹만 있다.",
+      "source_sha256": "d1719d225a9fea59e921920dee648d3093894bd90f19c41e64a1355bf1211c49"
+    },
+    "case-132": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2113e0ec4689cbf569893d44456383a5ab84de17adbbc1625e729388dcc3f0de",
+      "fixture_sha256": "dee6e7a6661712d0610c54bc15ec137bc1ce2033b340d8e23e770179425bbab0",
+      "notes": "attestation과 source_sha 연결이 맞다. fixture에 부칙 원문과 개정시점이 없어 verify-specific-addendum/abstain이 적절하고 source 부칙의 시행일·경과조치 문맥이 issue·adverse를 지지한다; 블라인드와 PII 조건도 충족한다.",
+      "source_sha256": "f48a1987cebda7ebbd3a653cfcf329e197910dd347833fb6a0b75869757880e9"
+    },
+    "case-133": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2a7ea90ab41e02393d604cb2a4bfdcda03c2d4a88c21fcfa6781c1637c396287",
+      "fixture_sha256": "57d0ff9e26c0fc89c2a1e509aa4642c8977073d6ffe56a44dcb4a5edc5bafcbf",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민사소송법 제186조는 사리를 분별할 지능이 있는 수령인을 요구하므로 capacity_confirmed=false 사실에서 abstain/substitute-service-needs-capable-recipient가 맞고 issue·adverse가 source에 지지된다.",
+      "source_sha256": "2f980c918792f0fa7ee790d61b98ea734fd6bf09dbcadffacaae4e7069b9be68"
+    },
+    "case-134": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ebd6129cfd345dd48edea93c82b2dc797bed7928987f15b13fb33f1b1e2ba29c",
+      "fixture_sha256": "2fbd6966024c0a7c45968a3ec87c030a63bfb5fe3feb87b5d127c0d60c92e83f",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민법 제164조 제1호와 제166조, 제157·160조로 숙박료 채권 만료일을 2027-06-10으로 계산한 gold가 source에 합치하고 fixture는 비식별 토큰 외 PII·직접 결론이 없다.",
+      "source_sha256": "e753a85453019bd6170a9fcff3a2306d1591d246cacfdad06a046182413b04c3"
+    },
+    "case-135": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2e5e9312cae8148b4e73f604def4696e8cda36c24a91a5d15fa7e67f78a3c8c8",
+      "fixture_sha256": "7328c4c92eb8f4fc9aa4104433638b2e9fef9fb2f54ec9c776aa85c0aa037033",
+      "notes": "attestation과 source_sha 연결이 맞다. 민사소송법 제8조의 의무이행지 특별재판적 문언상 ready/place-of-performance-special-forum이 타당하고 issue·adverse도 source에 지지된다; fixture는 블라인드와 PII 조건을 충족한다.",
+      "source_sha256": "2da19ce297ed329e9c039a0096f53ecc28ca52e95ed5c3ca04fb624f8227ea66"
+    },
+    "case-136": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c87fbf2e33a39f7509059ee1203761f66f4f509f0fbb915fd84fb8615d80a7ef",
+      "fixture_sha256": "9aa42fefb058a245c14749bfb1bde3a886d7f18010a4fffca5a73b704eed336d",
+      "notes": "attestation과 source_sha 연결이 일치한다. 제14조 제3항은 위반시법 원칙과 변경법 예외를 함께 두므로 sanction 사실만으로는 conditional/article-14-fact-dependent가 맞고 issue·adverse가 source에 지지된다; fixture 누출·PII는 없다.",
+      "source_sha256": "2f6330b18de1ffd9728ef24f4bb2332556c7110d12d87dda4d23d258a0c2f928"
+    },
+    "case-137": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "23c75ce448e6d9912a5cd11ca1380e5e9ae0c1ce3dd6b83aea85db1d3655c989",
+      "fixture_sha256": "8bebd2c3688b861ca0aa2e040585a27b36e3743e85d0fba38abf4b89eb3a3178",
+      "notes": "attestation과 source_sha 연결이 맞다. fixture는 특정 부칙 원문·개정일을 제거한 temporal 입력이어서 verify-specific-addendum/abstain이 타당하고 source 부칙 문맥이 issue·adverse를 지지한다; 블라인드·PII 조건도 충족한다.",
+      "source_sha256": "abf1b620104aa802195f0e777bebdb5e904f26a3eb4cb2b5b3bab4bb546b11c5"
+    },
+    "case-138": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "43511b0752e0f9d6e25ab298e3e87a3890c999ab7ca173531944086d32d0bf45",
+      "fixture_sha256": "22a94fdd0ff0b17f9338d95f3529f2f94783824d0bdff3e5b8c6002928da6fff",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민사소송법 제187조는 제186조 송달불능과 법원사무관등의 발송을 전제로 하므로 conditional/postal-service-after-article-186-failure 및 관련 issue·adverse가 source에 지지된다.",
+      "source_sha256": "d1fbc7666858fecfbbd1d1d31b62555c4601da9b1c148fd6962c933666683d79"
+    },
+    "case-139": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "72760d71fccd2e8198e7ad7c57c10142685b61623b33682dd29cb6a4497264ae",
+      "fixture_sha256": "54d877de22657781e5738bff91493748348ed189e038f8db82b5695cbe313a56",
+      "notes": "attestation과 source_sha 연결이 맞다. 민법 제166조상 기산점은 권리행사 가능일이므로 right_exercisable_date가 없으면 abstain/starts-when-right-exercisable 및 deadline null이 타당하고 source가 issue·adverse를 지지한다.",
+      "source_sha256": "b5f59ecddd1c11bb67c086664643d5c5885fcd2fd1d8418585649ceaee9ec11e"
+    },
+    "case-140": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8d69fd4cb9c478e6a573d07d2c47dc30d4c6a10bca0340f65bfeab7b13b40d1a",
+      "fixture_sha256": "08adc89cdf645f5784dd2a3e0a383453f279ca320c0f2c5e935bdf9f01c186c9",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민사소송법 제18조 제1항의 불법행위지 특별재판적에 따라 ready/tort-place-special-forum이 맞고 issue·adverse가 source에 지지된다; fixture는 결론 누출과 PII 누출이 없다.",
+      "source_sha256": "7977eac4c2496ea1925e9ad5572a4c981fdcc9b4f55555a10876e416939a69ed"
+    },
+    "case-141": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fb164c86aaabb0120967a07aa4181609c64adb2a400e3bc1d96f107ec8887546",
+      "fixture_sha256": "a3f3b49746d7a7f1aa171af4ffb634a68275766c4ff97d0e88e6b2889d8f4eb2",
+      "notes": "attestation과 source_sha 연결이 일치한다. 제14조 제3항 단서는 가벼워진 제재기준과 특별규정 여부를 함께 보게 하므로 conditional/article-14-fact-dependent가 타당하고 issue·adverse가 source에 지지된다.",
+      "source_sha256": "c72e6d0c1bc13eee8ed4e5cdc5b7e6ec66981318f48d318923d8e3f88c797fa9"
+    },
+    "case-142": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "748f2e8dd25e102b522edc51e76d70c3d06305a8a11e83271e5b6cdf88775f00",
+      "fixture_sha256": "f455b35bb81f0cfa6df4401ac5dd0340e9f710ef753a2a10427594ed690b1bf3",
+      "notes": "attestation과 source_sha 연결이 맞다. fixture는 특정 부칙 원문을 제거한 transitional 입력이라 verify-specific-addendum/abstain이 타당하고 source 부칙의 시행일·경과조치 문맥이 issue·adverse를 지지한다; 결론·PII 누출은 없다.",
+      "source_sha256": "11d95ef0ad42c97b83fcbc544b25b891efea90c7fcffbf66ede84fdac0ce45d8"
+    },
+    "case-143": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8a4f4a5d47ec7a127d04d5ac4f87cad03dcba8a5da22f82ff78054c7b58882f3",
+      "fixture_sha256": "058c99cdd59ce4c575721aa91370ca29061a44b7728d5df565feaca35600bed2",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민사소송법 제189조는 제187조 우편송달의 효력을 발송시점으로 보므로 ready/effective-upon-dispatch가 맞고 issue·adverse가 source에 지지된다; fixture는 블라인드와 PII 조건을 충족한다.",
+      "source_sha256": "b26e026677e7f63b84135702a5bf4e296f5ebac0565c562271d788bbea3c2b14"
+    },
+    "case-144": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d59a875ed69d419806f47634d8eb553bad8a0c49b5afbd083356f3976d20e5fc",
+      "fixture_sha256": "4f4c5c564bfc2832bc027ad4bfe72d8c7726c45b9651a8e780fd60baae391b85",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민법 제766조 제1항과 제157·160조 계산으로 knowledge_date 2026-04-10의 3년 만료일을 2029-04-10으로 보는 gold가 source에 합치하고 fixture는 마스킹 외 PII·직접 결론이 없다.",
+      "source_sha256": "4aa66b82f9346d101a8e393aa54e8a4e7f8036000778d0378df6fa602ed43d9e"
+    },
+    "case-145": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d1a0a6849c9ab6a42b6f691b2493904d3acc7356744f3a753bc40f6730017b66",
+      "fixture_sha256": "981073c17c3bc5634742eefb70a916182ffb12e0e4b28a664b53ce4e6bbdaf34",
+      "notes": "attestation과 source_sha 연결이 맞다. 민사소송법 제20조의 부동산 소재지 특별재판적 문언상 ready/real-estate-location-special-forum이 타당하고 issue·adverse도 source에 지지된다; fixture 누출·PII 문제는 없다.",
+      "source_sha256": "9735cfcc2ec1609591a23b480f89f6e216147d9ca12d1f4d3f20f9746294973b"
+    },
+    "case-146": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8d36405dfd9a779cb20a709490872cd254991fa896dd8bb759bc77302605cf7a",
+      "fixture_sha256": "aec772d541ecfda3e5ae48d4178fdbd717ec042ac7fff9ab737905c7a6ad18ce",
+      "notes": "attestation과 source_sha 연결이 일치한다. 제14조는 특별규정이 있으면 시간적 적용이 달라질 수 있으므로 원문이 없는 주장만으로는 abstain/article-14-fact-dependent가 맞고 issue·adverse가 source에 지지된다; fixture는 블라인드·비식별 상태다.",
+      "source_sha256": "537afa71a693c57895e0214accbb982e6b449bc3111ff67d4f37b82859f07317"
+    },
+    "case-147": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "cc56ecb7334931716f93455297c6f04d37459d382c498c1717b8ace9f323cf6a",
+      "fixture_sha256": "f6296769aca0bc41da2ace4b10fc4a45716f68930fa78493019fbfcbac2c7d34",
+      "notes": "attestation과 source_sha 연결이 맞다. fixture가 특정 부칙 문언을 제공하지 않아 verify-specific-addendum/abstain이 타당하고 source 부칙의 시행일·경과조치 문맥이 issue·adverse를 지지한다; 결론·PII 누출은 없다.",
+      "source_sha256": "bf5fe80591f83ed2b62a29f51c5743f8b3bd721d06a9fc66adcd230389faf7ba"
+    },
+    "case-148": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "17e20e0f481673e05dca952621ff535b327c9dd20a01adc1c157e937b36e778f",
+      "fixture_sha256": "8074fc7a4455f715283f62fcf93dda939199cbb036d9072f7e843a5c2058711d",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민사소송법 제194조는 공시송달 사유와 그 소명을 요구하므로 supporting_evidence_provided=false 사실에서 ready/public-service-requires-statutory-ground가 맞고 issue·adverse가 source에 지지된다.",
+      "source_sha256": "faf78d1970eacf37df57d828c3d7f423a9271fb57fbdf86f380b13f7f91cda18"
+    },
+    "case-149": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "06f62bbff47f4195669b59d52f2776ff6dabc6b5e910888b6ff3282b3dc00a68",
+      "fixture_sha256": "f3441ba27e11dd41467ecf9e2cf18e786ec7ef92a0028ecdb760f47d4ce525f9",
+      "notes": "attestation과 source_sha 연결이 일치한다. 민법 제766조 제1항의 주관적 기산점이 빠져 단기시효 확정이 불가능하므로 abstain/knowledge-date-required와 deadline null이 타당하고 objective 10년 구별 이슈도 source에 지지된다.",
+      "source_sha256": "16d4a70f15bb604927d575b06bdd0e009d1dbab7d2c61850fae410afb1d91882"
+    },
+    "case-150": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bcb145745b9e14b871400fa00a74542ed21e8d05f0e39f7292d1afb1e1e1a6e6",
+      "fixture_sha256": "025949a099939e99cccf33efd592aa63c832a23c8bc623eb7724c3cd92595a84",
+      "notes": "attestation과 source_sha 연결이 맞다. 민사소송법 제24조는 특허권등 여부, 일반 관할 연계, 전속관할·서울중앙지법 예외를 가르므로 specific_court_facts_complete=false에서 conditional/ip-special-forum-subject-to-statute가 타당하고 issue·adverse가 source에 지지된다.",
+      "source_sha256": "8abc47fb9f25bd6dcf19a9e8af4d8d3bcee5adc54d7cda5718da92e5557f8b55"
+    }
+  }
+}

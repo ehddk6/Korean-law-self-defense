@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "이 단순히 사실과 다르다는 것만으로는 부족하고, 그러한 주장이 피고인의 회생계획인가의 요건과 밀접한 관련이 있고 이로 인하여 회생계획인가결정 여부 및 그 내용이 달라질 정도에 이르러야 한다."
+  ],
+  "expected_issues": [
+    "회생절차의 채무자가 자신의 재산 및 수입 상황 등에 관하여 허위의 내용으로 법원을 기망함으로써 채무자에게 유리한 회생계획인가결정을 받는 행위가 사기죄를 구성할 수 있는지 여부(적극) / 이때 회생계획인가결정을 받는 행위로 인한 사기죄가 성립하기 위해서는 재산 및 수입 상황 등에 관한 채무자의 주장이 채무자의 회생계획인가의 요건과 밀접한 관련이 있고 이로 인하여 회생계획인가결정 여부 및 그 내용이 달라질 정도에 이르러야 하는지 "
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2024도13139",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-049",
+  "source_sha256": "f5748df5d0e98ae0995b0a2cef7294ee17b447e5b8ef7b07b7dd5268cc5698b9"
+}

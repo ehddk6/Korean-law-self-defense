@@ -1,0 +1,9 @@
+# 이 프로젝트를 신뢰한 경우에만 적용된다.
+[mcp_servers.korean-law]
+command = "node"
+args = ["scripts/korean-law-mcp-safe-wrapper.mjs"]
+cwd = "."
+env_vars = ["LAW_OC"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+required = false

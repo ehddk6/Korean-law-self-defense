@@ -1,0 +1,17 @@
+{
+  "title": "불복 또는 청구 기한",
+  "trigger_event": "기산 사건",
+  "trigger_date": null,
+  "governing_rule": null,
+  "authority_id": null,
+  "calculation": null,
+  "tentative_due_date": null,
+  "holiday_adjustment": null,
+  "duration_value": null,
+  "duration_unit": null,
+  "holiday_adjustment_days": 0,
+  "verification_url": null,
+  "verified_at": null,
+  "verified": false,
+  "critical": true
+}

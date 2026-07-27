@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "계약일에 관해 증거-A와 증거-B의 진술이 서로 다르다."
+  ],
+  "citations": [
+    "증거-A",
+    "증거-B"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상충 진술로 계약일을 확정할 수 없음"
+  ],
+  "outcome": null,
+  "required_action": "fact-marked-disputed",
+  "rule_answer": null,
+  "scenario_id": "case-155",
+  "supported_facts": [
+    {
+      "claim": "계약일은 2025-01-01이다.",
+      "evidence_excerpt": "계약일은 2025-01-01이다."
+    },
+    {
+      "claim": "계약일은 2025-02-01이다.",
+      "evidence_excerpt": "계약일은 2025-02-01이다."
+    }
+  ]
+}

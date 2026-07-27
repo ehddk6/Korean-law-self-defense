@@ -1,0 +1,15 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "개인정보 식별자가 모델 분석 전 토큰으로 치환된 입력이다."
+  ],
+  "outcome": null,
+  "required_action": "pii-redacted-before-analysis",
+  "rule_answer": null,
+  "scenario_id": "case-159",
+  "supported_facts": []
+}

@@ -1,0 +1,15 @@
+{
+  "as_of_date": "2023-02-02",
+  "court_level": "대법원",
+  "domain": "labor-industrial-accident-social-security",
+  "format": "legal-workbench-masked-decision-input-v1",
+  "output_contract": {
+    "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
+    "decision_status": "ready|conditional|abstain",
+    "issues": "핵심 법률쟁점 문구 배열",
+    "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown"
+  },
+  "record": "상고이유를 판단한다.\n1. 사안의 개요\n가. 피고보조참가인(이하 ‘참가인’이라 한다)은 2010. 6. 18. 설립되어 상시 7명의 근로자를 사용하여 전세버스 운송사업을 영위하는 회사이다. 원고는 2020. 1. 9. 참가인에 버스 운전원으로 입사하여 주식회사 대림산업 등의 통근버스 운행을 담당하였다.\n나. 원고는 2020. 2. 11. 자로 해고되었다고 주장하며 2020. 5. 1. 부당해고 구제신청을 하였다. 전남지방노동위원회는 해고가 존재하지 않는다는 이유로 원고의 구제신청을 기각하였고, 중앙노동위원회도 같은 취지로 원고의 재심신청을 기각하는 재심판정을 하였다.\n다. 원고는 2020. 12. 1.",
+  "scenario_id": "case-066",
+  "task": "결론이 제거된 기록으로 쟁점·불리한 논리·예상 결론과 판단 보류 여부를 분석하라."
+}

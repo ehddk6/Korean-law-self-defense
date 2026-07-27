@@ -1,0 +1,36 @@
+{
+  "adverse_points": [
+    "개인 피고의 구체적 주소지가 제공되지 않았다.",
+    "대한민국에 주소가 없거나 주소를 알 수 없는 경우 등 단서 적용 여부에 관한 구체 사실이 제한적이다.",
+    "특별재판적이나 특별규정 적용 가능성이 배제되었다는 사실은 제공되지 않았다."
+  ],
+  "citations": [
+    "제3조(사람의 보통재판적) 사람의 보통재판적은 그의 주소에 따라 정한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제3조.",
+    "필수 사실: 피고가 사람인지, 주소가 알려져 있는지, 주소의 구체적 소재지.",
+    "예외: 대한민국에 주소가 없거나 주소를 알 수 없는 경우에는 거소, 거소가 일정하지 않거나 알 수 없으면 마지막 주소에 따른다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "individual-address-forum",
+  "scenario_id": "case-130",
+  "supported_facts": [
+    {
+      "claim": "피고 유형은 개인이다.",
+      "evidence_excerpt": "\"defendant_type\": \"individual\""
+    },
+    {
+      "claim": "주소가 알려져 있다.",
+      "evidence_excerpt": "\"address_known\": true"
+    },
+    {
+      "claim": "사람의 보통재판적은 주소에 따라 정한다.",
+      "evidence_excerpt": "제3조(사람의 보통재판적) 사람의 보통재판적은 그의 주소에 따라 정한다."
+    }
+  ]
+}

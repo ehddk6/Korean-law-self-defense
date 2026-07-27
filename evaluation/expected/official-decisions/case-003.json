@@ -1,0 +1,15 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "[1] 어떠한 행정처분이 항고소송에서 취소된 경우, 그 기판력으로 곧바로 국가배상책임이 인정되는지 여부(소극) 및 이 경우 국가배상책임이 인정되기 위한 요건과 판단 기준"
+  ],
+  "expected_issues": [
+    "어떠한 행정처분이 항고소송에서 취소된 경우, 그 기판력으로 곧바로 국가배상책임이 인정되는지 여부(소극) 및 이 경우 국가배상책임이 인정되기 위한 요건과 판단 기준",
+    "법령에 따라 국가가 시행과 관리를 담당하는 시험에서 시험문항의 출제나 정답결정에 대한 오류 등의 위법을 이유로 시험출제에 관여한 공무원이나 시험위원의 고의 또는 과실에 따른 국가배상책임을 인정하기 위한 요건 및 판단 기준"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2025다212519",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-003",
+  "source_sha256": "7e70cb3ad7595a5091a3a2e22424f5af1efe9c28854a2b7267919132068a39a5"
+}

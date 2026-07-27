@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-061": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "51c1d069cda5a8c69c8f4a69ddbb995a98566fc4deb4cfe232bc3dc5143b158e",
+      "fixture_sha256": "7dc1c5d9c28708ed7c9f93a0b39f950b3987612c1756bae7f7fcb9de27286cd1",
+      "notes": "무결성 증명과 source 연결이 일치한다. 주문은 참가인 2 부분 파기환송·나머지 상고기각으로 mixed이며, 기대권 쟁점과 adverse가 원문에 지지된다. fixture에는 사건번호·source ID·주문·직접 결론과 개인정보가 없다.",
+      "source_sha256": "c017dbe53106f0146f41443aa0f260354a4e91e04aaba4299c801b7d852fdad3"
+    },
+    "case-062": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2f454d7bd6cb1201b2144049881968dc782b82a800d9a00238083058024bcf6d",
+      "fixture_sha256": "46c8a7d6e4a59864a9101364bddbf07b413beaf9113501d9af8197cde611e22f",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed이며, 정규직 전환 기대권·채용거절 사유 쟁점과 adverse가 원문에 지지된다. fixture는 결론이 가려졌고 개인정보가 없다.",
+      "source_sha256": "26de6b3cdcbac73bb262799f6eee0380de06506b3ab273ae8599570b5d8f6ae1"
+    },
+    "case-063": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d25374861145ea828a0661865aba3ac755b652f9721d0d882195e05a4c53ce48",
+      "fixture_sha256": "9182d50f1ec6787f6cae34571544fcd2bcdc56a60ff318dd475c9662672a2dd3",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심 파기환송으로 reversed-remanded이며, 구제명령 신뢰와 징계사유 쟁점·adverse가 원문에 지지된다. fixture의 주소 토큰은 비식별 값이고 목표 결론은 없다.",
+      "source_sha256": "6c30aeb0129702c7359b45cf30bf0c2fcec0a5cbd8c7a24609536c24f37f2574"
+    },
+    "case-064": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f8dcb6a215cf33322b6aa4af05bf183379b5ababe07b0baa13b50482b3c35edf",
+      "fixture_sha256": "637ff8120d8b901ce70b21f573bc8c20e552e5e26149c770d872e3496fccd25f",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed이며, 정년 후 재고용 기대권·임금 청구 쟁점과 adverse가 원문에 지지된다. fixture의 생년월일 토큰은 비식별 값이고 주문·직접 결론은 없다.",
+      "source_sha256": "4a1961b0bca008af4c703b51a1adecf0acfabed6c38c0b336de44b83fc0c59a9"
+    },
+    "case-065": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "b6f7ec939008c7c729d990e795ee16b4dc1010ed3ead8d159e418a4cec2efc30",
+      "fixture_sha256": "835fa347298fb245dc1e0a8e68173314a654c2c5a171b3f4999d08367072804d",
+      "notes": "무결성 증명과 source 연결이 일치한다. 주문은 부당해고 부분 파기환송·나머지 상고기각으로 mixed이며, 성과급 재분배와 감사 방해 쟁점·adverse가 원문에 지지된다. fixture에는 목표 주문·대법원 직접 결론과 개인정보가 없다.",
+      "source_sha256": "e4f88f46b3cc7077497b908c69b8acc10c0b8a8341497c2328564b864969507e"
+    }
+  }
+}

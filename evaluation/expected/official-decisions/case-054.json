@@ -1,0 +1,14 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "예외적으로 유책배우자의 이혼청구를 허용할 수 있는 경우 및 그 판단 기준 / 이때 상대방 배우자가 혼인계속의사가 있는지 판단하는 기준"
+  ],
+  "expected_issues": [
+    "예외적으로 유책배우자의 이혼청구를 허용할 수 있는 경우 및 그 판단 기준 / 이때 상대방 배우자가 혼인계속의사가 있는지 판단하는 기준"
+  ],
+  "format": "legal-workbench-masked-decision-expected-v1",
+  "official_case_number": "2021므11112",
+  "outcome": "reversed-remanded",
+  "scenario_id": "case-054",
+  "source_sha256": "56e55ed2cb68dcb05c07311736193b376de304de1184484c1d7ebb2598d5d74e"
+}

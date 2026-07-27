@@ -1,0 +1,13 @@
+{
+  "decision_status": "abstain",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "해당 개정법률 부칙의 시행일·적용례·경과조치 원문 확인"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-137",
+  "source_sha256": "abf1b620104aa802195f0e777bebdb5e904f26a3eb4cb2b5b3bab4bb546b11c5"
+}

@@ -1,0 +1,13 @@
+{
+  "decision_status": "ready",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "등본·부본 교부송달 원칙"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "personal-delivery-required",
+  "scenario_id": "case-123",
+  "source_sha256": "147035de0657e04e1133833f64856cd755d94f6ecccec0f893611862c126ceb8"
+}

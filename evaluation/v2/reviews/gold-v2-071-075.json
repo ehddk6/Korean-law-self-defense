@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-a-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-071": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "10be895a50c25838bcce94a47b6c20414d2a63aa05e3b900c6cd3dd09732dc83",
+      "fixture_sha256": "cc193e3aed0be3703becb7213593eba0aaf2e7869be77e56340108b8d92d3e51",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 일치하며, fixture는 사건 식별자와 목표 결론 없이 충분한 사실관계를 제공한다. 개인정보 패턴이 없고 issues/adverse는 원문의 사실과 쟁점으로 지지된다.",
+      "source_sha256": "96296a8711d66a14203eed06e34f164408dd9923575772b03fc4136cb56bf571"
+    },
+    "case-072": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bfc8f0a89a4b13cac99551e8ad55a7612505adbef734d157b34f27a8caf36ee8",
+      "fixture_sha256": "54add977b03edaf735a0fde3d993fc47ad94d45ef01b9424a9da0fcc6b640893",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 일치한다. fixture에는 사건번호·source ID·주문·대법원 결론이 없고 분석 가능한 사실관계가 있으며, 개인정보 누출이 없다. 기대 쟁점과 반대 논거도 원문에서 확인된다.",
+      "source_sha256": "efa04d321281f9b7b272c3cf7e56539721e68fe067628d1f6f5eab2d0797614b"
+    },
+    "case-073": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "e95a25a45f9ba9e20ebc530e39fcaa9b437437411ce4b8ea58d77e88dd7acf8c",
+      "fixture_sha256": "2ea215c8fbababd357ed3196181fbcdce83d6a8d70dc1a552ee96c8593d3ac01",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문의 상고 전부 기각은 affirmed와 일치한다. fixture는 목표 결론과 식별자를 제거하면서 충분한 사실·주장을 남겼고 개인정보 패턴이 없다. issues/adverse는 원문의 절차 및 비과세 쟁점으로 지지된다.",
+      "source_sha256": "818373c022cd8d3de458ebbbe0c3431dec11d662d8baa76b4701531ed8cd19cf"
+    },
+    "case-074": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "de1c66f78f469e5782f9593d608337523b936b5799ca0f883d046f44ec5d9b57",
+      "fixture_sha256": "f30cd67bb9a8a34d86d245c77d12906df6fb302a64a16887731c773833673c60",
+      "notes": "무결성 연결과 파기환송 주문/reversed-remanded는 일치하고 fixture의 가림·비식별성도 적정하다. 다만 adverse의 ‘개인 의류를 구별하여 전량 위탁을 인정할 여지’는 대법원이 개인 의류 전부의 자체 세탁은 전량 위탁이 아니라고 명시한 원문 판단과 배치되고, 인용 근거도 그 결론을 지지하지 않아 gold_supported=false다.",
+      "source_sha256": "13de94ada637e728669c560bba8e52711ec728b39856360ffc38b48dec806fe0"
+    },
+    "case-075": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bdc27e2af945850a73dd17fada60a6a6e9c8c74a3e6c068438810ff03644ffdc",
+      "fixture_sha256": "eff2dd7f28bc6e8c8c6991cac5c0032506bbfbdfe59569ffb73d8a7ba6a78dca",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 일치한다. fixture는 사건번호·source ID·주문·직접 결론 없이 충분한 과세 사실과 계산 구조를 제공하고 개인정보 누출이 없다. 기대 쟁점과 반대 논거는 원문에서 지지된다.",
+      "source_sha256": "9a1784dea8493ec8a3f9cc2979b653aad17b8833326795cb13b66c4c6aa2175a"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "decision_status": "conditional",
+  "expected_adverse_points": [
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락이 결론을 바꿀 수 있음"
+  ],
+  "expected_issues": [
+    "피고 보통재판적 법원의 기본 관할"
+  ],
+  "format": "legal-workbench-temporal-expected-v1",
+  "rule_answer": "defendant-general-forum",
+  "scenario_id": "case-125",
+  "source_sha256": "a52c09a538db36e22053afce19f5448ed380378090b9c3448963fcf5a8dfd36f"
+}

@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+node_modules/
+dist/
+build/
+*.egg-info/
+
+# 사건자료와 비식별 작업본은 이 저장소에 두지 않는다.
+LegalWorksets/
+LegalMappings/
+cases/
+worksets/
+exports/
+*.db
+*.db-shm
+*.db-wal
+
+# 인증정보와 로컬 설정
+.env
+*.secret
+*.key
+*.pem
+
+# 문서 검증 중간 산출물
+tmp/
+output/
+evaluation/results/
