@@ -4,73 +4,73 @@
   "reviewer_model": "gpt-5.6-sol",
   "reviews": {
     "case-016": {
-      "approved": false,
+      "approved": true,
       "checks": {
         "fixture_blind": true,
         "fixture_pii_free": true,
-        "gold_supported": false,
+        "gold_supported": true,
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "e76e520319afb81c5b495a4c310f57af38696365262dca606f9856cd088197fd",
+      "expected_sha256": "bdc6e513190e8bef5e381f6f899dafb622708b2453d0a28d377049a8c9319ac3",
       "fixture_sha256": "b1b182714852023089ef27cec69d9babd60245dd4732e7fb40d61bccd9a12fc3",
-      "notes": "해시 연결과 파기환송 표지는 일치하고 fixture도 주문·사건 식별자를 제거했다. 다만 expected.json이 유효한 JSON이 아니어서 issues/adverse 증거를 확정할 수 없다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 피고 패소 부분 파기환송이고, 쟁점·불리한 논리는 원심 판단과 사실관계로 지지된다. fixture에는 목표 주문·사건번호·source ID·대법원 결론 및 개인정보가 없다.",
       "source_sha256": "8f80a462058dc6de9e14280e2fbbbfb16e1fc5ea75145f24a1ccc4df8f342c1d"
     },
     "case-017": {
-      "approved": false,
-      "checks": {
-        "fixture_blind": false,
-        "fixture_pii_free": true,
-        "gold_supported": false,
-        "label_correct": false,
-        "source_bound": true
-      },
-      "expected_sha256": "317c51d9ead809565e27818a73cbc10d7b5204ad338ee8dbd0c5b3bbbc0ee634",
-      "fixture_sha256": "4369f7268f3f8925ab3930efa40d71eb67061a3b492702494bffbcb04d469312",
-      "notes": "무결성 증명과 source 해시 연결은 맞고 명백한 개인정보 패턴은 없다. 그러나 source·fixture·expected가 모두 유효한 JSON이 아니어서 가림 입력과 표지·gold를 신뢰성 있게 대조할 수 없다.",
-      "source_sha256": "0b4f11196cc5e97d6232c8c4a8801e80523b3fbdd0208f4499890470ba821a65"
-    },
-    "case-018": {
-      "approved": false,
+      "approved": true,
       "checks": {
         "fixture_blind": true,
         "fixture_pii_free": true,
-        "gold_supported": false,
-        "label_correct": false,
-        "source_bound": true
-      },
-      "expected_sha256": "454018d7dacdd942536a778e80eeed7c0dd9a006485c473d5467c59633533881",
-      "fixture_sha256": "a06616818887d465946e6489d776135fc7284a5b5b09e1140a21545df8aaabd6",
-      "notes": "fixture는 충분한 사실·법리 맥락을 남기고 사건번호·source ID·목표 주문을 제거했으며 개인정보 패턴도 없다. source와 expected가 유효한 JSON이 아니어서 outcome 및 gold 근거는 확정할 수 없다.",
-      "source_sha256": "b2ec30ebab03f06af824637d2b08c369350c33e421fdba13205f7101b6b4c30d"
-    },
-    "case-019": {
-      "approved": false,
-      "checks": {
-        "fixture_blind": true,
-        "fixture_pii_free": true,
-        "gold_supported": false,
+        "gold_supported": true,
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "e599a44de5265a4569ea5e4a1df6274b558106305c25c9cbc6eeb33aa896c216",
-      "fixture_sha256": "badd1774e3db82ccd0f6257168dedd08be5610c2a49e9f77da813aab042a359d",
-      "notes": "원문 주문의 상고기각과 expected affirmed가 일치하고 fixture의 가림·개인정보 검사도 통과한다. 다만 source.json이 끝부분에서 잘려 유효한 JSON이 아니므로 전체 원문에 대한 issues/adverse 지지를 확정하지 않았다.",
-      "source_sha256": "a42a3a8bfc0b3460fe555f9cc7db7385f18b7a2b7bd56c70d2293d8d4bcc398b"
+      "expected_sha256": "71e3a25d3ce8986cc95f2f15db4ad56af58f832f7087c41522f2af3c41030ba3",
+      "fixture_sha256": "4369f7268f3f8925ab3930efa40d71eb67061a3b492702494bffbcb04d469312",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 일부 파기환송과 나머지 상고 기각이 병존하여 mixed가 맞다. 334자의 fixture는 계약 당사자·복수 계약·불완전 약관 문언을 제공하면서 목표 결론과 식별정보를 제거했고, expected 쟁점·불리한 논리도 원문으로 지지된다.",
+      "source_sha256": "0b4f11196cc5e97d6232c8c4a8801e80523b3fbdd0208f4499890470ba821a65"
     },
-    "case-020": {
-      "approved": false,
+    "case-018": {
+      "approved": true,
       "checks": {
         "fixture_blind": true,
         "fixture_pii_free": true,
-        "gold_supported": false,
-        "label_correct": false,
+        "gold_supported": true,
+        "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "97a8794dd5125b2ec5725c5cd00cfd9f1e62918c32a008c246113a2f3018d051",
+      "expected_sha256": "adb54e8c3fe2af693be0769c5248c12cb7bca1a414b4abe60931a16723acf9c0",
+      "fixture_sha256": "a06616818887d465946e6489d776135fc7284a5b5b09e1140a21545df8aaabd6",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심 전부 파기환송이다. 직업변경 통지의 대상·방식과 보험금 감액 쟁점 및 반대 논리는 원문에 있고, fixture에는 목표 결론·사건 식별자·개인정보가 없다.",
+      "source_sha256": "b2ec30ebab03f06af824637d2b08c369350c33e421fdba13205f7101b6b4c30d"
+    },
+    "case-019": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bd0e7c79c61795d34badebc1272e25eedad88c35851c61aa7f4a14118e07ee4f",
+      "fixture_sha256": "badd1774e3db82ccd0f6257168dedd08be5610c2a49e9f77da813aab042a359d",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed가 맞다. 서면동의 외형, 지급요건과 장해진단 관련 쟁점·불리한 논리는 원문으로 지지되며, fixture의 날짜는 행위·진료일일 뿐 개인정보 누출이 아니다.",
+      "source_sha256": "a42a3a8bfc0b3460fe555f9cc7db7385f18b7a2b7bd56c70d2293d8d4bcc398b"
+    },
+    "case-020": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "4fe38ed5bc5996ca5d75047a389602c64d98a692f6159dbc8859f375d98d5f8b",
       "fixture_sha256": "570dc6ffc08bc600f79c737900728352e465b33a39a2728f47677e8e7dbdfba7",
-      "notes": "fixture는 사건 식별자와 목표 주문을 제거한 채 충분한 분석 맥락을 제공하고 개인정보 패턴도 없다. source와 expected가 유효한 JSON이 아니어서 affirmed 표지와 issues/adverse를 확정할 수 없다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 전부 기각으로 affirmed가 맞다. 하자발생·보수요청 시점과 특별약관 효력 관련 쟁점·반대 논리는 원문으로 지지되고, fixture에는 목표 대법원 결론·사건 식별자·개인정보가 없다.",
       "source_sha256": "cf8ab33f07ebfe94368cbd9f8b9545a5e550cf3aaf6915ba7d619112e51ee950"
     }
   }

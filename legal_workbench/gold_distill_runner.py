@@ -22,11 +22,11 @@ def run_gold_distillation(
     *,
     start: int,
     end: int,
-    model: str = "gpt-5.4",
+    model: str = "gpt-5.6-sol",
     output_path: Path,
 ) -> dict[str, Any]:
-    if model == "gpt-5.5":
-        raise ValueError("gold 증류 모델은 평가 실행 모델 gpt-5.5와 달라야 합니다.")
+    if model == "gpt-5.6-terra":
+        raise ValueError("gold 증류 모델은 평가 실행 모델 gpt-5.6-terra와 달라야 합니다.")
     manifest_path = Path(manifest_path).resolve()
     manifest = load_manifest(manifest_path)
     root = manifest_path.parent
@@ -84,7 +84,9 @@ def run_gold_distillation(
             "쟁점으로 잘게 쪼개지 않는다. 각 문구에는 distill-index.json의 해당 사건 evidence_candidates에서 직접 지지하는 "
             "evidence_id를 정확히 하나 고른다. excerpt를 직접 작성하거나 source.json의 문구를 쓰지 않는다. 주문, 가려진 결론, "
             "사건번호를 추론해 gold에 넣지 않는다. 서로 같은 쟁점을 "
-            "잘게 쪼개거나 일반론을 반복하지 않는다. 설명 없이 스키마 JSON만 반환하라."
+            "잘게 쪼개거나 일반론을 반복하지 않는다. 반대 논리는 fixture에 실제로 남은 상대방 주장 또는 미확인 사실을 직접 "
+            "반영해야 하며, 기록에서 이미 배척한 법리나 사실을 반대 결론으로 되바꾸어서는 안 된다. fixture 또는 source에 "
+            "명시된 사실을 ‘확인되지 않는다’고 쓰거나, 원문이 부정한 법리를 반대 논리로 쓰지 않는다. 설명 없이 스키마 JSON만 반환하라."
         )
         output_file = blind_root / "last-answer.json"
         executable = shutil.which("codex.cmd" if os.name == "nt" else "codex")
@@ -154,21 +156,36 @@ def apply_gold_distillations(manifest_path: Path, report_paths: list[Path]) -> d
     }
     if set(combined) != required:
         raise ValueError(f"gold 증류 보고서는 공식 판례 120건을 정확히 포함해야 합니다: missing={sorted(required-set(combined))[:5]}")
+    changed: list[str] = []
     for scenario_id, value in combined.items():
         item = by_id[scenario_id]
         _validate_case_distillation(value, _load_scenario_record(root, item["fixture_path"], scenario_id))
         expected_path = (root / item["expected_path"]).resolve()
         expected = json.loads(expected_path.read_text(encoding="utf-8"))
-        expected["expected_issues"] = [entry["text"] for entry in value["issues"]]
-        expected["expected_adverse_points"] = [entry["text"] for entry in value["adverse_points"]]
-        expected["gold_evidence"] = value
-        atomic_json_write(expected_path, expected)
-        item["expected_sha256"] = sha256_file(expected_path)
-        item["gold_review_status"] = "pending"
-        item.pop("gold_review_path", None)
-        item.pop("gold_review_sha256", None)
+        issues = [entry["text"] for entry in value["issues"]]
+        adverse_points = [entry["text"] for entry in value["adverse_points"]]
+        content_changed = (
+            expected.get("expected_issues") != issues
+            or expected.get("expected_adverse_points") != adverse_points
+            or expected.get("gold_evidence") != value
+        )
+        if content_changed:
+            expected["expected_issues"] = issues
+            expected["expected_adverse_points"] = adverse_points
+            expected["gold_evidence"] = value
+            atomic_json_write(expected_path, expected)
+            item["expected_sha256"] = sha256_file(expected_path)
+            item["gold_review_status"] = "pending"
+            item.pop("gold_review_path", None)
+            item.pop("gold_review_sha256", None)
+            changed.append(scenario_id)
+        elif item.get("expected_sha256") != sha256_file(expected_path):
+            item["expected_sha256"] = sha256_file(expected_path)
+            item["gold_review_status"] = "pending"
+            item.pop("gold_review_path", None)
+            item.pop("gold_review_sha256", None)
     atomic_json_write(manifest_path, manifest)
-    return {"applied": len(combined)}
+    return {"applied": len(combined), "changed": len(changed)}
 
 
 def _validate_distillation(

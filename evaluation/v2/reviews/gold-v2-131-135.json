@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-131": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "91c75551ed2cdbd6e954c215671a17a67acb2253c3ad942acad083eb47d41d64",
+      "fixture_sha256": "1346274d41859069f446e5bb406dc06451e498946b7c3f8f0864fc379853f070",
+      "notes": "해시 연결이 확인됐다. 제14조제2항의 특별규정·적용곤란 예외가 conditional 및 fact-dependent 답과 쟁점을 지지하며, fixture에는 직접 결론이나 개인정보가 없다.",
+      "source_sha256": "d1719d225a9fea59e921920dee648d3093894bd90f19c41e64a1355bf1211c49"
+    },
+    "case-132": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2113e0ec4689cbf569893d44456383a5ab84de17adbbc1625e729388dcc3f0de",
+      "fixture_sha256": "dee6e7a6661712d0610c54bc15ec137bc1ce2033b340d8e23e770179425bbab0",
+      "notes": "해시 연결이 확인됐다. 특정 개정법률과 부칙 원문이 특정되지 않아 verify-specific-addendum 및 abstain이 타당하며, 의도된 결손은 blind 실패가 아니고 개인정보도 없다.",
+      "source_sha256": "f48a1987cebda7ebbd3a653cfcf329e197910dd347833fb6a0b75869757880e9"
+    },
+    "case-133": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2a7ea90ab41e02393d604cb2a4bfdcda03c2d4a88c21fcfa6781c1637c396287",
+      "fixture_sha256": "57d0ff9e26c0fc89c2a1e509aa4642c8977073d6ffe56a44dcb4a5edc5bafcbf",
+      "notes": "해시 연결이 확인됐다. 제186조는 동거인의 사리분별 능력을 요구하고 해당 사실이 미확인되어 abstain 답과 쟁점이 지지된다. fixture는 결론 가림 및 비식별 요건을 충족한다.",
+      "source_sha256": "2f980c918792f0fa7ee790d61b98ea734fd6bf09dbcadffacaae4e7069b9be68"
+    },
+    "case-134": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ebd6129cfd345dd48edea93c82b2dc797bed7928987f15b13fb33f1b1e2ba29c",
+      "fixture_sha256": "2fbd6966024c0a7c45968a3ec87c030a63bfb5fe3feb87b5d127c0d60c92e83f",
+      "notes": "해시 연결이 확인됐다. 제164조·제157조·제160조·제166조에 따라 숙박료 채권의 1년 시효는 2027-06-10 만료로 계산된다. fixture의 마스킹 토큰은 개인정보 누출이 아니다.",
+      "source_sha256": "e753a85453019bd6170a9fcff3a2306d1591d246cacfdad06a046182413b04c3"
+    },
+    "case-135": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2e5e9312cae8148b4e73f604def4696e8cda36c24a91a5d15fa7e67f78a3c8c8",
+      "fixture_sha256": "7328c4c92eb8f4fc9aa4104433638b2e9fef9fb2f54ec9c776aa85c0aa037033",
+      "notes": "해시 연결이 확인됐다. 제8조는 재산권 소를 의무이행지 법원에 제기할 수 있다고 명시해 ready 답과 특별재판적 쟁점을 지지한다. fixture에는 직접 결론이나 개인정보가 없다.",
+      "source_sha256": "2da19ce297ed329e9c039a0096f53ecc28ca52e95ed5c3ca04fb624f8227ea66"
+    }
+  }
+}

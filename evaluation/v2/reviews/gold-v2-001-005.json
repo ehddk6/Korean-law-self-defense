@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "7a7a0bc1b8a3810ba2aaa974a6b0363077af7253e5f9ecfaf0e88a3ae0a4ca1d",
+      "expected_sha256": "610f9be36e7d66f1d154a46bf4129d6cb624d9199d880ecb422938c8b0ebdfdf",
       "fixture_sha256": "0f8e168c7ed375ddc3e9d449de73879505f2f911223ab34b2a67dce502742c09",
-      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고 모두 기각으로 affirmed와 맞고, 쟁점·불리한 논점은 원문 근거가 있다. fixture에는 현재 사건번호·source ID·주문·대법원 직접 결론 및 개인정보가 없다.",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 상고 전부 기각으로 affirmed가 맞고, 쟁점·불리한 논리는 원문이 지지한다. fixture에는 목표 사건번호·source ID·주문·직접 결론 및 개인정보가 없고 충분한 분석 맥락이 남아 있다.",
       "source_sha256": "3b0d5dc86351937138dbcc3268cf31eaacae2391bdfe37ab5f672f8f76ddd316"
     },
     "case-002": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "f6e659a686dc6c71075d79f55a37ef971d53addba6ea119734933584c98be9dc",
-      "fixture_sha256": "f9893e9726581f85243b0c528a3e9d97e50f0c7283332c40e9a6e060153357a0",
-      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 일부 파기환송과 피고 상고 기각이므로 mixed가 맞고, 쟁점·불리한 논점은 원문으로 지지된다. fixture에는 식별자·주문·최종 직접 결론 및 개인정보가 없다.",
+      "expected_sha256": "d2e2d25e59d3a0a845fa32a38a201b824a067c1d3f3e2a5707d9b96b69ed7ee2",
+      "fixture_sha256": "b65d284b4b59bb56ad79db350dd374a9a0eb60c3141d2a54be1e2c746ac6b4ab",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 일부 파기환송·피고 상고 기각으로 mixed가 맞고, 모든 쟁점·불리한 논리는 원문이 지지한다. fixture는 목표 식별자·주문·직접 결론과 개인정보를 제거하면서 충분한 사실·법리 맥락을 보존했다.",
       "source_sha256": "d2ce3fef7a23eb51dfa2c4864207ec4ec8dfbd6f7e321783cceb2ae93d6fc612"
     },
     "case-003": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "b5331ce52538c9bf45f419bf8232307c12f79f6ebca94bb71649e6ab6247b000",
+      "expected_sha256": "756c22252f545a5016357dc88a3d314d840299b30f26b7767f83a7dbe4de8c06",
       "fixture_sha256": "bcb7f5754d3a8f67a4516df0fff4ffa803e22365d383b7eb5fad42a64095d7d0",
-      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 reversed-remanded와 맞고, 쟁점·불리한 논점은 원문 근거가 있다. fixture는 사실관계와 원심 판단 전 단계만 남기고 식별자·주문·직접 결론 및 개인정보를 제거했다.",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 원심 전부 파기환송으로 reversed-remanded가 맞고, 쟁점·불리한 논리는 원문에 근거한다. fixture에는 목표 사건번호·source ID·주문·직접 결론이나 개인정보가 없으며 분석 가능한 사실관계가 충분하다.",
       "source_sha256": "7e70cb3ad7595a5091a3a2e22424f5af1efe9c28854a2b7267919132068a39a5"
     },
     "case-004": {
@@ -54,9 +54,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "9f9c5415f3ad46d41e372a83b6178658083c42040ba9f93685ca8705a5943cde",
+      "expected_sha256": "94493e00c3826fa350642df7f01d1369c6663ac6ac352555f79b1a72ed886f4f",
       "fixture_sha256": "98ab29d7c40b151a6e0a9d330464a5ac1826ba135e704422978713bf795f779f",
-      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원고 청구 전부 기각으로 dismissed와 맞고, 쟁점·불리한 논점은 원문으로 지지된다. fixture에는 현재 사건번호·source ID·주문·법원의 직접 결론 및 개인정보가 없고 충분한 사실·주장·법리가 있다.",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 원고 청구 전부 기각으로 dismissed가 맞고, 쟁점과 불리한 논리는 공식 원문이 직접 지지한다. fixture는 목표 식별자·주문·직접 결론 및 개인정보를 포함하지 않고 충분한 사실·주장·법리를 제공한다.",
       "source_sha256": "ba4fe828fcaaf75efee9894b7bff41332afa6e33ddce7eb6d682f41b676f7bfa"
     },
     "case-005": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "25806e330d50aec0bfa28808dbe4aa13db506995790bb1490354f7c8d54eae73",
+      "expected_sha256": "d607ffd2867a36d664e17667bd0c0e87165880da644692e1d540fea76d51eb0b",
       "fixture_sha256": "2ead326c19db7932d2f4faad2065e85b2ff7e2d71e4f61ddbe841defe4ebadba",
-      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 일부 취소·지급명령과 나머지 항소 기각이므로 mixed가 맞고, 쟁점·불리한 논점은 원문 근거가 있다. fixture에는 식별자·주문·법원 직접 결론 및 개인정보가 없다.",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 일부 패소 부분 취소·지급명령과 나머지 항소 기각이 병존해 mixed가 맞다. 쟁점·불리한 논리는 원문이 지지하며, fixture에는 목표 사건번호·source ID·주문·직접 결론이나 개인정보가 없고 충분한 분석 맥락이 있다.",
       "source_sha256": "2b84860eb17c522d74cd702e0d04d5fab9fe4d3152c6ce09c3df9fcbe5c60366"
     }
   }

@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "d48b43c601c3066c9290940d99bf7661600c66066fd87f34a96d1da227b360d3",
+      "expected_sha256": "d2c6774ec8109cbfdbdcdddbe7f7d8dc820c4fbc8e0202031a23c755fa899089",
       "fixture_sha256": "c307ec3f6ace1f84e6d8e7368085dd456b45c88637df6594bfeabdc27bc9610b",
-      "notes": "해시 연결이 유효하고 파기환송 주문, 쟁점·불리 논거가 원문과 일치한다. fixture는 사건 식별자와 목표 결론을 제거했으며 분석 맥락은 충분하고 개인정보 패턴이 없다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송이며 expected outcome과 일치한다. fixture에는 사건번호·source ID·주문·대법원 결론이 없고 충분한 사실 및 원심 판단이 남아 있으며 개인정보 패턴도 없다. issues/adverse의 인용 근거가 모두 source 원문에 존재한다.",
       "source_sha256": "62877d6e9de29a68573dd78dfb5cdb104f0dca875124642b14e5cfbff4feaca0"
     },
     "case-012": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "662116daeb263267a645d0eb04b67e8602ab619b65590c66c3a739aa42589ccc",
+      "expected_sha256": "aab4e877412f3f2100b04f7acb81253abf6bb73340075960491ce3f0003098c1",
       "fixture_sha256": "385b1960335cad25b29f4fb8a243e7de8579896751929bd32d8e555bc153531d",
-      "notes": "해시 연결이 유효하고 파기환송 주문 및 설명의무 관련 쟁점·논거가 원문으로 지지된다. fixture의 식별 정보는 비식별 토큰으로 치환됐고 목표 결론과 개인정보 누출이 없다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송으로 expected와 맞는다. fixture는 현재 사건 식별자와 대법원 주문·직접 결론을 제거하고 충분한 약관·사실·원심 논리를 보존했다. 마스킹 토큰 외 개인정보 누출이 없고 issues/adverse도 source가 직접 지지한다.",
       "source_sha256": "188b10b259e8aa289b98058542b51310d229c87046a6d01a495ffb76410bdb94"
     },
     "case-013": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "ed540ff2c861bdbfcad9f06b8101c694ba4f55736dd62bd16c6cd85d53ddf3ae",
+      "expected_sha256": "4adeb296e8b6a9938b8fd65f924165c32bd1e73ff9325a6c12982a5c16596ae8",
       "fixture_sha256": "78e13ca0cb358b4fae5d20091cb204ea17315ac27d5473b6b156d0029ca74790",
-      "notes": "해시 연결이 유효하고 상고기각 주문과 보험수익자·상속지분·변제공탁 쟁점이 원문과 일치한다. fixture는 목표 결론과 사건 식별자를 가렸고 생년월일은 비식별 토큰이다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 전부 기각으로 affirmed와 부합한다. fixture에는 현재 사건번호·source ID·주문·대법원 결론이 없고 분석 가능한 사실과 원심 판단이 남아 있다. 생년월일은 허용된 마스킹 토큰이며, issues/adverse는 source 원문에 근거한다.",
       "source_sha256": "653ef547545e03ec2959c60cdc64f51d9d7bd425067ae0196b1466f96e181a33"
     },
     "case-014": {
@@ -54,9 +54,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "188024559f1d20042fd0818e49a8a0ece80e273e44c42f4a84aa6adf37991806",
+      "expected_sha256": "836e498e2ea6167aaf18bdaf47fa304374c8234ac78305e25bfe47fb0ff7939d",
       "fixture_sha256": "74a45b629b645efc96e5361e554ed95a466ff4ecb7000c34f258457a8dd2aa4f",
-      "notes": "해시 연결이 유효하고 파기환송 주문 및 자살 면책·자유로운 의사결정능력 쟁점이 원문으로 지지된다. fixture는 목표 판단부를 제거하면서 충분한 사실·약관 맥락을 보존했고 개인정보가 없다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송으로 expected와 같다. fixture는 300자 이상의 사실·약관·원심 판단을 제공하면서 현재 사건 식별자와 대법원 주문·직접 결론을 제거했고 개인정보 패턴도 없다. issues/adverse의 각 근거가 source에 확인된다.",
       "source_sha256": "ae24e9a514f161748a3700efb6fe71be2d52588aa0b09820fa08d3a4befddc4c"
     },
     "case-015": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "3adcb8f15f54ce460fe1085863bee9feca229fbe2da64f61464935483b5e2927",
+      "expected_sha256": "727a4fd5c906ddbf256a9ad369ff6771dbc5e047431fdd0a8bf8b1620904df2e",
       "fixture_sha256": "22db7663542930a8a615660315ed81ee65ae7235aa1f2062046f6a10c504bf41",
-      "notes": "해시 연결이 유효하고 파기환송 주문 및 고지의무 위반과 보험사고 인과관계 쟁점·논거가 원문으로 지지된다. fixture는 목표 결론과 식별자를 제거했고 개인정보 패턴이 없다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송으로 expected와 부합한다. fixture에는 현재 사건 식별자·주문·대법원 직접 결론이 없고 고지의무 및 의료사실에 관한 충분한 맥락이 있으며 식별 가능한 개인정보 패턴도 없다. issues/adverse가 모두 source 원문으로 지지된다.",
       "source_sha256": "72f05e6fb637a7d3c6a19974df6950b71c9c808dd51aea7fa7e57eb2613afe05"
     }
   }

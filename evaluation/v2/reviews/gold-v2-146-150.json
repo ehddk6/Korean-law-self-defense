@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-146": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8d36405dfd9a779cb20a709490872cd254991fa896dd8bb759bc77302605cf7a",
+      "fixture_sha256": "aec772d541ecfda3e5ae48d4178fdbd717ec042ac7fff9ab737905c7a6ad18ce",
+      "notes": "무결성 증명과 source 연결이 일치한다. 행정기본법 제14조는 특별규정과 사실관계에 따라 적용법이 달라짐을 명시하므로 article-14-fact-dependent/abstain 및 쟁점·불리사항이 지지된다. fixture에는 직접 결론·source ID·실제 개인정보가 없다.",
+      "source_sha256": "537afa71a693c57895e0214accbb982e6b449bc3111ff67d4f37b82859f07317"
+    },
+    "case-147": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "cc56ecb7334931716f93455297c6f04d37459d382c498c1717b8ace9f323cf6a",
+      "fixture_sha256": "f6296769aca0bc41da2ace4b10fc4a45716f68930fa78493019fbfcbac2c7d34",
+      "notes": "무결성 증명과 source 연결이 일치한다. source에는 개정별 시행일·적용례·경과조치가 서로 다르게 규정되어 있어 특정 개정 부칙과 개정일이 없는 fixture에서는 verify-specific-addendum/abstain이 타당하다. 의도된 부칙 결손 외 결론 누출이나 개인정보가 없다.",
+      "source_sha256": "bf5fe80591f83ed2b62a29f51c5743f8b3bd721d06a9fc66adcd230389faf7ba"
+    },
+    "case-148": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "17e20e0f481673e05dca952621ff535b327c9dd20a01adc1c157e937b36e778f",
+      "fixture_sha256": "8074fc7a4455f715283f62fcf93dda939199cbb036d9072f7e843a5c2058711d",
+      "notes": "무결성 증명과 source 연결이 일치한다. 민사소송법 제194조는 공시송달의 법정 요건과 신청 사유의 소명을 요구하므로 단순 주장만으로 부족하다는 ready 답안과 쟁점·불리사항이 지지된다. fixture에는 직접 결론·source ID·개인정보가 없다.",
+      "source_sha256": "faf78d1970eacf37df57d828c3d7f423a9271fb57fbdf86f380b13f7f91cda18"
+    },
+    "case-149": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "06f62bbff47f4195669b59d52f2776ff6dabc6b5e910888b6ff3282b3dc00a68",
+      "fixture_sha256": "f3441ba27e11dd41467ecf9e2cf18e786ec7ef92a0028ecdb760f47d4ce525f9",
+      "notes": "무결성 증명과 source 연결이 일치한다. 민법 제766조는 손해·가해자를 안 날부터 3년과 불법행위일부터 10년을 구별하므로 인식일 없는 경우 knowledge-date-required/abstain 및 deadline null이 타당하다. 마스킹 사건번호는 누출이 아니며 다른 개인정보도 없다.",
+      "source_sha256": "16d4a70f15bb604927d575b06bdd0e009d1dbab7d2c61850fae410afb1d91882"
+    },
+    "case-150": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "bcb145745b9e14b871400fa00a74542ed21e8d05f0e39f7292d1afb1e1e1a6e6",
+      "fixture_sha256": "025949a099939e99cccf33efd592aa63c832a23c8bc623eb7724c3cd92595a84",
+      "notes": "무결성 증명과 source 연결이 일치한다. 민사소송법 제24조는 지식재산권 유형별 특별재판적·전속관할과 서울중앙지방법원 선택을 규정하므로 구체적 관할 사실이 불완전한 경우 conditional 답안과 쟁점·불리사항이 지지된다. 결론 누출이나 개인정보가 없다.",
+      "source_sha256": "8abc47fb9f25bd6dcf19a9e8af4d8d3bcee5adc54d7cda5718da92e5557f8b55"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-141": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "fb164c86aaabb0120967a07aa4181609c64adb2a400e3bc1d96f107ec8887546",
+      "fixture_sha256": "a3f3b49746d7a7f1aa171af4ffb634a68275766c4ff97d0e88e6b2889d8f4eb2",
+      "notes": "무결성 증명과 source 연결이 일치한다. 행정기본법 제14조 제3항은 제재가 가벼워진 경우에도 특별규정 유무를 요구하므로 conditional 및 article-14-fact-dependent가 타당하다. fixture는 source ID와 직접 결론이 없고 비식별 토큰만 포함한다.",
+      "source_sha256": "c72e6d0c1bc13eee8ed4e5cdc5b7e6ec66981318f48d318923d8e3f88c797fa9"
+    },
+    "case-142": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "748f2e8dd25e102b522edc51e76d70c3d06305a8a11e83271e5b6cdf88775f00",
+      "fixture_sha256": "f455b35bb81f0cfa6df4401ac5dd0340e9f710ef753a2a10427594ed690b1bf3",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 캐시에 다수의 서로 다른 부칙이 있으나 대상 개정일과 특정 부칙 원문이 제시되지 않아 abstain 및 verify-specific-addendum가 타당하다. 의도된 결손 외 결론 누출이나 개인정보가 없다.",
+      "source_sha256": "11d95ef0ad42c97b83fcbc544b25b891efea90c7fcffbf66ede84fdac0ce45d8"
+    },
+    "case-143": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8a4f4a5d47ec7a127d04d5ac4f87cad03dcba8a5da22f82ff78054c7b58882f3",
+      "fixture_sha256": "058c99cdd59ce4c575721aa91370ca29061a44b7728d5df565feaca35600bed2",
+      "notes": "무결성 증명과 source 연결이 일치한다. 민사소송법 제189조는 제187조에 따른 발송 시 발송한 때 송달된 것으로 보므로 ready 및 effective-upon-dispatch가 원문과 일치한다. fixture는 분석 맥락을 유지하면서 식별정보와 직접 결론을 누출하지 않는다.",
+      "source_sha256": "b26e026677e7f63b84135702a5bf4e296f5ebac0565c562271d788bbea3c2b14"
+    },
+    "case-144": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d59a875ed69d419806f47634d8eb553bad8a0c49b5afbd083356f3976d20e5fc",
+      "fixture_sha256": "4f4c5c564bfc2832bc027ad4bfe72d8c7726c45b9651a8e780fd60baae391b85",
+      "notes": "무결성 증명과 source 연결이 일치한다. 민법 제766조 제1항과 제157조·제160조에 따라 2026-04-10을 안 날로 한 3년 만료일은 2029-04-10이다. CASE_NUMBER와 ACCOUNT는 비식별 토큰이며 그 밖의 개인정보나 직접 결론 누출이 없다.",
+      "source_sha256": "4aa66b82f9346d101a8e393aa54e8a4e7f8036000778d0378df6fa602ed43d9e"
+    },
+    "case-145": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d1a0a6849c9ab6a42b6f691b2493904d3acc7356744f3a753bc40f6730017b66",
+      "fixture_sha256": "981073c17c3bc5634742eefb70a916182ffb12e0e4b28a664b53ce4e6bbdaf34",
+      "notes": "무결성 증명과 source 연결이 일치한다. 민사소송법 제20조는 부동산 관련 소를 소재지 법원에 제기할 수 있도록 하므로 ready 및 real-estate-location-special-forum가 타당하다. fixture에는 source ID, 직접 결론 또는 개인정보가 없다.",
+      "source_sha256": "9735cfcc2ec1609591a23b480f89f6e216147d9ca12d1f4d3f20f9746294973b"
+    }
+  }
+}

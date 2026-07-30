@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "5bfd26a06ad68a4ebe2de5751a5307f1484666f99c2647806cf9e69c56521076",
+      "expected_sha256": "ac01181896aa2d72d2a4dc77a164f7e4611ccb371c315589bc98420468b64a10",
       "fixture_sha256": "b331caaa819926a2819664692e0cc888bd3d46ffae4b491e33f1b134c8d50f1e",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송이며 expected와 일치한다. fixture는 사건 식별자와 주문·직접 결론을 제거했고 충분한 법리 맥락을 유지하며 개인정보 패턴이 없다. issues/adverse는 원문으로 지지된다.",
+      "notes": "무결성 확인값과 source 연결이 일치한다. 공식 주문은 원심판결 파기·환송이며 expected와 맞는다. fixture에는 현재 사건번호·source ID·주문·직접 결론이 없고 충분한 법리 맥락만 남아 있으며 개인정보 패턴도 없다. issues/adverse의 근거 문구가 원문에 확인된다.",
       "source_sha256": "4fa56cccbf39d56d68f28b3105f1fbd3e54ff19737b6eebb3b24e9bb8baeef4d"
     },
     "case-057": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "fec44a67ed283f465e09d7e06dbb0cd02d63ce7785f1c0652e234c6cc3ee09e4",
+      "expected_sha256": "0e197f58e9b75a91a7ad400900fbbfc489170cf69f9a40ad790ef6cb2212274e",
       "fixture_sha256": "2d42b926197cf9f6a2c647e8a900f51604fcbbc10a5c3300b20abd1845bb838d",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각이며 expected의 affirmed와 일치한다. fixture는 식별자와 직접 결론 없이 충분한 법리를 제공하고 개인정보 패턴이 없다. 모든 evidence excerpt가 원문에 존재한다.",
+      "notes": "무결성 확인값과 source 연결이 일치한다. 공식 주문은 상고기각으로 expected의 affirmed와 맞는다. fixture는 현재 사건 식별자와 목표 주문·결론을 제거하면서 충분한 법리 맥락을 보존했고 개인정보 패턴도 없다. 모든 issues/adverse 근거가 원문에 확인된다.",
       "source_sha256": "12f015114b788e1c30574e3f738731e07da87b6aa94bd8105d6bf5525f26a035"
     },
     "case-058": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "be0d845611bdbd0b2732c43a2cfd83780fc0803a64730e25cbdbfd98c9703f71",
+      "expected_sha256": "e68acce97c978e1dc363b5f6d494ca4ed02e97a8f9ef6c1e5715dc20bc70688a",
       "fixture_sha256": "7f083f87952a83e8740917ae18c2d60cd01d39fdd192e2c2c8ce4902861e6d10",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송이며 expected와 일치한다. fixture는 300자 이상의 사실관계를 남기되 사건번호·source ID·주문·직접 결론을 제거했고 개인정보 패턴이 없다. issues/adverse는 원문으로 지지된다.",
+      "notes": "무결성 확인값과 source 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected와 맞는다. fixture는 336자의 분석 가능한 사실 맥락을 남기되 현재 사건번호·source ID·주문·직접 결론을 제거했다. 기재된 진단·행위일은 생년월일이 아니며 다른 개인정보 패턴도 없다. issues/adverse가 원문으로 지지된다.",
       "source_sha256": "041962361bfdc8339135f5aa3656c1f9877976f11e00015b954d12f63b223b2f"
     },
     "case-059": {
@@ -54,9 +54,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "6b525714be7046457d2c6de67e0943677e8ecfdfab4ff147538d5a92cec410c1",
+      "expected_sha256": "201de018d10100500ea016eb793fffa73e56c3cab7fe395933d1100706803d3a",
       "fixture_sha256": "fb45381e883f145fbb59a46cbbce21c7a322debe469b28a8ebaa5a7ff7ee8566",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 파기환송이며 expected와 일치한다. fixture는 충분한 사실관계를 유지하면서 사건 식별자와 주문·직접 결론을 제거했고 개인정보 패턴이 없다. 모든 evidence excerpt가 원문에 존재한다.",
+      "notes": "무결성 확인값과 source 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected와 맞는다. fixture에는 545자의 사실·주장 맥락이 있으나 현재 사건번호·source ID·주문·직접 결론은 없고 개인정보 패턴도 없다. 혼인연도와 소송·행위일은 개인정보 누출이 아니다. issues/adverse 근거가 원문에 확인된다.",
       "source_sha256": "29c92d1d33bed6c06fdbd957baa3ad1a449d95439e877c376e1bc21e98d082ca"
     },
     "case-060": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "5c3a2c26ce1f3fcb4c8303c6b77fd5be875b20921bd9cc3fcb046be8069969f2",
+      "expected_sha256": "9f495bb11c84037b12e1a962d3b94e49f494d9f6a8f498b6e536838886617ce5",
       "fixture_sha256": "a70c9aadda813a1e3f2984d8fdac7dfe3a496d2a30839107dae76e31a45f8750",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 관련 부분 파기환송이며 expected와 일치한다. fixture는 사건 식별자와 주문·대법원 직접 결론을 제거하고 충분한 법리와 원심 판단 맥락을 유지하며 개인정보 패턴이 없다. issues/adverse는 원문으로 지지된다.",
+      "notes": "무결성 확인값과 source 연결이 일치한다. 공식 주문은 원심판결의 관련 부분 파기·환송으로 expected와 맞는다. fixture는 현재 사건번호·source ID·주문·직접 결론 없이 충분한 혼인무효 법리와 쟁점을 제공하며 개인정보 패턴도 없다. issues/adverse의 각 근거 문구가 원문에 확인된다.",
       "source_sha256": "f467a82b592a72b58b1dafaf5ea831d779b26650e30be553fca571eaeffca9d4"
     }
   }

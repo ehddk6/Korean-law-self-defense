@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "821ebb60d571da552a36681fc67104ae040b80314a011efadfca2dac1b9ad62f",
+      "expected_sha256": "12c88cb6a4ff611b6c9ae401aeffbbef98c601b4ccad9b7421462e798e3f0ecf",
       "fixture_sha256": "e66638ebaf47f431624f705df227eb2040405024314ff97eca689371ec44f398",
-      "notes": "세 해시와 source 연결이 일치한다. 상고 전부 기각은 affirmed와 맞고, 쟁점·불리한 논거도 원문이 지지한다. fixture에는 목표 사건번호·ID·주문·최종 결론 및 개인정보 패턴이 없다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed가 맞고, 쟁점·불리한 논리는 원문이 지지한다. fixture에는 현재 사건번호·source ID·주문·최종 결론과 개인정보 패턴이 없다.",
       "source_sha256": "70b06f7aa2d45e99ce71bf052bc8c4a0c1f01a613d1a9850eeaa694c90cdb9eb"
     },
     "case-037": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "eeefd3e195e0149a43d7e9588c78a876959588012f513050f4e01552fdeee525",
-      "fixture_sha256": "dda5fe7bae1ecf8fbef0a67b6469d8f63e6c4aabd85da72cfd3fc461ca17f41d",
-      "notes": "세 해시와 source 연결이 일치한다. 소 각하 부분 외 파기환송은 reversed-remanded와 맞으며, 주식양도·상속합의 쟁점과 불리한 논거가 원문에서 확인된다. fixture 가림과 개인정보 검사도 통과한다.",
+      "expected_sha256": "92787399afc3be2a5a7ae88bc22bfe08434e5e0a4f84037651f48a9b19510dd3",
+      "fixture_sha256": "34df517ec487f754af8768cec596babf1c92c00780d56df6c677abf79437ef3c",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원심 일부 파기·환송으로 reversed-remanded가 맞고, 모든 쟁점·불리한 논리가 원문에 있다. fixture는 식별자·주문·최종 파기 결론과 개인정보를 제거했다.",
       "source_sha256": "d097ab7a841da177ce61194d0f1dba834320c3edf73154a6f806758d09654201"
     },
     "case-038": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "d1295d2ff98e75c263e6128c92a6476460a537f4fbde6bd3de3bfbfa6a0438f8",
+      "expected_sha256": "7601361cacd6628cfa04f1cc2b6084aba2a53338517ac7d00adbc347d19c9472",
       "fixture_sha256": "646fa62472fe71c2379a205e33ddb3afb01ed5053059e0b7918db2b640af302b",
-      "notes": "세 해시와 source 연결이 일치한다. 원고 청구 전부 기각은 dismissed와 부합하고, 주주제안·소집통지·집중투표 쟁점 및 반대 논거가 원문으로 지지된다. fixture에는 식별자·주문·직접 결론·개인정보 패턴이 없다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원고들 청구 전부 기각으로 dismissed가 맞으며, 쟁점·불리한 논리는 원문상 당사자 주장과 사실로 지지된다. fixture에는 현재 사건 식별자·주문·법원의 최종 판단 및 개인정보 패턴이 없다.",
       "source_sha256": "b2743ee3b0131469769dfb10dc6bcf9ba6ad361c7536c4b97aa3f818c2c5a3a1"
     },
     "case-039": {
@@ -54,9 +54,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "833b5a20c51fcb1f23adcf805fc0a1a1b4797deb2586942a27bba693d570e8ad",
-      "fixture_sha256": "0981a09805ccab22fb49d562fc808498415187f1e54ec9b0c7a86e45fab9961a",
-      "notes": "세 해시와 source 연결이 일치한다. 원심 파기·제1심 취소와 주위적·예비적 소 전부 각하가 결합된 주문은 mixed와 부합한다. 쟁점·불리한 논거는 원문이 지지하며 fixture 가림과 개인정보 검사도 통과한다.",
+      "expected_sha256": "34782f60fc328b9d097ee53b671c83d26927928ae89a6c723399ac19b35071a5",
+      "fixture_sha256": "12602e9612031bdb3102232b04c7a40970bcf8611d2fbcd8d1178ef9e7c529cb",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 제1심 취소 후 주위적·예비적 소 모두 각하이므로 dismissed가 맞다. fixture는 300자 이상의 사실·원심 판단 맥락을 남기되 현재 사건 식별자·대법원 주문·직접 결론과 개인정보를 포함하지 않으며, 쟁점·불리한 논리도 원문이 지지한다.",
       "source_sha256": "da3ac119e711b267974e5672e019db254be3785ed17014eb989226f6e3d4c717"
     },
     "case-040": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "50ce1ae4bf23a225179f979b53ea1c60513a373e887f0532df1fc62613892a04",
+      "expected_sha256": "01ccf6e4ca186bc30b3ff230035a4a76b1ce2ddbcd89d3dd9585e23b804b57ac",
       "fixture_sha256": "53e4e0050f4f12c5239308d23a168e095d1cb1c7701f9a85cf259cfdaec31d67",
-      "notes": "세 해시와 source 연결이 일치한다. 상고 기각은 affirmed와 맞고, 포괄적 의결권 위임·담보권 실행·1인 주주 결의 쟁점과 불리한 논거가 원문에서 확인된다. fixture 가림과 개인정보 검사도 통과한다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed가 맞고, 세 쟁점과 두 불리한 사실은 원문이 직접 지지한다. fixture에는 현재 사건번호·source ID·주문·최종 상고 판단과 개인정보 패턴이 없다.",
       "source_sha256": "db08ea95e389577b3e5109f1a3a3503ef15b26b7e8db30b34f05e90b3a262a0b"
     }
   }

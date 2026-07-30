@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-121": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7647a3ab0711ea81a52957d952e2140d8a44e287e67600de5ce4fc4d37144692",
+      "fixture_sha256": "d61b7ae31dd90597d266c984c356a554bec806dbeea7de7fdfa06e6e987bdfa3",
+      "notes": "무결성 증명과 source 해시 연결이 일치한다. 행정기본법 제14조는 계속 중인 법률관계의 적용법이 특별규정·처분 유형 등 추가 사실에 좌우됨을 지지한다. fixture에는 source ID나 직접 결론·개인정보가 없다.",
+      "source_sha256": "fc6400a197698335e4a51dd599feb87dd3bcedf1638304054c2c3a9b007c9fbe"
+    },
+    "case-122": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c82ab5c1af1d669e7ea5056df6656394f8d6f8c443502813dcce13561ecc595d",
+      "fixture_sha256": "7ba5d7b96c53fe95fafa9ad612caff37baaede201b13612fe41396627b6b7623",
+      "notes": "무결성 증명과 source 해시 연결이 일치한다. 특정 개정 부칙·개정일이 제공되지 않아 verify-specific-addendum 및 abstain이 타당하다. 의도된 결손 외 결론 누출이나 개인정보는 없다.",
+      "source_sha256": "ffed21cd4210cdb24adf107abdcf988970b7d1116c202d65fb47fa5e836ee897"
+    },
+    "case-123": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ba525828d0b8b21e5979a833452ec311f8569106ae40af80488f8ab903cb2295",
+      "fixture_sha256": "4e643406722e8730f11c741bbb33eb1540129066b28e2febec2bf30b670f84c6",
+      "notes": "무결성 증명과 source 해시 연결이 일치한다. 민사소송법 제178조는 특별규정이 없을 때 수령인에게 등본·부본을 교부하는 원칙을 직접 지지한다. fixture는 분석 맥락을 갖추고 결론·식별정보를 누출하지 않는다.",
+      "source_sha256": "147035de0657e04e1133833f64856cd755d94f6ecccec0f893611862c126ceb8"
+    },
+    "case-124": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "de31d6950a87e8594ff05b83e32c2dc4254a5d57e96e1b2eb211c1f2f950d9fd",
+      "fixture_sha256": "ac0705bf5f63dfc059ec30d92f1566425399879b50d461a74d4466507a1faebb",
+      "notes": "무결성 증명과 source 해시 연결이 일치한다. 민법 제162조·제157조·제160조·제166조에 따라 2026-04-10 행사 가능 일반채권의 10년 만료일은 2036-04-10이다. 마스킹 토큰 외 개인정보와 직접 결론 누출이 없다.",
+      "source_sha256": "455e780e73ea5a60ba08b13ab03dbaf9d72b89e5447a59ebefca17dec048519f"
+    },
+    "case-125": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "413edad82657d03df0e5f0bc1b7beeeec11e24be8471581fd0734a44f0ca07ac",
+      "fixture_sha256": "75bbd89a008743296315dcc6f5f4a4749df7568f44d1f8b1a7940f68c1fe1236",
+      "notes": "무결성 증명과 source 해시 연결이 일치한다. 민사소송법 제2조는 피고 보통재판적 소재지 법원의 기본 관할을 직접 지지하며, 특별재판적 사실의 부재를 전제로 한 conditional 상태도 부합한다. fixture에 식별정보나 직접 결론은 없다.",
+      "source_sha256": "a52c09a538db36e22053afce19f5448ed380378090b9c3448963fcf5a8dfd36f"
+    }
+  }
+}

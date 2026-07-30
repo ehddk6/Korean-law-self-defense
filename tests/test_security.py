@@ -52,6 +52,11 @@ def test_contextual_legal_phrases_are_not_pii(text: str) -> None:
     assert scan_residual_pii(text) == []
 
 
+def test_birth_date_with_korean_birth_suffix_is_detected() -> None:
+    findings = scan_residual_pii("당사자는 1950. 3. 6.생으로 기재되어 있다.")
+    assert "BIRTH_DATE" in {finding.category for finding in findings}
+
+
 @pytest.mark.parametrize(
     ("text", "category"),
     [

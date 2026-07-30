@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "569beacb9b84e05d15fda1fe627308eabd6e064c7c93cf19839bbdbf05a871a8",
+      "expected_sha256": "de575e627a9d147cfe7168f5f239914e96b765ad9f9bf1b1f35d0ba313ac5915",
       "fixture_sha256": "622ee63a0624690bc8b69d8bf81a51b03b70d79fd844b99ec2450a1ba839c507",
-      "notes": "해시 연결이 일치하고 공식 주문은 상고기각으로 affirmed와 부합한다. fixture에 사건번호·source ID·주문·직접 결론 및 개인정보 누출이 없으며 issues/adverse는 원문이 지지한다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 맞고, conditional은 충당의 특별사정 가능성과 부합한다. fixture에는 목표 주문·대법원 직접 결론·사건번호·source ID가 없으며 충분한 법리와 사실이 남아 있다. 개인정보 패턴이 없고 issues/adverse는 원문의 특례·변제충당 법리와 원심 판단으로 지지된다.",
       "source_sha256": "2b3a5e05988d9214382e320086da0934cb24fa787c8a3a7ac5823d1269765f6f"
     },
     "case-027": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "f84c8539286bb19f16045d6f11bb3305f771769b65649edb38614b707ed776ae",
+      "expected_sha256": "6e1e6b1617ccdd5e7454b2bac52015b58c27a572fc34590acdab6802bd395347",
       "fixture_sha256": "6c2d76d1439b8ca8af6c64a909b9b7d67605ece2abc5c94e6a5c18537967404b",
-      "notes": "해시 연결이 일치한다. 공식 주문은 일부 파기환송과 나머지 상고기각이므로 mixed가 맞고, fixture의 관련 사건번호는 마스킹되었으며 목표 주문·직접 결론과 개인정보가 없다. issues/adverse도 원문으로 뒷받침된다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원고 패소부분 파기환송과 피고 상고기각이 함께 있어 mixed가 정확하다. fixture에는 목표 주문·대법원 결론·현 사건번호·source ID가 없고 분석 가능한 사실과 원심 판단이 충분하다. 사건번호는 비식별 토큰이며 개인정보 누출이 아니다. 모든 issues/adverse는 원문 사실과 판단에서 지지된다.",
       "source_sha256": "1868622d0988bf1d499b2cd1476454fee394adc710835bef2c511b11c99ba9fb"
     },
     "case-028": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "5da4a5f230ccc5aa33b1774317d816094a535f1655a7f25ae0ee05d84b977fa6",
+      "expected_sha256": "17cbe541dbe854947193655355c580c196a70449e44f3657f46b23d8f8ff9cfe",
       "fixture_sha256": "a4de3685bff6acaf19c953fdbfa7ec40c796b3f87b8440940bdb5d624b121728",
-      "notes": "해시 연결이 일치하고 공식 주문의 상고 전부 기각은 affirmed와 일치한다. fixture는 충분한 법리·사실 맥락을 유지하면서 사건 식별자와 직접 결론을 제거했고 개인정보 패턴도 없다. issues/adverse는 원문이 지지한다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고 전부 기각으로 affirmed와 맞으며, 누락된 제2·3 상고이유와 세부 사실 때문에 conditional도 타당하다. fixture에는 목표 주문·대법원 직접 결론·사건번호·source ID가 없고 충분한 법리와 사실이 있다. 개인정보 패턴이 없으며 issues/adverse는 원문의 대항력·임대인지위 승계 법리와 기록 결손으로 지지된다.",
       "source_sha256": "b2e4e1e03a2ee4d4f0d5889daec08df4c8cc05245ad005c4be9755ead4bb31a4"
     },
     "case-029": {
@@ -54,23 +54,23 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "e5c3ef05c3cea79339d77e95ca5e83517104fac5bf3638b47bf800f648355df8",
-      "fixture_sha256": "97742511da3d974d021dc9c0ff0e8b032d1e79aada34751618e57aceb768af79",
-      "notes": "해시 연결이 일치하고 공식 주문은 원심판결 파기환송으로 reversed-remanded와 부합한다. fixture의 인용 사건번호는 마스킹되었고 현재 사건번호·source ID·주문·직접 결론 및 개인정보가 없다. issues/adverse도 원문이 지지한다.",
+      "expected_sha256": "bd4af9470a29efa76693df374f58018c1d6030d7c049f5d48855adab325fddfb",
+      "fixture_sha256": "5cae720664fcf06385c82e88e9176a31c74b072749ca27ef96d23dffb7640129",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 원심 전부 파기환송으로 reversed-remanded와 일치하고, 판단 법리와 보증금 세부가 제거되어 conditional이 적절하다. fixture에는 목표 주문·직접 결론·현 사건번호·source ID가 없으며 300자 이상의 사실관계가 남아 있다. 비식별 사건번호 토큰 외 개인정보가 없고 issues/adverse는 원문의 명의신탁·대항력·임대인지위 승계 내용으로 지지된다.",
       "source_sha256": "88b018fa05b9022816288dc0b1586e5636f4a3b8e369cbdd3cf9b6f7485cab9d"
     },
     "case-030": {
-      "approved": false,
+      "approved": true,
       "checks": {
         "fixture_blind": true,
         "fixture_pii_free": true,
-        "gold_supported": false,
+        "gold_supported": true,
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "74a8c2f9c358fbed2cc4e32997a6b35ece0f43bd7f6eccdaa12ad35e1b912e05",
+      "expected_sha256": "d3b003854a72d4264c86c8fe39142e889b997163d82788bd834c9ff8f9ec9d49",
       "fixture_sha256": "13e309965cb10e40edc0f24e759d037a6a6f7dda9700e1a17f1813e8cc0364f2",
-      "notes": "해시 연결과 공식 상고기각·affirmed 표시는 일치하며 fixture의 비식별 처리와 결론 가림도 적정하다. 그러나 source.json의 full_text 문자열 종결부가 손상되어 유효한 JSON이 아니므로 공식 원문 캐시로부터 issues/adverse를 신뢰성 있게 검증할 수 없다.",
+      "notes": "세 해시와 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 맞고, fixture가 일부 사실만 제공하므로 conditional이 타당하다. fixture에는 목표 주문·대법원 직접 결론·사건번호·source ID가 없으며 분석 가능한 위탁·관리 사실이 충분하다. [ADDRESS_001]은 비식별 토큰이고 다른 개인정보 패턴도 없다. issues/adverse는 원문의 계속적 위탁, 임료·보증금 수령 및 수선의무 사실로 지지된다.",
       "source_sha256": "d63e0c1499e9ad39032c45a05ae36ea1415631c4f5fe6b20c245066dee07324e"
     }
   }

@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-096": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "734866fd30c4f2f4bfb9671ccc4433f235e2727020210076097ebfd993c31c30",
+      "fixture_sha256": "4a427dfd838ae269ecce00841b51b3de817b31317adab57494bb98aa50d28799",
+      "notes": "무결성 증명과 expected.source_sha256 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 부합하며, 쟁점·불리사실도 국외지분 양도와 부인결정 원문에서 지지된다. fixture는 목표 사건번호·source ID·주문·직접 결론을 제거했고 충분한 사실관계를 유지하며 개인정보 패턴이 없다.",
+      "source_sha256": "2af4172b3216f83e8304f85b8e9eec4e8544d0ac68889465a59a17634c143d1f"
+    },
+    "case-097": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "17bed3fc9761611e93cb4a97eb2533c024d20df2e539b67278bfa90e2d55b4a9",
+      "fixture_sha256": "e078a7d1034bdab47c7fef9ece41071352e3b2e72c1b343b6e07151131042c53",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문의 원심결정 파기·환송은 reversed-remanded와 부합하고, 회생개시 후 파산 즉시항고절차 중지에 관한 쟁점·불리논리도 원문이 지지한다. fixture에는 목표 식별자·주문·직접 결론과 개인정보 패턴이 없고 충분한 법리 맥락이 있다.",
+      "source_sha256": "3f1d33ebc4244e9d64a72519272342b72efa6fbc60e4e9bca50e552e62cbfa63"
+    },
+    "case-098": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "43da27c6830db86c9f782c13db9809dcbbda791ddd841065665c2aa36055125e",
+      "fixture_sha256": "12789b5a1a25557eb0f4e76b8857e0aed70d5c4c1f030fa249be279abad748b2",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 일부 파기환송과 나머지 상고기각이므로 mixed가 정확하다. 공소사실 특정, 원본·사본 동일성 및 범의 입증책임에 관한 expected 쟁점·불리논리는 원문에 명시되어 있다. fixture는 목표 식별자·주문·직접 결론을 제거했고 개인정보 패턴도 없다.",
+      "source_sha256": "8f0750a9302f7f82a0ece290d5c7dd2593967217d0291db6dd2e86bb147eae0e"
+    },
+    "case-099": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6fbdbb6b0a9d9e730b8db5eacbac7c96c32bd47b66338296af2dab1869351e49",
+      "fixture_sha256": "7d109fdbec5b28db4f494caadc8a808f9fdbc4156fa0fd5c959b3f01012e8499",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 부합한다. 출연행위와 등기행위의 구별, 부인등기의 효력 및 피고의 가액 상당 채권에 관한 쟁점·불리사실은 원문이 지지한다. fixture에는 목표 사건번호·source ID·주문·직접 결론과 개인정보 패턴이 없으며 사실 맥락도 충분하다.",
+      "source_sha256": "9f3e34434023ce3763b850d0bac7bdb478de8542262375da8261232be50f1f86"
+    },
+    "case-100": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "cd3a4effdf68266e26aea25d5e54b7d2202ebc8f9e87fa96318d536cedb926d7",
+      "fixture_sha256": "dd7b843a83377bae68393e16a0604004d9003251594d73b42cd2bd149fea3b6f",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문의 원심판결 파기·환송은 reversed-remanded와 부합한다. 파산에 따른 회수불능, 법인세·부가가치세 기준 및 484억 원 변제충당에 관한 expected 쟁점·불리사실은 원문에서 지지된다. fixture에는 목표 식별자·주문·대법원 직접 결론과 개인정보 패턴이 없다.",
+      "source_sha256": "87d4e807362680ddf070d37d932310478599c506a15bb0f30f26a5dbb140307d"
+    }
+  }
+}

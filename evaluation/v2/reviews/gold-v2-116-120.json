@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-116": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "2f194765b5b501ed6443b6f446e3263b6c33bdce868fa5753a8c1a2536003504",
+      "fixture_sha256": "dafa841aabbeece9e3ca9fa76764307f402316f60cebb7370abbbdd7d467bcc4",
+      "notes": "무결성 증명과 source 연결이 일치한다. 상고기각 주문은 affirmed와 맞고, fixture는 목표 처분 및 결론을 제거했으며 개인정보 누출이 없다. 쟁점과 불리한 논리는 원문이 지지한다.",
+      "source_sha256": "5a21ed51af512521d2077f50cb378bfb17ecae5e513b33c2125a66c18374f26c"
+    },
+    "case-117": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "35f24fee1c9f89d2499cdb56d612b7af563409f4c0483792beae379c2f806701",
+      "fixture_sha256": "7aeabdbca8c93d0c46f9a7066e752e77b15e395967ca043a2ca92967b6667c31",
+      "notes": "무결성 증명과 source 연결이 일치한다. 특별항고기각 주문은 affirmed와 맞고, fixture에는 현재 사건번호·source ID·목표 결론이 없으며 개인정보 누출도 없다. 모든 쟁점과 반대 주장이 원문에 있다.",
+      "source_sha256": "f3cbff6bd6ad1317593831bcd20b7bf680e4a6de353af42e3f68fcb8466e285c"
+    },
+    "case-118": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": false,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "daa77d38833793948f974778c629d5be1f85b396f23fed81aebaf8120d6b1c7e",
+      "fixture_sha256": "e679d08c1e0ad3e11f87916191b630d1f73e2caa4aa8ce72cfee20236d975b62",
+      "notes": "무결성·가림·개인정보 및 파기환송 label은 적합하다. 다만 expected는 교육부의 환수·신분상 조치 요구 자체가 교원에게 직접 법적 효과를 미치는지를 쟁점으로 적었으나, 원문이 처분성과 직접 불이익을 인정한 대상은 대학 총장의 별도 환수 통지이므로 해당 issue가 원문 판단과 일치하지 않는다.",
+      "source_sha256": "b6a338afe0498bf296ab660f8bd2c242b086b9536ac16c29a8484c984ae331b3"
+    },
+    "case-119": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d36529f87b5b890352fb64ae8a0dd87da4a9f9034f21f6817d951759d5a1dc04",
+      "fixture_sha256": "2a5187a788fc4647a9d158580a8e61ca7e3c17cd2491b1eb7dfd155261af459c",
+      "notes": "무결성 증명과 source 연결이 일치한다. 전부 파기환송 주문은 reversed-remanded와 맞고, fixture에는 목표 주문·직접 결론과 식별자가 없으며 개인정보 누출도 없다. 쟁점과 불리한 논리는 원심 판단 및 대법원 법리로 지지된다.",
+      "source_sha256": "8c16519d33c45a3a767209fe00a1e794bd32d5b06f0ea8fb56c51cb615fe784b"
+    },
+    "case-120": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c09c93c4b98f944d412ffde4a5298bbef6469857f61e992400532a848aa1ba05",
+      "fixture_sha256": "a2fd85af03c028ad6f4260fc4df6b5bacb60568dfe71455329c469e4ae95bec4",
+      "notes": "무결성 증명과 source 연결이 일치한다. 쌍방 상고기각 주문은 affirmed와 맞고, fixture는 목표 주문·직접 결론과 식별자를 제거했으며 개인정보가 없다. 쟁점과 반대 논리는 원문의 사실 및 종합판단 법리로 지지된다.",
+      "source_sha256": "dc8a2ddec0e551ec055ceb7a245caf0d45a7d0a5f7a38c5a53aca111b067ddd0"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-126": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "1925dd628110104c91f46d6fbd3a9779f7955620bf694019cbc1d17096ebeb2d",
+      "fixture_sha256": "f6ddb7d47486d41e5e5992d7ada22a57ddbd57593742f2b235e8ca39c5092cdf",
+      "notes": "세 해시와 source 연결이 일치한다. 행정기본법 제14조는 신청처분의 처분시법 원칙과 특별규정·특별사정 예외를 명시하므로 conditional 및 article-14-fact-dependent와 issues/adverse가 지지된다. fixture에는 source ID·사건번호·직접 결론·개인정보가 없다.",
+      "source_sha256": "067e7f14eb3a611c136328e26854973c7e3362af6c74372164dc9aaa8035f8d4"
+    },
+    "case-127": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d85381247b369efd9e294b3cf587780670d19ef2bcf935ab0c144a71bce051f3",
+      "fixture_sha256": "0071f59d45339a470fc8aa69bad29413c03b18b97b5284f986b16e22e8e70677",
+      "notes": "세 해시와 source 연결이 일치한다. 특정 개정일과 해당 부칙 원문이 특정되지 않아 적용례·경과조치를 확정할 수 없으므로 abstain 및 verify-specific-addendum가 타당하다. 의도된 부칙 결손 외에 결론 누출이나 개인정보가 없다.",
+      "source_sha256": "221e1af25cf955dda0bcbaf3052128faaea7f10ed71f2a999f01bb445e974bab"
+    },
+    "case-128": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "01ae5f18e816f16e5f31943e7670dad33d3e806171a4d3a6b5ce02ff8a71f5e7",
+      "fixture_sha256": "18358f433c881ab5aef9ad4d62d436725d141efd92d45aee8d3af362cb654293",
+      "notes": "세 해시와 source 연결이 일치한다. 민사소송법 제183조는 주소등에서의 송달과 그 불능 시 근무장소 송달을 규정하므로 ready 및 address-or-workplace-service와 issues/adverse가 지지된다. fixture에는 직접 결론·source ID·개인정보가 없다.",
+      "source_sha256": "60f6b2e1450fe7f9769d3ab0698cbd08a2d30260eea6acbed0e3c829a25a4a1c"
+    },
+    "case-129": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c6c686fe7bb092d15e708c3d81f54fac2a5646d1d4916fe1a2f40621183d1600",
+      "fixture_sha256": "d8608178bfca4e6aa43e8dc5f25369ec1c9975e2f6e5a2289c4d586181f70e51",
+      "notes": "세 해시와 source 연결이 일치한다. 민법 제163조·제166조와 기간 계산 조문에 따라 1년 이내 정기 이자는 3년 시효이고 2026-05-10 기준 만료일은 2029-05-10이므로 기대답안과 issues/adverse가 지지된다. 사건번호는 마스킹 토큰이며 개인정보 누출이 아니다.",
+      "source_sha256": "b0cedf92f3181c25b20e7dc42ceb8cd4df4d68d67055815c2902ac7030ed331b"
+    },
+    "case-130": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d41e051b42b8f06f2f2dd6c0b854ae9f3cc7f02666ddaafe6b7514d9fdda47f4",
+      "fixture_sha256": "f47741365fe90f0e529e33c19e4d552dbbf76b643b7a4f81bce0b6fb79c55b01",
+      "notes": "세 해시와 source 연결이 일치한다. 민사소송법 제3조는 사람의 보통재판적을 주소로 정하므로 주소가 알려진 개인에 대한 ready 및 individual-address-forum과 issues/adverse가 지지된다. fixture에는 직접 결론·source ID·개인정보가 없다.",
+      "source_sha256": "eab2ea2ee181d5ed87f2a29dc44ab5674c5bcf7f41c1bca61cc650b00e0ba5fe"
+    }
+  }
+}

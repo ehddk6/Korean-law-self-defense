@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-136": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "c87fbf2e33a39f7509059ee1203761f66f4f509f0fbb915fd84fb8615d80a7ef",
+      "fixture_sha256": "9aa42fefb058a245c14749bfb1bde3a886d7f18010a4fffca5a73b704eed336d",
+      "notes": "무결성 증명과 source_sha256 연결이 일치한다. 행정기본법 제14조 제3항상 법 변경의 내용과 특별규정 유무에 따라 적용법이 달라지므로 conditional/article-14-fact-dependent가 맞다. fixture에는 source ID·직접 결론·개인정보가 없고, 쟁점과 불리사항은 조문 원문으로 지지된다.",
+      "source_sha256": "2f6330b18de1ffd9728ef24f4bb2332556c7110d12d87dda4d23d258a0c2f928"
+    },
+    "case-137": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "23c75ce448e6d9912a5cd11ca1380e5e9ae0c1ce3dd6b83aea85db1d3655c989",
+      "fixture_sha256": "8bebd2c3688b861ca0aa2e040585a27b36e3743e85d0fba38abf4b89eb3a3178",
+      "notes": "무결성 증명과 source_sha256 연결이 일치한다. 특정 개정 부칙 원문과 개정일이 제공되지 않아 적용례·경과조치를 확정할 수 없으므로 abstain/verify-specific-addendum가 맞다. 의도된 부칙 결손에도 질문·사실·복수 선택지가 있으며 직접 결론과 개인정보 누출은 없다.",
+      "source_sha256": "abf1b620104aa802195f0e777bebdb5e904f26a3eb4cb2b5b3bab4bb546b11c5"
+    },
+    "case-138": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "d8b0b7fac80764aa54662733fb0412ad9e62c72c19dfad907e65c947514a1bf7",
+      "fixture_sha256": "22a94fdd0ff0b17f9338d95f3529f2f94783824d0bdff3e5b8c6002928da6fff",
+      "notes": "무결성 증명과 source_sha256 연결이 일치한다. 민사소송법 제187조는 제186조에 따른 송달 불능 시 법원사무관등의 우편 발송을 정하므로 ready/postal-service-after-article-186-failure가 원문과 일치한다. fixture는 결론이 가려졌고 비식별 토큰 외 개인정보가 없으며 쟁점·불리사항도 원문상 요건으로 지지된다.",
+      "source_sha256": "d1fbc7666858fecfbbd1d1d31b62555c4601da9b1c148fd6962c933666683d79"
+    },
+    "case-139": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "72760d71fccd2e8198e7ad7c57c10142685b61623b33682dd29cb6a4497264ae",
+      "fixture_sha256": "54d877de22657781e5738bff91493748348ed189e038f8db82b5695cbe313a56",
+      "notes": "무결성 증명과 source_sha256 연결이 일치한다. 민법 제166조 제1항은 권리행사 가능 시점을 기산점으로 정하고 그 날짜가 누락되었으므로 abstain/starts-when-right-exercisable 및 deadline_date=null이 맞다. 마스킹된 사건번호 외 개인정보와 직접 결론·source ID 누출이 없고 기대 쟁점과 불리사항도 원문으로 지지된다.",
+      "source_sha256": "b5f59ecddd1c11bb67c086664643d5c5885fcd2fd1d8418585649ceaee9ec11e"
+    },
+    "case-140": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8d69fd4cb9c478e6a573d07d2c47dc30d4c6a10bca0340f65bfeab7b13b40d1a",
+      "fixture_sha256": "08adc89cdf645f5784dd2a3e0a383453f279ca320c0f2c5e935bdf9f01c186c9",
+      "notes": "무결성 증명과 source_sha256 연결이 일치한다. 민사소송법 제18조 제1항은 불법행위에 관한 소를 행위지 법원에 제기할 수 있도록 하므로 ready/tort-place-special-forum이 맞다. fixture에는 source ID·직접 결론·개인정보가 없고, 불법행위지 관할 쟁점과 관련 불리사항은 원문으로 지지된다.",
+      "source_sha256": "7977eac4c2496ea1925e9ad5572a4c981fdcc9b4f55555a10876e416939a69ed"
+    }
+  }
+}

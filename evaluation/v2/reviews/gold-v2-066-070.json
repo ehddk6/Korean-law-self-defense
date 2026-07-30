@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "2f9ae17b9407925739763c71cace9f3464aeba4f3603d270bc7bf7056a747639",
+      "expected_sha256": "c19e87e913a3e8c4da5b5cb6380679c39a12e6b41ff6078b53a381bf038d5e86",
       "fixture_sha256": "89ba75e04be2abb390c25433a68b1eaf0c6771e7d4ac8a09ae14e2d8207a7586",
-      "notes": "무해고 판단과 구제신청 경위가 원문에 있고, 공식 주문은 파기환송이다. fixture는 340자의 사실관계를 남기면서 사건번호·source ID·주문·직접 결론을 제거했고 개인정보 패턴도 없다.",
+      "notes": "host 무결성 증명과 source_sha256 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected outcome과 맞고, issues/adverse는 원문 사실과 판단으로 지지된다. fixture는 340자의 분석 맥락을 유지하면서 사건번호·source ID·공식 주문·대법원 직접 결론과 개인정보를 제거했다.",
       "source_sha256": "1094dc56f606314940c6eccbbcbbc4d8fac2c0dc0cc042128429db4ae493c37e"
     },
     "case-067": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "9dc30cbdd34c603f4f9ca46e03368c4014f1c8262da846e48b4c98415a021b21",
+      "expected_sha256": "4a273b74dd5d8b1a4f183446efde060e0e37f543e5cb47ea73a3aef2aee13c82",
       "fixture_sha256": "1a29c76546de9ad9cfc433cb482fea31cde171471c7ba2142b57dc5e6a493106",
-      "notes": "인사위원회 구성·제척 규정과 조직개편 사실이 issues/adverse를 지지하며 공식 주문은 파기환송이다. fixture에는 분석 가능한 사실과 원심 논리가 남아 있으나 목표 주문·식별자·직접 결론 및 개인정보는 없다.",
+      "notes": "host 무결성 증명과 source_sha256 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected outcome과 맞고, 인사위원회 구성·제척·재심위원 증원 관련 issues/adverse가 원문으로 지지된다. fixture에는 충분한 분석 맥락이 있으며 사건번호·source ID·공식 주문·대법원 직접 결론 및 개인정보가 없다.",
       "source_sha256": "5fa63587064d3c4ca2f7e36dd3ec58fc6097c5f4a1582254c922e299400f0e73"
     },
     "case-068": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "592ae78030b0fb0af8b64227824e345a3fcbab43fa505f2307ffcba4bad3da33",
+      "expected_sha256": "0c35c45913d44fcfd6925f89cf2b838952bc03804e6963de544ed3762a2a6668",
       "fixture_sha256": "7a9d12fe06e4fea4c994f5b3abb17d16ee368ddafa775b6e2f6bff3cccb4166e",
-      "notes": "경영악화, 인력감축, 해고회피 노력과 노동위원회 판단이 원문의 issues/adverse를 지지하고 공식 주문은 파기환송이다. fixture는 충분한 사실관계를 보존하면서 주문·직접 결론·식별자를 제거했으며 마스킹 외 개인정보가 없다.",
+      "notes": "host 무결성 증명과 source_sha256 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected outcome과 맞고, 긴박한 경영상 필요·대상자 선정·노조 협의 관련 issues/adverse가 원문으로 지지된다. fixture는 충분한 사실관계를 남기되 사건번호·source ID·공식 주문·대법원 직접 결론과 개인정보를 제거했다.",
       "source_sha256": "91c28d15fa5781f48040a36280bb9cd183b219626f193620d1d379b892196839"
     },
     "case-069": {
@@ -54,9 +54,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "b8fba5992e179b5e890d592a88a48711ed454430be6d6b4523a9aeaedbad6e6b",
+      "expected_sha256": "9f6539462ead4a666110ebe79341758ed2a7579846aae0a1ac2e13eb1abe47b4",
       "fixture_sha256": "1e26eae49c896af55fdbc41913b1f5f392399c9e8220a5f4623a3240406d819a",
-      "notes": "해고통지의 기재 내용과 원심 판단이 issues/adverse를 지지하며 공식 주문은 파기환송이다. fixture는 326자의 분석 맥락을 남겼지만 목표 주문·대법원 직접 결론·사건 식별자와 개인정보는 없다.",
+      "notes": "host 무결성 증명과 source_sha256 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected outcome과 맞고, 해고사유의 특정 정도와 대응 가능성 관련 issues/adverse가 원문 법리와 사실로 지지된다. fixture는 326자의 분석 맥락을 유지하면서 사건번호·source ID·공식 주문·대법원 직접 결론 및 개인정보를 제거했다.",
       "source_sha256": "bdc0668105abb15dc6e94cf5b733e1efca789055963428d824284c84320eaf88"
     },
     "case-070": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "6cfd99aa2537f5b998ed42dba75451f3eb029aeb22b87d464916a3af6aae2e6f",
+      "expected_sha256": "c5846f79545f341f5f5bec084caf388f312ca1a83df74c7ffb5d518468c172be",
       "fixture_sha256": "422e463a2e9d88dae9399ae7a68bf404182b54d5af96aacf11ead0143158aba1",
-      "notes": "보험설계사 위촉계약, TRI 편입과 FP·PSM·AM 직무 경력이 issues/adverse를 지지하고 공식 주문은 파기환송이다. fixture는 충분한 사실 맥락만 포함하며 사건번호·source ID·주문·직접 결론과 개인정보가 없다.",
+      "notes": "host 무결성 증명과 source_sha256 연결이 일치한다. 공식 주문은 원심판결 파기·환송으로 expected outcome과 맞고, 위촉계약 형식·사용자 주도 양성체계·계속적 직무 전환 관련 issues/adverse가 원문으로 지지된다. fixture에는 충분한 분석 맥락이 있으며 사건번호·source ID·공식 주문·대법원 직접 결론 및 개인정보가 없다.",
       "source_sha256": "4189938079f49508e854b0d7cfaf428d69f7f98c00beeddc9bdbba2da5dc603b"
     }
   }

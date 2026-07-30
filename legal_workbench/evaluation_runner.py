@@ -25,7 +25,7 @@ from .models import utc_now
 from .security import atomic_json_write, redact_text, scan_residual_pii, sha256_file, sha256_text
 
 
-DEFAULT_EVALUATION_MODEL = "gpt-5.5"
+DEFAULT_EVALUATION_MODEL = "gpt-5.6-terra"
 PROMPT_VERSION = "blind-evaluation-v6"
 
 
@@ -497,7 +497,7 @@ def _build_evaluation_prompt(kind: str, payload: list[dict[str, Any]]) -> str:
     if kind == "masked-official-decision":
         instructions = (
             "모든 결과의 decision_status는 conditional, confidence는 low 또는 medium이다. "
-            "outcome은 affirmed|reversed-remanded|dismissed|granted|mixed|unknown 중 하나를 선택한다. "
+            "outcome은 affirmed|reversed-remanded|dismissed|granted|acquitted|convicted|mixed|unknown 중 하나를 선택한다. "
             "issues는 기록의 사실·법조문·입증책임을 사용한 핵심 쟁점 정확히 4개, adverse_points는 기록상 상대방 또는 "
             "반대 결론을 지지하는 구체적 요건 흠결·예외·증거 부족 논리 정확히 3개로 작성한다. "
             "required_action, rule_answer, deadline_date는 null이다. "

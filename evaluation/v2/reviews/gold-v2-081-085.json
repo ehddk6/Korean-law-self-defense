@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "d5f48f8b219c6d77ad41d7e2c17b17c089fc7434b10159cde1ef2eaca2629d1b",
+      "expected_sha256": "d492b89ec510386296bf20e80453bbd42381916658985592aca94192e021536a",
       "fixture_sha256": "0bab3a2b5e846c23da37c0337003ae88c49220356edf6922411372068c817ee1",
-      "notes": "무결성 증명과 source 연결이 일치하며, 공식 주문의 상고기각은 affirmed와 부합한다. fixture에는 현재 사건번호·source ID·주문·대법원 직접 결론 및 개인정보가 없고, issues/adverse는 원문이 지지한다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 부합하며, 쟁점·불리한 논리는 원문이 직접 지지한다. fixture에는 목표 사건번호·source ID·주문·최종 결론 및 개인정보가 없고 충분한 분석 맥락이 있다.",
       "source_sha256": "be1988272d6cab89bcf59065bcf35d06b2dcca0120f348946f4bd82d294c4980"
     },
     "case-082": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "686554b7e706fe00e6f0c3dc0fc501fa731c754a8560cd29ac793530a514dba8",
+      "expected_sha256": "20d4fb90e634e1f9fa83e4e23ccd537ae8ba9ce583101fda4645466cdfb77ac6",
       "fixture_sha256": "edd485f16c2b9708194500ecdb3222825d65d20e79fce50d19775fd8cac290cc",
-      "notes": "무결성 증명과 source 연결이 일치하며, 공식 주문의 원심파기·환송은 reversed-remanded와 부합한다. fixture는 현재 사건 식별자와 목표 결론을 가렸고 개인정보가 없으며, 모든 쟁점·불리한 논점에 원문 근거가 있다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심파기·환송으로 reversed-remanded와 부합하며, 모든 쟁점·불리한 논리가 원문에 있다. fixture는 하급심 판단만 남기고 목표 식별자·주문·대법원 결론을 제거했으며 개인정보 패턴이 없다.",
       "source_sha256": "74ebe4cf68b205167116623b50e99e5efbd2553771e5fdbba0d24244770d6a80"
     },
     "case-083": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "b56bb87ca934a390a426119f0e3b00163319aa872f181791fce21f281d6f5330",
+      "expected_sha256": "ea04d3b0dafc2bb217649f98499eff947fc3c6d8f9bf50236f723960b23194ff",
       "fixture_sha256": "925300d50df3d6fdcfcb8d933df9bab6d0f949b0908196ba89cf03cd85cb8346",
-      "notes": "무결성 증명과 source 연결이 일치하며, 공식 주문의 상고기각은 affirmed와 부합한다. fixture는 300자 이상의 사실관계를 제공하면서 현재 사건번호·source ID·주문·직접 결론을 제거했고 개인정보가 없으며, expected 근거도 원문과 일치한다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 부합하고, 기납부세액 귀속 관련 쟁점·반대 논리는 원문 사실관계가 지지한다. fixture는 목표 식별자·주문·직접 결론 없이 300자 이상의 분석 맥락을 제공하며 개인정보가 없다.",
       "source_sha256": "8019e2c993121c18b1241032cbacdafa51f36ff97b0b8550c0f8a0bec9711daf"
     },
     "case-084": {
@@ -54,9 +54,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "14d795616b67377e7d993477b467f94931b734666eddb0becf80e2285970eb00",
+      "expected_sha256": "4c987c50f19f480ab32612ef461ee706e2bc9c7eea6eb17f6b352819c416dd4e",
       "fixture_sha256": "7f175886840d4fb90b739f5d4d0d29366f6e2797f7e20e9aeeb5e4188b6aec1b",
-      "notes": "무결성 증명과 source 연결이 일치하며, 공식 주문의 상고기각은 affirmed와 부합한다. fixture에는 분석 가능한 법리 맥락만 남고 현재 사건 식별자·주문·직접 결론 및 개인정보는 없으며, issues/adverse는 원문으로 지지된다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed와 부합하며, 장기보유 특별공제의 보유·거주기간 쟁점과 반대 논리가 원문 규정·법리로 지지된다. fixture에는 목표 식별자·주문·사안 적용 결론 및 개인정보가 없다.",
       "source_sha256": "9c05ce3194266bae87b85f6fd1eaa6aaa993a48cb24e104f30aae4b1facf6c9e"
     },
     "case-085": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "d71046d8821988c9af078e628c9435fa5a1e1b87c33750065f57a052cbae211e",
+      "expected_sha256": "89990c2f93263359f83ed7189ddd1c442978ac3b9033b4b547f5dfa4cbfd27b1",
       "fixture_sha256": "430a8577b7cd3b142055bc83d71ba35130090fe76c9d8ce02e9fd2241b16d462",
-      "notes": "무결성 증명과 source 연결이 일치하며, 공식 주문의 상고 모두 기각은 affirmed와 부합한다. fixture는 현재 사건번호·source ID·주문·직접 결론과 개인정보를 제거했고 충분한 사실관계를 제공하며, 모든 expected 쟁점과 불리한 논점은 원문이 지지한다.",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 모두 기각으로 affirmed와 부합하고, 증여일·토지 시가·주주 증여 쟁점 및 반대 논리가 원문에 의해 지지된다. fixture는 목표 식별자·주문·직접 결론을 제거했고 당사자는 비식별화되어 있다.",
       "source_sha256": "c759624398d7d22a84181ed43197d2ea6f39ce745cf1e58027f15a197ea48a31"
     }
   }

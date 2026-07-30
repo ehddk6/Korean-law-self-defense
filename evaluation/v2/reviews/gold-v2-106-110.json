@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-106": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "ca0fca1fa1980f46d98f1723e6547a824bb025236c29e53bc5f129823f833aab",
+      "fixture_sha256": "2a36e0c922d24eb29f797ba652e53728b31711dc56796376e238161b2f24e561",
+      "notes": "무결성 증명과 source 연결이 유효하고 공식 주문은 파기환송이다. fixture에는 공소사실과 원심 논리만 남아 목표 주문·직접 결론·사건번호·source ID가 없으며, 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "daa477571b5447176aba969306214319d54dcaf1f6488c5b7b88cc6347882a0c"
+    },
+    "case-107": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "a0ca0c357256490198a044b5e7e48c8a1f254a632d5e69678f5f36c765bb67c7",
+      "fixture_sha256": "72dc18877acecd88e412073fcf75beb983f42c9209a076681597f739bd62adde",
+      "notes": "무결성 증명과 source 연결이 유효하고 공식 주문은 무죄이다. fixture에는 목표 주문·최종 결론·사건번호·source ID가 없고 충분한 분석 맥락만 남아 있으며 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "e0547bd936b74105af0368caf95cae84c2de99b5aebde1f10a42dc0e17d2c9f0"
+    },
+    "case-108": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "8444feaebe6e62dfbb2fa299b77838e0ed00eb8084a36977388c41663da5e44d",
+      "fixture_sha256": "24b986975a0f00897448facf3616e18a688bb63a828ded878317c3ae581af5c2",
+      "notes": "무결성 증명과 source 연결이 유효하고 공식 주문은 무죄이다. fixture에는 목표 주문·최종 결론·사건번호·source ID가 없고 충분한 분석 맥락만 남아 있으며 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "d4f8b80a544de0f314d226f91681f592eb21fab2b9c2d90a252b37f546a57bdf"
+    },
+    "case-109": {
+      "approved": false,
+      "checks": {
+        "fixture_blind": false,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "838f6bbb45e11faaaa82cff0a3b0e05cb1f1b37fcafb3f6e17c9c591b48ac6a6",
+      "fixture_sha256": "cc8e8a097ceeefe8019934bfd773b0080bafc8a3652452816681afe6bad177a0",
+      "notes": "무결성·공식 유죄 주문·gold 근거·비식별 상태는 적합하다. 그러나 fixture가 ‘범죄사실’로 시작하고 피고인 주장을 받아들이지 않는다는 판단, 벌금형 처단범위와 ‘이 사건 범행’ 양형판단까지 포함해 목표 유죄 결론을 직접 누출한다.",
+      "source_sha256": "cbca0402c937161724db4c0dd8799302ab8b01f4c2e596e5460b5c4c7a90a746"
+    },
+    "case-110": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "adef6488178eaa81e16bfb781eafcdfd442d6777c4ad56239adfa0ed4ada8695",
+      "fixture_sha256": "a12e544d596d4d574744b7b1953ee8e9f762a6bd25aaefd05f6df305f61d42c0",
+      "notes": "무결성 증명과 source 연결이 유효하고 상고 전부 기각은 affirmed와 일치한다. fixture에는 목표 주문·최종 결론·사건번호·source ID가 없고 충분한 사실·법리 맥락이 있으며 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "source_sha256": "d31f1bbb209f59ffc5b25d19ad0f08851662667f422598cfe8d6af61f62648a2"
+    }
+  }
+}

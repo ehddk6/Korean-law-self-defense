@@ -28,6 +28,12 @@ if ($initialStatus.result.corpus_ready -and $initialStatus.result.gold_review_cy
 if ($initialStatus.result.gold_review_cycle -notin @('v2-pending', 'v2-sealed-pending-review')) {
     throw "알 수 없는 v2 gold review cycle입니다: $($initialStatus.result.gold_review_cycle)"
 }
+$manifestPayload = Get-Content -Raw -Encoding UTF8 -LiteralPath $Manifest | ConvertFrom-Json
+$manifestRoot = Split-Path -Parent (Resolve-Path -LiteralPath $Manifest)
+$scenarioById = @{}
+foreach ($scenario in $manifestPayload.scenarios) {
+    $scenarioById[$scenario.scenario_id] = $scenario
+}
 
 $distillReports = @()
 for ($start = 1; $start -le 120; $start += 5) {
@@ -44,6 +50,51 @@ for ($start = 1; $start -le 120; $start += 5) {
             )
         } catch {
             $needsDistill = $true
+        }
+    }
+    if (-not $needsDistill) {
+        for ($scenarioNumber = $start; $scenarioNumber -le $end; $scenarioNumber++) {
+            $scenarioId = 'case-{0:D3}' -f $scenarioNumber
+            $scenario = $scenarioById[$scenarioId]
+            $expectedPath = Join-Path $manifestRoot $scenario.expected_path
+            try {
+                $expected = Get-Content -Raw -Encoding UTF8 -LiteralPath $expectedPath | ConvertFrom-Json
+                if ($null -eq $expected.gold_evidence) {
+                    $needsDistill = $true
+                    break
+                }
+            } catch {
+                $needsDistill = $true
+                break
+            }
+        }
+    }
+    if (-not $needsDistill) {
+        $reviewPath = 'evaluation\v2\reviews\gold-v2-{0:D3}-{1:D3}.json' -f $start, $end
+        if (Test-Path -LiteralPath $reviewPath -PathType Leaf) {
+            try {
+                $existingReview = Get-Content -Raw -Encoding UTF8 -LiteralPath $reviewPath | ConvertFrom-Json
+                for ($scenarioNumber = $start; $scenarioNumber -le $end; $scenarioNumber++) {
+                    $scenarioId = 'case-{0:D3}' -f $scenarioNumber
+                    $scenario = $scenarioById[$scenarioId]
+                    $reviewProperty = $existingReview.reviews.PSObject.Properties[$scenarioId]
+                    if ($null -eq $reviewProperty) {
+                        continue
+                    }
+                    $review = $reviewProperty.Value
+                    $reviewIsCurrent = (
+                        $review.source_sha256 -eq $scenario.source_sha256 `
+                        -and $review.fixture_sha256 -eq $scenario.fixture_sha256 `
+                        -and $review.expected_sha256 -eq $scenario.expected_sha256
+                    )
+                    if ($reviewIsCurrent -and $review.checks.gold_supported -ne $true) {
+                        $needsDistill = $true
+                        break
+                    }
+                }
+            } catch {
+                # The review loop below will regenerate malformed reports.
+            }
         }
     }
     if ($needsDistill) {
@@ -72,6 +123,11 @@ if ($LASTEXITCODE -ne 0) {
 if ($LASTEXITCODE -ne 0) {
     throw '평가 v2 입력·기대결과 봉인에 실패했습니다.'
 }
+$manifestPayload = Get-Content -Raw -Encoding UTF8 -LiteralPath $Manifest | ConvertFrom-Json
+$scenarioById = @{}
+foreach ($scenario in $manifestPayload.scenarios) {
+    $scenarioById[$scenario.scenario_id] = $scenario
+}
 
 $reviewReports = @()
 for ($start = 1; $start -le 150; $start += 5) {
@@ -85,11 +141,22 @@ for ($start = 1; $start -le 150; $start += 5) {
             $existingReview = Get-Content -Raw -Encoding UTF8 -LiteralPath $path | ConvertFrom-Json
             $existingRecords = @($existingReview.reviews.PSObject.Properties.Value)
             $existingRejected = @($existingRecords | Where-Object { $_.approved -ne $true })
+            $hashMismatch = @($existingReview.reviews.PSObject.Properties | Where-Object {
+                $scenario = $scenarioById[$_.Name]
+                -not $scenario `
+                -or $_.Value.source_sha256 -ne $scenario.source_sha256 `
+                -or $_.Value.fixture_sha256 -ne $scenario.fixture_sha256 `
+                -or $_.Value.expected_sha256 -ne $scenario.expected_sha256
+            })
             $needsReview = (
                 $existingRecords.Count -ne $reviewedCount `
                 -or $existingRejected.Count -gt 0 `
+                -or $hashMismatch.Count -gt 0 `
                 -or $existingReview.reviewer_model -ne $Model
             )
+            if ($hashMismatch.Count -gt 0) {
+                $needsReview = $true
+            }
         } catch {
             $needsReview = $true
         }

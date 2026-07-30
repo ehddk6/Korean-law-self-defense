@@ -342,8 +342,8 @@ def approve_gold_reviews(manifest_path: Path, report_paths: list[Path]) -> dict[
             raise ValueError(f"gold review 보고서 형식이 올바르지 않습니다: {path.name}")
         reviewer_model = str(report.get("reviewer_model") or "").strip()
         reviewer = str(report.get("reviewer_id") or "").strip()
-        if not reviewer_model or reviewer_model == "gpt-5.5" or not reviewer:
-            raise ValueError("gold reviewer는 평가 실행 모델 gpt-5.5와 달라야 합니다.")
+        if not reviewer_model or reviewer_model == "gpt-5.6-terra" or not reviewer:
+            raise ValueError("gold reviewer는 평가 실행 모델 gpt-5.6-terra와 달라야 합니다.")
         reviewers.add(reviewer)
         reviewer_models.add(reviewer_model)
         reports.append(report)

@@ -234,7 +234,7 @@ def _write_official_case(root: Path, slot: dict[str, Any], detail: dict[str, Any
         "record": masked_record,
         "output_contract": {
             "decision_status": "ready|conditional|abstain",
-            "outcome": "affirmed|reversed-remanded|dismissed|granted|mixed|unknown",
+            "outcome": "affirmed|reversed-remanded|dismissed|granted|acquitted|convicted|mixed|unknown",
             "issues": "핵심 법률쟁점 문구 배열",
             "adverse_points": "반대 결론을 지지하는 중요 논리 배열",
         },
@@ -268,15 +268,46 @@ def _write_official_case(root: Path, slot: dict[str, Any], detail: dict[str, Any
     )
 
 
-def _fixture_label_leak(text: str) -> bool:
+def _additional_direct_conclusion(text: str) -> bool:
     return bool(
+        re.search(
+            r"(?:정신질환|정신질환으로).{0,100}(?:자살|자해).{0,100}(?:추단|인정|여지)|"
+            r"거래손실.{0,100}(?:계약.{0,40}(?:만료|중도해지)|만료|중도해지).{0,100}(?:확정|손실)|"
+            r"보이스피싱.{0,100}(?:알고|가담).{0,100}단정.{0,60}어렵|"
+            r"업무상.{0,100}(?:긴장|스트레스).{0,100}(?:혈압|상병).{0,100}(?:상당인과|이어졌|인정)|"
+            r"원심의\s*판단.{0,40}(?:수긍|어렵)|원심.{0,100}(?:항고심|자료).{0,100}(?:판단했어야|심리.{0,30}판단했어야)|"
+            r"오기.{0,100}(?:충분|명백).{0,100}(?:사안|인정)|보증금.{0,100}(?:심리|판단)했어야|"
+            r"판시\s*범죄사실|유죄\s*전제|양형\s*판단|신상정보\s*등록",
+            text,
+            flags=re.M,
+        )
+    )
+
+
+def _fixture_label_leak(text: str) -> bool:
+    return bool(_additional_direct_conclusion(text) or
         re.search(
             r"(^\s*(?:【\s*)?주\s*문(?:\s*】)?\s*$|환송\s*후|파기\s*사유|파기의\s*범위|파기하여야\s*한다|"
             r"위법하다고\s*볼\s*수\s*없|(?:지급|배상|반환)할\s*의무가\s*(?:있|없)|"
             r"(?:원심(?:의)?\s*(?:판단|결론)|결론).{0,60}정당|그런데도\s*원심|"
             r"이를\s*지적하는.{0,40}(?:주장|상고이유).{0,20}정당|"
             r"^\s*\d*\.?\s*(?:소\s*)?결\s*론\s*$|"
-            r"판결에\s*영향을\s*미친\s*잘못|원심.{0,120}(?:법리.{0,20}오해|수긍할\s*수\s*없))",
+            r"판결에\s*영향을\s*미친\s*잘못|재판에\s*영향을\s*미친\s*위법|"
+            r"원심.{0,120}(?:법리.{0,20}오해|수긍할\s*수\s*없|수긍하기\s*어렵)|"
+            r"사망.{0,120}(?:종료|각하|중단)|(?:수긍|인정|단정|추단).{0,60}어렵|"
+            r"상당인과관계.{0,100}인정할\s*수\s*있|처분은\s*위법|"
+            r"계약.{0,100}(?:만료|종료).{0,160}(?:손해|손실).{0,100}(?:확정|발생)|"
+            r"상상적\s*경합|즉시항고.{0,100}중지|파산절차.{0,100}(?:계속|속행|취소)|"
+            r"공소사실.{0,100}특정|문서.{0,100}동일성.{0,100}(?:유무|실체)|"
+            r"원심.{0,100}(?:판단|결론).{0,100}정당|판단누락.{0,100}(?:영향|결과).{0,100}없|"
+            r"불법감청.{0,80}해당하지|증거능력.{0,100}배제.{0,80}없|"
+            r"개인정보.{0,100}유출.{0,80}해당하지|양형의\s*이유|벌금형을\s*선택|선고형의\s*결정|"
+            r"임차권.{0,120}대항|임대인.{0,120}(?:지위|승계)|업무방해.{0,120}별개.{0,80}범죄|"
+            r"(?:보이스피싱|전화금융사기).{0,180}(?:알았|생각).{0,100}(?:단정|인정).{0,80}어렵|"
+            r"재산분할청구권.{0,100}파산재단|수계.{0,100}(?:대상|아니)|"
+            r"업무.{0,80}(?:상|수행).{0,100}인과관계.{0,100}(?:인정|있)|"
+            r"동일성.{0,100}(?:실체|유무).{0,100}판단|충분한.{0,100}(?:근거|공포)|"
+            r"(?:원고|당사자).{0,80}(?:소송|소).{0,100}사망.{0,100}종료)",
             text,
             flags=re.M,
         )
@@ -296,7 +327,10 @@ def _masked_record(detail: dict[str, Any]) -> str:
     if case_number:
         text = text.replace(case_number, "[사건번호 비공개]")
     # 독립 blind 검토에서 확인된 공식 판례 본문 내 실명은 fixture에 남기지 않는다.
-    text = text.replace("최계월", "[PERSON_001]")
+    for name, token in (("최계월", "[PERSON_001]"), ("최인식", "[PERSON_002]")):
+        text = text.replace(name, token)
+    text = re.sub(r"(?m)^\s*(?:재판장|대법관|판사)\b[^\n]*$", "", text)
+    text = re.sub(r"(?:재판장|대법관|판사)\s+[가-힣]{2,4}", "", text)
     text = re.sub(r"【\s*주\s*문\s*】[\s\S]*?(?=【\s*(?:이\s*유|청\s*구\s*취\s*지)\s*】)", "", text)
     text = re.sub(r"(?im)^\s*(?:주\s*문|결\s*론)\s*$[\s\S]*?(?=^\s*(?:이\s*유|청\s*구\s*취\s*지|\d+\.)\s*$)", "", text)
     reason_match = re.search(r"【\s*이\s*유\s*】", text)
@@ -330,7 +364,22 @@ def _masked_record(detail: dict[str, Any]) -> str:
     decisive = re.compile(
         r"(주문과 같이|파기(?:하고|한다|하여야|사유|의\s*범위|할\s*수)|환송(?:한다|하기로|\s*후)|"
         r"상고를 기각|청구를 기각|소를 각하|처분을 취소|이유 있(?:다|어)|이유 없(?:다|어)|"
-        r"판결에\s*영향을\s*미친|원심.{0,160}(?:잘못|위법|수긍할\s*수|법리.{0,20}오해)|"
+        r"판결에\s*영향을\s*미친|재판에\s*영향을\s*미친\s*위법|"
+        r"원심.{0,160}(?:잘못|위법|수긍할\s*수|수긍하기\s*어렵|법리.{0,20}오해)|"
+        r"사망.{0,120}(?:종료|각하|중단)|(?:수긍|인정|단정|추단).{0,60}어렵|"
+        r"상당인과관계.{0,100}인정할\s*수\s*있|처분은\s*위법|"
+        r"계약.{0,100}(?:만료|종료).{0,160}(?:손해|손실).{0,100}(?:확정|발생)|"
+        r"상상적\s*경합|즉시항고.{0,100}중지|파산절차.{0,100}(?:계속|속행|취소)|"
+        r"공소사실.{0,100}특정|문서.{0,100}동일성.{0,100}(?:유무|실체)|"
+        r"원심.{0,100}(?:판단|결론).{0,100}정당|판단누락.{0,100}(?:영향|결과).{0,100}없|"
+        r"불법감청.{0,80}해당하지|증거능력.{0,100}배제.{0,80}없|"
+        r"개인정보.{0,100}유출.{0,80}해당하지|양형의\s*이유|벌금형을\s*선택|선고형의\s*결정|"
+        r"임차권.{0,120}대항|임대인.{0,120}(?:지위|승계)|업무방해.{0,120}별개.{0,80}범죄|"
+        r"(?:보이스피싱|전화금융사기).{0,180}(?:알았|생각).{0,100}(?:단정|인정).{0,80}어렵|"
+        r"재산분할청구권.{0,100}파산재단|수계.{0,100}(?:대상|아니)|"
+        r"업무.{0,80}(?:상|수행).{0,100}인과관계.{0,100}(?:인정|있)|"
+        r"동일성.{0,100}(?:실체|유무).{0,100}판단|충분한.{0,100}(?:근거|공포)|"
+        r"(?:원고|당사자).{0,80}(?:소송|소).{0,100}사망.{0,100}종료|"
         r"받아들이기\s*어렵|받아들일\s*수\s*없|잘못이\s*(?:있|없)|"
         r"위법하다고\s*볼\s*수\s*없|(?:지급|배상|반환)할\s*의무가\s*(?:있|없)|"
         r"(?:원심(?:의)?\s*(?:판단|결론)|결론).{0,60}정당|그런데도\s*원심|"
@@ -348,7 +397,7 @@ def _masked_record(detail: dict[str, Any]) -> str:
         kept_sentences = []
         for sentence in re.split(r"(?<!\d)(?<=\.)\s+", paragraph):
             sentence = sentence.strip()
-            if not sentence or decisive.search(sentence):
+            if not sentence or decisive.search(sentence) or _additional_direct_conclusion(sentence):
                 continue
             kept_sentences.append(sentence)
         if kept_sentences:
@@ -370,6 +419,10 @@ def _masked_record(detail: dict[str, Any]) -> str:
 def _supreme_blind_context(text: str) -> str:
     # 대법원 판단부는 사건별 직접 결론을 포함하는 경우가 많다. 첫 사실관계 구획 뒤의
     # 다음 본문 항목부터는 제외해, 잠금 입력에는 분석 가능한 사실만 남긴다.
+    court_analysis = re.search(r"대법원의\s*판단", text)
+    if court_analysis and court_analysis.start() >= 300:
+        return text[: court_analysis.start()]
+
     next_main = re.search(r"(?m)^\s*2\.\s+", text[300:])
     if next_main:
         return text[: 300 + next_main.start()]
@@ -424,14 +477,25 @@ def _classify_outcome(full_text: str) -> str:
     )
     if re.search(r"(?:원고|신청인|청구인)(?:들)?의.{0,60}청구를\s*모두\s*기각", order, flags=re.S):
         return "dismissed"
+    if re.search(
+        r"(?:소|청구)(?:를)?\s*(?:전부|모두)\s*각하|"
+        r"(?:주위적|예비적).{0,80}(?:소|청구).{0,40}각하",
+        order,
+        flags=re.S,
+    ):
+        return "dismissed"
     if re.search(r"파기.{0,80}환송", order, flags=re.S):
         return "mixed" if has_dismissal else "reversed-remanded"
     if "파기" in order:
         return "mixed"
+    if "무죄" in order:
+        return "mixed" if (has_dismissal or "나머지" in order) else "acquitted"
+    if re.search(r"(?:벌금|징역|금고)\s*\d", order):
+        return "mixed" if (has_dismissal or "나머지" in order) else "convicted"
     affirmative = bool(
         re.search(
             r"(지급하라|지급한다|이행하라|이행한다|명의개서|이혼한다|친권자|양육비|"
-            r"처분을\s*취소|제1심판결을\s*취소|무죄|벌금\s*\d|징역\s*\d)",
+            r"처분을\s*취소|제1심판결을\s*취소|벌금\s*\d|징역\s*\d)",
             order,
         )
     )

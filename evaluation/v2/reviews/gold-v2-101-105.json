@@ -1,0 +1,77 @@
+{
+  "format": "legal-workbench-gold-review-v1",
+  "reviewer_id": "reviewer-b-v2",
+  "reviewer_model": "gpt-5.6-sol",
+  "reviews": {
+    "case-101": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "6961995e26043ea5cfe85ebbe4c56ccd4df4f1545c76ac70f28c13bbdc66c952",
+      "fixture_sha256": "71158296ce254d043f094c5a8cdea12dd28a7c6ffddd714859f10c541e9e6528",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 전부 기각으로 affirmed와 맞고, fixture는 사건번호·source ID·주문·직접 결론 및 개인정보를 제거하면서 충분한 분석 맥락을 보존했다. issues/adverse의 근거 문구가 source 원문에 확인된다.",
+      "source_sha256": "0370a587057790ed5fe6d87e08fa04c17696dc4c2c782a8220bb156efc617dd3"
+    },
+    "case-102": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "f930311f57d655e0152e9137dc08bf693f69d48f2e4a70327708b288cf0596c6",
+      "fixture_sha256": "cfb2ccaeb244255b52ef28b3b2464322e146c096a589c8ecf34973a6f0c2b1ce",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 기각으로 affirmed와 맞고, fixture에는 사건번호·source ID·주문·직접 결론이나 개인정보가 없으며 충분한 법리 맥락이 있다. issues/adverse가 source 원문으로 지지된다.",
+      "source_sha256": "2471319cda2dc9c6ff3f7f78493910f82876abcf9e17a00439ce5c54b776b27f"
+    },
+    "case-103": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "7d150e56fbf9e8f061d260c87ad9f4fca5ecda42b45398ccc69834f8ba3a9243",
+      "fixture_sha256": "d25c2daecf316471ee34888ad6b32ba4e1929b386930f0bcd0c0abb6d02cdcf6",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심 파기·환송으로 reversed-remanded와 맞고, fixture는 사건번호·source ID·주문·최종 결론 및 개인정보를 제거했다. facts·법리가 충분하며 issues/adverse 근거가 source에 확인된다.",
+      "source_sha256": "4e829233b17b31373a2491248146ba8431c1a4206ed29a98e85f2a6cbde4ba46"
+    },
+    "case-104": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "93fb64a67b5330e64287ddded6ffc55daf985079e6e5a56c00ccf8bacccb6f65",
+      "fixture_sha256": "2ea735cac5d7f1c1cdcc79c98bd064ba9c67720f642a391523c22860463a84d6",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 기각으로 affirmed와 맞고, fixture에는 사건번호·source ID·주문·대법원 직접 결론 및 개인정보가 없다. 원심 판단과 법령 등 분석 맥락이 충분하고 issues/adverse가 source로 지지된다.",
+      "source_sha256": "38c1e0588f9da6047ef64bb91484b4d7502ba7e59feebf69ee9c4c6bca599521"
+    },
+    "case-105": {
+      "approved": true,
+      "checks": {
+        "fixture_blind": true,
+        "fixture_pii_free": true,
+        "gold_supported": true,
+        "label_correct": true,
+        "source_bound": true
+      },
+      "expected_sha256": "5003fdcbcc47210cb4ee8cbf8142d2a6bee949fe3c454b9101ad5b38a0522b5e",
+      "fixture_sha256": "c78266a36b40dfdc43875dec9eceb0790c0760ec7d2e156bf555ab2b781ce6c4",
+      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고 기각으로 affirmed와 맞고, fixture는 사건번호·source ID·주문·직접 결론 및 개인정보를 제거하면서 사실과 법리를 충분히 남겼다. issues/adverse의 원문 근거가 모두 확인된다.",
+      "source_sha256": "686063c9aa9d0e22677d7bc22bbbf78e4f75374844e54277e8aca9803ebf7d40"
+    }
+  }
+}

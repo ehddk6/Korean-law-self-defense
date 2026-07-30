@@ -19,11 +19,11 @@ def run_gold_review(
     start: int,
     end: int,
     reviewer_id: str,
-    model: str = "gpt-5.4",
+    model: str = "gpt-5.6-sol",
     output_path: Path,
 ) -> dict[str, Any]:
-    if model == "gpt-5.5":
-        raise ValueError("gold reviewer는 평가 실행 모델 gpt-5.5와 달라야 합니다.")
+    if model == "gpt-5.6-terra":
+        raise ValueError("gold reviewer는 평가 실행 모델 gpt-5.6-terra와 달라야 합니다.")
     reviewer_id = validate_safe_identifier(reviewer_id, field="reviewer_id")
     manifest_path = Path(manifest_path).resolve()
     manifest = load_manifest(manifest_path)
@@ -61,6 +61,7 @@ def run_gold_review(
                 actual_hash = sha256_file(source)
                 if actual_hash != item[f"{prefix}_sha256"]:
                     raise ValueError(f"gold review 전 무결성 검사 실패: {item['scenario_id']}:{prefix}")
+                json.loads(source.read_text(encoding="utf-8"))
                 destination = bundle_root / item["scenario_id"] / f"{prefix}.json"
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, destination)
@@ -94,8 +95,11 @@ def run_gold_review(
             "[CASE_NUMBER_001], [BIRTH_DATE_001], 010-****-**** 같은 비식별 토큰·마스킹 값은 개인정보 누출이 아니므로 "
             "그 자체를 이유로 fixture_pii_free=false로 두지 않는다. masked-official-decision의 fixture_blind는 목표 주문·직접 "
             "결론이 없고 300자 이상의 사실·당사자 주장·법리 중 분석 가능한 맥락이 있으면 true다. temporal은 길이 기준을 "
-            "적용하지 않고 공식 조문, 질문, 사실, 복수 선택지가 있으면 충분하다. transitional-provision에서 특정 부칙 원문이 "
+            "적용하지 않고 공식 조문, 질문, 사실, 복수 선택지가 있으면 충분하다. 연·월·일만 있는 행위일·판결일은 개인정보가 아니며, "
+            "출생 표지나 개인 식별 맥락이 있는 생년월일만 fixture_pii_free=false 사유가 된다. transitional-provision에서 특정 부칙 원문이 "
             "없는 것은 verify-specific-addendum/abstain을 시험하는 의도된 결손이므로 fixture_blind 실패가 아니다. "
+            "세 입력 파일은 실행기가 UTF-8 JSON으로 파싱한 뒤 전달했다. 문자열 안의 따옴표·개행이나 표시상 문장 종결만으로 JSON이 "
+            "유효하지 않다고 판단하지 않는다. JSON 파싱 실패는 검토가 시작되기 전에 실행기가 중단한다. "
             "결론 누출 방지를 위해 관련 없는 일부 문장이나 목표 "
             "법원의 판단부 전체를 추가로 제거한 것만으로 false로 두지 않는다. 추정으로 승인하지 말고 한 항목이라도 "
             "실패하면 approved=false 및 해당 check=false로 기록한다. notes에는 사건별 근거를 짧게 쓴다. "
@@ -112,17 +116,21 @@ def run_gold_review(
             "--cd", str(blind_root), "--color", "never", "--model", model,
             "-c", 'model_reasoning_effort="high"',
         ]
-        completed = subprocess.run(
-            command,
-            input=prompt,
-            text=True,
-            encoding="utf-8",
-            capture_output=True,
-            timeout=1800,
-            check=False,
-            env=_sanitized_codex_env(),
-        )
-        if completed.returncode:
+        completed = None
+        for attempt in range(2):
+            completed = subprocess.run(
+                command,
+                input=prompt,
+                text=True,
+                encoding="utf-8",
+                capture_output=True,
+                timeout=1800,
+                check=False,
+                env=_sanitized_codex_env(),
+            )
+            if not completed.returncode:
+                break
+        if completed is None or completed.returncode:
             raise RuntimeError(_codex_failure_summary(completed, "독립 gold review 실행 실패"))
         report = json.loads(last_answer.read_text(encoding="utf-8"))
         _validate_review_report(report, selected, reviewer_id, model)

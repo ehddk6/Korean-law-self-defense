@@ -4,12 +4,12 @@
 param(
     [string] $Manifest = 'evaluation\v2\manifest.json',
 
-    [string] $Model = 'gpt-5.5',
+    [string] $Model = 'gpt-5.6-terra',
 
     [ValidateRange(1, 100)]
     [int] $BatchSize = 6,
 
-    [string] $OutputDirectory = 'evaluation\v2\results\v2-blind-v6-gpt55-20260726'
+    [string] $OutputDirectory = 'evaluation\v2\results\v2-blind-v6-gpt56terra-20260728'
 )
 
 Set-StrictMode -Version Latest
