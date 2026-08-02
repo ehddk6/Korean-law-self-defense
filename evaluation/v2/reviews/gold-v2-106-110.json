@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "ca0fca1fa1980f46d98f1723e6547a824bb025236c29e53bc5f129823f833aab",
+      "expected_sha256": "7d3ea061e8a90f7b2573748c59af325ea3fc97490514a2a35c75997c8b6e00ba",
       "fixture_sha256": "2a36e0c922d24eb29f797ba652e53728b31711dc56796376e238161b2f24e561",
-      "notes": "무결성 증명과 source 연결이 유효하고 공식 주문은 파기환송이다. fixture에는 공소사실과 원심 논리만 남아 목표 주문·직접 결론·사건번호·source ID가 없으며, 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 주문은 원심 파기·환송으로 expected outcome과 맞는다. fixture에는 현재 사건번호·source ID·주문·대법원 적용결론이 없고 충분한 사실·원심 논리가 있으며 PII 패턴도 없다. issues/adverse는 원문 법리와 사실로 지지된다.",
       "source_sha256": "daa477571b5447176aba969306214319d54dcaf1f6488c5b7b88cc6347882a0c"
     },
     "case-107": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "a0ca0c357256490198a044b5e7e48c8a1f254a632d5e69678f5f36c765bb67c7",
-      "fixture_sha256": "72dc18877acecd88e412073fcf75beb983f42c9209a076681597f739bd62adde",
-      "notes": "무결성 증명과 source 연결이 유효하고 공식 주문은 무죄이다. fixture에는 목표 주문·최종 결론·사건번호·source ID가 없고 충분한 분석 맥락만 남아 있으며 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "expected_sha256": "705fcb76fcdbf7c895bc5784bae28ecb81c5965297d41bbb82aa28d709e586a4",
+      "fixture_sha256": "a432ed3073a8e854daa924cecc381df49b6f0299c47a27ab394000a602966e2f",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 무죄 주문과 acquitted 라벨이 일치한다. fixture는 현재 사건번호·source ID·주문과 직접 무죄 결론을 제거하면서 충분한 사실·법리·양측 논리를 남겼고 실제 전화번호 등 PII가 없다. expected 쟁점과 반대 논리는 원문으로 지지된다.",
       "source_sha256": "e0547bd936b74105af0368caf95cae84c2de99b5aebde1f10a42dc0e17d2c9f0"
     },
     "case-108": {
@@ -40,23 +40,23 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "8444feaebe6e62dfbb2fa299b77838e0ed00eb8084a36977388c41663da5e44d",
-      "fixture_sha256": "24b986975a0f00897448facf3616e18a688bb63a828ded878317c3ae581af5c2",
-      "notes": "무결성 증명과 source 연결이 유효하고 공식 주문은 무죄이다. fixture에는 목표 주문·최종 결론·사건번호·source ID가 없고 충분한 분석 맥락만 남아 있으며 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "expected_sha256": "412b03fd978362cc35c50789d706625183ab678b51a5bbec9f3a3e81c2ccc135",
+      "fixture_sha256": "de3ce4ac2388e458a310d2cefd9060cfa4aa9a600a4d1e3eb0c4218d013ab1c3",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 공식 무죄 주문과 acquitted 라벨이 일치한다. fixture에는 현재 사건번호·source ID·주문·직접 무죄 결론이 없고 분석 가능한 사실과 법리가 충분하며 휴대전화번호는 생략되어 PII 누출이 없다. issues/adverse도 원문이 뒷받침한다.",
       "source_sha256": "d4f8b80a544de0f314d226f91681f592eb21fab2b9c2d90a252b37f546a57bdf"
     },
     "case-109": {
-      "approved": false,
+      "approved": true,
       "checks": {
-        "fixture_blind": false,
+        "fixture_blind": true,
         "fixture_pii_free": true,
         "gold_supported": true,
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "838f6bbb45e11faaaa82cff0a3b0e05cb1f1b37fcafb3f6e17c9c591b48ac6a6",
-      "fixture_sha256": "cc8e8a097ceeefe8019934bfd773b0080bafc8a3652452816681afe6bad177a0",
-      "notes": "무결성·공식 유죄 주문·gold 근거·비식별 상태는 적합하다. 그러나 fixture가 ‘범죄사실’로 시작하고 피고인 주장을 받아들이지 않는다는 판단, 벌금형 처단범위와 ‘이 사건 범행’ 양형판단까지 포함해 목표 유죄 결론을 직접 누출한다.",
+      "expected_sha256": "8ad9e1fff9bd9e36a3f9801f3802147f50dfd74cb98773a17e5cc13fb338809a",
+      "fixture_sha256": "87ebed2db947ff9d1b9fe4c6e54bacae17ce7e249a83d689b24725dd0c0866e8",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 벌금형 등 유죄 주문은 convicted 라벨과 맞는다. fixture는 현재 사건번호·source ID·주문과 법원의 직접 적용결론을 제거하고 충분한 행위·증거 맥락을 남겼다. 가명·공소외 표기와 생략 주소만 있어 PII 누출이 없고 issues/adverse는 원문으로 지지된다.",
       "source_sha256": "cbca0402c937161724db4c0dd8799302ab8b01f4c2e596e5460b5c4c7a90a746"
     },
     "case-110": {
@@ -68,9 +68,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "adef6488178eaa81e16bfb781eafcdfd442d6777c4ad56239adfa0ed4ada8695",
-      "fixture_sha256": "a12e544d596d4d574744b7b1953ee8e9f762a6bd25aaefd05f6df305f61d42c0",
-      "notes": "무결성 증명과 source 연결이 유효하고 상고 전부 기각은 affirmed와 일치한다. fixture에는 목표 주문·최종 결론·사건번호·source ID가 없고 충분한 사실·법리 맥락이 있으며 개인정보 패턴도 없다. issues/adverse는 원문으로 지지된다.",
+      "expected_sha256": "8d0de44681099e8899df9db5dab27ac6a8336ab14a5c0efdcc774794b17af2bd",
+      "fixture_sha256": "0edf543ede077acc1e78b811122ca1c733901773c4a088ccf2dc6801bc2cdc01",
+      "notes": "세 파일 해시와 source 연결이 일치한다. 상고 전부 기각 주문은 원심 유지인 affirmed 라벨과 맞는다. fixture는 현재 사건번호·source ID·주문 및 변론재개 여부의 직접 결론을 제거하고 충분한 법리·사실·상반 자료를 남겼으며 PII 패턴이 없다. expected 쟁점과 반대 논리는 원문으로 지지된다.",
       "source_sha256": "d31f1bbb209f59ffc5b25d19ad0f08851662667f422598cfe8d6af61f62648a2"
     }
   }

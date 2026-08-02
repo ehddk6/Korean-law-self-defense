@@ -23,6 +23,15 @@ OFFICIAL_P1_HOST_SUFFIXES = {
     "scourt.go.kr",
     "ccourt.go.kr",
 }
+ADVERSARIAL_KINDS = frozenset(
+    {
+        "fabricated-citation",
+        "prompt-injection",
+        "ocr-corruption",
+        "pii-leakage",
+        "conflicting-evidence",
+    }
+)
 THRESHOLDS = {
     "fabricated_citations": 0,
     "wrong_applicable_law": 0,
@@ -195,10 +204,6 @@ def reset_v2_gold_cycle(manifest_path: Path) -> dict[str, Any]:
 def _clear_gold_approvals(payload: dict[str, Any]) -> int:
     cleared = 0
     for item in payload["scenarios"]:
-        if item["kind"] in {
-            "fabricated-citation", "prompt-injection", "ocr-corruption", "pii-leakage", "conflicting-evidence"
-        }:
-            continue
         item["gold_review_status"] = "pending"
         item.pop("gold_review_path", None)
         item.pop("gold_review_sha256", None)
@@ -306,17 +311,14 @@ def seal_manifest_integrity(manifest_path: Path) -> dict[str, Any]:
     root = manifest_path.parent
     sealed = 0
     for item in payload["scenarios"]:
-        adversarial = item["kind"] in {
-            "fabricated-citation", "prompt-injection", "ocr-corruption", "pii-leakage", "conflicting-evidence"
-        }
+        adversarial = _is_adversarial(item)
         keys = ("fixture", "expected") if adversarial else ("source", "fixture", "expected")
         for key in keys:
             relative = _validated_relative_file(root, item.get(f"{key}_path"), f"{key}_path")
             item[f"{key}_sha256"] = sha256_file(root / relative)
-        if not adversarial:
-            item["gold_review_status"] = "pending"
-            item.pop("gold_review_path", None)
-            item.pop("gold_review_sha256", None)
+        item["gold_review_status"] = "pending"
+        item.pop("gold_review_path", None)
+        item.pop("gold_review_sha256", None)
         sealed += 1
     payload["sealed_at"] = utc_now()
     if payload.get("evaluation_version") == 2:
@@ -361,13 +363,9 @@ def approve_gold_reviews(manifest_path: Path, report_paths: list[Path]) -> dict[
             if scenario_id in combined:
                 raise ValueError(f"gold review 시나리오가 중복됐습니다: {scenario_id}")
             combined[scenario_id] = review
-    required = {
-        item["scenario_id"]
-        for item in payload["scenarios"]
-        if item["kind"] not in {"fabricated-citation", "prompt-injection", "ocr-corruption", "pii-leakage", "conflicting-evidence"}
-    }
+    required = {item["scenario_id"] for item in payload["scenarios"]}
     if set(combined) != required:
-        raise ValueError(f"gold review는 공식 시나리오 150건을 정확히 한 번씩 포함해야 합니다: missing={sorted(required-set(combined))[:5]}")
+        raise ValueError(f"gold review는 180개 시나리오를 정확히 한 번씩 포함해야 합니다: missing={sorted(required-set(combined))[:5]}")
     by_id = {item["scenario_id"]: item for item in payload["scenarios"]}
     for scenario_id, review in combined.items():
         item = by_id[scenario_id]
@@ -377,7 +375,10 @@ def approve_gold_reviews(manifest_path: Path, report_paths: list[Path]) -> dict[
             for key in ("source_bound", "label_correct", "fixture_blind", "fixture_pii_free", "gold_supported")
         ):
             raise ValueError(f"승인되지 않은 gold review가 있습니다: {scenario_id}")
-        for key in ("source_sha256", "fixture_sha256", "expected_sha256"):
+        hash_keys = ("fixture_sha256", "expected_sha256")
+        if not _is_adversarial(item):
+            hash_keys = ("source_sha256",) + hash_keys
+        for key in hash_keys:
             if review.get(key) != item.get(key):
                 raise ValueError(f"gold review 해시가 현재 manifest와 다릅니다: {scenario_id}:{key}")
     bundle_path = root / "gold-review-bundle.json"
@@ -431,44 +432,43 @@ def manifest_status(path: Path, *, check_certification: bool = True) -> dict[str
     invalid_hashes: list[str] = []
     invalid_gold_reviews: list[str] = []
     for item in complete:
-        for key in ("fixture_path", "expected_path"):
-            value = item.get(key)
+        adversarial = _is_adversarial(item)
+        input_keys = ("fixture", "expected") if adversarial else ("source", "fixture", "expected")
+        for key in input_keys:
+            value = item.get(f"{key}_path")
             if not value or not (Path(path).parent / value).is_file():
-                missing_required.append(f"{item['scenario_id']}:{key}")
-        adversarial = item["kind"] in {
-            "fabricated-citation",
-            "prompt-injection",
-            "ocr-corruption",
-            "pii-leakage",
-            "conflicting-evidence",
-        }
+                missing_required.append(f"{item['scenario_id']}:{key}_path")
         if not adversarial and not _is_official_p1_url(str(item.get("source_url") or "")):
             invalid_official_sources.append(item["scenario_id"])
-        for key in (("fixture", "expected") if adversarial else ("source", "fixture", "expected")):
+        for key in input_keys:
             path_value = item.get(f"{key}_path")
             hash_value = item.get(f"{key}_sha256")
-            if not path_value or not hash_value:
-                invalid_hashes.append(f"{item['scenario_id']}:{key}")
-        if not adversarial:
-            review_path = (Path(path).parent / str(item.get("gold_review_path") or "")).resolve()
+            candidate = (Path(path).parent / str(path_value or "")).resolve()
             if (
-                item.get("gold_review_status") != "approved"
-                or not review_path.is_relative_to(Path(path).parent.resolve())
-                or not review_path.is_file()
-                or sha256_file(review_path) != item.get("gold_review_sha256")
-            ):
-                invalid_gold_reviews.append(item["scenario_id"])
-                continue
-            candidate = (Path(path).parent / str(path_value)).resolve()
-            if (
-                not candidate.is_relative_to(Path(path).parent.resolve())
+                not path_value
+                or not hash_value
+                or not candidate.is_relative_to(Path(path).parent.resolve())
                 or not candidate.is_file()
                 or sha256_file(candidate) != hash_value
             ):
                 invalid_hashes.append(f"{item['scenario_id']}:{key}")
+        review_path = (Path(path).parent / str(item.get("gold_review_path") or "")).resolve()
+        if (
+            item.get("gold_review_status") != "approved"
+            or not review_path.is_relative_to(Path(path).parent.resolve())
+            or not review_path.is_file()
+            or sha256_file(review_path) != item.get("gold_review_sha256")
+        ):
+            invalid_gold_reviews.append(item["scenario_id"])
+            continue
         try:
             expected = _load_scenario_record(Path(path).parent, item.get("expected_path"), item["scenario_id"])
-            if not expected.get("decision_status") or not isinstance(expected.get("expected_issues", []), list):
+            expected_valid = (
+                bool(expected.get("decision_status")) and bool(expected.get("required_action"))
+                if adversarial
+                else bool(expected.get("decision_status")) and isinstance(expected.get("expected_issues", []), list)
+            )
+            if not expected_valid:
                 invalid_expected_records.append(item["scenario_id"])
         except (ValueError, FileNotFoundError, json.JSONDecodeError):
             invalid_expected_records.append(item["scenario_id"])
@@ -905,6 +905,10 @@ def _is_official_p1_url(value: str) -> bool:
     return parsed.scheme == "https" and any(
         host == suffix or host.endswith(f".{suffix}") for suffix in OFFICIAL_P1_HOST_SUFFIXES
     )
+
+
+def _is_adversarial(item: dict[str, Any]) -> bool:
+    return item["kind"] in ADVERSARIAL_KINDS
 
 
 def _validated_relative_file(root: Path, value: Any, field: str) -> str:

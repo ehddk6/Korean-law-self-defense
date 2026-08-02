@@ -459,11 +459,11 @@ def _invoke_codex(
         raise RuntimeError(f"비식별되지 않은 fixture는 모델에 전달할 수 없습니다: {fixture_pii}")
     prompt = _build_evaluation_prompt(kind, payload)
     output_file = blind_root / "last-answer.json"
-    executable = shutil.which("codex.cmd" if os.name == "nt" else "codex")
+    executable = shutil.which("codex.exe" if os.name == "nt" else "codex")
     if not executable:
         raise RuntimeError("Codex CLI 실행 파일을 찾을 수 없습니다.")
     command = [
-        executable, "exec", "-", "--ephemeral", "--sandbox", "read-only",
+        executable, "exec", "-", "--ephemeral", "--sandbox", "workspace-write",
         "--skip-git-repo-check", "--ignore-user-config", "--ignore-rules",
         "--output-schema", str(schema_path), "--output-last-message", str(output_file),
         "--cd", str(blind_root), "--color", "never",

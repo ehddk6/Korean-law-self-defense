@@ -12,9 +12,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "b07e26130583af9204e8ba7538c0f8ac286965427aa5473c1b01b406c0381a11",
+      "expected_sha256": "016193354053a39a2b4470a7090816bce1c69521892b2dfa9dd61f4665e6767b",
       "fixture_sha256": "d97424e7ef50476d2a4a81760842cc86a9ae2931ad45a61df575fc488299cc41",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 상고기각으로 affirmed가 맞고, 쟁점·불리한 사정은 원문으로 지지된다. fixture에는 목표 사건번호·source ID·주문·직접 결론 및 개인정보가 없다.",
+      "notes": "해시 결속과 source 연결이 일치하고, 상고기각 주문은 affirmed에 부합한다. fixture에는 목표 주문·직접 결론·현재 사건번호·source ID와 개인정보가 없으며 쟁점과 불리한 논리는 원문 사실로 지지된다.",
       "source_sha256": "434d4400c3a9143a33dee6c5c55dd43307ff5d7033ade0160c9e1b2fedbac476"
     },
     "case-077": {
@@ -26,9 +26,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "b49af4f97e377fe286459aac2fa8670796ba7250e862d56a3da4e422f3948d35",
+      "expected_sha256": "ffd23e2c3da410f7b18e976d6c9d2496a75fcc8e8de9b31bbb71c4edf61e8b8c",
       "fixture_sha256": "b555584f768510ef22e2c2cea0ee558f4dd094a98459515bc12a43d8fd7117a7",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 쌍방 상고기각으로 affirmed가 맞으며 expected 쟁점·불리한 논리는 원문에 근거한다. fixture는 대법원의 직접 결론을 제거했고 비식별 사건번호 토큰 외 개인정보가 없다.",
+      "notes": "해시 결속과 source 연결이 일치하고, 쌍방 상고기각 주문은 affirmed에 부합한다. fixture의 원심 판단은 분석 맥락일 뿐 목표 법원의 주문·직접 결론 누출이 아니며 개인정보도 없고 expected 쟁점·불리한 논리는 원문으로 지지된다.",
       "source_sha256": "adab6981585906c5b50e9a597096093ceff38f884c1b8e113e263dfb9a87844b"
     },
     "case-078": {
@@ -40,9 +40,9 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "f1bdf03fe50346f9f99e6d1fdde830035822f6130999457ad0985735b3e45f46",
+      "expected_sha256": "50191fbc41693b08bbd73bc1fc805d6f50a098be4e44be5732fb4243b3ab5b20",
       "fixture_sha256": "2a37d5d2d0c5b528ad39cd4e59edf34737b06dd04d4dcaeded239393e37fc2b3",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 피고 상고기각으로 affirmed가 맞고, 권한·부정수급 사유·제재 내용과 불리한 사정이 원문에 있다. fixture는 사실관계만 제공하며 참여자 이름은 비식별 마스킹되어 있다.",
+      "notes": "해시 결속과 source 연결이 일치하고, 상고기각 주문은 affirmed에 부합한다. fixture에는 사실관계만 남아 있고 목표 결론·현재 사건번호·source ID가 없으며 부분 마스킹된 성명은 개인정보 누출이 아니다. expected 항목도 원문에서 지지된다.",
       "source_sha256": "cd65834dee618c88918fed7f5e31144c5ebc0cd3c4d1201af4d6b444d17a6ec5"
     },
     "case-079": {
@@ -54,23 +54,23 @@
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "70d338a8dbf37e29eed038e9ec498c26c2185fd9c851054c910984eca5bbea1c",
+      "expected_sha256": "799ffee3106c4c57f2464aa72e6b30754a4b511ab7cf3ed0fb72eee52346657d",
       "fixture_sha256": "12bd946ec78c3ebb8230832ae6a632090788aff7dd2998de8f59d27479637c9a",
-      "notes": "무결성 증명과 source 연결이 일치한다. 공식 주문은 원심파기·환송으로 reversed-remanded가 맞고, expected 쟁점과 원심 측 불리한 논리가 원문에 명시된다. fixture에는 목표 대법원의 주문·직접 결론과 개인정보가 없다.",
+      "notes": "해시 결속과 source 연결이 일치하고, 원심파기·환송 주문은 reversed-remanded에 부합한다. fixture의 조세심판원 인용 및 원심 판단은 경과·분석 맥락으로 목표 주문이나 대법원 직접 결론이 아니며, 개인정보 없이 충분한 맥락을 제공한다. expected 항목은 원문으로 지지된다.",
       "source_sha256": "a4333831d7abbfab1df6676e3560044c0fc6f9f92f1b8ddedf58e70be7a5b541"
     },
     "case-080": {
-      "approved": false,
+      "approved": true,
       "checks": {
-        "fixture_blind": false,
+        "fixture_blind": true,
         "fixture_pii_free": true,
         "gold_supported": true,
         "label_correct": true,
         "source_bound": true
       },
-      "expected_sha256": "1097a38077606769569c7c28b28ace40a43d6d2848374c65fba8a4b87a10fdda",
-      "fixture_sha256": "1bc565792fa05ea6ca35c71c21745df9b9d49b8ac1c1177b10cf940e06ddd3ba",
-      "notes": "무결성 증명과 source 연결이 일치하고, 공식 주문상 요양불승인처분 취소이므로 granted가 맞다. 쟁점·불리한 사정도 원문으로 지지되고 개인정보는 생략·마스킹되었다. 다만 목표 법원 자체의 핵심 결론인 업무상 돌발상황과 뇌출혈의 상당인과관계 인정 판단이 fixture에 직접 남아 있어 fixture_blind=false이다.",
+      "expected_sha256": "1bb0ef754929157c0e729393c7cea6e354884e7cd02fd806531c38e35a13daa0",
+      "fixture_sha256": "0ec1c87dd4fc032da041036e1fd1c2da6203c4e18dfa604688b3225e5b5d8dc6",
+      "notes": "해시 결속과 source 연결이 일치하고, 요양불승인처분 취소 주문은 granted에 부합한다. fixture는 300자 이상의 사실·당사자 주장 맥락을 유지하면서 법원의 목표 결론·사건번호·source ID를 제거했고 생년월일은 생략되어 개인정보 누출이 없다. expected 항목은 원문으로 지지된다.",
       "source_sha256": "bcf0e0cd1a6f34cf97491d5bb38db0abd5775112027c9a240e06fbb5a5cc09db"
     }
   }

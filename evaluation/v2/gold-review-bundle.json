@@ -1,42 +1,222 @@
 {
-  "created_at": "2026-07-22T08:15:50+00:00",
+  "created_at": "2026-08-02T10:38:06+00:00",
   "format": "legal-workbench-gold-review-bundle-v1",
   "reports": [
     {
-      "path": "reviews/v4-gold-001-025.json",
-      "reviewer_id": "reviewer-a-current",
-      "reviewer_model": "gpt-5.4",
-      "sha256": "75590b73d1f43336d7002d9597dd0ebfc0228df4fb63c4d3bc9e0e0ec05a62d4"
+      "path": "reviews/gold-v2-001-005.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "ab1a84650d0d0ee5003fb61a983dffc46a35f1501b18f9d7c067953967c1c89b"
     },
     {
-      "path": "reviews/v4-gold-026-050.json",
-      "reviewer_id": "reviewer-a-current",
-      "reviewer_model": "gpt-5.4",
-      "sha256": "f688b65a14d69a617c8d44ba24124e982fe476432aa036bdce49e1b1181beade"
+      "path": "reviews/gold-v2-006-010.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "ea941cf7ef11e049445195d2019d3856a7412c365b209f60a8f107431e6f9281"
     },
     {
-      "path": "reviews/v4-gold-051-075.json",
-      "reviewer_id": "reviewer-a-current",
-      "reviewer_model": "gpt-5.4",
-      "sha256": "bfd8e4c896584d04406b57e96c33f30529632163b33437acab339f1bacd2133f"
+      "path": "reviews/gold-v2-011-015.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "131e20fb1c920d185706260333e6bfc2da7f087b61c887005239995de332e122"
     },
     {
-      "path": "reviews/v4-gold-076-100.json",
-      "reviewer_id": "reviewer-b-current",
-      "reviewer_model": "gpt-5.4",
-      "sha256": "516816608c007a610720188959cd304273d04f83855ba045569b0417bd2245ad"
+      "path": "reviews/gold-v2-016-020.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "126fc0068d05081aaba4ea02678e4d50dafaaed5a04374df4f0ead6ceaef42c1"
     },
     {
-      "path": "reviews/v4-gold-101-125.json",
-      "reviewer_id": "reviewer-b-current",
-      "reviewer_model": "gpt-5.4",
-      "sha256": "aafc49bbf5c40177f32453eab52169e0e752e28228c5bf983d9bcb4a18db7908"
+      "path": "reviews/gold-v2-021-025.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "876766fd6a6658e42893d52588d517e231011c015610f7b0cef71495746c127e"
     },
     {
-      "path": "reviews/v4-gold-126-150.json",
-      "reviewer_id": "reviewer-b-current",
-      "reviewer_model": "gpt-5.4",
-      "sha256": "f899d96e712a670b164bfe67599811b0d3aecd4549e7035053a88f341eb3092c"
+      "path": "reviews/gold-v2-026-030.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "4cc0c98d4b659cd2700d9e84ea7d6743298475c37e3ac73b7c7a3a798c993bf5"
+    },
+    {
+      "path": "reviews/gold-v2-031-035.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "5a48c7ada8c3899207dc5c0b00bce0de50a11c765a8bc68058289edbb3e3f735"
+    },
+    {
+      "path": "reviews/gold-v2-036-040.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "75d59b15bd023999947b073a39f35c60ff832f78d98beffcdd52ce2e649b5a0e"
+    },
+    {
+      "path": "reviews/gold-v2-041-045.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "9ec9ad85453ac25100c6332b49ed2e0a80aabdd9d98899a642a6eaae718ce2ab"
+    },
+    {
+      "path": "reviews/gold-v2-046-050.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "4e19f680ce00f4847c67ddcb04ca94566d2ff508b00333652e89e6999e7f4f25"
+    },
+    {
+      "path": "reviews/gold-v2-051-055.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "0f000596e1bf1d6a352434e7aceb7a9c9a70a806b8e8d81e21f90d6acd3447c2"
+    },
+    {
+      "path": "reviews/gold-v2-056-060.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "bebbd8008303d735213fa1a3cfbf77fb9334befbb818871422baa23781db5a33"
+    },
+    {
+      "path": "reviews/gold-v2-061-065.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "a9da32efd49620605ca88637b38c4b6181ed6cb249daf595b05ec049c9440805"
+    },
+    {
+      "path": "reviews/gold-v2-066-070.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "bbd16dc5465ad1ea54f5d912b9473ff2fccbd84c70df868082a3b639aef9be7e"
+    },
+    {
+      "path": "reviews/gold-v2-071-075.json",
+      "reviewer_id": "reviewer-a-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "ed0744bd8e3408f5a3b10408efc6f01f7f9de7288efb822a3ff26d2401bf6798"
+    },
+    {
+      "path": "reviews/gold-v2-076-080.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "3adafe493c812e4a696b7bcb06e17195e4d9f3ecf30bd462682fd9fb6d3d4fe5"
+    },
+    {
+      "path": "reviews/gold-v2-081-085.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "ac96ec81f5c13438aa5dac46e919d8becbfab077b710c08909b68765c5cfcdd4"
+    },
+    {
+      "path": "reviews/gold-v2-086-090.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "1e283cffa3b4d18d398f5cf776bcb0803a9e05c3bb3f3270b25f17a11d6481a3"
+    },
+    {
+      "path": "reviews/gold-v2-091-095.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "b853333015a27c69825df8d743299129b2fde34a3dcc48acc77402b292c40df6"
+    },
+    {
+      "path": "reviews/gold-v2-096-100.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "8051b681b0e6665b0af3576508160a753b9460992085811b093dfb0bbb5df800"
+    },
+    {
+      "path": "reviews/gold-v2-101-105.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "d93f1eee625654a932a3672ad09412f4fb36a985424b8a17c3ca6fc833650bcd"
+    },
+    {
+      "path": "reviews/gold-v2-106-110.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "edcd94f451ea534d760ca59bd4d3afc7343669c13c459b73f727303561c1ca77"
+    },
+    {
+      "path": "reviews/gold-v2-111-115.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "42e835f702442083849ab8a4830b2c7b8578a9d17a61f2a9730b0a40207fe05b"
+    },
+    {
+      "path": "reviews/gold-v2-116-120.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "ee4c2ce8da618b1ff146760b0c948f42b72854d90923d63dbec98a400d88477d"
+    },
+    {
+      "path": "reviews/gold-v2-121-125.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "0ec7f29113d5a5de058f425ac86db357482ffcfddfc3e06af064132d07752245"
+    },
+    {
+      "path": "reviews/gold-v2-126-130.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "92c52da9ecdcd64d19772b2fe148d8bf86dbafa56a301292a9f354eb9200a4e3"
+    },
+    {
+      "path": "reviews/gold-v2-131-135.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "f61f6749152324c609b329a376a3f1c4248a7717f9b70f03bbaa2ea4b7e81a41"
+    },
+    {
+      "path": "reviews/gold-v2-136-140.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "b4fada10967d59f9f8aa9b5b03dbab1eb5543a9b3fb82060ee2d4203a48b0ec3"
+    },
+    {
+      "path": "reviews/gold-v2-141-145.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "390b14f54cab7ef20fff4e1a16c5a256ed927dc3b2a25155acfd3191252c2af1"
+    },
+    {
+      "path": "reviews/gold-v2-146-150.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "fe582e83e6e041ed3e1c6f7d81f36d0ec9e3438c45c9a5dfea78865e01f6b1f4"
+    },
+    {
+      "path": "reviews/gold-v2-151-155.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "33f1bd102d66c7a4cda66e9917812cfed18a367e614490fbb638f066b8e703de"
+    },
+    {
+      "path": "reviews/gold-v2-156-160.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "938c8863ad63e4450192c96ede9a278f5378abc48bd2ee4a7493f80033a97918"
+    },
+    {
+      "path": "reviews/gold-v2-161-165.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "726a7f1912de1a5725ec6893e11a3658475407a9dedb94fcbb7ddcd39f88e153"
+    },
+    {
+      "path": "reviews/gold-v2-166-170.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "7721778757f64f8fc0efdf0c309968ec6e5555a9c0d0bf3d14a88e990dfd815d"
+    },
+    {
+      "path": "reviews/gold-v2-171-175.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "e4e70b4d666f2580b96ab6ff400c34bcc70e08a63312d686f0251f926e50bb35"
+    },
+    {
+      "path": "reviews/gold-v2-176-180.json",
+      "reviewer_id": "reviewer-b-v2",
+      "reviewer_model": "gpt-5.6-sol",
+      "sha256": "af647bc90ff4efb5d345d036aac63247ae62c4292aa25ee50e931e449056d5b9"
     }
   ],
   "reviewed_scenarios": [
@@ -189,13 +369,43 @@
     "case-147",
     "case-148",
     "case-149",
-    "case-150"
+    "case-150",
+    "case-151",
+    "case-152",
+    "case-153",
+    "case-154",
+    "case-155",
+    "case-156",
+    "case-157",
+    "case-158",
+    "case-159",
+    "case-160",
+    "case-161",
+    "case-162",
+    "case-163",
+    "case-164",
+    "case-165",
+    "case-166",
+    "case-167",
+    "case-168",
+    "case-169",
+    "case-170",
+    "case-171",
+    "case-172",
+    "case-173",
+    "case-174",
+    "case-175",
+    "case-176",
+    "case-177",
+    "case-178",
+    "case-179",
+    "case-180"
   ],
   "reviewer_ids": [
-    "reviewer-a-current",
-    "reviewer-b-current"
+    "reviewer-a-v2",
+    "reviewer-b-v2"
   ],
   "reviewer_models": [
-    "gpt-5.4"
+    "gpt-5.6-sol"
   ]
 }

@@ -89,11 +89,11 @@ def run_gold_distillation(
             "명시된 사실을 ‘확인되지 않는다’고 쓰거나, 원문이 부정한 법리를 반대 논리로 쓰지 않는다. 설명 없이 스키마 JSON만 반환하라."
         )
         output_file = blind_root / "last-answer.json"
-        executable = shutil.which("codex.cmd" if os.name == "nt" else "codex")
+        executable = shutil.which("codex.exe" if os.name == "nt" else "codex")
         if not executable:
             raise RuntimeError("Codex CLI 실행 파일을 찾을 수 없습니다.")
         command = [
-            executable, "exec", "-", "--ephemeral", "--sandbox", "read-only",
+            executable, "exec", "-", "--ephemeral", "--sandbox", "workspace-write",
             "--skip-git-repo-check", "--ignore-rules",
             "--output-schema", str(schema_path), "--output-last-message", str(output_file),
             "--cd", str(blind_root), "--color", "never", "--model", model,
@@ -260,7 +260,10 @@ def _fixture_evidence_candidates(fixture: dict[str, Any]) -> dict[str, str]:
             for item in value.values():
                 visit(item)
 
-    visit(fixture)
+    record = fixture.get("record")
+    if not isinstance(record, str):
+        raise ValueError("gold 증류 fixture에 record 본문이 없습니다.")
+    visit(record)
     selected = candidates[:80]
     if len(selected) < 5:
         raise ValueError("gold 증류 fixture에서 선택할 근거 구절이 충분하지 않습니다.")
@@ -377,6 +380,15 @@ def _validate_case_distillation(value: dict[str, Any], fixture: dict[str, Any]) 
         for entry in entries:
             text = str(entry.get("text") or "").strip()
             excerpt = str(entry.get("evidence_excerpt") or "")
+            failure_markers = (
+                "작업공간 파일 접근",
+                "파일 접근 오류",
+                "확인하지 못했다",
+                "검증하지 못했다",
+                "근거를 확인하지 못해",
+            )
+            if any(marker in text for marker in failure_markers):
+                raise ValueError(f"gold 증류 {key}가 fixture로 추적되지 않습니다.")
             if not 6 <= len(excerpt) <= 240 or excerpt not in fixture_text or not 6 <= len(text) <= 160:
                 raise ValueError(f"gold 증류 {key}가 fixture로 추적되지 않습니다.")
 

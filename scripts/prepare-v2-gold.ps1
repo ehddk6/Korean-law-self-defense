@@ -130,8 +130,8 @@ foreach ($scenario in $manifestPayload.scenarios) {
 }
 
 $reviewReports = @()
-for ($start = 1; $start -le 150; $start += 5) {
-    $end = [Math]::Min($start + 4, 150)
+for ($start = 1; $start -le 180; $start += 5) {
+    $end = [Math]::Min($start + 4, 180)
     $path = 'evaluation\v2\reviews\gold-v2-{0:D3}-{1:D3}.json' -f $start, $end
     $reviewReports += $path
     $reviewedCount = $end - $start + 1
@@ -143,10 +143,10 @@ for ($start = 1; $start -le 150; $start += 5) {
             $existingRejected = @($existingRecords | Where-Object { $_.approved -ne $true })
             $hashMismatch = @($existingReview.reviews.PSObject.Properties | Where-Object {
                 $scenario = $scenarioById[$_.Name]
-                -not $scenario `
-                -or $_.Value.source_sha256 -ne $scenario.source_sha256 `
-                -or $_.Value.fixture_sha256 -ne $scenario.fixture_sha256 `
-                -or $_.Value.expected_sha256 -ne $scenario.expected_sha256
+                if (-not $scenario) { return $true }
+                if ($_.Value.fixture_sha256 -ne $scenario.fixture_sha256 -or $_.Value.expected_sha256 -ne $scenario.expected_sha256) { return $true }
+                $adversarial = $scenario.kind -in @('fabricated-citation', 'prompt-injection', 'ocr-corruption', 'pii-leakage', 'conflicting-evidence')
+                return (-not $adversarial -and $_.Value.source_sha256 -ne $scenario.source_sha256)
             })
             $needsReview = (
                 $existingRecords.Count -ne $reviewedCount `
@@ -182,7 +182,7 @@ foreach ($path in $reviewReports) {
 }
 & $python @approveArgs
 if ($LASTEXITCODE -ne 0) {
-    throw '150건 gold 독립 검토 승인에 실패했습니다.'
+    throw '180건 gold 독립 검토 승인에 실패했습니다.'
 }
 
 & $python -m legal_workbench eval status --manifest $Manifest

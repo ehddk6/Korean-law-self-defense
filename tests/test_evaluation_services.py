@@ -4,6 +4,9 @@ from pathlib import Path
 import pytest
 
 from legal_workbench.evaluation import (
+    _clear_gold_approvals,
+    approve_gold_reviews,
+    build_manifest,
     create_evaluation_v2,
     curate_scenario,
     manifest_status,
@@ -23,6 +26,83 @@ def test_evaluation_manifest_has_180_and_is_not_false_certified(tmp_path: Path) 
     assert status["status_counts"]["complete"] == 30
     assert status["corpus_ready"] is False
     assert status["v1_certified"] is False
+    assert len(status["invalid_gold_reviews"]) == 30
+
+
+def test_gold_reset_includes_adversarial_scenarios() -> None:
+    payload = build_manifest()
+    for item in payload["scenarios"]:
+        item["gold_review_status"] = "approved"
+        item["gold_review_path"] = "gold-review-bundle.json"
+        item["gold_review_sha256"] = "0" * 64
+
+    assert _clear_gold_approvals(payload) == 180
+    assert all(item["gold_review_status"] == "pending" for item in payload["scenarios"])
+    assert all("gold_review_path" not in item for item in payload["scenarios"])
+
+
+def test_gold_approval_includes_adversarial_scenarios(tmp_path: Path) -> None:
+    manifest = tmp_path / "manifest.json"
+    write_manifest(manifest)
+    payload = json.loads(manifest.read_text(encoding="utf-8"))
+    payload["evaluation_version"] = 2
+    payload["gold_review_cycle"] = "v2-sealed-pending-review"
+    payload["sealed_at"] = "2026-08-01T00:00:00Z"
+    fixture_hash = payload["scenarios"][150]["fixture_sha256"]
+    expected_hash = payload["scenarios"][150]["expected_sha256"]
+    for item in payload["scenarios"]:
+        item.update(
+            {
+                "kind": "fabricated-citation",
+                "curation_status": "complete",
+                "fixture_path": "fixtures/adversarial.json",
+                "expected_path": "expected/adversarial.json",
+                "fixture_sha256": fixture_hash,
+                "expected_sha256": expected_hash,
+            }
+        )
+        item.pop("source_path", None)
+        item.pop("source_sha256", None)
+    manifest.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+    checks = {
+        "source_bound": True,
+        "label_correct": True,
+        "fixture_blind": True,
+        "fixture_pii_free": True,
+        "gold_supported": True,
+    }
+    reports = []
+    for reviewer_id, cases in (("reviewer-a", payload["scenarios"][:90]), ("reviewer-b", payload["scenarios"][90:])):
+        report_path = tmp_path / f"{reviewer_id}.json"
+        report_path.write_text(
+            json.dumps(
+                {
+                    "format": "legal-workbench-gold-review-v1",
+                    "reviewer_id": reviewer_id,
+                    "reviewer_model": "gpt-5.6-sol",
+                    "reviews": {
+                        item["scenario_id"]: {
+                            "approved": True,
+                            "fixture_sha256": fixture_hash,
+                            "expected_sha256": expected_hash,
+                            "checks": checks,
+                            "notes": "synthetic safety case reviewed",
+                        }
+                        for item in cases
+                    },
+                },
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+        reports.append(report_path)
+
+    result = approve_gold_reviews(manifest, reports)
+    approved = json.loads(manifest.read_text(encoding="utf-8"))
+    assert result["approved"] == 180
+    assert approved["gold_review_cycle"] == "v2-approved"
+    assert all(item["gold_review_status"] == "approved" for item in approved["scenarios"])
 
 
 def test_curate_rejects_nonofficial_source_and_accepts_masked_official_fixture(tmp_path: Path) -> None:
