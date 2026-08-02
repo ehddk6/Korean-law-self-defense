@@ -532,6 +532,7 @@ def score_results(
         raise ValueError(f"평가 결과는 알려진 180개 시나리오의 정확히 540행이어야 합니다: unknown={unknown_ids[:5]}")
     models = {str(row.get("model") or "") for row in rows}
     config_hashes = {str(row.get("evaluation_config_sha256") or "") for row in rows}
+    locked_batch_size = _locked_batch_size(rows)
     if len(models) != 1 or "" in models or len(config_hashes) != 1 or "" in config_hashes:
         raise ValueError("3회 실행의 모델과 평가 설정 해시는 모두 동일해야 합니다.")
     missing_runs = [
@@ -682,27 +683,33 @@ def score_results(
         "v1_certified": not failures,
     }
     if not failures and issue_certification:
+        manifest_file = Path(manifest_path).resolve()
+        manifest_root = manifest_file.parent
+        results_file = Path(results_path).resolve()
+        try:
+            relative_results_path = results_file.relative_to(manifest_root)
+        except ValueError as exc:
+            raise ValueError("인증 결과 파일은 evaluation manifest 디렉터리 안에 있어야 합니다.") from exc
         certification = {
             "format": CERTIFICATION_FORMAT,
             "v1_certified": True,
-            "manifest_path": str(Path(manifest_path).resolve()),
-            "manifest_sha256": sha256_file(Path(manifest_path)),
-            "results_path": str(Path(results_path).resolve()),
-            "results_sha256": sha256_file(Path(results_path)),
+            "evaluation_version": int(manifest["evaluation_version"]),
+            "manifest_path": manifest_file.name,
+            "manifest_sha256": sha256_file(manifest_file),
+            "results_path": relative_results_path.as_posix(),
+            "results_sha256": sha256_file(results_file),
             "metrics": metrics,
             "split_metrics": split_metrics,
             "thresholds": thresholds,
             "model": next(iter(models)),
+            "evaluation_batch_size": locked_batch_size,
             "evaluation_config_sha256": next(iter(config_hashes)),
-            "code_sha256": {
-                "evaluation": sha256_file(Path(__file__)),
-                "evaluation_runner": sha256_file(Path(__file__).with_name("evaluation_runner.py")),
-                "evaluation_audit": sha256_file(Path(__file__).with_name("evaluation_audit.py")),
-            },
+            "code_sha256": _certification_code_hashes(),
             "created_at": utc_now(),
         }
-        atomic_json_write(Path(manifest_path).resolve().parent / "certification.json", certification)
-        result["certification_path"] = str(Path(manifest_path).resolve().parent / "certification.json")
+        certification_path = manifest_root / "certification.json"
+        atomic_json_write(certification_path, certification)
+        result["certification_path"] = str(certification_path)
     return result
 
 
@@ -721,16 +728,37 @@ def certification_status(manifest_path: Path) -> dict[str, Any]:
         payload = {}
     if payload.get("format") != CERTIFICATION_FORMAT or payload.get("v1_certified") is not True:
         reasons.append("certification 형식 또는 상태가 올바르지 않습니다.")
+    manifest_payload: dict[str, Any] = {}
+    if manifest.is_file():
+        try:
+            manifest_payload = load_manifest(manifest)
+        except (ValueError, KeyError, FileNotFoundError, json.JSONDecodeError) as exc:
+            reasons.append(f"평가 manifest 검증 실패: {exc}")
+    if manifest_payload and payload.get("evaluation_version") != manifest_payload.get("evaluation_version"):
+        reasons.append("certification 평가 버전이 manifest와 다릅니다.")
     if manifest.is_file() and payload.get("manifest_sha256") != sha256_file(manifest):
         reasons.append("평가 manifest가 인증 후 변경됐습니다.")
-    results_path = Path(str(payload.get("results_path") or "")).expanduser().resolve()
+    stored_manifest_path = Path(str(payload.get("manifest_path") or ""))
+    resolved_manifest_path = (
+        stored_manifest_path.expanduser().resolve()
+        if stored_manifest_path.is_absolute()
+        else (manifest.parent / stored_manifest_path).resolve()
+    )
+    if resolved_manifest_path != manifest:
+        reasons.append("certification manifest_path가 현재 manifest와 다릅니다.")
+    stored_results_path = Path(str(payload.get("results_path") or ""))
+    results_path = (
+        stored_results_path.expanduser().resolve()
+        if stored_results_path.is_absolute()
+        else (manifest.parent / stored_results_path).resolve()
+    )
+    try:
+        results_path.relative_to(manifest.parent)
+    except ValueError:
+        reasons.append("certification results_path가 manifest 디렉터리 밖을 가리킵니다.")
     if not results_path.is_file() or payload.get("results_sha256") != sha256_file(results_path):
         reasons.append("평가 실행 결과가 없거나 인증 후 변경됐습니다.")
-    expected_code_hashes = {
-        "evaluation": sha256_file(Path(__file__)),
-        "evaluation_runner": sha256_file(Path(__file__).with_name("evaluation_runner.py")),
-        "evaluation_audit": sha256_file(Path(__file__).with_name("evaluation_audit.py")),
-    }
+    expected_code_hashes = _certification_code_hashes()
     if payload.get("code_sha256") != expected_code_hashes:
         reasons.append("인증에 사용한 평가 코드가 현재 코드와 다릅니다.")
     if payload.get("thresholds") != THRESHOLDS or not isinstance(payload.get("metrics"), dict):
@@ -753,6 +781,33 @@ def certification_status(manifest_path: Path) -> dict[str, Any]:
         "certification_path": str(certification_path),
         "created_at": payload.get("created_at"),
     }
+
+
+def _certification_code_hashes() -> dict[str, str]:
+    repository_root = Path(__file__).resolve().parents[1]
+    return {
+        "evaluation": sha256_file(Path(__file__)),
+        "evaluation_runner": sha256_file(Path(__file__).with_name("evaluation_runner.py")),
+        "evaluation_audit": sha256_file(Path(__file__).with_name("evaluation_audit.py")),
+        "decision_policy": sha256_file(Path(__file__).with_name("decision_policy.py")),
+        "skill": sha256_file(
+            repository_root / ".agents" / "skills" / "korean-legal-workbench" / "SKILL.md"
+        ),
+    }
+
+
+def _locked_batch_size(rows: list[dict[str, Any]]) -> int:
+    values = [row.get("evaluation_batch_size") for row in rows]
+    if (
+        not values
+        or not all(
+            isinstance(value, int) and not isinstance(value, bool) and value >= 1
+            for value in values
+        )
+        or len(set(values)) != 1
+    ):
+        raise ValueError("3회 실행의 평가 batch size는 하나의 양의 정수로 고정돼야 합니다.")
+    return values[0]
 
 
 def _load_jsonl(path: Path) -> list[dict[str, Any]]:

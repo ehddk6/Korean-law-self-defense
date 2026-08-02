@@ -119,6 +119,7 @@ def run_evaluation(
     atomic_json_write(schema_path, ANSWER_SCHEMA)
     document_report = _validate_documents(destination)
     model_name = model or DEFAULT_EVALUATION_MODEL
+    effective_batch_size = max(1, batch_size)
     skill_path = Path(__file__).resolve().parents[1] / ".agents" / "skills" / "korean-legal-workbench" / "SKILL.md"
     policy_path = Path(__file__).with_name("decision_policy.py")
     config_hash = sha256_text(json.dumps({
@@ -129,6 +130,7 @@ def run_evaluation(
         "skill_sha256": sha256_file(skill_path),
         "decision_policy_sha256": sha256_file(policy_path),
         "manifest_sha256": sha256_file(manifest_path),
+        "batch_size": effective_batch_size,
     }, ensure_ascii=False, sort_keys=True))
     if existing:
         incompatible = [
@@ -157,8 +159,8 @@ def run_evaluation(
                 pending_by_kind.setdefault(str(pair[0]["kind"]), []).append(pair)
             for kind in sorted(pending_by_kind):
                 kind_pending = pending_by_kind[kind]
-                for offset in range(0, len(kind_pending), max(1, batch_size)):
-                    batch = kind_pending[offset : offset + max(1, batch_size)]
+                for offset in range(0, len(kind_pending), effective_batch_size):
+                    batch = kind_pending[offset : offset + effective_batch_size]
                     answers = _invoke_complete_batch(blind_root, schema_path, batch, model_name)
                     answer_by_id = {str(answer.get("scenario_id")): answer for answer in answers}
                     for item, _ in batch:
@@ -201,6 +203,7 @@ def run_evaluation(
                             "security_path": security_path.relative_to(destination).as_posix(),
                             "security_sha256": sha256_file(security_path),
                             "model": model_name,
+                            "evaluation_batch_size": effective_batch_size,
                             "evaluation_config_sha256": config_hash,
                             "document_validation_path": "document-validation.json",
                             "document_validation_sha256": document_report["report_sha256"],
@@ -213,6 +216,7 @@ def run_evaluation(
         "row_count": len(existing),
         "completed_batches": completed_batches,
         "model": model_name,
+        "evaluation_batch_size": effective_batch_size,
         "evaluation_config_sha256": config_hash,
         "document_validation_path": str(destination / "document-validation.json"),
         "certification_eligible": not probe,

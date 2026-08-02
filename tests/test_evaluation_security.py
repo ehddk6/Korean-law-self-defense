@@ -10,6 +10,8 @@ import legal_workbench.evaluation_runner as evaluation_runner
 from legal_workbench.evaluation import (
     CERTIFICATION_FORMAT,
     THRESHOLDS,
+    _certification_code_hashes,
+    _locked_batch_size,
     certification_status,
     load_manifest,
     write_manifest,
@@ -21,6 +23,7 @@ from legal_workbench.evaluation_runner import (
     _guard_answer,
     _sanitize_answer_pii,
     _sanitized_codex_env,
+    run_evaluation,
 )
 from legal_workbench.security import atomic_json_write, scan_residual_pii, sha256_file
 
@@ -62,6 +65,96 @@ def test_forged_empty_certification_is_rejected(tmp_path: Path) -> None:
     status = certification_status(manifest)
     assert status["v1_certified"] is False
     assert any("평가 코드" in reason or "합격 기준" in reason for reason in status["reasons"])
+
+
+def test_certification_hashes_cover_policy_and_skill() -> None:
+    hashes = _certification_code_hashes()
+    assert set(hashes) == {
+        "evaluation",
+        "evaluation_runner",
+        "evaluation_audit",
+        "decision_policy",
+        "skill",
+    }
+    assert all(len(value) == 64 for value in hashes.values())
+
+
+def test_certification_rejects_results_outside_manifest_directory(tmp_path: Path) -> None:
+    evaluation_root = tmp_path / "evaluation"
+    evaluation_root.mkdir()
+    manifest = evaluation_root / "manifest.json"
+    write_manifest(manifest)
+    results = tmp_path / "outside-results.jsonl"
+    results.write_text("{}\n", encoding="utf-8")
+    atomic_json_write(
+        evaluation_root / "certification.json",
+        {
+            "format": CERTIFICATION_FORMAT,
+            "v1_certified": True,
+            "evaluation_version": 1,
+            "manifest_path": "manifest.json",
+            "manifest_sha256": sha256_file(manifest),
+            "results_path": str(results),
+            "results_sha256": sha256_file(results),
+            "metrics": {},
+            "thresholds": THRESHOLDS,
+            "code_sha256": _certification_code_hashes(),
+        },
+    )
+
+    status = certification_status(manifest)
+
+    assert status["v1_certified"] is False
+    assert any("디렉터리 밖" in reason for reason in status["reasons"])
+
+
+def test_evaluation_batch_size_is_locked_into_config_hash(tmp_path: Path) -> None:
+    manifest = tmp_path / "manifest.json"
+    write_manifest(manifest)
+
+    six = run_evaluation(
+        manifest,
+        runs=1,
+        batch_size=6,
+        output_dir=tmp_path / "six",
+        scenario_limit=0,
+        probe=True,
+    )
+    twelve = run_evaluation(
+        manifest,
+        runs=1,
+        batch_size=12,
+        output_dir=tmp_path / "twelve",
+        scenario_limit=0,
+        probe=True,
+    )
+
+    assert six["evaluation_batch_size"] == 6
+    assert twelve["evaluation_batch_size"] == 12
+    assert six["evaluation_config_sha256"] != twelve["evaluation_config_sha256"]
+
+
+@pytest.mark.parametrize(
+    "rows",
+    [
+        [{"evaluation_batch_size": None}],
+        [{"evaluation_batch_size": 0}],
+        [{"evaluation_batch_size": -1}],
+        [{"evaluation_batch_size": True}],
+        [{"evaluation_batch_size": 6}, {"evaluation_batch_size": 12}],
+    ],
+)
+def test_locked_batch_size_rejects_missing_invalid_or_mixed_values(
+    rows: list[dict[str, object]],
+) -> None:
+    with pytest.raises(ValueError, match="batch size"):
+        _locked_batch_size(rows)
+
+
+def test_locked_batch_size_accepts_one_positive_value() -> None:
+    assert _locked_batch_size(
+        [{"evaluation_batch_size": 6}, {"evaluation_batch_size": 6}]
+    ) == 6
 
 
 def test_manifest_thresholds_cannot_be_weakened(tmp_path: Path) -> None:

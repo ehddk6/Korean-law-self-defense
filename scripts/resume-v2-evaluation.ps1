@@ -51,7 +51,45 @@ if (-not (Test-Path -LiteralPath $resultsPath -PathType Leaf)) {
     throw "평가 결과 파일을 찾을 수 없습니다: $resultsPath"
 }
 
-& $python -m legal_workbench eval score --manifest $Manifest --results $resultsPath
+$scoreJson = (
+    & $python -m legal_workbench eval score --manifest $Manifest --results $resultsPath |
+    Out-String
+)
 if ($LASTEXITCODE -ne 0) {
-    throw '평가 v2 점수 산출 또는 인증에 실패했습니다. 인증 파일은 생성되지 않았습니다.'
+    throw '평가 v2 점수 산출 명령이 실패했습니다.'
+}
+$score = $scoreJson | ConvertFrom-Json
+$scoreJson.Trim() | Write-Output
+$failures = @($score.result.failures)
+$certificationPath = if ($null -ne $score.result.PSObject.Properties['certification_path']) {
+    [string] $score.result.certification_path
+} else {
+    ''
+}
+if (
+    -not $score.ok `
+    -or -not $score.result.v1_certified `
+    -or $failures.Count -ne 0 `
+    -or [string]::IsNullOrWhiteSpace($certificationPath) `
+    -or -not (Test-Path -LiteralPath $certificationPath -PathType Leaf)
+) {
+    throw ("평가 v2 인증에 실패했습니다. failures={0}" -f ($failures -join '; '))
+}
+
+$finalStatusJson = (
+    & $python -m legal_workbench eval status --manifest $Manifest |
+    Out-String
+)
+if ($LASTEXITCODE -ne 0) {
+    throw '평가 v2 최종 인증 상태 확인이 실패했습니다.'
+}
+$finalStatus = $finalStatusJson | ConvertFrom-Json
+$finalStatusJson.Trim() | Write-Output
+if (
+    -not $finalStatus.ok `
+    -or -not $finalStatus.result.corpus_ready `
+    -or -not $finalStatus.result.v2_cycle_valid `
+    -or -not $finalStatus.result.v1_certified
+) {
+    throw '최종 상태에서 평가 v2 잠금평가 인증을 확인하지 못했습니다.'
 }
