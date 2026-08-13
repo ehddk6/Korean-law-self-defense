@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "특허권등인지 여부와 제2조부터 제23조까지에 따른 관할법원 소재지가 제시되지 않아 적용 법원과 전속관할 여부를 확정할 수 없다.",
+    "서울중앙지방법원에 관한 단서와 특허권등 소송의 선택 제기 규정이 적용될 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "특허권등의 지식재산권에 관한 소를 제기하는 경우에는 제2조부터 제23조까지의 규정에 따른 관할법원 소재지를 관할하는 고등법원이 있는 곳의 지방법원의 전속관할로 한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민사소송법 제24조가 적용된다.",
+    "지식재산권이 특허권등인지 또는 그 밖의 지식재산권인지 확인해야 한다.",
+    "제2조부터 제23조까지에 따른 관할법원 소재지를 확인해야 한다.",
+    "서울고등법원이 있는 곳의 지방법원은 서울중앙지방법원으로 한정되는 예외가 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구이나 구체적 법원 판단 사실이 완전하지 않다.",
+      "evidence_excerpt": "\"intellectual_property_claim\": true, \"specific_court_facts_complete\": false"
+    }
+  ]
+}

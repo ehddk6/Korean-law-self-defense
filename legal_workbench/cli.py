@@ -25,7 +25,14 @@ from .curation import (
     refresh_cached_official_decisions,
     refresh_cached_temporal_rules,
 )
-from .evaluation_runner import run_evaluation, run_probe, shadow_policy_report, summarize_probe_results
+from .evaluation_runner import (
+    ingest_agent_batch,
+    prepare_agent_batch,
+    run_evaluation,
+    run_probe,
+    shadow_policy_report,
+    summarize_probe_results,
+)
 from .gold_review_runner import run_gold_review
 from .gold_distill_runner import apply_gold_distillations, run_gold_distillation
 from .models import RiskLevel
@@ -178,6 +185,7 @@ def build_parser() -> argparse.ArgumentParser:
     eval_run.add_argument("--runs", type=int, default=3)
     eval_run.add_argument("--batch-size", type=int, default=12)
     eval_run.add_argument("--model", default="gpt-5.6-terra")
+    eval_run.add_argument("--reasoning-effort", default="medium")
     eval_run.add_argument("--output-dir", type=Path)
     eval_run.add_argument("--no-resume", action="store_true")
     eval_run.add_argument("--limit", type=int, help="smoke test용 앞쪽 시나리오 제한")
@@ -189,6 +197,29 @@ def build_parser() -> argparse.ArgumentParser:
     eval_probe.add_argument("--model", default="gpt-5.6-terra")
     eval_probe.add_argument("--output-dir", type=Path, required=True)
     eval_probe.add_argument("--no-resume", action="store_true")
+    eval_agent_next = eval_sub.add_parser(
+        "agent-next",
+        help="도구 금지 Terra agent용 다음 잠금 평가 배치를 생성",
+    )
+    eval_agent_next.add_argument("--manifest", type=Path, default=Path("evaluation/manifest.json"))
+    eval_agent_next.add_argument("--output-dir", type=Path, required=True)
+    eval_agent_next.add_argument("--runs", type=int, default=3)
+    eval_agent_next.add_argument("--batch-size", type=int, default=6)
+    eval_agent_next.add_argument("--model", default="gpt-5.6-terra")
+    eval_agent_next.add_argument("--reasoning-effort", default="medium")
+    eval_agent_next.add_argument("--offset", type=int, default=0)
+    eval_agent_ingest = eval_sub.add_parser(
+        "agent-ingest",
+        help="검증된 Terra agent 응답을 표준 평가 산출물로 반입",
+    )
+    eval_agent_ingest.add_argument("--manifest", type=Path, default=Path("evaluation/manifest.json"))
+    eval_agent_ingest.add_argument("--output-dir", type=Path, required=True)
+    eval_agent_ingest.add_argument("--batch-id", required=True)
+    eval_agent_ingest.add_argument("--agent-id", required=True)
+    eval_agent_ingest.add_argument("--runs", type=int, default=3)
+    eval_agent_ingest.add_argument("--batch-size", type=int, default=6)
+    eval_agent_ingest.add_argument("--model", default="gpt-5.6-terra")
+    eval_agent_ingest.add_argument("--reasoning-effort", default="medium")
     eval_probe_score = eval_sub.add_parser("probe-report", help="개발 probe를 비인증 지표로 요약")
     eval_probe_score.add_argument("--manifest", type=Path, default=Path("evaluation/manifest.json"))
     eval_probe_score.add_argument("--results", type=Path, required=True)
@@ -395,6 +426,7 @@ def dispatch(args: argparse.Namespace) -> Any:
                 output_dir=args.output_dir,
                 resume=not args.no_resume,
                 scenario_limit=args.limit,
+                reasoning_effort=args.reasoning_effort,
             )
         if args.eval_command == "probe":
             return run_probe(
@@ -405,6 +437,31 @@ def dispatch(args: argparse.Namespace) -> Any:
                 model=args.model,
                 output_dir=args.output_dir,
                 resume=not args.no_resume,
+            )
+        if args.eval_command == "agent-next":
+            return prepare_agent_batch(
+                args.manifest,
+                output_dir=args.output_dir,
+                runs=args.runs,
+                batch_size=args.batch_size,
+                model=args.model,
+                reasoning_effort=args.reasoning_effort,
+                batch_offset=args.offset,
+            )
+        if args.eval_command == "agent-ingest":
+            response_text = sys.stdin.buffer.read().decode("utf-8")
+            if not response_text.strip():
+                raise ValueError("Terra agent 응답 JSON을 표준입력으로 전달해야 합니다.")
+            return ingest_agent_batch(
+                args.manifest,
+                response_text,
+                output_dir=args.output_dir,
+                batch_id=args.batch_id,
+                agent_id=args.agent_id,
+                runs=args.runs,
+                batch_size=args.batch_size,
+                model=args.model,
+                reasoning_effort=args.reasoning_effort,
             )
         if args.eval_command == "probe-report":
             return summarize_probe_results(args.manifest, args.results, args.output)

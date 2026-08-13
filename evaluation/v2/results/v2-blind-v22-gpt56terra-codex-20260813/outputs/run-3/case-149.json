@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "불법행위일 기준 10년 기간은 별도로 문제될 수 있으나, 단기시효 기산을 위한 손해 및 가해자 인식일은 제시되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "피해자나 그 법정대리인이 그 손해 및 가해자를 안 날로부터 3년간 이를 행사하지 아니하면 시효로 인하여 소멸한다.",
+    "knowledge_date\": null"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제766조 제1항의 단기시효 기산에는 손해 및 가해자를 안 날이 필요하다.",
+    "불법행위일만으로는 제766조 제1항의 단기시효를 확정할 수 없다.",
+    "지식일이 null로 제시되었다.",
+    "주관적 기산점과 객관적 10년 기간의 구별"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "supported_facts": [
+    {
+      "claim": "단기시효는 손해 및 가해자를 안 날을 기준으로 한다.",
+      "evidence_excerpt": "피해자나 그 법정대리인이 그 손해 및 가해자를 안 날로부터 3년간 이를 행사하지 아니하면 시효로 인하여 소멸한다."
+    },
+    {
+      "claim": "지식일이 제시되지 않았다.",
+      "evidence_excerpt": "knowledge_date\": null"
+    }
+  ]
+}

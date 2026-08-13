@@ -18,11 +18,15 @@ from legal_workbench.evaluation import (
     _semantic_recall,
 )
 from legal_workbench.evaluation_runner import (
+    AGENT_EXECUTION_BACKEND,
+    CODEX_EXECUTION_BACKEND,
     _codex_failure_summary,
+    _evaluation_config_hash,
     _redact_fixture,
     _guard_answer,
     _sanitize_answer_pii,
     _sanitized_codex_env,
+    _validate_agent_transcript,
     run_evaluation,
 )
 from legal_workbench.security import atomic_json_write, scan_residual_pii, sha256_file
@@ -175,7 +179,7 @@ def test_evaluation_child_environment_excludes_law_oc(monkeypatch: pytest.Monkey
 def test_batch_retries_only_scenario_ids_omitted_by_model(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
     calls: list[list[str]] = []
 
-    def fake_invoke(*_args: object) -> list[dict[str, str]]:
+    def fake_invoke(*_args: object, **_kwargs: object) -> list[dict[str, str]]:
         batch = _args[2]
         ids = [item["scenario_id"] for item, _ in batch]
         calls.append(ids)
@@ -190,6 +194,116 @@ def test_batch_retries_only_scenario_ids_omitted_by_model(monkeypatch: pytest.Mo
 
     assert [answer["scenario_id"] for answer in answers] == ["case-001", "case-002"]
     assert calls == [["case-001", "case-002"], ["case-002"]]
+
+
+def test_agent_backend_and_reasoning_are_locked_into_config_hash(tmp_path: Path) -> None:
+    manifest = tmp_path / "manifest.json"
+    write_manifest(manifest)
+
+    cli_hash = _evaluation_config_hash(
+        manifest,
+        model="gpt-5.6-terra",
+        mode="certification",
+        batch_size=6,
+        execution_backend=CODEX_EXECUTION_BACKEND,
+        reasoning_effort="medium",
+    )
+    agent_hash = _evaluation_config_hash(
+        manifest,
+        model="gpt-5.6-terra",
+        mode="certification",
+        batch_size=6,
+        execution_backend=AGENT_EXECUTION_BACKEND,
+        reasoning_effort="medium",
+    )
+    high_hash = _evaluation_config_hash(
+        manifest,
+        model="gpt-5.6-terra",
+        mode="certification",
+        batch_size=6,
+        execution_backend=AGENT_EXECUTION_BACKEND,
+        reasoning_effort="high",
+    )
+
+    assert len({cli_hash, agent_hash, high_hash}) == 3
+
+
+def test_agent_transcript_requires_exact_prompt_response_and_no_tools(tmp_path: Path) -> None:
+    agent_id = "019fc241-3204-7893-bf7d-198569590b03"
+    prompt = "locked prompt"
+    response = '{"answers":[]}'
+    events = [
+        {"type": "session_meta", "payload": {"id": agent_id, "source": {"subagent": {}}}},
+        {"type": "turn_context", "payload": {"model": "gpt-5.6-terra", "effort": "medium"}},
+        {"type": "event_msg", "payload": {"type": "user_message", "message": prompt}},
+        {"type": "response_item", "payload": {"type": "reasoning"}},
+        {"type": "event_msg", "payload": {"type": "agent_message", "message": response}},
+    ]
+    transcript = tmp_path / f"rollout-{agent_id}.jsonl"
+    transcript.write_text(
+        "\n".join(json.dumps(event, ensure_ascii=False) for event in events) + "\n",
+        encoding="utf-8",
+    )
+
+    report = _validate_agent_transcript(
+        transcript,
+        agent_id=agent_id,
+        model="gpt-5.6-terra",
+        reasoning_effort="medium",
+        prompt=prompt,
+        response_text=response,
+    )
+
+    assert report["tool_call_count"] == 0
+    assert len(report["transcript_sha256"]) == 64
+
+    events.insert(-1, {"type": "response_item", "payload": {"type": "function_call"}})
+    transcript.write_text(
+        "\n".join(json.dumps(event, ensure_ascii=False) for event in events) + "\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(ValueError, match="function_call"):
+        _validate_agent_transcript(
+            transcript,
+            agent_id=agent_id,
+            model="gpt-5.6-terra",
+            reasoning_effort="medium",
+            prompt=prompt,
+            response_text=response,
+        )
+
+
+def test_agent_transcript_accepts_a_verified_later_batch_turn(tmp_path: Path) -> None:
+    agent_id = "019fc241-3204-7893-bf7d-198569590b04"
+    first_prompt = "first locked prompt"
+    first_response = '{"answers":["first"]}'
+    prompt = "second locked prompt"
+    response = '{"answers":["second"]}'
+    events = [
+        {"type": "session_meta", "payload": {"id": agent_id, "source": {"subagent": {}}}},
+        {"type": "turn_context", "payload": {"model": "gpt-5.6-terra", "effort": "medium"}},
+        {"type": "event_msg", "payload": {"type": "user_message", "message": first_prompt}},
+        {"type": "event_msg", "payload": {"type": "agent_message", "message": first_response}},
+        {"type": "turn_context", "payload": {"model": "gpt-5.6-terra", "effort": "medium"}},
+        {"type": "event_msg", "payload": {"type": "user_message", "message": prompt}},
+        {"type": "event_msg", "payload": {"type": "agent_message", "message": response}},
+    ]
+    transcript = tmp_path / f"rollout-{agent_id}.jsonl"
+    transcript.write_text(
+        "\n".join(json.dumps(event, ensure_ascii=False) for event in events) + "\n",
+        encoding="utf-8",
+    )
+
+    report = _validate_agent_transcript(
+        transcript,
+        agent_id=agent_id,
+        model="gpt-5.6-terra",
+        reasoning_effort="medium",
+        prompt=prompt,
+        response_text=response,
+    )
+
+    assert report["tool_call_count"] == 0
 
 
 def test_probe_selects_stratified_development_only(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
@@ -267,6 +381,25 @@ def test_output_guard_removes_unverified_material_without_expected_answer() -> N
     assert len(guarded["supported_facts"]) == 1
     assert report["removed_unverified_citations"] == 1
     assert report["removed_unsupported_facts"] == 1
+
+
+def test_guarded_masked_answer_readds_fixture_bound_trace_fact() -> None:
+    from legal_workbench.decision_policy import normalize_evaluation_answer
+
+    fixture = {
+        "format": "legal-workbench-masked-decision-input-v1",
+        "record": "원고는 계약금 반환을 청구하였다.",
+    }
+    answer, _ = normalize_evaluation_answer(
+        {"decision_status": "conditional", "supported_facts": [{"claim": "x", "evidence_excerpt": "외부 문구"}]},
+        {"kind": "masked-official-decision"},
+        fixture,
+    )
+    answer, _ = _guard_answer(answer, fixture)
+    answer, _ = normalize_evaluation_answer(answer, {"kind": "masked-official-decision"}, fixture)
+    answer, _ = _guard_answer(answer, fixture)
+
+    assert answer["supported_facts"][0]["evidence_excerpt"] == fixture["record"]
 
 
 def test_semantic_recall_accepts_concise_korean_legal_paraphrase_only() -> None:

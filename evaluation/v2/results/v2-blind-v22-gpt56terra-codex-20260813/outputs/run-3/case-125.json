@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "다른 특별재판적을 정하는 공식 조문이나 그 전제사실은 제시되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "소(訴)는 피고의 보통재판적(普通裁判籍)이 있는 곳의 법원이 관할한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민사소송법 제2조가 적용된다.",
+    "피고의 보통재판적이 알려져 있다.",
+    "특별재판적 사실이 없다는 전제에서 보통재판적이 기본 관할이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "defendant-general-forum",
+  "scenario_id": "case-125",
+  "supported_facts": [
+    {
+      "claim": "피고의 보통재판적이 알려져 있다.",
+      "evidence_excerpt": "\"defendant_general_forum_known\": true"
+    }
+  ]
+}

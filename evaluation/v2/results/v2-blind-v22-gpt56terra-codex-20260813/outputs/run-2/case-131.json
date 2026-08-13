@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "신법 적용이 곤란한 사정이 제시되어 제14조 제2항의 예외가 문제되며, 예외 시 적용할 법과 특별규정의 내용은 제시되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제2항은 신청 처분에 처분 당시 법령을 적용하는 원칙과 예외를 둔다.",
+    "신법 적용이 곤란한 특별한 사정은 제시되었다.",
+    "예외가 성립한 경우의 구체적 적용법 및 특별규정 여부가 필요하다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "당사자의 신청에 따른 처분이다.",
+      "evidence_excerpt": "\"party_application\": true"
+    },
+    {
+      "claim": "신법 적용이 곤란한 사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true"
+    }
+  ]
+}

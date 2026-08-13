@@ -532,9 +532,24 @@ def score_results(
         raise ValueError(f"평가 결과는 알려진 180개 시나리오의 정확히 540행이어야 합니다: unknown={unknown_ids[:5]}")
     models = {str(row.get("model") or "") for row in rows}
     config_hashes = {str(row.get("evaluation_config_sha256") or "") for row in rows}
+    execution_backends = {str(row.get("execution_backend") or "") for row in rows}
+    reasoning_efforts = {str(row.get("reasoning_effort") or "") for row in rows}
     locked_batch_size = _locked_batch_size(rows)
-    if len(models) != 1 or "" in models or len(config_hashes) != 1 or "" in config_hashes:
+    if (
+        len(models) != 1
+        or "" in models
+        or len(config_hashes) != 1
+        or "" in config_hashes
+        or len(execution_backends) != 1
+        or "" in execution_backends
+        or len(reasoning_efforts) != 1
+        or "" in reasoning_efforts
+    ):
         raise ValueError("3회 실행의 모델과 평가 설정 해시는 모두 동일해야 합니다.")
+    execution_backend = next(iter(execution_backends))
+    reasoning_effort = next(iter(reasoning_efforts))
+    if execution_backend not in {"codex-cli", "multi-agent-v1"}:
+        raise ValueError(f"지원하지 않는 평가 실행면입니다: {execution_backend}")
     missing_runs = [
         item["scenario_id"]
         for item in manifest["scenarios"]
@@ -575,6 +590,16 @@ def score_results(
         if set(run_ids) != {"run-1", "run-2", "run-3"}:
             raise ValueError(f"실행 ID가 없거나 중복된 시나리오: {scenario_id}")
         for row in scenario_rows:
+            if execution_backend == "multi-agent-v1":
+                _validate_agent_provenance(
+                    results_root,
+                    row,
+                    scenario_id=scenario_id,
+                    model=next(iter(models)),
+                    reasoning_effort=reasoning_effort,
+                )
+            elif row.get("agent_provenance_path") or row.get("agent_provenance_sha256"):
+                raise ValueError("codex-cli 결과에는 agent provenance를 혼용할 수 없습니다.")
             bucket_names = ("overall", scenario_by_id[scenario_id]["split"])
             for bucket in bucket_names:
                 bucket_counts[bucket]["runs"] += 1
@@ -603,7 +628,7 @@ def score_results(
                 expected,
                 document_report,
                 checked_at=str(audit.get("checked_at") or ""),
-                detected_pii_count=security["detection_count"],
+                detected_pii_count=security["persisted_residual_count"],
             )
             if comparable_audit(audit) != comparable_audit(recomputed):
                 raise ValueError(f"저장된 감사와 결정론적 재감사 결과가 다릅니다: {scenario_id}/{row.get('run_id')}")
@@ -681,6 +706,11 @@ def score_results(
         "thresholds": thresholds,
         "failures": failures,
         "v1_certified": not failures,
+        "model": next(iter(models)),
+        "execution_backend": execution_backend,
+        "reasoning_effort": reasoning_effort,
+        "evaluation_batch_size": locked_batch_size,
+        "evaluation_config_sha256": next(iter(config_hashes)),
     }
     if not failures and issue_certification:
         manifest_file = Path(manifest_path).resolve()
@@ -702,6 +732,8 @@ def score_results(
             "split_metrics": split_metrics,
             "thresholds": thresholds,
             "model": next(iter(models)),
+            "execution_backend": execution_backend,
+            "reasoning_effort": reasoning_effort,
             "evaluation_batch_size": locked_batch_size,
             "evaluation_config_sha256": next(iter(config_hashes)),
             "code_sha256": _certification_code_hashes(),
@@ -775,6 +807,15 @@ def certification_status(manifest_path: Path) -> dict[str, Any]:
                 reasons.append("저장된 인증 지표가 재계산 지표와 다릅니다.")
             if recomputed.get("split_metrics") != payload.get("split_metrics"):
                 reasons.append("저장된 split별 인증 지표가 재계산 지표와 다릅니다.")
+            for field in (
+                "model",
+                "execution_backend",
+                "reasoning_effort",
+                "evaluation_batch_size",
+                "evaluation_config_sha256",
+            ):
+                if recomputed.get(field) != payload.get(field):
+                    reasons.append(f"저장된 인증 {field}가 재계산 값과 다릅니다.")
     return {
         "v1_certified": not reasons,
         "reasons": reasons,
@@ -808,6 +849,47 @@ def _locked_batch_size(rows: list[dict[str, Any]]) -> int:
     ):
         raise ValueError("3회 실행의 평가 batch size는 하나의 양의 정수로 고정돼야 합니다.")
     return values[0]
+
+
+def _validate_agent_provenance(
+    results_root: Path,
+    row: dict[str, Any],
+    *,
+    scenario_id: str,
+    model: str,
+    reasoning_effort: str,
+) -> None:
+    path_value = row.get("agent_provenance_path")
+    expected_hash = str(row.get("agent_provenance_sha256") or "")
+    if not path_value or not expected_hash:
+        raise ValueError(f"Terra agent provenance가 없습니다: {scenario_id}/{row.get('run_id')}")
+    path = (results_root / str(path_value)).resolve()
+    if not path.is_relative_to(results_root.resolve()) or not path.is_file():
+        raise ValueError("Terra agent provenance는 results 디렉터리 안에 있어야 합니다.")
+    if sha256_file(path) != expected_hash:
+        raise ValueError("Terra agent provenance 해시가 일치하지 않습니다.")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    sha_fields = (
+        "batch_id",
+        "prompt_sha256",
+        "response_sha256",
+        "transcript_sha256",
+    )
+    valid_sha = re.compile(r"^[0-9a-f]{64}$")
+    if (
+        payload.get("format") != "legal-workbench-agent-evaluation-provenance-v1"
+        or payload.get("execution_backend") != "multi-agent-v1"
+        or payload.get("model") != model
+        or payload.get("reasoning_effort") != reasoning_effort
+        or payload.get("run_id") != row.get("run_id")
+        or scenario_id not in (payload.get("scenario_ids") or [])
+        or not isinstance(payload.get("agent_id"), str)
+        or not payload.get("agent_id")
+        or payload.get("tool_call_count") != 0
+        or payload.get("raw_transcript_persisted") is not False
+        or any(not valid_sha.fullmatch(str(payload.get(field) or "")) for field in sha_fields)
+    ):
+        raise ValueError(f"Terra agent provenance가 잠금 조건과 다릅니다: {scenario_id}/{row.get('run_id')}")
 
 
 def _load_jsonl(path: Path) -> list[dict[str, Any]]:

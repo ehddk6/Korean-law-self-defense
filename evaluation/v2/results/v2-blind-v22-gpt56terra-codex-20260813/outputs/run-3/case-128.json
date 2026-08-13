@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "법정대리인에게 하는 송달에는 본인의 영업소 또는 사무소에서도 할 수 있는 예외가 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "제183조제1항의 원칙적 송달장소는 받을 사람의 주소·거소·영업소 또는 사무소이다.",
+    "제시된 장소는 recipient_address이다.",
+    "법정대리인 송달에는 별도 장소 예외가 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "제시된 송달장소는 수령인의 주소이다.",
+      "evidence_excerpt": "recipient_address"
+    }
+  ]
+}

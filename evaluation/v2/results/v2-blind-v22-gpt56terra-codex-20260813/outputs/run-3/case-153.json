@@ -1,0 +1,17 @@
+{
+  "adverse_points": [
+    "오인식 문구로 조문·기한을 오판할 위험"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "OCR 텍스트의 원문 일치 여부"
+  ],
+  "outcome": null,
+  "required_action": "manual-source-comparison-required",
+  "rule_answer": null,
+  "scenario_id": "case-153",
+  "supported_facts": []
+}

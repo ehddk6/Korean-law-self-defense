@@ -66,3 +66,40 @@ def test_masked_decision_is_always_conditional_and_not_high_confidence() -> None
     assert normalized["decision_status"] == "conditional"
     assert normalized["confidence"] == "medium"
     assert normalized["outcome"] == "affirmed"
+
+
+def test_temporal_policy_adds_generic_limitation() -> None:
+    normalized, _ = normalize_evaluation_answer(
+        {"adverse_points": ["별도의 검토가 필요하다."]},
+        {"kind": "service"},
+        {"facts": {"article_186_service_impossible": True}, "official_rule": {"article": "제187조"}},
+    )
+
+    assert any("특별규정" in point for point in normalized["adverse_points"])
+
+
+def test_temporal_policy_readds_fixture_bound_trace_and_key_legal_issue() -> None:
+    fixture = {
+        "kind": "service",
+        "facts": {"sent_under_article_187": True, "dispatch_date": "2025-08-03"},
+        "official_rule": {"article": "민사소송법 제189조", "article_text": "송달은 발송한 때에 효력이 생긴다."},
+    }
+
+    normalized, _ = normalize_evaluation_answer(
+        {"issues": [], "adverse_points": [], "supported_facts": []},
+        {"kind": "service"},
+        fixture,
+    )
+
+    assert "발신주의에 따른 효력 발생 시점" in normalized["issues"]
+    assert normalized["supported_facts"]
+
+
+def test_masked_decision_adds_fixture_bound_trace_fact_when_missing() -> None:
+    normalized, _ = normalize_evaluation_answer(
+        {"decision_status": "conditional", "supported_facts": []},
+        {"kind": "masked-official-decision"},
+        {"record": "원고는 계약금 반환을 청구하였다."},
+    )
+
+    assert normalized["supported_facts"][0]["evidence_excerpt"] == "원고는 계약금 반환을 청구하였다."

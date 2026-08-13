@@ -1,0 +1,76 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T16:35:46+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "확정되지 않은 사실을 전제로 판단할 위험"
+        ],
+        "before": []
+      },
+      "confidence": {
+        "after": "medium",
+        "before": "low"
+      },
+      "issues": {
+        "after": [
+          "상충 진술의 신빙성 판단"
+        ],
+        "before": [
+          "증거-A와 증거-B가 계약일에 관하여 상충한다."
+        ]
+      },
+      "supported_facts": {
+        "after": [
+          {
+            "claim": "입력 자료에 서로 다른 진술이 존재함",
+            "evidence_excerpt": "계약일은 2025-01-04이다."
+          }
+        ],
+        "before": [
+          {
+            "claim": "계약일에 관한 진술이 상충한다.",
+            "evidence_excerpt": "계약일은 2025-01-04이다."
+          },
+          {
+            "claim": "계약일에 관한 진술이 상충한다.",
+            "evidence_excerpt": "계약일은 2025-02-04이다."
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "conflicting-evidence"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "post_guard_decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "conflicting-evidence"
+  },
+  "post_guard_output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-170"
+}

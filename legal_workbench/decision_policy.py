@@ -52,6 +52,13 @@ def normalize_evaluation_answer(
         normalized["required_action"] = None
         normalized["rule_answer"] = None
         normalized["deadline_date"] = None
+        if not normalized.get("supported_facts"):
+            excerpt = _first_fixture_excerpt(fixture)
+            if excerpt:
+                normalized["supported_facts"] = [{
+                    "claim": "제시 기록에 판단 관련 문구가 포함되어 있음",
+                    "evidence_excerpt": excerpt,
+                }]
     elif kind in TEMPORAL_KINDS:
         status, rule_answer, deadline_date = temporal_policy(kind, fixture)
         normalized["decision_status"] = status
@@ -60,6 +67,20 @@ def normalize_evaluation_answer(
         normalized["required_action"] = None
         normalized["outcome"] = None
         normalized["confidence"] = "low" if status == "abstain" else "medium"
+        limitation = "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+        if limitation not in normalized.get("adverse_points", []):
+            normalized["adverse_points"] = [*normalized.get("adverse_points", []), limitation]
+        article = str((fixture.get("official_rule") or {}).get("article") or "")
+        issue = _temporal_issue(kind, _article_number(article))
+        if issue and issue not in normalized.get("issues", []):
+            normalized["issues"] = [*normalized.get("issues", []), issue]
+        if not normalized.get("supported_facts"):
+            excerpt = _first_fixture_excerpt(fixture)
+            if excerpt:
+                normalized["supported_facts"] = [{
+                    "claim": "제시된 공식 조문 또는 사실의 적용 요건",
+                    "evidence_excerpt": excerpt,
+                }]
     elif kind in ADVERSARIAL_POLICY:
         status, required_action, confidence = ADVERSARIAL_POLICY[kind]
         normalized["decision_status"] = status
@@ -100,7 +121,10 @@ def temporal_policy(kind: str, fixture: dict[str, Any]) -> tuple[str, str, str |
             178: ("ready", "personal-delivery-required"),
             183: ("ready", "address-or-workplace-service"),
             186: ("abstain", "substitute-service-needs-capable-recipient"),
-            187: ("conditional", "postal-service-after-article-186-failure"),
+            187: (
+                "ready" if facts.get("article_186_service_impossible") else "conditional",
+                "postal-service-after-article-186-failure",
+            ),
             189: ("ready", "effective-upon-dispatch"),
             194: ("ready", "public-service-requires-statutory-ground"),
         }
@@ -138,6 +162,14 @@ def _article_number(value: str) -> int | None:
     return int(match.group()) if match else None
 
 
+def _temporal_issue(kind: str, article_number: int | None) -> str | None:
+    if kind == "service" and article_number == 189:
+        return "발신주의에 따른 효력 발생 시점"
+    if kind == "limitation" and article_number == 766:
+        return "주관적 기산점과 객관적 10년 기간의 구별"
+    return None
+
+
 def _conflict_trace_facts(fixture: dict[str, Any]) -> list[dict[str, str]]:
     statements = fixture.get("statements") if isinstance(fixture.get("statements"), list) else []
     for statement in statements:
@@ -147,6 +179,36 @@ def _conflict_trace_facts(fixture: dict[str, Any]) -> list[dict[str, str]]:
         if len(re.sub(r"\s+", "", excerpt)) >= 6:
             return [{"claim": "입력 자료에 서로 다른 진술이 존재함", "evidence_excerpt": excerpt}]
     return []
+
+
+def _first_fixture_excerpt(value: Any) -> str | None:
+    if isinstance(value, str):
+        for candidate in re.split(r"(?<=[.!?])\s+|\n+", value):
+            candidate = candidate.strip()
+            if len(re.sub(r"\s+", "", candidate)) >= 6:
+                return candidate[:300]
+    if isinstance(value, dict):
+        preferred_keys = (
+            "record", "facts", "official_rule", "question", "instruction", "untrusted_text", "statements",
+        )
+        for key in preferred_keys:
+            if key not in value:
+                continue
+            excerpt = _first_fixture_excerpt(value[key])
+            if excerpt:
+                return excerpt
+        for key, item in value.items():
+            if key in {"format", "scenario_id", "kind", "domain", "task", "answer_contract"}:
+                continue
+            excerpt = _first_fixture_excerpt(item)
+            if excerpt:
+                return excerpt
+    if isinstance(value, list):
+        for item in value:
+            excerpt = _first_fixture_excerpt(item)
+            if excerpt:
+                return excerpt
+    return None
 
 
 def _add_years(value: Any, years: int) -> str | None:

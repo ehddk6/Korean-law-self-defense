@@ -1,0 +1,55 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T17:22:01+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "법원사무관등이 직권으로 하는 공시송달은 신청 사유의 소명과 별개로 제194조제1항의 실질적 요건 충족 여부가 필요하다.",
+          "외국송달 관련 제191조의 요건이나 제194조제3항·제4항의 별도 사유가 있으면 적용 경로가 달라질 수 있다.",
+          "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+        ],
+        "before": [
+          "법원사무관등이 직권으로 하는 공시송달은 신청 사유의 소명과 별개로 제194조제1항의 실질적 요건 충족 여부가 필요하다.",
+          "외국송달 관련 제191조의 요건이나 제194조제3항·제4항의 별도 사유가 있으면 적용 경로가 달라질 수 있다."
+        ]
+      },
+      "confidence": {
+        "after": "medium",
+        "before": "high"
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "service"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "post_guard_decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "service"
+  },
+  "post_guard_output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-148"
+}

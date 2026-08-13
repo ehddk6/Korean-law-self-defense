@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "계약일과 권리행사 가능일이 일치하는지, 이행기 또는 특별규정으로 기산점이 달라지는지는 제시된 사실만으로 확인되지 않는다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "소멸시효는 권리를 행사할 수 있는 때로부터 진행한다.",
+    "right_exercisable_date\": null"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제166조 제1항상 기산점은 권리행사 가능일이다.",
+    "권리행사 가능일이 제공되지 않아 계약일만으로는 기산일을 확정할 수 없다.",
+    "계약일은 제시되었으나 권리행사 가능일은 null이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "시효 기산점은 권리행사 가능일이다.",
+      "evidence_excerpt": "소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+    },
+    {
+      "claim": "권리행사 가능일이 제시되지 않았다.",
+      "evidence_excerpt": "right_exercisable_date\": null"
+    }
+  ]
+}
