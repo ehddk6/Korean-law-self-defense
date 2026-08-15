@@ -418,25 +418,14 @@ def list_services() -> list[dict[str, Any]]:
     return [SERVICES[key].to_dict() for key in sorted(SERVICES)]
 
 
-DIRECT_SERVICE_TYPES_BY_DOMAIN: dict[str, frozenset[str]] = {
-    "real-estate-lease-registration": frozenset(
-        {
-            "case-management",
-            "civil-complaint",
-            "demand-letter",
-            "evidence-plan",
-            "hearing-prep",
-            "legal-consultation",
-            "legal-opinion",
-            "legal-research-memo",
-            "mediation-arbitration",
-            "negotiation-plan",
-            "payment-order-small-claim",
-            "provisional-relief",
-            "settlement-analysis",
-        }
-    )
-}
+def _case_fit(store: CaseStore) -> str:
+    """사건 도메인을 단정하지 않고 저장된 기록만으로 직접 적용 가능 여부를 판정한다."""
+    facts = store.list_payloads("facts")
+    issues = store.list_payloads("issues")
+    authorities = store.list_payloads("authorities")
+    if facts and issues and authorities:
+        return "direct"
+    return "additional-case-facts-required"
 
 
 def service_catalog_for_case(case_id: str, *, worksets_home: Path | None = None) -> list[dict[str, Any]]:
@@ -444,11 +433,10 @@ def service_catalog_for_case(case_id: str, *, worksets_home: Path | None = None)
     store = store_for(case_id, worksets_home)
     case = store.get_case()
     current = CaseStage(case["stage"])
-    direct_types = DIRECT_SERVICE_TYPES_BY_DOMAIN.get(str(case.get("domain") or ""), frozenset())
+    case_fit = _case_fit(store)
     entries: list[dict[str, Any]] = []
     for service_type, spec in sorted(SERVICES.items()):
         stage_ready = STAGE_ORDER.index(current) >= STAGE_ORDER.index(spec.minimum_stage)
-        case_fit = "direct" if service_type in direct_types else "additional-case-facts-required"
         entries.append(
             {
                 **spec.to_dict(),
@@ -456,9 +444,9 @@ def service_catalog_for_case(case_id: str, *, worksets_home: Path | None = None)
                 "case_fit": case_fit,
                 "status": "plan-ready" if stage_ready else "blocked-by-stage",
                 "note": (
-                    "현재 사건의 사실관계에 직접 적용할 수 있는 업무 설계 묶음입니다."
+                    "현재 사건에 저장된 사실·쟁점·공식 근거를 바탕으로 초안을 준비할 수 있는 업무입니다."
                     if case_fit == "direct"
-                    else "이 임대차 사건과는 다른 사실관계가 필요합니다. 가상 사실을 추가해 결론을 만들지 않습니다."
+                    else "현재 사건 기록에는 이 업무에 필요한 사실관계가 충분하지 않습니다. 가상 사실을 추가해 결론을 만들지 않습니다."
                 ),
             }
         )
@@ -571,7 +559,7 @@ def draft_service_catalog(
                 "- 주의할 점: " + ", ".join(item["special_gates"]),
             ]
         )
-    lines.extend(["", "## 프로젝트가 지원하지만 현재 임대차 사건에는 바로 적용하지 않는 기능"])
+    lines.extend(["", "## 프로젝트가 지원하지만 현재 사건에는 바로 적용하지 않는 기능"])
     lines.append("아래 기능도 지원하지만, 이 사건과 다른 사실이 필요합니다. 없는 사실을 꾸며 문서를 만들지 않습니다.")
     for item in other:
         lines.extend(
@@ -628,7 +616,7 @@ def draft_service_output(
     store = store_for(case_id, worksets_home)
     case = store.get_case()
     spec = SERVICES[service_type]
-    direct_types = DIRECT_SERVICE_TYPES_BY_DOMAIN.get(str(case.get("domain") or ""), frozenset())
+    directly_applicable = _case_fit(store) == "direct"
     markdown = _service_draft_markdown(
         case=case,
         spec=spec,
@@ -638,7 +626,7 @@ def draft_service_output(
         deadlines=store.list_payloads("deadlines"),
         opinion=(store.list_payloads("opinions") or [None])[-1],
         bundle_path=bundle_path,
-        directly_applicable=service_type in direct_types,
+        directly_applicable=directly_applicable,
     )
     if scan_residual_pii(markdown):
         raise PermissionError("업무 초안에 비식별되지 않은 개인정보 패턴이 남아 있습니다.")
@@ -724,7 +712,7 @@ def _service_draft_markdown(
             [
                 "",
                 "## 현재 사건에는 바로 적용하지 않음",
-                "이 사건은 임대차보증금 반환 분쟁입니다. 이 업무는 다른 종류의 사실관계가 있어야 하므로, 없는 사실을 만들어 실질적인 법률 문서를 작성하지 않았습니다.",
+                "현재 사건 기록에는 이 업무에 필요한 사실관계(사실·쟁점·공식 근거)가 충분하지 않습니다. 없는 사실을 만들어 실질적인 법률 문서를 작성하지 않았습니다.",
                 "",
                 "## 새 사건에서 먼저 확인할 자료",
             ]
@@ -773,90 +761,37 @@ def _direct_service_sections(
     deadlines: list[dict[str, Any]],
     opinion: dict[str, Any] | None,
 ) -> list[str]:
-    if service_type == "demand-letter":
-        return [
-            "### 보낼 내용의 뼈대",
-            "1. 계약 종료일, 보증금 지급, 반환 요구 및 퇴거·열쇠 전달 제안 사실을 날짜 순서로 적습니다.",
-            "2. 상대방에게 보증금 반환 예정일, 공제 주장 항목별 근거, 열쇠 수령·점검 일정을 서면으로 알려 달라고 요구합니다.",
-            "3. 수리비 공제를 주장한다면 사진, 세부 견적, 실제 수리 내역과 임차인 귀책 근거를 요청합니다.",
-            "4. 주소·수신인·구체적 이행기한은 실제 원본을 확인한 뒤 사용자가 정합니다.",
-        ]
-    if service_type == "evidence-plan":
-        return [
-            "### 증거 정리 순서",
-            "1. 계약서와 보증금 이체확인증: 계약과 지급을 보여 주는 자료로 분류합니다.",
-            "2. 내용증명·문자: 반환 요구, 다음 임차인 관련 답변, 열쇠 전달 제안을 시간순으로 정리합니다.",
-            "3. 입주·퇴거 사진 및 동영상: 원본 파일명과 촬영일이 보존되도록 복사본과 분리합니다.",
-            "4. 수리비 자료: 입주 당시 상태, 견적서, 실제 수리 여부를 각각 따로 보관합니다.",
-            "5. 열쇠 전달 자료: 재차 제안, 수령 거절, 제3자 입회 또는 보관 방법을 기록합니다.",
-        ]
-    if service_type == "case-management":
-        return [
-            "### 다음 할 일",
-            "1. 계약서 특약을 확인합니다.",
-            "2. 열쇠 전달 방법과 일정을 다시 제안한 기록을 남깁니다.",
-            "3. 임대인의 공제 주장에 대해 항목별 자료를 요구합니다.",
-            "4. 수집한 자료를 계약·지급·통지·퇴거·수리비의 다섯 묶음으로 나눕니다.",
-        ]
-    if service_type == "legal-consultation":
-        return [
-            "### 쉬운 답",
-            "보증금 반환을 요구할 방향은 있지만, 열쇠를 돌려줬거나 제대로 돌려주겠다고 제안했다는 자료와 수리비 공제 근거를 함께 확인해야 합니다.",
-            "### 상담 때 가져갈 자료",
-            "- 계약서 원본, 이체확인증, 내용증명, 문자 원본, 사진·동영상 원본, 열쇠 전달 관련 기록",
-        ]
-    if service_type == "legal-research-memo":
-        return [
-            "### 조사 질문",
-            "- 계약 종료 뒤 보증금 반환과 목적물 인도는 어떤 관계인지",
-            "- 임대인이 수리비를 공제하려면 무엇을 보여야 하는지",
-            "### 조사 원칙",
-            "- 유리한 근거만 찾지 않고, 임대인이 주장할 수 있는 동시이행·공제 논리도 함께 확인합니다.",
-        ]
+    """사건 유형을 단정하지 않고 저장된 기록에서만 파생한 업무 섹션을 만든다."""
     if service_type == "legal-opinion":
         return [
             "### 현재 판단",
             (opinion or {}).get("conclusion") or "공식 근거와 핵심 사실을 확인한 뒤 판단합니다.",
         ]
-    if service_type == "negotiation-plan":
-        return [
-            "### 협상 목표",
-            "- 열쇠 전달·점검 일정을 확정하고, 보증금 반환일을 문서로 받는 것",
-            "- 수리비 공제 주장은 항목·근거·금액을 나눠 확인하는 것",
-            "### 양보하지 말아야 할 점",
-            "- 근거 없는 포괄 공제와 반환일 없는 약속은 구분해 기록합니다.",
+    sections: list[str] = []
+    if facts:
+        sections.append("### 이 업무에 기록할 확정 사실")
+        for index, fact in enumerate(facts, start=1):
+            sections.append(f"{index}. {fact['text']}")
+    if evidence:
+        sections.append("### 연결된 증거")
+        sections.append(f"- 사건 기록에 연결된 증거 {len(evidence)}건의 해시·출처를 그대로 유지합니다.")
+    if issues:
+        sections.append("### 쟁점별 확인할 사항")
+        for issue in issues:
+            elements = ", ".join(issue.get("legal_elements") or ["확인 필요"])
+            sections.append(f"- {issue['title']}: 요건 = {elements} / 입증책임 = {issue.get('burden') or '확인 필요'}")
+            if issue.get("missing_facts"):
+                sections.append(f"  - 아직 확정되지 않은 사실: {'; '.join(issue['missing_facts'])}")
+    if deadlines:
+        sections.append("### 기한 점검")
+        for deadline in deadlines:
+            label = deadline.get("title") or deadline["deadline_id"]
+            sections.append(f"- {label}: 만료일 {deadline.get('tentative_due_date') or '미확정'}")
+    sections.extend(
+        [
+            "### 사용자가 직접 확인할 사항",
+            "- 상대방 표시·주소·금액·구체적 기한은 실제 원본에서 확인하며, 없는 값은 비워 둡니다.",
+            "- 공식 근거가 없는 결론은 작성하지 않고, 검색 결과가 없으면 '확인한 공개 자료에서 발견하지 못함'으로 적습니다.",
         ]
-    if service_type in {"settlement-analysis", "mediation-arbitration"}:
-        return [
-            "### 합의안을 볼 때의 기준",
-            "- 보증금 중 다툼 없는 금액과 다투는 수리비를 분리합니다.",
-            "- 열쇠 전달일, 점검 방식, 지급일, 계좌, 지연 시 처리, 추가 청구 포기 범위를 문서로 확인합니다.",
-            "- 합의 수락은 사용자가 직접 결정합니다.",
-        ]
-    if service_type in {"civil-complaint", "payment-order-small-claim"}:
-        return [
-            "### 절차 초안 전에 정리할 것",
-            "- 당사자 표시와 주소는 실명 대응표가 있는 안전한 로컬 환경에서 확인합니다.",
-            "- 청구 금액은 보증금, 인정 가능한 공제, 지연 관련 청구를 섞지 말고 구분합니다.",
-            "- 계약서, 이체확인증, 내용증명, 문자, 사진 및 열쇠 전달 자료를 증거목록으로 연결합니다.",
-            "- 관할, 송달 가능 주소, 비용과 절차 선택은 실제 제출 전 별도로 확인합니다.",
-        ]
-    if service_type == "provisional-relief":
-        return [
-            "### 보전처분 검토 전 확인",
-            "- 임대인의 재산, 긴급성, 피보전권리, 담보와 관할 자료가 현재 사건기록에는 충분하지 않습니다.",
-            "- 이 자료가 확인되기 전에는 가압류·가처분 신청의 필요성이나 가능성을 단정하지 않습니다.",
-        ]
-    if service_type == "hearing-prep":
-        return [
-            "### 30초 설명 연습",
-            "계약은 끝났고 보증금은 이미 지급했습니다. 저는 짐을 빼고 열쇠 전달과 점검을 제안했지만 상대방이 응하지 않았습니다. 수리비 공제는 입주 당시 자료와 실제 수리 근거를 확인해 달라는 입장입니다.",
-            "### 예상 질문",
-            "- 열쇠를 언제, 어떤 방법으로 전달하려 했는가?",
-            "- 입주 당시 상태를 보여 주는 원본 사진과 대화가 있는가?",
-            "- 임대인이 주장하는 수리비의 실제 지출과 손상 원인이 확인되는가?",
-        ]
-    return [
-        "### 현재 사건에 맞춘 준비",
-        "저장된 사실·증거·쟁점과 필요한 확인사항을 이 업무 목적에 맞춰 다시 정리합니다.",
-    ]
+    )
+    return sections

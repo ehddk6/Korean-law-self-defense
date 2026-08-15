@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .audit import is_official_url
+from .audit import authority_is_verified_p1
 from .models import OpinionStatus, new_id, utc_now
 from .security import (
     atomic_json_write,
@@ -215,18 +215,12 @@ def finish_consultation(
         str(item.get("authority_id")): item
         for item in authorities
         if item.get("authority_id")
-        and item.get("source_tier") == "P1"
-        and is_official_url(str(item.get("official_url") or ""))
-        and is_official_url(str(item.get("verification_url") or ""))
-        and item.get("official_url") != item.get("verification_url")
-        and item.get("verified_at")
+        and authority_is_verified_p1(
+            item,
+            files_check=lambda entry: _consult_authority_files_match(entry, directory),
+        )
         and item.get("citation")
         and item.get("text_sha256")
-        and _consult_authority_files_match(item, directory)
-        and item.get("mcp_server") == "korean-law"
-        and item.get("mcp_version") == "4.7.4"
-        and item.get("mcp_tool")
-        and item.get("mcp_verified_at")
     }
     critical_issues = list(result.get("critical_issues") or [])
     critical_facts = list(result.get("critical_facts") or [])
@@ -285,6 +279,8 @@ def finish_consultation(
     }
     if scan_residual_pii(json.dumps(pii_surface, ensure_ascii=False)):
         raise PermissionError("상담 결과에 비식별되지 않은 개인정보 패턴이 남아 있어 저장하지 않았습니다.")
+    if scan_prompt_injection(json.dumps(pii_surface, ensure_ascii=False)):
+        raise PermissionError("상담 결과에 실행 지시 형태의 텍스트가 남아 있어 저장하지 않았습니다.")
     if blockers:
         status = OpinionStatus.ABSTAIN
     final = {

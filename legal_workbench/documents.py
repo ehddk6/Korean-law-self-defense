@@ -277,8 +277,11 @@ def create_pdf(markdown: str, output: Path, *, title: str) -> Path:
         Paragraph(html.escape(title), title_style),
         Paragraph("사용자 검토용 초안 - 법원 제출 완료 문서가 아님", warning_style),
     ]
+    number_index = 0
     for kind, text in presentation_blocks(markdown, title):
         escaped = html.escape(text)
+        if kind != "number":
+            number_index = 0
         if kind == "blank":
             story.append(Spacer(1, 2 * mm))
         elif kind.startswith("heading"):
@@ -286,7 +289,8 @@ def create_pdf(markdown: str, output: Path, *, title: str) -> Path:
         elif kind == "bullet":
             story.append(Paragraph(f"- {escaped}", body))
         elif kind == "number":
-            story.append(Paragraph(escaped, body))
+            number_index += 1
+            story.append(Paragraph(f"{number_index}. {escaped}", body))
         elif kind == "quote":
             quote_style = ParagraphStyle("LegalQuote", parent=body, leftIndent=8 * mm, textColor="#444444")
             story.append(Paragraph(escaped, quote_style))
@@ -336,14 +340,23 @@ def create_hwpx(markdown: str, output: Path, *, title: str) -> Path:
         ]
         parts.extend(helpers.make_cover_page(title, subtitle="사용자 검토용 초안", date=date.today().strftime("%Y. %m.")))
         section_number = 1
+        number_index = 0
         for kind, text in presentation_blocks(markdown, title):
+            if kind != "number":
+                number_index = 0
             if kind == "heading1" or kind == "heading2":
                 parts.append(helpers.make_section_bar(str(section_number), text))
                 section_number += 1
             elif kind == "blank":
                 parts.append(helpers.make_empty_line())
             elif text:
-                marker = "-" if kind in {"bullet", "number"} else ""
+                if kind == "number":
+                    number_index += 1
+                    marker = f"{number_index}."
+                elif kind == "bullet":
+                    marker = "-"
+                else:
+                    marker = ""
                 parts.append(helpers.make_body_para(marker, text))
         parts.append("</hs:sec>")
         destination = Path(output)

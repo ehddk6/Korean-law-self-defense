@@ -11,13 +11,14 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
+from .audit import SUPPORTED_MCP_VERSIONS
 from .evaluation import load_manifest
 from .models import utc_now
 from .security import atomic_json_write, redact_text, scan_residual_pii, sha256_file
 
 
 BRIDGE = Path(__file__).resolve().parents[1] / "scripts" / "law-api-bridge.mjs"
-MCP_VERSION = "4.7.4"
+MCP_VERSION = sorted(SUPPORTED_MCP_VERSIONS)[-1]
 
 DOMAIN_QUERIES: dict[str, tuple[str, ...]] = {
     "civil-contract-tort": ("손해배상", "계약해제", "부당이득"),

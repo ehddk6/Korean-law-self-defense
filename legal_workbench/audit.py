@@ -4,7 +4,7 @@ import calendar
 import json
 from datetime import date, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 from urllib.parse import urlparse
 
 from .documents import DocumentError, extract_document, validate_docx, validate_hwpx, validate_pdf
@@ -31,6 +31,72 @@ def is_official_url(url: str) -> bool:
     return any(host == suffix or host.endswith(f".{suffix}") for suffix in P1_HOST_SUFFIXES)
 
 
+MCP_SERVER_NAME = "korean-law"
+SUPPORTED_MCP_VERSIONS = frozenset({"4.7.4"})
+
+
+def _p1_text_files_match(item: dict[str, Any]) -> bool:
+    source_path = Path(str(item.get("source_text_path") or ""))
+    verification_path = Path(str(item.get("verification_text_path") or ""))
+    return (
+        source_path.is_file()
+        and sha256_file(source_path) == item.get("text_sha256")
+        and verification_path.is_file()
+        and sha256_file(verification_path) == item.get("verification_text_sha256")
+    )
+
+
+def p1_verification_failures(
+    item: dict[str, Any],
+    *,
+    action_date: date | None = None,
+    files_check: Callable[[dict[str, Any]], bool] | None = None,
+) -> list[tuple[str, str]]:
+    """P1 이중 검증 게이트의 실패 항목을 (감사 코드, 사유) 순서 쌍으로 반환한다."""
+    failures: list[tuple[str, str]] = []
+    official_url = item.get("official_url") or ""
+    verification_url = item.get("verification_url") or ""
+    if not is_official_url(str(official_url)):
+        failures.append(("P1_NON_OFFICIAL_URL", "P1 근거의 원문 URL이 공식 HTTPS 도메인이 아닙니다."))
+    if not item.get("verified_at") or not verification_url:
+        failures.append(("P1_NOT_DUAL_VERIFIED", "P1 근거가 두 번째 공식 경로에서 재검증되지 않았습니다."))
+    elif not is_official_url(str(verification_url)) or verification_url == official_url:
+        failures.append(("P1_INVALID_VERIFICATION_URL", "P1 재검증 URL은 서로 다른 공식 HTTPS 원문이어야 합니다."))
+    check = files_check or _p1_text_files_match
+    if not check(item):
+        failures.append(("P1_TEXT_HASH_UNVERIFIED", "P1 원문·재검증 원문 파일과 SHA-256을 대조하지 못했습니다."))
+    if not (
+        item.get("mcp_server") == MCP_SERVER_NAME
+        and item.get("mcp_version") in SUPPORTED_MCP_VERSIONS
+        and item.get("mcp_tool")
+        and item.get("mcp_verified_at")
+    ):
+        failures.append(("P1_MCP_VERIFICATION_MISSING", "P1 근거에 고정 버전 한국법 MCP 조회·검증 기록이 없습니다."))
+    if item.get("case_number") or item.get("court"):
+        if not (item.get("case_number") and item.get("court") and item.get("decision_date")):
+            failures.append(("DECISION_METADATA_INCOMPLETE", "판결·결정 P1에 사건번호·기관·선고일이 모두 필요합니다."))
+    elif not item.get("effective_from"):
+        failures.append(("LAW_EFFECTIVE_DATE_MISSING", "법령 P1에 시행일 또는 적용 시작일이 없습니다."))
+    if action_date and item.get("effective_from"):
+        effective_from = _parse_date(item.get("effective_from"))
+        effective_to = _parse_date(item.get("effective_to"))
+        if not effective_from or action_date < effective_from or (effective_to and action_date > effective_to):
+            failures.append(("APPLICABLE_LAW_DATE_MISMATCH", "P1 근거의 시행기간이 사건 행위일을 포함하지 않습니다."))
+    return failures
+
+
+def authority_is_verified_p1(
+    item: dict[str, Any],
+    *,
+    action_date: date | None = None,
+    files_check: Callable[[dict[str, Any]], bool] | None = None,
+) -> bool:
+    """근거 레코드가 이중 검증 P1 게이트를 통과하는지 단일 출처로 판정한다."""
+    if item.get("source_tier") != "P1":
+        return False
+    return not p1_verification_failures(item, action_date=action_date, files_check=files_check)
+
+
 def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
     """Hash every material input and generated file covered by a release audit."""
     case = dict(store.get_case())
@@ -51,6 +117,8 @@ def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
             "quantums",
             "action_logs",
             "mock_hearings",
+            "evidence_checklists",
+            "adversarial_briefs",
         )
     }
     files: list[dict[str, Any]] = []
@@ -116,6 +184,7 @@ def audit_case(store: CaseStore) -> AuditReport:
     issue_ids = {item["issue_id"] for item in issues}
     document_by_id = {item["document_id"]: item for item in documents}
     fact_by_id = {item["fact_id"]: item for item in facts}
+    as_of_date = _parse_date(case.get("as_of_date"))
 
     for item in evidence:
         if item["document_id"] not in document_ids:
@@ -173,120 +242,26 @@ def audit_case(store: CaseStore) -> AuditReport:
                     item["fact_id"],
                 )
             )
+        occurred = _parse_date(item.get("occurred_at"))
+        if occurred and as_of_date and occurred > as_of_date:
+            findings.append(
+                _finding(
+                    Severity.MAJOR,
+                    "FACT_AFTER_AS_OF_DATE",
+                    f"사실 발생일 {occurred.isoformat()}이 판단 기준일 {as_of_date.isoformat()}보다 뒤입니다.",
+                    "fact",
+                    item["fact_id"],
+                )
+            )
 
     verified_p1_ids: set[str] = set()
     action_date = _parse_date(case.get("action_date"))
     for item in authorities:
-        tier = item.get("source_tier")
-        official_url = item.get("official_url") or ""
-        verification_url = item.get("verification_url") or ""
-        if tier == "P1":
-            p1_valid = True
-            if not is_official_url(official_url):
-                p1_valid = False
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "P1_NON_OFFICIAL_URL",
-                        "P1 근거의 원문 URL이 공식 HTTPS 도메인이 아닙니다.",
-                        "authority",
-                        item["authority_id"],
-                    )
-                )
-            if not item.get("verified_at") or not verification_url:
-                p1_valid = False
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "P1_NOT_DUAL_VERIFIED",
-                        "P1 근거가 두 번째 공식 경로에서 재검증되지 않았습니다.",
-                        "authority",
-                        item["authority_id"],
-                    )
-                )
-            elif not is_official_url(verification_url) or verification_url == official_url:
-                p1_valid = False
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "P1_INVALID_VERIFICATION_URL",
-                        "P1 재검증 URL은 서로 다른 공식 HTTPS 원문이어야 합니다.",
-                        "authority",
-                        item["authority_id"],
-                    )
-                )
-            source_path = Path(str(item.get("source_text_path") or ""))
-            verification_path = Path(str(item.get("verification_text_path") or ""))
-            if (
-                not source_path.is_file()
-                or sha256_file(source_path) != item.get("text_sha256")
-                or not verification_path.is_file()
-                or sha256_file(verification_path) != item.get("verification_text_sha256")
-            ):
-                p1_valid = False
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "P1_TEXT_HASH_UNVERIFIED",
-                        "P1 원문·재검증 원문 파일과 SHA-256을 대조하지 못했습니다.",
-                        "authority",
-                        item["authority_id"],
-                    )
-                )
-            if not (
-                item.get("mcp_server") == "korean-law"
-                and item.get("mcp_version") == "4.7.4"
-                and item.get("mcp_tool")
-                and item.get("mcp_verified_at")
-            ):
-                p1_valid = False
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "P1_MCP_VERIFICATION_MISSING",
-                        "P1 근거에 고정 버전 한국법 MCP 조회·검증 기록이 없습니다.",
-                        "authority",
-                        item["authority_id"],
-                    )
-                )
-            if item.get("case_number") or item.get("court"):
-                if not (item.get("case_number") and item.get("court") and item.get("decision_date")):
-                    p1_valid = False
-                    findings.append(
-                        _finding(
-                            Severity.CRITICAL,
-                            "DECISION_METADATA_INCOMPLETE",
-                            "판결·결정 P1에 사건번호·기관·선고일이 모두 필요합니다.",
-                            "authority",
-                            item["authority_id"],
-                        )
-                    )
-            elif not item.get("effective_from"):
-                p1_valid = False
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "LAW_EFFECTIVE_DATE_MISSING",
-                        "법령 P1에 시행일 또는 적용 시작일이 없습니다.",
-                        "authority",
-                        item["authority_id"],
-                    )
-                )
-            if action_date and item.get("effective_from"):
-                effective_from = _parse_date(item.get("effective_from"))
-                effective_to = _parse_date(item.get("effective_to"))
-                if not effective_from or action_date < effective_from or (effective_to and action_date > effective_to):
-                    p1_valid = False
-                    findings.append(
-                        _finding(
-                            Severity.CRITICAL,
-                            "APPLICABLE_LAW_DATE_MISMATCH",
-                            "P1 근거의 시행기간이 사건 행위일을 포함하지 않습니다.",
-                            "authority",
-                            item["authority_id"],
-                        )
-                    )
-            if p1_valid:
+        if item.get("source_tier") == "P1":
+            failures = p1_verification_failures(item, action_date=action_date)
+            for code, message in failures:
+                findings.append(_finding(Severity.CRITICAL, code, message, "authority", item["authority_id"]))
+            if not failures:
                 verified_p1_ids.add(item["authority_id"])
         if item.get("negative_search_only"):
             findings.append(
@@ -595,6 +570,36 @@ def audit_case(store: CaseStore) -> AuditReport:
                         )
                     )
 
+    referenced_deadline_ids = {item.get("deadline_id") for item in action_logs if item.get("deadline_id")}
+    for item in deadlines:
+        if item["deadline_id"] in referenced_deadline_ids:
+            continue
+        due = _parse_date(item.get("tentative_due_date")) or _calculate_deadline(item)
+        if not due:
+            continue
+        days_left = (due - today).days
+        if days_left < 0:
+            severity = Severity.CRITICAL if item.get("critical") else Severity.MAJOR
+            findings.append(
+                _finding(
+                    severity,
+                    "DEADLINE_OVERDUE",
+                    f"기한이 이미 도과했습니다(만료일 {due.isoformat()}). 조치 기록과 연결되지 않은 기한입니다.",
+                    "deadline",
+                    item["deadline_id"],
+                )
+            )
+        elif days_left <= 7:
+            findings.append(
+                _finding(
+                    Severity.MAJOR,
+                    "DEADLINE_APPROACHING",
+                    f"기한이 임박했습니다({days_left}일 남음, 만료일 {due.isoformat()}).",
+                    "deadline",
+                    item["deadline_id"],
+                )
+            )
+
     for item in mock_hearings:
         hearing_id = item["hearing_id"]
         referenced_issues = [value for value in str(item.get("issue_id") or "").split(",") if value]
@@ -635,7 +640,14 @@ def audit_case(store: CaseStore) -> AuditReport:
                 )
             )
 
-    record_surface = json.dumps(        {
+    record_surface = json.dumps(
+        {
+            "case": {
+                "title": case.get("title"),
+                "goal": case.get("goal"),
+                "forum": case.get("forum"),
+                "jurisdiction": case.get("jurisdiction"),
+            },
             "facts": [{"text": item.get("text"), "actor_token": item.get("actor_token")} for item in facts],
             "issues": [
                 {
@@ -644,6 +656,16 @@ def audit_case(store: CaseStore) -> AuditReport:
                     "missing_facts": item.get("missing_facts"),
                 }
                 for item in issues
+            ],
+            "deadlines": [
+                {
+                    "title": item.get("title"),
+                    "trigger_event": item.get("trigger_event"),
+                    "governing_rule": item.get("governing_rule"),
+                    "calculation": item.get("calculation"),
+                    "holiday_adjustment": item.get("holiday_adjustment"),
+                }
+                for item in deadlines
             ],
             "opinions": [
                 {
@@ -921,6 +943,37 @@ def _parse_date(value: Any) -> date | None:
         return None
 
 
+def deadline_overview(store: CaseStore) -> list[dict[str, Any]]:
+    """저장된 기한 레코드의 만료일과 잔여일을 조회 전용으로 정리한다."""
+    today = date.today()
+    rows: list[dict[str, Any]] = []
+    for item in store.list_payloads("deadlines"):
+        due = _parse_date(item.get("tentative_due_date")) or _calculate_deadline(item)
+        entry: dict[str, Any] = {
+            "deadline_id": item["deadline_id"],
+            "title": item.get("title"),
+            "critical": bool(item.get("critical")),
+            "verified": bool(item.get("verified")),
+            "governing_rule": item.get("governing_rule"),
+            "due_date": due.isoformat() if due else None,
+        }
+        if due is None:
+            entry["status"] = "미확정"
+            entry["days_left"] = None
+        else:
+            days_left = (due - today).days
+            entry["days_left"] = days_left
+            if days_left < 0:
+                entry["status"] = "도과"
+            elif days_left <= 7:
+                entry["status"] = "임박"
+            else:
+                entry["status"] = "예정"
+        rows.append(entry)
+    rows.sort(key=lambda row: (row["due_date"] is None, row["due_date"] or ""))
+    return rows
+
+
 def _calculate_deadline(item: dict[str, Any]) -> date | None:
     trigger = _parse_date(item.get("trigger_date"))
     duration = item.get("duration_value")
@@ -945,6 +998,77 @@ def _calculate_deadline(item: dict[str, Any]) -> date | None:
     else:
         return None
     return result + timedelta(days=adjustment)
+
+
+def case_timeline(store: CaseStore) -> list[dict[str, Any]]:
+    """사실·기한·공식 조치를 날짜순으로 묶은 통합 연표를 조회 전용으로 반환한다."""
+    case = store.get_case()
+    as_of = _parse_date(case.get("as_of_date"))
+    today = date.today()
+    entries: list[dict[str, Any]] = []
+    for item in store.list_payloads("facts"):
+        occurred = _parse_date(item.get("occurred_at"))
+        if not occurred:
+            continue
+        flags: list[str] = []
+        if as_of and occurred > as_of:
+            flags.append("fact-after-as-of-date")
+        entries.append(
+            {
+                "date": occurred.isoformat(),
+                "kind": "fact",
+                "record_id": item["fact_id"],
+                "title": item.get("text"),
+                "flags": flags,
+            }
+        )
+    referenced_deadline_ids = {
+        log.get("deadline_id") for log in store.list_payloads("action_logs") if log.get("deadline_id")
+    }
+    for item in store.list_payloads("deadlines"):
+        deadline_id = item["deadline_id"]
+        trigger = _parse_date(item.get("trigger_date"))
+        if trigger:
+            entries.append(
+                {
+                    "date": trigger.isoformat(),
+                    "kind": "deadline-trigger",
+                    "record_id": deadline_id,
+                    "title": item.get("title"),
+                    "flags": [],
+                }
+            )
+        due = _parse_date(item.get("tentative_due_date")) or _calculate_deadline(item)
+        if due:
+            flags = []
+            if (due - today).days < 0:
+                flags.append("overdue")
+            if deadline_id not in referenced_deadline_ids:
+                flags.append("no-action-log")
+            entries.append(
+                {
+                    "date": due.isoformat(),
+                    "kind": "deadline-due",
+                    "record_id": deadline_id,
+                    "title": item.get("title"),
+                    "flags": flags,
+                }
+            )
+    for item in store.list_payloads("action_logs"):
+        occurred = _parse_date(item.get("action_date"))
+        if not occurred:
+            continue
+        entries.append(
+            {
+                "date": occurred.isoformat(),
+                "kind": "action",
+                "record_id": item["action_id"],
+                "title": item.get("action_description"),
+                "flags": [],
+            }
+        )
+    entries.sort(key=lambda entry: (entry["date"], entry["kind"], str(entry["record_id"])))
+    return entries
 
 
 def _analysis_result_valid(store: CaseStore, value: Any, expected_hash: Any, role: str) -> bool:

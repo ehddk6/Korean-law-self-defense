@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from datetime import date
 from pathlib import Path
 from typing import Any, Sequence
 
@@ -190,6 +191,26 @@ def build_parser() -> argparse.ArgumentParser:
     status = subparsers.add_parser("status", help="사건 상태와 감사 게이트 조회")
     status.add_argument("--case", required=True)
 
+    cases = subparsers.add_parser("cases", help="작업공간의 사건 목록 조회")
+
+    search = subparsers.add_parser("search", help="사건 문서 본문 전문검색(FTS5)")
+    search.add_argument("--case", required=True)
+    search.add_argument("--query", required=True)
+    search.add_argument("--limit", type=int, default=20)
+
+    deadlines = subparsers.add_parser("deadlines", help="저장된 기한의 만료일·잔여일 조회")
+    deadlines.add_argument("--case", required=True)
+
+    events = subparsers.add_parser("events", help="사건 이벤트 해시 체인 조회(읽기 전용)")
+    events.add_argument("--case", required=True)
+    events.add_argument("--limit", type=int, default=0, help="최근 N건만 조회(0=전체)")
+
+    timeline = subparsers.add_parser("timeline", help="사실·기한·공식 조치 통합 연표 조회(읽기 전용)")
+    timeline.add_argument("--case", required=True)
+
+    preflight = subparsers.add_parser("preflight", help="저장 없는 사전 감사와 최신 감사 대비 변경(drift) 보고")
+    preflight.add_argument("--case", required=True)
+
     consult = subparsers.add_parser("consult", help="공식 근거 기반 한국법 상담")
     consult_sub = consult.add_subparsers(dest="consult_command", required=True)
     consult_start = consult_sub.add_parser("start", help="비식별 상담 접수와 조사 묶음 생성")
@@ -202,6 +223,7 @@ def build_parser() -> argparse.ArgumentParser:
     consult_finish.add_argument("--result", type=Path, required=True)
     consult_status_parser = consult_sub.add_parser("status", help="상담 상태 조회")
     consult_status_parser.add_argument("--id", required=True)
+    consult_sub.add_parser("list", help="상담 목록 조회")
 
     service = subparsers.add_parser("service", help="변호사 업무 전 과정 묶음")
     service_sub = service.add_subparsers(dest="service_command", required=True)
@@ -491,10 +513,107 @@ def dispatch(args: argparse.Namespace) -> Any:
                 "issues": len(store.list_payloads("issues")),
                 "deadlines": len(store.list_payloads("deadlines")),
                 "opinions": len(store.list_payloads("opinions")),
+                "virtual_trials": len(store.list_payloads("virtual_trials")),
+                "pleading_strategies": len(store.list_payloads("pleading_strategies")),
+                "clarifications": len(store.list_payloads("clarifications")),
+                "quantums": len(store.list_payloads("quantums")),
+                "action_logs": len(store.list_payloads("action_logs")),
+                "mock_hearings": len(store.list_payloads("mock_hearings")),
+                "evidence_checklists": len(store.list_payloads("evidence_checklists")),
+                "adversarial_briefs": len(store.list_payloads("adversarial_briefs")),
             },
             "latest_audit": store.latest_audit(),
             "event_chain_valid": store.verify_event_chain(),
         }
+    if args.command == "cases":
+        from .storage import discover_cases
+
+        summaries: list[dict[str, Any]] = []
+        for case_id in discover_cases(worksets):
+            store = store_for(case_id, worksets)
+            try:
+                case = store.get_case()
+            except KeyError:
+                continue
+            summaries.append(
+                {
+                    "case_id": case["case_id"],
+                    "title": case["title"],
+                    "domain": case["domain"],
+                    "stage": case["stage"],
+                    "as_of_date": case["as_of_date"],
+                    "updated_at": case["updated_at"],
+                }
+            )
+        return {"worksets_home": str(worksets), "cases": summaries}
+    if args.command == "search":
+        store = store_for(args.case, worksets)
+        store.get_case()
+        return {"case_id": args.case, "query": args.query, "results": store.search_documents(args.query, limit=args.limit)}
+    if args.command == "deadlines":
+        from .audit import deadline_overview
+
+        store = store_for(args.case, worksets)
+        store.get_case()
+        return {
+            "case_id": args.case,
+            "checked_on": date.today().isoformat(),
+            "deadlines": deadline_overview(store),
+        }
+    if args.command == "events":
+        store = store_for(args.case, worksets)
+        store.get_case()
+        limit = args.limit if args.limit and args.limit > 0 else None
+        return {
+            "case_id": args.case,
+            "chain_valid": store.verify_event_chain(),
+            "events": store.list_events(limit=limit),
+        }
+    if args.command == "timeline":
+        from .audit import case_timeline
+
+        store = store_for(args.case, worksets)
+        store.get_case()
+        return {
+            "case_id": args.case,
+            "checked_on": date.today().isoformat(),
+            "entries": case_timeline(store),
+        }
+    if args.command == "preflight":
+        from .audit import audit_case, build_release_snapshot
+
+        store = store_for(args.case, worksets)
+        store.get_case()
+        report = audit_case(store)
+        payload = report.to_dict()
+        snapshot = build_release_snapshot(store)
+        payload["release_snapshot_sha256"] = snapshot["sha256"]
+        payload["release_snapshot_file_count"] = snapshot["file_count"]
+        latest = store.latest_audit()
+        latest_snapshot = (latest or {}).get("release_snapshot") or {}
+        drift: dict[str, Any] = {
+            "latest_audit_id": (latest or {}).get("audit_id"),
+            "snapshot_match": bool(latest and latest_snapshot.get("sha256") == snapshot["sha256"]),
+            "files": [],
+        }
+        if latest and not drift["snapshot_match"]:
+            previous_files = {
+                (item.get("kind"), item.get("name")): item.get("sha256")
+                for item in latest_snapshot.get("files") or []
+            }
+            current_files = {(item["kind"], item["name"]): item["sha256"] for item in snapshot["files"]}
+            for key in sorted(
+                set(previous_files) | set(current_files),
+                key=lambda item: (str(item[0]), str(item[1])),
+            ):
+                old = previous_files.get(key)
+                new = current_files.get(key)
+                if old == new:
+                    continue
+                change = "added" if old is None else ("removed" if new is None else "changed")
+                drift["files"].append({"kind": key[0], "name": key[1], "change": change})
+        payload["drift"] = drift
+        return payload
     if args.command == "consult":
         if args.consult_command == "start":
             entities = load_json(args.entities) if args.entities else None
@@ -510,6 +629,26 @@ def dispatch(args: argparse.Namespace) -> Any:
             return finish_consultation(args.id, load_json(args.result), worksets_home=worksets)
         if args.consult_command == "status":
             return consultation_status(args.id, worksets_home=worksets)
+        if args.consult_command == "list":
+            consultations_dir = worksets / "consultations"
+            items: list[dict[str, Any]] = []
+            if consultations_dir.is_dir():
+                for path in sorted(consultations_dir.iterdir()):
+                    record_path = path / "consultation.json"
+                    if not record_path.is_file():
+                        continue
+                    record = json.loads(record_path.read_text(encoding="utf-8"))
+                    items.append(
+                        {
+                            "consultation_id": record.get("consultation_id"),
+                            "domain": record.get("domain"),
+                            "status": record.get("status"),
+                            "result_status": record.get("result_status"),
+                            "urgent_flags": record.get("urgent_flags") or [],
+                            "created_at": record.get("created_at"),
+                        }
+                    )
+            return {"consultations": items}
     if args.command == "service":
         if args.service_command == "list":
             return list_services()

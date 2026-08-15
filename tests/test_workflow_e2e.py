@@ -1,4 +1,5 @@
 import json
+from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
@@ -166,11 +167,11 @@ def test_case_can_move_from_intake_to_audited_export(tmp_path: Path, monkeypatch
             "deadline_id": "deadline-e2e",
             "title": "검증 기한",
             "trigger_event": "송달",
-            "trigger_date": "2026-01-01",
+            "trigger_date": date.today().isoformat(),
             "governing_rule": "예시 법령 제1조",
             "authority_id": authority.authority_id,
             "calculation": "기산일 다음 날부터 10일",
-            "tentative_due_date": "2026-01-11",
+            "tentative_due_date": (date.today() + timedelta(days=10)).isoformat(),
             "holiday_adjustment": "해당 없음 확인",
             "duration_value": 10,
             "duration_unit": "days",
@@ -242,7 +243,8 @@ def test_case_can_move_from_intake_to_audited_export(tmp_path: Path, monkeypatch
     guide_text = guide["md"].read_text(encoding="utf-8")
     assert "## 한눈에 보는 결론" in guide_text
     assert "## 이 프로젝트가 해 줄 수 있는 일" in guide_text
-    assert "보증금을 돌려달라고 요구할 방향은 있습니다." in guide_text
+    assert "공식 근거 기반 잠정 판단입니다:" in guide_text
+    assert "검증된 입력 범위에서 반환 청구 요건이 충족된다는 잠정 판단" in guide_text
     audit = run_audit(case_id, worksets_home=tmp_path)
     assert audit["release_allowed"] is True
     original_draft = drafts["md"].read_bytes()

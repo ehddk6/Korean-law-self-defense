@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from .audit import authority_is_verified_p1
 from .models import CaseStage, MockHearingCheck, MockHearingRecord, new_id
 from .security import atomic_json_write
 from .workflow import store_for
@@ -64,15 +65,11 @@ def simulate_mock_hearing(
             }
         )
         has_favorable_p1 = any(
-            (item := authority_by_id.get(aid))
-            and item.get("source_tier") == "P1"
-            and item.get("verified_at")
+            (item := authority_by_id.get(aid)) and authority_is_verified_p1(item)
             for aid in favorable
         )
         has_adverse_p1 = any(
-            (item := authority_by_id.get(aid))
-            and item.get("source_tier") == "P1"
-            and item.get("verified_at")
+            (item := authority_by_id.get(aid)) and authority_is_verified_p1(item)
             for aid in adverse
         )
         satisfied = bool(linked) and not missing and has_favorable_p1

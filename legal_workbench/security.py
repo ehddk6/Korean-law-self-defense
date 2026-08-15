@@ -101,6 +101,13 @@ INJECTION_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
         "secret-exfiltration",
         re.compile(r"(?i)(?:reveal|print|send|upload|노출|출력|전송).{0,30}(?:secret|token|key|password|비밀|인증키)"),
     ),
+    (
+        "url-fetch-instruction",
+        re.compile(
+            r"(?i)(?:(?:fetch|curl|wget|download|open|접속|방문|다운로드|열어).{0,40}https?://"
+            r"|https?://.{0,40}(?:fetch|curl|wget|download|접속|방문|다운로드))"
+        ),
+    ),
 )
 
 SAFE_IDENTIFIER_PATTERN = re.compile(r"^[A-Za-z0-9가-힣][A-Za-z0-9가-힣._-]{0,79}$")
@@ -158,8 +165,13 @@ def path_is_synced(path: Path) -> bool:
 
 def _next_token(category: str, mapping: dict[str, str]) -> str:
     prefix = category.upper().replace("-", "_")
-    used = [token for token in mapping.values() if token.startswith(f"[{prefix}_")]
-    return f"[{prefix}_{len(used) + 1:03d}]"
+    pattern = re.compile(re.escape(f"[{prefix}_") + r"(\d+)\]$")
+    highest = 0
+    for token in mapping.values():
+        matched = pattern.search(token)
+        if matched:
+            highest = max(highest, int(matched.group(1)))
+    return f"[{prefix}_{highest + 1:03d}]"
 
 
 def redact_text(

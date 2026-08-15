@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from .audit import authority_is_verified_p1
 from .models import CaseStage, TrialVerdict, VirtualTrialRecord, new_id, utc_now
 from .security import atomic_json_write
 from .workflow import store_for
@@ -173,17 +174,13 @@ def _simulate_judge_reasoning(
 
     verified_favorable_p1 = any(
         (a := authority_by_id.get(aid))
-        and a.get("source_tier") == "P1"
-        and a.get("verified_at")
-        and a.get("text_sha256")
+        and authority_is_verified_p1(a)
         and a.get("citation")
         for aid in referenced_favorable
     )
     verified_adverse_p1 = any(
         (a := authority_by_id.get(aid))
-        and a.get("source_tier") == "P1"
-        and a.get("verified_at")
-        and a.get("text_sha256")
+        and authority_is_verified_p1(a)
         and a.get("citation")
         for aid in referenced_adverse
     )

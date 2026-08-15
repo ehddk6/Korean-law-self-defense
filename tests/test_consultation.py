@@ -57,6 +57,7 @@ def test_consultation_without_pii_can_reach_ready(tmp_path: Path) -> None:
                     "verification_url": "https://lx.scourt.go.kr/example",
                     "verified_at": "2026-01-02T00:00:00+00:00",
                     "citation": "예시 법령 제1조",
+                    "effective_from": "2025-01-01",
                     "text_sha256": sha256_file(source_text),
                     "source_text_path": str(source_text),
                     "verification_text_path": str(verification_text),

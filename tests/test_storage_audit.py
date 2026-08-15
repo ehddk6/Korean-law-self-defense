@@ -1,3 +1,4 @@
+from datetime import date, timedelta
 from pathlib import Path
 
 from legal_workbench.audit import audit_case, is_official_url
@@ -112,11 +113,11 @@ def build_ready_store(tmp_path: Path) -> CaseStore:
             deadline_id="deadline_1",
             title="검증 기한",
             trigger_event="송달",
-            trigger_date="2026-01-01",
+            trigger_date=date.today().isoformat(),
             governing_rule="예시 법령 제1조",
             authority_id="auth_1",
             calculation="기산일 다음 날부터 10일",
-            tentative_due_date="2026-01-11",
+            tentative_due_date=(date.today() + timedelta(days=10)).isoformat(),
             holiday_adjustment="공휴일 해당 없음 확인",
             duration_value=10,
             duration_unit="days",

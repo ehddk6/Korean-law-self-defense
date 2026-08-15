@@ -157,6 +157,22 @@ CREATE TABLE IF NOT EXISTS mock_hearings (
 );
 CREATE INDEX IF NOT EXISTS idx_mock_hearings_case ON mock_hearings(case_id);
 
+CREATE TABLE IF NOT EXISTS evidence_checklists (
+    checklist_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_evidence_checklists_case ON evidence_checklists(case_id);
+
+CREATE TABLE IF NOT EXISTS adversarial_briefs (
+    brief_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_adversarial_briefs_case ON adversarial_briefs(case_id);
+
 CREATE TABLE IF NOT EXISTS audit_reports (
     audit_id TEXT PRIMARY KEY,
     case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
@@ -384,6 +400,16 @@ class CaseStore:
     def add_mock_hearing(self, record: MockHearingRecord) -> None:
         self._insert_payload("mock_hearings", "hearing_id", record.hearing_id, record.to_dict())
 
+    def add_evidence_checklist(self, payload: dict[str, Any]) -> None:
+        self._insert_payload(
+            "evidence_checklists", "checklist_id", str(payload["checklist_id"]), payload
+        )
+
+    def add_adversarial_brief(self, payload: dict[str, Any]) -> None:
+        self._insert_payload(
+            "adversarial_briefs", "brief_id", str(payload["brief_id"]), payload
+        )
+
     def add_audit_report(self, payload: dict[str, Any]) -> None:
         validate_safe_identifier(str(payload["audit_id"]), field="audit_id")
         with self.connect() as conn:
@@ -430,6 +456,8 @@ class CaseStore:
             "quantums",
             "action_logs",
             "mock_hearings",
+            "evidence_checklists",
+            "adversarial_briefs",
         }
         if table not in allowed:
             raise ValueError(f"허용되지 않은 테이블: {table}")
@@ -490,6 +518,30 @@ class CaseStore:
             previous_hash = row["event_hash"]
         return True
 
+    def list_events(self, *, limit: int | None = None) -> list[dict[str, Any]]:
+        """이벤트 해시 체인을 순서대로 반환한다. 조회 전용이며 체인을 변경하지 않는다."""
+        with self.connect() as conn:
+            rows = conn.execute(
+                """
+                SELECT sequence, event_type, payload_json, previous_hash, event_hash, created_at
+                FROM events WHERE case_id=? ORDER BY sequence
+                """,
+                (self.case_id,),
+            ).fetchall()
+        if limit is not None:
+            rows = rows[-limit:] if limit > 0 else []
+        return [
+            {
+                "sequence": row["sequence"],
+                "event_type": row["event_type"],
+                "payload": json.loads(row["payload_json"]),
+                "previous_hash": row["previous_hash"],
+                "event_hash": row["event_hash"],
+                "created_at": row["created_at"],
+            }
+            for row in rows
+        ]
+
     def integrity_check(self) -> list[str]:
         with self.connect() as conn:
             rows = conn.execute("PRAGMA integrity_check").fetchall()
@@ -525,6 +577,8 @@ class CaseStore:
             ("quantums", "quantum_id"),
             ("action_logs", "action_id"),
             ("mock_hearings", "hearing_id"),
+            ("evidence_checklists", "checklist_id"),
+            ("adversarial_briefs", "brief_id"),
         }
         if (table, id_column) not in allowed:
             raise ValueError("허용되지 않은 payload 테이블입니다.")

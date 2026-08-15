@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from .audit import audit_case, build_release_snapshot, is_official_url
+from .audit import audit_case, authority_is_verified_p1, build_release_snapshot
 from .documents import create_docx, create_hwpx, create_pdf, extract_document
 from .models import (
     AuthorityRecord,
@@ -95,6 +95,15 @@ def intake_case(
         raise ValueError(f"지원 분야 팩을 선택해야 합니다: {', '.join(DOMAIN_PACKS)}")
     _validate_iso_date(action_date, allow_none=True)
     _validate_iso_date(as_of_date, allow_none=True)
+    intake_surface = json.dumps(
+        {"title": title, "goal": goal, "forum": forum},
+        ensure_ascii=False,
+        sort_keys=True,
+    )
+    if scan_residual_pii(intake_surface):
+        raise PermissionError("사건 제목·목표·관할 입력에 비식별 개인정보 패턴이 남아 있습니다.")
+    if scan_prompt_injection(intake_surface):
+        raise PermissionError("사건 제목·목표·관할 입력에 실행 지시 형태의 텍스트가 남아 있습니다.")
     store = store_for(case_id, worksets_home)
     if store.db_path.exists():
         raise FileExistsError(f"이미 존재하는 사건입니다: {case_id}")
@@ -306,6 +315,22 @@ def add_deadline(case_id: str, payload: dict[str, Any], *, worksets_home: Path |
         raise ValueError("deadline duration_value는 정수여야 합니다.")
     if not isinstance(adjustment_days, int) or isinstance(adjustment_days, bool):
         raise ValueError("deadline holiday_adjustment_days는 정수여야 합니다.")
+    deadline_surface = " ".join(
+        str(value)
+        for value in (
+            payload.get("title"),
+            payload.get("trigger_event"),
+            payload.get("governing_rule"),
+            payload.get("calculation"),
+            payload.get("holiday_adjustment"),
+        )
+        if value
+    )
+    if scan_residual_pii(deadline_surface):
+        raise PermissionError(
+            "기한 레코드는 비식별 LegalWorksets에 저장되므로 실명·연락처·주소를 직접 기록할 수 없습니다. "
+            "실명은 실명 대응표 또는 사용자 개인 기록에만 보관하십시오."
+        )
     record = DeadlineRecord(
         deadline_id=payload.get("deadline_id") or new_id("deadline"),
         title=str(payload["title"]),
@@ -382,19 +407,9 @@ def complete_research(case_id: str, *, worksets_home: Path | None = None) -> dic
     verified_p1 = {
         item["authority_id"]
         for item in authorities
-        if item.get("source_tier") == "P1"
-        and is_official_url(str(item.get("official_url") or ""))
-        and is_official_url(str(item.get("verification_url") or ""))
-        and item.get("official_url") != item.get("verification_url")
-        and item.get("verified_at")
-        and item.get("text_sha256")
+        if authority_is_verified_p1(item)
         and item.get("citation")
         and (item.get("effective_from") or item.get("decision_date"))
-        and _authority_text_files_match(item)
-        and item.get("mcp_server") == "korean-law"
-        and item.get("mcp_version") == "4.7.4"
-        and item.get("mcp_tool")
-        and item.get("mcp_verified_at")
     }
     if not verified_p1:
         raise ValueError("조사 완료에는 적용시점 정보와 이중 검증을 갖춘 P1 근거가 필요합니다.")
@@ -705,17 +720,6 @@ def _capture_authority_text(
     if source != destination:
         shutil.copy2(source, destination)
     return str(destination), sha256_file(destination)
-
-
-def _authority_text_files_match(item: dict[str, Any]) -> bool:
-    source = Path(str(item.get("source_text_path") or ""))
-    verification = Path(str(item.get("verification_text_path") or ""))
-    return (
-        source.is_file()
-        and verification.is_file()
-        and sha256_file(source) == item.get("text_sha256")
-        and sha256_file(verification) == item.get("verification_text_sha256")
-    )
 
 
 def _validated_analysis_result(store: CaseStore, value: Any, role: str) -> tuple[str, str]:

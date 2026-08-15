@@ -17,16 +17,19 @@ def log_action(
     action_date: str,
     official_receipt_hash: str | None = None,
     deadline_id: str | None = None,
-    notes: str = "",
+    notes: str | None = None,
     worksets_home: Path | None = None,
 ) -> dict[str, Any]:
     store = store_for(case_id, worksets_home)
     case = store.get_case()
+    normalized_notes = (notes or "").strip()
 
     try:
-        date.fromisoformat(action_date)
+        parsed_action_date = date.fromisoformat(action_date)
     except ValueError as exc:
         raise ValueError("action_date는 YYYY-MM-DD 형식이어야 합니다.") from exc
+    if parsed_action_date > date.today():
+        raise ValueError("공식 조치 기록은 실제로 행한 조치만 담을 수 있어 미래 날짜를 사용할 수 없습니다.")
 
     if not action_type.strip() or not action_description.strip():
         raise ValueError("조치 종류와 설명이 필요합니다.")
@@ -36,7 +39,7 @@ def log_action(
         if deadline_id not in {item["deadline_id"] for item in deadlines}:
             raise ValueError(f"존재하지 않는 기한 레코드를 참조합니다: {deadline_id}")
 
-    surface = f"{action_type} {action_description} {notes or ''}"
+    surface = f"{action_type} {action_description} {normalized_notes}"
     if scan_residual_pii(surface):
         raise PermissionError(
             "공식 조치 기록은 비식별 LegalWorksets에 저장되므로 실명·연락처·주소를 직접 기록할 수 없습니다. "
@@ -51,7 +54,7 @@ def log_action(
         action_date=action_date,
         official_receipt_hash=official_receipt_hash,
         deadline_id=deadline_id,
-        notes=notes.strip(),
+        notes=normalized_notes,
     )
     store.add_action_log(record)
     return {
