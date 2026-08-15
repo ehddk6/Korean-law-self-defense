@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Iterable, Iterator
 
 from .models import (
+    ActionLog,
     AuthorityRecord,
     CaseRecord,
     CaseStage,
@@ -16,6 +17,7 @@ from .models import (
     EvidenceRecord,
     FactRecord,
     IssueRecord,
+    MockHearingRecord,
     OpinionRecord,
     PleadingStrategyRecord,
     QuantumRecord,
@@ -139,6 +141,22 @@ CREATE TABLE IF NOT EXISTS quantums (
 );
 CREATE INDEX IF NOT EXISTS idx_quantums_case ON quantums(case_id);
 
+CREATE TABLE IF NOT EXISTS action_logs (
+    action_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_action_logs_case ON action_logs(case_id);
+
+CREATE TABLE IF NOT EXISTS mock_hearings (
+    hearing_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_mock_hearings_case ON mock_hearings(case_id);
+
 CREATE TABLE IF NOT EXISTS audit_reports (
     audit_id TEXT PRIMARY KEY,
     case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
@@ -193,6 +211,8 @@ class CaseStore:
             "pleading_strategies",
             "clarifications",
             "quantums",
+            "action_logs",
+            "mock_hearings",
         ):
             (self.case_dir / name).mkdir(exist_ok=True)
 
@@ -358,6 +378,12 @@ class CaseStore:
     def add_quantum(self, record: QuantumRecord) -> None:
         self._insert_payload("quantums", "quantum_id", record.quantum_id, record.to_dict())
 
+    def add_action_log(self, record: ActionLog) -> None:
+        self._insert_payload("action_logs", "action_id", record.action_id, record.to_dict())
+
+    def add_mock_hearing(self, record: MockHearingRecord) -> None:
+        self._insert_payload("mock_hearings", "hearing_id", record.hearing_id, record.to_dict())
+
     def add_audit_report(self, payload: dict[str, Any]) -> None:
         validate_safe_identifier(str(payload["audit_id"]), field="audit_id")
         with self.connect() as conn:
@@ -402,6 +428,8 @@ class CaseStore:
             "pleading_strategies",
             "clarifications",
             "quantums",
+            "action_logs",
+            "mock_hearings",
         }
         if table not in allowed:
             raise ValueError(f"허용되지 않은 테이블: {table}")
@@ -495,6 +523,8 @@ class CaseStore:
             ("pleading_strategies", "strategy_id"),
             ("clarifications", "clarification_id"),
             ("quantums", "quantum_id"),
+            ("action_logs", "action_id"),
+            ("mock_hearings", "hearing_id"),
         }
         if (table, id_column) not in allowed:
             raise ValueError("허용되지 않은 payload 테이블입니다.")

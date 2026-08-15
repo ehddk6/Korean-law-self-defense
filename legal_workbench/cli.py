@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from typing import Any, Sequence
 
-from .documents import rehydrate_document
+from .documents import rehydrate_document, verify_rehydration
 from .evaluation import (
     approve_gold_reviews,
     create_evaluation_v2,
@@ -162,6 +162,30 @@ def build_parser() -> argparse.ArgumentParser:
     rehydrate.add_argument("--case", required=True)
     rehydrate.add_argument("--source", type=Path, required=True)
     rehydrate.add_argument("--name", required=True, help="복원본 파일명")
+
+    log_action = subparsers.add_parser("log-action", help="실제로 행한 공식 조치를 증빙 해시와 함께 기록")
+    log_action.add_argument("--case", required=True)
+    log_action.add_argument("--type", required=True, dest="action_type", help="제출·발송·납부 등 조치 종류")
+    log_action.add_argument("--description", required=True)
+    log_action.add_argument("--date", required=True, help="실제 조치일 YYYY-MM-DD")
+    log_action.add_argument("--receipt-hash", help="공식 영수증·접수번호의 SHA-256")
+    log_action.add_argument("--deadline-id", help="관련 기한 레코드 ID")
+    log_action.add_argument("--notes")
+
+    evidence_checklist = subparsers.add_parser(
+        "evidence-checklist", help="쟁점별 필요한 증거와 위법성 경고 체크리스트 생성"
+    )
+    evidence_checklist.add_argument("--case", required=True)
+
+    adversarial_brief = subparsers.add_parser(
+        "adversarial-brief", help="상대방 최선 반론과 불리한 근거 정리 브리프 생성"
+    )
+    adversarial_brief.add_argument("--case", required=True)
+
+    mock_hearing = subparsers.add_parser(
+        "mock-hearing", help="재판부 심문 예상 질문과 제출 가능성 판단 시뮬레이션"
+    )
+    mock_hearing.add_argument("--case", required=True)
 
     status = subparsers.add_parser("status", help="사건 상태와 감사 게이트 조회")
     status.add_argument("--case", required=True)
@@ -425,7 +449,36 @@ def dispatch(args: argparse.Namespace) -> Any:
         if not mapping:
             raise FileNotFoundError("해당 사건의 실명 대응표를 찾을 수 없습니다.")
         destination = mapping_path.parents[1] / "rehydrated" / args.case / Path(args.name).name
-        return {"output": str(rehydrate_document(source, destination, mapping))}
+        output = rehydrate_document(source, destination, mapping)
+        if destination.suffix.lower() in {".md", ".txt"}:
+            verification = verify_rehydration(source, destination, mapping)
+            return {"output": str(output), "verification": verification}
+        return {"output": str(output)}
+    if args.command == "log-action":
+        from .action_log import log_action
+
+        return log_action(
+            args.case,
+            action_type=args.action_type,
+            action_description=args.description,
+            action_date=args.date,
+            official_receipt_hash=args.receipt_hash,
+            deadline_id=args.deadline_id,
+            notes=args.notes,
+            worksets_home=worksets,
+        )
+    if args.command == "evidence-checklist":
+        from .evidence_checklist import build_evidence_checklist
+
+        return build_evidence_checklist(args.case, worksets_home=worksets)
+    if args.command == "adversarial-brief":
+        from .adversarial_brief import build_adversarial_brief
+
+        return build_adversarial_brief(args.case, worksets_home=worksets)
+    if args.command == "mock-hearing":
+        from .mock_hearing import simulate_mock_hearing
+
+        return simulate_mock_hearing(args.case, worksets_home=worksets)
     if args.command == "status":
         store = store_for(args.case, worksets)
         return {

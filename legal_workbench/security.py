@@ -240,6 +240,11 @@ def scan_prompt_injection(text: str) -> list[SecurityFinding]:
     return findings
 
 
+def scan_mcp_query(query: str) -> list[SecurityFinding]:
+    """MCP 호출 전 조회 문자열에 개인정보 패턴이 남아 있는지 검사한다."""
+    return scan_residual_pii(query)
+
+
 def rehydrate_text(text: str, mapping: dict[str, str]) -> str:
     reverse = sorted(((token, original) for original, token in mapping.items()), key=lambda item: -len(item[0]))
     restored = text

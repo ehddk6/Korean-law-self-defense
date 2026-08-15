@@ -302,6 +302,46 @@ class QuantumRecord:
 
 
 @dataclass(slots=True)
+class ActionLog:
+    action_id: str
+    case_id: str
+    action_type: str
+    action_description: str
+    action_date: str
+    official_receipt_hash: str | None = None
+    deadline_id: str | None = None
+    notes: str = ""
+    created_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class MockHearingCheck:
+    element: str
+    burden: str
+    missing_facts: list[str]
+    linked_evidence: list[str]
+    satisfied: bool
+    judge_question: str
+
+
+@dataclass(slots=True)
+class MockHearingRecord:
+    hearing_id: str
+    case_id: str
+    issue_id: str
+    checks: list[MockHearingCheck]
+    filing_readiness: str
+    reasoning: str
+    created_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
 class AuditFinding:
     finding_id: str
     severity: Severity

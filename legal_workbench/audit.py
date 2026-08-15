@@ -49,6 +49,8 @@ def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
             "pleading_strategies",
             "clarifications",
             "quantums",
+            "action_logs",
+            "mock_hearings",
         )
     }
     files: list[dict[str, Any]] = []
@@ -62,7 +64,19 @@ def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
                 "sha256": sha256_file(path) if path.is_file() else None,
             }
         )
-    for folder_name in ("bundles", "drafts", "visual", "virtual_trials", "pleading_strategies", "clarifications", "quantums"):
+    for folder_name in (
+        "bundles",
+        "drafts",
+        "visual",
+        "virtual_trials",
+        "pleading_strategies",
+        "clarifications",
+        "quantums",
+        "evidence_checklists",
+        "adversarial_briefs",
+        "mock_hearings",
+        "action_logs",
+    ):
         folder = store.case_dir / folder_name
         if not folder.exists():
             continue
@@ -512,8 +526,116 @@ def audit_case(store: CaseStore) -> AuditReport:
                     )
                 )
 
-    record_surface = json.dumps(
-        {
+    action_logs = store.list_payloads("action_logs")
+    mock_hearings = store.list_payloads("mock_hearings")
+    deadline_by_id = {item["deadline_id"]: item for item in deadlines}
+    latest_opinion = opinions[-1] if opinions else None
+
+    today = date.today()
+    for item in action_logs:
+        action_id = item["action_id"]
+        if not item.get("official_receipt_hash"):
+            findings.append(
+                _finding(
+                    Severity.MINOR,
+                    "ACTION_UNVERIFIED",
+                    "실제로 행한 공식 조치 기록에 영수증·접수번호 등 증빙 해시가 없습니다.",
+                    "action_log",
+                    action_id,
+                )
+            )
+        elif not (
+            isinstance(item.get("official_receipt_hash"), str)
+            and len(item["official_receipt_hash"]) == 64
+            and all(char in "0123456789abcdef" for char in item["official_receipt_hash"].lower())
+        ):
+            findings.append(
+                _finding(
+                    Severity.MINOR,
+                    "ACTION_RECEIPT_HASH_INVALID",
+                    "공식 조치 증빙 해시는 64자리 SHA-256 형식이어야 합니다.",
+                    "action_log",
+                    action_id,
+                )
+            )
+        deadline_id = item.get("deadline_id")
+        if deadline_id and deadline_id not in deadline_by_id:
+            findings.append(
+                _finding(
+                    Severity.CRITICAL,
+                    "ACTION_DEADLINE_MISSING",
+                    "공식 조치가 존재하지 않는 기한 레코드를 참조합니다.",
+                    "action_log",
+                    action_id,
+                )
+            )
+        elif deadline_id:
+            deadline = deadline_by_id[deadline_id]
+            due = _parse_date(deadline.get("tentative_due_date"))
+            if due:
+                days_left = (due - today).days
+                if days_left < 0:
+                    findings.append(
+                        _finding(
+                            Severity.CRITICAL,
+                            "DEADLINE_OVERDUE",
+                            f"기한이 이미 도과했습니다(만료일 {due.isoformat()}).",
+                            "action_log",
+                            action_id,
+                        )
+                    )
+                elif days_left <= 7:
+                    findings.append(
+                        _finding(
+                            Severity.MAJOR,
+                            "DEADLINE_APPROACHING",
+                            f"기한이 임박했습니다({days_left}일 남음, 만료일 {due.isoformat()}).",
+                            "action_log",
+                            action_id,
+                        )
+                    )
+
+    for item in mock_hearings:
+        hearing_id = item["hearing_id"]
+        referenced_issues = [value for value in str(item.get("issue_id") or "").split(",") if value]
+        missing_issues = set(referenced_issues) - issue_ids
+        if missing_issues:
+            findings.append(
+                _finding(
+                    Severity.CRITICAL,
+                    "MOCK_HEARING_ISSUE_MISSING",
+                    f"모의 심리가 존재하지 않는 쟁점을 참조합니다: {sorted(missing_issues)}",
+                    "mock_hearing",
+                    hearing_id,
+                )
+            )
+        for check in item.get("checks") or []:
+            linked = set(check.get("linked_evidence") or [])
+            missing_evidence = linked - evidence_ids
+            if missing_evidence:
+                findings.append(
+                    _finding(
+                        Severity.CRITICAL,
+                        "MOCK_HEARING_EVIDENCE_MISSING",
+                        f"모의 심리가 존재하지 않는 증거를 참조합니다: {sorted(missing_evidence)}",
+                        "mock_hearing",
+                        hearing_id,
+                    )
+                )
+        if item.get("filing_readiness") == "제출 가능" and not (
+            latest_opinion and latest_opinion.get("status") == str(OpinionStatus.READY)
+        ):
+            findings.append(
+                _finding(
+                    Severity.MAJOR,
+                    "MOCK_HEARING_READY_WITHOUT_OPINION",
+                    "제출 가능으로 표시된 모의 심리인데 최종 의견이 ready가 아닙니다.",
+                    "mock_hearing",
+                    hearing_id,
+                )
+            )
+
+    record_surface = json.dumps(        {
             "facts": [{"text": item.get("text"), "actor_token": item.get("actor_token")} for item in facts],
             "issues": [
                 {
@@ -543,7 +665,6 @@ def audit_case(store: CaseStore) -> AuditReport:
     if scan_prompt_injection(record_surface):
         findings.append(_finding(Severity.CRITICAL, "RECORD_INSTRUCTION_TEXT", "사건 레코드에 실행 지시 형태의 텍스트가 남아 있습니다."))
 
-    latest_opinion = opinions[-1] if opinions else None
     if latest_opinion is None:
         findings.append(_finding(Severity.CRITICAL, "OPINION_MISSING", "최종 의견이 없습니다."))
     else:

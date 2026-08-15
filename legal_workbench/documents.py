@@ -445,6 +445,50 @@ def rehydrate_document(source: Path, destination: Path, mapping: dict[str, str])
     raise DocumentError(f"복원할 수 없는 형식입니다: {suffix}")
 
 
+def verify_rehydration(source: Path, destination: Path, mapping: dict[str, str]) -> dict[str, Any]:
+    """복원 문서가 원본 비식별 문서의 구조를 유지하고 토큰이 남지 않았는지 검증한다."""
+    original = Path(source)
+    restored = Path(destination)
+    if not original.is_file() or not restored.is_file():
+        raise DocumentError("복원 검증에는 원본 비식별 문서와 복원 문서가 모두 필요합니다.")
+    if original.suffix.lower() not in TEXT_EXTENSIONS:
+        raise DocumentError("복원 검증은 텍스트 계열 문서에만 지원됩니다.")
+    from .security import sha256_text
+
+    original_text, _ = _read_text(original)
+    restored_text, _ = _read_text(restored)
+    original_blocks = markdown_blocks(original_text)
+    restored_blocks = markdown_blocks(restored_text)
+    original_kinds = [kind for kind, _ in original_blocks]
+    restored_kinds = [kind for kind, _ in restored_blocks]
+    structure_mismatch = [
+        index
+        for index, (original_kind, restored_kind) in enumerate(zip(original_kinds, restored_kinds))
+        if original_kind != restored_kind
+    ]
+    residual_tokens = sorted(
+        {
+            token
+            for token in mapping.values()
+            if token in restored_text
+        }
+    )
+    return {
+        "format": "legal-workbench-rehydration-verification-v1",
+        "source": str(original.resolve()),
+        "destination": str(restored.resolve()),
+        "source_sha256": sha256_text(original_text),
+        "destination_sha256": sha256_text(restored_text),
+        "source_block_count": len(original_blocks),
+        "destination_block_count": len(restored_blocks),
+        "structure_identical": original_kinds == restored_kinds,
+        "structure_mismatch_indices": structure_mismatch,
+        "residual_token_count": len(residual_tokens),
+        "residual_tokens": residual_tokens,
+        "valid": original_kinds == restored_kinds and not residual_tokens,
+    }
+
+
 def _rehydrate_zip_xml(source: Path, destination: Path, mapping: dict[str, str]) -> Path:
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(delete=False, suffix=destination.suffix, dir=destination.parent) as handle:
