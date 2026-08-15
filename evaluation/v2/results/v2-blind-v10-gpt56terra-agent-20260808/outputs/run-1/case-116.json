@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원고가 학생들에게 성적 수치심과 불쾌감을 주는 발언을 하였다는 이유로 중징계 요구가 있었다.",
+    "참가행정청은 1차 징계처분 전 징계의결 내용 통보 누락을 중대한 절차규정 위반으로 보았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사립학교법상 징계의결 통보 누락 후 재심의 요구의 적법성",
+    "재심의에 따른 해임 징계처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-116",
+  "supported_facts": []
+}

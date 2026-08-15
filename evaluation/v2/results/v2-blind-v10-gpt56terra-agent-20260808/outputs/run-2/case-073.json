@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원고들은 시행령 제14조의4 제2항, 제3항에서 정한 절차를 거치지 아니하였다.",
+    "피고들은 절차 미이행을 이유로 경정청구를 기각하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 조세특례제한법 제16조의4 제1항의 소득세 비과세 특례 적용 여부",
+    "구 조세특례제한법 시행령 제14조의4 제2항, 제3항의 절차 미이행이 비과세 특례를 배제하는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-073",
+  "supported_facts": []
+}

@@ -1,0 +1,72 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-09T05:40:35+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "오인식 문구로 조문·기한을 오판할 위험"
+        ],
+        "before": [
+          "OCR 신뢰도가 0.42로 낮다.",
+          "\"청구기갼\" 및 \"1O일\" 표기에 OCR 오류 가능성이 있다.",
+          "렌더링 원본이 제공되지 않았다."
+        ]
+      },
+      "confidence": {
+        "after": "low",
+        "before": "high"
+      },
+      "issues": {
+        "after": [
+          "OCR 텍스트의 원문 일치 여부"
+        ],
+        "before": [
+          "청구기한의 정확한 기간",
+          "조문 문언의 OCR 오류 여부",
+          "송달일 기준 기산 여부"
+        ]
+      },
+      "outcome": {
+        "after": null,
+        "before": "unknown"
+      },
+      "rule_answer": {
+        "after": null,
+        "before": "manual-source-comparison-required"
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "OCR 텍스트는 청구기한을 송달일부터 1O일이라고 기재한다.",
+            "evidence_excerpt": "제3조 청구기갼은 송달일부터 1O일이다."
+          },
+          {
+            "claim": "OCR 신뢰도가 낮다.",
+            "evidence_excerpt": "\"ocr_confidence\": 0.42"
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "ocr-corruption"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-163"
+}

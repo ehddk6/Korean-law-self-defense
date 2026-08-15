@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "대한민국에 주소가 없는 경우·주소를 알 수 없는 경우의 거소 또는 마지막 주소 사실은 제공되지 않았다."
+  ],
+  "citations": [
+    "제3조(사람의 보통재판적) 사람의 보통재판적은 그의 주소에 따라 정한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제3조의 사람의 보통재판적",
+    "피고가 개인임",
+    "주소가 알려져 있음",
+    "주소 부재·불명 시의 예외는 적용되지 않음"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "individual-address-forum",
+  "scenario_id": "case-130",
+  "supported_facts": [
+    {
+      "claim": "피고는 개인이고 주소가 알려져 있다.",
+      "evidence_excerpt": "address_known"
+    },
+    {
+      "claim": "피고는 개인이다.",
+      "evidence_excerpt": "defendant_type"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 제14조 제1항의 원칙이 달라질 수 있다."
+  ],
+  "citations": [
+    "법령등에 특별한 규정이 있는 경우를 제외하고는 그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제1항은 효력 발생 전 완성되거나 종결된 법률관계에 대한 신법 적용을 제한한다.",
+    "계속 중인 법률관계의 구체적 적용시점과 특별규정 유무가 제공되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 개정 후에도 계속된다.",
+      "evidence_excerpt": "relation_continues_after_effective_date"
+    }
+  ]
+}

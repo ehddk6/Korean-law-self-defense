@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "주주총회결의 부존재 확인소는 법률상 이익이 있어야 한다.",
+    "피고의 재산관계에 대한 주주의 이익은 원칙적으로 사실상·경제상 이해관계에 불과하다.",
+    "원고들은 주식교환 완료 후 더 이상 피고의 주주가 아니다.",
+    "주식교환비율 문제는 주식교환무효의 소 또는 손해배상청구의 소로 직접 다툴 수 있다고 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주총회결의 부존재 확인소의 확인의 이익",
+    "완전모회사의 주주가 된 종전 자회사의 주주의 법률상 이익",
+    "주식교환 후 종전 회사 주주가 주주총회결의 취소소송의 원고적격을 유지하는지 여부"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-036",
+  "supported_facts": []
+}

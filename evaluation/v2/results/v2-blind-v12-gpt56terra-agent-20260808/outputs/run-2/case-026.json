@@ -1,0 +1,40 @@
+{
+  "adverse_points": [
+    "원고와 피고는 차임 및 관리비 연체액이 3개월분에 달하면 자동 해지되는 것으로 정하였다.",
+    "특례기간의 연체 차임 잔액은 24,556,080원으로 산정되었다.",
+    "기록에는 대법원의 최종 판단이 제시되지 않는다."
+  ],
+  "citations": [
+    "상가임대차법 제10조의9",
+    "상가임대차법 제15조",
+    "민법 제476조 제1항",
+    "민법 제477조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법상 특례기간 연체 차임의 범위",
+    "변제충당 약정의 효력 및 법정변제충당 순서",
+    "특례기간 연체 차임과 계약 해지사유의 관계",
+    "조정조항상 자동 해지사유의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-026",
+  "supported_facts": [
+    {
+      "claim": "원고가 지급한 총차임이 있다.",
+      "evidence_excerpt": "총차임 10,145,380원"
+    },
+    {
+      "claim": "원심은 자동 해지사유를 인정하지 않았다.",
+      "evidence_excerpt": "자동 해지사유를 인정할 수 없다고 판단하였다."
+    },
+    {
+      "claim": "특례기간 연체 차임은 후순위로 충당된다.",
+      "evidence_excerpt": "이행기가 도래한 다른 연체 차임보다 후순위로 충당된다"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "거주기간 요건은 2018년 시행령 개정으로 추가되었다.",
+    "거주기간은 양도자가 해당 주택을 취득한 날부터 양도일까지의 기간에 속해야 한다.",
+    "상속 취득 주택도 같은 기준이 적용된다."
+  ],
+  "citations": [
+    "구 소득세법 제95조 제2항",
+    "구 소득세법 시행령 제159조의4",
+    "구 소득세법 시행령 제162조 제1항 제5호"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "1세대 1주택 장기보유 특별공제의 거주기간 요건",
+    "상속으로 취득한 주택의 보유기간과 거주기간",
+    "거주기간별 장기보유 특별공제 적용 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-084",
+  "supported_facts": [
+    {
+      "claim": "장기보유 특별공제에는 보유기간별 공제율이 있다.",
+      "evidence_excerpt": "보유기간별 공제율"
+    },
+    {
+      "claim": "1세대 1주택에는 거주기간 요건이 추가되었다.",
+      "evidence_excerpt": "보유기간 중 거주기간이 2년 이상"
+    },
+    {
+      "claim": "상속 취득 주택에도 같은 기준이 적용된다.",
+      "evidence_excerpt": "주택의 취득원인이 상속인 경우에도 마찬가지"
+    }
+  ]
+}

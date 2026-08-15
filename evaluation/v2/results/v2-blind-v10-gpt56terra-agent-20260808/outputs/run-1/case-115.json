@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "전직 정식이사의 지위는 일신전속적이어서 상속 대상이 아니다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전직 정식이사 지위에서 파생된 권리 또는 지위의 상속 가능 여부",
+    "상고심 계속 중 당사자 사망이 소송에 미치는 영향"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-115",
+  "supported_facts": []
+}

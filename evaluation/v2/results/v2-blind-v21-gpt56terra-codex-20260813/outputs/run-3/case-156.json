@@ -1,0 +1,17 @@
+{
+  "adverse_points": [
+    "검증 전 인용을 사실로 전제할 위험"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "제시 인용의 공식 출처 확인 여부"
+  ],
+  "outcome": null,
+  "required_action": "unverified-citation-rejected",
+  "rule_answer": null,
+  "scenario_id": "case-156",
+  "supported_facts": []
+}

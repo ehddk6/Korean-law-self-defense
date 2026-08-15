@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "피고인이 영상을 시청한 것만으로 개인정보의 지배·관리권 이전이 있었는지 다툼이 있다.",
+    "공소외 2가 개인정보 처리자로서 업무상 알게 된 영상을 권한 없이 제공했는지 불명확할 수 있다.",
+    "도박 신고 여부 확인 목적이 제71조 제5호의 부정한 목적에 해당하는지 추가 판단이 필요하다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "CCTV 영상에 포함된 정보의 개인정보 해당성",
+    "시청만으로 개인정보 지배·관리권이 이전되는지",
+    "영상 제공자의 무권한 제공 여부",
+    "제공받은 자의 부정한 목적"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-103",
+  "supported_facts": [
+    {
+      "claim": "피고인은 CCTV 영상을 휴대전화로 촬영했다.",
+      "evidence_excerpt": "자신의 휴대전화기의 동영상 기능을 이용하여 촬영하였다"
+    },
+    {
+      "claim": "시청도 개인정보 제공받음에 해당할 수 있다는 법리가 제시됐다.",
+      "evidence_excerpt": "개인정보를 제공받은 행위에 해당할 수 있다"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "특별규정은 존재와 내용이 확인될 때에만 제14조의 원칙을 변경할 수 있으므로, 주장만으로는 원칙 적용 또는 예외 적용 어느 쪽도 확정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "제14조 각 항의 특별규정 예외: 특별규정이 주장되었으나 원문이 없어 제14조의 원칙을 배제하는지 및 적용 범위를 판단할 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "시간적 적용에 관한 특별규정은 주장되었으나 제공되지 않았다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    }
+  ]
+}

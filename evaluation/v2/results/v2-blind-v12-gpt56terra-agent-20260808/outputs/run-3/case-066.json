@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "지방노동위원회는 해고가 존재하지 않는다고 판단하였다.",
+    "중앙노동위원회도 같은 취지로 재심신청을 기각하였다.",
+    "기록은 원고의 2020년 12월 행위 서술 중에 종료되어 원심 및 상고심 판단을 확인할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "해고의 존재 여부",
+    "부당해고 구제신청의 적법성",
+    "지방노동위원회 및 중앙노동위원회 판단의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-066",
+  "supported_facts": []
+}

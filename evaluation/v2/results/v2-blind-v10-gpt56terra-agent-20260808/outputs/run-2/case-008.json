@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원고는 통화옵션계약 관련 청구에 관하여 구체적인 상고이유를 기재하지 않았다.",
+    "원심은 11월 22일까지 결제일이 도래하여 발생한 손해 부분은 이미 시효로 소멸하였다고 판단하였다.",
+    "제공된 기록에는 단기소멸시효 기산점에 관한 대법원의 최종 판단 및 주문이 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "단순선도환계약 체결에서 적합성 원칙 위반 여부",
+    "단순선도환계약 체결에서 설명의무 위반 여부",
+    "위반과 손해 사이의 인과관계 및 손해배상책임",
+    "손해배상청구권 단기소멸시효의 기산점"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": []
+}

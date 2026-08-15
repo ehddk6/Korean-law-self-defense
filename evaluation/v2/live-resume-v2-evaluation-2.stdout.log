@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "RuntimeError",
+  "message": "Codex 잠금 평가 실행 실패: Codex 사용 한도에 도달했습니다. 재시도 가능 시각: Aug 8th, 2026 5:25 PM."
+}

@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "원심은 5차 내지 9차 변경대금 결정행위의 위반을 인정할 증거가 부족하다고 판단하였다.",
+    "피고의 추가공사대금 관련 상고이유는 사실심의 증거취사와 사실인정을 다투는 것에 불과하다고 기재되어 있다.",
+    "최저가 경쟁입찰로 계약이 체결된 사정이 존재한다."
+  ],
+  "citations": [
+    "하도급법 제4조 제1항",
+    "하도급법 제35조 제2항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "하도급법 제4조 제1항상 부당한 하도급대금 결정 해당 여부",
+    "최초 및 2차 내지 4차 변경대금 결정으로 인한 손해액과 3배 배상 범위",
+    "5차 내지 9차 변경대금 결정의 하도급법 위반 여부",
+    "추가공사대금 채권의 존재 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-001",
+  "supported_facts": []
+}

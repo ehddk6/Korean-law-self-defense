@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "주소등 또는 근무장소를 실제로 알 수 없는 경우에는 법원사무관등의 직권 공시송달 가능성이 별도로 문제될 수 있다.",
+    "외국송달 또는 재판장 명령에 관한 다른 제194조 요건이 제시되면 결론이 달라질 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "②제1항의 신청에는 그 사유를 소명하여야 한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제194조 제1항 및 제2항의 공시송달 요건이 적용된다.",
+    "신청에 의한 공시송달은 그 사유를 소명해야 한다.",
+    "주소를 알 수 없다는 주장만 있고 소명자료가 제시되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "public-service-requires-statutory-ground",
+  "scenario_id": "case-148",
+  "supported_facts": [
+    {
+      "claim": "주소를 알 수 없다는 주장만 제시되었다.",
+      "evidence_excerpt": "\"address_unknown_claimed\": true, \"supporting_evidence_provided\": false"
+    },
+    {
+      "claim": "신청에는 그 사유를 소명해야 한다.",
+      "evidence_excerpt": "②제1항의 신청에는 그 사유를 소명하여야 한다."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "“원고에게 근로계약 갱신에 대한 정당한 기대권이 있다고 보기에 부족”하다.",
+    "“원고를 기망 또는 협박하여 녹음하였다는 사정은 발견할 수 없다.”",
+    "대화 내용은 “개인의 내밀한 영역에 관한 것이 아니라서 원고가 입게 되는 피해의 정도가 크지 않다.”",
+    "녹음파일 및 녹취록은 “노동위원회나 법원에 제출하는 방식으로만 사용”되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로계약 갱신에 대한 정당한 기대권의 인정 여부",
+    "갱신기대권 침해에 따른 손해배상책임",
+    "동의 없는 대화 녹음이 음성권 침해의 불법행위인지 여부",
+    "녹음파일·녹취록의 노동위원회 또는 법원 제출의 위법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-007",
+  "supported_facts": []
+}

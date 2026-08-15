@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "이사 지위는 일신전속적이어서 상속 대상이 아니다.",
+    "선정자 3은 원심 변론종결 후 사망한 것으로 보인다."
+  ],
+  "citations": [
+    "대법원 2004. 4. 27. 선고 [CASE_NUMBER_001] 판결 등 참조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이사 지위의 상속성 및 주주총회결의 취소청구의 당사자 적격",
+    "원심 변론종결 후 선정자 사망이 소송에 미치는 영향",
+    "명의개서절차 이행청구의 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-031",
+  "supported_facts": [
+    {
+      "claim": "이사는 이사회의 구성원이다.",
+      "evidence_excerpt": "이사는 주식회사의 의사결정기관인 이사회의 구성원이고"
+    },
+    {
+      "claim": "이사 지위는 상속의 대상이 아니다.",
+      "evidence_excerpt": "의사결정기관 구성원으로서의 지위는 일신전속적인 것이어서 상속의 대상이 되지 않기 때문이다"
+    },
+    {
+      "claim": "선정자 3은 원심 변론종결 후인 2015. 9. 23.에 사망한 것으로 기록되어 있다.",
+      "evidence_excerpt": "기록에 편철된 기본증명서의 기재에 의하면, 선정자 3은 원심 변론종결 후인 2015. 9. 23."
+    }
+  ]
+}

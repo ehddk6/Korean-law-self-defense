@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 두 임대차보증금 합계 20,000,000원이 변제예정액 12,000,290원을 초과한다고 판단하였다.",
+    "제1심은 총 변제예정액이 청산가치에 미달한다는 이유로 변제계획 불인가 결정을 하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "변제계획 인가를 위한 청산가치 보장 요건의 충족 여부",
+    "과거 임대차보증금 반환청구채권을 청산가치에 포함할 수 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-095",
+  "supported_facts": []
+}

@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "청구가 부동산에 관한 소가 아니거나 부동산 소재지가 특정되지 않으면 이 특별재판적은 적용되지 않을 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제20조(부동산이 있는 곳의 특별재판적) 부동산에 관한 소를 제기하는 경우에는 부동산이 있는 곳의 법원에 제기할 수 있다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제20조의 부동산 소재지 특별재판적",
+    "부동산 관련 청구임",
+    "부동산 소재지가 알려져 있음"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "supported_facts": [
+    {
+      "claim": "부동산 관련 청구이고 소재지가 알려져 있다.",
+      "evidence_excerpt": "\"real_estate_claim\": true"
+    }
+  ]
+}

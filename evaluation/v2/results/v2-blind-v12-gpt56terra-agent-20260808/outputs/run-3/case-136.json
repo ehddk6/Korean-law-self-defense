@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "위반 후 법 변경만으로 신법이 적용되는 것은 아니다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위반행위 당시 법령 적용 원칙",
+    "변경법에 따른 비위반 또는 경한 제재기준 예외",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": [
+    {
+      "claim": "제재 대상 위반행위 후 법이 변경되었다.",
+      "evidence_excerpt": "\"law_changed_after_violation\": true, \"sanction\": true"
+    }
+  ]
+}

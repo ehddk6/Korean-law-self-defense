@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "부칙의 구체적 적용례·경과조치와 사실 발생일이 없어 개정법 적용 가능성을 판단할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 근로기준법 부칙.",
+    "필수 사실: 부칙 본문, 개정일, 사실 발생일.",
+    "예외: 별도 적용례 또는 경과조치가 있으면 그 규정에 따른다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-137",
+  "supported_facts": [
+    {
+      "claim": "부칙 본문이 제공되지 않았다.",
+      "evidence_excerpt": "\"article_text\": null"
+    },
+    {
+      "claim": "개정일이 알려지지 않았다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    },
+    {
+      "claim": "부칙 전문이 제공되지 않았다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    }
+  ]
+}

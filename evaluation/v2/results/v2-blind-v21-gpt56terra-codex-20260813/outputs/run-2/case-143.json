@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "제187조에 따른 발송이 아니거나 발송일이 달라지면 송달 간주 시점도 달라질 수 있다.",
+    "제185조제2항에 따른 발송인 경우에도 같은 발신주의가 적용된다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제189조(발신주의)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제189조: 제187조에 따라 발송한 서류는 발송한 때에 송달된 것으로 본다.",
+    "제187조에 따른 발송 및 발송일이 명시되어 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "supported_facts": [
+    {
+      "claim": "제187조 우편송달의 송달 간주 시점",
+      "evidence_excerpt": "제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다."
+    }
+  ]
+}

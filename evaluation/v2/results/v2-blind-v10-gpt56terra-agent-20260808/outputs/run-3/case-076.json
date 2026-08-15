@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "2008 사업연도 이후 원고는 이 사건 증자주식 비율 대신 1을 적용하였다.",
+    "피고는 이 사건 증자주식 비율 미적용으로 감면대상 배당금이 과다 산출되었다고 보았다.",
+    "피고는 원천징수세액 과소납부를 이유로 약 968억 원의 납부를 고지하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "증자 감면사업 관련 배당금의 감면대상 배당금 산정 시 기존주식 비율 포함 여부",
+    "소외 3 회사 보유 전체주식 중 이 사건 증자주식 비율의 적용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-076",
+  "supported_facts": []
+}

@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "위반행위 후 법령 변경인지와 해당 법령에 특별규정이 없는지는 제시되지 않았다.",
+    "감경된 기준이 실제 제재처분 기준인지 확인이 필요하다."
+  ],
+  "citations": [
+    "다만, 법령등을 위반한 행위 후 법령등의 변경에 의하여 그 행위가 법령등을 위반한 행위에 해당하지 아니하거나 제재처분 기준이 가벼워진 경우로서 해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조제3항 단서의 변경 법령 적용 예외가 문제된다.",
+    "제재처분 기준이 가벼워졌다는 사실이 제시되었다.",
+    "위반행위 후 법령 변경 여부와 특별규정 부존재를 확인해야 한다.",
+    "해당 변경이 제재처분 기준을 가볍게 한 것인지 확인해야 한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "후법의 제재가 가벼워졌다.",
+      "evidence_excerpt": "\"later_law_lighter\": true"
+    },
+    {
+      "claim": "제재처분이 문제 된다.",
+      "evidence_excerpt": "\"sanction\": true"
+    }
+  ]
+}

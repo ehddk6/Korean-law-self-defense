@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "유책주의에 따라 주된 책임이 있는 배우자의 이혼청구는 원칙적으로 허용되지 않는다.",
+    "상대방 및 자녀에 대한 보호와 배려가 유책성을 상쇄할 정도였다는 사실이 없다.",
+    "혼인 전 과정과 소송 중 언행을 판단할 구체적 사실이 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민법 제840조 제6호 이혼청구에 대한 유책주의의 적용",
+    "유책성 상쇄 또는 시간 경과에 따른 예외적 허용 여부",
+    "상대방 배우자의 혼인계속의사에 대한 객관적 판단",
+    "부부의 상호 협조·보호의무 이행 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-057",
+  "supported_facts": [
+    {
+      "claim": "기록은 상대방의 주관적 의사만으로 혼인계속의사를 판단할 수 없다고 한다.",
+      "evidence_excerpt": "소송 과정에서 그 배우자가 표명하는 주관적 의사만을 가지고 판단할 것이 아니라"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "기록이 보험조항 중간에서 중단되었다.",
+    "보험사고 요건이 제시되지 않았다.",
+    "망인의 사망 경위가 없다.",
+    "당사자 청구·항변이 없다.",
+    "원심 판단과 주문이 없다."
+  ],
+  "citations": [
+    "이 사건 각 보험계약에는 ‘피보험자가 보험기간 중"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "중단된 기록으로 약관 요건을 특정할 수 있는지",
+    "망인의 보험사고 충족 여부",
+    "보험설계사 권유의 법적 의미",
+    "법정상속인의 수익자 지위",
+    "당사자 청구원인의 특정",
+    "증명책임과 증거 평가",
+    "보험금 범위와 손해액",
+    "원심 판단 누락의 효과"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": [
+    {
+      "claim": "법정상속인이 사망보험금 수익자다.",
+      "evidence_excerpt": "망인의 법정상속인을 사망보험금의 수익자로"
+    }
+  ]
+}

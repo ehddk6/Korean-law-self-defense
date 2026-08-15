@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "코로나19는 전염력이 이례적으로 매우 강력하였다고 기재되어 있다.",
+    "감염병예방법 제49조 제1항 제2호를 근거로 집합금지조치가 시행되었다고 기재되어 있다.",
+    "각 지방자치단체별 감염 확산 추이에 따라 강화 또는 완화 조치를 할 수 있었다고 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "감염병예방법 제49조 제1항 제2호가 실내체육시설 집합금지조치의 법률상 근거인지",
+    "집합금지조치가 재산권 제한에 대한 법률유보 원칙을 충족하는지",
+    "손실보상 규정 부재가 헌법상 재산권·평등권 침해인지",
+    "지방자치단체별 집합금지·제한명령이 비례·평등 원칙상 재량권 일탈·남용인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-004",
+  "supported_facts": []
+}

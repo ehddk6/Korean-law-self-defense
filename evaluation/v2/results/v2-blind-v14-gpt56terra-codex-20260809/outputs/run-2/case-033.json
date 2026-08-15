@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "참가인의 주식양도대금 미지급이 계약상 해제 요건을 충족하는지와 최고가 적법한지 다툼의 여지가 있다.",
+    "2016. 12. 19.자 내용증명은 참가인에게 송달되지 않았다.",
+    "참가인이 제3자에게 주식을 양도한 행위가 통정허위표시라는 점을 뒷받침하는 구체적 증거가 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식양도대금 미지급이 계약 해제 사유인지",
+    "시정요구의 도달과 계약상 해제 절차의 충족 여부",
+    "해제 의사표시가 소송서면 송달로 도달한 시점",
+    "해제 전 제3자에 대한 주식양도가 통정허위표시인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-033",
+  "supported_facts": [
+    {
+      "claim": "참가인은 현재까지 주식양도대금을 지급하지 않았다.",
+      "evidence_excerpt": "참가인은 현재까지 원고들에게 이 사건 계약에서 정한 주식양도대금을 지급하지 않고 있다."
+    }
+  ]
+}

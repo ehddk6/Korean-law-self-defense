@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "부칙에 개정 전 사실에 관한 경과규정이 있을 수 있음",
+    "개정일 및 사실발생일이 제공되지 않음"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "개인정보 보호법 부칙의 적용 경과규정 내용이 제공되지 않음",
+    "개정일 및 사실 발생일이 제공되지 않음",
+    "특별규정에 따른 적용시점 예외를 확인할 수 없음"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-147",
+  "supported_facts": [
+    {
+      "claim": "부칙 본문은 제공되지 않았다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    },
+    {
+      "claim": "개정일은 알려지지 않았다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    }
+  ]
+}

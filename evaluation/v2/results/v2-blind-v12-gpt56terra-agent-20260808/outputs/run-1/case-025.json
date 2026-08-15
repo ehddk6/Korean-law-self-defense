@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "주택의 양수인은 “임대인의 임대차계약상의 권리·의무 일체를 그대로 승계한다.”",
+    "양수인은 “임대차보증금 반환채무를 면책적으로 인수”한다.",
+    "임차인이 양도 사실을 안 때부터 상당한 기간 내에 이의를 제기하지 않으면 승계된 임대차관계의 구속에서 벗어날 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택 양수인의 임대인 지위 법정승계",
+    "주택 양도에 따른 임대차보증금 반환채무의 면책적 인수",
+    "임차인의 임대인 지위승계 거부권",
+    "임차인의 이의제기 시 양도인의 보증금 반환채무 존속 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-025",
+  "supported_facts": []
+}

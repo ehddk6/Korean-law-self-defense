@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "제186조에 따라 송달할 수 없다는 사정이 달라지면 우편송달의 근거가 달라질 수 있다."
+  ],
+  "citations": [
+    "제187조",
+    "제186조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제187조.",
+    "제186조에 따라 송달할 수 없는 때가 우편송달의 요건이다.",
+    "법원사무관등이 등기우편 등 대법원규칙이 정하는 방법으로 발송할 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "postal-service-after-article-186-failure",
+  "scenario_id": "case-138",
+  "supported_facts": [
+    {
+      "claim": "제186조에 따른 송달이 불가능한 사실이 제시되었다.",
+      "evidence_excerpt": "article_186_service_impossible"
+    },
+    {
+      "claim": "우편송달은 제186조에 따라 송달할 수 없는 때에 가능하다.",
+      "evidence_excerpt": "제186조의 규정에 따라 송달할 수 없는 때에는"
+    }
+  ]
+}

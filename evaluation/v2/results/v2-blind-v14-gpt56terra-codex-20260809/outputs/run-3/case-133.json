@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "동거인이 사리를 분별할 지능이 있는지 확인되지 않았고, 오히려 수령능력이 확인되지 않은 것으로 제시되었다.",
+    "송달 장소가 근무장소 외의 송달 장소인지 제공되지 않았다.",
+    "특별규정의 존부가 제공되지 않았다."
+  ],
+  "citations": [
+    "제186조(보충송달ㆍ유치송달)",
+    "①근무장소 외의 송달할 장소에서 송달받을 사람을 만나지 못한 때에는 그 사무원, 피용자(被用者) 또는 동거인으로서 사리를 분별할 지능이 있는 사람에게 서류를 교부할 수 있다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 민사소송법 제186조 제1항.",
+    "필수 사실: 근무장소 외의 송달 장소에서 송달받을 사람을 만나지 못하였을 것, 동거인이 사리를 분별할 지능이 있을 것.",
+    "예외: 근무장소에서의 송달은 제186조 제2항의 별도 요건이 적용된다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "substitute-service-needs-capable-recipient",
+  "scenario_id": "case-133",
+  "supported_facts": [
+    {
+      "claim": "송달받을 사람은 부재중이었고 동거인에게 교부되었다.",
+      "evidence_excerpt": "\"delivered_to_housemate\": true, \"recipient_absent\": true"
+    },
+    {
+      "claim": "수령능력이 확인되지 않았다.",
+      "evidence_excerpt": "\"capacity_confirmed\": false"
+    }
+  ]
+}

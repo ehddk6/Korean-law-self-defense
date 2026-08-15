@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 영상정보가 훼손되지 않도록 하지 못하거나 하지 않은 자도 처벌조항의 대상이라고 판단하였다.",
+    "원심은 피고인이 하드디스크를 버려 은닉한 결과 CCTV 영상정보가 훼손되었다고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 영유아보육법상 CCTV 영상정보 안전성 확보조치 의무의 범위",
+    "저장장치 은닉으로 인한 녹화영상정보 삭제가 영상정보 훼손에 해당하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-106",
+  "supported_facts": []
+}

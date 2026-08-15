@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "재고용 제도는 기간제 근로자로 재고용한 뒤 갱신하는 방식으로 기재되어 있다.",
+    "원고가 재고용을 신청하였는지는 기록에서 명시되지 않는다.",
+    "피고는 일부 재고용 거부 사례가 있다고 주장하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "부당해고가 무효인 경우 정년 후 기간제 재고용 제도에 따른 계속고용 기대권이 인정되는지",
+    "정년 후 재고용 가능 기간의 임금 상당액을 손해로 청구할 수 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-064",
+  "supported_facts": []
+}

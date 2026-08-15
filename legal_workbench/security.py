@@ -210,6 +210,14 @@ def scan_residual_pii(text: str) -> list[SecurityFinding]:
                 r"(?:19|20)\d{2}-\d{2}-\d{2}", match.group(0).strip()
             ):
                 continue
+            if category == "ACCOUNT":
+                line_start = text.rfind("\n", 0, match.start()) + 1
+                prefix = text[line_start : match.start()]
+                suffix = text[match.end() : match.end() + 1]
+                if re.search(r"https?://\S*$", prefix) or re.search(r"[A-Za-z_]$", prefix) or re.match(
+                    r"[A-Za-z_]", suffix
+                ):
+                    continue
             findings.append(
                 SecurityFinding(category, "<redacted-in-report>", match.start(), match.end(), rule)
             )

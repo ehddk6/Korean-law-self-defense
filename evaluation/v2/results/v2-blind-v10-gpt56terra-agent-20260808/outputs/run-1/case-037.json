@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 재발행 주권을 주식병합으로 실효된 구주권으로 보아 유효한 주권 교부가 없었다고 판단하였다.",
+    "신주권이 실제로 발행되지 않았는지는 기록상 확정되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식병합 후 신주권 미발행 상태에서 주식양도의 효력 발생 여부",
+    "상속재산분할 합의만으로 병합 후 주식 소유권을 취득할 수 있는지 여부"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-037",
+  "supported_facts": []
+}

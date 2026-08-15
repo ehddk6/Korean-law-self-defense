@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "원고와 피고 사이 상호협정에 따라 피고가 책임보험금을 포함하여 지급한 후 원고에게 청구하도록 되어 있었다.",
+    "원고는 피고가 청구한 174,430,750원 전부를 지급하였다.",
+    "원심은 소외 1의 과실비율을 10%로 인정하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "자동차보험 구상금분쟁심의 상호협정에 따른 책임보험금 부담",
+    "사고 과실비율과 원고의 책임보험금 부담 범위",
+    "원고가 지급한 보험금 중 부당이득 반환청구의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-011",
+  "supported_facts": []
+}

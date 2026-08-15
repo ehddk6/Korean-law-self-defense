@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "이 사건 기사는 거래종결 전 공개되어 피고들이 인지할 수 있었던 정황이 있다.",
+    "매도인들 측은 기사 일부 삭제와 수정 검토를 요청하였다.",
+    "이 사건 PEF는 2020년 해산등기가 마쳐졌다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "PEF 업무집행사원의 투자자에 대한 거래종결 전 주의의무",
+    "투자대상 회사의 공급처·레시피권 위험에 관한 고지 및 조사 의무",
+    "중대한 투자위험의 존재와 투자자의 출자손해 사이의 인과관계",
+    "PEF 존속기간 만료 및 SPC 사채 만기 연장이 손해 산정에 미치는 효과"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-009",
+  "supported_facts": [
+    {
+      "claim": "피고들은 투자위험 정황을 발견하였다고 원심이 판단하였다.",
+      "evidence_excerpt": "피고들은 이 사건 주식매매계약에 따른 거래가 종결된 2015. 7. 30. 이전에 투자대상인 이 사건 회사에 관한 중대한 투자위험이 존재할 수 있다는 정황을 발견하였으므로"
+    },
+    {
+      "claim": "원심은 거래종결 전 주의의무 위반을 인정하였다.",
+      "evidence_excerpt": "거래종결 전 주의의무를 위반하였다고 판단하였다."
+    }
+  ]
+}

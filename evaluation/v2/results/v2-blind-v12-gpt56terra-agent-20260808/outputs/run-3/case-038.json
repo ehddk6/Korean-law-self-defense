@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "추가 이사 2명 선임안은 반대 999,995주로 부결되었다.",
+    "그 후 이사 1명만을 선임하는 안건이 상정되어 집중투표제를 시행하지 않았다.",
+    "피고는 원고들이 추천한 후보자의 성명 등을 소집통지에 기재하지 않았다.",
+    "이사 선임에서 원고 4는 소외 1보다 적은 찬성표를 얻었다."
+  ],
+  "citations": [
+    "상법 제363조의2 제1항",
+    "상법 제363조의2 제2항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주제안권에 따른 이사 추가 선임 안건의 상정 방식",
+    "집중투표에 의한 이사 선임청구권의 행사 요건",
+    "주주총회 소집통지에 후보자 및 선임 이사 수를 기재할 의무",
+    "이사 선임 결의의 소집절차 및 결의방법 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-038",
+  "supported_facts": []
+}

@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "발신주의는 제185조 제2항 또는 제187조에 따라 발송한 경우에 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "제187조 우편송달의 송달 간주 시점"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "supported_facts": [
+    {
+      "claim": "서류는 제187조에 따라 발송되었다.",
+      "evidence_excerpt": "\"sent_under_article_187\": true"
+    },
+    {
+      "claim": "발송일은 2025년 8월 3일이다.",
+      "evidence_excerpt": "\"dispatch_date\": \"2025-08-03\""
+    },
+    {
+      "claim": "제187조에 따라 발송한 경우 발송한 때에 송달된 것으로 본다.",
+      "evidence_excerpt": "제185조제2항 또는 제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다."
+    }
+  ]
+}

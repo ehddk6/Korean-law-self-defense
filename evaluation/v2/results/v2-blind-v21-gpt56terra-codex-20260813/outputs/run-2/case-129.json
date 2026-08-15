@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "다른 특별 소멸시효 규정이나 시효 중단 사유가 있으면 만료일이 달라질 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제163조",
+    "제166조",
+    "제157조",
+    "제160조"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제163조 제1호의 3년 단기소멸시효가 적용된다.",
+    "1년 이내 정기 지급 이자 및 권리행사 가능일이 명시되어 있다.",
+    "특별규정 적용 여부는 제시된 사실상 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "supported_facts": [
+    {
+      "claim": "1년 이내 정기 지급 이자 채권에는 3년의 소멸시효가 적용된다.",
+      "evidence_excerpt": "이자, 부양료, 급료, 사용료 기타 1년 이내의 기간으로 정한 금전 또는 물건의 지급을 목적으로 한 채권"
+    },
+    {
+      "claim": "권리행사 가능일이 제시되어 있다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-05-10\""
+    }
+  ]
+}

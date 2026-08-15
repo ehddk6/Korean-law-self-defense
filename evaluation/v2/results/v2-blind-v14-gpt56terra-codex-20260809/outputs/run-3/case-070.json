@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "원고와 참가인 사이에는 보험설계사 위촉계약이 체결되었다.",
+    "기록상 원고의 업무에는 보험인원 모집 및 관리업무가 포함된다.",
+    "제공된 기록에는 보수 지급 방식·근무시간·지휘감독 등 근로자성 판단자료가 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약 당사자인 원고의 근로기준법상 근로자성",
+    "FP·PSM·AM 업무 수행에 대한 참가인의 지휘·감독 여부",
+    "보험인원 모집 및 관리업무의 독립사업자성 또는 종속성",
+    "근로자성 및 노동관계법 적용요건에 관한 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 보험설계사 위촉계약을 체결했다.",
+      "evidence_excerpt": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "PSM 업무는 보험인원 모집 및 관리업무로 기재되어 있다.",
+      "evidence_excerpt": "PSM(Pro Sales Manager, 보험인원 모집 및 관리업무를 하는 매니저 직급)"
+    }
+  ]
+}

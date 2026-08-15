@@ -1,0 +1,20 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "개인 피고의 보통재판적"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "individual-address-forum",
+  "scenario_id": "case-130",
+  "supported_facts": [
+    {
+      "claim": "사람의 보통재판적은 주소에 따라 정한다.",
+      "evidence_excerpt": "사람의 보통재판적은 그의 주소에 따라 정한다."
+    }
+  ]
+}

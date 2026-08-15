@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원고는 통화옵션계약 관련 판단에 대하여 구체적인 상고이유를 기재하지 않았다.",
+    "원심은 피고의 적합성 원칙 위반을 인정하였다.",
+    "원심은 피고의 설명의무 위반을 인정한 제1심판결을 그대로 인용하였다.",
+    "일부 손해 부분은 이미 시효로 소멸하였다고 판단되었다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "단순선도환계약 체결이 적합성 원칙 위반인지 여부",
+    "단순선도환계약의 위험에 관한 설명의무 위반 여부",
+    "손해배상청구권의 단기소멸시효 기산점 및 시효 완성 여부",
+    "통화옵션계약 관련 상고이유가 구체적으로 기재되었는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": []
+}

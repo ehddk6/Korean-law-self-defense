@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "계약일만으로 권리행사 가능일을 알 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "소멸시효 기산일"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일은 2025-04-10이다.",
+      "evidence_excerpt": "\"contract_date\": \"2025-04-10\""
+    },
+    {
+      "claim": "권리행사 가능일은 제공되지 않았다.",
+      "evidence_excerpt": "\"right_exercisable_date\": null"
+    }
+  ]
+}

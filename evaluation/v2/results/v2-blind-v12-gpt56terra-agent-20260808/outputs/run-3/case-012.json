@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "보험약관은 갑상선암을 암에서 제외하는 조항을 두고 있다.",
+    "피고는 원발부위 기준으로 산정한 보험금 4,400,000원을 이미 지급하였다.",
+    "원심은 원발부위 기준 분류조항이 설명의무 대상이 아니라고 판단하였다.",
+    "원심은 모든 전이암에 별도의 보험금 지급을 기대하는 것은 이례적이라고 보았다."
+  ],
+  "citations": [
+    "대법원 2004. 8. 20. 선고 [CASE_NUMBER_001] 판결",
+    "대법원 2024. 3. 12. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원발부위 기준 분류조항의 약관상 의미",
+    "원발부위 기준 분류조항이 보험자의 설명의무 대상인지 여부",
+    "갑상선암과 림프절 전이에 대한 보험금 산정",
+    "보험계약자가 원발부위 기준 분류조항을 예상할 수 있었는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-012",
+  "supported_facts": []
+}

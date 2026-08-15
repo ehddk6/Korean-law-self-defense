@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "이벤트 페이지와 쇼핑몰 전체는 별도 웹서버·접근경로로 운영되었다는 점",
+    "캐시 설정 오류가 이벤트 페이지에서만 발생하였다는 점",
+    "실제 개인정보 노출이 20명의 이용자와 29명의 다른 이용자 사이에 한정되었다는 점"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 유출 과징금의 관련 매출액 범위",
+    "위반행위와 직접 또는 간접적으로 영향을 받는 서비스의 특정",
+    "이벤트 페이지와 쇼핑몰 전체 서비스의 동일성",
+    "웹서버 분리 및 데이터베이스 접근경로 차이의 의미",
+    "구 과징금 부과기준상 서비스 범위 판단 요소"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-104",
+  "supported_facts": [
+    {
+      "claim": "원심은 이벤트 매출액으로 한정하였다.",
+      "evidence_excerpt": "‘이 사건 이벤트로 인한 매출액’으로 한정되어야 한다고 판단하였다."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "기록은 보험계약 조항의 문장을 완결하여 제시하지 않는다.",
+    "사망 경위와 보험금 청구·지급 거절 사유가 제시되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사망보험금 지급 요건",
+    "보험계약 약관의 적용 범위",
+    "법정상속인의 보험수익자 지위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": [
+    {
+      "claim": "피고 1은 보험계약을 체결하였다.",
+      "evidence_excerpt": "원고와 2014. 4. 2. 및 2015. 4. 23."
+    },
+    {
+      "claim": "망인의 법정상속인이 사망보험금 수익자로 정해졌다.",
+      "evidence_excerpt": "망인의 법정상속인을 사망보험금의 수익자로"
+    },
+    {
+      "claim": "기록은 약관 문장을 완결하지 않았다.",
+      "evidence_excerpt": "피보험자가 보험기간 중"
+    }
+  ]
+}

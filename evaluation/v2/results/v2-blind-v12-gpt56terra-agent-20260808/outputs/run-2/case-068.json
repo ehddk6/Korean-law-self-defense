@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "원고는 생산직 인력 축소 방안을 제시하였다.",
+    "137명의 생산직 근로자가 희망퇴직하였다.",
+    "중앙노동위원회는 해고대상자 선정기준과 성실한 협의가 부족하다고 보았다."
+  ],
+  "citations": [
+    "근로기준법 제24조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로기준법 제24조상 긴박한 경영상 필요성",
+    "정리해고를 위한 해고회피 노력",
+    "해고대상자 선정기준의 합리성과 공정성",
+    "노동조합과의 성실한 협의"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-068",
+  "supported_facts": [
+    {
+      "claim": "경영진단보고서는 재무·시장·운영 위험을 분석하였다.",
+      "evidence_excerpt": "경영악화 요인을 분석하고"
+    },
+    {
+      "claim": "원고는 참가인들을 정리해고하였다.",
+      "evidence_excerpt": "참가인들을 2015. 10. 16. 자로 정리해고"
+    },
+    {
+      "claim": "원심은 긴박한 경영상 필요성을 부정하였다.",
+      "evidence_excerpt": "긴박한 경영상의 필요성 요건을 갖추지 못하였으므로"
+    }
+  ]
+}

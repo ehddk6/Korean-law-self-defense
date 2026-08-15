@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "추가 이사 2명 선임 안건은 주주총회에서 부결되었다.",
+    "원고들이 추천한 후보자의 성명 등은 소집통지에 기재되지 않았다.",
+    "이사 선임은 최다 지지율 1인 선임 방식으로 이루어졌다."
+  ],
+  "citations": [
+    "상법 제363조의2 제1항",
+    "상법 제363조의2 제2항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주의 이사 추가 선임 주주제안권",
+    "집중투표에 의한 이사 선임 청구권",
+    "주주제안 의안 및 후보자 정보를 소집통지에 기재할 의무",
+    "이사 선임 결의의 소집절차 및 결의방법 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-038",
+  "supported_facts": [
+    {
+      "claim": "원고들은 추가 이사 선임을 주주제안하였다.",
+      "evidence_excerpt": "‘현 이사 외 2명의 이사 추가 선임’"
+    },
+    {
+      "claim": "원고들은 집중투표를 청구하였다.",
+      "evidence_excerpt": "집중투표의 방법으로 이사를 선임할 것을 청구"
+    },
+    {
+      "claim": "추가 이사 선임 안건은 부결되었다.",
+      "evidence_excerpt": "찬성 794,995주 44.26%, 반대 999,995주 55.66%로 부결"
+    }
+  ]
+}

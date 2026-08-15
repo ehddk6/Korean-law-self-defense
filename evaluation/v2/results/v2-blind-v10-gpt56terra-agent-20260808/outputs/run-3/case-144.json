@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "제766조 제3항 적용 사실이 제공되지 않아 단기시효 만료를 확정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "피해자와 가해자를 안 날부터 3년의 단기시효",
+    "특별규정 적용 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "피해자와 가해자를 안 날은 2026-04-10이다.",
+      "evidence_excerpt": "\"knowledge_date\": \"2026-04-10\""
+    },
+    {
+      "claim": "시효중단은 없다.",
+      "evidence_excerpt": "\"interruption\": false"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원고들은 최초 발표 당시 과락 점수였다.",
+    "기록에는 “가. 원심의 판단” 이후의 판단 이유와 결론이 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "세무사 자격시험 채점 오류와 불합격 처분의 위법성",
+    "재채점 및 추가합격 이후 피고들의 상고이유 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-003",
+  "supported_facts": []
+}

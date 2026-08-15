@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "단체협약이나 취업규칙에 재고용 의무를 부과하는 규정이 없다.",
+    "참가인 1은 기간을 정하여 촉탁직 근로계약을 체결하였다.",
+    "참가인 2는 원고와 촉탁직 근로계약을 체결하지 못하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "촉탁직 재고용 규정이 사용자에게 재고용 의무를 부과하는지",
+    "기간제 촉탁직 근로계약의 기간만료가 해고에 해당하는지",
+    "정년 도달 후 촉탁직 계약을 체결하지 않은 경우 근로관계 종료의 법적 성격",
+    "중앙노동위원회 재심판정 취소소송에서 부당해고 성립 여부의 입증책임"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-061",
+  "supported_facts": [
+    {
+      "claim": "취업규칙과 단체협약에는 정년퇴직자 촉탁 재고용의 재량적 근거가 기재되어 있다.",
+      "evidence_excerpt": "원고에게 정년퇴직자를 촉탁직근로자로 재고용할 의무를 부과하는 취지의 규정은 없다."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "제1 영장의 범죄 혐의사실은 장물취득 및 도박장개설 관련이었다.",
+    "이 사건 각 계약서는 제1 영장 집행 중 압수되었다.",
+    "제2 영장 이후 휴대전화를 대상으로 다시 디지털포렌식 절차를 진행한 흔적은 찾아볼 수 없다.",
+    "원심은 피고인들의 검찰 진술이 위법수집증거의 2차적 증거라고 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "비의료인의 의료기관 개설·운영에 따른 의료법 위반 여부",
+    "사무장병원 요양급여 청구의 사기죄 성립 여부",
+    "제1 영장에 따른 전자정보 탐색의 적법성",
+    "제2 영장 및 출력물의 증거능력",
+    "위법수집증거의 2차적 증거인 검찰 진술의 증거능력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-045",
+  "supported_facts": []
+}

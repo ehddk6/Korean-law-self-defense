@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "거주기간은 양도자가 취득일부터 양도일까지 보유한 기간 중 해당 주택에서 거주한 기간으로 해석되었다.",
+    "이 해석은 주택의 취득원인이 상속인 경우에도 마찬가지라고 제시되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상속으로 취득한 주택의 장기보유 특별공제상 거주기간 산정",
+    "1세대 1주택 거주요건의 보유기간 내 충족 여부"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-084",
+  "supported_facts": []
+}

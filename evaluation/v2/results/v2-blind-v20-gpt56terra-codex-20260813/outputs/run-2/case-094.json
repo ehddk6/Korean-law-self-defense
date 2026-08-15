@@ -1,0 +1,44 @@
+{
+  "adverse_points": [
+    "채무초과 상태의 임차보증금 양도는 부인 대상이 될 수 있다.",
+    "약 1,870만 원의 사용처 소명자료가 없다.",
+    "그 금액은 총변제예정액보다 크다.",
+    "반영하면 변제율 상승이 예상된다.",
+    "아파트 처분 뒤 6개월 이내에 신청했다."
+  ],
+  "citations": [
+    "법 제595조",
+    "법 제584조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "채권자 일반 이익 부적합 요건",
+    "부인권 준용 및 행사 가능성",
+    "임차보증금 양도의 해함성",
+    "아파트 매도대금 사용처",
+    "청산가치와 변제예정액 비교",
+    "부인권 가능성과 기각의 관계",
+    "재산처분 소명책임",
+    "개시신청 기각의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-094",
+  "supported_facts": [
+    {
+      "claim": "보증금 양도",
+      "evidence_excerpt": "점포임차보증금 2천만 원을 양도한 행위"
+    },
+    {
+      "claim": "사용처 소명",
+      "evidence_excerpt": "소명자료가 없을 뿐만 아니라"
+    },
+    {
+      "claim": "신청 시점",
+      "evidence_excerpt": "불과 6개월도 채 되지 않은"
+    }
+  ]
+}

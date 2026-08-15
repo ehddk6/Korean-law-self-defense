@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "신탁관계가 설정된 부동산의 임대차 중개에서는 신탁원부 제시와 신탁관계의 법적 의미·효과에 관한 설명의무가 요구된다.",
+    "수탁자의 사전승낙이나 사후승인이 없다면 수탁자에게 임대차계약으로 대항할 수 없다는 점을 설명하여야 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신탁관계가 설정된 부동산 임대차를 중개하는 공인중개사의 조사·설명 의무",
+    "수탁자의 사전승낙 또는 사후승인이 없는 임대차계약의 대항 가능성에 관한 설명 의무"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-024",
+  "supported_facts": [
+    {
+      "claim": "공인중개사는 고의 또는 과실로 거래당사자에게 재산상 손해를 발생하게 하면 손해배상책임을 진다고 서술되어 있다.",
+      "evidence_excerpt": "제30조 제1항에서 고의 또는 과실로 인하여 거래당사자에게 재산상의 손해를 발생하게 한 때에는 그 손해를 배상할 책임이 있음을 규정하고 있다."
+    }
+  ]
+}

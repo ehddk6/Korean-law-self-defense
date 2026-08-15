@@ -1,0 +1,44 @@
+{
+  "adverse_points": [
+    "환급ㆍ송금 용역은 통상적인 금전대부와 거래구조가 다르다.",
+    "원고가 금전 교부를 업으로 하였다는 증명이 부족하다.",
+    "정산 지연만으로 신용공여를 단정하기 어렵다.",
+    "고시의 이자비용 표현은 면세 판단의 법적 근거가 아닐 수 있다.",
+    "수수료가 이자인지 운영대가인지에 관한 증거가 부족하다."
+  ],
+  "citations": [
+    "부가가치세법 제26조 제1항 제11호",
+    "금전대부업"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "금융ㆍ보험 용역 면세 요건",
+    "금전대부업 해당 여부",
+    "주된 사업에 부수한 유사 용역 요건",
+    "선지급 구조가 신용공여인지",
+    "수수료의 이자성 입증",
+    "고시상 이자비용 표현의 법적 의미",
+    "영세율 주장과 면세 판단의 구별",
+    "면세 여부의 입증책임과 과세효과"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-086",
+  "supported_facts": [
+    {
+      "claim": "사업 지위",
+      "evidence_excerpt": "원고가 환급창구운영사업자로서"
+    },
+    {
+      "claim": "제공 용역",
+      "evidence_excerpt": "부가가치세 등을 환급 또는 송금하는 사업"
+    },
+    {
+      "claim": "정산 시기",
+      "evidence_excerpt": "다음 달 25일경 정산받았고"
+    }
+  ]
+}

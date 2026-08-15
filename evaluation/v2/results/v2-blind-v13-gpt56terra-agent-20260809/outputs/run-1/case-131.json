@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 그 특별규정이 우선하며, 제공된 사실만으로 예외 적용 시 구법 등 어느 법령이 최종 적용되는지는 특정되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제2항의 예외요건: 당사자 신청 처분에서 처분 당시 법령 적용이 곤란한 특별한 사정이 확인되어, 처분 당시 신법 적용 원칙의 예외가 된다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "당사자의 신청에 따른 처분이다.",
+      "evidence_excerpt": "\"party_application\": true"
+    },
+    {
+      "claim": "신법 적용이 곤란한 특별한 사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true"
+    }
+  ]
+}

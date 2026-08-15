@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "주택임대차법 제3조 제4항은 임대주택 양수인이 임대인의 지위를 승계하는 법률상 당연승계 규정이라는 점",
+    "양수인이 임대차보증금 반환채무를 면책적으로 인수하고 양도인은 반환채무를 면한다는 점"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "임차주택 양수인의 임대인 지위 당연승계",
+    "임차인의 이의제기에 따른 양도인의 보증금 반환채무 존속"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-025",
+  "supported_facts": []
+}

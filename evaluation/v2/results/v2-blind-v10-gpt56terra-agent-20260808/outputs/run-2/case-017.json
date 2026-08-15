@@ -1,0 +1,22 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "원심판결 이유와 기록에 의하면 다음과 같은 사실을 알 수 있다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험계약상 사망보험금 수익자 및 보험금 지급 관련 쟁점"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": [
+    {
+      "claim": "피고 1은 망인을 피보험자로 하는 각 보험계약을 체결하였다.",
+      "evidence_excerpt": "피고 1은 원고 소속 보험설계사인 소외 1의 권유에 따라 원고와 2014. 4. 2. 및 2015. 4. 23. 남편인 소외 2(이하 ‘망인’이라 한다)를 피보험자로, 망인의 법정상속인을 사망보험금의 수익자로 하는 원심 판시 별지 목록 제2항 기재 각 보험계약"
+    }
+  ]
+}

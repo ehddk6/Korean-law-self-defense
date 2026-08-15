@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "주소등 이외의 장소에서 한 송달에는 별도의 요건이 적용될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "주소등에서 한 송달의 장소 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달 장소는 수령인의 주소이다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    },
+    {
+      "claim": "송달은 수령인의 주소·거소·영업소 또는 사무소에서 한다.",
+      "evidence_excerpt": "송달은 받을 사람의 주소ㆍ거소ㆍ영업소 또는 사무소"
+    }
+  ]
+}

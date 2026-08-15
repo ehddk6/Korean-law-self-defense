@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "해당 법령에 특별규정이 있는지, 변경이 위반행위 후 이루어졌는지, 가벼워진 기준이 해당 제재처분에 적용되는지가 제시되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제3항 단서가 적용될 수 있다.",
+    "제재처분과 신법의 경한 기준 사실은 제시되었다.",
+    "특별규정이 없고 위반행위 후 법 변경으로 기준이 가벼워진 경우에만 변경법을 적용한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재처분 사안이다.",
+      "evidence_excerpt": "sanction"
+    },
+    {
+      "claim": "후법의 제재 기준이 더 가볍다.",
+      "evidence_excerpt": "later_law_lighter"
+    },
+    {
+      "claim": "특별규정이 없으면 가벼워진 변경법을 적용한다.",
+      "evidence_excerpt": "제재처분 기준이 가벼워진 경우로서 해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다."
+    }
+  ]
+}

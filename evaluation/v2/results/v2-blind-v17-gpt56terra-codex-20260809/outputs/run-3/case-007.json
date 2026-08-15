@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "근로계약 갱신에 대한 정당한 기대권을 인정할 증거가 부족하다고 판단되었다.",
+    "명시적 반대의사에도 기망 또는 협박하여 녹음한 사정은 발견되지 않는다.",
+    "녹음파일은 노동위원회나 법원 제출 방식으로만 사용되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "기간제 근로자의 근로계약 갱신기대권 성립",
+    "영업소 폐점과 갱신거절의 손해배상책임",
+    "동의 없는 대화 녹음과 음성권 침해",
+    "녹음 목적·방법·대화 내용에 따른 위법성",
+    "분쟁기관 제출 목적의 녹음 사용이 수인 가능한지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-007",
+  "supported_facts": [
+    {
+      "claim": "피고 3은 원고 동의 없이 대화를 녹음하였다.",
+      "evidence_excerpt": "원고의 동의 없이 원고와의 대화 내용 일체를 녹음하였다"
+    }
+  ]
+}

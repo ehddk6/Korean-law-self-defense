@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "기록이 약관 문언 도중에 중단되어 보험사고와 면책 요건을 확인할 수 없다.",
+    "사망 원인, 보험금 청구 사실, 원심 판단 및 상고이유가 제시되지 않았다.",
+    "보험계약 체결 사실만으로 보험금 지급책임 또는 면책 여부를 판단할 수 없다."
+  ],
+  "citations": [
+    "피보험자가 보험기간 중"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험약관상 보험사고의 구체적 정의와 충족 여부",
+    "망인의 사망 또는 상해 사실과 보험기간의 관련성",
+    "사망보험금 수익자인 법정상속인의 청구권 발생 여부",
+    "면책사유 또는 보험자의 항변 존재 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": [
+    {
+      "claim": "피고 1은 망인을 피보험자로 하는 보험계약을 체결했다.",
+      "evidence_excerpt": "남편인 소외 2(이하 ‘망인’이라 한다)를 피보험자로"
+    },
+    {
+      "claim": "사망보험금 수익자는 망인의 법정상속인으로 정해졌다.",
+      "evidence_excerpt": "망인의 법정상속인을 사망보험금의 수익자로 하는"
+    }
+  ]
+}

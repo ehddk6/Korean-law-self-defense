@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "법정승계는 주택의 인도와 주민등록의 대항요건을 갖춘 임대차에 적용된다.",
+    "임차인이 양도사실을 안 때부터 상당한 기간 내에 이의를 제기하면 양도인의 보증금 반환채무는 소멸하지 않는다."
+  ],
+  "citations": [
+    "대법원 1987. 3. 10. 선고 86다카1114 판결",
+    "대법원 2013. 1. 17. 선고 [CASE_NUMBER_001] 전원합의체 판결",
+    "대법원 2002. 9. 4. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택 양수인의 임대인 지위 법정승계",
+    "양수인의 임대차보증금 반환채무 면책적 인수",
+    "임차인의 이의제기에 따른 양도인의 보증금 반환채무 존속"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-025",
+  "supported_facts": [
+    {
+      "claim": "양수인은 임대인의 권리와 의무를 승계한다.",
+      "evidence_excerpt": "임대차계약상의 권리·의무 일체를 그대로 승계한다."
+    },
+    {
+      "claim": "양수인은 보증금 반환채무를 면책적으로 인수한다.",
+      "evidence_excerpt": "임대차보증금 반환채무를 면책적으로 인수하고"
+    },
+    {
+      "claim": "임차인은 승계에 이의를 제기할 수 있다.",
+      "evidence_excerpt": "상당한 기간 내에 이의를 제기함으로써"
+    }
+  ]
+}

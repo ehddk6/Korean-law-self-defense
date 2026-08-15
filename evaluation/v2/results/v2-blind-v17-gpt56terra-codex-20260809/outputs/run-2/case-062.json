@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "고용승계 조항의 수범자는 ‘용역업체’로 적혀 있다.",
+    "정부지침과 협의만으로 개별 근로계약 성립이 확정되지는 않는다.",
+    "참가인은 합의서 제출을 거부하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "고용승계 조항이 자회사 직접채용 의무를 발생시키는지",
+    "정부 전환지침이 채용청구권을 발생시키는지",
+    "합의서 제출 요구가 적법한 채용조건인지",
+    "합의서 거부를 이유로 한 미채용이 정당한지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-062",
+  "supported_facts": [
+    {
+      "claim": "참가인은 합의서 제출을 거부하여 근로계약을 체결하지 못했다.",
+      "evidence_excerpt": "그 제출을 거부한 참가인과는 근로계약을 체결하지 않고"
+    }
+  ]
+}

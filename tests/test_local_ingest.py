@@ -4,6 +4,7 @@ from pathlib import Path
 import pytest
 
 from legal_workbench.cli import build_parser, dispatch
+from legal_workbench.storage import CaseStore
 from legal_workbench.workflow import ingest_document, intake_case
 
 
@@ -34,6 +35,8 @@ def test_ingest_and_rehydrate_with_separate_local_mapping(tmp_path: Path) -> Non
         mapping_home=mappings,
         worksets_home=worksets,
     )
+    evidence = CaseStore(worksets, "case-local-ingest").list_payloads("evidence")[0]
+    assert evidence["page_or_paragraph"] == "전체 문서"
 
     assert metadata["source_path_token"] == "[LOCAL_SOURCE]"
     assert metadata["source_filename"] == "[SOURCE_FILENAME]"

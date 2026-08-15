@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "피고인은 안전성 확보를 위한 아무런 조치를 하지 않은 것으로 공소사실에 기재되어 있다.",
+    "피고인은 하드디스크를 버려 은닉하였다.",
+    "원심은 주위적 공소사실을 유죄로 판단하였다."
+  ],
+  "citations": [
+    "구 영유아보육법 제15조의5 제3항",
+    "구 영유아보육법 제54조 제3항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "어린이집 CCTV 녹화영상정보 안전성 확보 의무",
+    "저장장치 은닉과 영상정보 훼손의 인과관계",
+    "구 영유아보육법상 영상정보 훼손죄 성립"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-106",
+  "supported_facts": [
+    {
+      "claim": "CCTV 저장장치 은닉으로 영상이 삭제되었다.",
+      "evidence_excerpt": "저장장치를 은닉하여 녹화영상정보가 전부 삭제되도록 하였다."
+    },
+    {
+      "claim": "원심은 하드디스크 은닉 사실을 인정하였다.",
+      "evidence_excerpt": "컴퓨터 하드디스크를 버려 은닉하였고"
+    },
+    {
+      "claim": "원심은 유죄로 판단하였다.",
+      "evidence_excerpt": "위 공소사실을 유죄로 판단하였다."
+    }
+  ]
+}

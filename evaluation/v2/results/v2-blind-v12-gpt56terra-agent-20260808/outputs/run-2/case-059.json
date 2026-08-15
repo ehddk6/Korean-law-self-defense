@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "피고는 2012년경부터 딸과 주로 생활하여 사실상 별거를 시작하였다.",
+    "당사자는 태양광발전소 사업을 둘러싸고 심하게 다투었다.",
+    "공유 토지 분할 및 인도 관련 소송이 진행되었다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장기간 별거가 혼인파탄에 미치는 영향",
+    "공유 토지 및 태양광발전소 사업 갈등의 파탄 책임",
+    "재산분할 관련 분쟁과 이혼청구의 관계",
+    "혼인관계 회복 가능성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-059",
+  "supported_facts": [
+    {
+      "claim": "피고는 사실상 별거를 시작하였다.",
+      "evidence_excerpt": "사실상 별거를 시작하였고"
+    },
+    {
+      "claim": "당사자는 사업을 둘러싸고 다투었다.",
+      "evidence_excerpt": "서로 중대한 의견 차이가 발생하여 심하게 다투었다."
+    },
+    {
+      "claim": "토지 지분에 관한 조정이 성립하였다.",
+      "evidence_excerpt": "각자 소유한 토지 지분을 맞교환하는 내용으로 조정이 성립하였다."
+    }
+  ]
+}

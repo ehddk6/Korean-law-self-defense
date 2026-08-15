@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "새 법령의 특별규정에 관한 사실이 없다",
+    "계속 중인 법률관계에 관한 구체적 경과와 개정법의 적용조항이 없다"
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)",
+    "① 새로운 법령등은 법령등에 특별한 규정이 있는 경우를 제외하고는 그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제1항의 계속 중인 법률관계 적용 기준",
+    "새 법령의 특별규정 유무",
+    "법률관계가 효력 발생 전에 완성되거나 종결되었는지 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 개정법 효력 발생 후에도 계속된다.",
+      "evidence_excerpt": "법 개정 전 시작해 개정 후 계속되는 법률관계"
+    }
+  ]
+}

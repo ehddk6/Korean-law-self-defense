@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "개인정보를 제공한 자가 누구인지에 관하여 문언상 제한이 없다고 보았다.",
+    "직접 제공받지 않았더라도 위법 제공 사정을 알면서 영리 또는 부정한 목적으로 개인정보를 제공받으면 처벌 대상이 될 수 있다고 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 보호법 제71조 제5호 후단의 ‘개인정보를 제공받은 자’의 범위",
+    "개인정보 처리자로부터 직접 제공받지 않은 자의 처벌 가능성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-102",
+  "supported_facts": []
+}

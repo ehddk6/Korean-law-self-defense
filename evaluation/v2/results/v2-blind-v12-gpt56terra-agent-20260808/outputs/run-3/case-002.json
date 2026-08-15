@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "삼청교육대 퇴소일부터 자살까지 약 5년 6개월이 경과하였다.",
+    "기록은 인과관계가 확정되었다고 하지 않고 추단할 여지만 있다고 기재한다.",
+    "신체적 가혹행위 관련 내용은 2022년 이의신청서에 기재된 내용이다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "삼청교육대 순화교육과 정신질환 사이의 상당인과관계",
+    "정신질환과 자살 사이의 상당인과관계",
+    "국가 불법행위로 인한 손해배상책임의 성립"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-002",
+  "supported_facts": []
+}

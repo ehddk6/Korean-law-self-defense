@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-08-02T11:45:29+00:00",
+  "files": {
+    "docx": {
+      "sha256": "6fed60aa0f471580d88299ec18ac5f3f94456b2bdc2212eee18d06555ab639c5",
+      "validation": {
+        "entries": 18,
+        "valid": true
+      }
+    },
+    "hwpx": {
+      "sha256": "225d872361d84a2cf016acd06f95a11b443ce03c1f90fa09dc7073cc4d0fcfaf",
+      "validation": {
+        "entries": 11,
+        "valid": true
+      }
+    },
+    "pdf": {
+      "sha256": "cea012f17b01fa66f1d20bf100ed7ce786c684559e39235509ccde6356ec4344",
+      "validation": {
+        "page_count": 1,
+        "valid": true
+      }
+    }
+  },
+  "format": "legal-workbench-document-validation-v1",
+  "passed": true
+}

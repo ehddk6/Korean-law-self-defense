@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 제14조 제2항의 예외 판단이 달라질 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청에 따른 처분에서 처분 당시 법령 적용의 예외"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "신청처분에 처분 당시 법령 적용이 곤란한 특별한 사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true, \"party_application\": true"
+    }
+  ]
+}

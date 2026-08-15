@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "재산국외도피 해당 여부는 동기, 방법 또는 수단의 은밀성ㆍ탈법성, 행위 후 조치 등을 엄격하고 신중하게 판단한다.",
+    "원심은 이 사건 공소사실(무죄 부분 제외)을 유죄로 판단하였다."
+  ],
+  "citations": [
+    "원심은 판시와 같은 이유로 이 사건 공소사실(무죄 부분 제외)을 유죄로 판단하였다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특정경제범죄법상 재산국외도피죄의 고의",
+    "해외 송금 후 즉시 국내 반입 목적이 재산도피의 고의를 부정하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-042",
+  "supported_facts": [
+    {
+      "claim": "기록은 검사의 상고이유와 피고인의 상고이유를 모두 구분하여 다룬다.",
+      "evidence_excerpt": "1. 검사의 상고이유에 관하여"
+    },
+    {
+      "claim": "원심은 무죄 부분을 제외한 공소사실을 유죄로 판단하였다.",
+      "evidence_excerpt": "원심은 판시와 같은 이유로 이 사건 공소사실(무죄 부분 제외)을 유죄로 판단하였다."
+    }
+  ]
+}

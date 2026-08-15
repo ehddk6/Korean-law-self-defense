@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 경감된 제재기준의 변경법 적용 예외가 배제될 수 있다.",
+    "조문은 법령 변경이 위반행위 후인 경우를 요건으로 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제재기준 경감 시 변경법 적용 예외",
+    "특별규정 유무",
+    "위반 후 법령 변경 시점"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재처분 사안이다.",
+      "evidence_excerpt": "\"sanction\": true"
+    },
+    {
+      "claim": "신법의 제재기준이 더 가볍다.",
+      "evidence_excerpt": "\"later_law_lighter\": true"
+    }
+  ]
+}

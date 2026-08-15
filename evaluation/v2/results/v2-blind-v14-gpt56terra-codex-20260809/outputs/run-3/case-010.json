@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "인도 법원에서 원고 전부 패소판결이 확정되었다.",
+    "원고 선박 가압류는 인도 법원에서 취소되었다.",
+    "피고 선박 가압류의 집행은 해방공탁 후 취소되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "대한민국 법원과 분쟁 사이의 실질적 관련성에 따른 국제재판관할",
+    "피고 선박의 국내 소재가 특별관할 및 판결 실효성을 뒷받침하는지 여부",
+    "인도 외국판결의 확정이 국내 소송의 허용 여부에 미치는 효과",
+    "피고 선체용선 및 국내 현지법인 영업활동이 국제재판관할 판단에 미치는 효과"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-010",
+  "supported_facts": [
+    {
+      "claim": "원고는 인도 법원에도 손해배상청구 소를 제기하였다.",
+      "evidence_excerpt": "2013. 10. 22. 인도 봄베이 하이 코트에도 피고의 위법한 가압류로 인한 손해배상청구의 소를 제기하였다"
+    },
+    {
+      "claim": "인도 소송의 원고 전부 패소판결은 확정되었다.",
+      "evidence_excerpt": "이 사건 인도 소송에서 원고 전부 패소판결이 확정되었다"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 이용혜택 범위가 상법·기타 법령·정관상 주주총회 결의사항이 아니라고 보았다.",
+    "원심은 결의 무효 확인을 구하는 원고들의 주위적 청구를 인용한 제1심판결을 유지하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주회원의 골프장 이용혜택 범위가 주주총회 결의사항인지 여부",
+    "주주회원모임과의 약정이 주주총회 결의의 근거가 될 수 있는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-039",
+  "supported_facts": []
+}

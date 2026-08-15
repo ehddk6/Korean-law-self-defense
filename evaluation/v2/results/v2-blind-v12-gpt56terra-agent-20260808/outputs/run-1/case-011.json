@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원심은 소외 1의 과실비율을 “10%로 인정”하였다.",
+    "원고는 소외 1의 과실비율이 “20%라는 전제”에서 보험금을 지급하였다.",
+    "피고는 소외 2 측에게 보험금 174,430,750원을 지급한 후 원고에게 전액을 청구하였다.",
+    "기록은 원심 판단 이후의 대법원 법리 및 결론을 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "자동차보험 구상금분쟁심의 상호협정에 따른 책임보험금 정산",
+    "사고 가해 운전자의 과실비율",
+    "보험금 지급 중 법률상 원인 없는 부분의 부당이득 반환 여부",
+    "원고의 과실비율 전제와 원심 인정 과실비율의 차이"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-011",
+  "supported_facts": []
+}

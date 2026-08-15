@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "금융기관이 양수한 보증금반환채권의 잔액과 양수 범위가 기록상 특정되지 않았다.",
+    "임차인이 주택의 인도와 주민등록을 계속 유지하지 않았다는 사정이 제시되지 않았다.",
+    "제2·3 상고이유의 판단 내용과 최종 주문이 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "임차인의 대항요건이 존속하는지",
+    "우선변제권 행사와 일부 배당이 대항력에 미치는 영향",
+    "금융기관의 보증금반환채권 양수가 우선변제권 및 대항력에 미치는 영향",
+    "주택 양수인이 잔존 임대차관계의 임대인 지위를 승계하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-028",
+  "supported_facts": [
+    {
+      "claim": "기록은 일부 배당 후에도 임차인의 대항력이 유지된다는 원심 판단을 적시한다.",
+      "evidence_excerpt": "현재까지 임차인 소외인의 대항력이 여전히 유지되고 있다고 판단하였다."
+    }
+  ]
+}

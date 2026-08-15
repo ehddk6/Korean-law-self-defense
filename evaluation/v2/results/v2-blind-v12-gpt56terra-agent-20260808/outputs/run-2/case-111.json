@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "원고는 총 384세대의 아파트 사업계획승인을 받았다.",
+    "피고는 384세대 전부를 기준으로 부담금을 부과하였다.",
+    "기록에는 원고의 구체적 불복 사유와 법원의 판단이 제시되지 않는다."
+  ],
+  "citations": [
+    "주택법 제11조 제1항",
+    "주택법 제15조 제1항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "지역주택조합 아파트에 대한 학교용지부담금 부과 요건",
+    "학교용지법상 부담금 산정 대상 세대수",
+    "학교용지부담금 부과처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-111",
+  "supported_facts": [
+    {
+      "claim": "원고는 지역주택조합이다.",
+      "evidence_excerpt": "설립인가를 받은 지역주택조합이다."
+    },
+    {
+      "claim": "사업계획은 아파트 384세대를 포함한다.",
+      "evidence_excerpt": "총 384세대의 아파트 5동"
+    },
+    {
+      "claim": "피고는 학교용지부담금을 부과하였다.",
+      "evidence_excerpt": "학교용지부담금 1,476,850,330원을 부과하였다."
+    }
+  ]
+}

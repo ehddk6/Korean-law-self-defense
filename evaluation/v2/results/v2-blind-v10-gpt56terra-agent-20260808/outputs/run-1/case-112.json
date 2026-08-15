@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "미얀마에서 기독교도들의 통상적 종교활동이 어느 정도 허용된다고 기재되어 있다.",
+    "원고는 2004년 이전 복음 전도 활동으로 별다른 박해를 받은 적이 없다고 기재되어 있다.",
+    "정부 차원의 강압적 개종 운동은 대부분 사라지는 추세라고 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원고가 종교·민족·정치적 의견과 관련한 박해의 우려로 난민에 해당하는지",
+    "미얀마 정부가 원고의 종교행사를 CNF·CNA 등 반정부 활동과 연계해 원고를 탄압할 가능성이 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-112",
+  "supported_facts": []
+}

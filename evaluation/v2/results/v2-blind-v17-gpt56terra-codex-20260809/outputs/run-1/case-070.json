@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결하였다.",
+    "FP 인턴십은 실습교육과 현장 경험을 거쳐 양성하는 제도로 설명된다.",
+    "제공된 기록에는 계약 종료ㆍ해지, 보수, 지휘감독 또는 실제 근무형태에 관한 사실이 없다."
+  ],
+  "citations": [
+    "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후",
+    "실습교육을 실시한 다음 현장 경험을 거쳐",
+    "2013. 7. 1.부터는 참가인의 □□지점 등에서 AM"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약의 명칭과 실제 근무관계가 근로자성 판단에 미치는 영향",
+    "FPㆍPSMㆍAM 업무의 구체적 내용과 지휘감독의 유무",
+    "실습교육 및 조직운영 방식이 종속적 근로관계를 뒷받침하는지",
+    "제공된 기록만으로 쟁점이 된 처분ㆍ계약종료 또는 청구원인을 특정할 수 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "참가인은 FP 인턴십 제도를 도입하였다.",
+      "evidence_excerpt": "참가인은 2010년 ‘FP(Financial Planner) 인턴십’ 제도를 도입하여"
+    },
+    {
+      "claim": "원고는 여러 직급으로 근무하였다.",
+      "evidence_excerpt": "2011. 12. 1.부터 참가인의 TRI△△지점에서 PSM"
+    }
+  ]
+}

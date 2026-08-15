@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "아동은 이전 두 차례 인도집행에서 의사에 반하여 집행되지 못했다.",
+    "2024년 11월 7일 집행은 아동이 우는 상황이 계속되자 중단되었다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "헤이그아동탈취법에 따른 확정된 아동반환 심판의 인도집행을 아동의 학교에서 실시할 수 있는지",
+    "이 사건 예규가 법률상 근거 없이 집행관의 권한을 창설하여 위헌인지",
+    "아동이 우는 상황에서 학교에서 진행된 인도집행이 아동의 의사 및 학습권을 침해하여 취소되어야 하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-117",
+  "supported_facts": []
+}

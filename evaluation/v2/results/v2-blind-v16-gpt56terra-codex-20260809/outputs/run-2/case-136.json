@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "법령등의 특별한 규정 유무가 제공되지 않았습니다.",
+    "변경된 법령등에 따라 위반행위에 해당하지 않게 되었는지 또는 제재처분 기준이 가벼워졌는지가 제공되지 않았습니다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조제3항",
+    "필수 사실: 법령등 위반행위 당시와 제재처분의 관계",
+    "예외: 특별규정 또는 위반행위 후 법령등 변경으로 위반성이 소멸하거나 제재 기준이 가벼워진 경우"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": [
+    {
+      "claim": "위반행위 후 법이 바뀌고 제재가 문제 된다는 사실이 제시되었습니다.",
+      "evidence_excerpt": "\"law_changed_after_violation\": true"
+    },
+    {
+      "claim": "제14조제3항은 원칙적으로 위반행위 당시의 법령등에 따르도록 정합니다.",
+      "evidence_excerpt": "법령등을 위반한 행위 당시의 법령등에 따른다."
+    }
+  ]
+}

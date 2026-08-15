@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원심은 징계요청 업무 담당자가 인사위원회 위원장을 겸임하게 된 점을 공정성 훼손으로 보았다.",
+    "원심은 위원장을 제척 대상에서 제외한 점을 근로자의 기득이익에 대한 불이익 변경으로 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인사위원회 위원장과 징계요청권자의 겸임이 인사위원회 공정성을 해하는지 여부",
+    "인사위원회 위원장 제척 예외 규정이 근로자 기득이익의 불이익 변경인지 여부",
+    "취업규칙·인사규정 개정의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-067",
+  "supported_facts": []
+}

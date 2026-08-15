@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "특별규정 적용 또는 권리행사 가능일의 변경 사실이 있으면 만료일이 달라질 수 있다."
+  ],
+  "citations": [
+    "제162조(채권, 재산권의 소멸시효)",
+    "제166조(소멸시효의 기산점)",
+    "제160조(역에 의한 계산)"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제162조 제1항의 일반 채권 10년 소멸시효가 적용된다.",
+    "권리행사 가능일이 2026-04-10으로 제시되어 있다.",
+    "제157조 및 제160조에 따라 초일을 산입하지 않고 역으로 계산한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권이다.",
+      "evidence_excerpt": "\"ordinary_claim\": true"
+    },
+    {
+      "claim": "권리행사 가능일이 제시되었다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-04-10\""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원고는 통화옵션계약 관련 청구에 관하여 구체적인 상고이유를 기재하지 않았다.",
+    "원고가 위험회피회계를 적용하였다는 사정이 기재되어 있다.",
+    "일부 손해는 이미 시효로 소멸하였다고 한 원심 판단이 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "단순선도환계약이 고객의 거래목적 및 외화 유입량에 비추어 적합성 원칙을 위반하는지",
+    "오버헤지 위험이 있는 금융상품 판매에서 설명의무의 내용과 이행 여부",
+    "위험회피회계 적용이 적합성 원칙 위반 판단에 미치는 영향",
+    "단기소멸시효의 기산점 및 결제일별 손해의 시효 완성 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": []
+}

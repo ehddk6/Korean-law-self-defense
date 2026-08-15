@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "임대차계약에는 공동명의자의 연대책임 특약이 포함되어 있다.",
+    "소외 1은 단독 명의로 사업자등록을 하고 식당을 운영하였다.",
+    "소외 1과 피고는 보증금에서 149,985,396원을 공제하기로 합의하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공동임차인의 임대차보증금반환채권 성질",
+    "식당 운영계약에 따른 조합 및 준합유 성립 여부",
+    "공동임차인 중 1인과 임대인 사이 공제합의의 효력",
+    "압류 및 전부명령이 보증금반환채권에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-027",
+  "supported_facts": [
+    {
+      "claim": "원고들과 소외 1은 공동으로 임차하였다.",
+      "evidence_excerpt": "공동으로 임차하는 내용의 이 사건 임대차계약"
+    },
+    {
+      "claim": "원심은 보증금반환채권을 불가분채권으로 판단하였다.",
+      "evidence_excerpt": "공동임차인인 원고들과 소외 1의 불가분채권이라고 판단하였다."
+    },
+    {
+      "claim": "원심은 공제합의의 효력이 원고들에게도 미친다고 보았다.",
+      "evidence_excerpt": "이 사건 공제합의의 효력이 원고들에게도 미친다는 전제"
+    }
+  ]
+}

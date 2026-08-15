@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "발병 전 업무시간과 업무강도가 기록에 없다.",
+    "뇌내출혈과 업무의 의학적 인과관계 자료가 없다.",
+    "피고는 업무상 인과관계를 부정하였다.",
+    "기저질환 및 업무 외 위험요인이 기록에 없다.",
+    "원고 주장이 중단되어 구체적 주장을 확인할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "뇌내출혈과 업무 사이의 상당인과관계",
+    "발병 전 업무시간ㆍ업무강도ㆍ돌발업무",
+    "업무 외 위험요인의 영향",
+    "의학적 인과관계와 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-080",
+  "supported_facts": [
+    {
+      "claim": "원고는 운전 중 쓰러져 뇌내출혈 진단을 받았다.",
+      "evidence_excerpt": "차량 운전 중 차에서 내려 쓰러지는 모습 발견"
+    },
+    {
+      "claim": "피고는 인과관계를 부정하였다.",
+      "evidence_excerpt": "이 사건 상병이 업무와 인과관계가 인정되지 않음"
+    }
+  ]
+}

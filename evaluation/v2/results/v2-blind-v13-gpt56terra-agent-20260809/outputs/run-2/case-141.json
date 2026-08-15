@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "제재기준 경감과 제재처분 사실은 있으나, 법 변경 시점이 위반 후인지와 특별규정 부존재가 확인되지 않아 단서 적용을 확정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제3항 단서에 따라 위반 후 법 변경으로 제재처분 기준이 가벼워진 경우에는, 특별규정이 없을 때 변경법을 적용한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "신법의 제재기준이 더 가볍고 제재 사안이다.",
+      "evidence_excerpt": "\"later_law_lighter\": true, \"sanction\": true"
+    }
+  ]
+}

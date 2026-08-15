@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "특별규정이 있다는 주장만 있고 원문 또는 구체적 내용이 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "특별규정의 존재 및 내용",
+    "특별규정과 일반 원칙의 관계"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": []
+}

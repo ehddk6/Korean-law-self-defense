@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "청구가 재산권에 관한 소가 아니거나 의무이행지가 실제로 특정되지 않으면 이 특별재판적은 적용되지 않을 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제8조(거소지 또는 의무이행지의 특별재판적)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제8조가 적용되며, 재산권 청구와 의무이행지가 제시되어 있다.",
+    "거소지 관할은 선택적 특별재판적일 뿐이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "place-of-performance-special-forum",
+  "scenario_id": "case-135",
+  "supported_facts": [
+    {
+      "claim": "재산권 청구와 의무이행지가 제시되어 있다.",
+      "evidence_excerpt": "\"place_of_performance_known\": true, \"property_claim\": true"
+    },
+    {
+      "claim": "재산권에 관한 소는 의무이행지 법원에 제기할 수 있다.",
+      "evidence_excerpt": "재산권에 관한 소를 제기하는 경우에는 거소지 또는 의무이행지의 법원에 제기할 수 있다."
+    }
+  ]
+}

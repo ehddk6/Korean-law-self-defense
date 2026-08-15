@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "재산국외도피죄는 재산을 해외에서 임의로 지배·관리할 상태에 둔다는 인식을 요구한다.",
+    "해외 사용을 예정하지 않고 즉시 국내 반입할 목적의 송금은 재산도피 고의를 부정할 수 있다.",
+    "원심은 일부 무죄 부분을 제외한 공소사실만 유죄로 판단하였다."
+  ],
+  "citations": [
+    "대법원 2005. 4. 29. 선고 [CASE_NUMBER_001] 판결",
+    "대법원 2016. 10. 13. 선고 [CASE_NUMBER_002] 판결",
+    "대법원 2010. 9. 9. 선고 [CASE_NUMBER_003] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특정경제범죄법상 재산국외도피죄의 고의",
+    "국내재산을 해외로 이동·은닉한 행위의 재산도피 해당성",
+    "해외 송금의 목적과 즉시 국내 반입 의사",
+    "공소사실별 유무죄 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-042",
+  "supported_facts": [
+    {
+      "claim": "재산국외도피죄는 유출 위험 상태 발생으로 성립한다.",
+      "evidence_excerpt": "대한민국 또는 대한민국 국민의 재산이 유출될 위험이 있는 상태를 발생하게 함으로써 성립"
+    },
+    {
+      "claim": "원심은 일부 공소사실을 유죄로 판단하였다.",
+      "evidence_excerpt": "이 사건 공소사실(무죄 부분 제외)을 유죄로 판단하였다."
+    }
+  ]
+}

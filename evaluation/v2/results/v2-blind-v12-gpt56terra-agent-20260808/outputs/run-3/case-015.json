@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원고는 최근 3개월 내 의료행위 여부 질문에 아니오라고 답변하였다.",
+    "계약 체결 전 소외 1은 급성 신우신염으로 입원치료를 받았다.",
+    "진료의뢰서에는 백혈구증가증, 혈소판증가증 및 높은 C-반응성단백이 기재되어 있다.",
+    "피고는 고지의무 위반을 이유로 보험계약 해지를 통지하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험계약 전 알릴 의무 위반 여부",
+    "입원치료 및 진료의뢰서 발급 사실의 고지 대상성",
+    "고지의무 위반과 보험계약 해지의 효력",
+    "고지의무 위반과 보험사고 사이의 관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-015",
+  "supported_facts": []
+}

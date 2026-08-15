@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "피고인은 학생들의 학교생활 및 성적평가상 불이익 우려를 이용한 것으로 공소사실에 기재되어 있다.",
+    "피고인은 학부모들의 동의 없이 주소를 내용증명 발송 및 법률사무 위임에 사용하였다.",
+    "기록에는 법원의 유무죄 판단이 제시되지 않는다."
+  ],
+  "citations": [
+    "아동·청소년의 성보호에 관한 법률",
+    "개인정보 보호법"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위계에 의한 아동·청소년 추행죄 성립",
+    "교사 지위와 학생의 반항 곤란성",
+    "학부모 주소의 개인정보성",
+    "교사 업무상 취득한 주소의 목적 외 이용 및 제공"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-109",
+  "supported_facts": [
+    {
+      "claim": "피고인은 학생들의 담임교사였다.",
+      "evidence_excerpt": "담임교사로 근무하면서"
+    },
+    {
+      "claim": "피고인은 법률사무실에 학부모 주소를 제공하였다.",
+      "evidence_excerpt": "위 학부모들의 주소를 알려주었다."
+    }
+  ]
+}

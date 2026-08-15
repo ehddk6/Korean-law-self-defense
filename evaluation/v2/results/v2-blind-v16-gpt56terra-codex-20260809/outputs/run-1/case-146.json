@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "시간적 적용에 관한 특별규정의 원문과 적용 범위가 제공되지 않았다.",
+    "적용 대상이 되는 법률관계·처분·위반행위 및 관련 시점도 제시되지 않았다."
+  ],
+  "citations": [
+    "법령등에 특별한 규정이 있는 경우를 제외하고는"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "행정기본법 제14조는 특별규정이 있는 경우를 예외로 둔다.",
+    "특별규정이 있다는 주장만으로는 그 내용과 적용 여부를 판단할 수 없다.",
+    "특별규정의 원문, 효력 발생일 및 적용 범위를 확인해야 한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되었으나 제공되지 않았다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    }
+  ]
+}

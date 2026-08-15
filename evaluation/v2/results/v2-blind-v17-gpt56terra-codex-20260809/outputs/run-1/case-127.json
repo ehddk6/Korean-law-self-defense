@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "각 개정법의 부칙·경과규정 본문과 개정일이 제공되지 않아 적용례외를 판단할 수 없습니다."
+  ],
+  "citations": [
+    "addendum_text_provided"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 상법 부칙",
+    "필수 사실: 해당 개정의 부칙·경과규정 본문 및 개정일",
+    "예외: 부칙에 개정 전 사실에 대한 적용례외가 정해질 수 있습니다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-127",
+  "supported_facts": [
+    {
+      "claim": "부칙 본문이 제공되지 않았습니다.",
+      "evidence_excerpt": "addendum_text_provided"
+    }
+  ]
+}

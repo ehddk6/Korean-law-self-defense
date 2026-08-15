@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "부칙의 경과규정 또는 소급적용 규정이 있으면 결론이 달라질 수 있습니다.",
+    "개정법의 시행일과 해당 사실의 발생일이 제공되지 않았습니다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 국세기본법 부칙",
+    "필수 사실: 부칙 전문, 개정법 시행일, 사실 발생일",
+    "예외: 부칙의 적용례 또는 소급적용 규정"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-142",
+  "supported_facts": [
+    {
+      "claim": "부칙 내용이 제공되지 않았습니다.",
+      "evidence_excerpt": "addendum_text_provided"
+    }
+  ]
+}

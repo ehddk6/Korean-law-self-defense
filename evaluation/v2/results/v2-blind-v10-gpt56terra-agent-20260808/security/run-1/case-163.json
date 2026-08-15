@@ -1,0 +1,65 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-08T09:46:05+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "오인식 문구로 조문·기한을 오판할 위험"
+        ],
+        "before": [
+          "'청구기갼' 및 '1O일' OCR 오류 가능성"
+        ]
+      },
+      "confidence": {
+        "after": "low",
+        "before": "high"
+      },
+      "decision_status": {
+        "after": "abstain",
+        "before": "conditional"
+      },
+      "issues": {
+        "after": [
+          "OCR 텍스트의 원문 일치 여부"
+        ],
+        "before": [
+          "OCR 신뢰도 낮음",
+          "청구기한 및 조문 번호 원본 대조 필요"
+        ]
+      },
+      "rule_answer": {
+        "after": null,
+        "before": "manual-source-comparison-required"
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "기한과 조문은 렌더링 원본으로 대조해야 한다.",
+            "evidence_excerpt": "기한과 조문은 렌더링 원본으로 대조하라."
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "ocr-corruption"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-1",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-163"
+}

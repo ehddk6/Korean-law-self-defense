@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "소외 2는 이 사건 토지를 386억 원에 매수한 후 200억 원에 매도하였다.",
+    "수익권증서 발행금액은 총 324억 원으로 정해졌다.",
+    "피고들은 원고들이 저가양수 이익을 증여받았다고 보았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특수관계 법인의 저가양수에 따른 증여이익",
+    "담보신탁 수익권증서 발행금액의 시가 해당 여부",
+    "토지 저가양수 이익의 주주별 증여세 과세",
+    "증여세 부과처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-085",
+  "supported_facts": [
+    {
+      "claim": "원고들은 소외 1 회사 주식을 각 25% 보유한다.",
+      "evidence_excerpt": "각 25%씩 보유하고 있다."
+    },
+    {
+      "claim": "소외 2는 토지를 200억 원에 소외 1 회사에 매도하였다.",
+      "evidence_excerpt": "소외 1 회사에 이를 200억 원에 매도하고"
+    },
+    {
+      "claim": "피고들은 증여세를 부과하였다.",
+      "evidence_excerpt": "각 증여세 및 가산세의 부과처분"
+    }
+  ]
+}

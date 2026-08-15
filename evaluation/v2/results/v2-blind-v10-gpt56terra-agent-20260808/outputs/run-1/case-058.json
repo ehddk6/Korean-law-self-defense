@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "기록이 “피고의 해”에서 중단되어 원심이 인정한 사실관계와 판단을 확인할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "혼인관계 파탄의 경위와 책임",
+    "원고의 치료 경위와 피고의 해외 사업·근무 경위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-058",
+  "supported_facts": [
+    {
+      "claim": "원고와 피고는 미성년 딸인 사건본인들을 두고 있다.",
+      "evidence_excerpt": "원고와 피고는 (연월일 생략) 혼인신고를 마친 부부이고, 미성년 딸인 사건본인들을 두고 있다."
+    },
+    {
+      "claim": "피고는 해외 사업 실패 후 다른 회사들에 근무하였다.",
+      "evidence_excerpt": "피고는 2013. 3.경 퇴사 후 필리핀, 태국 등지에서 해외 사업을 추진하였다가 사업 실패 후인 2014. 4.경 다른 회사에 입사하였고, 2017. 11.경부터 현재까지 소외 회사에서 근무하고 있다."
+    },
+    {
+      "claim": "원고는 2011년과 2012년에 각 진단을 받아 치료를 받았다.",
+      "evidence_excerpt": "원고는 2011. 6. 27. ‘(병명 1 생략)’, 2012. 9. 16. ‘(병명 2 생략)’ 각 진단을 받아 치료를 받았다."
+    }
+  ]
+}

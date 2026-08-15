@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "특별규정의 내용에 따라 제14조의 원칙과 다른 결론이 가능하다.",
+    "적용 대상 사실관계와 법률관계의 시점이 제공되지 않았다."
+  ],
+  "citations": [
+    "법령등에 특별한 규정이 있는 경우를 제외하고는"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "행정기본법 제14조는 특별규정이 있는 경우를 예외로 둔다.",
+    "주장된 시간적 적용 특별규정의 원문과 적용 요건이 제공되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되었으나 제공되지 않았다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    }
+  ]
+}

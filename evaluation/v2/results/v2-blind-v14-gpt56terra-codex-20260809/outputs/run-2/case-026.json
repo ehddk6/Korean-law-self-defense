@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원고의 지정변제충당 또는 적법한 합의충당이 있었다는 사정은 기록에 없다.",
+    "특례기간 연체 차임 잔액은 계약갱신 거절·해지 사유에서 제외될 수 있다.",
+    "기록상 원심 변론종결일 무렵 연체 차임액은 특례기간 연체 차임 잔액에도 미치지 못한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법 제10조의9 특례기간 연체 차임의 범위",
+    "임대인의 지정변제충당이 임차인에게 불리한 약정으로 무효인지",
+    "일부 변제 시 민법 제477조 법정변제충당의 순서",
+    "특례기간 연체 차임을 공제한 연체액이 자동 해지 요건에 이르는지"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-026",
+  "supported_facts": [
+    {
+      "claim": "원심은 자동 해지사유를 인정할 수 없다고 판단하였다.",
+      "evidence_excerpt": "이 사건 조정에서 정한 자동 해지사유를 인정할 수 없다고 판단하였다."
+    }
+  ]
+}

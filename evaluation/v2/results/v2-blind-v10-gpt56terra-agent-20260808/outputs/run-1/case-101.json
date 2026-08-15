@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원심의 사실인정을 다투는 주장은 증거 선택 및 증명력 판단을 탓하는 것에 불과하다고 보았다.",
+    "일부 피고인의 주장은 항소이유로 삼지 않은 새로운 주장으로서 적법한 상고이유가 되지 못한다고 보았다.",
+    "10년 미만의 형이 선고된 사건에서는 양형부당을 사유로 한 상고가 허용되지 않는다고 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "범죄단체 조직·가입 및 활동죄의 성립",
+    "범죄수익은닉규제법 위반죄의 성립",
+    "공모공동정범과 편취액",
+    "추징",
+    "양형부당 상고의 적법성"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-101",
+  "supported_facts": []
+}

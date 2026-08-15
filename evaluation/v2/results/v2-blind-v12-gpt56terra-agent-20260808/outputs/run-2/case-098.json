@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "위조 문서가 현존하면 범죄 일시·장소·방법은 일정 범위에서만 기재하면 된다.",
+    "박사학위기 사본이 원본과 동일한지 여부는 유무죄 판단 요소이다.",
+    "범의에 관한 입증책임은 검사에게 있다."
+  ],
+  "citations": [
+    "대법원 2008. 3. 27. 선고 [CASE_NUMBER_002] 판결",
+    "대법원 2006. 2. 23. 선고 [CASE_NUMBER_003] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사문서위조 공소사실의 특정 정도",
+    "박사학위기 원본과 사본의 동일성",
+    "공소장변경 없이 구체적 경위를 인정할 수 있는 범위",
+    "사문서위조 및 위조사문서행사죄의 범의 입증"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-098",
+  "supported_facts": [
+    {
+      "claim": "공소사실은 박사학위기 위조 및 행사를 적시한다.",
+      "evidence_excerpt": "사문서를 위조하고"
+    },
+    {
+      "claim": "원심은 박사학위기를 원본으로 보았다.",
+      "evidence_excerpt": "위 ‘박사학위기’는 ‘원본’으로 보아야 하는바"
+    },
+    {
+      "claim": "원본과 사본의 동일성은 유무죄 판단 요소이다.",
+      "evidence_excerpt": "유·무죄의 실체 판단을 함에 있어서 고려하여야 할 요소"
+    }
+  ]
+}

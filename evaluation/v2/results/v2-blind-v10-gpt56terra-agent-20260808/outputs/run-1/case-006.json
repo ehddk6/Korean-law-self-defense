@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "제공된 기록에는 원심의 판단, 상고이유, 법리 판단 또는 주문이 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "입주자대표회의가 양수한 하자보수 갈음 손해배상채권의 행사 가능 여부",
+    "분양회사와 시공회사에 대한 하자담보책임의 범위",
+    "피고 1 회사를 대위한 피고 2 회사에 대한 도급계약상 하자담보책임 청구 가능 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-006",
+  "supported_facts": []
+}

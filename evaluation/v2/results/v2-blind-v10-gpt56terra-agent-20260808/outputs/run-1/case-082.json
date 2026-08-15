@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "피고는 실질적인 사업의 동일성 및 연속성이 인정되면 감면 배제사유에 해당한다고 주장하였다.",
+    "종전 법인의 대표이사와 원고 법인의 과점주주 관계, 일부 목적·거래처 중복 사정이 제시되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "서로 다른 법인이 창업중소기업 감면 배제사유의 동일한 행위 주체로 평가될 수 있는지",
+    "구 지방세특례제한법 제58조의3 제6항 제3호·제4호의 적용 범위"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-082",
+  "supported_facts": []
+}

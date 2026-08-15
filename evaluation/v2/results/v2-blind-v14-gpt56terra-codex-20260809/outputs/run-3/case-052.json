@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "파산관재인은 위자료와 재산분할청구에 관하여 소송수계를 신청하고 제1심이 이를 허가하였다.",
+    "재산분할청구권의 재산적 성질을 들어 파산재단 관련 소송으로 볼 여지가 제기될 수 있다.",
+    "기록상 반소와 나머지 청구의 수계·당사자관계가 완전하게 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이혼으로 인한 재산분할청구권이 파산재단에 속하는지",
+    "파산관재인의 재산분할청구 소송수계 적법성",
+    "부적법한 소송수계를 받아들인 판결의 위법 여부",
+    "위자료청구와 재산분할청구에 대한 일부 수계의 효력"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-052",
+  "supported_facts": [
+    {
+      "claim": "파산관재인은 위자료와 재산분할청구에 관해서만 소송수계를 신청했다.",
+      "evidence_excerpt": "원고 파산관재인은 2021. 2. 18. 본소 중 위자료와 재산분할청구에 관하여만 소송수계신청을 하였고"
+    }
+  ]
+}

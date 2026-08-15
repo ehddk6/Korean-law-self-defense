@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "분쟁의 원인이 된 가압류와 그 취소재판은 인도 봄베이 하이 코트에서 진행되었다.",
+    "이 사건 인도 소송에서 원고 전부 패소판결이 확정되었다.",
+    "다른 나라 법원이 더 편리하다는 사정 외에 국내와의 실질적 관련이 충분한지는 기록만으로 단정하기 어렵다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "대한민국 법원의 국제재판관할권 인정 여부",
+    "피고 선박의 국내 소재가 재산소재지 특별관할 및 실질적 관련을 이루는지 여부",
+    "인도 외국판결의 존재가 국내 재판관할 판단에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-010",
+  "supported_facts": []
+}

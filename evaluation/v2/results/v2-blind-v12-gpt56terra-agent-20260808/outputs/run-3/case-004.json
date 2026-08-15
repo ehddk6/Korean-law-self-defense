@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "코로나19는 전염력이 이례적으로 매우 강력하였다고 기재되어 있다.",
+    "중수본은 감염병예방법 제49조 제1항 제2호에 근거하여 조치를 시행하였다.",
+    "원고들은 적극적 손해의 일부만을 청구한다고 기재되어 있다."
+  ],
+  "citations": [
+    "헌법 제37조 제2항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "실내체육시설 집합금지조치의 법률상 근거 여부",
+    "감염병예방법 제49조 제1항 제2호의 헌법 적합성",
+    "집합금지조치의 비례·평등 원칙 및 재량권 일탈·남용 여부",
+    "국가 및 지방자치단체의 손해배상책임 성립"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-004",
+  "supported_facts": []
+}

@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "원고의 해지 통지는 갱신된 임대차계약 기간이 개시되기 전에 도달하였다.",
+    "원고는 2021년 4월에 부동산을 인도하였으나 원심은 해지 효력이 2021년 6월에 발생한다고 판단하였다.",
+    "2021년 6월 9일을 기준으로 차임을 정산하면 반환할 보증금이 없다고 원심이 판단하였다."
+  ],
+  "citations": [
+    "주택임대차보호법 제6조의3 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택임대차보호법상 계약갱신요구의 효력",
+    "갱신된 임대차계약의 해지 통지 효력 발생 시점",
+    "갱신 전 해지 통지와 3개월 해지기간의 기산점",
+    "임대차보증금 및 차임 정산"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-021",
+  "supported_facts": []
+}

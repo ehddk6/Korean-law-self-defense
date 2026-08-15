@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "피고인은 현금수거책 역할을 제안받고 이를 승낙하였다.",
+    "피고인은 피해자들로부터 현금을 직접 교부받았다.",
+    "일부 수거 현금은 제3자의 주민등록번호를 이용하여 송금되었다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보이스피싱 조직원과의 사기 공모 여부",
+    "피해자별 현금 편취행위의 성립",
+    "제3자 주민등록번호를 이용한 송금행위의 법적 평가"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-043",
+  "supported_facts": [
+    {
+      "claim": "피고인은 현금수거책 역할을 승낙하였다.",
+      "evidence_excerpt": "현금수거책 역할을 제안받고 이를 승낙하였다."
+    },
+    {
+      "claim": "피해자 공소외 1로부터 현금 866만 원을 받았다.",
+      "evidence_excerpt": "현금 866만 원을 교부받아 이를 편취하였다."
+    },
+    {
+      "claim": "피해자 공소외 2 관련 현금 일부를 송금하였다.",
+      "evidence_excerpt": "760만 원을 제3자의 주민등록번호를 이용하여"
+    }
+  ]
+}

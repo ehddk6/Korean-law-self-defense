@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "계속 중이라는 사실만으로 신법 적용이 확정되지는 않으며, 특별규정이 있거나 이미 완성된 부분이 있으면 결론이 달라질 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제1항은 효력 발생 전 완성·종결된 법률관계에는 원칙적으로 신법을 적용하지 않으며, 계속 중인 관계에 대한 적용은 특별규정과 구체적 경과에 따라 판단된다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 개정법 효력 발생 후에도 계속된다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    }
+  ]
+}

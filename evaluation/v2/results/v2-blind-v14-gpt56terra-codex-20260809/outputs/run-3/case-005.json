@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "관련 형사사건에서 원고 27에 대한 일부 혐의는 무죄가 확정되었다.",
+    "피고들은 블랙리스트 작성 관여, 정신적 손해, 인과관계를 인정할 수 없다고 다툰다.",
+    "피고 3은 손해배상채권이 시효로 소멸하였다고 주장한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "블랙리스트 작성·유지·관리가 불법행위를 구성하는지 여부",
+    "피고 2 및 피고 3의 관여와 원고별 정신적 손해 사이의 인과관계",
+    "국가 및 개인 피고에 대한 손해배상채권의 소멸시효 기산점",
+    "국가의 소멸시효 항변이 신의성실 원칙상 권리남용인지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-005",
+  "supported_facts": [
+    {
+      "claim": "원고들은 국가정보원이 공개한 지원배제명단에 포함되어 있었다.",
+      "evidence_excerpt": "원고들은 위 명단에 모두 포함되어 있다."
+    },
+    {
+      "claim": "일부 형사 무죄 부분은 확정되었다.",
+      "evidence_excerpt": "위 무죄 부분에 대하여 검사가 항소 및 상고하였으나 모두 기각되어 위 무죄 부분은 그대로 확정되었다."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "촉탁 재고용은 ‘할 수 있다’는 규정으로 재량으로 해석될 수 있다.",
+    "근로계약기간이 ‘2017. 1. 2.까지’로 정해져 있다.",
+    "참가인 2는 촉탁직 근로계약을 체결하지 못하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "단체협약·취업규칙이 촉탁 재고용 의무를 정하는지",
+    "기간제 촉탁계약의 만료가 해고인지",
+    "정년 도달 후 미재고용이 부당해고 구제 대상인지",
+    "근로관계 종료의 정당성에 관한 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-061",
+  "supported_facts": [
+    {
+      "claim": "재고용 의무 규정의 부존재가 기록되어 있다.",
+      "evidence_excerpt": "원고에게 정년퇴직자를 촉탁직근로자로 재고용할 의무를 부과하는 취지의 규정은 없다."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원심은 원고에게 근로계약 갱신에 대한 정당한 기대권이 있다고 보기에 부족하다고 판단하였다.",
+    "이 사건 녹음은 영업소 폐점과 근로계약 종료 통지에 관한 대화 과정에서 이루어졌다.",
+    "녹음파일 및 녹취록은 노동위원회나 법원에 제출하는 방식으로만 사용되었다고 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "기간제 근로자에게 근로계약 갱신에 대한 정당한 기대권이 인정되는지",
+    "갱신기대권 침해에 따른 사용자 손해배상책임의 성립 요건",
+    "대화 상대방의 동의 없는 녹음이 음성권 침해의 불법행위인지",
+    "녹음의 목적·방법·사용 범위에 비추어 위법성이 조각되는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-007",
+  "supported_facts": []
+}

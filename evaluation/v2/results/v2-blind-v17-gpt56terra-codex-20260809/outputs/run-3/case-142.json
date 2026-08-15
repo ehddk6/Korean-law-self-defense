@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "개정 부칙의 경과규정·시행일 및 해당 사실의 발생일이 없어 소급적용 여부를 판단할 수 없습니다."
+  ],
+  "citations": [
+    "\"addendum_text_provided\": false",
+    "\"amendment_date_known\": false"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문인 부칙의 본문이 제공되지 않았습니다.",
+    "개정일·시행일과 경과규정이 제공되지 않았습니다.",
+    "개정 전 사실의 발생시점이 제공되지 않았습니다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-142",
+  "supported_facts": [
+    {
+      "claim": "부칙 본문과 개정일이 제공되지 않았습니다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    },
+    {
+      "claim": "개정일이 알려지지 않았습니다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    }
+  ]
+}

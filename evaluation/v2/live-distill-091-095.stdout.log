@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "RuntimeError",
+  "message": "독립 gold 증류 실행 실패: 요청한 모델을 사용할 수 없습니다."
+}

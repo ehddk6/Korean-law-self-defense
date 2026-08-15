@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "공소사실은 교비회계에서 개인 항공료, 후원금, 경조사비 등을 지출한 업무상횡령 및 사립학교법 위반을 적시한다.",
+    "선행사건에는 교비회계에서 지급한 소송비용 지출에 관한 업무상횡령죄가 포함되어 있었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "선행사건의 업무상횡령 확정판결과 이 사건 교비회계 지출 행위들이 단일하고 계속된 범의 아래 동일한 방법으로 반복된 포괄일죄 관계여서 확정판결의 효력이 미치는지",
+    "이 사건 각 사립학교법 위반행위가 대응하는 업무상횡령 행위와 상상적 경합 관계에 있어 선행사건 확정판결의 효력으로 면소되어야 하는지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-113",
+  "supported_facts": []
+}

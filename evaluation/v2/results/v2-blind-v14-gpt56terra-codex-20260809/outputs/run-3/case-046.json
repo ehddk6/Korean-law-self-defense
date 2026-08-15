@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "두 죄는 특별법과 일반법 관계가 아니라고 기록되어 있다.",
+    "하나의 행위가 각 구성요건을 충족하면 상상적 경합으로 본다는 법리가 제시되어 있다.",
+    "사건별 공소사실과 원심 결론이 기록에 없어 해당 법리 적용 결과는 특정하기 어렵다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄의 특별법 관계 부정 여부",
+    "동일 행위가 양 구성요건을 충족한 경우 죄수 평가",
+    "상상적 경합에 따른 유죄 판단 및 처단형 결정의 전제사실",
+    "구체적 공소사실과 원심 판단의 부재가 상고 결과 판단을 제한하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-046",
+  "supported_facts": [
+    {
+      "claim": "기록은 두 죄를 독립된 별개 구성요건으로 본다.",
+      "evidence_excerpt": "이들은 각기 독립된 별개의 구성요건으로서"
+    },
+    {
+      "claim": "기록은 동일 행위에 대한 상상적 경합 법리를 제시한다.",
+      "evidence_excerpt": "1개의 행위가 각 구성요건을 충족하는 경우에는 상상적 경합의 관계에 있다고 보아야 한다"
+    }
+  ]
+}

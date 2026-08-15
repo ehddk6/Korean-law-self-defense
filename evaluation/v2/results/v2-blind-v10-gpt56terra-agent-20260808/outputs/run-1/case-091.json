@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "변제계획 이행이 불가능함이 명백한 경우 법원은 개인회생절차를 폐지하여야 한다.",
+    "면책을 위해서는 법 제624조 제2항의 요건을 모두 충족하여야 한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생 변제계획 인가 후 변제계획 이행이 명백히 불가능한 경우 절차 폐지 여부",
+    "변제계획을 완료하지 못한 채무자에 대한 면책 요건 충족 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-091",
+  "supported_facts": [
+    {
+      "claim": "개인회생절차 폐지의 법정 사유가 제시되어 있다.",
+      "evidence_excerpt": "개인회생절차에서 변제계획인가 후 채무자가 인가된 변제계획을 이행할 수 없음이 명백한 때 등의 사유가 있는 때에는 법원은 개인회생절차를 폐지하여야 한다고 규정하고 있다."
+    },
+    {
+      "claim": "변제계획 미완료 상태에서도 면책결정을 할 수 있는 요건이 제시되어 있다.",
+      "evidence_excerpt": "요건을 모두 충족한 때에는, 법원은 이해관계인의 의견을 들은 후 면책의 결정을 할 수 있다고 규정하고 있다."
+    }
+  ]
+}

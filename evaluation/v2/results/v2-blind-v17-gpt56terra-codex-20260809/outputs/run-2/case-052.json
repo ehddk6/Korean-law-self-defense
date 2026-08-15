@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "파산관재인은 위자료와 재산분할청구에 관하여 소송수계신청을 하였다.",
+    "제1심은 해당 수계신청을 허가하였다.",
+    "재산분할청구가 청구인의 재산에 영향을 미친다는 점은 파산재단 귀속 주장의 근거가 될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이혼 재산분할청구권이 파산재단에 속하는 재산인지",
+    "파산관재인의 본소 위자료·재산분할 청구 소송수계 적법성",
+    "부적법한 수계인을 당사자로 한 판결의 효력",
+    "「채무자 회생 및 파산에 관한 법률」 제347조 제1항의 적용 범위"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-052",
+  "supported_facts": [
+    {
+      "claim": "기록은 재산분할청구권의 불확정성을 적시한다.",
+      "evidence_excerpt": "그 범위 및 내용이 불명확·불확정하기 때문에"
+    },
+    {
+      "claim": "파산관재인이 일부 청구를 수계했다.",
+      "evidence_excerpt": "위자료와 재산분할청구에 관하여만 소송수계신청을 하였고"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원심은 종전 부동산 취득비용이 이 사건 건축물을 취득하기 위해 필수적으로 발생하는 비용이라고 보아 원고 주장을 배척하였다.",
+    "관련 법리는 과세대상물건 취득 전 지급원인이 발생·확정된 직접비용 및 그에 준하는 취득절차비용은 취득가격에 포함될 수 있다고 한다."
+  ],
+  "citations": [
+    "구 지방세법 제7조 제3항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "조합운영비와 판매비가 취득세 과세표준상 취득가격에서 제외되는지",
+    "음향시설 및 주방시설 설치비가 건축물 취득가격에 포함되는지",
+    "종전 부동산 취득비용이 이 사건 건축물 취득을 위한 비용으로서 취득가격에 포함되는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-077",
+  "supported_facts": []
+}

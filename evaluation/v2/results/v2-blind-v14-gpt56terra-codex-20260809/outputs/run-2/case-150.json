@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "특허권등인지 그 밖의 지식재산권인지가 제공되지 않았다.",
+    "제2조부터 제23조까지에 따른 관할법원 소재지와 관할 고등법원 소재지의 구체적 사실이 완비되지 않았다."
+  ],
+  "citations": [
+    "제24조(지식재산권 등에 관한 특별재판적)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민사소송법 제24조 적용: 지식재산권의 종류를 확인해야 한다.",
+    "특허권등 외 지식재산권과 특허권등은 관할 규정이 다르다.",
+    "제2조부터 제23조까지에 따른 관할법원 소재지 및 구체적 재판소 사실이 필요하다.",
+    "서울중앙지방법원에 관한 예외를 확인해야 한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구가 있고 구체적 재판소 사실이 완비되지 않았다.",
+      "evidence_excerpt": "\"intellectual_property_claim\": true, \"specific_court_facts_complete\": false"
+    }
+  ]
+}

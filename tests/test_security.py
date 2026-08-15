@@ -52,6 +52,14 @@ def test_contextual_legal_phrases_are_not_pii(text: str) -> None:
     assert scan_residual_pii(text) == []
 
 
+def test_workbench_ids_and_official_urls_are_not_account_numbers() -> None:
+    text = (
+        "증거: ev_3f351458df7d4fe2 / "
+        "근거: https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1013685153"
+    )
+    assert scan_residual_pii(text) == []
+
+
 def test_birth_date_with_korean_birth_suffix_is_detected() -> None:
     findings = scan_residual_pii("당사자는 1950. 3. 6.생으로 기재되어 있다.")
     assert "BIRTH_DATE" in {finding.category for finding in findings}

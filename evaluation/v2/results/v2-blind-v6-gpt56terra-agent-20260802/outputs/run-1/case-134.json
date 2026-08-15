@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "청구가 조문상 숙박료 채권에 정확히 해당하는지에 관한 구체적 거래 내용이 없다."
+  ],
+  "citations": [
+    "1.  여관, 음식점, 대석, 오락장의 숙박료, 음식료, 대석료, 입장료, 소비물의 대가 및 체당금의 채권",
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다.",
+    "②주, 월 또는 연의 처음으로부터 기간을 기산하지 아니하는 때에는 최후의 주, 월 또는 연에서 그 기산일에 해당한 날의 전일로 기간이 만료한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제164조 제1호의 숙박료 채권 1년 시효가 적용된다.",
+    "권리행사 가능일이 2026-06-10으로 제시되어 기산일 계산은 가능하다.",
+    "특별규정의 적용 여부가 제공되지 않아 확정 판단은 보류한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권이다.",
+      "evidence_excerpt": "\"lodging_charge\": true"
+    },
+    {
+      "claim": "권리행사 가능일은 2026-06-10이다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-06-10\""
+    }
+  ]
+}

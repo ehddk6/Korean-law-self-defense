@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "소외인 명의 소유권이전등기는 무효라는 피고의 주장이 받아들여졌다.",
+    "피고는 2018년 11월경 자신의 명의로 소유권이전등기를 마쳤다.",
+    "원고는 소외인으로부터 이 사건 부동산을 임차하였다.",
+    "기록은 ‘나. 판단’의 실질적 내용을 제시하지 않는다."
+  ],
+  "citations": [
+    "주택임대차보호법 제3조 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "명의신탁 무효에 따른 소유권이전등기 말소 후 임대인 지위",
+    "주택임대차 대항요건을 갖춘 임차인에 대한 보증금반환채무 승계",
+    "실질적 권리행사자의 임대차보증금 반환책임",
+    "소유권이전등기 경정과 임대차계약의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-029",
+  "supported_facts": []
+}

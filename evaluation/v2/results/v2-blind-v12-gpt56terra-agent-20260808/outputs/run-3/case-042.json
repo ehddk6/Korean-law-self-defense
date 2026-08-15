@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "재산국외도피죄는 해외에서 임의로 소비·축적·은닉 등 지배·관리할 의사를 요구한다.",
+    "처음부터 즉시 국내 반입할 목적으로 해외 송금한 경우 재산도피의 고의가 인정되지 않는다.",
+    "원심은 공소사실 중 무죄 부분을 제외한 부분을 유죄로 판단하였다."
+  ],
+  "citations": [
+    "대법원 2005. 4. 29. 선고 [CASE_NUMBER_001] 판결",
+    "대법원 2010. 9. 9. 선고 [CASE_NUMBER_003] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특정경제범죄법상 재산국외도피죄의 고의",
+    "국내재산을 해외로 이동하여 지배·관리하는 행위의 의미",
+    "즉시 국내 반입 목적 해외송금과 재산도피죄 성립 여부",
+    "원심 유죄 판단의 타당성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-042",
+  "supported_facts": []
+}

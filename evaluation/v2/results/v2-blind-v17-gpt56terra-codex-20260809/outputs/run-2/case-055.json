@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "혼인관계가 회복할 수 없을 정도로 파탄되었는지에 관한 구체적 사실이 제공되지 않았다.",
+    "이혼청구 원고의 책임이 피고보다 실질적으로 가볍다는 자료가 없다.",
+    "유책배우자 예외를 위한 보호·배려 또는 세월 경과의 자료가 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민법 제840조 제6호의 중대한 이혼사유가 있는지",
+    "혼인파탄의 원인과 당사자별 책임 정도",
+    "파탄 극복과 혼인관계 지속을 위한 진지한 노력",
+    "유책배우자 이혼청구의 예외적 허용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-055",
+  "supported_facts": [
+    {
+      "claim": "기록은 회복불능 파탄의 판단 기준을 제시한다.",
+      "evidence_excerpt": "부부 공동생활관계가 회복할 수 없을 정도로 파탄되고"
+    },
+    {
+      "claim": "기록은 유책배우자 청구의 원칙을 제시한다.",
+      "evidence_excerpt": "혼인생활의 파탄에 주된 책임이 있는 배우자는 파탄을 사유로 하여 이혼을 청구할 수 없지만"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "피고는 2012년경부터 딸과 함께 주로 생활하며 사실상 별거를 시작하였다.",
+    "부부는 태양광발전소 사업을 두고 중대한 의견 차이로 심하게 다투었다.",
+    "원고와 피고는 공유 토지와 건물의 인도 등을 둘러싸고 소송을 진행하였다.",
+    "구체적인 이혼청구·원심 판단 및 최종 재판 결과가 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "별거 경위와 혼인파탄 여부",
+    "부부 공유재산을 둘러싼 갈등이 혼인관계에 미치는 영향",
+    "혼인파탄에 대한 당사자 책임",
+    "장기간 별거와 혼인관계 회복 가능성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-059",
+  "supported_facts": []
+}

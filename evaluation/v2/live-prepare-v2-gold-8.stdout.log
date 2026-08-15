@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-076-080.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-106-110.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "applied": 120,
+    "changed": 10
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "39db2d4943da2430769e4536915550954479ba150e663401392c6ae351f758a4"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-076-080.json",
+    "output_sha256": "056f0553f39fe1b9b723306f63f9f08ece1e39cb0cd5419cbd7cfa17a901701b",
+    "reviewed": 5,
+    "approved": 4,
+    "rejected": [
+      "case-080"
+    ],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-106-110.json",
+    "output_sha256": "1d628d35b90f74fa7adae382b50247d590664bfec9e95e6a65fcdfe9a5fc3c12",
+    "reviewed": 5,
+    "approved": 4,
+    "rejected": [
+      "case-109"
+    ],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": false,
+  "error": "ValueError",
+  "message": "승인되지 않은 gold review가 있습니다: case-080"
+}

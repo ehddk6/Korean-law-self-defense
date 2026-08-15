@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "피고인은 현금수거책 역할 제안을 \"승낙\"한 것으로 기재되어 있다.",
+    "각 피해자에게서 현금을 교부받아 \"이를 편취\"한 공소사실이 기재되어 있다.",
+    "일부 수거 현금은 제3자의 주민등록번호를 이용하여 지정 계좌로 송금된 것으로 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보이스피싱 현금수거책의 사기 공모 및 편취죄 성립",
+    "수거 현금의 제3자 주민등록번호 이용 송금 행위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-043",
+  "supported_facts": []
+}

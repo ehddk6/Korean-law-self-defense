@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "소멸시효는 10년간 권리를 행사하지 아니한 경우 완성한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "일반 채권의 10년 소멸시효",
+    "권리행사 가능일부터의 기산",
+    "연 단위 기간의 만료일 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권의 권리행사 가능일이 특정되고 중단이 없다.",
+      "evidence_excerpt": "\"interruption\": false, \"ordinary_claim\": true, \"right_exercisable_date\": \"2026-04-10\""
+    }
+  ]
+}

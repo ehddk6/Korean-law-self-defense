@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "특별 단기시효가 적용되는 채권인지에 따라 기간이 달라질 수 있다."
+  ],
+  "citations": [
+    "제162조",
+    "제166조",
+    "제157조",
+    "제160조"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "제162조 제1항의 일반 채권 10년 소멸시효가 적용된다.",
+    "권리행사 가능일이 2026-04-10으로 제시되어 있다.",
+    "특별 단기시효 적용 여부는 제시된 일반 채권 전제와 다르게 판단될 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권임",
+      "evidence_excerpt": "ordinary_claim"
+    },
+    {
+      "claim": "권리행사 가능일",
+      "evidence_excerpt": "right_exercisable_date"
+    },
+    {
+      "claim": "10년 소멸시효 규정",
+      "evidence_excerpt": "채권은 10년간 행사하지 아니하면 소멸시효가 완성한다."
+    }
+  ]
+}

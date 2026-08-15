@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "전기통신금융사기죄는 형법상 사기죄와 입법 목적을 달리할 뿐만 아니라 구체적인 구성요건에도 일부 차이가 있다.",
+    "전기통신금융사기죄 구성요건이 사기죄 구성요건의 모든 요소를 포함하는 외에 다른 요소를 구비하는 경우에 해당하지 않는다.",
+    "검사의 상고이유에 관하여"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄의 구성요건 관계",
+    "전기통신금융사기죄가 사기죄에 대한 특별법인지",
+    "하나의 행위가 두 죄의 구성요건을 충족하는 경우 죄수 관계",
+    "검사의 상고이유에 관한 원심 판단 및 공소사실의 입증 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-044",
+  "supported_facts": []
+}

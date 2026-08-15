@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "법 변경 사실만으로는 특별규정이나 예외적 특별사정의 부재를 확정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청에 따른 처분의 적용법",
+    "예외사유 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-126",
+  "supported_facts": []
+}

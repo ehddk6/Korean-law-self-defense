@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "취업규칙은 촉탁 재고용 적부를 심사 후 결정하도록 정하고 있다.",
+    "단체협약과 취업규칙에는 재고용 의무를 부과하는 규정이 없다고 기재되어 있다.",
+    "참가인 1의 촉탁직 근로계약에는 명시된 기간이 있다.",
+    "참가인 2는 촉탁직 근로계약을 체결하지 못하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "정년퇴직자의 촉탁직 재고용에 관한 갱신기대권",
+    "취업규칙 및 단체협약이 재고용의무를 부과하는지 여부",
+    "참가인들의 근로관계 종료가 부당해고에 해당하는지 여부",
+    "중앙노동위원회 재심판정의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-061",
+  "supported_facts": []
+}

@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "시효중단 사실이 있으면 진행 또는 만료일 계산이 달라질 수 있으나, 제공된 사실은 중단이 없다고 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제162조 제1항 및 제166조 제1항의 요건: 일반 채권은 권리를 행사할 수 있는 때부터 10년간 행사하지 않으면 소멸시효가 완성한다.",
+    "민법 제157조 및 제160조의 기간계산: 초일을 산입하지 않고 역에 따라 계산하므로 2026-04-10을 기산일로 한 10년 기간은 2036-04-10에 만료한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": []
+}

@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "제14조 제2항의 예외로 처분 당시 법령 적용 원칙이 적용되지 않음"
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신법 적용이 곤란한 특별한 사정",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": []
+}

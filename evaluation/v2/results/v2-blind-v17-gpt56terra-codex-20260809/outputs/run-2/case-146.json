@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "특별규정 원문이 확인되면 제14조의 원칙 또는 예외와 다른 결론이 가능하다.",
+    "어느 시간적 적용 규정이 주장되는지와 적용 대상 관계·행위가 제시되지 않았다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)",
+    "새로운 법령등은 법령등에 특별한 규정이 있는 경우를 제외하고는",
+    "당사자의 신청에 따른 처분은 법령등에 특별한 규정이 있거나",
+    "법령등에 특별한 규정이 있는 경우를 제외하고는"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "행정기본법 제14조 각 항은 특별규정이 있는 경우를 예외로 둔다.",
+    "특별규정이 있다는 주장만 있고 원문이 제시되지 않았다.",
+    "특별규정의 내용과 적용 대상의 확인이 필요하다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되었으나 제시되지 않았다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    },
+    {
+      "claim": "제14조는 특별규정을 예외로 둔다.",
+      "evidence_excerpt": "법령등에 특별한 규정이 있는 경우를 제외하고는"
+    }
+  ]
+}

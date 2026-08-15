@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "법정대리인에 대한 송달에는 본인의 영업소나 사무소에서도 할 수 있는 예외가 있다."
+  ],
+  "citations": [
+    "제183조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제183조 제1항.",
+    "주소·거소·영업소 또는 사무소는 송달장소에 해당한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "제시된 송달장소는 수령인의 주소이다.",
+      "evidence_excerpt": "recipient_address"
+    },
+    {
+      "claim": "주소등은 제183조 제1항의 송달장소이다.",
+      "evidence_excerpt": "송달은 받을 사람의 주소ㆍ거소ㆍ영업소 또는 사무소"
+    }
+  ]
+}

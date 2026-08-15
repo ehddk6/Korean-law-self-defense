@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "합의약정의 특약은 원고가 피고 및 스타금굴의 부채 전액을 공탁하는 조건으로 읽힐 수 있다.",
+    "원고가 부채 공탁을 하지 못했다면 주식양도계약의 효력 상실 주장이 가능하다.",
+    "원고의 형사사건 계속 및 가처분 기각은 주식취득과 대표권 주장의 신빙성을 약화할 수 있다."
+  ],
+  "citations": [
+    "원고가 피고의 유일한 주주이다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "부채 공탁이 주식양도계약의 조건인지 여부",
+    "민법 제150조 제1항에 따른 조건성취 의제 가능성",
+    "주식 전부의 명의개서가 주주권 귀속을 확정하는지 여부",
+    "임시주주총회 소집절차와 이사회 결의의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-032",
+  "supported_facts": [
+    {
+      "claim": "주주명부에는 원고가 전부 주주로 기재되었다.",
+      "evidence_excerpt": "원고가 피고 발행 주식 전부에 관하여 주주로 명의개서되어 있었다."
+    }
+  ]
+}

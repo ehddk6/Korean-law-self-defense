@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "피고는 연장된 만기까지 대출 원리금을 상환하지 못하였다.",
+    "원고는 담보주식의 지분을 희석시키는 등의 담보권 침해 행위를 하였다.",
+    "이 사건 주주총회가 실제 개최되지는 않았다고 기재되어 있다.",
+    "원심은 주주총회결의 부존재 확인청구를 배척하였다."
+  ],
+  "citations": [
+    "상법 제368조 제2항",
+    "상법 제59조",
+    "대법원 2004. 12. 10. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근질권 설정계약에 따른 주주 의결권의 포괄적 위임 효력",
+    "담보권자의 의결권 행사와 경영진 교체의 허용 범위",
+    "1인 회사에서 주주총회 소집절차 생략의 효력",
+    "주주총회결의 부존재 확인청구의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-040",
+  "supported_facts": []
+}

@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "특별규정이나 예외적 특별사정이 있으면 처분 당시 법령이 적용되지 않을 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청에 따른 처분의 적용법",
+    "예외사유 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-126",
+  "supported_facts": []
+}

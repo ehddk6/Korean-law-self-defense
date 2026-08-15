@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "answers": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "adverse_points": {
+            "items": {
+              "maxLength": 300,
+              "type": "string"
+            },
+            "maxItems": 8,
+            "type": "array"
+          },
+          "citations": {
+            "items": {
+              "maxLength": 200,
+              "type": "string"
+            },
+            "maxItems": 8,
+            "type": "array"
+          },
+          "confidence": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "deadline_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decision_status": {
+            "enum": [
+              "ready",
+              "conditional",
+              "abstain"
+            ]
+          },
+          "issues": {
+            "items": {
+              "maxLength": 300,
+              "type": "string"
+            },
+            "maxItems": 8,
+            "type": "array"
+          },
+          "outcome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required_action": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rule_answer": {
+            "maxLength": 120,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scenario_id": {
+            "type": "string"
+          },
+          "supported_facts": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "claim": {
+                  "type": "string"
+                },
+                "evidence_excerpt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "claim",
+                "evidence_excerpt"
+              ],
+              "type": "object"
+            },
+            "maxItems": 8,
+            "type": "array"
+          }
+        },
+        "required": [
+          "scenario_id",
+          "decision_status",
+          "outcome",
+          "required_action",
+          "issues",
+          "adverse_points",
+          "confidence",
+          "citations",
+          "supported_facts",
+          "deadline_date",
+          "rule_answer"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "answers"
+  ],
+  "type": "object"
+}

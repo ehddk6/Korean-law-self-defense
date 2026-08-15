@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "위반 후 법 변경 사실과 제재처분 사실만으로는 단서의 비위반화·경감 요건 또는 특별규정 부존재가 확인되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제3항 본문은 위반행위의 성립과 제재처분에 행위 당시 법령을 적용한다.",
+    "제14조 제3항 단서는 행위 후 법 변경으로 비위반이 되거나 제재기준이 가벼워지고 특별규정이 없으면 변경법을 적용한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": [
+    {
+      "claim": "위반행위 후 법이 변경되었고 제재처분 사안이다.",
+      "evidence_excerpt": "\"law_changed_after_violation\": true, \"sanction\": true"
+    }
+  ]
+}

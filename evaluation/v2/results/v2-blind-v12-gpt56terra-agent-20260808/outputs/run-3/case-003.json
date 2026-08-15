@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "원고들은 재채점 후 추가합격자로 발표되었다.",
+    "원고들은 수습세무사 실무교육을 마쳤다.",
+    "원고들은 각 세법학 과목에서 40점에 미달해 최초 불합격 처리되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "세무사 자격시험 채점의 일관성 및 적법성",
+    "불합격 처분의 위법성과 재채점의 효과",
+    "추가합격 후 남은 손해 또는 구제 필요성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-003",
+  "supported_facts": []
+}

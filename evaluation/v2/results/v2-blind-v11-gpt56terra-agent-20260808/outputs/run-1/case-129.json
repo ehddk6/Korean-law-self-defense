@@ -1,0 +1,17 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "issues": [
+    "1년 이내 정기 지급 이자의 3년 단기소멸시효",
+    "권리행사 가능일부터의 기산",
+    "초일 불산입과 역법 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "supported_facts": []
+}

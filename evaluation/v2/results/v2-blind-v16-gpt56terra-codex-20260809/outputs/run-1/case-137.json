@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "부칙 본문이 없어 소급적용 또는 적용례외를 판단할 수 없다.",
+    "개정일이 알려지지 않아 적용시점을 판단할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 근로기준법 부칙",
+    "필수 사실: 부칙의 경과규정 및 개정일",
+    "예외: 부칙상 소급적용 또는 적용례외"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-137",
+  "supported_facts": [
+    {
+      "claim": "부칙 본문이 제공되지 않았다.",
+      "evidence_excerpt": "\"article_text\": null"
+    },
+    {
+      "claim": "개정일이 알려지지 않았다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    }
+  ]
+}

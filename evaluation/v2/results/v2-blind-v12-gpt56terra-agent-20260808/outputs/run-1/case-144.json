@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "불법행위일부터 10년의 기간도 적용될 수 있으나, 제공된 사실상 단기시효 만료일보다 늦다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "불법행위 손해배상청구권의 3년 단기소멸시효",
+    "손해 및 가해자를 안 날부터의 기산",
+    "초일 불산입과 역법 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "손해 및 가해자를 안 날이 특정되었다.",
+      "evidence_excerpt": "\"knowledge_date\": \"2026-04-10\", \"tort_date\": \"2026-04-01\""
+    }
+  ]
+}

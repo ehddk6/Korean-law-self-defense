@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "원고는 이 사건 분양권 청약에 양도 전인 2021. 9. 24. 당첨되었다.",
+    "피고는 분양권의 보유 시기를 청약당첨일로 판단하였다.",
+    "원고는 양도 당시 1세대 3주택 중과세율을 적용하여 스스로 신고·납부하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "분양권 보유 시기의 시작일을 청약당첨일과 분양계약일 중 언제로 볼지",
+    "이 사건 양도 당시 일시적 1세대 2주택 비과세 요건 충족 여부",
+    "분양권을 포함한 1세대 3주택 중과세율 적용의 적법성",
+    "경정청구에서 비과세·환급 요건에 관한 납세자 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-071",
+  "supported_facts": [
+    {
+      "claim": "청약당첨일은 양도일보다 앞선다.",
+      "evidence_excerpt": "2021. 9. 24. 공동주택인 성남시 분당구 판교 (아파트명 생략) 분양권"
+    },
+    {
+      "claim": "피고는 청약당첨일을 보유 시기로 판단했다.",
+      "evidence_excerpt": "이 사건 분양권의 보유 시기를 청약당첨일로 보아야 한다는 이유로 원고의 경정청구를 거부하였다"
+    }
+  ]
+}

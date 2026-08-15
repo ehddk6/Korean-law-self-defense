@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 장애인 고용부담금이 구 법인세법 제21조 제5호에서 정한 손금불산입 대상 공과금에 해당한다고 보았다.",
+    "원고는 법인세 신고 시 이 사건 장애인 고용부담금을 손금에 산입하지 않았다."
+  ],
+  "citations": [
+    "구 법인세법 제21조 제5호"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장애인 고용부담금이 구 법인세법 제21조 제5호의 손금불산입 대상 공과금에 해당하는지",
+    "장애인 고용부담금의 손금 산입 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-072",
+  "supported_facts": []
+}

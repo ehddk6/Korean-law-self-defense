@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "법령은 위반행위와 관련한 정보통신서비스의 매출액을 과징금 산정 기준으로 정한다.",
+    "원심은 웹서버 분리 운영과 이벤트 페이지에 한정된 캐시 설정 오류를 이유로 관련 매출액을 이벤트 매출액으로 한정하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 유출 관련 과징금 산정의 기초가 되는 ‘위반행위와 관련한 매출액’",
+    "이벤트 페이지 오류가 쇼핑몰 전체 매출액에 미치는 관련성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-104",
+  "supported_facts": []
+}

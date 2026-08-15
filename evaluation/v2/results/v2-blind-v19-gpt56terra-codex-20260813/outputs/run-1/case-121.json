@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "특별규정의 존재와 내용이 제공되지 않아 그 적용 여부를 확정할 수 없다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "새로운 법령등은 법령등에 특별한 규정이 있는 경우를 제외하고는 그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제1항이 적용된다.",
+    "법률관계가 효력 발생 후에도 계속된 사실은 제시되었다.",
+    "시간적 적용을 달리 정하는 특별규정의 유무가 필요하다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 개정법 효력 발생 후에도 계속되었다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    }
+  ]
+}

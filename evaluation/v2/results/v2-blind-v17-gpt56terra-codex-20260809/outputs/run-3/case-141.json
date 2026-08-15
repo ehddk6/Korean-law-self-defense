@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "후법의 경감 내용은 제시되었으나 해당 법령의 특별규정 존재·내용이 확인되지 않아 예외 적용을 확정할 수 없다."
+  ],
+  "citations": [
+    "행정기본법",
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조 제3항 단서.",
+    "필수 사실: 위반행위 후 법령 변경 및 제재처분 기준 경감.",
+    "예외: 해당 법령등의 특별규정 존재 및 내용."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "후법의 제재가 가벼워졌다.",
+      "evidence_excerpt": "later_law_lighter"
+    },
+    {
+      "claim": "제재처분 기준 경감은 변경 법령 적용의 단서 요건이다.",
+      "evidence_excerpt": "제재처분 기준이 가벼워진 경우"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "피고는 해외 사업을 추진하였다가 실패하였다.",
+    "원고는 각 진단을 받아 치료를 받았다.",
+    "기록은 원고의 진단 이후 문장이 불완전하여 파탄 경위와 원심 판단을 알 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "혼인파탄의 경위와 책임 정도",
+    "배우자의 해외 사업 실패가 혼인생활에 미친 영향",
+    "원고의 건강상태와 혼인관계의 관련성",
+    "미성년 자녀의 보호 및 이혼 허용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-058",
+  "supported_facts": [
+    {
+      "claim": "피고는 해외 사업 실패 후 다른 회사에 입사하였다.",
+      "evidence_excerpt": "사업 실패 후인 2014. 4.경 다른 회사에 입사하였고"
+    },
+    {
+      "claim": "원고는 치료를 받았다.",
+      "evidence_excerpt": "각 진단을 받아 치료를 받았다."
+    },
+    {
+      "claim": "당사자에게 미성년 딸들이 있다.",
+      "evidence_excerpt": "미성년 딸인 사건본인들을 두고 있다."
+    }
+  ]
+}

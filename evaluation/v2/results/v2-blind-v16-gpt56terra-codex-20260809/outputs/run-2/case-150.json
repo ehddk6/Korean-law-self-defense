@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "특허권등인지 그 밖의 지식재산권 또는 국제거래인지가 제시되지 않았다.",
+    "제2조부터 제23조까지에 따른 관할법원 소재지 및 이를 관할하는 고등법원이 있는 곳의 지방법원에 관한 구체적 사실이 제시되지 않았다.",
+    "특정 법원이 서울고등법원 관할인지에 관한 사실이 제시되지 않았다."
+  ],
+  "citations": [
+    "② 특허권등의 지식재산권에 관한 소를 제기하는 경우에는 제2조부터 제23조까지의 규정에 따른 관할법원 소재지를 관할하는 고등법원이 있는 곳의 지방법원의 전속관할로 한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 민사소송법 제24조",
+    "필수 사실: 지식재산권의 유형과 제2조부터 제23조까지에 따른 관할법원 소재지를 확인해야 한다.",
+    "예외: 특허권등을 제외한 지식재산권·국제거래와 특허권등은 관할 규정이 다르며, 서울고등법원 소재지의 지방법원은 서울중앙지방법원으로 한정된다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구가 제시되었다.",
+      "evidence_excerpt": "intellectual_property_claim"
+    },
+    {
+      "claim": "구체적 법원 사실이 완비되지 않았다.",
+      "evidence_excerpt": "specific_court_facts_complete\": false"
+    }
+  ]
+}

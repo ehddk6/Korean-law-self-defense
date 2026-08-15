@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "원심은 이 사건 통지에 따른 해지 효력이 2021. 6. 9.에 발생한다고 판단하였다.",
+    "피고는 2021. 6. 9.까지 발생한 월 차임을 공제하였다.",
+    "원심은 피고가 반환할 임대차보증금이 없다고 판단하였다.",
+    "원고는 2021. 4. 30. 이 사건 부동산을 인도하였다."
+  ],
+  "citations": [
+    "주택임대차보호법 제6조의3 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택임대차보호법상 계약갱신요구의 효력",
+    "갱신된 임대차계약의 해지 통지 시점과 효력 발생일",
+    "임대차 종료 후 차임 정산",
+    "임대차보증금 및 장기수선충당금 반환 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-021",
+  "supported_facts": []
+}

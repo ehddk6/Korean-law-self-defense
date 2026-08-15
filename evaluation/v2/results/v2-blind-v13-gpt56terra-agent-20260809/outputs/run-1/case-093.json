@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "재항고인의 채무는 개인회생절차 개시신청일 기준 1년 이내에 발생하였다.",
+    "재항고인은 채권자의 채무부담경위 소명 요구에 제1심에서 답변하지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생절차 개시신청일 기준 1년 이내 발생한 채무의 부담 경위를 채무자가 명확히 밝히지 않고 채권자의 이의신청에도 답변하지 않은 사정만으로 개인회생신청이 성실하지 않은 경우에 해당하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-093",
+  "supported_facts": []
+}

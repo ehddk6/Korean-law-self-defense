@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "미얀마 내 기독교도들의 통상적 종교활동은 어느 정도 허용되고 있었다.",
+    "원고는 2004년 이전 복음 전도 활동으로 별다른 박해를 받은 적이 없었다.",
+    "정부 차원의 강압적 개종 운동은 대부분 사라지는 추세이다."
+  ],
+  "citations": [
+    "출입국관리법 제76조의2",
+    "[CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "난민인정 요건 및 입증책임",
+    "종교활동과 소수민족 반정부 활동 연계에 따른 박해 위험",
+    "원고의 과거 종교행사 및 도피 경위",
+    "본국 송환 시 박해 가능성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-112",
+  "supported_facts": [
+    {
+      "claim": "군인들이 종교행사를 중단시키고 신도들을 폭행하거나 체포하였다.",
+      "evidence_excerpt": "행사를 중단시켰고, 신도들 중 일부를 폭행하거나 체포"
+    },
+    {
+      "claim": "원고는 종교지도자들과 함께 도피하였다.",
+      "evidence_excerpt": "종교지도자들과 함께 도피하여"
+    },
+    {
+      "claim": "원고 가족은 원고 행방을 묻는 정부 인사들로 위협을 받았다.",
+      "evidence_excerpt": "지속적으로 원고의 행방을 물었고"
+    }
+  ]
+}

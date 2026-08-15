@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원고들은 제1 내지 제3 보험증권의 “각 보험기간이 종료한 후” 하자보수를 요청하였다.",
+    "특별약관 제3조가 보험기간 내 하자보수청구를 요구하는 조항으로 해석될 여지가 있다.",
+    "소외인은 하자보수의무를 이행하지 않았다.",
+    "기록은 원심 판단 이후 대법원의 최종 판단과 주문을 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "하자 발생 시점과 보증보험 보험금 지급책임",
+    "보험기간 종료 후 하자보수 요청의 효력",
+    "공동주택하자특별약관 제3조의 해석",
+    "보험금 지급책임을 면제하는 약관조항의 약관법상 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-020",
+  "supported_facts": []
+}

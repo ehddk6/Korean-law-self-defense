@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "이사 지위는 일신전속적이어서 상속 대상이 아니다.",
+    "선정자 3은 원심 변론종결 후 사망하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이사 지위의 상속 가능 여부",
+    "원심 변론종결 후 사망한 선정자의 주주총회결의 취소 청구 처리",
+    "명의개서절차 이행청구의 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-031",
+  "supported_facts": []
+}

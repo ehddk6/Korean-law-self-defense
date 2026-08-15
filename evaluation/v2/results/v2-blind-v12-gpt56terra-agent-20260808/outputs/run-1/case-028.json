@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "금융기관인 원고는 경매절차에서 보증금 중 일부만 배당받았다.",
+    "금융기관이 보증금반환채권을 양수한 금액의 범위에서 우선변제권을 승계하였다.",
+    "임차인이 대항요건을 유지하면 주택 양수인은 임대인 지위를 승계한다.",
+    "기록은 제2, 제3 상고이유에 관한 판단을 제시하지 않는다."
+  ],
+  "citations": [
+    "주택임대차보호법 제3조 제1항",
+    "주택임대차보호법 제3조의2 제7항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택임대차 대항력의 취득 및 존속",
+    "우선변제권 행사 후 일부 배당과 대항력의 존속",
+    "금융기관의 보증금반환채권 양수와 우선변제권 승계",
+    "주택 양수인의 임대인 지위 승계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-028",
+  "supported_facts": []
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원고들의 사망이 원심판결 선고 후 발생하였다.",
+    "전현직이사협의체를 구성하여 정식이사 후보자에 관한 의견을 제출할 권리 또는 지위가 쟁점으로 제시되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "소송계속 중 사망한 전직 정식이사의 권리 또는 지위가 상속되는지",
+    "전현직이사협의체의 정식이사 후보자 의견제출 권한의 일신전속성"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-115",
+  "supported_facts": []
+}

@@ -1,0 +1,41 @@
+{
+  "adverse_points": [
+    "특별규정의 적용 여부가 제공되지 않았다."
+  ],
+  "citations": [
+    "제162조",
+    "제157조",
+    "제160조",
+    "제166조"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제162조 제1항의 일반 채권 10년 시효가 적용된다.",
+    "민법 제166조 제1항의 권리행사 가능일과 제157조·제160조의 기간 계산 규정이 적용된다.",
+    "일반 채권 및 권리행사 가능일은 제공되었으나, 특별규정의 배제 여부가 제공되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권이다.",
+      "evidence_excerpt": "\"ordinary_claim\": true"
+    },
+    {
+      "claim": "권리행사 가능일은 2026-04-10이다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-04-10\""
+    },
+    {
+      "claim": "일반 채권은 10년간 행사하지 아니하면 소멸시효가 완성한다.",
+      "evidence_excerpt": "①채권은 10년간 행사하지 아니하면 소멸시효가 완성한다."
+    },
+    {
+      "claim": "소멸시효는 권리를 행사할 수 있는 때부터 진행한다.",
+      "evidence_excerpt": "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+    }
+  ]
+}

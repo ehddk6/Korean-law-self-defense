@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "1차 징계의결 내용을 통보하지 않은 채 징계처분을 하여 중대한 절차규정 위반이 있었다.",
+    "1차 정직 처분과 2차 해임 의결 사이에 재심의 요구의 적법한 요건과 효과가 다투어질 수 있다.",
+    "기록이 2020. 7. 28.에서 중단되어 최종 처분 내용과 절차 이행 여부가 확인되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 사립학교법 제66조의2에 따른 징계의결 통보의무 위반 효과",
+    "참가행정청의 재심의 요구 권한과 요건",
+    "1차 징계처분 이후 2차 징계의결 및 해임의 적법성",
+    "스쿨미투 조사 결과와 징계양정의 관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-116",
+  "supported_facts": [
+    {
+      "claim": "참가인은 징계의결 내용을 보고하지 않고 1차 처분을 했다.",
+      "evidence_excerpt": "이 사건 1차 징계의결 내용을 참가행정청에 보고하지 않은 채"
+    },
+    {
+      "claim": "교원징계위원회는 해임 징계를 의결했다.",
+      "evidence_excerpt": "원고에 대하여 해임의 징계를 의결하였다"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "민사소송법은 제3자에 대한 문서제출명령과 불응 과태료를 정하고 있다.",
+    "위반자는 문서제출명령을 받았음에도 자료를 제출하지 않았다.",
+    "통신사실확인자료가 민사소송상 문서일 수 있다는 해석이 과태료 유지 논리가 될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "통신사실확인자료가 민사소송법상 문서제출명령 대상인지",
+    "통신비밀보호법 제3조 제1항 본문이 민사 문서제출명령을 제한하는지",
+    "전기통신사업자에게 자료 제출의 법적 의무가 있는지",
+    "정당한 거부 사유가 있는 경우 과태료 부과가 가능한지"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-053",
+  "supported_facts": [
+    {
+      "claim": "통신비밀보호법은 통신사실확인자료 제공을 제한한다.",
+      "evidence_excerpt": "통신사실확인자료의 제공을 하거나"
+    },
+    {
+      "claim": "위반자는 비협조 사유를 밝혔다.",
+      "evidence_excerpt": "압수수색영장 요청에 한하여 자료 제공이 가능하다."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "원심은 갱신기대권을 인정하기에 증거가 부족하다고 판단하였다.",
+    "원고가 명시적으로 녹음을 반대하거나 기망·협박이 있었다는 사정이 발견되지 않는다고 기재되어 있다.",
+    "녹음파일과 녹취록은 노동위원회나 법원 제출 방식으로만 사용되었다."
+  ],
+  "citations": [
+    "헌법 제10조 제1문",
+    "대법원 2009. 9. 10. 선고 [CASE_NUMBER_001], 37145 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로계약 갱신에 대한 정당한 기대권의 존재",
+    "무단 녹음행위가 음성권 침해 불법행위인지 여부",
+    "녹음파일·녹취록의 사용 방식에 따른 위법성 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-007",
+  "supported_facts": [
+    {
+      "claim": "원심은 갱신기대권 침해 청구를 받아들이지 않았다.",
+      "evidence_excerpt": "원고의 피고 회사에 대한 손해배상청구를 받아들이지 않았다."
+    },
+    {
+      "claim": "녹음자료는 법적 분쟁에서만 사용되었다.",
+      "evidence_excerpt": "노동위원회나 법원에 제출하는 방식으로만 사용하였을 뿐"
+    }
+  ]
+}

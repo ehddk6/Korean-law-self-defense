@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "제시된 사실만으로 실제 송달장소가 주소·거소·영업소·사무소 중 어디인지 구체적으로 확인되지 않는다."
+  ],
+  "citations": [
+    "제183조(송달장소)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제183조 제1항의 주소등 송달장소 요건이 적용된다.",
+    "수령인의 주소·거소·영업소 또는 사무소인지 확인이 필요하다.",
+    "주소등을 알 수 없거나 그 장소에서 송달할 수 없는 경우에는 제183조 제2항의 근무장소 송달 예외가 적용될 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달장소가 수령인 주소로 제시되었다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    }
+  ]
+}

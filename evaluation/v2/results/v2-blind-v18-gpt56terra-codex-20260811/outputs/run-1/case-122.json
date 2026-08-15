@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "개정 부칙의 구체적 경과규정이 제공되지 않았다.",
+    "개정일과 사실 발생일이 제공되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 부칙의 경과규정 적용 여부가 쟁점이다.",
+    "개정법 적용 판단에 필요한 부칙 전문, 개정일 및 사실 발생일이 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-122",
+  "supported_facts": [
+    {
+      "claim": "부칙 전문이 제공되지 않았다.",
+      "evidence_excerpt": "addendum_text_provided\": false"
+    },
+    {
+      "claim": "개정일이 알려지지 않았다.",
+      "evidence_excerpt": "amendment_date_known\": false"
+    }
+  ]
+}

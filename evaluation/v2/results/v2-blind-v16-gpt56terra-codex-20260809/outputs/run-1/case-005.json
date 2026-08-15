@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "관련 형사사건에서 원고 27 관련 무죄 부분이 확정되었다.",
+    "무죄판결은 일반적 직무권한의 불법 행사 및 업무방해의 위력 증거가 부족하다는 실질 논거를 포함한다.",
+    "블랙리스트 작성 시점부터 국가배상채권의 시효가 완성되었다는 항변이 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "블랙리스트 작성·유지·관리에 피고 2·피고 3의 불법행위가 성립하는지",
+    "명단 등재와 원고별 정신적·재산상 손해의 인과관계",
+    "국가배상채권과 피고 3 상대 채권의 소멸시효 기산점",
+    "은폐·진상조사가 소멸시효 항변을 신의칙상 제한하는지",
+    "원고별 위자료의 일괄 산정 가능성"
+  ],
+  "outcome": "mixed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-005",
+  "supported_facts": [
+    {
+      "claim": "원고들은 명단에 포함되어 있다.",
+      "evidence_excerpt": "원고들은 위 명단에 모두 포함되어 있다."
+    },
+    {
+      "claim": "무죄 부분이 확정되었다.",
+      "evidence_excerpt": "위 무죄 부분은 그대로 확정되었다."
+    }
+  ]
+}

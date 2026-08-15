@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "해당 법령에 특별한 규정이 있으면 제재 기준이 가벼워졌더라도 변경된 법령 적용 예외의 전제가 충족되지 않을 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조 제3항 단서.",
+    "필수 사실: 위반 후 법령 변경과 제재처분 기준 경감.",
+    "예외: 해당 법령에 특별한 규정이 없는지 확인해야 함."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재처분이 문제된다.",
+      "evidence_excerpt": "sanction"
+    },
+    {
+      "claim": "후법의 제재 기준이 더 가볍다.",
+      "evidence_excerpt": "later_law_lighter"
+    },
+    {
+      "claim": "특별규정이 없으면 변경된 법령을 적용한다.",
+      "evidence_excerpt": "해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다"
+    }
+  ]
+}

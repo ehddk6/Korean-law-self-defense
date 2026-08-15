@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "소멸시효는 계약일이 아니라 권리를 행사할 수 있는 때부터 진행한다.",
+    "권리행사 가능일이 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "소멸시효 기산점",
+    "계약일과 권리행사 가능일의 구별"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일은 있으나 권리행사 가능일은 없다.",
+      "evidence_excerpt": "\"contract_date\": \"2025-04-10\", \"right_exercisable_date\": null"
+    }
+  ]
+}

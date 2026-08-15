@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원고는 상급자의 멱살을 잡고 유리컵을 던져 상해를 가한 사실이 기재되어 있다.",
+    "이 사건 전보발령이 정당하다는 행정소송 판결이 확정되었다.",
+    "해고사유에는 반복된 업무지시 거부와 근무태만이 포함되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "확정된 전보발령 정당성 판단이 해고사유 판단에 미치는 범위",
+    "시스템관리팀 업무지시 거부가 정당한 징계사유인지",
+    "교육참석 지시 거부 및 근무태만의 증명 정도",
+    "복수 징계사유를 합산한 해고가 사회통념상 상당한지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-063",
+  "supported_facts": [
+    {
+      "claim": "행정소송에서 이 사건 전보발령은 정당하다고 판단되어 확정되었다.",
+      "evidence_excerpt": "이 사건 전보발령이 정당하다는 이유로 이 사건 구제명령을 취소하는 판결을 선고하였다."
+    }
+  ]
+}

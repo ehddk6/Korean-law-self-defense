@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "약관은 갑상선암을 암의 범위에서 제외하는 조항을 둔다.",
+    "원고는 갑상선암 및 림프절 전이 진단을 받았다.",
+    "원심은 원발부위 기준 분류조항이 일반적이고 공통된 사항이라고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원발부위 기준 분류조항의 약관상 의미",
+    "전이암이 별도의 암 보험금 지급 대상인지",
+    "원발부위 기준 분류조항에 대한 설명의무",
+    "설명의무 위반이 보험계약 체결에 미친 영향",
+    "소액사건에서 법령해석 통일을 위한 상고심 판단 가능성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-012",
+  "supported_facts": [
+    {
+      "claim": "약관은 원발부위를 기준으로 분류하도록 정한다.",
+      "evidence_excerpt": "일차성 악성신생물(암)이 확인되는 경우에는 원발부위(최초 발생한 부위)를 기준으로 분류"
+    }
+  ]
+}

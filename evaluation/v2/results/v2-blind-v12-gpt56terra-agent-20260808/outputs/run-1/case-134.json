@@ -1,0 +1,22 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "숙박료 채권의 1년 단기소멸시효",
+    "권리행사 가능일부터의 기산",
+    "초일 불산입과 역법 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권이며 권리행사 가능일이 특정되었다.",
+      "evidence_excerpt": "\"lodging_charge\": true, \"right_exercisable_date\": \"2026-06-10\""
+    }
+  ]
+}

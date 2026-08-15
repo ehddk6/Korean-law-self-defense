@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "비공개 조치가 된 인터넷개인방송을 허가받지 않은 제3자가 비정상적인 방법으로 시청·녹화하면 감청에 해당할 수 있다.",
+    "피해자의 접근권한은 방송자가 아니라 인터넷개인방송 플랫폼업체가 부여한 접근권한을 기준으로 판단하여야 한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인터넷개인방송 녹음이 통신비밀보호법상 감청에 해당하는지",
+    "인터넷개인방송 접근권한을 정보통신망법상 누구의 기준으로 판단하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-105",
+  "supported_facts": []
+}

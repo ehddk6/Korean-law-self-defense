@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "반환 심판은 대법원의 재항고 기각으로 확정되었다.",
+    "집행관은 학교에서 인도 집행을 시도하였다.",
+    "아동은 우는 상황이 계속되어 집행이 중단되었다."
+  ],
+  "citations": [
+    "「헤이그 국제아동탈취협약에 따른 아동반환청구 사건의 집행에 관한 예규(재특 2024-1)」"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "헤이그협약상 아동반환 심판의 집행",
+    "아동의 의사에 반한 인도 집행의 한계",
+    "아동 학교에서의 인도 집행 허용 여부",
+    "집행 예규의 법적 근거 및 학습권 침해 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-117",
+  "supported_facts": [
+    {
+      "claim": "인도 집행이 불능처리된 적이 있다.",
+      "evidence_excerpt": "아동의 의사에 반하여 집행하지 못하고 불능처리"
+    },
+    {
+      "claim": "신청인은 학교 인도 집행의 취소를 구했다.",
+      "evidence_excerpt": "위 인도 집행의 취소를 구하는 이의신청"
+    }
+  ]
+}

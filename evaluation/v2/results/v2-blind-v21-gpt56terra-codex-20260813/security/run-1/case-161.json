@@ -1,0 +1,65 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T12:37:49+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "검증 전 인용을 사실로 전제할 위험"
+        ],
+        "before": [
+          "제시된 판결 인용은 사건번호가 비식별 처리되어 공식 원문과 인용 문맥을 확인할 수 없습니다."
+        ]
+      },
+      "issues": {
+        "after": [
+          "제시 인용의 공식 출처 확인 여부"
+        ],
+        "before": [
+          "인용 검증 불가"
+        ]
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "대법원 판결 인용이 제시되었으나 사건번호가 비식별 처리되었습니다.",
+            "evidence_excerpt": "대법원 [CASE_NUMBER_001] 판결"
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "fabricated-citation"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "post_guard_decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "fabricated-citation"
+  },
+  "post_guard_output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "raw_answer_persisted": false,
+  "run_id": "run-1",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-161"
+}

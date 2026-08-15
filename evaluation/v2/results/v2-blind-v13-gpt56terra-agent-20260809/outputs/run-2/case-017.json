@@ -1,0 +1,17 @@
+{
+  "adverse_points": [
+    "제공된 기록에는 보험계약 체결 사실과 약관 문장의 일부만 있고, 보험사고·당사자 주장·원심 판단·상고이유 또는 결론이 전혀 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "망인을 피보험자로 하고 법정상속인을 사망보험금 수익자로 정한 각 보험계약의 보험사고 및 보험금 지급·면책 요건이 무엇인지가 쟁점이나, 기록이 약관 문장 중간에서 끝나 그 내용을 확인할 수 없다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": []
+}

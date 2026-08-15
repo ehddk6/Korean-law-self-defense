@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "제164조 제1호의 1년 시효는 여관 등의 숙박료 채권에 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "숙박료 채권의 1년 단기소멸시효",
+    "권리행사 가능일부터의 기산",
+    "연 단위 기간의 만료일 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권의 권리행사 가능일이 특정되고 중단이 없다.",
+      "evidence_excerpt": "\"interruption\": false, \"lodging_charge\": true, \"right_exercisable_date\": \"2026-06-10\""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "원심은 성과급 재분배 금지명령을 정당한 직무명령으로 판단하였다.",
+    "참가인 2는 성과급 재분배를 주도한 것으로 판단되었다.",
+    "원심은 참가인 2가 정당한 사유 없이 감사를 거부·방해했다고 판단하였다.",
+    "원심은 제시된 징계사유가 모두 정당하다고 판단하였다."
+  ],
+  "citations": [
+    "대법원 2016. 1. 28. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "경영평가 성과급 재분배 금지명령의 정당성",
+    "감사 거부·방해가 성실의무 위반에 해당하는지 여부",
+    "파면의 징계사유 및 징계양정의 적정성",
+    "취업규칙상 징계사유 규정의 해석"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-065",
+  "supported_facts": []
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "피고는 소외 2 등이 임대차보증금 반환과 월 임료 수령을 처리하는 형태를 용인하였다.",
+    "피고는 임대인의 수선의무를 소외 2 등이 이행하도록 하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "임대차계약에서 피고가 임대인으로서 책임을 부담하는지 여부",
+    "중개보조인을 통한 임대차 관리행위의 법률상 귀속"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-030",
+  "supported_facts": []
+}

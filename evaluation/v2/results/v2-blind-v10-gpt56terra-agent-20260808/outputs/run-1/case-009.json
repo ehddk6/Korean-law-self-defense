@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "피고들은 거래종결 전 중대한 투자위험 정황을 발견하였다는 원심 판단이 있다.",
+    "피고 2 회사 소속 소외 3의 이메일에는 ‘◇◇◇ 자체 공장 리스크(공급처 리스크)’와 투자철회 위험이 기재되어 있다.",
+    "◇◇◇는 ‘이 사건 화장품 레시피권이 ◇◇◇에 귀속된다.’는 취지의 변경계약서 초안을 보냈다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "거래종결 전 투자위험 고지·조사의무 위반 여부",
+    "피고들이 이 사건 회사의 공급처·레시피권 관련 위험을 인식하였는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-009",
+  "supported_facts": [
+    {
+      "claim": "피고 측은 공급처 리스크가 투자철회로 이어질 수 있다고 인식한 정황이 있다.",
+      "evidence_excerpt": "‘◇◇◇ 자체 공장 리스크(공급처 리스크)’가 더해지면 투자자 입장에서는 20~30억 투자조차 철회할 리스크가 있다."
+    }
+  ]
+}

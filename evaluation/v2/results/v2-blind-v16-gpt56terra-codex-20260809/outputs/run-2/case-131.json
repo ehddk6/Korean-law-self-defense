@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "처분 당시 법령등과 특별규정의 구체적 내용은 제공되지 않았습니다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조제2항",
+    "필수 사실: 당사자의 신청 및 처분 당시 법령등 적용이 곤란한 특별한 사정",
+    "예외: 법령등에 특별한 규정이 있는 경우"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "당사자의 신청이 있었다는 사실이 제시되었습니다.",
+      "evidence_excerpt": "\"party_application\": true"
+    },
+    {
+      "claim": "신법 적용이 곤란한 사정이 있다는 사실이 제시되었습니다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true"
+    },
+    {
+      "claim": "제14조제2항은 신법 적용이 곤란한 특별한 사정을 예외로 정합니다.",
+      "evidence_excerpt": "처분 당시의 법령등을 적용하기 곤란한 특별한 사정이 있는 경우"
+    }
+  ]
+}

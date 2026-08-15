@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "약관은 피보험자가 고의로 자신을 해친 경우를 면책사유로 정한다.",
+    "원심은 자유로운 의사결정을 할 수 없는 상태를 인정하기 어렵다고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "피보험자의 자살이 보험금 면책사유에 해당하는지 여부",
+    "심신상실 등 자유로운 의사결정 불능 예외의 적용 여부",
+    "보험금청구권의 발생 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-014",
+  "supported_facts": [
+    {
+      "claim": "소외인은 투신하여 사망하였다.",
+      "evidence_excerpt": "오피스텔 15층에서 투신하여 사망하였다."
+    },
+    {
+      "claim": "약관은 의사결정 불능 상태의 자해를 예외로 한다.",
+      "evidence_excerpt": "심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우에는 보험금을 지급한다."
+    },
+    {
+      "claim": "원심은 원고들의 청구를 받아들이지 않았다.",
+      "evidence_excerpt": "원고들의 보험금청구를 받아들이지 않았다."
+    }
+  ]
+}

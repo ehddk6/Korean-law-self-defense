@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원고들은 재채점 후 추가합격자로 발표되어 최종 합격하였다.",
+    "원고들은 추가합격자 실무교육을 마쳤다.",
+    "기록에는 원고별 불합격 기간의 구체적 재산상 손해 또는 위자료 발생 사실이 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "세무사 자격시험 채점의 일관성 부족과 채점기준 변경이 위법한지",
+    "최초 불합격 처분의 위법성과 재채점·추가합격의 법적 효과",
+    "시험기관 및 국가의 손해배상책임 성립 요건",
+    "원고별 과락과 채점 오류 사이의 인과관계 및 손해 입증"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-003",
+  "supported_facts": []
+}

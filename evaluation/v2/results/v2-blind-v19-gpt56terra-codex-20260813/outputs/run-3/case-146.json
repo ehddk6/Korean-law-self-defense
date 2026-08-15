@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "특별규정의 원문·적용시점·적용대상이 제공되지 않아 제14조의 원칙 또는 예외를 확정할 수 없다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "행정기본법 제14조 각 항은 특별규정이 있는 경우를 예외로 둔다.",
+    "특별규정이 있다고 주장되나 원문이 제공되지 않았다.",
+    "특별규정의 내용 확인 없이는 시간적 적용 결론을 낼 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정의 존재가 주장되지만 원문이 없다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    },
+    {
+      "claim": "각 원칙에는 특별규정 예외가 있다.",
+      "evidence_excerpt": "법령등에 특별한 규정이 있는 경우를 제외하고는"
+    }
+  ]
+}

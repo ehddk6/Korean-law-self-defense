@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결하였다.",
+    "FP 인턴십 제도는 실습교육과 현장 경험을 거쳐 인력을 양성하는 사업계획이다.",
+    "기록에는 보수 지급, 근무시간 통제, 업무지휘 등 근로자성 판단 사실이 제공되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약의 형식에도 원고가 근로기준법상 근로자에 해당하는지",
+    "FP·PSM·AM 업무의 실제 내용이 사용자 종속관계를 보여 주는지",
+    "실습교육과 현장경험을 통한 인력양성 제도가 근로제공의 대가성과 독립성을 어떻게 평가하게 하는지",
+    "원고의 지점별 직무 변경이 근로계약 또는 위촉관계의 계속성과 법적 성질에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 보험설계사 위촉계약 후 FP, PSM, AM으로 근무하였다.",
+      "evidence_excerpt": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후, 2010. 7. 5.부터 참가인의 TRI○○지점에서 FP로 근무하였고"
+    }
+  ]
+}

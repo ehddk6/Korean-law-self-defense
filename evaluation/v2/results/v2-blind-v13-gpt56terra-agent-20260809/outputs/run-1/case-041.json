@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "사기죄 성립에 일반적·전형적으로 위계 업무방해가 수반되는 경우라면 별도 업무방해죄 성립이 제한될 수 있다.",
+    "업무방해행위가 사기죄에서 별도로 고려되지 않을 만큼 경미하면 별도 법익 침해가 부정될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사기죄와 위계에 의한 업무방해죄의 죄수: 두 죄가 구성요건과 보호법익을 달리하여 대출사기와 별도로 업무방해죄가 성립하는지가 쟁점이며, 기록은 별도 법익 침해를 인정한다.",
+    "업무방해의 독자성: 대출금 교부 전후의 일련의 위계행위가 은행의 대출심사 및 대출금 환수 심사 전반을 방해하여 사기죄에 부수되는 경미한 행위가 아닌지가 쟁점이며, 기록은 경미하지 않다고 한다."
+  ],
+  "outcome": "convicted",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-041",
+  "supported_facts": []
+}

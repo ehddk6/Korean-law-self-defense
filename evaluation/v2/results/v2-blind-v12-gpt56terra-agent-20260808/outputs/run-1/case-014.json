@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "약관은 “피보험자가 고의로 자신을 해친 경우”를 보험금 부지급 사유로 정한다.",
+    "원심은 소외인이 “자유로운 의사결정을 할 수 없는 상태에서 자살하였다고 인정하기 어렵다”고 판단하였다.",
+    "원심은 원고들의 보험금청구를 받아들이지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "피보험자의 고의 자해 면책조항 적용 여부",
+    "심신상실 등 자유로운 의사결정을 할 수 없는 상태의 예외 적용 여부",
+    "자살에 대한 사망보험금 지급청구권의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-014",
+  "supported_facts": []
+}

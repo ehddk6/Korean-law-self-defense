@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "개정 후에도 위원장은 의결권이 제한되는 것으로 기재되어 있다.",
+    "인사위원회 구성 인원은 조직개편에 따라 변경되었다.",
+    "취업규칙은 위원장을 제척 대상에서 예외로 정하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "징계요청권자와 인사위원회 위원장의 겸임이 징계절차의 공정성을 침해하는지",
+    "위원장 의결권 제한이 제척 예외에 따른 불이익을 완화하는지",
+    "인사규정과 취업규칙 개정이 근로자 기득이익의 불이익 변경인지",
+    "불이익 변경에 필요한 근로자 집단의 동의 또는 절차가 갖추어졌는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-067",
+  "supported_facts": [
+    {
+      "claim": "취업규칙은 위원장을 제척 대상에서 예외로 하는 단서를 신설하였다.",
+      "evidence_excerpt": "위원장은 제척 대상에서 예외로 하되 의결권은 제한한다."
+    }
+  ]
+}

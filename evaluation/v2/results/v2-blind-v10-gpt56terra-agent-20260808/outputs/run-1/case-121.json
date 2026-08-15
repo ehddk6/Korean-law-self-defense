@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "관계가 개정 전 시작되었다는 사실만으로 적용법을 확정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "계속 중인 법률관계에 대한 신법 적용 여부",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": []
+}

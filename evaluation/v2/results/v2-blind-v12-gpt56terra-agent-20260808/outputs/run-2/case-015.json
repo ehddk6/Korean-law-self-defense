@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "청약서에 입원 및 질병의심소견을 표시하지 않고 아니오라고 답변하였다.",
+    "보험계약 체결 전 급성 신우신염으로 입원치료를 받았다.",
+    "보험자는 미고지를 이유로 보험계약 해지를 통지하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험계약 체결 전 알릴 의무 위반 여부",
+    "입원치료 및 진료의뢰서 발급 사실의 고지 대상성",
+    "고지의무 위반을 이유로 한 보험계약 해지의 효력",
+    "보험사고와 미고지 사실의 관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-015",
+  "supported_facts": [
+    {
+      "claim": "소외 1은 계약 전 입원치료를 받았다.",
+      "evidence_excerpt": "2019. 11. 14.부터 2019. 11. 25.까지 급성 신우신염으로 △△△병원에서 입원치료"
+    },
+    {
+      "claim": "보험자는 계약 해지를 통지하였다.",
+      "evidence_excerpt": "이 사건 보험계약을 해지한다는 통지를 하였고"
+    }
+  ]
+}

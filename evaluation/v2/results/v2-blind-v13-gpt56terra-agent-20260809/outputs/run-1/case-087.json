@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "세무조사 결과 소외 3 회사의 부담세액이 실제발생소득의 15%에 미달한다고 통보되었다.",
+    "조세심판원은 유보소득 배당간주 규정 적용 관련 나머지 심판청구를 기각하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "소외 3 회사가 말레이시아 조세특례로 실제발생소득의 15% 미만 세액을 부담하여 구 국제조세조정법 제17조 제1항의 특정외국법인 유보소득 배당간주 규정 적용 대상인지",
+    "원고와 소외 3 회사 사이에 유보소득 배당간주 규정 적용을 위한 특수관계가 성립하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-087",
+  "supported_facts": []
+}

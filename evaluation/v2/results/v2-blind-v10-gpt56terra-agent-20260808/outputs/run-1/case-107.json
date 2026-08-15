@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "조회 화면에는 ‘내부직원 개인정보 사적 활용 금지’ 경고문이 표시되어 있었다.",
+    "피고인은 피해자들로부터 별도의 동의를 받지 않고 휴대전화번호를 고소장에 기재하여 수사기관에 제출하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "경찰 내부 직원조회로 취득한 휴대전화번호가 ‘업무상 알게 된 개인정보’인지",
+    "고소장에 휴대전화번호를 기재하여 수사기관에 제출한 행위가 개인정보 누설 또는 권한 없는 유출인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-107",
+  "supported_facts": []
+}

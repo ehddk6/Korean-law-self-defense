@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "미얀마에서 기독교도들의 통상적 종교활동은 어느 정도 허용되었다.",
+    "원고는 2004년 이전 복음 전도 활동으로 별다른 박해를 받은 적이 없다.",
+    "CNF 지원과 군인들의 사후 추적에 관한 구체적 증거 및 신빙성 판단이 기록 일부만으로 충분히 확인되지 않는다."
+  ],
+  "citations": [
+    "난민인정신청을 하였다.",
+    "난민인정을 불허하는 이 사건 처분"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "친족 기독교인 목사의 종교행사가 난민법상 박해 우려를 발생시키는지",
+    "군인의 행사 중단·폭행·체포와 원고 도피가 개별적 박해 위험을 뒷받침하는지",
+    "종교활동과 CNF·CNA 관련 반정부 활동의 연계 의심이 박해 사유가 되는지",
+    "난민 해당성에 관한 입증책임이 충족되는지"
+  ],
+  "outcome": "granted",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-112",
+  "supported_facts": [
+    {
+      "claim": "원고는 난민인정신청을 하였다.",
+      "evidence_excerpt": "난민인정신청을 하였다."
+    },
+    {
+      "claim": "군인들은 신도 일부를 폭행하거나 체포하였다.",
+      "evidence_excerpt": "신도들 중 일부를 폭행하거나 체포하기도 하였다."
+    }
+  ]
+}

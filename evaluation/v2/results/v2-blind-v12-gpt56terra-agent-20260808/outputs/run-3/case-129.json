@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "제163조 제1호의 3년 시효는 1년 이내의 기간으로 정한 이자 채권에 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "issues": [
+    "1년 이내 정기 지급 이자 채권의 3년 단기소멸시효",
+    "권리행사 가능일부터의 기산",
+    "연 단위 기간의 만료일 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "supported_facts": [
+    {
+      "claim": "1년 이내 정기 지급 이자 채권의 권리행사 가능일이 특정되고 중단이 없다.",
+      "evidence_excerpt": "\"interest_due_within_one_year\": true, \"interruption\": false, \"right_exercisable_date\": \"2026-05-10\""
+    }
+  ]
+}

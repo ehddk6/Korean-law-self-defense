@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "1차 징계 전 통보 누락이 중대한 절차규정 위반이었다는 사정이 있다.",
+    "행정청이 재심의를 요구한 뒤 별도 교원징계위원회가 해임을 의결하였다.",
+    "성적 수치심과 불쾌감을 주는 발언이라는 비위 내용이 중징계 사유를 뒷받침한다."
+  ],
+  "citations": [
+    "중대한 절차규정 위반이라는 이유로"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "1차 징계처분의 절차위반 효과",
+    "구 사립학교법 제66조의2에 따른 재심의 요구의 적법성",
+    "재심의 후 해임처분의 처분성 및 적법성",
+    "비위사실과 해임의 비례원칙"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-116",
+  "supported_facts": [
+    {
+      "claim": "행정청은 해임을 요구하였다.",
+      "evidence_excerpt": "원고에 대한 중징계(해임)를 요구하였다."
+    },
+    {
+      "claim": "교원징계위원회는 1차로 정직 2개월을 의결하였다.",
+      "evidence_excerpt": "원고에 대하여 정직 2개월의 징계를 의결하였다"
+    }
+  ]
+}

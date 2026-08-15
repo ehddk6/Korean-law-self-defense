@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "피고인은 CCTV 영상을 휴대전화로 촬영하였다.",
+    "공소외 2는 권한 없이 피고인이 이용하도록 영상을 제공한 것으로 공소사실에 기재되어 있다.",
+    "피고인은 도박 신고 여부를 확인하려는 목적으로 영상을 제공받았다."
+  ],
+  "citations": [
+    "구 「개인정보 보호법」 제71조 제5호"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "CCTV 영상 시청·촬영이 개인정보 제공받기에 해당하는지 여부",
+    "개인정보 지배·관리권 이전 여부",
+    "부정한 목적의 개인정보 제공받기",
+    "구 개인정보 보호법 위반 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-103",
+  "supported_facts": [
+    {
+      "claim": "피고인은 CCTV 영상을 시청하고 촬영하였다.",
+      "evidence_excerpt": "이를 자신의 휴대전화기의 동영상 기능을 이용하여 촬영하였다."
+    },
+    {
+      "claim": "영상 시청으로도 개인정보 지배·관리권을 이전받을 수 있다.",
+      "evidence_excerpt": "지득함으로써 지배·관리권을 이전받은 경우에도"
+    },
+    {
+      "claim": "대법원은 개인정보 제공받기 해당 가능성을 제시하였다.",
+      "evidence_excerpt": "개인정보를 제공받은 행위에 해당할 수 있다."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "adverse_points": [
+    "제1 영장의 범죄 혐의사실은 장물취득 및 도박장개설 관련이었다.",
+    "제1 영장 집행 중 치과병원 동업계약서와 임대차계약서를 압수하였다.",
+    "제2 영장 후 휴대전화를 다시 디지털포렌식한 흔적은 찾아볼 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "휴대전화 전자정보 탐색의 영장 범위 준수 여부",
+    "별건 증거 발견 후 제2 영장 집행의 적법성",
+    "전자정보 및 출력물의 증거능력",
+    "위법수집증거의 2차적 증거인 피고인 진술의 증거능력",
+    "사무장병원 운영에 따른 의료법 위반 및 사기죄 성립"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-045",
+  "supported_facts": [
+    {
+      "claim": "제1 영장은 장물취득 및 도박장개설 혐의에 관한 것이었다.",
+      "evidence_excerpt": "장물인 포르쉐 카이엔 1대"
+    },
+    {
+      "claim": "검찰은 별건 관련 계약서를 압수하였다.",
+      "evidence_excerpt": "‘치과병원 동업계약서’와 ‘부동산임대차계약서’"
+    },
+    {
+      "claim": "원심은 제1심 유죄판결을 유지하였다.",
+      "evidence_excerpt": "이 사건 공소사실을 유죄로 판단한 제1심판결을 그대로 유지하였다."
+    }
+  ]
+}

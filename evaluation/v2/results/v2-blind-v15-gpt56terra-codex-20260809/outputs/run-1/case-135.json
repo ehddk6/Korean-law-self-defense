@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "거소지 특별재판적의 구체적 사실은 제공되지 않았다."
+  ],
+  "citations": [
+    "제8조(거소지 또는 의무이행지의 특별재판적) 재산권에 관한 소를 제기하는 경우에는 거소지 또는 의무이행지의 법원에 제기할 수 있다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제8조.",
+    "필수 사실: 재산권 청구이고 의무이행지가 알려져 있다.",
+    "예외: 조문상 거소지도 선택 가능한 특별재판적이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "place-of-performance-special-forum",
+  "scenario_id": "case-135",
+  "supported_facts": [
+    {
+      "claim": "재산권 청구이다.",
+      "evidence_excerpt": "\"property_claim\": true"
+    },
+    {
+      "claim": "의무이행지가 알려져 있다.",
+      "evidence_excerpt": "\"place_of_performance_known\": true"
+    }
+  ]
+}

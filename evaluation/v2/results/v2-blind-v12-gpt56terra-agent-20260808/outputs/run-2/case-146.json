@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "제14조 각 항은 특별규정이 있는 경우를 예외로 한다.",
+    "특별규정의 원문이 없어 예외 적용 여부를 판단할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "시간적 적용 특별규정의 존재 및 내용"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되었으나 그 내용이 제공되지 않았다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    }
+  ]
+}

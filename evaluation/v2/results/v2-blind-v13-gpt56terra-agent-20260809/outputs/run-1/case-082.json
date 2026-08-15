@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "피고는 실제 사업주가 동일한 종전 법인을 폐업한 뒤 원고 법인이 동종 사업을 하거나 사업을 확장하였다고 보아 감면세액과 가산세를 부과하였다.",
+    "종전 법인의 대표이사가 원고 법인의 과점주주이고, 양 법인의 목적과 거래처가 일부 겹친다는 사정이 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "서로 다른 종전 법인과 원고 법인의 실제 사업주ㆍ사업목적ㆍ거래처가 일부 공통된다는 사정만으로, 창업중소기업 취득세 감면 배제 사유인 폐업 후 같은 종류 사업 재개 또는 사업 확장ㆍ업종 추가에 해당하는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-082",
+  "supported_facts": []
+}

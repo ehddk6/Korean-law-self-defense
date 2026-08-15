@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 제14조 제2항의 원칙·예외와 달리 정해질 수 있다.",
+    "구법을 적용한다는 결론은 조문상 명시되지 않아 적용법의 구체적 확정에는 추가 법률관계가 필요할 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청처분에서 처분 당시 법령 적용 곤란 사정의 예외"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "당사자의 신청에 따른 처분이다.",
+      "evidence_excerpt": "\"party_application\": true"
+    },
+    {
+      "claim": "처분 당시 법령 적용이 곤란한 특별한 사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true"
+    }
+  ]
+}

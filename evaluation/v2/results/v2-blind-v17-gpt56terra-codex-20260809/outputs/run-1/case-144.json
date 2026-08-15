@@ -1,0 +1,36 @@
+{
+  "adverse_points": [
+    "미성년자가 성적 침해를 당한 경우라면 성년이 될 때까지 시효가 진행되지 않는 예외가 적용될 수 있다."
+  ],
+  "citations": [
+    "제766조",
+    "제157조",
+    "제160조"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "제766조 제1항의 피해자 또는 법정대리인이 손해 및 가해자를 안 날부터 3년의 단기시효가 적용된다.",
+    "지식일이 2026-04-10으로 제시되어 있다.",
+    "제766조 제3항의 미성년 성적 침해 예외가 적용되는지에 따라 기산점이 달라질 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "손해 및 가해자 인식일",
+      "evidence_excerpt": "knowledge_date"
+    },
+    {
+      "claim": "불법행위일",
+      "evidence_excerpt": "tort_date"
+    },
+    {
+      "claim": "3년 단기시효 규정",
+      "evidence_excerpt": "피해자나 그 법정대리인이 그 손해 및 가해자를 안 날로부터 3년간"
+    }
+  ]
+}

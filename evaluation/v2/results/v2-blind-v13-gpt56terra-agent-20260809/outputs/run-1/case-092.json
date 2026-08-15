@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "인가결정에 첨부된 변제계획에는 변제기간이 “2006. 7. 25.부터 2011. 6. 25.까지 60개월간”으로 기재되어 있다.",
+    "채무자는 일부 월 납입을 하지 않았고, 원심은 15개월분 합계 3,691,920원의 납입지체를 인정하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인가결정 별지 변제계획의 변제기간이 ‘2006. 7. 25.부터 2011. 6. 25.까지’로 기재되었더라도, 회생위원 보고와 인가 전후 납입 경위상 실제 변제개시일을 2007. 7. 25.로 해석하여 변제계획 불이행 여부를 판단해야 하는지",
+    "변제개시일을 잘못 해석하여 15개월분 납입지체를 전제로 채무자가 변제계획을 이행할 수 없음이 명백하다고 보아 절차를 폐지할 수 있는지"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-092",
+  "supported_facts": []
+}

@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원고는 담보권 실행을 위한 의결권 행사와 임원 변경 권한을 포함한 위임장을 교부하였다.",
+    "피고는 1인 회사이고, 원심은 이사회 소집결의 및 대표이사 소집절차가 생략되어도 결의가 있었다고 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식근질권 설정계약에 따른 의결권 포괄위임의 유효성",
+    "담보권 실행을 위한 의결권 행사 및 경영진 교체의 허용 여부",
+    "1인 회사에서 실제 총회 개최 없이 작성된 주주총회 의사록의 효력"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-040",
+  "supported_facts": []
+}

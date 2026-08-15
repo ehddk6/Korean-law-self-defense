@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "특별규정 적용 배제 사실이 제공되지 않았다."
+  ],
+  "citations": [
+    "①채권은 10년간 행사하지 아니하면 소멸시효가 완성한다.",
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제162조 제1항의 10년 시효가 적용된다.",
+    "권리행사 가능일이 제공되었다.",
+    "특별규정 적용 여부가 제공되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권으로 제시되었다.",
+      "evidence_excerpt": "\"ordinary_claim\": true"
+    },
+    {
+      "claim": "권리행사 가능일은 2026-04-10이다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-04-10\""
+    }
+  ]
+}

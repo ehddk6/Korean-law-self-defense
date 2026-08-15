@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "정년 후 재고용은 기간제 근로자로 이루어진다.",
+    "재고용 전 1개월 휴식기간이 있다.",
+    "재고용 뒤에도 갱신 절차가 예정돼 있다."
+  ],
+  "citations": [
+    "1개월의 휴식기간을 준 후 이들을 기간제 근로자로 재고용하고 이후 갱신을 통해 만 60세까지 근무할 수 있도록 하는 제도"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "재고용 제도가 재고용기대권을 발생시키는지",
+    "부당해고 무효인 원고에게 정년 후 재고용기회가 있었는지",
+    "재고용 및 갱신 가능성의 입증책임",
+    "정년 후 임금상당액의 산정기간과 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-064",
+  "supported_facts": [
+    {
+      "claim": "피고는 재고용 제도를 시행했다.",
+      "evidence_excerpt": "이 사건 재고용 제도"
+    },
+    {
+      "claim": "선행 정년퇴직자들은 재고용됐다.",
+      "evidence_excerpt": "모두 기간제 근로자로 재고용되었으며"
+    }
+  ]
+}

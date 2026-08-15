@@ -1,0 +1,39 @@
+{
+  "adverse_points": [
+    "기독교도들의 통상적 종교활동은 어느 정도 허용된다고 기재되어 있다.",
+    "원고는 2004년 이전 복음 전도 활동으로 별다른 박해를 받은 적이 없다.",
+    "정부 차원의 강압적 개종 운동은 대부분 사라지는 추세라고 기재되어 있다."
+  ],
+  "citations": [
+    "난민인정신청을 하였다.",
+    "난민인정을 불허하는 이 사건 처분"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원고의 종교 및 친족 정체성이 난민 인정 사유에 해당하는지",
+    "종교행사 중 군인의 개입과 폭행·체포가 개별적 박해 위험을 뒷받침하는지",
+    "CNF 지원 정황이 반정부활동 연계 위험을 높이는지",
+    "가족에 대한 행방 추적이 귀국 시 박해 가능성을 뒷받침하는지",
+    "난민인정 요건 및 입증책임이 충족되는지"
+  ],
+  "outcome": "granted",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-112",
+  "supported_facts": [
+    {
+      "claim": "원고는 목사로 활동하였다.",
+      "evidence_excerpt": "교회의 목사로 활동하던"
+    },
+    {
+      "claim": "군인들이 종교행사를 중단시켰다.",
+      "evidence_excerpt": "무력으로 행사를 중단시키고"
+    },
+    {
+      "claim": "원고 가족에게 행방을 물었다.",
+      "evidence_excerpt": "지속적으로 원고의 행방을 물었고"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "식별자를 출력에 재노출할 위험"
+  ],
+  "citations": [
+    "모델 분석 전에 모든 식별자를 토큰으로 치환하라."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "입력 개인정보의 비식별 처리 여부"
+  ],
+  "outcome": null,
+  "required_action": "pii-redacted-before-analysis",
+  "rule_answer": null,
+  "scenario_id": "case-159",
+  "supported_facts": []
+}

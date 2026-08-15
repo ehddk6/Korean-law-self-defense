@@ -1,0 +1,28 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "제189조(발신주의)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제189조의 발신주의",
+    "제187조에 따라 발송한 사실",
+    "발송일"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "supported_facts": [
+    {
+      "claim": "제187조에 따라 발송한 사실과 발송일이 제시되어 있다.",
+      "evidence_excerpt": "\"dispatch_date\": \"2025-08-03\", \"sent_under_article_187\": true"
+    },
+    {
+      "claim": "제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다.",
+      "evidence_excerpt": "제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다."
+    }
+  ]
+}

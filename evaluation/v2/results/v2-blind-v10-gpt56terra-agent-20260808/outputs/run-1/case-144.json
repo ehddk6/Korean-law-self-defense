@@ -1,0 +1,26 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "피해자와 가해자를 안 날부터 3년의 단기시효",
+    "기간 초일 불산입",
+    "특별규정 적용 사실 없음"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "피해자와 가해자를 안 날은 2026-04-10이다.",
+      "evidence_excerpt": "\"knowledge_date\": \"2026-04-10\""
+    },
+    {
+      "claim": "시효 중단 사실은 없다.",
+      "evidence_excerpt": "\"interruption\": false"
+    }
+  ]
+}

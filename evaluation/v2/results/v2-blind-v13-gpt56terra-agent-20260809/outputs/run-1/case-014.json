@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "약관은 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태에서 자신을 해친 경우 보험금을 지급하는 예외를 둔다.",
+    "기록에는 자살 당시의 정신상태를 뒷받침하거나 반박하는 구체적 의료자료가 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "고의 자해 면책조항 적용: 소외인의 투신 사망이 약관상 ‘피보험자가 고의로 자신을 해친 경우’에 해당하여 보험금 지급이 면책되는지가 쟁점이다.",
+    "심신상실 등 예외 적용: 자살 당시 소외인이 자유로운 의사결정을 할 수 없는 상태였는지가 쟁점이며, 원심은 이를 인정하기 어렵다고 보아 원고들의 보험금청구를 받아들이지 않았다."
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-014",
+  "supported_facts": []
+}

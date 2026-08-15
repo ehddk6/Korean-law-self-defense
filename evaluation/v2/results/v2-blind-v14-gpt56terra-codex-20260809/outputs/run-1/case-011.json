@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원심은 소외 1의 과실비율을 10%로 인정하였다.",
+    "원고는 소외 1의 과실비율이 20%라는 전제에서 피고에게 금원을 지급하였다고 주장하였다.",
+    "원고와 피고 사이에는 자동차보험 구상금분쟁심의에 관한 상호협정이 존재한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "자동차보험 구상금분쟁심의 상호협정에 따른 보험금 정산의 법률상 원인",
+    "사고 과실비율 변경이 이미 지급된 책임보험금의 반환청구에 미치는 영향",
+    "원고가 피고에게 지급할 의무 없는 금원을 지급하였는지",
+    "부당이득반환청구에서 이득·손실·법률상 원인 부존재의 입증"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-011",
+  "supported_facts": []
+}

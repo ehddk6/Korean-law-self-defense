@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "원고는 장애인 고용부담금을 손금에 산입하지 않고 법인세를 신고·납부하였다.",
+    "피고는 장애인 고용부담금을 손금불산입 대상 공과금으로 보았다.",
+    "기록에는 원심 및 대법원의 판단이 제시되지 않는다."
+  ],
+  "citations": [
+    "구 법인세법 제21조 제5호"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장애인 고용부담금의 법인세법상 손금산입 여부",
+    "장애인 고용부담금이 제재성 공과금인지 여부",
+    "법인세 경정청구 거부처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-072",
+  "supported_facts": [
+    {
+      "claim": "원고는 법인세 환급을 구하는 경정청구를 하였다.",
+      "evidence_excerpt": "법인세의 각 환급을 구하는 경정청구"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "신법 적용 곤란 사정이 인정되므로 처분 당시 법령 적용 원칙은 예외될 수 있으나, 대체 적용법은 제공된 사실만으로 특정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신법 적용이 곤란한 특별사정",
+    "신청처분 적용법의 예외"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": []
+}

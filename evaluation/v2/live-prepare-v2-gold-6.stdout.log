@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "result": {
+    "applied": 120,
+    "changed": 0
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "4ae2fd19eaa581970d5f74b27042083eba11a7e281857193ed8c611f76c94977"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-076-080.json",
+    "output_sha256": "81c6e51e40fa112621a237fe56374e9730a4c84555fa87f8f384bb7933e7fbad",
+    "reviewed": 5,
+    "approved": 5,
+    "rejected": [],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-091-095.json",
+    "output_sha256": "78954921c653e41b9a8446dee18b6a5e275975b33ac0d9b4252932a23251e64e",
+    "reviewed": 5,
+    "approved": 4,
+    "rejected": [
+      "case-093"
+    ],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": false,
+  "error": "ValueError",
+  "message": "gold review 해시가 manifest와 다릅니다: case-106:source_sha256"
+}

@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "손해 및 가해자를 안 날이 확인되면 제766조 제1항의 3년 단기시효를 계산할 수 있으며, 제766조 제2항의 불법행위일 기준 10년 제한도 별도로 검토될 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제766조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제766조 제1항의 단기시효는 피해자 또는 법정대리인이 손해 및 가해자를 안 날부터 진행한다.",
+    "인식일이 제시되지 않아 단기시효 만료일을 확정할 수 없다.",
+    "불법행위일은 제시되어 있으나 단기시효의 기산일은 아니다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "supported_facts": [
+    {
+      "claim": "단기시효에는 인식일이 필요하다.",
+      "evidence_excerpt": "피해자나 그 법정대리인이 그 손해 및 가해자를 안 날로부터 3년간"
+    },
+    {
+      "claim": "인식일은 제시되지 않았다.",
+      "evidence_excerpt": "\"knowledge_date\": null"
+    }
+  ]
+}

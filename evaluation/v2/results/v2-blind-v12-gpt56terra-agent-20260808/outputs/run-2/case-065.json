@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "참가인 2는 성과급 재분배를 주도한 것으로 원심이 판단하였다.",
+    "참가인 2는 특정감사를 거부하고 방해한 것으로 원심이 판단하였다.",
+    "원심은 제시된 징계사유가 모두 정당하다고 판단하였다."
+  ],
+  "citations": [
+    "대법원 2016. 1. 28. 선고 [CASE_NUMBER_001] 판결",
+    "대법원 2020. 6. 25. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "파면 처분에서 징계사유의 특정 및 정당성",
+    "경영평가 성과급 재분배 금지명령의 적법성",
+    "감사 거부·방해가 성실의무 위반인지 여부",
+    "파면 징계의 정당성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-065",
+  "supported_facts": [
+    {
+      "claim": "원심은 성과급 재분배 주도가 징계사유라고 보았다.",
+      "evidence_excerpt": "‘정관에 따른 명령을 위반한 경우’에 해당한다"
+    },
+    {
+      "claim": "원심은 파면 사유가 정당하다고 판단하였다.",
+      "evidence_excerpt": "모두 정당한 징계사유에 해당한다고 판단하였다."
+    }
+  ]
+}

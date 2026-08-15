@@ -1,0 +1,35 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-08T09:55:16+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "confidence": {
+        "after": "medium",
+        "before": "high"
+      },
+      "required_action": {
+        "after": null,
+        "before": "변경법이 비위반화 또는 제재기준 완화에 해당하는지와 특별규정 존재 여부를 확인"
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "applicable-law"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 2,
+    "removed_unverified_citations": 1,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-136"
+}

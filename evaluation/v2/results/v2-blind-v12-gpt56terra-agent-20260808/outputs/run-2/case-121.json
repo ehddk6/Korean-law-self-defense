@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "법률관계가 효력 발생 전 완성·종결되었는지는 제시되지 않았다.",
+    "계속 중이라는 사실만으로 적용법이 확정되지는 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "계속 중인 법률관계에 대한 신법 적용 여부",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 개정 후에도 계속되었다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    }
+  ]
+}

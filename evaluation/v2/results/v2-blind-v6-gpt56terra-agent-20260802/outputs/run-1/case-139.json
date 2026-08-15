@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "계약일은 권리행사 가능일과 일치한다고 볼 수 없다.",
+    "부작위를 목적으로 하는 채권이면 위반행위 시점이 별도 기산점이 될 수 있다."
+  ],
+  "citations": [
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다.",
+    "②부작위를 목적으로 하는 채권의 소멸시효는 위반행위를 한 때로부터 진행한다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제166조 제1항에 따라 권리행사 가능일이 시효 기산점이다.",
+    "권리행사 가능일이 제공되지 않았다.",
+    "적용되는 시효기간 및 특별규정도 제공되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일은 2025-04-10이다.",
+      "evidence_excerpt": "\"contract_date\": \"2025-04-10\""
+    },
+    {
+      "claim": "권리행사 가능일은 제공되지 않았다.",
+      "evidence_excerpt": "\"right_exercisable_date\": null"
+    }
+  ]
+}

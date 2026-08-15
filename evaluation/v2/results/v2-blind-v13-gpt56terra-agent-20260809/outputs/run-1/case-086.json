@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "원고의 영세율 적용 주장은 원심에서 배척되었다.",
+    "환급창구운영사업자는 면세판매자를 대리하여 환급 또는 송금하는 사업자이므로, 그 용역을 단순 대리·환급업무로 볼 여지가 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "환급창구운영사업자가 외국관광객에게 세액상당액을 먼저 지급하고 면세판매자로부터 다음 달 25일경 정산받으며 수수료를 받는 용역이 금전대부업과 유사한 용역으로 부가가치세 면세 대상인지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-086",
+  "supported_facts": []
+}

@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "특별규정 원문이 제14조의 원칙 또는 예외를 달리 정할 수 있으므로, 주장만으로는 시간적 적용을 확정할 수 없다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "제14조 각 항은 법령등에 특별한 규정이 있는 경우를 예외로 둔다.",
+    "특별규정이 주장되었으나 원문이 제공되지 않아 그 적용 요건과 효과를 확인할 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되었으나 제시되지 않았다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    },
+    {
+      "claim": "제14조는 특별규정이 있는 경우를 예외로 둔다.",
+      "evidence_excerpt": "법령등에 특별한 규정이 있는 경우를 제외하고는"
+    }
+  ]
+}

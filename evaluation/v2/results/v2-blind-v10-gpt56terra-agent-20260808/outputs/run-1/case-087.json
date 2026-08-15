@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "세무조사 결과 소외 3 회사가 말레이시아 세법에 따라 부담한 세액이 실제발생소득의 15%에 미달한다고 판단되었다.",
+    "피고는 소외 3 회사의 배당 가능한 유보소득을 원고가 배당받은 것으로 간주하여 법인세를 경정ㆍ고지하였다.",
+    "조세심판원은 유보소득 배당간주 규정 적용 관련 나머지 심판청구를 기각하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 「국제조세조정에 관한 법률」 제17조 제1항의 특정외국법인 유보소득 배당간주 규정 적용 여부",
+    "‘부담세액’이 법정 기준을 초과하는지",
+    "소외 3 회사 관련 특수관계 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-087",
+  "supported_facts": [
+    {
+      "claim": "소외 3 회사는 국제조달센터로 지정되어 도매업 소득 과세를 면제받았다.",
+      "evidence_excerpt": "소외 3 회사는 석유화학제품의 수출기업으로서 2006년경 말레이시아 정부로부터 국제조달센터(International Procurement Center)로 지정되어 [CASE_NUMBER_001]년간 도매업 소득에 대한 과세를 면제받게 되었다."
+    },
+    {
+      "claim": "원고는 이 사건 처분의 취소를 구하는 소를 제기하였다.",
+      "evidence_excerpt": "그 취소를 구하는 이 사건 소를 제기하였다."
+    }
+  ]
+}

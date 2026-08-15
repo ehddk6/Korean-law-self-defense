@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "불법행위일로부터 10년의 제766조 제2항 장기기간은 별도로 문제될 수 있으나, 단기시효의 기산일은 지식일 없이는 확정할 수 없다."
+  ],
+  "citations": [
+    "제766조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "제766조 제1항의 단기시효는 피해자 또는 법정대리인이 손해 및 가해자를 안 날부터 진행한다.",
+    "knowledge_date가 null로 제시되어 단기시효의 기산일과 만료일을 확정할 수 없다.",
+    "미성년 성적 침해의 경우 제766조 제3항의 진행정지 예외가 적용될 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "supported_facts": [
+    {
+      "claim": "지식일 미제시",
+      "evidence_excerpt": "knowledge_date"
+    },
+    {
+      "claim": "불법행위일 제시",
+      "evidence_excerpt": "tort_date"
+    },
+    {
+      "claim": "단기시효 기산점 규정",
+      "evidence_excerpt": "피해자나 그 법정대리인이 그 손해 및 가해자를 안 날로부터 3년간"
+    }
+  ]
+}

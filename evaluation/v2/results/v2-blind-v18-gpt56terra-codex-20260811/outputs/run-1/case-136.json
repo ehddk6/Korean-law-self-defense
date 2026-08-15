@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "특별규정이 있거나 변경법이 위반행위를 더 이상 위반으로 보거나 제재처분 기준을 가볍게 한 경우에는 기준 법령이 달라질 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조",
+    "③ 법령등을 위반한 행위의 성립과 이에 대한 제재처분은 법령등에 특별한 규정이 있는 경우를 제외하고는 법령등을 위반한 행위 당시의 법령등에 따른다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제3항",
+    "위반행위 당시 법령 적용 원칙",
+    "특별규정의 예외",
+    "변경법에 따른 위반성 또는 제재기준 변경의 단서"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": [
+    {
+      "claim": "위반행위 후 법이 바뀌었다.",
+      "evidence_excerpt": "law_changed_after_violation"
+    },
+    {
+      "claim": "제재처분이 문제된다.",
+      "evidence_excerpt": "sanction"
+    }
+  ]
+}

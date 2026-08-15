@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "채무초과 상태에서 점포임차보증금 2천만 원을 양도하여 \"부인권 대상이 될 수 있는 점\"이 있다.",
+    "아파트 매도 후 남은 약 1,870만 원의 사용처에 관한 소명자료가 없다.",
+    "청산가치에 반영되지 않은 금액이 총변제예정액보다 커 반영 시 상당한 변제율 상승이 예상된다.",
+    "아파트 처분 후 6개월도 되지 않아 개인회생신청을 하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생절차가 채권자 일반의 이익에 적합하지 아니한 때의 판단",
+    "개시신청 전 재산처분과 부인권 대상 가능성이 개시신청 기각사유가 되는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-094",
+  "supported_facts": []
+}

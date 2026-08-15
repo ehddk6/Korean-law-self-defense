@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "순자산가액에서 공제되는 부채는 회사가 종국적으로 부담하여 이행할 것이 확실한 채무여야 한다.",
+    "원심은 과세관청의 공적 견해표명, 원고들의 신뢰 및 무귀책을 인정하지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "비상장주식 순자산가치 산정에서 성공불융자금 채무가 상속개시일 당시 회사가 종국적으로 부담하여 이행할 것이 확실한 확정채무로서 공제되는지",
+    "성공불융자금 채무가 불확정인 경우 관련 이자비용을 2012 내지 2014 사업연도 손금에 산입할 수 있는지",
+    "과세관청이 성공불융자금 채무를 확정채무로 보겠다는 공적 견해표명을 하여 신뢰보호원칙이 적용되는지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-090",
+  "supported_facts": []
+}

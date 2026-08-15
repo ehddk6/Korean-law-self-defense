@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "재산분할청구권은 청구인의 재산에 영향을 미친다.",
+    "원고 파산관재인이 위자료와 재산분할청구에 관하여 소송수계신청을 하였고 제1심이 이를 허가하였다."
+  ],
+  "citations": [
+    "대법원 1981. 3. 10. 선고 80다1895 판결",
+    "대법원 2019. 4. 25. 선고 [CASE_NUMBER_002], [ACCOUNT_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "파산선고를 받은 배우자의 이혼에 따른 재산분할청구권이 파산재단에 속하는지",
+    "파산관재인의 위자료·재산분할청구 일부 소송수계가 적법한지"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-052",
+  "supported_facts": [
+    {
+      "claim": "기록은 이혼에 따른 재산분할청구권이 채무자의 책임재산에 해당한다고 보기 어렵다고 설명한다.",
+      "evidence_excerpt": "구체적으로 권리가 발생하였다고 할 수 없어 채무자의 책임재산에 해당한다고 보기 어렵고"
+    }
+  ]
+}

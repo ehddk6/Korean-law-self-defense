@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "보증금반환채권을 양수한 원고가 경매절차에서 우선변제권에 따른 배당요구를 하여 보증금 일부를 배당받은 점",
+    "임차인이 우선변제권을 먼저 선택하여 경매절차에서 배당요구를 한 점"
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "우선변제권 행사 후 일부만 배당받은 주택임차인의 대항력 존속",
+    "보증금반환채권을 양수한 금융기관의 배당 후 임차주택 양수인에 대한 임대차 존속 주장 가능 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-028",
+  "supported_facts": []
+}

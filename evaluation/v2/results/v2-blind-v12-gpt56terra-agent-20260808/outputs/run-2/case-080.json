@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 상병과 업무의 인과관계를 부정하였다.",
+    "기록은 원고의 구체적 업무부담 및 발병 직전 상황을 완결하여 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "뇌내출혈과 업무 사이의 상당인과관계",
+    "요양급여 불승인처분의 적법성",
+    "업무상 질병 인정 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-080",
+  "supported_facts": [
+    {
+      "claim": "원고는 생산관리·운전·배송 업무를 수행하였다.",
+      "evidence_excerpt": "생산관리, 운전 및 배송, 거래업체 관리 등 업무를 수행"
+    },
+    {
+      "claim": "원고는 뇌내출혈 진단을 받았다.",
+      "evidence_excerpt": "상세불명 대뇌반구의 뇌내출혈"
+    },
+    {
+      "claim": "피고는 요양불승인처분을 하였다.",
+      "evidence_excerpt": "요양불승인처분"
+    }
+  ]
+}

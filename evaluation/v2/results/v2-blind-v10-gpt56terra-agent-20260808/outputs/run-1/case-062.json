@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "과업지시서의 고용승계 조항은 용역업체에 관한 문구로 기재되어 있다.",
+    "정규직 전환은 최소 수준의 전환심사를 거치도록 마련되었다.",
+    "참가인은 합의서 제출을 거부하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "자회사 정규직 전환 과정에서 근로계약 체결이 거부된 근로자에게 채용 또는 고용승계 기대권이 인정되는지",
+    "단속적 근로조건 합의서 제출 요구와 이를 거부한 근로자의 미채용이 정당한지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-062",
+  "supported_facts": []
+}

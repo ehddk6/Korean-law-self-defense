@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "서울행정법원은 이 사건 전보발령이 정당하다고 판단하였고, 관련 판결은 확정되었다.",
+    "기록에는 여러 차례의 업무지시 거부와 장시간 전화통화·인터넷 검색이 해고사유로 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "확정된 전보 관련 판단 이후 시스템관리팀 업무지시 거부를 해고사유로 삼을 수 있는지",
+    "반복된 업무지시 거부와 근무태만을 이유로 한 해고의 정당성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-063",
+  "supported_facts": []
+}

@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "특별규정의 존재·내용 및 효력발생일이 제공되지 않았다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조제1항 적용",
+    "효력발생 전 완성·종결 여부",
+    "특별규정 확인"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 효력발생일 후에도 계속된다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    }
+  ]
+}

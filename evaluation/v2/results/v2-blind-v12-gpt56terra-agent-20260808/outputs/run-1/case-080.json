@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 상병과 업무의 인과관계를 인정하지 않았다.",
+    "원고는 운전 중 차에서 내려 쓰러진 것으로 발견되었다.",
+    "기록상 원고의 구체적 직전 업무내용은 일부만 제시되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이 사건 뇌내출혈과 업무 사이의 상당인과관계",
+    "요양급여 불승인처분의 적법성",
+    "쓰러지기 직전 업무부담 또는 업무상 과로의 존재 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-080",
+  "supported_facts": [
+    {
+      "claim": "원고는 생산관리, 운전·배송 및 거래업체 관리 업무를 수행했다.",
+      "evidence_excerpt": "생산관리, 운전 및 배송, 거래업체 관리 등 업무를 수행함"
+    },
+    {
+      "claim": "원고는 2022년 12월 15일 차량 운전 중 쓰러졌다.",
+      "evidence_excerpt": "차량 운전 중 차에서 내려 쓰러지는 모습 발견"
+    },
+    {
+      "claim": "원고는 상세불명 대뇌반구의 뇌내출혈 진단을 받았다.",
+      "evidence_excerpt": "상세불명 대뇌반구의 뇌내출혈"
+    },
+    {
+      "claim": "피고는 요양불승인처분을 했다.",
+      "evidence_excerpt": "피고, 요양불승인처분"
+    }
+  ]
+}

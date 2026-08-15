@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "경영진단보고서는 인력축소 방안을 제시했다.",
+    "희망퇴직으로 다수의 생산직 근로자가 퇴직했다.",
+    "노동위원회는 긴박한 경영상 필요와 해고회피노력을 인정했다."
+  ],
+  "citations": [
+    "쟁점은 이 사건 정리해고가 근로기준법 제24조에 따른 정리해고의 요건 중 긴박한 경영상 필요성 요건을 갖추었는지이다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로기준법 제24조상 긴박한 경영상 필요성이 있었는지",
+    "경영진단보고서가 해고 당시의 인력감축 필요성을 뒷받침하는지",
+    "희망퇴직과 임원·사무직 조치가 해고회피 노력인지",
+    "해고대상자 선정기준이 합리적이고 공정한지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-068",
+  "supported_facts": [
+    {
+      "claim": "경영진단보고서는 인력축소 방안을 제시했다.",
+      "evidence_excerpt": "1개조 65명으로 축소 운영하는 방안"
+    },
+    {
+      "claim": "생산직 근로자들이 희망퇴직했다.",
+      "evidence_excerpt": "137명의 생산직 근로자가 희망퇴직으로 사직하였다."
+    }
+  ]
+}

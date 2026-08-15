@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "특별규정의 존재·내용이 제시되지 않아 계속 중인 법률관계에 관한 별도 경과규정을 배제할 수 없다."
+  ],
+  "citations": [
+    "행정기본법",
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조 제1항.",
+    "필수 사실: 개정 법령의 효력발생일과 법률관계의 완성·종결 여부.",
+    "예외: 법령등의 특별규정 존재 및 내용."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계는 개정 후에도 계속된다.",
+      "evidence_excerpt": "relation_continues_after_effective_date"
+    },
+    {
+      "claim": "제14조 제1항은 효력발생 전 완성 또는 종결된 관계의 적용을 정한다.",
+      "evidence_excerpt": "완성되거나 종결된 사실관계 또는 법률관계"
+    }
+  ]
+}

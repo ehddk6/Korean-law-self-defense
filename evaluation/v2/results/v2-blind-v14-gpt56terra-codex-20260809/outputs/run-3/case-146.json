@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "시간적 적용에 관한 특별규정의 원문이 제공되지 않았다.",
+    "특별규정이 적용되는 사실관계와 적용 시점이 제공되지 않았다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 행정기본법 제14조.",
+    "필수 사실: 주장된 시간적 적용 특별규정의 원문, 적용 대상 및 효력 발생 시점.",
+    "예외: 법령등에 특별한 규정이 있는 경우 제14조의 각 원칙과 예외의 적용이 달라질 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되었으나 제공되지 않았다고 제시되었다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    },
+    {
+      "claim": "제14조는 특별한 규정이 있는 경우를 제외한다.",
+      "evidence_excerpt": "법령등에 특별한 규정이 있는 경우를 제외하고는"
+    }
+  ]
+}

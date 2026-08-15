@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "혼인무효 사건에는 자백에 관한 민사소송법 규정이 적용되지 않는다.",
+    "혼인생활 중 일부 사정만으로 혼인신고 당시 혼인의사가 없었다고 단정할 수 없다.",
+    "외국인 배우자의 경우 언어·문화·관습 차이를 고려해야 한다.",
+    "구체적인 혼인신고 경위 및 당사자의 혼인의사 관련 사실이 제공되지 않았다."
+  ],
+  "citations": [
+    "민법 제815조 제1호",
+    "가사소송법 제12조",
+    "대법원 2010. 6. 10. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민법 제815조 제1호상 혼인의 합의 부존재 여부",
+    "혼인무효와 이혼 사유의 구별",
+    "혼인무효 사건에서 법원의 직권조사 의무",
+    "외국인 배우자의 혼인의사 판단 기준"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-060",
+  "supported_facts": []
+}

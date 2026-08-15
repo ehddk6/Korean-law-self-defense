@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "해당 법령등에 특별규정이 있는지 제공되지 않았다.",
+    "신법이 실제로 적용 가능한 변경된 법령인지 구체적 내용이 제공되지 않았다."
+  ],
+  "citations": [
+    "제14조",
+    "③ 법령등을 위반한 행위의 성립과 이에 대한 제재처분은 법령등에 특별한 규정이 있는 경우를 제외하고는 법령등을 위반한 행위 당시의 법령등에 따른다. 다만, 법령등을 위반한 행위 후 법령등의 변경에 의하여 그 행위가 법령등을 위반한 행위에 해당하지 아니하거나 제재처분 기준이 가벼워진 경우로서 해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제3항 단서의 경한 제재처분 기준 적용",
+    "위반행위 후 법령 변경 여부",
+    "변경된 법령의 제재처분 기준 경감 여부",
+    "해당 법령등의 특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재가 문제 되고 이후 법령의 제재 기준이 가벼워졌다.",
+      "evidence_excerpt": "\"later_law_lighter\": true, \"sanction\": true"
+    }
+  ]
+}

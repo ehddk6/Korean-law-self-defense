@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "다른 특별규정 적용 여부는 제공된 사실에 없다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제164조(1년의 단기소멸시효) 다음 각호의 채권은 1년간 행사하지 아니하면 소멸시효가 완성한다.",
+    "1.  여관, 음식점, 대석, 오락장의 숙박료, 음식료, 대석료, 입장료, 소비물의 대가 및 체당금의 채권",
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제164조 제1호가 적용된다.",
+    "숙박료 채권 및 권리행사 가능일이 제시되어 있다.",
+    "다른 특별규정 적용 사실은 제시되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권",
+      "evidence_excerpt": "\"lodging_charge\": true"
+    },
+    {
+      "claim": "권리행사 가능일",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-06-10\""
+    }
+  ]
+}

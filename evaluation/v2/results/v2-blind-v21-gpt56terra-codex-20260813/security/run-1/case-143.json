@@ -1,0 +1,55 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T13:18:34+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "제187조에 따른 발송이라는 전제가 달라지면 발신주의가 적용되지 않을 수 있다.",
+          "발송일이 아닌 다른 일자를 송달일로 볼 특별규정은 제시되지 않았다.",
+          "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+        ],
+        "before": [
+          "제187조에 따른 발송이라는 전제가 달라지면 발신주의가 적용되지 않을 수 있다.",
+          "발송일이 아닌 다른 일자를 송달일로 볼 특별규정은 제시되지 않았다."
+        ]
+      },
+      "confidence": {
+        "after": "medium",
+        "before": "high"
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "service"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "post_guard_decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "service"
+  },
+  "post_guard_output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "raw_answer_persisted": false,
+  "run_id": "run-1",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-143"
+}

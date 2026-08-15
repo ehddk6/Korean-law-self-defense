@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "이 사건 인도 소송에서 원고 전부 패소판결이 확정되었다.",
+    "피고는 가압류 집행 취소를 신청하면서 가압류 청구금액을 해방공탁하였다.",
+    "원고는 이 사건 소와 인도 소송을 모두 제기하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "피고 선박 및 국내 영업활동을 근거로 대한민국 법원의 국제재판관할권이 인정되는지",
+    "피고 재산 소재지 특별재판적이 국제재판관할의 실질적 관련성을 뒷받침하는지",
+    "동일 손해배상청구에 관한 인도 외국판결의 효력과 국내 소송의 관계",
+    "당사자 공평·재판의 적정·신속·효율·판결 실효성의 관할 이익 형량"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-010",
+  "supported_facts": []
+}

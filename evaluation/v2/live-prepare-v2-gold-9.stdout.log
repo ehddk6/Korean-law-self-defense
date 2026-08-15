@@ -1,0 +1,105 @@
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-076-080.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\distill-v2-106-110.json",
+    "reviewed": 5,
+    "model": "gpt-5.6-sol",
+    "attempts": 1
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "applied": 120,
+    "changed": 10
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "sealed": 180,
+    "manifest_sha256": "e2fe6cb8e6b95a58ca471a56ca2ecca2cd8ed8773e01f21ab67b18f2883fed20"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-076-080.json",
+    "output_sha256": "3adafe493c812e4a696b7bcb06e17195e4d9f3ecf30bd462682fd9fb6d3d4fe5",
+    "reviewed": 5,
+    "approved": 5,
+    "rejected": [],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "output_path": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\reviews\\gold-v2-106-110.json",
+    "output_sha256": "edcd94f451ea534d760ca59bd4d3afc7343669c13c459b73f727303561c1ca77",
+    "reviewed": 5,
+    "approved": 5,
+    "rejected": [],
+    "reviewer_id": "reviewer-b-v2",
+    "reviewer_model": "gpt-5.6-sol"
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "approved": 180,
+    "bundle": "C:\\Users\\ehddk\\OneDrive\\문서\\법 2\\evaluation\\v2\\gold-review-bundle.json",
+    "reviewers": [
+      "reviewer-a-v2",
+      "reviewer-b-v2"
+    ]
+  }
+}
+{
+  "ok": true,
+  "result": {
+    "evaluation_version": 2,
+    "scenario_count": 180,
+    "status_counts": {
+      "complete": 180
+    },
+    "kind_counts": {
+      "masked-official-decision": 120,
+      "applicable-law": 6,
+      "transitional-provision": 6,
+      "service": 6,
+      "limitation": 6,
+      "jurisdiction": 6,
+      "fabricated-citation": 6,
+      "prompt-injection": 6,
+      "ocr-corruption": 6,
+      "pii-leakage": 6,
+      "conflicting-evidence": 6
+    },
+    "split_counts": {
+      "development": 126,
+      "holdout": 54
+    },
+    "complete_count": 180,
+    "missing_required_files": [],
+    "invalid_official_sources": [],
+    "invalid_expected_records": [],
+    "invalid_hashes": [],
+    "invalid_gold_reviews": [],
+    "gold_review_cycle": "v2-approved",
+    "v2_cycle_valid": true,
+    "corpus_ready": true,
+    "v1_certified": false,
+    "certification_reason": "v1 certification 파일이 없습니다."
+  }
+}

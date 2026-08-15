@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "직접 제공받지 않은 경우에도 법정 요건 충족 여부는 제공 경위와 인식에 달려 있다.",
+    "영리 또는 부정한 목적이 요구된다.",
+    "업무상 알게 된 개인정보가 누설되거나 권한 없이 이용되도록 제공된 사정을 알았어야 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 보호법 제71조 제5호 후단의 개인정보 제공받은 자의 범위",
+    "개인정보처리자 등으로부터 직접 제공받아야 하는지",
+    "불법 제공 사정에 대한 인식 요건",
+    "영리 또는 부정한 목적의 요건"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-102",
+  "supported_facts": [
+    {
+      "claim": "직접 제공이 아니어도 제공받은 자에 해당할 수 있다는 법리가 제시되어 있다.",
+      "evidence_excerpt": "개인정보를 처리하거나 처리하였던 자로부터 직접 개인정보를 제공받지 아니하더라도 개인정보 보호법 제71조 제5호의 ‘개인정보를 제공받은 자’에 해당된다고 볼 것이다."
+    }
+  ]
+}

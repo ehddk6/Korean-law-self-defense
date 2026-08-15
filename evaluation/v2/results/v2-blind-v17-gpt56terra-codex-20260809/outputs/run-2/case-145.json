@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "청구가 부동산에 관한 소가 아니거나 해당 부동산 소재지가 그 법원 관할에 속하지 않으면 이 특별재판적은 적용되지 않을 수 있다."
+  ],
+  "citations": [
+    "제20조(부동산이 있는 곳의 특별재판적)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제20조는 부동산에 관한 소의 소재지 특별재판적을 허용한다.",
+    "부동산 관련 청구와 부동산 소재지가 명시되어 있다.",
+    "청구가 부동산에 관한 소인지가 적용 요건이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "supported_facts": [
+    {
+      "claim": "부동산 관련 소는 부동산 소재지 법원에 제기할 수 있다.",
+      "evidence_excerpt": "부동산에 관한 소를 제기하는 경우에는 부동산이 있는 곳의 법원에 제기할 수 있다."
+    }
+  ]
+}

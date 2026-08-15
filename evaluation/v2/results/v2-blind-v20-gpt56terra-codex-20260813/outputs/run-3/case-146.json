@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "주장된 특별규정의 원문과 적용 범위에 따라 제14조의 일반원칙이 배제되거나 수정될 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 행정기본법 제14조 제1항부터 제3항.",
+    "필수 사실: 시간적 적용에 관한 특별규정의 정확한 원문, 적용대상 및 시행시점.",
+    "예외: 각 항은 법령등에 특별한 규정이 있는 경우를 예외로 둔다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되나 제공되지 않았다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    },
+    {
+      "claim": "특별규정은 일반원칙의 예외이다.",
+      "evidence_excerpt": "법령등에 특별한 규정이 있는 경우를 제외하고는"
+    }
+  ]
+}

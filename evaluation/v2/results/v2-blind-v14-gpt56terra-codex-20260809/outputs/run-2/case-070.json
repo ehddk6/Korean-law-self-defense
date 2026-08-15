@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후",
+    "대학교 졸업예정자와 졸업자 등을 모집하고 실습교육을 실시한 다음 현장 경험을 거쳐",
+    "보험인원 모집 및 관리업무를 하는 매니저 직급"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약에도 근로기준법상 근로자성이 인정되는지",
+    "FP·PSM·AM 업무의 실질적 종속관계 여부",
+    "실습교육 및 현장 경험을 통한 양성 계획이 근로관계 판단에 미치는 영향",
+    "근로자성 주장에 관한 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 보험설계사 위촉계약을 체결하였다.",
+      "evidence_excerpt": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "원고는 PSM 및 AM으로 근무하였다.",
+      "evidence_excerpt": "2011. 12. 1.부터 참가인의 TRI△△지점에서 PSM(Pro Sales Manager, 보험인원 모집 및 관리업무를 하는 매니저 직급)으로 근무하였으며, 2013. 7. 1.부터는 참가인의 □□지점 등에서 AM(Assistant Manager, 지점장의 업무를 보조하는 총무 직급)으로 근무하였다."
+    }
+  ]
+}

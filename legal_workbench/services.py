@@ -5,7 +5,8 @@ from pathlib import Path
 from typing import Any
 
 from .models import CaseStage, STAGE_ORDER, utc_now
-from .security import atomic_json_write
+from .documents import create_docx, create_hwpx, create_pdf
+from .security import atomic_json_write, scan_prompt_injection, scan_residual_pii
 from .workflow import store_for
 
 
@@ -417,6 +418,53 @@ def list_services() -> list[dict[str, Any]]:
     return [SERVICES[key].to_dict() for key in sorted(SERVICES)]
 
 
+DIRECT_SERVICE_TYPES_BY_DOMAIN: dict[str, frozenset[str]] = {
+    "real-estate-lease-registration": frozenset(
+        {
+            "case-management",
+            "civil-complaint",
+            "demand-letter",
+            "evidence-plan",
+            "hearing-prep",
+            "legal-consultation",
+            "legal-opinion",
+            "legal-research-memo",
+            "mediation-arbitration",
+            "negotiation-plan",
+            "payment-order-small-claim",
+            "provisional-relief",
+            "settlement-analysis",
+        }
+    )
+}
+
+
+def service_catalog_for_case(case_id: str, *, worksets_home: Path | None = None) -> list[dict[str, Any]]:
+    """Describe every supported workflow without inventing case-specific inputs."""
+    store = store_for(case_id, worksets_home)
+    case = store.get_case()
+    current = CaseStage(case["stage"])
+    direct_types = DIRECT_SERVICE_TYPES_BY_DOMAIN.get(str(case.get("domain") or ""), frozenset())
+    entries: list[dict[str, Any]] = []
+    for service_type, spec in sorted(SERVICES.items()):
+        stage_ready = STAGE_ORDER.index(current) >= STAGE_ORDER.index(spec.minimum_stage)
+        case_fit = "direct" if service_type in direct_types else "additional-case-facts-required"
+        entries.append(
+            {
+                **spec.to_dict(),
+                "stage_ready": stage_ready,
+                "case_fit": case_fit,
+                "status": "plan-ready" if stage_ready else "blocked-by-stage",
+                "note": (
+                    "현재 사건의 사실관계에 직접 적용할 수 있는 업무 설계 묶음입니다."
+                    if case_fit == "direct"
+                    else "이 임대차 사건과는 다른 사실관계가 필요합니다. 가상 사실을 추가해 결론을 만들지 않습니다."
+                ),
+            }
+        )
+    return entries
+
+
 def build_service_bundle(
     case_id: str,
     service_type: str,
@@ -452,3 +500,363 @@ def build_service_bundle(
     destination = store.case_dir / "bundles" / f"service-{service_type}.json"
     atomic_json_write(destination, payload)
     return destination
+
+
+def build_all_service_bundles(case_id: str, *, worksets_home: Path | None = None) -> dict[str, Any]:
+    """Create planning bundles for every catalogued service allowed by the current stage."""
+    store = store_for(case_id, worksets_home)
+    catalog = service_catalog_for_case(case_id, worksets_home=worksets_home)
+    generated: list[dict[str, Any]] = []
+    blocked: list[dict[str, Any]] = []
+    for item in catalog:
+        if item["stage_ready"]:
+            path = build_service_bundle(case_id, item["service_type"], worksets_home=worksets_home)
+            generated.append(
+                {
+                    "service_type": item["service_type"],
+                    "case_fit": item["case_fit"],
+                    "path": str(path),
+                }
+            )
+        else:
+            blocked.append(
+                {
+                    "service_type": item["service_type"],
+                    "minimum_stage": item["minimum_stage"],
+                }
+            )
+    payload = {
+        "format": "legal-workbench-service-catalog-v1",
+        "case_id": case_id,
+        "case_stage": store.get_case()["stage"],
+        "services": catalog,
+        "generated": generated,
+        "blocked": blocked,
+        "warning": "업무 설계 묶음은 초안 준비용입니다. 사실과 증거가 없는 다른 사건을 대신 만들어 주지 않습니다.",
+        "created_at": utc_now(),
+    }
+    destination = store.case_dir / "bundles" / "service-catalog.json"
+    atomic_json_write(destination, payload)
+    return {"path": str(destination), "generated": generated, "blocked": blocked}
+
+
+def draft_service_catalog(
+    case_id: str,
+    *,
+    formats: list[str],
+    worksets_home: Path | None = None,
+) -> dict[str, Path]:
+    """Create a usable service map that does not turn missing facts into legal conclusions."""
+    store = store_for(case_id, worksets_home)
+    case = store.get_case()
+    catalog = service_catalog_for_case(case_id, worksets_home=worksets_home)
+    direct = [item for item in catalog if item["case_fit"] == "direct"]
+    other = [item for item in catalog if item["case_fit"] != "direct"]
+    lines = [
+        "# 이 프로젝트로 할 수 있는 일",
+        "",
+        "> 이 문서는 현재 사건에서 도구가 만들 수 있는 초안과, 다른 사건에서 추가 사실이 필요한 업무를 구분한 안내서입니다.",
+        "",
+        "## 현재 사건에서 바로 쓸 수 있는 기능",
+        f"현재 사건: {case['title']}",
+        "아래 기능은 이 사건의 저장된 사실·증거·쟁점·공식 근거를 바탕으로 초안 준비에 사용할 수 있습니다.",
+    ]
+    for item in direct:
+        lines.extend(
+            [
+                f"## {item['label']}",
+                item["purpose"],
+                "- 만들 수 있는 산출물: " + ", ".join(item["deliverables"]),
+                "- 먼저 필요한 자료: " + ", ".join(item["required_inputs"]),
+                "- 주의할 점: " + ", ".join(item["special_gates"]),
+            ]
+        )
+    lines.extend(["", "## 프로젝트가 지원하지만 현재 임대차 사건에는 바로 적용하지 않는 기능"])
+    lines.append("아래 기능도 지원하지만, 이 사건과 다른 사실이 필요합니다. 없는 사실을 꾸며 문서를 만들지 않습니다.")
+    for item in other:
+        lines.extend(
+            [
+                f"## {item['label']}",
+                item["purpose"],
+                "- 만들 수 있는 산출물: " + ", ".join(item["deliverables"]),
+                "- 새 사건에서 먼저 필요한 자료: " + ", ".join(item["required_inputs"]),
+            ]
+        )
+    lines.extend(
+        [
+            "",
+            "## 이 도구가 하지 않는 일",
+            "- 변호사 명의 사용, 법정 출석, 서명, 제출, 결제, 상대방이나 기관에 자동 연락하기",
+            "- 사실이나 증거가 없는 내용을 사실처럼 만들기",
+            "- 최신 공식 근거 확인 없이 확정적인 법률 결론 내리기",
+        ]
+    )
+    markdown = "\n".join(lines).strip() + "\n"
+    if scan_residual_pii(markdown):
+        raise PermissionError("기능 안내서에 비식별되지 않은 개인정보 패턴이 남아 있습니다.")
+    if scan_prompt_injection(markdown):
+        raise PermissionError("기능 안내서에 실행 지시 형태의 텍스트가 남아 있습니다.")
+    destination_dir = store.case_dir / "guides"
+    destination_dir.mkdir(parents=True, exist_ok=True)
+    base = destination_dir / "project-capabilities"
+    paths: dict[str, Path] = {}
+    md_path = base.with_suffix(".md")
+    md_path.write_text(markdown, encoding="utf-8", newline="\n")
+    paths["md"] = md_path
+    for fmt in formats:
+        normalized = fmt.lower()
+        if normalized == "docx":
+            paths["docx"] = create_docx(markdown, base.with_suffix(".docx"), title="이 프로젝트로 할 수 있는 일")
+        elif normalized == "pdf":
+            paths["pdf"] = create_pdf(markdown, base.with_suffix(".pdf"), title="이 프로젝트로 할 수 있는 일")
+        elif normalized == "hwpx":
+            paths["hwpx"] = create_hwpx(markdown, base.with_suffix(".hwpx"), title="이 프로젝트로 할 수 있는 일")
+        elif normalized != "md":
+            raise ValueError(f"지원하지 않는 출력 형식: {fmt}")
+    return paths
+
+
+def draft_service_output(
+    case_id: str,
+    service_type: str,
+    *,
+    formats: list[str],
+    worksets_home: Path | None = None,
+) -> dict[str, Path]:
+    """Create a case-facing work document for one supported service type."""
+    bundle_path = build_service_bundle(case_id, service_type, worksets_home=worksets_home)
+    store = store_for(case_id, worksets_home)
+    case = store.get_case()
+    spec = SERVICES[service_type]
+    direct_types = DIRECT_SERVICE_TYPES_BY_DOMAIN.get(str(case.get("domain") or ""), frozenset())
+    markdown = _service_draft_markdown(
+        case=case,
+        spec=spec,
+        facts=store.list_payloads("facts"),
+        evidence=store.list_payloads("evidence"),
+        issues=store.list_payloads("issues"),
+        deadlines=store.list_payloads("deadlines"),
+        opinion=(store.list_payloads("opinions") or [None])[-1],
+        bundle_path=bundle_path,
+        directly_applicable=service_type in direct_types,
+    )
+    if scan_residual_pii(markdown):
+        raise PermissionError("업무 초안에 비식별되지 않은 개인정보 패턴이 남아 있습니다.")
+    if scan_prompt_injection(markdown):
+        raise PermissionError("업무 초안에 실행 지시 형태의 텍스트가 남아 있습니다.")
+    destination_dir = store.case_dir / "service-drafts"
+    destination_dir.mkdir(parents=True, exist_ok=True)
+    base = destination_dir / service_type
+    paths: dict[str, Path] = {}
+    md_path = base.with_suffix(".md")
+    md_path.write_text(markdown, encoding="utf-8", newline="\n")
+    paths["md"] = md_path
+    for fmt in formats:
+        normalized = fmt.lower()
+        if normalized == "docx":
+            paths["docx"] = create_docx(markdown, base.with_suffix(".docx"), title=spec.label)
+        elif normalized == "pdf":
+            paths["pdf"] = create_pdf(markdown, base.with_suffix(".pdf"), title=spec.label)
+        elif normalized == "hwpx":
+            paths["hwpx"] = create_hwpx(markdown, base.with_suffix(".hwpx"), title=spec.label)
+        elif normalized != "md":
+            raise ValueError(f"지원하지 않는 출력 형식: {fmt}")
+    return paths
+
+
+def draft_all_service_outputs(
+    case_id: str,
+    *,
+    formats: list[str],
+    worksets_home: Path | None = None,
+) -> dict[str, Any]:
+    """Create a safe work document for every service currently allowed by the stage gate."""
+    catalog = service_catalog_for_case(case_id, worksets_home=worksets_home)
+    generated: list[dict[str, Any]] = []
+    blocked: list[dict[str, Any]] = []
+    for item in catalog:
+        if not item["stage_ready"]:
+            blocked.append({"service_type": item["service_type"], "minimum_stage": item["minimum_stage"]})
+            continue
+        paths = draft_service_output(
+            case_id,
+            item["service_type"],
+            formats=formats,
+            worksets_home=worksets_home,
+        )
+        generated.append(
+            {
+                "service_type": item["service_type"],
+                "case_fit": item["case_fit"],
+                "paths": {key: str(value) for key, value in paths.items()},
+            }
+        )
+    return {"generated": generated, "blocked": blocked}
+
+
+def _service_draft_markdown(
+    *,
+    case: dict[str, Any],
+    spec: ServiceSpec,
+    facts: list[dict[str, Any]],
+    evidence: list[dict[str, Any]],
+    issues: list[dict[str, Any]],
+    deadlines: list[dict[str, Any]],
+    opinion: dict[str, Any] | None,
+    bundle_path: Path,
+    directly_applicable: bool,
+) -> str:
+    lines = [
+        f"# {spec.label}",
+        "",
+        "> 사용자 검토용 초안입니다. 실제 서명·제출·발송·결제·상대방 연락은 사용자가 직접 해야 합니다.",
+        "",
+        "## 이 문서의 목적",
+        spec.purpose,
+        "",
+        "## 현재 사건",
+        f"- 사건: {case['title']}",
+        f"- 기준일: {case.get('as_of_date') or '확인 필요'}",
+        f"- 업무 묶음: {bundle_path.name}",
+    ]
+    if not directly_applicable:
+        lines.extend(
+            [
+                "",
+                "## 현재 사건에는 바로 적용하지 않음",
+                "이 사건은 임대차보증금 반환 분쟁입니다. 이 업무는 다른 종류의 사실관계가 있어야 하므로, 없는 사실을 만들어 실질적인 법률 문서를 작성하지 않았습니다.",
+                "",
+                "## 새 사건에서 먼저 확인할 자료",
+            ]
+        )
+        for item in spec.required_inputs:
+            lines.append(f"- {item}")
+        lines.extend(["", "## 만들 수 있는 산출물"])
+        for item in spec.deliverables:
+            lines.append(f"- {item}")
+        lines.extend(["", "## 사용 전 주의"])
+        for item in spec.special_gates:
+            lines.append(f"- {item}")
+        return "\n".join(lines).strip() + "\n"
+
+    lines.extend(
+        [
+            "",
+            "## 현재 자료에서 확인된 핵심 사실",
+        ]
+    )
+    for fact in facts:
+        lines.append(f"- {fact['text']}")
+    lines.extend(["", "## 현재 쟁점"])
+    for issue in issues:
+        lines.append(f"### {issue['title']}")
+        lines.append(f"- 확인할 요건: {', '.join(issue.get('legal_elements') or ['확인 필요'])}")
+        lines.append(f"- 입증할 사람: {issue.get('burden') or '확인 필요'}")
+        if issue.get("missing_facts"):
+            lines.append("- 아직 확인할 사실: " + "; ".join(issue["missing_facts"]))
+    lines.extend(["", "## 이 업무에서 바로 쓸 초안"])
+    lines.extend(_direct_service_sections(spec.service_type, facts, evidence, issues, deadlines, opinion))
+    lines.extend(["", "## 이 업무가 만들 수 있는 결과"])
+    for item in spec.deliverables:
+        lines.append(f"- {item}")
+    lines.extend(["", "## 사용 전 최종 확인"])
+    for item in spec.special_gates:
+        lines.append(f"- {item}")
+    return "\n".join(lines).strip() + "\n"
+
+
+def _direct_service_sections(
+    service_type: str,
+    facts: list[dict[str, Any]],
+    evidence: list[dict[str, Any]],
+    issues: list[dict[str, Any]],
+    deadlines: list[dict[str, Any]],
+    opinion: dict[str, Any] | None,
+) -> list[str]:
+    if service_type == "demand-letter":
+        return [
+            "### 보낼 내용의 뼈대",
+            "1. 계약 종료일, 보증금 지급, 반환 요구 및 퇴거·열쇠 전달 제안 사실을 날짜 순서로 적습니다.",
+            "2. 상대방에게 보증금 반환 예정일, 공제 주장 항목별 근거, 열쇠 수령·점검 일정을 서면으로 알려 달라고 요구합니다.",
+            "3. 수리비 공제를 주장한다면 사진, 세부 견적, 실제 수리 내역과 임차인 귀책 근거를 요청합니다.",
+            "4. 주소·수신인·구체적 이행기한은 실제 원본을 확인한 뒤 사용자가 정합니다.",
+        ]
+    if service_type == "evidence-plan":
+        return [
+            "### 증거 정리 순서",
+            "1. 계약서와 보증금 이체확인증: 계약과 지급을 보여 주는 자료로 분류합니다.",
+            "2. 내용증명·문자: 반환 요구, 다음 임차인 관련 답변, 열쇠 전달 제안을 시간순으로 정리합니다.",
+            "3. 입주·퇴거 사진 및 동영상: 원본 파일명과 촬영일이 보존되도록 복사본과 분리합니다.",
+            "4. 수리비 자료: 입주 당시 상태, 견적서, 실제 수리 여부를 각각 따로 보관합니다.",
+            "5. 열쇠 전달 자료: 재차 제안, 수령 거절, 제3자 입회 또는 보관 방법을 기록합니다.",
+        ]
+    if service_type == "case-management":
+        return [
+            "### 다음 할 일",
+            "1. 계약서 특약을 확인합니다.",
+            "2. 열쇠 전달 방법과 일정을 다시 제안한 기록을 남깁니다.",
+            "3. 임대인의 공제 주장에 대해 항목별 자료를 요구합니다.",
+            "4. 수집한 자료를 계약·지급·통지·퇴거·수리비의 다섯 묶음으로 나눕니다.",
+        ]
+    if service_type == "legal-consultation":
+        return [
+            "### 쉬운 답",
+            "보증금 반환을 요구할 방향은 있지만, 열쇠를 돌려줬거나 제대로 돌려주겠다고 제안했다는 자료와 수리비 공제 근거를 함께 확인해야 합니다.",
+            "### 상담 때 가져갈 자료",
+            "- 계약서 원본, 이체확인증, 내용증명, 문자 원본, 사진·동영상 원본, 열쇠 전달 관련 기록",
+        ]
+    if service_type == "legal-research-memo":
+        return [
+            "### 조사 질문",
+            "- 계약 종료 뒤 보증금 반환과 목적물 인도는 어떤 관계인지",
+            "- 임대인이 수리비를 공제하려면 무엇을 보여야 하는지",
+            "### 조사 원칙",
+            "- 유리한 근거만 찾지 않고, 임대인이 주장할 수 있는 동시이행·공제 논리도 함께 확인합니다.",
+        ]
+    if service_type == "legal-opinion":
+        return [
+            "### 현재 판단",
+            (opinion or {}).get("conclusion") or "공식 근거와 핵심 사실을 확인한 뒤 판단합니다.",
+        ]
+    if service_type == "negotiation-plan":
+        return [
+            "### 협상 목표",
+            "- 열쇠 전달·점검 일정을 확정하고, 보증금 반환일을 문서로 받는 것",
+            "- 수리비 공제 주장은 항목·근거·금액을 나눠 확인하는 것",
+            "### 양보하지 말아야 할 점",
+            "- 근거 없는 포괄 공제와 반환일 없는 약속은 구분해 기록합니다.",
+        ]
+    if service_type in {"settlement-analysis", "mediation-arbitration"}:
+        return [
+            "### 합의안을 볼 때의 기준",
+            "- 보증금 중 다툼 없는 금액과 다투는 수리비를 분리합니다.",
+            "- 열쇠 전달일, 점검 방식, 지급일, 계좌, 지연 시 처리, 추가 청구 포기 범위를 문서로 확인합니다.",
+            "- 합의 수락은 사용자가 직접 결정합니다.",
+        ]
+    if service_type in {"civil-complaint", "payment-order-small-claim"}:
+        return [
+            "### 절차 초안 전에 정리할 것",
+            "- 당사자 표시와 주소는 실명 대응표가 있는 안전한 로컬 환경에서 확인합니다.",
+            "- 청구 금액은 보증금, 인정 가능한 공제, 지연 관련 청구를 섞지 말고 구분합니다.",
+            "- 계약서, 이체확인증, 내용증명, 문자, 사진 및 열쇠 전달 자료를 증거목록으로 연결합니다.",
+            "- 관할, 송달 가능 주소, 비용과 절차 선택은 실제 제출 전 별도로 확인합니다.",
+        ]
+    if service_type == "provisional-relief":
+        return [
+            "### 보전처분 검토 전 확인",
+            "- 임대인의 재산, 긴급성, 피보전권리, 담보와 관할 자료가 현재 사건기록에는 충분하지 않습니다.",
+            "- 이 자료가 확인되기 전에는 가압류·가처분 신청의 필요성이나 가능성을 단정하지 않습니다.",
+        ]
+    if service_type == "hearing-prep":
+        return [
+            "### 30초 설명 연습",
+            "계약은 끝났고 보증금은 이미 지급했습니다. 저는 짐을 빼고 열쇠 전달과 점검을 제안했지만 상대방이 응하지 않았습니다. 수리비 공제는 입주 당시 자료와 실제 수리 근거를 확인해 달라는 입장입니다.",
+            "### 예상 질문",
+            "- 열쇠를 언제, 어떤 방법으로 전달하려 했는가?",
+            "- 입주 당시 상태를 보여 주는 원본 사진과 대화가 있는가?",
+            "- 임대인이 주장하는 수리비의 실제 지출과 손상 원인이 확인되는가?",
+        ]
+    return [
+        "### 현재 사건에 맞춘 준비",
+        "저장된 사실·증거·쟁점과 필요한 확인사항을 이 업무 목적에 맞춰 다시 정리합니다.",
+    ]

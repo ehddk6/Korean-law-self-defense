@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "통지서에는 학생들에 대한 부적절한 신체접촉 및 발언이 해고사유로 기재되어 있다.",
+    "다수의 학생들이 불쾌감이나 수치심을 느꼈다는 사실인정이 기재되어 있다.",
+    "원고가 구체적 비위행위를 이미 알고 충분히 대응할 수 있었다는 사정은 기록상 인정되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로기준법 제27조 제1항상 해고사유 서면 통지의 구체성",
+    "통지서의 축약 기재가 해고사유 특정에 충분한지",
+    "근로자가 구체적 비위행위를 알고 방어할 수 있었는지",
+    "서면 통지의 절차상 하자가 해고 효력에 미치는지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-069",
+  "supported_facts": [
+    {
+      "claim": "원심은 해고사유 서면 통지 의무 위반을 판단하였다.",
+      "evidence_excerpt": "해고사유 서면 통지 의무를 위반한 절차상 하자가 있다고 판단하였다."
+    }
+  ]
+}

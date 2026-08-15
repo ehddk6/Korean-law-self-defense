@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "학생들이 실제로 거절·반항하기 어려웠다는 개별 상황의 직접 증거가 기록에 충분히 드러나지 않는다.",
+    "각 신체접촉이 성적 수치심을 일으키는 추행에 해당하는지와 접촉의 정도·경위가 다투어질 수 있다.",
+    "학부모 주소가 ‘담임교사로서’ 이용할 수 있었던 개인정보인지와 이용 목적의 위법성이 추가로 심리될 필요가 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "교사와 학생 사이 관계가 위계에 해당하는지",
+    "각 신체접촉과 발언이 추행에 해당하는지",
+    "피해자별 행위의 특정 및 진술 신빙성",
+    "학부모 주소를 내용증명 발송과 위임에 이용한 행위의 개인정보 보호법 위반 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-109",
+  "supported_facts": [
+    {
+      "claim": "피고인은 담임교사였다고 기재되어 있다.",
+      "evidence_excerpt": "담임교사로 근무하면서"
+    },
+    {
+      "claim": "피해자들 진술과 영상자료가 증거로 열거되어 있다.",
+      "evidence_excerpt": "각 영상녹화CD, 속기록"
+    }
+  ]
+}

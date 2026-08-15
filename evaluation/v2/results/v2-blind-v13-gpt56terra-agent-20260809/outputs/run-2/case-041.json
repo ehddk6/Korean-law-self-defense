@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "제공된 기록에는 피고인의 구체적 위계행위, 기망·대출금 교부 사실, 원심의 죄수 판단 및 상고심 결론이 없다.",
+    "업무방해행위가 사기 범행에 수반되더라도 별도 법익 침해가 경미한 경우에는 별죄 성립 판단이 달라질 수 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "대출금 교부 전후의 일련의 위계행위로 은행의 대출심사 및 대출금 환수 심사 업무를 방해한 행위가 사기죄와 별도로 위계에 의한 업무방해죄를 구성하는지가 쟁점이다.",
+    "사기죄와 업무방해죄가 구성요건과 보호법익을 달리하고 업무방해가 사기에 비해 별도로 고려되지 않을 만큼 경미하지 않은 경우, 양 죄가 별도로 성립하는지가 쟁점이다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-041",
+  "supported_facts": []
+}

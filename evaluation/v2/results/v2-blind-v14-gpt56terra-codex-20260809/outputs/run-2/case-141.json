@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "위반행위 후 법령등이 변경되었다는 사실이 제공되지 않았다.",
+    "해당 법령등의 특별규정 유무와 내용이 제공되지 않았다."
+  ],
+  "citations": [
+    "다만, 법령등을 위반한 행위 후 법령등의 변경에 의하여 그 행위가 법령등을 위반한 행위에 해당하지 아니하거나 제재처분 기준이 가벼워진 경우로서 해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 제14조 제3항 단서",
+    "필수 사실: 위반행위 후 법령등 변경 여부",
+    "예외: 해당 법령등에 특별한 규정이 있는지"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재처분 사안이다.",
+      "evidence_excerpt": "sanction"
+    },
+    {
+      "claim": "후법의 제재처분 기준이 가볍다.",
+      "evidence_excerpt": "later_law_lighter"
+    }
+  ]
+}

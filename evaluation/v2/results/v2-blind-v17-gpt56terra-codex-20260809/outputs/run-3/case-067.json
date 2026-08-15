@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "위원장은 제척 대상의 예외이나 의결권이 제한된다.",
+    "조직개편에 따른 규정 변경이라는 사정이 있다.",
+    "실제 징계사건에서 공정성이 침해됐다는 사실은 기록에 없다."
+  ],
+  "citations": [
+    "‘단, 위원장은 제척 대상에서 예외로 하되 의결권은 제한한다.’"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "징계요청권자와 인사위원회 위원장의 겸임이 공정성을 해하는지",
+    "위원장의 의결권 제한이 제척 예외를 보완하는지",
+    "규정 개정이 근로자의 기득이익을 불이익하게 변경한 것인지",
+    "불이익 변경에 필요한 절차가 준수됐는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-067",
+  "supported_facts": [
+    {
+      "claim": "개정 규정은 위원장을 제척 예외로 했다.",
+      "evidence_excerpt": "위원장은 제척 대상에서 예외로 하되 의결권은 제한한다."
+    },
+    {
+      "claim": "원심은 불이익 변경이라고 판단했다.",
+      "evidence_excerpt": "근로자의 근로조건에 관한 기득이익을 불이익하게 변경한 것에 해당한다고 판단하였다."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "시행요구서와 내용증명 우편은 참가인에게 송달되지 않았다.",
+    "이 사건 계약에는 서면 시정요구를 받은 날부터 7일 내 시정하지 않는 경우 해제·해지할 수 있다고 정해져 있다.",
+    "참가인 명의 주식 중 210,000주에 관하여 소외 1과 소외 2 명의로 명의개서가 이루어졌다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식양도대금 미지급에 따른 계약 해제의 효력",
+    "시정요구 및 해제 의사표시의 도달 여부",
+    "계약 해제 후 주식 소유권의 귀속",
+    "후속 주식 명의개서와 주주총회·이사회 결의의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-033",
+  "supported_facts": []
+}

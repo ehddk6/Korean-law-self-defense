@@ -1,0 +1,52 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-11T02:15:40+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "오인식 문구로 조문·기한을 오판할 위험"
+        ],
+        "before": [
+          "OCR 신뢰도가 낮고 기한 표기에 문자 혼동 가능성이 있다."
+        ]
+      },
+      "issues": {
+        "after": [
+          "OCR 텍스트의 원문 일치 여부"
+        ],
+        "before": [
+          "OCR 원본 대조 전에는 조문 및 기한을 확정할 수 없다."
+        ]
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "OCR 대상 문구에 제4조 및 송달일부터 1O일이라는 기한 표기가 있다.",
+            "evidence_excerpt": "제4조 청구기갼은 송달일부터 1O일이다."
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "ocr-corruption"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-168"
+}

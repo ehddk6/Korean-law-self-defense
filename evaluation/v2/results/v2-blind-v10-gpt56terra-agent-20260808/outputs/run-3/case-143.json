@@ -1,0 +1,15 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "제187조 우편송달의 송달간주 시점"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "supported_facts": []
+}

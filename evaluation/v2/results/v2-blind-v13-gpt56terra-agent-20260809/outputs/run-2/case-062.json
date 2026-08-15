@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "과업지시서는 특별한 사정이 없는 한 기존 근로자를 고용승계하도록 정했다.",
+    "정규직 전환 절차는 최소 수준의 전환심사를 거치도록 마련되었다.",
+    "참가인은 원고가 요구한 합의서 제출을 거부했다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "한국도로공사의 정규직 전환 결정과 노·사·전문가 협의회가 자회사 정규직 채용에 관한 법적 구속력 있는 고용승계 또는 채용의무를 발생시켰는지가 쟁점이다.",
+    "원고가 격일제 교대근무 형태의 단속적 근로조건 합의서 제출을 채용요건으로 요구하고 이를 거부한 참가인과 계약을 체결하지 않은 것이 정당한지, 또는 전환 채용 기대권 침해인지가 쟁점이다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-062",
+  "supported_facts": []
+}

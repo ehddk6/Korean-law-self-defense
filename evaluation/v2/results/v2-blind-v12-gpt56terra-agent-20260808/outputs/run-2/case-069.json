@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "통지서에는 부적절한 신체접촉 및 발언만 축약되어 기재되었다.",
+    "통지서에는 구체적인 비위행위가 기재되어 있지 않았다.",
+    "원고가 구체적 해고사유를 알고 충분히 대응할 수 있었다고 보기 어렵다."
+  ],
+  "citations": [
+    "근로기준법 제27조 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "해고사유 서면 통지의 구체성",
+    "근로기준법 제27조 제1항 위반 여부",
+    "근로자의 방어권 보장 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-069",
+  "supported_facts": [
+    {
+      "claim": "통지서는 학생들의 불쾌감 또는 수치심을 언급한다.",
+      "evidence_excerpt": "다수의 학생들이 불쾌감이나 수치심을 느꼈고"
+    },
+    {
+      "claim": "원심은 서면 통지 의무 위반을 판단하였다.",
+      "evidence_excerpt": "해고사유 서면 통지 의무를 위반한 절차상 하자"
+    }
+  ]
+}

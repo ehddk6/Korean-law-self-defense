@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "특별규정의 원문과 내용이 제공되지 않았다.",
+    "적용 대상인 사실관계 또는 법률관계, 신청처분, 위반행위·제재처분에 관한 사실이 제공되지 않았다."
+  ],
+  "citations": [
+    "법령등에 특별한 규정이 있는 경우를 제외하고는"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 제14조",
+    "필수 사실: 적용 대상과 시간관계",
+    "예외: 시간적 적용에 관한 특별규정의 원문과 내용"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정 주장이 있으나 원문이 없다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    }
+  ]
+}

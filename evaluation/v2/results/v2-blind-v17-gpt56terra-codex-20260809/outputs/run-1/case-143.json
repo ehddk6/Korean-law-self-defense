@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "제187조에 따른 발송이라는 전제가 달라지거나 발송일이 달라지면 송달시점도 달라질 수 있다."
+  ],
+  "citations": [
+    "제189조(발신주의) 제185조제2항 또는 제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제189조는 제187조에 따른 발송의 송달시점을 발송 시점으로 정한다.",
+    "facts에 sent_under_article_187가 true 및 발송일이 제시되어 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "supported_facts": [
+    {
+      "claim": "제187조 우편송달은 발송한 때에 송달된 것으로 본다.",
+      "evidence_excerpt": "제185조제2항 또는 제187조의 규정에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다."
+    }
+  ]
+}

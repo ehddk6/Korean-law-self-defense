@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "재항고인의 채무는 신청일 기준 1년 이내에 발생한 것이고",
+    "그 채무를 부담하게 된 경위를 재항고인이 명확히 밝히지 않을 뿐만 아니라",
+    "제1심에서 이에 대한 어떠한 답변을 하지 않았다는 이유"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생절차 개시신청의 성실성 판단",
+    "신청일 기준 1년 이내 발생한 채무의 의미",
+    "채무부담경위에 관한 채무자의 소명",
+    "채권자 이의신청에 답변하지 않은 사정의 평가"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-093",
+  "supported_facts": [
+    {
+      "claim": "원심은 신청이 성실하지 않다고 판단하였다.",
+      "evidence_excerpt": "재항고인의 이 사건 신청이 성실하지 않은 경우에 해당한다고 판단하여 재항고인의 항고를 기각하였다."
+    }
+  ]
+}

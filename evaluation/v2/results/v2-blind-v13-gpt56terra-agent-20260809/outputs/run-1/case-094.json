@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "채무초과 상태에서 특정 채권자에게 점포임차보증금을 양도한 행위는 채권자들을 해하는 행위로서 부인권 대상이 될 수 있다.",
+    "청산가치에 반영되지 않은 약 1,870만 원은 변제계획안의 총변제예정액보다도 큰 금액이다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "채무초과 상태에서 특정 채권자에게 점포임차보증금 2천만 원을 양도한 행위가 부인권 대상이 될 수 있고, 이를 고려할 때 개인회생절차가 채권자 일반의 이익에 적합하지 아니한지",
+    "아파트 매도 후 남은 약 1,870만 원이 청산가치에 반영되지 않아 변제계획의 총변제예정액보다 큰 경우, 상당한 변제율 상승 가능성 때문에 개인회생절차 개시신청을 기각할 수 있는지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-094",
+  "supported_facts": []
+}

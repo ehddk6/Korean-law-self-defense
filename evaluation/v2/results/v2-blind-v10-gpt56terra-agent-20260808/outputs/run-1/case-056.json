@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "혼인생활의 파탄에 주된 책임이 있는 배우자는 파탄을 사유로 이혼을 청구할 수 없다.",
+    "상대방 배우자의 온전한 형태로의 혼인관계 회복·유지에 대한 진지한 의사가 있으면 예외 허용에 불리할 수 있다.",
+    "상대방 배우자와 자녀에 대한 보호와 배려 또는 유책성 약화가 인정되지 않으면 당초 유책성이 남을 수 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "유책배우자의 이혼청구를 예외적으로 허용할 사정이 있는지",
+    "당초 유책성이 세월의 경과와 상대방의 대처로 희석 또는 상쇄되었는지",
+    "배우자 쌍방이 혼인관계 파탄에 대한 책임을 나누어 가지는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-056",
+  "supported_facts": []
+}

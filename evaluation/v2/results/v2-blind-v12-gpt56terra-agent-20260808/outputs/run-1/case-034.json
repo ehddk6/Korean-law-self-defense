@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "주주명부상 20% 주주인 소외 1은 이 사건 경영합의에 참여하지 않았다.",
+    "특별한 사정이 없으면 주주명부상 주주만 주주권을 행사할 수 있다.",
+    "회사는 실제 주식 소유자가 따로 존재한다는 사실을 알아도 명의주주 외 사람의 주주권 행사를 인정할 수 없다.",
+    "원심은 이 사건 경영합의가 주주총회 결의의 성질과 효력을 가진다고 판단하였다."
+  ],
+  "citations": [
+    "대법원 2017. 3. 23. 선고 [CASE_NUMBER_001] 전원합의체 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주명부상 주주의 의결권 행사 주체",
+    "실질주주와 명의주주의 주주권 행사",
+    "경영합의의 주주총회 결의 효력",
+    "주주총회결의 부존재 확인의 소의 이익"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-034",
+  "supported_facts": []
+}

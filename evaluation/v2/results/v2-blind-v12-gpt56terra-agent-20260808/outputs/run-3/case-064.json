@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "피고는 원고가 고철 반출 트럭을 검문검색하지 않았다는 이유로 징계면직하였다.",
+    "원고의 정년은 만 57세로 정해져 있었다.",
+    "재고용 제도는 정년 후 1개월 휴식기간과 기간제 근로계약을 전제로 한다.",
+    "원고가 60세까지 재고용되었을 것인지에 관한 개별 심사 사정은 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "징계면직의 부당해고 해당 여부",
+    "정년 후 재고용 제도에 따른 재고용기대권",
+    "부당해고 무효와 정년 후 임금 상당 손해의 범위",
+    "재고용 제도의 일관된 운영 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-064",
+  "supported_facts": []
+}

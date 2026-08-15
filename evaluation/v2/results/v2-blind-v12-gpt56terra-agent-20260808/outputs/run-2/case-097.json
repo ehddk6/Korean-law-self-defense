@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "회생절차개시결정이 있으면 파산절차는 중지된다.",
+    "회생계획인가 후 회생절차폐지결정이 확정되면 법원은 직권으로 파산을 선고해야 할 수 있다.",
+    "회생절차 종료 전 파산선고결정을 취소하면 기왕의 파산절차가 무익해질 수 있다."
+  ],
+  "citations": [
+    "채무자회생법 제256조 제1항",
+    "채무자회생법 제6조 제8항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차개시결정에 따른 파산절차 중지",
+    "회생절차 종료 후 중지된 파산절차의 효력",
+    "회생절차 진행 중 파산선고결정 취소의 허용 여부",
+    "파산절차 이해관계인의 신뢰 및 소송경제"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-097",
+  "supported_facts": [
+    {
+      "claim": "회생절차는 파산절차보다 우선한다.",
+      "evidence_excerpt": "청산형 절차인 파산절차보다 재건형 절차인 회생절차를 우선"
+    },
+    {
+      "claim": "파산절차 이해관계인의 신뢰도 보호 대상이다.",
+      "evidence_excerpt": "파산선고에 이해관계를 가진 사람의 신뢰 역시 보호받지 못하는 결과"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "원심은 원고의 갱신기대권을 인정하기에 부족하다고 보아 피고 회사에 대한 손해배상청구를 받아들이지 않았다.",
+    "원고가 명시적으로 녹음하면 안 된다는 반대의사를 표시하였음에도 기망 또는 협박하여 녹음하였다는 사정은 발견되지 않는다.",
+    "녹음파일 및 녹취록은 노동위원회나 법원 제출 방식으로만 사용되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "기간제 근로자에게 근로계약 갱신에 대한 정당한 기대권이 인정되는지 여부",
+    "상대방 동의 없는 대화 녹음이 음성권 침해 불법행위인지 여부",
+    "노동위원회나 법원에 녹음파일·녹취록을 제출한 행위의 위법성 여부"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-007",
+  "supported_facts": []
+}

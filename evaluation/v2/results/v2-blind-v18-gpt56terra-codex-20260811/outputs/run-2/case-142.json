@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "부칙의 구체적 경과규정, 시행일 및 예외가 제공되지 않아 개정법의 소급적용 여부를 판단할 수 없다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 국세기본법 부칙의 구체적 경과규정",
+    "필수 사실: 개정 내용, 시행일, 개정 전 사실의 발생·완성 시점",
+    "예외: 부칙의 명시적 소급적용 또는 적용례 규정"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-142",
+  "supported_facts": [
+    {
+      "claim": "부칙 전문이 제공되지 않았다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    }
+  ]
+}

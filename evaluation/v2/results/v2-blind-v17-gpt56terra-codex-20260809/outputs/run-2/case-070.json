@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결하였다.",
+    "계약 명칭은 근로계약이 아니라 위촉계약이다.",
+    "지휘감독·보수·전속성에 관한 구체적 자료가 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위촉계약의 실질에 비추어 근로기준법상 근로자인지",
+    "업무수행에서 사용자의 지휘·감독이 있었는지",
+    "보수 지급 방식과 전속성이 근로자성에 미치는 영향",
+    "TRI 인력양성 제도가 근로관계 성립에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 보험설계사 위촉계약 체결 후 FP로 근무했다.",
+      "evidence_excerpt": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+    }
+  ]
+}

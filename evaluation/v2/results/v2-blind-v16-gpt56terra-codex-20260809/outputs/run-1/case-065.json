@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원심은 재분배 금지명령을 정당한 직무명령으로 판단하였다.",
+    "참가인 2는 재분배를 주도한 것으로 기재되어 있다.",
+    "특정감사에 협조할 의무를 위반하였다는 원심 판단이 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "경영평가 성과급 재분배 금지명령이 정관 및 공공기관운영법에 따른 정당한 직무명령인지",
+    "성과급 재분배 주도가 인사규정상 명령위반에 해당하는지",
+    "특정감사 거부가 복무규정상 성실의무 위반인지",
+    "파면을 정당화할 정도의 징계사유와 징계양정이 증명되었는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-065",
+  "supported_facts": [
+    {
+      "claim": "원심은 성과급 재분배 주도를 징계사유로 판단하였다.",
+      "evidence_excerpt": "2015년도 경영평가 성과급 재분배를 주도한 것은"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원심은 피고인의 수입에 관한 허위 진술을 근거로 회생계획인가결정이 이루어졌다고 판단하였다.",
+    "추가수당을 급여액에 포함하면 상환가능금액, 면제율, 잔여 채권액, 분할 변제액 등이 달라졌을 것으로 보인다."
+  ],
+  "citations": [
+    "원심은 다음과 같은 이유로 이 사건 사기의 공소사실을 유죄로 판단하였다.",
+    "결국 피고인의 수입에 관한 허위 진술을 근거로 하여 위와 같은 회생계획인가결정이 이루어진 것이다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차에서 수입을 일부 제외해 보고한 행위가 사기죄의 기망에 해당하는지",
+    "누락된 추가수당과 채무면제 사이의 인과관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-049",
+  "supported_facts": [
+    {
+      "claim": "원심은 공소사실을 유죄로 판단하였다.",
+      "evidence_excerpt": "원심은 다음과 같은 이유로 이 사건 사기의 공소사실을 유죄로 판단하였다."
+    }
+  ]
+}

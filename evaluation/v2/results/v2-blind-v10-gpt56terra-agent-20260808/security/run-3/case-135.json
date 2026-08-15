@@ -1,0 +1,35 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-08T11:07:54+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "confidence": {
+        "after": "medium",
+        "before": "high"
+      },
+      "required_action": {
+        "after": null,
+        "before": "의무이행지 법원에 소를 제기할 수 있다."
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "jurisdiction"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 1,
+    "removed_unverified_citations": 1,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-135"
+}

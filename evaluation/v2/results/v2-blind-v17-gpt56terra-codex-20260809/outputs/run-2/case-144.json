@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "미성년자의 성적 침해에 해당하는 경우에는 성년이 될 때까지 시효가 진행하지 않으며, 특별규정 또는 기산점 사실이 달라지면 만료일이 달라질 수 있다."
+  ],
+  "citations": [
+    "제766조(손해배상청구권의 소멸시효)",
+    "제160조(역에 의한 계산)"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제766조 제1항의 피해자 또는 법정대리인이 손해 및 가해자를 안 날부터 3년의 단기시효가 적용된다.",
+    "인식일이 2026-04-10으로 제시되어 있다.",
+    "제157조 및 제160조에 따라 초일을 산입하지 않고 역으로 계산한다.",
+    "제766조 제3항의 미성년자 성적 침해 예외에 관한 사실은 제시되지 않았으나, 제시된 전제에서는 적용되지 않는다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "피해자와 가해자를 안 날이 제시되었다.",
+      "evidence_excerpt": "\"knowledge_date\": \"2026-04-10\""
+    },
+    {
+      "claim": "불법행위일이 제시되었다.",
+      "evidence_excerpt": "\"tort_date\": \"2026-04-01\""
+    }
+  ]
+}

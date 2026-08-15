@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "청약서 질문은 최근 3개월 내 진찰·검사에 따른 의료행위 사실을 묻고 있다.",
+    "원고는 입원 및 질병의심소견란에 표시하지 않고 ‘아니오’라고 답변하였다.",
+    "보험자는 입원치료와 진료의뢰서 발급 사실을 알리지 않았다는 이유로 해지 통지를 하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "청약서상 계약 전 알릴 의무 질문이 이 사건 입원치료와 진료의뢰서 발급 사실을 포함하는지",
+    "원고의 ‘아니오’ 답변이 고지의무 위반에 해당하는지",
+    "보험자의 해지 통지가 고지의무 위반을 이유로 한 적법한 해지인지",
+    "고지되지 않은 의료사실과 보험사고인 만성 골수성 백혈병 사이의 관련성 및 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-015",
+  "supported_facts": []
+}

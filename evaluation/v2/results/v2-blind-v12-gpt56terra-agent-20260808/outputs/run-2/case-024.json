@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "신탁관계가 설정된 부동산에 관한 임대차계약에 한정된 법리이다.",
+    "수탁자의 사전승낙 또는 사후승인이 없으면 수탁자에게 임대차계약으로 대항할 수 없다.",
+    "중개업자의 책임은 고의 또는 과실로 재산상 손해가 발생한 경우에 문제된다."
+  ],
+  "citations": [
+    "공인중개사법 제25조 제1항 제1호",
+    "공인중개사법 제29조 제1항",
+    "대법원 2012. 8. 30. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공인중개사의 신탁부동산 임대차 중개상 조사·확인의무",
+    "신탁원부 제시 및 신탁관계의 법적 효과 설명의무",
+    "수탁자의 승낙·승인 없는 임대차의 대항력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-024",
+  "supported_facts": [
+    {
+      "claim": "중개업자는 권리관계를 조사·확인하고 설명할 의무가 있다.",
+      "evidence_excerpt": "중개대상물의 권리관계 등을 조사·확인하여 중개의뢰인에게 설명할 의무"
+    },
+    {
+      "claim": "신탁원부를 제시하여야 한다.",
+      "evidence_excerpt": "중개의뢰인에게 신탁원부를 제시하고"
+    },
+    {
+      "claim": "승낙이나 승인이 없으면 수탁자에게 대항할 수 없다.",
+      "evidence_excerpt": "수탁자에게 임대차계약으로 대항할 수 없다는 점"
+    }
+  ]
+}

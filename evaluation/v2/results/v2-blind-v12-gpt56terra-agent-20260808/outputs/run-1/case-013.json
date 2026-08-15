@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원심은 “원고와 참가인들이 보험수익자로 확정”된다고 판단하였다.",
+    "원심은 보험금청구권이 “원고에게 1/2, 참가인들에게 각 1/4씩 귀속”한다고 판단하였다.",
+    "피고는 원고와 참가인 1을 피공탁자로 하여 사망보험금을 변제공탁하였다.",
+    "원심은 피고가 “보험금지급채무를 면하게 되었다”고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "지정 사망보험수익자의 상속인 확정 시점",
+    "복수 보험수익자의 보험금청구권 귀속 비율",
+    "지정 보험수익자의 사망에 따른 보험금청구권 상속",
+    "보험자의 변제공탁 요건과 면책 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-013",
+  "supported_facts": []
+}

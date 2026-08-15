@@ -36,7 +36,15 @@ from .evaluation_runner import (
 from .gold_review_runner import run_gold_review
 from .gold_distill_runner import apply_gold_distillations, run_gold_distillation
 from .models import RiskLevel
-from .services import build_service_bundle, list_services
+from .plain_language import build_plain_language_guide
+from .services import (
+    build_all_service_bundles,
+    build_service_bundle,
+    draft_all_service_outputs,
+    draft_service_catalog,
+    draft_service_output,
+    list_services,
+)
 from .security import load_mapping
 from .workflow import (
     DOMAIN_PACKS,
@@ -119,6 +127,10 @@ def build_parser() -> argparse.ArgumentParser:
     draft.add_argument("--type", required=True, dest="document_type")
     draft.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
 
+    guide = subparsers.add_parser("guide", help="일반인용 쉬운 사건 안내서 생성")
+    guide.add_argument("--case", required=True)
+    guide.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
+
     visual_review = subparsers.add_parser("visual-review", help="렌더 이미지와 문서 해시를 시각검토 기록으로 고정")
     visual_review.add_argument("--case", required=True)
     visual_review.add_argument("--file", type=Path, required=True)
@@ -156,6 +168,18 @@ def build_parser() -> argparse.ArgumentParser:
     service_plan = service_sub.add_parser("plan", help="사건자료 기반 업무 묶음 생성")
     service_plan.add_argument("--case", required=True)
     service_plan.add_argument("--type", required=True, dest="service_type")
+    service_plan_all = service_sub.add_parser("plan-all", help="현재 단계에서 가능한 전체 업무 묶음 생성")
+    service_plan_all.add_argument("--case", required=True)
+    service_guide = service_sub.add_parser("guide", help="사건별 전체 기능 안내서 생성")
+    service_guide.add_argument("--case", required=True)
+    service_guide.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
+    service_draft = service_sub.add_parser("draft", help="업무별 사용자 검토용 초안 생성")
+    service_draft.add_argument("--case", required=True)
+    service_draft.add_argument("--type", required=True, dest="service_type")
+    service_draft.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
+    service_draft_all = service_sub.add_parser("draft-all", help="현재 단계에서 가능한 전체 업무 초안 생성")
+    service_draft_all.add_argument("--case", required=True)
+    service_draft_all.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
 
     evaluation = subparsers.add_parser("eval", help="180건 잠금 평가셋 관리")
     eval_sub = evaluation.add_subparsers(dest="eval_command", required=True)
@@ -337,6 +361,16 @@ def dispatch(args: argparse.Namespace) -> Any:
                 worksets_home=worksets,
             ).items()
         }
+    if args.command == "guide":
+        formats = args.format or ["md"]
+        return {
+            key: str(value)
+            for key, value in build_plain_language_guide(
+                args.case,
+                formats=formats,
+                worksets_home=worksets,
+            ).items()
+        }
     if args.command == "visual-review":
         return import_visual_review(args.case, load_json(args.file), worksets_home=worksets)
     if args.command == "audit":
@@ -389,6 +423,28 @@ def dispatch(args: argparse.Namespace) -> Any:
             return list_services()
         if args.service_command == "plan":
             return {"bundle": str(build_service_bundle(args.case, args.service_type, worksets_home=worksets))}
+        if args.service_command == "plan-all":
+            return build_all_service_bundles(args.case, worksets_home=worksets)
+        if args.service_command == "guide":
+            formats = args.format or ["md"]
+            return {
+                key: str(value)
+                for key, value in draft_service_catalog(args.case, formats=formats, worksets_home=worksets).items()
+            }
+        if args.service_command == "draft":
+            formats = args.format or ["md"]
+            return {
+                key: str(value)
+                for key, value in draft_service_output(
+                    args.case,
+                    args.service_type,
+                    formats=formats,
+                    worksets_home=worksets,
+                ).items()
+            }
+        if args.service_command == "draft-all":
+            formats = args.format or ["md"]
+            return draft_all_service_outputs(args.case, formats=formats, worksets_home=worksets)
     if args.command == "eval":
         if args.eval_command == "bootstrap":
             payload = write_manifest(args.manifest, replace=args.replace)

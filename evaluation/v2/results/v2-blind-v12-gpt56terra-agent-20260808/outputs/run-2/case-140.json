@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "제18조 제1항은 불법행위에 관한 소에 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "불법행위지 특별재판적"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "tort-place-special-forum",
+  "scenario_id": "case-140",
+  "supported_facts": [
+    {
+      "claim": "불법행위 청구이다.",
+      "evidence_excerpt": "\"tort_claim\": true"
+    },
+    {
+      "claim": "불법행위지를 알고 있다.",
+      "evidence_excerpt": "\"tort_place_known\": true"
+    }
+  ]
+}

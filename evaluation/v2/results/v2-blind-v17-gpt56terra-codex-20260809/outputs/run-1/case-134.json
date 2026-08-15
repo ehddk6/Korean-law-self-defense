@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "채권이 여관 등의 숙박료에 해당하지 않거나 다른 특별시효가 적용되면 기간이 달라질 수 있다."
+  ],
+  "citations": [
+    "제164조",
+    "제166조",
+    "제157조",
+    "제160조"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "제164조 제1호의 숙박료 채권 1년 단기소멸시효가 적용된다.",
+    "권리행사 가능일이 2026-06-10으로 제시되어 있다.",
+    "숙박료 채권의 성질 또는 특별규정 적용에 따라 달라질 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권 전제",
+      "evidence_excerpt": "lodging_charge"
+    },
+    {
+      "claim": "권리행사 가능일",
+      "evidence_excerpt": "right_exercisable_date"
+    },
+    {
+      "claim": "1년 단기시효 규정",
+      "evidence_excerpt": "여관, 음식점, 대석, 오락장의 숙박료"
+    }
+  ]
+}

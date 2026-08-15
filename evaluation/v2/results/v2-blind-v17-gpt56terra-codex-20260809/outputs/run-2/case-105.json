@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "비공개 조치가 된 방송에 허가 없이 접속한 사람은 제3자일 수 있다.",
+    "비정상적인 방법으로 시청·녹화했다면 감청에 해당할 수 있다.",
+    "플랫폼업체가 부여한 접근권한이 없으면 정보통신망법 위반이 문제될 수 있다."
+  ],
+  "citations": [
+    "통신비밀보호법 제3조",
+    "정보통신망법 제48조 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인터넷개인방송의 전기통신 해당성",
+    "방송 시청자와 제3자의 구별",
+    "비공개 방송 녹음의 감청 해당성",
+    "플랫폼업체 기준 접근권한의 존부",
+    "방송자의 사실상 승낙·용인의 효과"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-105",
+  "supported_facts": [
+    {
+      "claim": "비공개 조치 없는 방송의 시청자는 수신인이다.",
+      "evidence_excerpt": "그 시청자는 인터넷개인방송의 당사자인 수신인에 해당하고"
+    },
+    {
+      "claim": "피고인은 피해자 시청을 알면서도 방송을 계속했다.",
+      "evidence_excerpt": "피해자의 시청 사실을 전제로 피해자를 상대로 한 발언을 하기도 하는 등 계속 진행한 방송"
+    }
+  ]
+}

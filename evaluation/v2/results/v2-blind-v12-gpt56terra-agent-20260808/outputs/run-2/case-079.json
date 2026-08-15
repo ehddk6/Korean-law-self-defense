@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "이 사건 부채는 임대보증금과 매매예약 합의금 합계 약 2,638억 원이다.",
+    "원심은 이 사건 부채가 현재가치 할인 평가 대상이 아니라고 판단하였다.",
+    "원고의 주위적 주장은 원심에서 배척되었다."
+  ],
+  "citations": [
+    "상증세법 제38조 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "합병에 따른 증여이익 산정에서 부채의 현재가치 할인 평가",
+    "매매예약 합의금 및 임대차보증금의 회수기간",
+    "임대의무기간과 임대차보증금 반환시기의 구별",
+    "증여세 경정·고지 처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-079",
+  "supported_facts": [
+    {
+      "claim": "임차인들은 조기분양전환에 합의하였다.",
+      "evidence_excerpt": "임대의무기간의 1/2이 지나는 시점에 조기분양전환하기로 합의"
+    },
+    {
+      "claim": "피고는 증여세를 경정·고지하였다.",
+      "evidence_excerpt": "증여세(가산세 포함)를 경정ㆍ고지하였다."
+    },
+    {
+      "claim": "원심은 원고의 주위적 주장을 배척하였다.",
+      "evidence_excerpt": "원고의 주위적 주장을 배척하였다."
+    }
+  ]
+}

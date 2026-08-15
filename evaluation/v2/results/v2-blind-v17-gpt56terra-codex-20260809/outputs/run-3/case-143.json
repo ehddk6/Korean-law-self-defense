@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "제187조에 따른 발송이 아니거나 실제 발송일이 달라지면 송달시점도 달라질 수 있다."
+  ],
+  "citations": [
+    "제189조",
+    "제187조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제189조.",
+    "제187조에 따라 서류를 발송한 경우에는 발송한 때에 송달된 것으로 본다.",
+    "제시된 발송일은 2025-08-03이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "effective-upon-dispatch",
+  "scenario_id": "case-143",
+  "supported_facts": [
+    {
+      "claim": "제187조에 따른 발송 사실이 제시되었다.",
+      "evidence_excerpt": "sent_under_article_187"
+    },
+    {
+      "claim": "발송한 때에 송달된 것으로 본다.",
+      "evidence_excerpt": "발송한 때에 송달된 것으로 본다."
+    }
+  ]
+}

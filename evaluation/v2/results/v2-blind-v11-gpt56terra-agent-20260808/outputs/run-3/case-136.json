@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "원칙적으로 위반행위 당시 법령을 적용한다.",
+    "신법 적용은 특별규정이 없고 신법이 비위반화 또는 제재기준 경감을 한 경우에 한정된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위반행위 후 법 변경 시 제재처분의 적용 법령",
+    "신법 적용 예외 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": [
+    {
+      "claim": "위반행위 후 법이 변경되었고 제재처분 사안이다.",
+      "evidence_excerpt": "\"law_changed_after_violation\": true, \"sanction\": true"
+    }
+  ]
+}

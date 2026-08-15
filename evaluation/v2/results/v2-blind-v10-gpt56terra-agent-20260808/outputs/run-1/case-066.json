@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "전남지방노동위원회는 해고가 존재하지 않는다고 보아 구제신청을 기각하였다.",
+    "중앙노동위원회도 같은 취지로 재심신청을 기각하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "2020. 2. 11. 자 해고의 존재 여부",
+    "부당해고 구제신청의 전제가 되는 해고 존재 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-066",
+  "supported_facts": []
+}

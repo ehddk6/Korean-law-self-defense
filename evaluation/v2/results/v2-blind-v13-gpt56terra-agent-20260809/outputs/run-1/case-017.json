@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "기록은 보험약관 문구가 ‘피보험자가 보험기간 중’에서 끝나 보험사고와 면책·지급 조건을 확인할 수 없다.",
+    "망인의 사망 사실, 사망 원인, 보험금청구 내용, 원심 판단 및 대법원 결론이 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사망보험금 청구권: 망인을 피보험자와 사망보험금 수익자로 한 각 보험계약에서 보험사고, 면책사유 및 보험금 지급요건이 충족되는지가 쟁점이나 약관 문장이 중단되어 내용을 확인할 수 없다.",
+    "보험설계사의 권유와 보험계약 체결: 설계사 권유가 보험계약의 설명·고지 또는 보험자 책임에 영향을 미치는지가 쟁점일 수 있으나, 관련 사실과 당사자 주장이 제공되지 않았다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": []
+}

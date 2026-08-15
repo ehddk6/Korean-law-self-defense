@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "계약일이 곧 권리행사 가능일인지는 이행기·정지조건 등 계약 내용에 따라 달라질 수 있다."
+  ],
+  "citations": [
+    "제166조(소멸시효의 기산점)",
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제166조 제1항상 시효는 권리행사 가능일부터 진행한다.",
+    "권리행사 가능일이 제시되지 않았다.",
+    "계약일만으로는 기산일을 확정할 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일만 제시되었다.",
+      "evidence_excerpt": "\"contract_date\": \"2025-04-10\""
+    },
+    {
+      "claim": "기산에 필요한 권리행사 가능일이 없다.",
+      "evidence_excerpt": "\"right_exercisable_date\": null"
+    }
+  ]
+}

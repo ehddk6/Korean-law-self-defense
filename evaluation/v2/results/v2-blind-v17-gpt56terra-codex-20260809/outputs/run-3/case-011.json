@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "원심은 소외 1의 과실비율을 10%로 인정하였다.",
+    "원고는 과실비율이 20%라는 전제에서 금액을 지급하였다.",
+    "상호협정상 피고가 소외 2 측에 보험금을 지급한 뒤 원고에게 청구하도록 되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "자동차보험 구상금분쟁 상호협정에 따른 정산의 법적 성질",
+    "과실비율 변경과 이미 지급한 책임보험금의 관계",
+    "원고 지급액 중 법률상 원인 없는 부분의 존부",
+    "피고의 이득 및 원고 손실에 의한 부당이득 성립",
+    "책임보험금 산정에서 과실상계 적용 방식"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-011",
+  "supported_facts": [
+    {
+      "claim": "원심은 87,215,375원의 부당이득 반환을 인정하였다.",
+      "evidence_excerpt": "피고는 원고에게 위 87,215,375원을 부당이득으로 반환하여야 한다고 판단하였다."
+    }
+  ]
+}

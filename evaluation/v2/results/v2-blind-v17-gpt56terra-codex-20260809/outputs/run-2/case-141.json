@@ -1,0 +1,36 @@
+{
+  "adverse_points": [
+    "해당 법령에 특별규정이 있는지 제시되지 않았다.",
+    "경감된 기준이 해당 제재처분에 적용되는 기준인지와 위반행위 후 법령 변경 사실을 확인해야 한다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)",
+    "법령등을 위반한 행위 후 법령등의 변경에 의하여 그 행위가 법령등을 위반한 행위에 해당하지 아니하거나 제재처분 기준이 가벼워진 경우로서 해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제3항 단서가 적용될 수 있다.",
+    "제재처분 기준이 가벼워진 사실과 제재처분 사실은 제시되었다.",
+    "단서는 해당 법령에 특별규정이 없을 것을 요구한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "후법의 제재기준이 가벼워졌다.",
+      "evidence_excerpt": "later_law_lighter"
+    },
+    {
+      "claim": "제재처분이 문제 된다.",
+      "evidence_excerpt": "sanction"
+    },
+    {
+      "claim": "특별규정이 없으면 변경된 법령을 적용한다.",
+      "evidence_excerpt": "해당 법령등에 특별한 규정이 없는 경우에는 변경된 법령등을 적용한다."
+    }
+  ]
+}

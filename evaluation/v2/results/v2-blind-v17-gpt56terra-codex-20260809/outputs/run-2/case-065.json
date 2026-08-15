@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "성과급 재분배 금지명령은 정관과 공공기관운영법에 따른 직무명령으로 평가될 여지가 있다.",
+    "참가인 2의 성과급 재분배 주도가 기록되어 있다.",
+    "감사 거부·방해에 정당한 사유가 있었는지 기록만으로 확정하기 어렵다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "성과급 재분배 금지명령이 정당한 직무명령인지",
+    "성과급 재분배 주도가 인사규정상 명령위반인지",
+    "노동조합 위원장의 감사 협조의무 범위",
+    "파면 양정이 비위의 내용과 비례하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-065",
+  "supported_facts": [
+    {
+      "claim": "원심은 명령위반 징계사유가 성립한다고 판단했다.",
+      "evidence_excerpt": "‘정관에 따른 명령을 위반한 경우’에 해당한다"
+    }
+  ]
+}

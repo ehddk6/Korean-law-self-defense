@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "고용승계 조항은 용역업체에 대한 과업지시서의 내용으로 기재되어 있다.",
+    "전환 절차에는 최소 수준의 전환심사가 예정되어 있었다.",
+    "참가인은 요구된 합의서 제출을 거부하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "과업지시서의 고용승계 조항이 참가인에 대한 채용의무를 발생시키는지",
+    "정부지침 및 노·사·전문가 협의회 결정이 개별 근로자에게 채용청구권을 부여하는지",
+    "정규직 전환심사와 합의서 제출요건의 허용 여부",
+    "합의서 제출 거부를 이유로 한 근로계약 미체결의 정당성 및 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-062",
+  "supported_facts": [
+    {
+      "claim": "용역계약 과업지시서에는 기존 근로자의 고용승계 조항이 있었다.",
+      "evidence_excerpt": "용역업체는 현재 근무하고 있는 근로자들에 대하여 특별한 사정이 없는 한 고용을 승계하여야 한다."
+    }
+  ]
+}

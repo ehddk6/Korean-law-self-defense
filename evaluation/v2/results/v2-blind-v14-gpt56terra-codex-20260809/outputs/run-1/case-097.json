@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "회생절차가 종료되기 전이라는 절차적 전제가 기록에 제시되어 있다.",
+    "회생계획이 불인가되거나 인가 없이 폐지될 가능성이 기록에서 언급된다.",
+    "기왕 파산선고의 이해관계인 신뢰와 소송경제를 해할 우려가 제시된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차개시결정에 따른 파산절차 중지의 법적 효과",
+    "중지된 파산선고결정 항고심에서 파산신청을 기각할 수 있는지",
+    "회생계획 불인가 또는 회생절차폐지 후 기존 파산절차의 연속성",
+    "기왕 파산선고 이해관계인의 신뢰 및 소송경제 고려"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-097",
+  "supported_facts": [
+    {
+      "claim": "회생절차개시결정이 있으면 파산절차가 중지된다.",
+      "evidence_excerpt": "제58조 제2항 제1호는 회생절차개시결정이 있는 때에 파산절차가 중지된다고 규정하고 있다."
+    }
+  ]
+}

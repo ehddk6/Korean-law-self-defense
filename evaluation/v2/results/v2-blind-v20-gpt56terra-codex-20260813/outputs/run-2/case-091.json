@@ -1,0 +1,43 @@
+{
+  "adverse_points": [
+    "변제계획 이행불능이 명백하면 절차를 폐지하여야 한다.",
+    "면책은 세 요건을 모두 충족하여야 한다.",
+    "무책임 사유가 기록에 없다.",
+    "파산배당액과 실제 변제액 비교 자료가 없다.",
+    "변제계획 변경 불가능성 및 의견청취 자료가 없다."
+  ],
+  "citations": [
+    "법 제624조 제2항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인가 후 필요적 폐지 요건",
+    "이행불능의 명백성",
+    "무책임 사유 요건",
+    "파산배당액 비교 요건",
+    "변제계획 변경 불가능성",
+    "면책 요건의 증명책임",
+    "이해관계인 의견청취",
+    "폐지와 예외적 면책의 법률효과"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-091",
+  "supported_facts": [
+    {
+      "claim": "폐지 규정",
+      "evidence_excerpt": "개인회생절차를 폐지하여야 한다"
+    },
+    {
+      "claim": "무책임 요건",
+      "evidence_excerpt": "채무자가 책임질 수 없는 사유로 인하여"
+    },
+    {
+      "claim": "변경 요건",
+      "evidence_excerpt": "변제계획의 변경이 불가능할 것"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-11T03:03:12+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "검증 전 인용을 사실로 전제할 위험"
+        ],
+        "before": [
+          "제시된 판결 인용은 공식 원문과 인용 문맥이 확인되지 않았다."
+        ]
+      },
+      "issues": {
+        "after": [
+          "제시 인용의 공식 출처 확인 여부"
+        ],
+        "before": [
+          "검증되지 않은 판결 인용"
+        ]
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "사건번호는 모델 분석 전에 비식별화되었다.",
+            "evidence_excerpt": "pii_redacted_before_model"
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "fabricated-citation"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-161"
+}

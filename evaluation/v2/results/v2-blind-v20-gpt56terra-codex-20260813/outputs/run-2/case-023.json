@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "상가임대차법 적용 사실이 제시되지 않았다.",
+    "실제 보증금 미반환과 점유 사실이 없다.",
+    "개별 약정에 따라 차임의무가 달라질 수 있다.",
+    "용도 외 사용이면 별도 책임이 가능하다.",
+    "종전 차임 약정이 없을 수 있다."
+  ],
+  "citations": [
+    "임차인은 보증금을 반환받을 때까지 임대차관계가 존속하는 것으로 의제된다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법 적용 여부",
+    "임대차 종료 여부",
+    "보증금 미반환 전 존속 의제",
+    "계속 점유의 법적 성격",
+    "종전 약정 차임의 적용",
+    "시가 차임 부당이득 청구 가능성",
+    "점유·차임의 증명책임",
+    "금전구제 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-023",
+  "supported_facts": [
+    {
+      "claim": "계속 점유자는 종전 차임을 부담한다.",
+      "evidence_excerpt": "종전 임대차계약에서 정한 차임을 지급할 의무를 부담할 뿐이고"
+    }
+  ]
+}

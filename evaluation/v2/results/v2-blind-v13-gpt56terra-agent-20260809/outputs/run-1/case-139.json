@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "계약일은 권리행사 가능일과 일치할 수 있으나, 제공된 사실만으로 계약일이 곧 권리행사 가능일이라고 볼 수는 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제166조 제1항의 기산점 요건: 소멸시효는 권리를 행사할 수 있는 때부터 진행하나, 그 날짜가 제공되지 않아 기산일을 확정할 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일은 있으나 권리행사 가능일은 제공되지 않았다.",
+      "evidence_excerpt": "\"contract_date\": \"2025-04-10\", \"right_exercisable_date\": null"
+    }
+  ]
+}

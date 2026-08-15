@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "저장장치 은닉으로 녹화영상정보가 전부 삭제된 점",
+    "피고인이 안전성 확보 조치를 취하지 않았다는 원심의 판단",
+    "피고인의 행위와 영상정보 훼손 결과 사이의 직접적 인과관계"
+  ],
+  "citations": [
+    "영상정보가 기록되어 있는 저장장치를 은닉하여 녹화영상정보가 전부 삭제되도록 하였다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 영유아보육법상 영상정보 안전성 확보 의무의 내용",
+    "운영자가 직접 저장장치를 은닉한 행위가 영상정보를 훼손당한 경우인지",
+    "행정적 안전조치 의무 위반과 직접 훼손행위의 구별",
+    "형벌조항의 엄격해석",
+    "영상정보 훼손 결과와 피고인 행위의 인과관계"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-106",
+  "supported_facts": [
+    {
+      "claim": "원심은 유죄로 판단하였다.",
+      "evidence_excerpt": "원심은 다음과 같은 이유로 위 공소사실을 유죄로 판단하였다."
+    },
+    {
+      "claim": "저장장치를 버려 은닉한 사실이 기재되어 있다.",
+      "evidence_excerpt": "컴퓨터 하드디스크를 버려 은닉하였고"
+    }
+  ]
+}

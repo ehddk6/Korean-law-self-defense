@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "담보권자의 의결권 행사가 담보제공자인 주주의 권리를 형해화하면 허용되지 않을 수 있다.",
+    "의결권 위임 및 담보권 실행 약정의 범위를 벗어난 행사는 기록상 법리 적용의 쟁점이 될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식근질권자가 위임받은 의결권으로 임원을 교체할 수 있는지 여부",
+    "1인 회사에서 실제 총회 개최 없이 작성된 주주총회의사록에 따른 결의 성립 여부",
+    "의결권 대리행사 및 재위임의 허용 범위"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-040",
+  "supported_facts": []
+}

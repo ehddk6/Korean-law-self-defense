@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "법령등의 특별한 규정 유무가 제공되지 않았습니다."
+  ],
+  "citations": [
+    "제14조(법 적용의 기준)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "적용 조문: 행정기본법 제14조제1항",
+    "필수 사실: 개정법 효력 발생 전 법률관계가 완성되거나 종결되었는지",
+    "예외: 법령등의 특별한 규정 유무"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 개정법의 효력 발생 후에도 계속된다는 사실이 제시되었습니다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    },
+    {
+      "claim": "제14조제1항은 효력 발생 전 완성되거나 종결된 법률관계에 대한 적용 제한을 정합니다.",
+      "evidence_excerpt": "그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다."
+    }
+  ]
+}

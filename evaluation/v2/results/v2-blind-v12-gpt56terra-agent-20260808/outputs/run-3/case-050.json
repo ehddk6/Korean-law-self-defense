@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "피고인은 자신의 계좌로 입금된 980만 원을 이체·인출하여 제3자에게 전달하였다.",
+    "피고인은 자금 출처와 출금 목적 등에 대해 허위 답변하라는 지시를 받았다.",
+    "피고인은 경찰관에게 임금을 주기 위하여 돈을 인출 중이라고 말하였다.",
+    "피고인은 피해자 공소외 2의 돈을 인출하려던 중 검거되었다."
+  ],
+  "citations": [
+    "대법원 2004. 5. 14. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보이스피싱 조직원과의 공모 여부",
+    "보이스피싱 범행에 대한 미필적 고의 여부",
+    "피고인의 대출 관련 인식이 범의 판단에 미치는 영향",
+    "공소사실의 주관적 요소에 관한 검사의 증명책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-050",
+  "supported_facts": []
+}

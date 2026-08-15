@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "원고는 종전 주택 양도 전 분양권 청약에 당첨되었다.",
+    "피고는 분양권 보유 시기를 청약당첨일로 보았다.",
+    "원고는 1세대 3주택 중과세율을 적용하여 양도소득세를 신고·납부하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "분양권 보유 시기의 판단 기준",
+    "일시적 1세대 2주택 비과세 적용 여부",
+    "양도소득세 경정청구 거부처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-071",
+  "supported_facts": [
+    {
+      "claim": "원고는 종전 주택을 양도하였다.",
+      "evidence_excerpt": "2021. 9. 30. 이 사건 종전 주택을 5억 4,500만 원에 양도"
+    }
+  ]
+}

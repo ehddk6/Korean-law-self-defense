@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "피고는 소취하부동의서를 제출하였다.",
+    "원고는 소취하서 제출 후 원고 패소 부분에 관하여 항소하였다.",
+    "원심은 재산분할 청구 부분이 소취하로 종료되었다고 선언하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이혼소송에서의 소취하 효력",
+    "상대방의 소취하 부동의 효력",
+    "소취하 후 항소 및 항소취지 정정의 효력",
+    "재산분할 청구 부분의 소송 계속 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-051",
+  "supported_facts": [
+    {
+      "claim": "원고는 소취하서를 제출하였다.",
+      "evidence_excerpt": "이 사건 소를 전부 취하한다는 내용의 소취하서"
+    },
+    {
+      "claim": "피고는 소취하에 동의하지 않았다.",
+      "evidence_excerpt": "소취하부동의서를 제출하였다."
+    },
+    {
+      "claim": "원심은 재산분할 청구의 종료를 선언하였다.",
+      "evidence_excerpt": "원고의 2022. 5. 3. 소취하로 종료되었음을 선언"
+    }
+  ]
+}

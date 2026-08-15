@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "전기통신금융사기죄는 사기죄와 \"입법 목적을 달리\"한다고 설시되어 있다.",
+    "두 죄의 \"구체적인 구성요건에도 일부 차이\"가 있다고 설시되어 있다.",
+    "두 죄는 \"각기 독립된 별개의 구성요건\"이라고 설시되어 있다."
+  ],
+  "citations": [
+    "대법원 2025. 7. 3. 선고 [CASE_NUMBER_001] 판결 등 참조).",
+    "12. 9. 선고 80도384 전원합의체 판결, 위 대법원 [CASE_NUMBER_001] 판결 등 참조)."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄의 특별법·일반법 관계",
+    "동일 행위가 두 구성요건을 충족할 경우의 상상적 경합 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-046",
+  "supported_facts": [
+    {
+      "claim": "기록은 전기통신금융사기죄가 사기죄의 특별법 관계가 아니라고 설시한다.",
+      "evidence_excerpt": "특별법의 관계에 있다고 볼 수 없고"
+    },
+    {
+      "claim": "기록은 동일 행위가 두 구성요건을 충족하면 상상적 경합이라고 설시한다.",
+      "evidence_excerpt": "상상적 경합의 관계에 있다고 보아야 한다"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "보험계약의 피보험자는 망인으로 정해졌다.",
+    "사망보험금 수익자는 망인의 법정상속인으로 정해졌다.",
+    "제공된 기록은 보험약관 문구와 원심 및 상고심 판단을 완결하여 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사망보험금 수익자 지정의 효력",
+    "보험계약 약관의 적용 내용",
+    "보험금청구권의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-017",
+  "supported_facts": []
+}

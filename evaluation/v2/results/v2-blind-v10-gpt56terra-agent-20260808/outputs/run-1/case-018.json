@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "보험약관은 직업 또는 직무 변경 사실을 알리지 않은 경우 변경 전 요율과 변경 후 요율의 비율에 따라 보험금을 삭감하도록 정하고 있다.",
+    "소외인은 일반 경찰관에서 화물차 운전기사로 직업을 변경하였다.",
+    "피고는 계약 후 알릴 의무 위반을 이유로 보험금 감액을 통지하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "계약 후 직업 또는 직무 변경 알릴 의무 위반 여부",
+    "보험자의 직업 변경 사실 인지와 보험금 감액 가능 여부",
+    "변경 후 보험요율 적용에 따른 보험금 감액 요건"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-018",
+  "supported_facts": []
+}

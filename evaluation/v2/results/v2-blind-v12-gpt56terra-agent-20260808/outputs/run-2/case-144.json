@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "불법행위일부터의 10년 제한기간도 적용된다.",
+    "소멸시효 중단이 없음을 전제로 계산한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "손해 및 가해자를 안 날부터의 3년 불법행위 단기소멸시효",
+    "불법행위일부터의 10년 제한기간"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "손해 및 가해자를 안 날은 2026-04-10이다.",
+      "evidence_excerpt": "\"knowledge_date\": \"2026-04-10\""
+    },
+    {
+      "claim": "불법행위일은 2026-04-01이다.",
+      "evidence_excerpt": "\"tort_date\": \"2026-04-01\""
+    },
+    {
+      "claim": "소멸시효 중단이 없다.",
+      "evidence_excerpt": "\"interruption\": false"
+    }
+  ]
+}

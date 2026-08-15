@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "원심은 성공불융자금 채무를 상속개시일 당시 종국적으로 부담할 것이 확정되지 않은 불확정채무로 판단하였다.",
+    "원심은 이자비용 채무도 확정되지 않은 상태였다고 판단하였다.",
+    "원심은 과세관청의 공적인 견해표명, 원고들의 신뢰 및 무귀책을 인정하기 어렵다고 보았다."
+  ],
+  "citations": [
+    "대법원 2003. 5. 13. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "성공불융자금 채무가 비상장주식 순자산가치 산정에서 공제되는 확정채무인지 여부",
+    "성공불융자금 관련 이자비용을 순손익가치 산정의 손금에 산입할 수 있는지 여부",
+    "과세관청의 공적인 견해표명 및 신뢰보호원칙 위반 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-090",
+  "supported_facts": [
+    {
+      "claim": "원심은 신뢰보호원칙 위반 주장을 배척하였다.",
+      "evidence_excerpt": "이 사건 처분이 신뢰보호의 원칙에 위배된다는 원고들의 주장을 배척하였다."
+    }
+  ]
+}

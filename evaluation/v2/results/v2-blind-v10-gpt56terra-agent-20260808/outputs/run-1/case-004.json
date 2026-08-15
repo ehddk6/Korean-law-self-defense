@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "코로나19의 전염력이 “이례적으로 매우 강력하였다.”",
+    "감염 확산에 따라 실내체육시설을 포함한 강화된 방역조치가 시행되었다.",
+    "기록은 관련 법리의 일부까지만 제시하고 구체적 적용과 결론을 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "실내체육시설 집합금지조치의 법률유보원칙 위반 여부",
+    "감염병예방법 제49조 제1항 제2호의 위헌성 및 손실보상 문제",
+    "집합금지조치의 비례·평등 원칙 및 재량권 일탈·남용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-004",
+  "supported_facts": []
+}

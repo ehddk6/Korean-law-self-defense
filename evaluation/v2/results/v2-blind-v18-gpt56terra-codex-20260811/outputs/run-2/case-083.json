@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "원고 명의로 사업자등록을 마쳤다.",
+    "원고 명의로 종합소득세를 신고ㆍ납부하였다.",
+    "기납부세액이 소외인의 체납세액에 충당되었다.",
+    "원고가 근로자라는 약정과 급여의 구체적 증빙이 기록에 부족하다.",
+    "기납부세액 충당의 법적 근거와 환급 가능성이 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "명의상 사업자와 실제사업자 사이의 소득 귀속",
+    "원고 명의 기납부세액의 귀속과 충당",
+    "근로소득세 고지와 이중과세 문제",
+    "실제사업자성ㆍ근로자성의 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-083",
+  "supported_facts": [
+    {
+      "claim": "원고는 근로를 제공한 근로자이다.",
+      "evidence_excerpt": "이 사건 의원에서 근로를 제공한 근로자이다."
+    },
+    {
+      "claim": "기납부세액은 소외인의 체납세액에 충당되었다.",
+      "evidence_excerpt": "소외인의 체납세액에 충당하였고"
+    }
+  ]
+}

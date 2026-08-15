@@ -1,0 +1,18 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "personal-delivery-required",
+  "scenario_id": "case-123",
+  "supported_facts": [
+    {
+      "claim": "특별한 규정이 없으면 교부송달이 원칙이다.",
+      "evidence_excerpt": "송달은 특별한 규정이 없으면 송달받을 사람에게 서류의 등본 또는 부본을 교부하여야 한다."
+    }
+  ]
+}

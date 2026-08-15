@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "이 특별재판적은 부동산에 관한 소에 한정되며, 제시된 사실만으로 다른 청구에 대한 관할까지 확정되지는 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제20조는 부동산에 관한 소를 부동산 소재지 법원에 제기할 수 있도록 하므로, 부동산 관련 청구이고 소재지가 알려진 경우 그 법원에 제기할 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "supported_facts": [
+    {
+      "claim": "부동산 관련 청구이고 부동산 소재지가 알려져 있다.",
+      "evidence_excerpt": "\"property_location_known\": true, \"real_estate_claim\": true"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "원심은 영세율 적용 주장을 배척하였다.",
+    "환급창구운영사업자는 선지급 금액을 다음 달 25일경 정산받는다.",
+    "원심은 수수료를 이자 명목의 돈으로 보았다."
+  ],
+  "citations": [
+    "부가가치세법 제26조 제1항 제11호",
+    "부가가치세법 시행령 제40조 제2항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "환급창구운영사업 용역의 부가가치세 면세 여부",
+    "환급 선지급 금액과 면세판매자 정산의 법적 성질",
+    "수수료가 금전대부업과 유사한 이자비용인지 여부",
+    "영세율 적용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-086",
+  "supported_facts": [
+    {
+      "claim": "원고는 외국관광객에게 세액 등을 환급 또는 송금한다.",
+      "evidence_excerpt": "물품에 부과된 부가가치세 등을 환급 또는 송금하는 사업"
+    },
+    {
+      "claim": "원심은 원고 용역을 면세 대상으로 판단하였다.",
+      "evidence_excerpt": "부가가치세 면세 대상인 ‘금전대부업과 유사한 용역’에 해당"
+    },
+    {
+      "claim": "수수료는 이자비용 취지로 규정되어 있다.",
+      "evidence_excerpt": "이를 ‘이자비용’이라는 취지로 규정"
+    }
+  ]
+}

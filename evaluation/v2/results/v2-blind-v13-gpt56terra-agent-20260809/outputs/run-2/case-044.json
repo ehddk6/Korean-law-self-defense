@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "기록은 전기통신금융사기죄와 사기죄의 구체적 구성요건 차이를 언급하지만, 특정 피고인의 행위가 양 구성요건을 실제로 충족하는지는 제시하지 않는다.",
+    "검사의 상고이유에 관한 판단이라는 표제만 있고 원심의 결론과 대법원의 판단이 불완전하다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄가 형법상 사기죄의 모든 구성요건을 포함하는 특별법인지, 또는 입법 목적과 구성요건이 다른 독립된 범죄인지가 쟁점이다.",
+    "하나의 행위가 전기통신금융사기죄와 사기죄의 각 구성요건을 충족할 경우 양 죄의 죄수관계가 상상적 경합인지가 쟁점이나, 구체적 공소사실·원심 판단·상고심 결론은 제공되지 않았다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-044",
+  "supported_facts": []
+}

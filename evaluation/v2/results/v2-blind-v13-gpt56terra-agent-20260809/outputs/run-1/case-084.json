@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "거주요건은 1주택 보유자 특례를 실수요자 중심으로 엄격히 강화하기 위하여 추가되었다.",
+    "상속 취득의 경우에도 양도자 본인의 취득일부터 양도일까지의 거주기간만 인정된다는 법리가 명시되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상속으로 취득한 1세대 1주택의 장기보유 특별공제에서 거주기간이 양도자 자신의 취득일부터 양도일까지의 보유기간 안의 거주기간만을 의미하는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-084",
+  "supported_facts": []
+}

@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "과업지시서는 특별한 사정이 없는 한 고용승계를 정한다.",
+    "정규직 전환은 최소 수준의 전환심사를 거쳐 진행하도록 정해졌다.",
+    "참가인은 합의서 제출을 거부하여 근로계약을 체결하지 못했다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공공부문 비정규직의 자회사 정규직 전환에 관한 고용승계 기대",
+    "정규직 전환 채용조건의 정당성",
+    "단속적 근로조건 합의서 제출 요구의 적법성",
+    "합의서 제출 거부 근로자와의 근로계약 미체결의 위법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-062",
+  "supported_facts": [
+    {
+      "claim": "과업지시서에는 고용승계 조항이 있었다.",
+      "evidence_excerpt": "특별한 사정이 없는 한 고용을 승계하여야 한다."
+    },
+    {
+      "claim": "원고는 자회사로 설립되었다.",
+      "evidence_excerpt": "한국도로공사가 100% 출자한 자회사로 설립되어"
+    },
+    {
+      "claim": "참가인은 합의서 제출을 거부하였다.",
+      "evidence_excerpt": "그 제출을 거부한 참가인과는 근로계약을 체결하지 않고"
+    }
+  ]
+}

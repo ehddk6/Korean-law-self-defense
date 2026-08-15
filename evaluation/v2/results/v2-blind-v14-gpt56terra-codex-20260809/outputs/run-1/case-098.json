@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "위조·행사 대상 박사학위기의 동일성은 유무죄 실체 판단에서 고려할 요소라고 되어 있다.",
+    "범의의 입증책임은 검사에게 있다.",
+    "위조 문서의 범죄 일시·장소·방법은 일정 범위에서만 기재하면 충분하다고 설시된다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사문서위조 공소사실의 특정 정도",
+    "현출된 사본과 위조·행사 대상 박사학위기의 동일성",
+    "기본적 사실의 동일성 범위에서 구체적 경위를 인정할 수 있는지",
+    "사문서위조 및 위조사문서행사 범의에 대한 검사의 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-098",
+  "supported_facts": [
+    {
+      "claim": "형사재판의 범죄사실 입증책임은 검사에게 있다.",
+      "evidence_excerpt": "형사재판에서 공소제기된 범죄사실은 그것이 주관적 요건이든 객관적 요건이든 그 입증책임은 검사에게 있는 것이다."
+    }
+  ]
+}

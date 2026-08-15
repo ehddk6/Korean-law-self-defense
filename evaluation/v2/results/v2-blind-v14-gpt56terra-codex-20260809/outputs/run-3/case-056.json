@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "당초 한쪽 배우자의 인격적 결함이 갈등의 단초였다는 사정은 불리하게 평가될 수 있다.",
+    "상대방이 혼인관계를 유지하기 위한 노력을 다했다면 쌍방 책임의 혼합·상쇄가 부정될 수 있다.",
+    "상대방 배우자 및 자녀에 대한 보호와 배려가 충분하지 않으면 예외가 제한될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "유책배우자의 이혼청구 예외 허용 요건",
+    "혼인파탄 이후 상대방의 대처와 세월 경과의 효과",
+    "부부 상호 협조의무 위반과 파탄 책임 분담",
+    "상대방의 혼인관계 회복·유지 의사 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-056",
+  "supported_facts": [
+    {
+      "claim": "기록은 예외 판단에서 여러 사정을 고려해야 한다고 적시한다.",
+      "evidence_excerpt": "이와 같이 유책배우자의 이혼청구를 예외적으로 허용할 수 있는지를 판단함에 있어서는"
+    }
+  ]
+}

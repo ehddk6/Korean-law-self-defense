@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "피고인은 추가수당을 지급받고 있었음에도 월 급여 4,400,000원만을 수입으로 보고하였다.",
+    "추가수당을 급여액에 포함할 경우 회생채권에 대한 상환가능금액, 면제율, 잔여 채권액, 분할 변제액 등이 달라졌을 것으로 보인다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차에서 추가수당을 누락한 재산관계 기재가 사기죄의 기망에 해당하는지",
+    "누락된 추가수당과 회생계획인가결정·채무면제 사이의 인과관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-049",
+  "supported_facts": [
+    {
+      "claim": "기록은 추가수당 누락을 허위 재산관계 기재로 서술한다.",
+      "evidence_excerpt": "위 서류들은 실제와 다른 허위의 재산관계를 기재한 것이었다."
+    }
+  ]
+}

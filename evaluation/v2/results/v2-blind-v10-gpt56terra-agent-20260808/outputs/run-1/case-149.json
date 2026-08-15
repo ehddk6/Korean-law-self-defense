@@ -1,0 +1,25 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "단기시효 기산일 미확정",
+    "불법행위일만으로는 제766조 제1항의 단기시효 산정 불가"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "supported_facts": [
+    {
+      "claim": "불법행위일은 2025-06-01이다.",
+      "evidence_excerpt": "\"tort_date\": \"2025-06-01\""
+    },
+    {
+      "claim": "손해와 가해자를 안 날은 제공되지 않았다.",
+      "evidence_excerpt": "\"knowledge_date\": null"
+    }
+  ]
+}

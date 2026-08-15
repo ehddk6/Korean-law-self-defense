@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원칙적으로 위반행위 당시 법령이 적용되며, 유리한 변경 요건이 확인되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위반행위 후 법령 변경",
+    "제재처분의 적용법",
+    "유리한 변경 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": []
+}

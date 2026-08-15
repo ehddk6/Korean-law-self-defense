@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "유책배우자의 이혼청구는 원칙적으로 허용되지 않는다.",
+    "상대방 배우자와 자녀에 대한 보호와 배려가 이루어졌다는 사실이 제공되지 않았다.",
+    "상대방의 객관적 혼인계속의사 및 혼인 전 과정의 구체적 사정이 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "유책배우자의 이혼청구가 예외적으로 허용될 특별사정의 존부",
+    "상대방 배우자의 객관적인 혼인계속의사",
+    "유책성 상쇄를 위한 상대방 배우자 및 자녀 보호·배려의 정도",
+    "혼인기간·별거기간·생활보장·자녀 상황의 종합 고려"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-054",
+  "supported_facts": [
+    {
+      "claim": "기록은 유책배우자의 이혼청구 불허 원칙을 제시한다.",
+      "evidence_excerpt": "혼인생활의 파탄에 주된 책임이 있는 배우자는 원칙적으로 그 파탄을 사유로 하여 이혼을 청구할 수 없다."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "임대차계약 특약은 공동명의자의 연대책임을 정한다.",
+    "소외 1은 차임 지급을 연체하였다.",
+    "이 사건 공제합의 금액은 149,985,396원이다.",
+    "원심은 공제합의의 효력이 원고들에게도 미친다고 판단하였다.",
+    "소외 1의 채권자는 보증금반환채권 일부에 관하여 압류 및 전부명령을 받았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공동임차인의 임대차보증금반환채권 성질",
+    "식당 운영계약에 따른 조합 또는 준합유 성립 여부",
+    "공동임차인에 대한 공제합의의 효력",
+    "임대차보증금반환채권에 대한 압류 및 전부명령의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-027",
+  "supported_facts": []
+}

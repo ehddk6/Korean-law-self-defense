@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "채무자는 파산선고 전날 원고에게 이 사건 지분을 양도하였다.",
+    "파산관재인은 이 사건 양도행위에 대하여 부인의 청구를 하였다.",
+    "법원은 양도행위가 부인되어 효력이 상실되었다는 취지의 통지를 명하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "파산선고 직전 지분 양도행위에 대한 부인의 청구와 그 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-096",
+  "supported_facts": []
+}

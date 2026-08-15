@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 결론이 달라질 수 있다."
+  ],
+  "citations": [
+    "① 새로운 법령등은 법령등에 특별한 규정이 있는 경우를 제외하고는 그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조제1항의 시간적 적용이 문제된다.",
+    "법률관계가 효력 발생 후에도 계속된 사실이 제시되었다.",
+    "특별규정이 있으면 제14조제1항의 원칙에 예외가 될 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계가 효력 발생 후에도 계속되었다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    }
+  ]
+}

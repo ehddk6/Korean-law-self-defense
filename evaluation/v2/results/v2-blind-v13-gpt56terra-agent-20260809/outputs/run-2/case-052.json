@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원고는 제1심 계속 중 파산선고를 받았다.",
+    "파산관재인은 본소 중 위자료와 재산분할청구에 관하여만 소송수계를 신청했고, 제1심은 이를 허가했다.",
+    "파산재단에 속하는 재산에 관하여 계속 중인 소송은 파산관재인 또는 상대방이 수계할 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이혼 재산분할청구권이 협의 또는 심판으로 구체화되기 전에는 범위·내용이 불확정하여 파산재단에 속하는 재산 또는 채무자의 책임재산에 해당하는지가 쟁점이다.",
+    "파산관재인이 본소 위자료와 재산분할청구만을 일부 수계할 수 있는지, 부적법한 일부 소송수계인을 당사자로 선고한 제1심과 원심 판결이 위법한지가 쟁점이다."
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-052",
+  "supported_facts": []
+}

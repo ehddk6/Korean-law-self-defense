@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "감사 선임에서 각 주주의 3% 초과 주식에는 의결권이 없다.",
+    "원고는 이 사건 감사 선임 결의에 반대하였다.",
+    "이 사건 결의는 소외 1과 소외 2의 찬성으로 이루어졌다.",
+    "기록은 대법원의 주문을 제시하지 않는다."
+  ],
+  "citations": [
+    "상법 제409조 제2항",
+    "상법 제368조 제1항",
+    "상법 제371조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "감사 선임에서 3% 초과 주식의 의결권 제한",
+    "감사 선임 결의의 의결정족수 산정",
+    "상법 제368조 제1항의 발행주식총수 산입 범위",
+    "상법 제409조 제2항과 상법 제371조의 관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-035",
+  "supported_facts": []
+}

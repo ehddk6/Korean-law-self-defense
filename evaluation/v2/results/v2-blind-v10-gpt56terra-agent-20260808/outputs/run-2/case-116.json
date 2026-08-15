@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "참가인은 이 사건 1차 징계의결 내용을 참가행정청에 보고하지 않은 채 징계처분을 하였다.",
+    "참가행정청은 이를 “중대한 절차규정 위반”으로 보았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 사립학교법 제66조의2에 따른 징계의결 내용 통보 및 재심의 요구의 적법성",
+    "1차 징계처분 후 재심의 및 2차 징계의결에 따른 처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-116",
+  "supported_facts": []
+}

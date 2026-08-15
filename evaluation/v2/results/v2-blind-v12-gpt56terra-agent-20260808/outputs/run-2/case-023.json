@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "상가임대차법 적용 임대차가 종료되어야 한다.",
+    "임차인이 보증금을 반환받기 전에 목적물을 계속 점유·사용수익한 경우에 관한 법리이다.",
+    "임차인은 종전 임대차계약상 차임을 지급할 의무를 부담한다."
+  ],
+  "citations": [
+    "대법원 2020. 7. 9. 선고 [CASE_NUMBER_001], [ACCOUNT_002] 판결",
+    "대법원 2011. 7. 14. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차 종료 후 보증금 반환 전 법정 임대차관계의 존속",
+    "보증금 반환 전 점유·사용수익에 대한 차임 지급의무",
+    "차임 상당 부당이득 반환의무의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-023",
+  "supported_facts": [
+    {
+      "claim": "상가임대차 종료 후에도 보증금 반환 전 임대차관계는 존속하는 것으로 의제된다.",
+      "evidence_excerpt": "임대차관계가 존속하는 것으로 의제된다."
+    },
+    {
+      "claim": "임차인은 종전 약정 차임을 부담한다.",
+      "evidence_excerpt": "종전 임대차계약에서 정한 차임을 지급할 의무"
+    }
+  ]
+}

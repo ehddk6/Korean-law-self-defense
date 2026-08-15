@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "중앙노동위원회는 대상자 선정기준의 합리성과 공정성을 인정하기 어렵다고 판단하였다.",
+    "중앙노동위원회는 노동조합과의 성실한 협의도 인정하기 어렵다고 판단하였다.",
+    "해고 대상자로 선정된 5명 중 2명은 사직서를 제출하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로기준법 제24조의 긴박한 경영상 필요성 요건 충족 여부",
+    "경영진단보고서가 제시한 인력축소 필요성과 정리해고의 관련성",
+    "희망퇴직 및 임원·사무직 퇴직이 해고회피 노력으로 평가되는지",
+    "정리해고 대상자 선정기준의 합리성·공정성 및 노동조합과의 성실한 협의 여부"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-068",
+  "supported_facts": [
+    {
+      "claim": "기록은 정리해고의 명시적 쟁점을 긴박한 경영상 필요성으로 제시한다.",
+      "evidence_excerpt": "쟁점은 이 사건 정리해고가 근로기준법 제24조에 따른 정리해고의 요건 중 긴박한 경영상 필요성 요건을 갖추었는지이다."
+    }
+  ]
+}

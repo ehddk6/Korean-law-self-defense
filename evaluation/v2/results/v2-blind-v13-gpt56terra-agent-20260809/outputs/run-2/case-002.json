@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "자살은 삼청교육대 퇴소일로부터 약 5년 6개월 뒤 발생하여 시간적 간격이 있다.",
+    "기록은 상당인과관계를 확정하지 않고 \"추단할 여지가 있다\"고만 기재한다.",
+    "삼청교육대 입소 전 정신질환 여부나 자살의 다른 원인·동기에 관한 의학적 증거는 기록에 구체적으로 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "국가의 불법행위와 질병·사망 사이의 인과관계는 의학적·자연과학적으로 명백한 증명이 아니라 사회적·법적 상당인과관계로 판단해야 한다.",
+    "입소 전 비교적 양호했던 건강상태, 퇴소 직후 정신분열증 진료와 장기 치료, 정신질환 상태에서의 자살을 종합하면 삼청교육대 순화교육과 자살 사이의 상당인과관계를 추단할 수 있는지가 쟁점이다."
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-002",
+  "supported_facts": []
+}

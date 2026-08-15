@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "합의약정에는 피고 및 스타금굴 부채 전액을 공탁한다는 특약이 있다.",
+    "피고는 원고가 부채 110억 원 상당 공탁 조건을 이행하지 않았다고 주장한다.",
+    "원고의 대표이사 등 직무집행정지 가처분 신청은 기각되어 확정되었다.",
+    "원고는 공전자기록등불실기재죄 등으로 기소되어 제1심 재판 계속 중이라고 기재되어 있다."
+  ],
+  "citations": [
+    "민법 제150조 제1항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "합의약정 및 주식양도계약의 조건부 효력",
+    "조건 성취 방해에 따른 민법 제150조 제1항의 적용",
+    "주식 명의개서와 주주 지위의 귀속",
+    "임시주주총회 및 이사회 결의의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-032",
+  "supported_facts": []
+}

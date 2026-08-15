@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결하였다.",
+    "TRI 조직은 장기적으로 영업관리자나 재무설계전문가를 양성하는 사업계획에 따른 것이다.",
+    "구체적 청구, 계약 내용, 원심 판단 및 최종 재판 결과가 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약상 법률관계",
+    "TRI 조직 내 FP·PSM·AM 업무의 성격",
+    "원고의 근로자성 또는 위촉계약상 권리의 내용"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": []
+}

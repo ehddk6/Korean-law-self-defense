@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "재발행 주권은 주식병합에 따라 실효된 구주권으로 판단되었다.",
+    "원심은 원고가 이 사건 주식의 주식소유권 및 주주 지위를 적법하게 취득했다고 보기 어렵다고 판단하였다.",
+    "신주권을 양도하겠다는 의사가 있었다고 보기 어렵다고 판단되었다.",
+    "주식양도청구권은 10년 경과로 시효 소멸하였다고 판단되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식병합 후 구주권의 효력 상실",
+    "주식병합 후 신주권 미발행과 주식양도 효력",
+    "주권발행 전 주식양도의 효력",
+    "상속재산분할 합의에 따른 주식 소유권 취득",
+    "주식양도청구권의 소멸시효"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-037",
+  "supported_facts": []
+}

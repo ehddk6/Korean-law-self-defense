@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "이자 채권이 실제로 1년 이내 정기지급 채권이 아니면 제163조 제1호의 3년 시효가 적용되지 않으나, 제공된 사실은 해당 요건을 충족한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제163조 제1호의 요건: 1년 이내의 기간으로 정한 이자 채권은 3년 단기소멸시효가 적용된다.",
+    "민법 제166조 제1항 및 제157조·제160조의 기간계산: 권리행사 가능일 2026-05-10부터 3년을 역으로 계산하여 2029-05-10에 만료한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "supported_facts": []
+}

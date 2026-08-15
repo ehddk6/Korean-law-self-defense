@@ -3,7 +3,8 @@ from pathlib import Path
 
 import pytest
 
-from legal_workbench.models import CaseStage, EvidenceRecord
+from legal_workbench.models import STAGE_ORDER, CaseStage, EvidenceRecord
+from legal_workbench.plain_language import build_plain_language_guide
 from legal_workbench.security import atomic_json_write, sha256_file
 from legal_workbench.storage import CaseStore
 from legal_workbench.workflow import (
@@ -18,9 +19,45 @@ from legal_workbench.workflow import (
     export_case,
     import_analysis_result,
     import_opinion,
+    import_visual_review,
     intake_case,
     run_audit,
 )
+
+
+def test_visual_review_keeps_renders_from_different_document_formats(tmp_path: Path) -> None:
+    case_id = "case-visual-review"
+    intake_case(
+        case_id=case_id,
+        title="시각검토 사건",
+        domain="civil-contract-tort",
+        goal="렌더 파일명 분리 확인",
+        forum=None,
+        action_date="2026-01-01",
+        as_of_date="2026-07-19",
+        worksets_home=tmp_path,
+    )
+    store = CaseStore(tmp_path, case_id)
+    for target in STAGE_ORDER[1 : STAGE_ORDER.index(CaseStage.DRAFTED) + 1]:
+        store.transition(target, reason="시각검토 시험")
+    for name in ("legal-opinion.docx", "legal-opinion.pdf"):
+        (store.case_dir / "drafts" / name).write_bytes(b"test")
+    render = tmp_path / "page-1.png"
+    render.write_bytes(b"png")
+
+    review = import_visual_review(
+        case_id,
+        {
+            "documents": [
+                {"filename": "legal-opinion.docx", "passed": True, "render_files": [str(render)]},
+                {"filename": "legal-opinion.pdf", "passed": True, "render_files": [str(render)]},
+            ]
+        },
+        worksets_home=tmp_path,
+    )
+
+    names = [Path(item["render_files"][0]["path"]).name for item in review["documents"]]
+    assert names == ["docx-legal-opinion-001.png", "pdf-legal-opinion-001.png"]
 
 
 def test_case_can_move_from_intake_to_audited_export(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -197,6 +234,15 @@ def test_case_can_move_from_intake_to_audited_export(tmp_path: Path, monkeypatch
     )
     drafts = draft_case(case_id, document_type="legal-opinion", formats=["md"], worksets_home=tmp_path)
     assert drafts["md"].is_file()
+    draft_text = drafts["md"].read_text(encoding="utf-8")
+    assert "## 검토 범위 및 전제" in draft_text
+    assert "## 쟁점별 검토" in draft_text
+    assert "## 사용상 유의" in draft_text
+    guide = build_plain_language_guide(case_id, formats=["md"], worksets_home=tmp_path)
+    guide_text = guide["md"].read_text(encoding="utf-8")
+    assert "## 한눈에 보는 결론" in guide_text
+    assert "## 이 프로젝트가 해 줄 수 있는 일" in guide_text
+    assert "보증금을 돌려달라고 요구할 방향은 있습니다." in guide_text
     audit = run_audit(case_id, worksets_home=tmp_path)
     assert audit["release_allowed"] is True
     original_draft = drafts["md"].read_bytes()

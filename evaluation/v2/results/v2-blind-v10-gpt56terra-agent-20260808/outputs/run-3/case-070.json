@@ -1,0 +1,23 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "‘FP(Financial Planner) 인턴십’ 제도",
+    "보험설계사 위촉계약"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약 및 TRI 조직 근무관계의 법적 성격"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 참가인과 보험설계사 위촉계약을 체결하였다.",
+      "evidence_excerpt": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+    }
+  ]
+}

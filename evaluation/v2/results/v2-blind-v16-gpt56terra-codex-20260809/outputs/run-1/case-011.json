@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "상호협정은 피고가 원고 책임보험금을 포함해 지급 후 원고에게 청구하도록 정한다.",
+    "10% 과실과 20% 전제 지급의 관계, 실제 정산 합의 및 반환 계산이 불명확하다.",
+    "사고와 약 2년 뒤 사망 사이의 인과관계 및 책임보험금 범위가 다투어진다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상호협정에 따른 보험사 간 정산의 법률상 원인",
+    "10% 과실비율에 따른 원고의 책임보험금 부담 범위",
+    "20% 전제 초과 지급이 부당이득인지",
+    "사고와 사망 사이 인과관계",
+    "87,215,375원 반환액 산정"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-011",
+  "supported_facts": [
+    {
+      "claim": "협정상 피고의 청구 구조가 있다.",
+      "evidence_excerpt": "피고는 원고의 소외 2 측에 대한 책임보험금을 포함하여 소외 2 측에게 보험금을 지급한 다음"
+    },
+    {
+      "claim": "원심이 인정한 과실비율이다.",
+      "evidence_excerpt": "소외 1의 과실비율을 10%로 인정한"
+    }
+  ]
+}

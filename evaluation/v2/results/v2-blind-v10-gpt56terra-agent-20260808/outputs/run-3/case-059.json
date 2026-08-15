@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "피고의 거처 이전과 주소지 전출은 사실상 별거 개시 사정으로 볼 수 있다.",
+    "부부 공유 토지의 사업 진행을 둘러싼 중대한 의견 차이와 소송은 혼인관계 갈등을 뒷받침한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장기간 별거와 재산분쟁이 혼인관계 파탄 및 이혼책임 판단에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-059",
+  "supported_facts": []
+}

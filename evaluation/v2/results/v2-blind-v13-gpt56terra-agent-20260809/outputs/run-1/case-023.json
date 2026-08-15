@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "이 법리는 상가임대차법이 적용되는 상가건물 임대차에 한정된다.",
+    "임차인은 보증금 반환 전까지 점유·사용수익하더라도 종전 임대차계약에서 정한 차임 지급의무는 부담한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차 종료 후 보증금 미반환 기간의 법률관계: 상가임대차가 종료되어도 보증금 반환 전까지 임대차관계가 존속하는 것으로 의제되는지가 쟁점이며, 기록은 상가임대차법 제9조 제2항에 따라 이를 인정한다.",
+    "종료 후 점유·사용수익의 대가: 보증금 반환 전 목적물을 점유·사용한 임차인이 시가 차임 상당 부당이득을 부담하는지, 또는 종전 임대차계약상 차임만 부담하는지가 쟁점이며 기록은 후자라고 한다."
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-023",
+  "supported_facts": []
+}

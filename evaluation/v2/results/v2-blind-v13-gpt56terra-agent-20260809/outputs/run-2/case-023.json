@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "제시된 기록에는 특정 임대차의 종료 사유, 보증금 미반환 여부, 점유·사용수익 기간 및 약정 차임 또는 시가 차임이 없어 위 법리를 사건에 적용한 결론을 정할 수 없다.",
+    "임차인이 보증금을 반환받기 전 계속 점유한 경우에도 종전 임대차계약상 차임 지급의무는 남는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법 제9조 제2항에 따라 임대차 종료 후 보증금 반환 전까지 의제되는 임대차관계에서 임차인이 계속 점유·사용수익하면 종전 약정 차임만 지급할 의무가 있는지, 시가 차임 상당 부당이득도 지급해야 하는지가 쟁점이다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-023",
+  "supported_facts": []
+}

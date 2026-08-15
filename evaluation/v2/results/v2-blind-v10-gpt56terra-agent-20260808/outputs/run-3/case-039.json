@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 약정에 따라 해당 안건을 주주총회에 상정하였다.",
+    "이용혜택 축소 조치는 운영위원회 결의와 이사회 결의로도 추진되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주회원의 골프장 이용혜택 범위가 주주총회 결의사항인지 여부",
+    "법령 또는 정관상 권한 없는 주주총회 결의의 효력"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-039",
+  "supported_facts": []
+}

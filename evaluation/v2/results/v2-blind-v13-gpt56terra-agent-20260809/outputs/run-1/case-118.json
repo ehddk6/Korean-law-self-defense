@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "지급 기준에는 부정한 방법으로 실적을 제출하거나 평가 결과 부적합인 경우 비용을 환수한다고 정해져 있다.",
+    "교육부는 학생지도비 실적 제출 및 연구영역 동일 실적물 중복 제출의 부적정을 사유로 환수 조치를 요구했다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "국립대학 교원에게 지급된 교육·연구 및 학생지도 비용에 관하여 부정한 실적 제출 또는 동일 실적물 중복 제출이 인정되는 경우, 지급 기준에 따른 환수 통지가 항고소송의 대상인 처분인지",
+    "교육부 감사 요구를 근거로 교내 이메일로 발송된 환수금 납입 안내가 원고별 환수금 납부의무를 확정적으로 발생시키는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-118",
+  "supported_facts": []
+}

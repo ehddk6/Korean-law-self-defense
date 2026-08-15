@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "예외 사유가 있으면 처분 당시 법령 적용 원칙이 배제될 수 있음"
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청에 따른 처분의 기준시점",
+    "예외 사유 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-126",
+  "supported_facts": []
+}

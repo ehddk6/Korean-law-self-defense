@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "교부송달의 원칙은 특별한 규정이 없는 경우에 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "특별규정이 없을 때 교부송달의 원칙"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "personal-delivery-required",
+  "scenario_id": "case-123",
+  "supported_facts": [
+    {
+      "claim": "수령인에게 서류 사본이 교부되었다.",
+      "evidence_excerpt": "\"copy_delivered_to_recipient\": true"
+    },
+    {
+      "claim": "송달은 송달받을 사람에게 서류의 등본 또는 부본을 교부하는 것이 원칙이다.",
+      "evidence_excerpt": "송달은 특별한 규정이 없으면 송달받을 사람에게 서류의 등본 또는 부본을 교부하여야 한다."
+    }
+  ]
+}

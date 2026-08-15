@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "변론재개신청을 받아들일지 여부는 원칙적으로 법원의 재량에 속한다.",
+    "보안관제 일일보고서의 트래픽 증가 시점은 해커가 파일을 외부로 전송한 시점과 일치하지 않는다고 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "변론종결 후에야 정보공개거부처분 일부 취소판결이 확정되어 수사기록을 열람·등사할 수 있게 된 원고들에게 변론재개를 통해 증거를 제출할 기회를 주어야 하는지",
+    "보안관제 일일보고서의 대용량 파일 유출 감지와 게이트웨이 서버 접근권한 관련 경찰 진술조서가 해킹사고 책임의 판단 결과를 좌우할 수 있는 관건적 요증사실인지"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-110",
+  "supported_facts": []
+}

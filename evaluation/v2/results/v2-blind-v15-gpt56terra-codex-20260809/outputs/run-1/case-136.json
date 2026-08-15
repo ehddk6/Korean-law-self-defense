@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "특별규정의 유무와 내용이 제공되지 않았다.",
+    "변경 법령이 위반행위를 비위반으로 하였는지 또는 제재기준을 가볍게 하였는지가 제공되지 않았다."
+  ],
+  "citations": [
+    "제14조",
+    "③ 법령등을 위반한 행위의 성립과 이에 대한 제재처분은 법령등에 특별한 규정이 있는 경우를 제외하고는 법령등을 위반한 행위 당시의 법령등에 따른다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "행정기본법 제14조 제3항 적용",
+    "위반행위 당시 법령 기준",
+    "비위반화 또는 제재기준 경감 예외와 특별규정 확인 필요"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-136",
+  "supported_facts": [
+    {
+      "claim": "제재처분 사안이다.",
+      "evidence_excerpt": "sanction"
+    },
+    {
+      "claim": "위반행위 후 법이 변경되었다.",
+      "evidence_excerpt": "law_changed_after_violation"
+    }
+  ]
+}

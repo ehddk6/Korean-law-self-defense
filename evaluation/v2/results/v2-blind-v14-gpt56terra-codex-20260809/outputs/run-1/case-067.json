@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "위원장은 제척 대상의 예외이나 의결권은 제한된다.",
+    "개정된 인사위원회는 여러 본부장과 부서장으로 구성된다.",
+    "기록에는 근로자 측의 동의 여부가 제시되어 있지 않다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "징계요청권자와 인사위원회 위원장의 겸임이 인사위원회 공정성을 침해하는지",
+    "관련 직원 및 소속부서 관할 인사위원의 제척 규정에서 위원장을 예외로 한 변경의 효력",
+    "의결권 제한만으로 위원장 제척 예외에 따른 공정성 침해를 해소할 수 있는지",
+    "취업규칙과 인사규정의 개정이 근로자 기득이익을 불이익하게 변경한 것인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-067",
+  "supported_facts": [
+    {
+      "claim": "원심은 해당 개정을 불이익변경으로 판단하였다.",
+      "evidence_excerpt": "그와 같은 개정은 근로자의 근로조건에 관한 기득이익을 불이익하게 변경한 것에 해당한다고 판단하였다."
+    }
+  ]
+}

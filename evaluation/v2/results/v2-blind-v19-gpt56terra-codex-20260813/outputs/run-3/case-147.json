@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "개정법의 부칙 전문과 적용례·경과조치가 제공되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "개인정보 보호법",
+    "addendum_text_provided"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문인 부칙의 조문 내용이 제공되지 않았다.",
+    "개정 전 사실에 대한 적용 여부는 해당 개정 부칙의 적용례·경과조치 확인이 필요하다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-147",
+  "supported_facts": [
+    {
+      "claim": "개인정보 보호법 부칙의 문언이 제공되지 않았다.",
+      "evidence_excerpt": "addendum_text_provided"
+    }
+  ]
+}

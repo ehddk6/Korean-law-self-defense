@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "청구가 제164조 제1호의 숙박료 채권이 아니거나 시효중단 사유가 있으면 1년 기간 또는 만료일이 달라질 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제164조 제1호는 여관 등의 숙박료 채권에 1년의 단기소멸시효를 적용한다.",
+    "제166조 제1항 및 제157조·제160조 제2항에 따라 권리행사 가능일 2026-06-10의 초일을 제외하여 2027-06-09에 만료한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권의 권리행사 가능일은 2026-06-10이고 중단이 없다.",
+      "evidence_excerpt": "\"interruption\": false, \"lodging_charge\": true, \"right_exercisable_date\": \"2026-06-10\""
+    }
+  ]
+}

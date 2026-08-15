@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 안전성 확보에 필요한 조치를 하지 않은 자도 ‘영상정보를 분실·도난·유출·변조 또는 훼손당한 자’에 해당한다고 판단하였다.",
+    "피고인이 하드디스크를 버려 은닉하여 CCTV 영상정보가 훼손되었다는 원심 판단이 기록되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 영유아보육법상 CCTV 녹화영상정보의 안전성 확보조치 의무 위반 여부",
+    "저장장치 은닉으로 영상정보가 삭제된 경우 영상정보 훼손에 해당하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-106",
+  "supported_facts": []
+}

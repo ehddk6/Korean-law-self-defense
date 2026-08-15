@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "조문상 재산권에 관한 소인 경우에만 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "재산권 청구의 의무이행지 특별재판적"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "place-of-performance-special-forum",
+  "scenario_id": "case-135",
+  "supported_facts": [
+    {
+      "claim": "재산권 청구이다.",
+      "evidence_excerpt": "\"property_claim\": true"
+    },
+    {
+      "claim": "의무이행지가 알려져 있다.",
+      "evidence_excerpt": "\"place_of_performance_known\": true"
+    },
+    {
+      "claim": "재산권에 관한 소는 의무이행지 법원에 제기할 수 있다.",
+      "evidence_excerpt": "재산권에 관한 소를 제기하는 경우에는 거소지 또는 의무이행지의 법원에 제기할 수 있다."
+    }
+  ]
+}

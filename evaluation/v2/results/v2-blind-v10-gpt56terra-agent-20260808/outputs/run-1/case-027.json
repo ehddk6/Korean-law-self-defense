@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "임대차계약 특약에 공동명의자의 연대책임이 정해진 점",
+    "원심이 공제합의의 효력이 원고들에게도 미친다는 전제에서 공제금을 보증금에서 공제한 점"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공동임차인의 임대차보증금반환채권이 불가분채권인지",
+    "공동임차인 중 1인과 임대인 사이 공제합의의 효력이 다른 공동임차인에게 미치는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-027",
+  "supported_facts": []
+}

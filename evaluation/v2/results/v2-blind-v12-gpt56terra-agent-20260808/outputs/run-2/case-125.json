@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "특별재판적 사실이 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "피고의 보통재판적에 따른 기본 관할"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "defendant-general-forum",
+  "scenario_id": "case-125",
+  "supported_facts": [
+    {
+      "claim": "피고의 보통재판적이 알려져 있다.",
+      "evidence_excerpt": "\"defendant_general_forum_known\": true"
+    }
+  ]
+}

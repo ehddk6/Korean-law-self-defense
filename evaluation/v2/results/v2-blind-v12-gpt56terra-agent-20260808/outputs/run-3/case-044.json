@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "전기통신금융사기죄와 사기죄는 입법 목적을 달리한다고 기재되어 있다.",
+    "두 죄의 구체적인 구성요건에도 일부 차이가 있다고 기재되어 있다.",
+    "개별 공소사실 및 원심 판단, 최종 재판 결과가 제공되지 않았다."
+  ],
+  "citations": [
+    "「전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법」"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄의 관계",
+    "전기통신금융사기죄가 사기죄의 특별법인지 여부",
+    "두 죄의 죄수 관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-044",
+  "supported_facts": []
+}

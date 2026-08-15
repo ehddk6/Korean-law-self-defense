@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "2016년 표준약관은 요양급여 대상 수술방법 또는 치료재료가 사용되지 않은 부분을 시력교정술로 보도록 개정되었다.",
+    "원심은 다초점 인공수정체 비용이 “공급가보다도 적게” 청구되었다고 판단하였다.",
+    "원심은 검사비가 “비정상적으로 부풀려 책정”되었다고 판단하였다.",
+    "원심은 피고에 대한 손해배상 청구를 일부만 인용하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "다초점 인공수정체 삽입술 비용의 실손의료보험 면책 여부",
+    "검사비 책정 및 진료비 영수증 발급행위의 위법성",
+    "피보험자들의 보험금 청구·수령과 공동불법행위 성립 여부",
+    "보험회사의 의사에 대한 손해배상청구 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-016",
+  "supported_facts": []
+}

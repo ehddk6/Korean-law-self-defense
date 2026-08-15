@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "전남지방노동위원회와 중앙노동위원회는 해고가 존재하지 않는다고 판단했다.",
+    "제공된 기록은 원고가 2020년 12월 1일에 한 후 중간에서 끝나 원심 판단과 청구 내용이 확인되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원고가 2020년 2월 11일 해고되었는지, 또는 근로관계 종료가 해고에 해당하지 않는지가 쟁점이다.",
+    "부당해고 구제신청이 해고 존재를 전제로 하는데, 노동위원회가 해고 부존재를 이유로 기각한 판단의 사실·법률상 근거 및 상고심 결론이 제공되지 않았다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-066",
+  "supported_facts": []
+}

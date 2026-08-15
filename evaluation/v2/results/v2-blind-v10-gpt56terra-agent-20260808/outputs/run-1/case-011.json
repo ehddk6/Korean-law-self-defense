@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "원심은 소외 1의 과실비율을 10%로 인정하였다.",
+    "원심은 원고가 지급할 책임보험금을 87,215,375원으로 보았다.",
+    "원심은 나머지 87,215,375원을 지급의무 없이 지급한 부당이득으로 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험회사 사이 상호협정에 따른 지급금 중 과오납 부분의 부당이득 성립 여부",
+    "책임보험금 산정에서 사고 과실비율을 적용하는 방식"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-011",
+  "supported_facts": [
+    {
+      "claim": "원고는 피고에게 174,430,750원을 지급했다.",
+      "evidence_excerpt": "원고는 피고에게 위 금액을 지급하였다."
+    },
+    {
+      "claim": "원심은 87,215,375원의 부당이득 반환을 인정했다.",
+      "evidence_excerpt": "그 나머지인 87,215,375원은 지급할 의무 없이 이를 피고에게 지급하였으므로 피고는 원고에게 위 87,215,375원을 부당이득으로 반환하여야 한다고 판단하였다."
+    }
+  ]
+}

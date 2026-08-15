@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "원고는 2008 사업연도 이후 배당금에 증자주식 비율 1을 적용하였다.",
+    "피고는 기존주식으로부터의 배당 비율까지 포함해 감면대상 배당금을 과다 산출했다고 보았다.",
+    "피고는 약 968억 원의 법인세 납부를 고지하였다."
+  ],
+  "citations": [
+    "구 「외국인투자 및 외자도입에 관한 법률」"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "증자 감면사업 배당금의 조세감면 범위",
+    "기존주식과 증자주식의 배당금 감면대상 구분",
+    "증자주식 비율 적용의 적법성",
+    "원천징수대상 법인세 납부고지처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-076",
+  "supported_facts": []
+}

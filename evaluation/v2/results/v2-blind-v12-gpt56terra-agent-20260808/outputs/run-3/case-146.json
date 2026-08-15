@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "특별규정의 원문이 없어 제14조에 대한 우선 적용 여부를 판단할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "특별규정의 존재와 내용",
+    "특별규정이 제14조의 원칙 또는 예외를 변경하는지 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정은 주장되었으나 제공되지 않았다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    }
+  ]
+}

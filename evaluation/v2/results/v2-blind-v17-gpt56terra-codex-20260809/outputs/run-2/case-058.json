@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "제공된 기록은 원고의 진단과 피고의 해외사업·직장 경력 일부만 포함한다.",
+    "진단과 혼인파탄 사이의 인과관계 또는 상대방의 귀책을 뒷받침하는 자료가 없다.",
+    "원심의 판단 이유와 청구 내용이 불완전하여 결론을 특정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원고의 진단 경위와 혼인관계 파탄의 관련성",
+    "피고의 해외 사업 및 취업 경력이 부부공동생활에 미친 영향",
+    "당사자별 혼인파탄 책임과 이혼사유",
+    "미성년 자녀의 이익과 양육 관련 사정"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-058",
+  "supported_facts": [
+    {
+      "claim": "원고는 진단을 받아 치료를 받았다.",
+      "evidence_excerpt": "원고는 2011. 6. 27. ‘(병명 1 생략)’, 2012. 9. 16. ‘(병명 2 생략)’ 각 진단을 받아 치료를 받았다."
+    },
+    {
+      "claim": "피고는 해외 사업 실패 후 재취업했다.",
+      "evidence_excerpt": "사업 실패 후인 2014. 4.경 다른 회사에 입사하였고"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-08-08T11:29:19+00:00",
+  "document_validation": true,
+  "document_validation_sha256": "9872b4c7a5eb91afe61837509b42b28ae41a805e98328b0fede4a5441b6daf7c",
+  "fabricated_citations": 0,
+  "format": "legal-workbench-evaluation-run-audit-v1",
+  "high_confidence_errors": 0,
+  "pii_leaks": 0,
+  "scenario_id": "case-166",
+  "traceability": 1.0,
+  "unsupported_confirmed_facts": 0,
+  "verified_deadline_errors": 0,
+  "wrong_applicable_law": 0
+}

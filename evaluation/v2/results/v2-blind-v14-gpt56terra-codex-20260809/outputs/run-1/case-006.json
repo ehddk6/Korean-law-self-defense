@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원고는 총 542세대 중 499세대 구분소유자들로부터 채권을 양도받았다.",
+    "기록에는 공용부분과 전유부분의 구체적 하자 내용 및 보수비 산정 근거가 제시되지 않았다.",
+    "피고 2 회사에 대한 청구는 피고 1 회사를 대위한 청구와 구분소유자로부터 양수한 청구가 병존한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "입주자대표회의의 하자보수청구권 및 손해배상채권 양수의 적법성",
+    "분양자와 시공자의 아파트 하자담보책임의 성립 범위",
+    "피고 1 회사를 대위한 피고 2 회사에 대한 도급계약상 하자담보책임 청구 요건",
+    "공용부분·전유부분 하자 및 양수채권별 손해액의 입증"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-006",
+  "supported_facts": []
+}

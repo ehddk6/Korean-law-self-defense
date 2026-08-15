@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원심은 실질적인 주주 전원과 이해관계인이 참석한 경영합의를 주주총회 결의로 보았다.",
+    "원심은 경영합의가 이루어진 이상 과거 결의 부존재 확인을 구할 소의 이익이 없다고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주명부상 주주가 아닌 실질주주의 주주권 행사 가능 여부",
+    "경영합의가 대표이사 및 감사 선임 주주총회 결의의 효력을 갖는지 여부",
+    "과거 임시주주총회 결의 부존재 확인소의 소의 이익"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-034",
+  "supported_facts": []
+}

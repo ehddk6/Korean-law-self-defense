@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "인도 봄베이 하이 코트에서 원고 전부 패소판결이 확정되었다.",
+    "원고와 피고는 각각 파나마 및 중국 법인이다.",
+    "원고 선박 가압류와 관련된 사실관계 및 증거는 주로 인도 절차와 연결되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "대한민국 법원에 국제재판관할권이 인정되는지 여부",
+    "피고 선박의 국내 소재가 재산소재지 특별관할의 근거가 되는지 여부",
+    "인도 외국판결의 확정이 국내 소송에 미치는 효과",
+    "당사자의 편의ㆍ판결의 실효성에 비추어 한국과 분쟁의 실질적 관련성이 있는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-010",
+  "supported_facts": [
+    {
+      "claim": "피고 선박은 원고가 소를 제기한 무렵 피고의 유일한 선박이었다.",
+      "evidence_excerpt": "피고 선박은 이 사건 소 제기 무렵 피고가 소유한 유일한 선박으로"
+    },
+    {
+      "claim": "외국판결의 결과가 기록에 있다.",
+      "evidence_excerpt": "이 사건 인도 소송에서 원고 전부 패소판결이 확정되었다"
+    }
+  ]
+}

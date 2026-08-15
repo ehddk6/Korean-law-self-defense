@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "불법행위일부터 10년을 경과한 때에도 청구권은 소멸한다.",
+    "미성년자의 성적 침해에 관한 청구권에는 성년 전까지 시효가 진행하지 않는 예외가 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2029-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "불법행위 손해배상청구권의 3년 단기소멸시효",
+    "손해 및 가해자를 안 날부터의 기산",
+    "연 단위 기간의 만료일 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-tort-knowledge-period",
+  "scenario_id": "case-144",
+  "supported_facts": [
+    {
+      "claim": "손해와 가해자를 안 날이 특정되고 불법행위일 및 중단 여부가 제공되었다.",
+      "evidence_excerpt": "\"interruption\": false, \"knowledge_date\": \"2026-04-10\", \"tort_date\": \"2026-04-01\""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "선박 또는 항공기 사고 손해배상에는 최초 도착지 법원도 특별재판적이 될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "불법행위지 특별재판적"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "tort-place-special-forum",
+  "scenario_id": "case-140",
+  "supported_facts": [
+    {
+      "claim": "불법행위 청구이다.",
+      "evidence_excerpt": "\"tort_claim\": true"
+    },
+    {
+      "claim": "불법행위지가 알려져 있다.",
+      "evidence_excerpt": "\"tort_place_known\": true"
+    },
+    {
+      "claim": "불법행위에 관한 소는 행위지 법원에 제기할 수 있다.",
+      "evidence_excerpt": "불법행위에 관한 소를 제기하는 경우에는 행위지의 법원에 제기할 수 있다."
+    }
+  ]
+}

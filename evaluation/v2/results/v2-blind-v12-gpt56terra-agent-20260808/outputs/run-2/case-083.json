@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "원고는 자신의 이름으로 의원 사업자등록을 하였다.",
+    "원고의 기납부세액은 소외인의 계산으로 납부되었다.",
+    "세무서는 원고의 기납부세액을 소외인의 체납세액에 충당하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "실제사업자의 사업소득 귀속",
+    "명의상 사업자에게 부과된 종합소득세의 적법성",
+    "원고의 기납부세액을 실제사업자 체납세액에 충당할 수 있는지 여부",
+    "근로소득에 대한 종합소득세 경정·고지의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-083",
+  "supported_facts": [
+    {
+      "claim": "소외인은 의원의 실제 개설·운영자이다.",
+      "evidence_excerpt": "실제 개설ㆍ운영자이고"
+    },
+    {
+      "claim": "원고는 근로자로 근로를 제공하였다.",
+      "evidence_excerpt": "이 사건 의원에서 근로를 제공한 근로자"
+    },
+    {
+      "claim": "피고는 원고에게 종합소득세를 경정·고지하였다.",
+      "evidence_excerpt": "각각 경정ㆍ고지하였다."
+    }
+  ]
+}

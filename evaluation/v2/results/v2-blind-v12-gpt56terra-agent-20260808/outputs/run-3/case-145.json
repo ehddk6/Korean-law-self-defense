@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "제20조의 소재지 관할은 부동산에 관한 소에 대하여 제기할 수 있는 특별재판적이다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "부동산에 관한 소의 부동산 소재지 특별재판적"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "supported_facts": [
+    {
+      "claim": "부동산 관련 청구이고 부동산 소재지가 확인되었다.",
+      "evidence_excerpt": "\"property_location_known\": true, \"real_estate_claim\": true"
+    }
+  ]
+}

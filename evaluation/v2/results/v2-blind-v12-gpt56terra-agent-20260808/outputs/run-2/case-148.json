@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "주소를 알 수 없다는 주장만 제시되었다.",
+    "신청 사유를 뒷받침하는 증거가 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "공시송달의 주소불명 요건",
+    "공시송달 신청 사유의 소명"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "public-service-requires-statutory-ground",
+  "scenario_id": "case-148",
+  "supported_facts": [
+    {
+      "claim": "주소불명이 주장되었다.",
+      "evidence_excerpt": "\"address_unknown_claimed\": true"
+    },
+    {
+      "claim": "소명 증거가 제공되지 않았다.",
+      "evidence_excerpt": "\"supporting_evidence_provided\": false"
+    }
+  ]
+}

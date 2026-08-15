@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "하자의 내용·범위·보수비용이 기록에 구체적으로 제시되지 않았다.",
+    "542세대 중 499세대의 채권만 양도되었다.",
+    "피고 2 회사에 대한 청구는 대위 또는 양수채권이라는 별도 요건을 충족해야 한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "입주자대표회의가 양수한 하자보수 갈음 손해배상채권의 행사 가능성",
+    "시행사 피고 1 회사의 하자담보 또는 손해배상책임",
+    "시공사 피고 2 회사에 대한 도급계약상 하자담보책임의 대위 행사 요건",
+    "구분소유자별 채권양도 및 통지의 효력과 청구범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-006",
+  "supported_facts": [
+    {
+      "claim": "원고는 499세대 구분소유자로부터 채권을 양도받았다.",
+      "evidence_excerpt": "이 사건 아파트 총 542세대 중 499세대 구분소유자들로부터"
+    },
+    {
+      "claim": "원고는 피고들에게 채권양도 통지를 하였다.",
+      "evidence_excerpt": "피고들에게 채권양도 통지를 하였다."
+    }
+  ]
+}

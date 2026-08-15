@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "개정 전 시작되었다는 사실만으로 신법이 계속 중인 법률관계에 적용된다고 단정할 수 없고, 특별규정이 있으면 제14조 제1항의 원칙이 배제될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제1항의 적용요건: 법률관계가 개정법 효력 발생 전 완성·종결되었는지 불명이며, 계속 중인 관계라면 해당 여부에 따라 신법 적용 범위가 달라진다.",
+    "제14조 제1항의 예외: 시간적 적용에 관한 특별규정 유무가 확인되지 않아 결론을 확정할 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "법률관계는 개정법 효력 발생 후에도 계속되었다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    }
+  ]
+}

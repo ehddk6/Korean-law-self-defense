@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "소외인 명의 소유권이전등기는 무효라는 판결이 확정되었다.",
+    "피고는 2018. 11.경 소외인 명의의 소유권이전등기를 말소하고 피고 명의 소유권이전등기를 마쳤다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "명의신탁 무효로 소유권을 취득한 자의 임대차보증금반환채무 승계 여부",
+    "주택임대차보호법 제3조 제1항 대항요건을 갖춘 임차인의 보호 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-029",
+  "supported_facts": []
+}

@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "원고는 참가인과 보험설계사 위촉계약을 체결하였다.",
+    "원고는 FP, PSM, AM 직급으로 업무를 수행하였다.",
+    "참가인은 실습교육과 현장 경험을 거쳐 인력을 장기적으로 양성하는 조직을 마련하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약에 따른 당사자 관계의 법적 성격",
+    "FP·PSM·AM 업무 수행 경위가 계약상 지위 판단에 미치는 영향",
+    "보험설계사 위촉계약 후 업무 변경의 법적 평가"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "참가인은 2010년 FP 인턴십 제도를 도입했다.",
+      "evidence_excerpt": "참가인은 2010년 ‘FP(Financial Planner) 인턴십’ 제도를 도입하여"
+    },
+    {
+      "claim": "원고는 2010년 7월 보험설계사 위촉계약을 체결했다.",
+      "evidence_excerpt": "2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "원고는 2011년부터 PSM으로 근무했다.",
+      "evidence_excerpt": "2011. 12. 1.부터 참가인의 TRI△△지점에서 PSM"
+    },
+    {
+      "claim": "원고는 2013년부터 AM으로 근무했다.",
+      "evidence_excerpt": "2013. 7. 1.부터는 참가인의 □□지점 등에서 AM"
+    }
+  ]
+}

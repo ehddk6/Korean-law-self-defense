@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "재산국외도피죄는 재산을 해외에서 임의로 지배·관리할 수 있는 상태에 둔다는 인식을 요구한다.",
+    "해외송금의 동기, 수단의 은밀성·탈법성, 사후조치 등을 엄격하게 판단해야 한다.",
+    "즉시 국내 반입 목적의 해외송금이면 재산도피의 고의가 없을 수 있다.",
+    "원심은 무죄 부분을 제외한 공소사실을 유죄로 판단했다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특정경제범죄법상 재산국외도피죄의 고의",
+    "국내재산 해외 이동과 재산국외도피죄 성립",
+    "즉시 국내 반입 목적 해외송금의 법적 평가",
+    "재산국외도피 판단에서 동기·수단·사후조치의 고려",
+    "무죄 부분을 제외한 공소사실의 유죄 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-042",
+  "supported_facts": []
+}

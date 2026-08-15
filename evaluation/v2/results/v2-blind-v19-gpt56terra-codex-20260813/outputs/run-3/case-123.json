@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "특별규정이 존재하면 교부송달 원칙의 적용이 달라질 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제178조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제178조",
+    "필수 사실: 특별규정이 없다는 전제",
+    "예외: 특별한 규정이 있는 경우"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "personal-delivery-required",
+  "scenario_id": "case-123",
+  "supported_facts": [
+    {
+      "claim": "서류의 등본 또는 부본이 수령인에게 교부되었다.",
+      "evidence_excerpt": "copy_delivered_to_recipient"
+    }
+  ]
+}

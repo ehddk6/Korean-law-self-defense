@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "신탁관계가 설정된 부동산의 소유자는 수탁자이다.",
+    "수탁자의 사전승낙이나 사후승인이 없으면 임대차계약으로 수탁자에게 대항할 수 없다.",
+    "구체적 중개행위, 설명 내용 및 손해에 관한 사건 사실이 제공되지 않았다."
+  ],
+  "citations": [
+    "공인중개사법 제25조 제1항 제1호",
+    "공인중개사법 제29조 제1항",
+    "대법원 2012. 8. 30. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "부동산중개업자의 중개대상물 권리관계 조사·확인의무",
+    "신탁부동산 임대차 중개 시 신탁원부 제시 및 설명의무",
+    "수탁자의 사전승낙 또는 사후승인 없는 임대차계약의 대항력",
+    "공인중개사의 손해배상책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-024",
+  "supported_facts": []
+}

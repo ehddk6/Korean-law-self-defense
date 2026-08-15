@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "주소를 알 수 없다는 주장에 대한 소명자료가 제공되지 않았다.",
+    "공시송달 신청에는 그 사유를 소명하여야 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "주소등 또는 근무장소를 알 수 없는 경우 공시송달 요건",
+    "공시송달 신청 사유의 소명 필요 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "public-service-requires-statutory-ground",
+  "scenario_id": "case-148",
+  "supported_facts": [
+    {
+      "claim": "주소를 알 수 없다는 주장이 제기되었다.",
+      "evidence_excerpt": "\"address_unknown_claimed\": true"
+    },
+    {
+      "claim": "그 주장에 대한 소명자료는 제공되지 않았다.",
+      "evidence_excerpt": "\"supporting_evidence_provided\": false"
+    },
+    {
+      "claim": "공시송달 신청에는 사유를 소명하여야 한다.",
+      "evidence_excerpt": "제1항의 신청에는 그 사유를 소명하여야 한다."
+    }
+  ]
+}

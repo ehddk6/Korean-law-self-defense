@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "신법 적용이 곤란한 경우 제14조 제2항의 원칙 적용 예외에 해당한다.",
+    "예외 상황에서 구법 적용 여부는 제시된 조문만으로 명시되지 않았다.",
+    "특별규정 존재 여부가 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청처분에서 신법 적용이 곤란한 특별한 사정",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "당사자의 신청에 따른 처분이다.",
+      "evidence_excerpt": "\"party_application\": true"
+    },
+    {
+      "claim": "신법 적용이 곤란한 특별한 사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true"
+    }
+  ]
+}

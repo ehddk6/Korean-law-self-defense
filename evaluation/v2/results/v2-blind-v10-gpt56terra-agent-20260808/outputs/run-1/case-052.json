@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "파산관재인이 본소 중 위자료와 재산분할청구에 관하여 소송수계신청을 하였고 제1심이 이를 허가하였다.",
+    "제1심과 원심은 일부 소송수계인으로서 파산관재인을 당사자로 하여 판결을 선고하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "파산관재인이 이혼에 따른 위자료 및 재산분할청구 소송을 수계할 수 있는지",
+    "부적법한 소송수계 후 선고된 판결의 위법 여부"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-052",
+  "supported_facts": [
+    {
+      "claim": "원고는 제1심 계속 중 파산선고를 받았다.",
+      "evidence_excerpt": "원고는 제1심 계속 중이던 2020. 10. 13. 파산선고를 받은 사실"
+    }
+  ]
+}

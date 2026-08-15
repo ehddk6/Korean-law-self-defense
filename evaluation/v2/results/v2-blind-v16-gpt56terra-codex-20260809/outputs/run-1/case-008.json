@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "통화옵션계약 청구에는 구체적 상고이유가 기재되지 않았다.",
+    "위험회피회계 적용은 헤지 목적과 위험 인식의 반대 근거가 될 수 있다.",
+    "외화 유입량과 계약조건의 구체적 수치가 없어 적합성 위반 정도와 손해액이 불명확하다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "통화옵션계약 관련 상고이유 미기재의 심리 범위",
+    "단순선도환계약이 적합성 원칙에 위반되는지",
+    "위험회피회계 적용의 의미",
+    "금융기관의 위험 설명이 구체적·충분했는지",
+    "결제일별 손해의 단기소멸시효"
+  ],
+  "outcome": "mixed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": [
+    {
+      "claim": "원심은 적합성 원칙 위반을 인정하였다.",
+      "evidence_excerpt": "피고는 원고의 경영상황상 과대한 위험을 초래할 수 있는 이 사건 단순선도환계약을 체결함으로써 적합성 원칙을 위반하였고"
+    },
+    {
+      "claim": "일부 손해의 시효 소멸 판단이 있다.",
+      "evidence_excerpt": "이미 시효로 소멸하였다고 판단하였다."
+    }
+  ]
+}

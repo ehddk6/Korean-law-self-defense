@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "하자의 구체적 내용·보수비 및 발생 원인이 기록에 없다.",
+    "499세대 외 나머지 세대의 채권양도 여부는 확인되지 않는다.",
+    "피고 2 회사에 대한 대위청구의 피보전채권 및 보전 필요성이 제시되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "입주자대표회의의 하자보수청구권 양수 적법성",
+    "분양자와 시공자의 하자담보책임 범위",
+    "공용부분과 전유부분 하자의 구별",
+    "채권양도 통지 및 대항요건",
+    "분양자에 대한 채권을 대위하는 요건"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-006",
+  "supported_facts": [
+    {
+      "claim": "원고는 구분소유자들로부터 채권을 양수하였다.",
+      "evidence_excerpt": "499세대 구분소유자들로부터 피고들에 대하여 가지는 하자보수청구권 및 하자보수를 갈음하는 손해배상채권 등을 각 양도받고"
+    }
+  ]
+}

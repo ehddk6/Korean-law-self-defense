@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원고는 참가인 1과 정년 후 1년의 촉탁직 근로계약을 실제로 체결했다.",
+    "취업규칙은 건강상태·근로태도·성적·성격·업무 필요성을 심사기준으로 정한다.",
+    "중앙노동위원회는 참가인들의 부당해고 구제신청을 받아들였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "단체협약과 취업규칙이 정년퇴직자 촉탁 재고용의 심사기준 및 노조 협의 가능성만 정하고 재고용 의무를 부과하지 않는 경우, 참가인들에게 촉탁직 재고용에 대한 정당한 기대권이 인정되는지가 쟁점이다.",
+    "참가인 1의 촉탁직 계약기간 만료 통보와 참가인 2의 정년 도달 후 미채용이 갱신기대권 침해에 의한 부당해고에 해당하는지가 쟁점이다."
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-061",
+  "supported_facts": []
+}

@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "피고는 원고 법인이 종전 법인과 실제 사업주가 같다고 보았다.",
+    "종전 법인과 원고 법인의 일부 사업 목적과 거래처가 겹친다.",
+    "원고 법인은 벽돌 제조업 등의 사업을 영위하였다."
+  ],
+  "citations": [
+    "구 지방세특례제한법 제58조의3 제6항 제3호"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "창업중소기업 취득세 감면 요건",
+    "폐업 후 같은 종류 사업 재개 여부",
+    "사업 확장 또는 다른 업종 추가 여부",
+    "서로 다른 법인의 동일 주체성 평가"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-082",
+  "supported_facts": [
+    {
+      "claim": "원심은 원고 법인이 예외 사유에 해당하지 않는다고 판단하였다.",
+      "evidence_excerpt": "제58조의3 제6항 제3호의 ‘폐업 후 사업을 다시 개시하여"
+    },
+    {
+      "claim": "원심은 서로 다른 법인까지 확대해석하기 어렵다고 보았다.",
+      "evidence_excerpt": "서로 다른 법인인 경우까지 구 지방세특례제한법"
+    }
+  ]
+}

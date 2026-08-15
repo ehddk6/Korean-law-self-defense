@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "원고들은 재채점 후 추가합격하여 실무교육을 마쳤다.",
+    "기록은 ‘피고들의 상고이유에 관한 판단’ 아래 ‘가. 원심의 판단’에서 중단되어 상고이유와 원심 결론이 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "세무사 자격시험 불합격 처분의 적법성",
+    "채점기준 변경 및 채점 일관성 부족의 효과",
+    "추가합격 후 피고들의 상고이유 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-003",
+  "supported_facts": [
+    {
+      "claim": "원고들은 추가합격 후 실무교육을 마쳤다.",
+      "evidence_excerpt": "원고들은 세무사 자격시험에 최종 합격하였고, 2022. 11. 28.부터 2023. 5. 29.까지 한국세무사회에서 진행한 이 사건 시험 추가합격자 수습세무사 실무교육을 마쳤다."
+    }
+  ]
+}

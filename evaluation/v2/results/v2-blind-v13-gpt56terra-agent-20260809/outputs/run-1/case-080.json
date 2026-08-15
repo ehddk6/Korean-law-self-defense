@@ -1,0 +1,17 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 상병에 업무와의 인과관계가 인정되지 않는다고 보아 요양불승인처분을 하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원고의 상세불명 대뇌반구의 뇌내출혈이 생산관리ㆍ운전ㆍ배송ㆍ거래업체 관리 업무와 상당인과관계가 있는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-080",
+  "supported_facts": []
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "제18조 제1항은 행위지 법원에 제기할 수 있도록 정한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "불법행위에 관한 소의 행위지 특별재판적"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "tort-place-special-forum",
+  "scenario_id": "case-140",
+  "supported_facts": [
+    {
+      "claim": "불법행위 청구이고 불법행위지가 확인되었다.",
+      "evidence_excerpt": "\"tort_claim\": true, \"tort_place_known\": true"
+    }
+  ]
+}

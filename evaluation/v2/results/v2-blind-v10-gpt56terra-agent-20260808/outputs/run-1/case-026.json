@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "조정에서 차임 및 관리비 연체액이 3개월분에 달하면 임대차계약이 자동 해지되도록 정한 점",
+    "특례기간 연체 차임 잔액이 24,556,080원으로 산정된 점"
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법 제10조의9 특례기간 연체차임의 변제충당 순서",
+    "특례기간 연체차임을 포함한 연체가 자동 해지사유를 충족하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-026",
+  "supported_facts": []
+}

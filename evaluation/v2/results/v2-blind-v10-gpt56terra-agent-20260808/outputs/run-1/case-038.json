@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "피고는 원고들의 목적사항을 소집통지에 그대로 인용하였다고 주장한다.",
+    "피고는 추가 이사 선임 여부는 주주총회가 먼저 판단할 사항이라고 주장한다.",
+    "피고는 복수 이사 선임이 없었으므로 집중투표 청구권 침해도 없다고 주장한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주제안의 내용과 다른 ‘추가 선임의 당부’를 의결한 소집절차의 적법성",
+    "집중투표 청구가 있는 경우 선임 이사 수를 소집통지에 기재하여야 하는지 여부",
+    "주주제안 의안의 요령 및 후보자 정보를 소집통지에 기재하여야 하는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-038",
+  "supported_facts": []
+}

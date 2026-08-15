@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "피고는 임대차보증금을 직접 반환하지 않았다.",
+    "소외 2 등이 자신의 계좌로 임료를 송금받는 형태를 피고가 용인하였다.",
+    "시설물 보수·교체 등 수선의무를 소외 2 등이 이행하도록 하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "부동산 소유자의 임대차계약상 임대인 지위",
+    "중개보조인을 통한 임대차계약 체결 및 보증금 반환의 법적 효과",
+    "임대료 수령 및 수선의무 이행에 관한 소유자의 책임",
+    "중개보조인의 행위에 대한 소유자의 관여 및 책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-030",
+  "supported_facts": []
+}

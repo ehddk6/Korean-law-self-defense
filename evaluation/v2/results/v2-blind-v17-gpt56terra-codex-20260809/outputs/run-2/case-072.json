@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "장애인 고용부담금은 법정 의무와 연계되어 부과된다.",
+    "원고는 부담금을 손금에 산입하지 않고 법인세를 신고·납부하였다.",
+    "피고는 부담금을 손금불산입 대상 공과금으로 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장애인 고용부담금이 의무 불이행에 대한 제재 공과금인지",
+    "구 법인세법 제21조 제5호의 손금불산입 공과금 해석",
+    "고용부담금의 경제적 부담과 제재성의 구별",
+    "경정청구 거부처분의 적법성과 손금산입 요건에 관한 입증책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-072",
+  "supported_facts": []
+}

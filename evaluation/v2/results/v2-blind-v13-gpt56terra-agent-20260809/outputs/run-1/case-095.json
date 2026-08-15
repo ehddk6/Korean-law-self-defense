@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 두 임대차보증금 합계 2,000만 원이 총 변제예정액 12,000,290원을 초과한다고 판단하였다.",
+    "법 제614조 제1항은 총변제액이 파산 시 배당받을 총액보다 적지 않아야 한다고 정한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "변제계획 인가 전 개인회생채권자에 대한 총변제액이 파산 시 배당받을 총액보다 적지 않아야 하는 법 제614조 제1항의 청산가치 요건을 판단하면서, 2005년에 종료되었다는 주장이 있는 임대차의 보증금 반환청구채권을 재산으로 산입할 수 있는지",
+    "채권자의 이의가 없고 보전처분 또는 강제집행 자료도 없는 임대차보증금 1,500만 원을 청산가치에 포함하여 변제계획을 불인가하고 절차를 폐지할 수 있는지"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-095",
+  "supported_facts": []
+}

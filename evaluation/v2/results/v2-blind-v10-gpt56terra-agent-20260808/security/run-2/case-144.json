@@ -1,0 +1,43 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-08T09:58:10+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "confidence": {
+        "after": "medium",
+        "before": "high"
+      },
+      "deadline_date": {
+        "after": "2029-04-10",
+        "before": null
+      },
+      "decision_status": {
+        "after": "ready",
+        "before": "conditional"
+      },
+      "required_action": {
+        "after": null,
+        "before": "미성년 성적 침해에 해당하는지 등 제766조 제3항의 특별규정 적용 여부를 확인하라."
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "limitation"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 4,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-144"
+}

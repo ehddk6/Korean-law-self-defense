@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "선행사건에서 피고인은 업무상횡령죄 등으로 유죄판결을 선고받아 확정되었다.",
+    "원심은 선행사건과 이 사건 업무상횡령을 포괄일죄로 보았다.",
+    "원심은 사립학교법 위반이 업무상횡령과 상상적 경합이라고 보았다."
+  ],
+  "citations": [
+    "사립학교법"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "교비회계 지출의 업무상횡령 및 사립학교법 위반",
+    "선행 확정판결과 포괄일죄의 관계",
+    "확정판결의 기판력 범위",
+    "업무상횡령과 사립학교법 위반의 상상적 경합"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-113",
+  "supported_facts": [
+    {
+      "claim": "교비회계에서 추도식비가 지출되었다.",
+      "evidence_excerpt": "합계 77,581,570원을 공소외 1에 대한 추도식비 명목으로 교비회계에서 지출"
+    },
+    {
+      "claim": "원심은 포괄일죄 관계를 인정하였다.",
+      "evidence_excerpt": "그 전부가 포괄일죄의 관계에 있고"
+    },
+    {
+      "claim": "원심은 면소를 선고하였다.",
+      "evidence_excerpt": "부분 모두에 대하여 면소를 선고하였다."
+    }
+  ]
+}

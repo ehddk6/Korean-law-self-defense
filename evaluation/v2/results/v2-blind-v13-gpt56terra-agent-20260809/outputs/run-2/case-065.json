@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원심은 성과급 재분배 주도가 정당한 징계사유라고 판단했다.",
+    "원심은 참가인 2가 정당한 사유 없이 특정감사를 거부·방해했다고 판단했다.",
+    "파면의 정당성은 각 징계사유의 존재뿐 아니라 징계양정과 절차를 포함한 전체 사정에 좌우되지만, 그 판단은 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "경영평가 성과급 재분배 금지명령이 정관과 공공기관운영법에 따른 정당한 직무명령인지, 참가인 2가 이를 주도한 행위가 인사규정상 징계사유가 되는지가 쟁점이다.",
+    "참가인 2가 특정감사를 거부·방해한 행위가 복무규정상 성실의무 위반에 해당하는지와, 각 사유가 파면을 정당화하는지가 쟁점이다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-065",
+  "supported_facts": []
+}

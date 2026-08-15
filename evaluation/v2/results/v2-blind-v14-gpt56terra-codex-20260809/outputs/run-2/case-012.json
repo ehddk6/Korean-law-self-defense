@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "원발부위 기준 분류조항에 관한 대법원 판례가 없다고 기재되어 있다.",
+    "원심은 해당 조항이 일반적이고 공통된 내용이라고 판단하였다.",
+    "원고의 진단에는 갑상선암(C73)이 포함되어 있고 피고는 갑상선암 기준 보험금을 지급하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원발부위 기준 분류조항이 보험금 지급 범위를 제한하는 중요한 약관인지 여부",
+    "보험자가 원발부위 기준 분류조항을 설명할 의무가 있는지 여부",
+    "갑상선암과 림프절 전이가 별개의 암보험사고에 해당하는지 여부",
+    "소액사건에서 법령해석 통일을 위하여 상고이유를 판단할 수 있는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-012",
+  "supported_facts": [
+    {
+      "claim": "원심은 설명의무 위반을 부정하였다.",
+      "evidence_excerpt": "보험자인 피고에게 설명의무 위반을 주장할 수 없다고 판단하였다."
+    },
+    {
+      "claim": "피고는 갑상선암 기준 보험금을 지급하였다.",
+      "evidence_excerpt": "갑상선암을 기준으로 하여 보험금 4,400,000원"
+    }
+  ]
+}

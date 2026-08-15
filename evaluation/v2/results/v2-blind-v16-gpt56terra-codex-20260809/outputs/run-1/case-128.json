@@ -1,0 +1,24 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "제183조(송달장소)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제183조 제1항의 송달장소",
+    "송달 장소가 수령인의 주소등인 사실",
+    "법정대리인에게 하는 송달의 예외"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달 장소가 수령인의 주소로 제시되어 있다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    }
+  ]
+}

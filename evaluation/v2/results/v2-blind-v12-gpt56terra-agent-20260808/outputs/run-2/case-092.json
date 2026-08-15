@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "변제계획상 변제기간은 2006년 7월 25일부터로 기재되어 있었다.",
+    "채무자는 15개월분 납입을 지체하였다.",
+    "원심은 채무자가 변제계획을 이행할 수 없음이 명백하다고 판단하였다."
+  ],
+  "citations": [
+    "개인회생사건 처리지침(재민 2004-4) 제7조 제3항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생 변제계획의 변제개시일 해석",
+    "변제계획 이행 불능의 명백성",
+    "변제계획 인가결정 별지 기재의 오류 여부",
+    "개인회생절차 폐지의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-092",
+  "supported_facts": [
+    {
+      "claim": "채무자는 총 14,767,680원을 납입하기로 하였다.",
+      "evidence_excerpt": "총 14,767,680원을 납입하기로 하는 내용"
+    },
+    {
+      "claim": "채무자는 상당 기간 납입을 지체하였다.",
+      "evidence_excerpt": "15개월분 합계 3,691,920원의 납입을 지체하면서"
+    },
+    {
+      "claim": "채무자는 2007년 7월 25일을 변제개시일로 알았던 것으로 보인다.",
+      "evidence_excerpt": "변제개시일을 ‘2007. 7. 25.’인 것으로 알고"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "피고인은 현금수거책 역할을 제안받고 이를 승낙한 것으로 공소사실에 기재되어 있다.",
+    "피고인은 피해자들로부터 현금을 직접 교부받은 것으로 공소사실에 기재되어 있다.",
+    "일부 현금은 제3자의 주민등록번호를 이용하여 송금되었다.",
+    "원심의 판단 내용과 최종 재판 결과가 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보이스피싱 조직원과의 공모 여부",
+    "현금수거책의 사기죄 공동정범 성립 여부",
+    "제3자 주민등록번호를 이용한 송금행위의 법적 평가",
+    "각 피해자별 편취금액 및 범죄사실의 증명"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-043",
+  "supported_facts": []
+}

@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "집행정지로 생활기록부 기재가 삭제되면 담당교사와 상급학교가 해당 정보를 활용하기 어렵다.",
+    "학교폭력 예방·재발 방지 필요성과 가해학생의 교정·선도 필요성을 함께 고려해야 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "집행정지 재결정 전 피해학생 등의 별도 의견청취 필요 여부",
+    "집행정지에 따른 학교생활기록부 학교폭력 조치사항 삭제 여부",
+    "회복하기 어려운 손해와 공공복리의 비교·판단"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-114",
+  "supported_facts": []
+}

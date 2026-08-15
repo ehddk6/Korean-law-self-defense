@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "주소등 또는 근무장소를 실제로 알 수 없는지 확인되지 않았다.",
+    "공시송달 신청을 전제로 한다면 그 사유의 소명자료가 제시되지 않았다.",
+    "외국송달 관련 대체 요건이나 재판장의 직권 명령 등 다른 공시송달 근거는 제시되지 않았다."
+  ],
+  "citations": [
+    "제194조(공시송달의 요건)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제194조 제1항의 공시송달 요건",
+    "주소등 또는 근무장소를 알 수 없는지 여부",
+    "신청이 있는 경우 제194조 제2항의 사유 소명",
+    "제194조 제1항 제3항 제4항의 다른 법정 근거 가능성"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "public-service-requires-statutory-ground",
+  "scenario_id": "case-148",
+  "supported_facts": [
+    {
+      "claim": "주소를 알 수 없다는 주장만 있고 소명자료는 제시되지 않았다.",
+      "evidence_excerpt": "\"address_unknown_claimed\": true, \"supporting_evidence_provided\": false"
+    },
+    {
+      "claim": "제1항의 신청에는 그 사유를 소명하여야 한다.",
+      "evidence_excerpt": "②제1항의 신청에는 그 사유를 소명하여야 한다."
+    }
+  ]
+}

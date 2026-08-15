@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "원심은 긴박한 경영상 필요성 요건을 갖추지 못했다고 판단하였다.",
+    "원심 판단에 따르면 다른 요건을 살필 필요 없이 정리해고는 부당해고에 해당한다.",
+    "중앙노동위원회는 대상자 선정기준의 합리성·공정성과 노동조합과의 성실한 협의를 부정하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "정리해고가 근로기준법 제24조상 긴박한 경영상 필요성 요건을 갖추었는지 여부",
+    "긴박한 경영상 필요성이 없을 경우 정리해고의 정당성이 부정되는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-068",
+  "supported_facts": []
+}

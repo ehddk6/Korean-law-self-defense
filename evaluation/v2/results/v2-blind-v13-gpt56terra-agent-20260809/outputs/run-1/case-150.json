@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "특허권등이면 해당 지방법원의 전속관할이 원칙이고 서울중앙지방법원 제기가 허용되지만, 특허권등 외 지식재산권이면 제1항의 임의 관할이므로 청구 종류에 따라 결론이 달라진다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민사소송법 제24조 제1항·제2항의 분류요건: 청구가 특허권등인지 그 밖의 지식재산권인지 확인되지 않아 임의 관할과 전속관할 중 어느 규정이 적용되는지 확정할 수 없다.",
+    "민사소송법 제24조의 관할지 요건: 제2조부터 제23조까지에 따른 관할법원 소재지가 완비되지 않아 관할 고등법원이 있는 곳의 지방법원을 특정할 수 없다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구이나 특별재판적 판단에 필요한 사실이 완비되지 않았다.",
+      "evidence_excerpt": "\"intellectual_property_claim\": true, \"specific_court_facts_complete\": false"
+    }
+  ]
+}

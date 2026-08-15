@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "청구가 재산권에 관한 소가 아니거나 의무이행지가 관할상 특정되지 않으면 제8조 적용이 달라질 수 있다."
+  ],
+  "citations": [
+    "민사소송법"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제8조의 의무이행지 특별재판적",
+    "재산권 청구",
+    "의무이행지가 알려져 있음"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "place-of-performance-special-forum",
+  "scenario_id": "case-135",
+  "supported_facts": [
+    {
+      "claim": "재산권 청구이고 의무이행지가 알려져 있다.",
+      "evidence_excerpt": "place_of_performance_known\": true"
+    },
+    {
+      "claim": "재산권에 관한 소는 의무이행지 법원에 제기할 수 있다.",
+      "evidence_excerpt": "재산권에 관한 소를 제기하는 경우에는 거소지 또는 의무이행지의 법원에 제기할 수 있다."
+    }
+  ]
+}

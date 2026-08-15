@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "시설 내에서 세탁하면서 위생원을 두지 않았다.",
+    "세탁물을 전량 위탁한 것처럼 사실과 다르게 신고하였다고 기재되어 있다.",
+    "피고는 부당 청구·지급을 이유로 환수처분을 하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장기요양기관의 위생원 배치 및 세탁물 전량 위탁 기준 위반 여부",
+    "사실과 다르게 신고한 장기요양급여비용에 대한 환수처분의 적법 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-074",
+  "supported_facts": []
+}

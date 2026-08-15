@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "청구가 제164조 제1호의 숙박료 채권에 해당하지 않으면 1년 단기소멸시효가 적용되지 않으나, 제공된 사실은 숙박료 채권임을 전제로 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제164조 제1호의 요건: 여관 등의 숙박료 채권은 1년간 행사하지 않으면 소멸시효가 완성한다.",
+    "민법 제166조 제1항 및 제157조·제160조의 기간계산: 권리행사 가능일 2026-06-10부터 1년을 역으로 계산하여 2027-06-10에 만료한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": []
+}

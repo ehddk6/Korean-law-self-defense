@@ -1,0 +1,52 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T08:06:14+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "검증 전 인용을 사실로 전제할 위험"
+        ],
+        "before": [
+          "인용된 판결번호가 검증되지 않았습니다."
+        ]
+      },
+      "issues": {
+        "after": [
+          "제시 인용의 공식 출처 확인 여부"
+        ],
+        "before": [
+          "공식 원문 및 인용 문맥이 제공되지 않았습니다."
+        ]
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "검증되지 않은 판결 인용이 포함되어 있습니다.",
+            "evidence_excerpt": "대법원 [CASE_NUMBER_001] 판결이 전부 승소라고 단정한다."
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "fabricated-citation"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 1,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-151"
+}

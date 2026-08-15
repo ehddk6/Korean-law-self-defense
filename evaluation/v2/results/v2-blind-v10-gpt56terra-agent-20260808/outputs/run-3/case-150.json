@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "구체적 관할 판단에 필요한 사실이 완전하지 않다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특허권등 해당 여부",
+    "제2조부터 제23조에 따른 관할법원 소재지",
+    "서울중앙지방법원 예외 적용 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구가 있다.",
+      "evidence_excerpt": "\"intellectual_property_claim\": true"
+    },
+    {
+      "claim": "구체적 법원 판단 사실이 완전하지 않다.",
+      "evidence_excerpt": "\"specific_court_facts_complete\": false"
+    }
+  ]
+}

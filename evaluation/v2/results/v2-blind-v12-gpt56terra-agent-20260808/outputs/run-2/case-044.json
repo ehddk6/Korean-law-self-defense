@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "전기통신금융사기죄와 사기죄는 입법 목적을 달리한다.",
+    "양 죄의 구체적 구성요건에는 일부 차이가 있다.",
+    "기록은 사건 사실관계와 최종 판단을 제시하지 않는다."
+  ],
+  "citations": [
+    "「전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법」",
+    "[CASE_NUMBER_001] 판결",
+    "12. 9. 선고 80도384 전원합의체 판결"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄의 관계",
+    "전기통신금융사기죄가 사기죄의 특별법인지 여부",
+    "두 범죄의 구성요건 차이"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-044",
+  "supported_facts": [
+    {
+      "claim": "두 범죄는 입법 목적이 다르다.",
+      "evidence_excerpt": "형법상 사기죄와 입법 목적을 달리할 뿐만 아니라"
+    },
+    {
+      "claim": "두 범죄의 구성요건에는 차이가 있다.",
+      "evidence_excerpt": "구체적인 구성요건에도 일부 차이가 있어"
+    },
+    {
+      "claim": "검사의 상고이유가 제시되었다.",
+      "evidence_excerpt": "검사의 상고이유에 관하여"
+    }
+  ]
+}

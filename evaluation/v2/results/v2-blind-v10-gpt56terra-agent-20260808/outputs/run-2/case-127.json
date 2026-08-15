@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "개정 전 사실이라는 사정만으로 개정법 적용 여부를 단정할 수 없음"
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "부칙 조문 내용이 제공되지 않음",
+    "개정일과 사실 발생일이 제공되지 않음",
+    "경과규정·특별규정 확인 필요"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-127",
+  "supported_facts": []
+}

@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "청구가 숙박료에 해당하지 않거나 특별규정이 적용되면 기간 또는 기산점이 달라질 수 있다."
+  ],
+  "citations": [
+    "제164조(1년의 단기소멸시효)",
+    "제166조(소멸시효의 기산점)",
+    "제160조(역에 의한 계산)"
+  ],
+  "confidence": "medium",
+  "deadline_date": "2027-06-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제164조 제1호의 숙박료 채권 1년 단기소멸시효가 적용된다.",
+    "숙박료 채권이라는 사실과 권리행사 가능일이 제시되어 있다.",
+    "제157조 및 제160조에 따라 초일을 산입하지 않고 역으로 계산한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "one-year-lodging-claim",
+  "scenario_id": "case-134",
+  "supported_facts": [
+    {
+      "claim": "숙박료 채권이다.",
+      "evidence_excerpt": "\"lodging_charge\": true"
+    },
+    {
+      "claim": "권리행사 가능일이 제시되었다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-06-10\""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "법령에 특별한 규정이 있거나 처분 당시 법령 적용이 곤란한 특별한 사정이 있으면 예외가 될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "당사자 신청에 따른 처분의 적용법"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-126",
+  "supported_facts": [
+    {
+      "claim": "당사자의 신청에 따른 처분이다.",
+      "evidence_excerpt": "\"party_application\": true"
+    },
+    {
+      "claim": "처분 전에 법이 변경되었다.",
+      "evidence_excerpt": "\"law_changed_before_disposition\": true"
+    }
+  ]
+}

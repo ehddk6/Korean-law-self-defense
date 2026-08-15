@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "특허권등 외 지식재산권은 관할 고등법원 소재지 지방법원에 제기할 수 있는 반면, 특허권등은 해당 지방법원의 전속관할이다.",
+    "특허권등 소송은 서울중앙지방법원에도 제기할 수 있다.",
+    "구체적 법원 판단에 필요한 사실이 완비되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "지식재산권 유형의 구분",
+    "제2조부터 제23조까지에 따른 기초 관할법원 소재지",
+    "서울중앙지방법원 관할 예외 및 선택 가능성"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구가 있다.",
+      "evidence_excerpt": "\"intellectual_property_claim\": true"
+    },
+    {
+      "claim": "구체적 법원 판단에 필요한 사실이 완비되지 않았다.",
+      "evidence_excerpt": "\"specific_court_facts_complete\": false"
+    },
+    {
+      "claim": "특허권등인지 여부와 제2조부터 제23조에 따른 관할법원 소재지가 적용 기준이다.",
+      "evidence_excerpt": "특허권등의 지식재산권에 관한 소를 제기하는 경우에는 제2조부터 제23조까지의 규정에 따른 관할법원 소재지를 관할하는 고등법원이 있는 곳의 지방법원의 전속관할로 한다."
+    }
+  ]
+}

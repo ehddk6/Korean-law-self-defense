@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "특별규정의 존재와 내용이 제공되지 않아 제14조 제1항의 예외 적용 여부를 확인할 수 없다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제1항은 효력 발생 전 완성되거나 종결된 법률관계에 대한 신법의 불적용을 정한다.",
+    "계속 중인 법률관계라는 사실은 제시되었으나, 특별규정의 유무가 필요하다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-121",
+  "supported_facts": [
+    {
+      "claim": "개정 후에도 법률관계가 계속된다.",
+      "evidence_excerpt": "\"relation_continues_after_effective_date\": true"
+    },
+    {
+      "claim": "제14조 제1항은 완성되거나 종결된 법률관계에 관한 기준을 둔다.",
+      "evidence_excerpt": "그 법령등의 효력 발생 전에 완성되거나 종결된 사실관계 또는 법률관계에 대해서는 적용되지 아니한다."
+    }
+  ]
+}

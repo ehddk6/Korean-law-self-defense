@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결하였다.",
+    "원고는 FP, PSM, AM 직급으로 근무하였다.",
+    "기록에는 계약 내용, 분쟁 내용 및 원심 판단이 제시되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약의 법적 성질",
+    "TRI 조직에서의 업무 수행 관계",
+    "PSM 및 AM 업무의 근로자성 또는 종속성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "참가인은 TRI 조직을 마련하기로 하였다.",
+      "evidence_excerpt": "‘TRI(Trust Respect Innovation) 조직’을 마련하기로 하였다."
+    },
+    {
+      "claim": "원고는 보험설계사 위촉계약을 체결하였다.",
+      "evidence_excerpt": "보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "원고는 AM으로 근무하였다.",
+      "evidence_excerpt": "AM(Assistant Manager, 지점장의 업무를 보조하는 총무 직급)으로 근무하였다."
+    }
+  ]
+}

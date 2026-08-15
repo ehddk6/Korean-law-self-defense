@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "추가 이사 2명 선임안은 찬성보다 반대가 많아 부결되었다.",
+    "원고들이 추천한 후보자의 성명 등을 소집통지에 기재하지 않았다.",
+    "이사 선임은 최다 지지율 1인 선임 방식으로 이루어졌다.",
+    "피고는 복수 이사 선임이 없었다는 이유로 집중투표제를 시행하지 않았다."
+  ],
+  "citations": [
+    "상법 제363조의2 제1항",
+    "상법 제363조의2 제2항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주제안권 행사와 주주총회 목적사항 상정",
+    "주주제안 의안 요령의 소집통지 기재",
+    "이사 선임 시 집중투표 청구권",
+    "주주총회 소집통지의 적법성",
+    "이사 선임 결의방법의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-038",
+  "supported_facts": []
+}

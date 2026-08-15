@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "지방노동위원회는 해고가 존재하지 않는다고 판단하였다.",
+    "중앙노동위원회도 같은 취지로 재심신청을 기각하였다.",
+    "기록은 ‘2020. 2. 11. 자로 해고되었다고 주장’한다고만 적고 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로관계 종료가 사용자의 해고 의사표시인지",
+    "해고 존재에 관한 근로자의 주장·입증책임",
+    "부당해고 구제신청의 대상이 되는 종료인지",
+    "노동위원회 재심판정 취소소송에서 해고 부존재 판단의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-066",
+  "supported_facts": []
+}

@@ -1,0 +1,25 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "부동산 관련 소인지",
+    "부동산 소재지가 확인되는지"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "supported_facts": [
+    {
+      "claim": "부동산에 관한 소이다.",
+      "evidence_excerpt": "\"real_estate_claim\": true"
+    },
+    {
+      "claim": "부동산 소재지가 확인되어 있다.",
+      "evidence_excerpt": "\"property_location_known\": true"
+    }
+  ]
+}

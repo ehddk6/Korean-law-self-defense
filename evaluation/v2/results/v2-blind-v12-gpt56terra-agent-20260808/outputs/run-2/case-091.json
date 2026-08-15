@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "변제계획 이행 불능이 명백하면 개인회생절차를 폐지하여야 한다.",
+    "변제 미완료 면책은 세 가지 요건을 모두 충족해야 한다.",
+    "면책결정 전 이해관계인의 의견을 들어야 한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인가된 변제계획 이행 불능에 따른 개인회생절차 폐지",
+    "변제 미완료 채무자에 대한 면책결정 요건",
+    "변제계획 변경 가능성",
+    "파산절차 배당액과 개인회생 변제액의 비교"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-091",
+  "supported_facts": [
+    {
+      "claim": "면책 요건은 모두 충족해야 한다.",
+      "evidence_excerpt": "요건을 모두 충족한 때에는"
+    }
+  ]
+}

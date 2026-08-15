@@ -1,0 +1,44 @@
+{
+  "adverse_points": [
+    "채무는 신청일 기준 1년 이내 발생했다.",
+    "채무부담경위를 명확히 밝히지 않았다.",
+    "채권자가 경위 소명을 요구했다.",
+    "제1심에서 답변하지 않았다.",
+    "단기간 채무와 소명 부재는 불성실 판단 근거가 된다."
+  ],
+  "citations": [
+    "신청일 기준 1년 이내에 발생한 것",
+    "이 사건 신청이 성실하지 않은 경우"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "불성실한 개시신청의 법률요건",
+    "단기간 발생 채무의 의미",
+    "채무부담경위 소명책임",
+    "이의신청 후 무답변의 증거가치",
+    "불성실성의 구체적 사정 필요성",
+    "채권자 이익과 제도 목적",
+    "법원의 심리ㆍ증거평가",
+    "항고 기각의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-093",
+  "supported_facts": [
+    {
+      "claim": "개시신청일",
+      "evidence_excerpt": "2009. 6. 18. 개인회생절차 개시신청을 한"
+    },
+    {
+      "claim": "채무 발생",
+      "evidence_excerpt": "신청일 기준 1년 이내에 발생한 것"
+    },
+    {
+      "claim": "무답변",
+      "evidence_excerpt": "제1심에서 이에 대한 어떠한 답변을 하지 않았다"
+    }
+  ]
+}

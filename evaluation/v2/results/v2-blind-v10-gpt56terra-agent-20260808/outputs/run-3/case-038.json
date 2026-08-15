@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "피고는 원고들의 제안사항을 ‘이사 선임의 건’으로 상정했다고 주장한다.",
+    "피고는 복수 이사 선임 자체가 없었으므로 집중투표제 청구권 침해가 없다고 주장한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주제안의 목적사항을 ‘추가 이사 선임의 당부’로 의결한 절차의 적법성",
+    "집중투표 청구 및 이사 후보 정보의 소집통지 기재 여부",
+    "주주총회 소집통지에서 선임할 이사 수를 특정해야 하는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-038",
+  "supported_facts": []
+}

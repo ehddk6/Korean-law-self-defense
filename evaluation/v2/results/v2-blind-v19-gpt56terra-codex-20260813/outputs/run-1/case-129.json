@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "이자가 1년 이내의 기간으로 정한 지급채권에 해당하지 않거나 특별법상 다른 시효가 적용되면 만료일이 달라질 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제163조",
+    "1.  이자, 부양료, 급료, 사용료 기타 1년 이내의 기간으로 정한 금전 또는 물건의 지급을 목적으로 한 채권",
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다.",
+    "②주, 월 또는 연의 처음으로부터 기간을 기산하지 아니하는 때에는 최후의 주, 월 또는 연에서 그 기산일에 해당한 날의 전일로 기간이 만료한다."
+  ],
+  "confidence": "medium",
+  "deadline_date": "2029-05-10",
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민법 제163조 제1호, 제166조 제1항, 제157조 및 제160조 제2항.",
+    "필수 사실: 1년 이내 정기 지급 이자이고 권리행사 가능일이 2026-05-10인 점이 제시되어 있다.",
+    "예외: 특별법상 별도 시효가 적용되는지에 관한 사실은 제시되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "three-year-interest-claim",
+  "scenario_id": "case-129",
+  "supported_facts": [
+    {
+      "claim": "1년 이내 정기 지급 이자임이 제시되어 있다.",
+      "evidence_excerpt": "\"interest_due_within_one_year\": true"
+    },
+    {
+      "claim": "권리행사 가능일이 제시되어 있다.",
+      "evidence_excerpt": "\"right_exercisable_date\": \"2026-05-10\""
+    }
+  ]
+}

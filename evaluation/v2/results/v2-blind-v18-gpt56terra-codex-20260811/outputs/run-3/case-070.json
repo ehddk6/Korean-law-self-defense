@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결하였다.",
+    "FP 인턴십은 실습교육과 현장 경험을 거친 양성제도로 설명된다.",
+    "원고는 FP·PSM·AM으로 직급과 업무를 변경하였다.",
+    "PSM은 보험인원 모집 및 관리업무를 하는 매니저 직급이다.",
+    "근무시간·지휘감독·보수·전속성 및 분쟁 처분이 기록에 없다."
+  ],
+  "citations": [
+    "보험설계사 위촉계약을 체결한 후"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약 당사자의 근로자성",
+    "FP·PSM·AM 업무에 대한 사용종속성",
+    "모집·관리업무 수행의 독립사업자성",
+    "실습교육·양성제도와 근로계약의 구별",
+    "청구·처분 및 구제요건에 관한 기록 부족"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "계약 형식",
+      "evidence_excerpt": "보험설계사 위촉계약을 체결한 후"
+    }
+  ]
+}

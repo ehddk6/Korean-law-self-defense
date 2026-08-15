@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "피고는 경영사정 악화를 이유로 주주회원 이용료를 인상하는 조치를 실시했다.",
+    "피고는 주주회원모임과 협의했으나 이용혜택 축소 방안에 합의하지 못했다.",
+    "이용혜택 축소는 운영위원회 및 이사회 결의로 먼저 추진되었으나 종전 소송에서 효력이 없다는 법원 판단을 받았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주회원의 골프장 이용혜택 범위에 관한 사항이 상법·다른 법령 또는 정관상 주주총회 결의사항에 해당하는지가 쟁점이다.",
+    "피고가 주주회원모임과의 약정에 따라 이용혜택 축소안을 주주총회에 상정해 결의했더라도, 주주총회 권한에 속하지 않는 사항에 관한 결의가 효력이 있는지가 쟁점이며 원심은 무효라고 판단했다."
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-039",
+  "supported_facts": []
+}

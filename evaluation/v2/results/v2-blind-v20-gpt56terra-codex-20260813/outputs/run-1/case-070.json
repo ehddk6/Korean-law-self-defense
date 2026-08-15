@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결했다.",
+    "FP 인턴십은 실습교육과 양성을 위한 계획으로 기재됐다.",
+    "원고의 초기 업무는 FP였다.",
+    "PSM 업무에는 보험인원 모집·관리 업무가 포함된다.",
+    "근로자성 핵심 사실이 기록에 부족하다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위촉계약 명칭과 실질을 기준으로 한 근로자성",
+    "지휘·감독과 종속관계의 존재",
+    "보수 성격·지급방식과 사업소득자성",
+    "근무시간·장소·전속성·사업위험의 증명",
+    "직무 변경이 근로자성에 미치는 영향",
+    "근로자성의 입증책임과 증거 한계",
+    "근로자성 인정 시 노동관계법상 구제",
+    "근로자성 부정 시 노동위원회 구제 적용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 보험설계사 위촉계약을 체결했다.",
+      "evidence_excerpt": "참가인과 보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "원고는 FP와 PSM으로 근무했다.",
+      "evidence_excerpt": "FP로 근무하였고, 2011. 12. 1.부터 참가인의 TRI△△지점에서 PSM"
+    }
+  ]
+}

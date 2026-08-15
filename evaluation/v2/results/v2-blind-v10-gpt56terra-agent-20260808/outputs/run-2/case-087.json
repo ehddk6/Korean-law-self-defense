@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "세무조사 결과 소외 3 회사의 실제발생소득 대비 말레이시아 세법상 부담세액이 15%에 미달한다고 보았다.",
+    "피고는 소외 3 회사의 배당 가능한 유보소득 합계 180,420,920,864원을 원고가 배당받은 것으로 간주하였다.",
+    "조세심판원은 유보소득 배당간주 규정 적용 부분을 포함한 나머지 심판청구를 기각하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특정외국법인 유보소득 배당간주 규정상 부담세액 요건 충족 여부",
+    "소외 3 회사와 관련한 특수관계 성립 여부",
+    "말레이시아 조세특례 적용 소득에 유보소득 배당간주 규정을 적용할 수 있는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-087",
+  "supported_facts": [
+    {
+      "claim": "소외 3 회사는 말레이시아 정부의 국제조달센터 지정에 따라 도매업 소득 과세를 면제받았다.",
+      "evidence_excerpt": "소외 3 회사는 석유화학제품의 수출기업으로서 2006년경 말레이시아 정부로부터 국제조달센터(International Procurement Center)로 지정되어 [CASE_NUMBER_001]년간 도매업 소득에 대한 과세를 면제받게 되었다."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "채무자는 파산선고 전날 원고에게 이 사건 지분을 양도하였다.",
+    "파산법원은 이 사건 양도행위가 부인되어 효력이 상실되었다는 취지의 통지를 명하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "파산선고 전날 채무자가 대표이사인 원고에게 중국법인 지분 49/100 및 관련 권리를 양도한 행위가 파산재단을 해하는 행위로서 부인의 대상인지",
+    "부인결정에 따라 원고가 중국법인에 양도행위의 효력 상실을 통지하여야 하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-096",
+  "supported_facts": []
+}

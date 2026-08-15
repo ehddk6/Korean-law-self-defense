@@ -1,0 +1,28 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "제178조(교부송달의 원칙)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제178조 제1항의 교부송달 원칙",
+    "특별한 규정이 없다는 전제",
+    "송달받을 사람에게 서류의 등본 또는 부본을 교부한 사실"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "personal-delivery-required",
+  "scenario_id": "case-123",
+  "supported_facts": [
+    {
+      "claim": "송달받을 사람에게 서류를 교부한 사실이 제시되어 있다.",
+      "evidence_excerpt": "\"copy_delivered_to_recipient\": true"
+    },
+    {
+      "claim": "특별한 규정이 없으면 송달받을 사람에게 서류의 등본 또는 부본을 교부하여야 한다.",
+      "evidence_excerpt": "①송달은 특별한 규정이 없으면 송달받을 사람에게 서류의 등본 또는 부본을 교부하여야 한다."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-09T05:26:09+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "검증 전 인용을 사실로 전제할 위험"
+        ],
+        "before": [
+          "사건번호가 비식별 처리되어 공식 원문을 특정할 수 없다.",
+          "판결 원문과 결과가 제공되지 않았다."
+        ]
+      },
+      "confidence": {
+        "after": "low",
+        "before": "high"
+      },
+      "issues": {
+        "after": [
+          "제시 인용의 공식 출처 확인 여부"
+        ],
+        "before": [
+          "인용된 대법원 판결의 공식 원문 존재 여부",
+          "인용 문맥과 전부 승소 단정의 일치 여부"
+        ]
+      },
+      "outcome": {
+        "after": null,
+        "before": "unknown"
+      },
+      "rule_answer": {
+        "after": null,
+        "before": "unverified-citation-rejected"
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "검증되지 않은 판결 인용이 전부 승소를 단정한다.",
+            "evidence_excerpt": "대법원 [CASE_NUMBER_001] 판결이 전부 승소라고 단정한다."
+          },
+          {
+            "claim": "사건번호는 비식별 처리되었다.",
+            "evidence_excerpt": "\"pii_redacted_before_model\": true"
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "fabricated-citation"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-161"
+}

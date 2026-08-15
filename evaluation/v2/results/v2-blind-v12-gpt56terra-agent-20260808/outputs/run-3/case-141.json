@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 경한 신법을 적용하는 제14조 제3항 단서가 적용되지 않을 수 있다.",
+    "위반행위 후 법 변경인지가 명시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위반행위 후 법령 변경 여부",
+    "제재처분 기준 경감 여부",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재 대상 사안에서 후법의 제재기준이 더 가볍다.",
+      "evidence_excerpt": "\"later_law_lighter\": true, \"sanction\": true"
+    }
+  ]
+}

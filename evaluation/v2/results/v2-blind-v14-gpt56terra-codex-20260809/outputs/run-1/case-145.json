@@ -1,0 +1,32 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "제20조(부동산이 있는 곳의 특별재판적) 부동산에 관한 소를 제기하는 경우에는 부동산이 있는 곳의 법원에 제기할 수 있다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제20조.",
+    "필수 사실: 부동산에 관한 소 및 부동산 소재지가 알려져 있다.",
+    "예외: 조문은 부동산 소재지 법원에 제기할 수 있다고 정한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "real-estate-location-special-forum",
+  "scenario_id": "case-145",
+  "supported_facts": [
+    {
+      "claim": "부동산 관련 청구이다.",
+      "evidence_excerpt": "\"real_estate_claim\": true"
+    },
+    {
+      "claim": "부동산 소재지가 알려져 있다.",
+      "evidence_excerpt": "\"property_location_known\": true"
+    },
+    {
+      "claim": "부동산에 관한 소는 부동산이 있는 곳의 법원에 제기할 수 있다.",
+      "evidence_excerpt": "부동산에 관한 소를 제기하는 경우에는 부동산이 있는 곳의 법원에 제기할 수 있다."
+    }
+  ]
+}

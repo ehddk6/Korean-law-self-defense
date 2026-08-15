@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "원심은 총회 관련 비용과 대의원회의비를 제외한 조합운영비를 취득가격에서 제외하였다.",
+    "원심은 광고 관련 판매비와 시설 설치비를 취득가격에서 제외하였다.",
+    "원심은 종전 부동산 취득비용은 취득세 과세표준에서 제외되지 않는다고 판단하였다."
+  ],
+  "citations": [
+    "구 지방세법 시행령 제18조 제2항",
+    "대법원 2010. 12. 23. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "조합운영비 및 판매비의 취득세 과세표준 포함 여부",
+    "음향시설·주방시설 설치비의 취득가격 해당 여부",
+    "종전 부동산 취득비용의 취득세 과세표준 포함 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-077",
+  "supported_facts": [
+    {
+      "claim": "원심은 조합운영비 일부를 취득가격에서 제외하였다.",
+      "evidence_excerpt": "취득세 과세표준인 취득가격에서 제외되어야 한다고"
+    },
+    {
+      "claim": "원심은 시설 설치비를 취득가격에 포함하지 않았다.",
+      "evidence_excerpt": "이 부분 설치 비용 역시 취득가격에 포함되어서는 안 된다"
+    },
+    {
+      "claim": "원심은 종전 부동산 취득비용 관련 원고 주장을 배척하였다.",
+      "evidence_excerpt": "원고 주장을 배척하였다."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "원고는 보험설계사 위촉계약을 체결했다.",
+    "TRI 제도는 실습교육과 현장 경험을 예정한다.",
+    "근로자성 판단의 핵심 근무조건 사실이 기록에 없다."
+  ],
+  "citations": [
+    "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약에도 근로기준법상 근로자인지",
+    "FP·PSM·AM 업무에 대한 지휘·감독과 종속성",
+    "보수 지급방식과 독립사업자성",
+    "근무시간·장소·전속성 자료의 부족"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 보험설계사 위촉계약을 체결했다.",
+      "evidence_excerpt": "보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "참가인은 TRI 조직을 마련하기로 했다.",
+      "evidence_excerpt": "‘TRI(Trust Respect Innovation) 조직’을 마련하기로 하였다"
+    }
+  ]
+}

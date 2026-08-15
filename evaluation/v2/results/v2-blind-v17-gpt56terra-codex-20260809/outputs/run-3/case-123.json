@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "특별규정이 있는 경우에는 제178조의 원칙이 달라질 수 있다."
+  ],
+  "citations": [
+    "제178조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제178조.",
+    "특별규정이 없다는 질문의 전제에서 송달받을 사람에게 등본 또는 부본을 교부해야 한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "personal-delivery-required",
+  "scenario_id": "case-123",
+  "supported_facts": [
+    {
+      "claim": "교부송달의 원칙은 송달받을 사람에게 서류의 등본 또는 부본을 교부하는 것이다.",
+      "evidence_excerpt": "송달은 특별한 규정이 없으면 송달받을 사람에게 서류의 등본 또는 부본을 교부하여야 한다."
+    }
+  ]
+}

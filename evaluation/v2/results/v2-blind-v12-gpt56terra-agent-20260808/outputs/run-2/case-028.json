@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "경매절차에서 보증금 전액을 배당받지 못한 경우를 전제로 한다.",
+    "금융기관은 보증금반환채권을 계약으로 양수한 범위에서 우선변제권을 승계한다.",
+    "기록에는 제2, 3 상고이유에 관한 판단이 제시되지 않는다."
+  ],
+  "citations": [
+    "주택임대차보호법 제3조 제1항",
+    "주택임대차보호법 제3조의2 제7항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택임차인의 대항력 존속 여부",
+    "우선변제권 행사 후 미배당 보증금 잔액과 임대차 존속",
+    "보증금반환채권을 양수한 금융기관의 지위",
+    "주택 양수인의 임대인 지위 승계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-028",
+  "supported_facts": [
+    {
+      "claim": "임차인은 대항력을 취득하였다.",
+      "evidence_excerpt": "이 사건 주택에 대한 대항력을 취득한 이후"
+    },
+    {
+      "claim": "원심은 임차인의 대항력이 유지된다고 판단하였다.",
+      "evidence_excerpt": "임차인 소외인의 대항력이 여전히 유지되고 있다고 판단하였다."
+    }
+  ]
+}

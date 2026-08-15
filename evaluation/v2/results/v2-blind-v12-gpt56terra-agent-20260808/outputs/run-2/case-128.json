@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "주소등을 알 수 없거나 그 장소에서 송달할 수 없는 경우에는 근무장소 송달 규정이 적용될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "주소·거소·영업소·사무소에서의 송달장소 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달은 송달받을 사람의 주소에서 이루어졌다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    }
+  ]
+}

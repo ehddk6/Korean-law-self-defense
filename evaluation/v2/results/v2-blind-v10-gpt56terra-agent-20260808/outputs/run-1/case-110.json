@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "해킹 당시 덤프·압축된 파일 용량은 \"10GB 정도에 불과하였다\"고 기재되어 있다.",
+    "FTP 전송 및 외부 전송 시점이 \"위 일일보고서에 기재된 트래픽 증가 시점과 일치하지도 않는다.\"",
+    "소외 1은 관리 데이터베이스가 \"수백 대여서 이름 등을 기억하지 못한다\"는 취지의 진술을 하였다.",
+    "원심이 소외 1의 게이트웨이 서버 접근 가능성을 인정한 사실이 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "변론종결 후 수사기록을 증거로 제출하기 위한 변론재개신청을 받아들여야 할 의무가 있었는지",
+    "새로 열람·등사된 보안관제 일일보고서와 경찰 진술조서가 판결 결과를 좌우할 관건적 요증사실에 관한 것인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-110",
+  "supported_facts": []
+}

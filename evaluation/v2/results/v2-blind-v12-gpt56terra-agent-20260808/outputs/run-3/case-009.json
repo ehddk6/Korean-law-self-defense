@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "이 사건 회사의 매출은 특정 거래처 및 특정 화장품에 크게 의존하고 있었다.",
+    "피고 2 회사 소속자는 판매사의 자체 공장 리스크가 투자철회 위험이 될 수 있다고 인식하고 있었다.",
+    "원고에게 제공된 투자제안서에는 안정적인 계약관계와 성장 가능성이 크다는 취지가 기재되어 있었다.",
+    "PEF는 존속기간 만료일에 해산등기가 마쳐졌다."
+  ],
+  "citations": [
+    "구 「자본시장과 금융투자업에 관한 법률」"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "PEF 업무집행사원의 거래종결 전 주의의무",
+    "중대한 투자위험의 고지 및 합리적 조사 의무",
+    "주의의무 위반과 투자손해 사이의 인과관계",
+    "투자자 손해의 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-009",
+  "supported_facts": []
+}

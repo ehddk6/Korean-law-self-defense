@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "원고 1과 원고 2는 원심판결 선고 후 사망하였다.",
+    "전직 정식이사 지위는 일신전속적이다.",
+    "해당 지위는 상속의 대상이 아니다."
+  ],
+  "citations": [
+    "대법원 2004. 4. 27. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전직 정식이사 지위의 상속 가능 여부",
+    "사망한 원고의 소송상 지위 승계",
+    "전현직이사협의체 구성 및 후보자 의견제출 권한"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-115",
+  "supported_facts": [
+    {
+      "claim": "원고 1은 사망하였다.",
+      "evidence_excerpt": "원고 1은 2021. 12. 19.에"
+    },
+    {
+      "claim": "원고 2는 사망하였다.",
+      "evidence_excerpt": "원고 2는 2022. 5. 31.에 각각 사망"
+    }
+  ]
+}

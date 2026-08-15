@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "구체적 송달 장소가 주소·거소·영업소·사무소 중 어느 것인지 제공되지 않았다.",
+    "특별규정의 존부가 제공되지 않았다."
+  ],
+  "citations": [
+    "제183조(송달장소)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "적용 조문: 민사소송법 제183조 제1항.",
+    "필수 사실: 송달 장소가 송달받을 사람의 주소·거소·영업소 또는 사무소일 것.",
+    "예외: 제183조 제1항 단서의 법정대리인 송달, 제2항부터 제4항의 근무장소 또는 만나는 장소 송달 가능성이 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달 장소는 수령인의 주소로 제시되었다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    }
+  ]
+}

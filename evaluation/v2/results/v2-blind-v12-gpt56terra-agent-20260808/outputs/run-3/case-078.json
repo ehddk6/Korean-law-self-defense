@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "소외 회사는 수행업무 허위작성, 사전근로, 퇴직사실 은닉 및 페이백을 반환명령 사유로 들었다.",
+    "피고는 5년간 보조금 지급 제한 처분을 하였다.",
+    "피고는 54,906,900원의 제재부가금을 부과하였다.",
+    "구체적인 부정수급 사실 및 원심·상고심 판단이 제공되지 않았다."
+  ],
+  "citations": [
+    "보조금법 제31조의2 제2항 제1호"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "청년 디지털 일자리 사업 지원금 반환명령의 적법성",
+    "보조금 부정수급 여부",
+    "보조금 지급 제한 처분의 요건",
+    "제재부가금 부과 및 금액의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-078",
+  "supported_facts": []
+}

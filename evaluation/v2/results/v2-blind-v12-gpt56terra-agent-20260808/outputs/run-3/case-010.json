@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원고의 동일한 손해배상청구에 관한 인도 소송에서 원고 전부 패소판결이 확정되었다.",
+    "원고 선박의 가압류는 인도 법원에서 취소재판이 확정되었다.",
+    "피고는 중국 법인이고 원고는 파나마 법인이다.",
+    "분쟁의 원인이 된 가압류는 인도 법원에서 이루어졌다."
+  ],
+  "citations": [
+    "구 국제사법 제2조 제2항",
+    "민사소송법 제11조",
+    "대법원 2021. 3. 25. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "대한민국 법원의 국제재판관할권 존부",
+    "당사자 또는 분쟁과 대한민국 사이의 실질적 관련성",
+    "피고 선박의 국내 존재에 따른 특별관할 및 판결의 실효성",
+    "인도 외국판결의 국내 소송에 대한 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-010",
+  "supported_facts": []
+}

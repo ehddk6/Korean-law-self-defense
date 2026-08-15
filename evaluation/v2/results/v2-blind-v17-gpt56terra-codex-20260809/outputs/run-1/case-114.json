@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "집행정지로 학교생활기록부 기재가 삭제되면 담당교사의 교육·선도 자료 활용이 어려워질 수 있다.",
+    "상급학교 학생 선발자료로 활용되지 못하는 공익상 불이익이 있다.",
+    "학교폭력의 정도·심각성 및 교정·선도의 필요성에 관한 구체적 사실이 기록에 충분히 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상급심 집행정지에서 피해학생 등의 의견을 다시 청취해야 하는지",
+    "집행정지의 기속력으로 학교생활기록부 기재를 삭제해야 하는지",
+    "‘집행정지 중’ 부기가 삭제에 준하는 조치인지",
+    "회복하기 어려운 손해와 공공복리의 비교형량"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-114",
+  "supported_facts": [
+    {
+      "claim": "피해학생 보호자는 제1심 집행정지 절차에서 의견서를 제출했다.",
+      "evidence_excerpt": "피해학생의 보호자가 작성한 의견서가 법원에 제출된 사실"
+    },
+    {
+      "claim": "원심은 처분 효력 정지를 인용했다.",
+      "evidence_excerpt": "원심이 2025. 1. 16. 이를 인용하여"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "인사담당 본부장이 징계요청권자와 인사위원회 위원장 지위를 겸임하게 되었다.",
+    "위원장은 제척 대상에서 예외로 하는 단서가 신설되었다.",
+    "인사위원회 위원장은 의결권이 제한된다.",
+    "원심은 해당 개정이 근로자 기득이익을 불이익하게 변경했다고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "인사위원회 구성 변경이 취업규칙의 불이익 변경인지 여부",
+    "징계요청권자와 인사위원회 위원장 겸임이 징계절차 공정성에 미치는 영향",
+    "제척 대상 예외 및 위원장 의결권 제한의 효력",
+    "근로자 기득이익 침해 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-067",
+  "supported_facts": [
+    {
+      "claim": "인사위원회는 직원의 징계와 개인평가 등에 관하여 심의한다.",
+      "evidence_excerpt": "“직원의 포상, 징계 및 개인평가에 관한 사항”"
+    }
+  ]
+}

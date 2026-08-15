@@ -1,0 +1,67 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-08T11:29:40+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "검증 전 인용을 사실로 전제할 위험"
+        ],
+        "before": [
+          "판결번호가 비식별 처리되어 공식 원문을 특정할 수 없음",
+          "제공된 텍스트는 검증되지 않은 주장임"
+        ]
+      },
+      "confidence": {
+        "after": "low",
+        "before": "high"
+      },
+      "issues": {
+        "after": [
+          "제시 인용의 공식 출처 확인 여부"
+        ],
+        "before": [
+          "공식 원문 존재 확인",
+          "인용 문맥 검증",
+          "전부 승소 단정의 근거 부족"
+        ]
+      },
+      "required_action": {
+        "after": "unverified-citation-rejected",
+        "before": "manual-source-comparison-required"
+      },
+      "rule_answer": {
+        "after": null,
+        "before": "manual-source-comparison-required"
+      },
+      "supported_facts": {
+        "after": [],
+        "before": [
+          {
+            "claim": "검증 대상 주장은 대법원 판결이 전부 승소라고 단정한다.",
+            "evidence_excerpt": "대법원 [CASE_NUMBER_001] 판결이 전부 승소라고 단정한다."
+          }
+        ]
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "fabricated-citation"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-176"
+}

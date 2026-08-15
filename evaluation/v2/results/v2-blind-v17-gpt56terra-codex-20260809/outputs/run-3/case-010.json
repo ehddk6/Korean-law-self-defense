@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "인도 법원에서 원고 전부 패소판결이 확정되었다.",
+    "분쟁의 핵심 가압류 신청과 취소 절차는 인도에서 이루어졌다.",
+    "피고는 중국 법인이고 원고는 파나마 법인이다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "대한민국 법원의 국제재판관할권",
+    "피고 선박 국내 소재가 특별관할을 발생시키는지",
+    "인도 외국판결의 국내 소송에 대한 효력",
+    "가압류 불법행위와 대한민국의 실질적 관련성",
+    "당사자 편의·판결 실효성 및 병존관할의 조정"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-010",
+  "supported_facts": [
+    {
+      "claim": "피고 선박은 소 제기 무렵 피고의 유일한 선박이었다.",
+      "evidence_excerpt": "피고 선박은 이 사건 소 제기 무렵 피고가 소유한 유일한 선박"
+    }
+  ]
+}

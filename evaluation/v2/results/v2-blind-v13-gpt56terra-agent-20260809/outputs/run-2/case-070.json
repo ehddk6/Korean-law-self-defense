@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "원고는 ‘보험설계사 위촉계약’을 체결하였으므로, 그 계약 명칭과 법적 성질이 쟁점이 될 경우 근로계약이라는 주장에 불리하게 작용할 수 있다.",
+    "보수, 지휘·감독, 근무시간, 전속성 및 계약 해지 경위에 관한 사실이 기록에 없어 법적 지위나 청구의 당부를 판단할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험설계사 위촉계약 체결, FP·PSM·AM 직무 수행 사실만으로는 심판 대상 법률요건, 당사자 주장 및 법적 효과가 특정되지 않아 해당 법률쟁점을 판단할 수 있는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": []
+}

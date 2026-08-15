@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "특별규정이 있으면 변경된 법령을 적용하지 않을 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위반 후 제재처분 기준이 가벼워진 경우 변경법령 적용 여부",
+    "특별규정 유무"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": []
+}

@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "청약당첨일에 분양권 관련 권리가 발생했다고 볼 여지가 있다.",
+    "원고는 양도 전 청약에 당첨됐다.",
+    "원고는 1세대 3주택 중과세율을 적용해 신고했다."
+  ],
+  "citations": [
+    "이 사건 분양권의 보유 시기를 청약당첨일로 보아야 한다는 이유로 원고의 경정청구를 거부하였다"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "분양권 보유 시기가 청약당첨일인지 분양계약일인지",
+    "양도 당시 분양권이 1세대 주택 수에 산입되는지",
+    "일시적 1세대 2주택 비과세 요건 충족 여부",
+    "경정청구 거부처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-071",
+  "supported_facts": [
+    {
+      "claim": "원고는 청약에 당첨됐다.",
+      "evidence_excerpt": "2021. 9. 24. 공동주택인 성남시 분당구 판교 (아파트명 생략) 분양권"
+    },
+    {
+      "claim": "피고는 청약당첨일을 보유시기로 봤다.",
+      "evidence_excerpt": "이 사건 분양권의 보유 시기를 청약당첨일로 보아야 한다"
+    }
+  ]
+}

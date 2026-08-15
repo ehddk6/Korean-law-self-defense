@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "부칙 문언이 제공되지 않았다.",
+    "개정일이 확인되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "개인정보 보호법 개정 전 사실에 대한 개정법 적용 여부",
+    "개인정보 보호법 부칙의 경과규정 적용 여부",
+    "개정일과 사실 발생 시점의 선후관계"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-147",
+  "supported_facts": [
+    {
+      "claim": "부칙 문언이 제공되지 않았다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    },
+    {
+      "claim": "개정일이 확인되지 않았다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    }
+  ]
+}

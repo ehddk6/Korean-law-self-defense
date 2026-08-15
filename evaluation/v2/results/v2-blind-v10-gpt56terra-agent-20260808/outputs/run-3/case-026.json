@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "특례기간의 연체 차임 잔액이 24,556,080원이 되며, 특례기간 외 연체액만으로 자동 해지 기준인 차임 및 관리비 3개월분에 이르는지 여부가 문제될 수 있다.",
+    "합의충당이나 임차인의 지정변제충당 등의 특별한 사정이 있으면 법정변제충당과 다른 결론이 가능하다."
+  ],
+  "citations": [
+    "상가임대차법 제15조",
+    "민법 제476조 제1항",
+    "민법 제476조 제2항",
+    "민법 제477조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법 제10조의9 특례기간 연체차임의 변제충당 순서",
+    "특례기간 연체차임을 고려한 자동 해지사유 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-026",
+  "supported_facts": [
+    {
+      "claim": "원심은 자동 해지사유를 인정하지 않았다.",
+      "evidence_excerpt": "이 사건 조정에서 정한 자동 해지사유를 인정할 수 없다고 판단하였다."
+    }
+  ]
+}

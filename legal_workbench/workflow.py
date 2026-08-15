@@ -192,6 +192,7 @@ def ingest_document(
             source_path_token=metadata["source_path_token"],
             acquired_at=acquired_at,
             provenance=provenance,
+            page_or_paragraph="전체 문서",
             extraction_confidence=extraction.confidence,
         )
     )
@@ -601,7 +602,7 @@ def import_visual_review(
             render_source = Path(str(value)).expanduser().resolve()
             if not render_source.is_file() or render_source.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
                 raise ValueError(f"렌더 이미지를 찾을 수 없습니다: {render_source}")
-            destination = visual_dir / f"{source.stem}-{index:03d}{render_source.suffix.lower()}"
+            destination = visual_dir / f"{source.suffix.lstrip('.')}-{source.stem}-{index:03d}{render_source.suffix.lower()}"
             if render_source != destination.resolve():
                 shutil.copy2(render_source, destination)
             imported_renders.append({"path": str(destination.resolve()), "sha256": sha256_file(destination)})
@@ -734,8 +735,10 @@ def _validated_analysis_result(store: CaseStore, value: Any, role: str) -> tuple
 
 def _draft_markdown(store: CaseStore, case: dict[str, Any], opinion: dict[str, Any], document_type: str) -> str:
     facts = store.list_payloads("facts")
+    evidence = {item["evidence_id"]: item for item in store.list_payloads("evidence")}
     issues = store.list_payloads("issues")
     authorities = store.list_payloads("authorities")
+    authority_by_id = {item["authority_id"]: item for item in authorities}
     deadlines = store.list_payloads("deadlines")
     lines = [
         f"# {document_type}",
@@ -749,26 +752,110 @@ def _draft_markdown(store: CaseStore, case: dict[str, Any], opinion: dict[str, A
         f"판단 기준일: {case['as_of_date']}",
         f"의견 상태: {opinion['status']}",
         "",
-        "## 결론",
+        "## 검토 범위 및 전제",
+        "이 문서는 저장된 비식별 사실, 증거 메타데이터 및 검증된 법적 근거를 바탕으로 한 사용자 검토용 초안이다.",
+    ]
+    for assumption in opinion.get("assumptions") or ["별도 전제 없음"]:
+        lines.append(f"- 전제: {assumption}")
+    lines.extend(
+        [
+            "",
+            "## 핵심 결론",
         opinion["conclusion"],
         "",
-        "## 사실관계",
-    ]
+            "## 사실관계 및 증거",
+        ]
+    )
     for item in facts:
-        lines.append(f"- [{item['fact_id']}] ({item['status']}) {item['text']} / 증거: {', '.join(item.get('evidence_ids') or ['없음'])}")
-    lines.extend(["", "## 핵심 쟁점"])
+        references = item.get("evidence_ids") or []
+        lines.append(f"### {item['fact_id']}")
+        lines.append(item["text"])
+        lines.append(
+            f"- 상태: {item['status']} / 신뢰도: {item.get('confidence') or '확인 필요'}"
+        )
+        if item.get("occurred_at"):
+            lines.append(f"- 발생일: {item['occurred_at']}")
+        if item.get("actor_token"):
+            lines.append(f"- 관련자: {item['actor_token']}")
+        if references:
+            for evidence_id in references:
+                record = evidence.get(evidence_id)
+                if record:
+                    lines.append(
+                        "- 증거: "
+                        f"{evidence_id} / {record.get('provenance') or '출처 확인 필요'} / "
+                        f"취득일 {record.get('acquired_at') or '확인 필요'} / "
+                        f"위치 {record.get('page_or_paragraph') or '확인 필요'}"
+                    )
+                else:
+                    lines.append(f"- 증거: {evidence_id} / 증거 레코드 확인 필요")
+        else:
+            lines.append("- 증거: 연결된 증거 없음")
+        lines.append("")
+    lines.extend(["## 쟁점별 검토"])
     for item in issues:
-        lines.append(f"- [{item['issue_id']}] {item['title']} / 입증책임: {item['burden']}")
-    lines.extend(["", "## 양측 시나리오", f"- 유리: {opinion['favorable_scenario']}", f"- 경합: {opinion['contested_scenario']}", f"- 불리: {opinion['adverse_scenario']}"])
-    lines.extend(["", "## 확인된 법적 근거"])
+        lines.append(f"### {item['issue_id']}: {item['title']}")
+        lines.append(f"- 잠정 관점: {item.get('provisional_view') or 'abstain'}")
+        lines.append(f"- 입증책임: {item['burden']}")
+        lines.append("- 검토 요건:")
+        for element in item.get("legal_elements") or ["확인 필요"]:
+            lines.append(f"  - {element}")
+        lines.append("- 유리한 근거:")
+        for authority_id in item.get("favorable_authority_ids") or ["연결된 근거 없음"]:
+            authority = authority_by_id.get(authority_id)
+            lines.append(
+                f"  - {authority_id}: {authority.get('citation') if authority else '근거 레코드 확인 필요'}"
+            )
+        lines.append("- 불리하거나 다툼이 예상되는 근거:")
+        for authority_id in item.get("adverse_authority_ids") or ["연결된 근거 없음"]:
+            authority = authority_by_id.get(authority_id)
+            lines.append(
+                f"  - {authority_id}: {authority.get('citation') if authority else '근거 레코드 확인 필요'}"
+            )
+        if item.get("missing_facts"):
+            lines.append("- 보강이 필요한 사실:")
+            for missing_fact in item["missing_facts"]:
+                lines.append(f"  - {missing_fact}")
+        if item.get("remedies"):
+            lines.append("- 검토 대상 구제수단:")
+            for remedy in item["remedies"]:
+                lines.append(f"  - {remedy}")
+        lines.append("")
+    lines.extend(
+        [
+            "## 양측 시나리오",
+            f"### 유리한 경우\n{opinion['favorable_scenario']}",
+            f"### 경합하는 경우\n{opinion['contested_scenario']}",
+            f"### 불리한 경우\n{opinion['adverse_scenario']}",
+            "",
+            "## 확인된 법적 근거와 검증 상태",
+        ]
+    )
     for item in authorities:
-        lines.append(f"- [{item['authority_id']}] {item['citation']} | {item['source_tier']} | {item['official_url']}")
-    lines.extend(["", "## 기한"])
+        lines.append(f"### {item['authority_id']}: {item['citation']}")
+        lines.append(f"- 등급: {item['source_tier']} / 적용 시작: {item.get('effective_from') or item.get('decision_date') or '확인 필요'}")
+        lines.append(f"- 공식 원문: {item['official_url']}")
+        lines.append(f"- 이중 검증: {item.get('verification_url') or '확인 필요'} / 검증일 {item.get('verified_at') or '확인 필요'}")
+        lines.append(f"- 수집 경로: {item.get('mcp_server') or '확인 필요'} {item.get('mcp_version') or ''} / 도구 {item.get('mcp_tool') or '확인 필요'}")
+        lines.append("")
+    lines.extend(["## 기한 및 조치 우선순위"])
     for item in deadlines:
-        lines.append(f"- [{item['deadline_id']}] {item['title']}: {item.get('tentative_due_date') or '확인 필요'} / 검증={item.get('verified', False)}")
-    lines.extend(["", "## 결론을 바꿀 수 있는 사항"])
+        lines.append(f"### {item['deadline_id']}: {item['title']}")
+        lines.append(f"- 기준 사건: {item.get('trigger_event') or '확인 필요'} / 기준일 {item.get('trigger_date') or '확인 필요'}")
+        lines.append(f"- 계산: {item.get('calculation') or '확인 필요'}")
+        lines.append(f"- 잠정 기한: {item.get('tentative_due_date') or '확인 필요'} / 검증={item.get('verified', False)} / 중요={item.get('critical', False)}")
+        lines.append(f"- 주의: {item.get('governing_rule') or '확인 필요'}")
+        lines.append("")
+    lines.extend(["## 결론을 바꿀 수 있는 사항 및 다음 확인"])
     for item in opinion.get("changes_outcome_if") or ["핵심 사실 또는 공식 원문 추가 확인 필요"]:
         lines.append(f"- {item}")
+    lines.extend(
+        [
+            "",
+            "## 사용상 유의",
+            "이 문서는 가상의 비식별 시험 자료를 바탕으로 한 검토용 초안이다. 실제 사건에서는 원본 계약서, 송달자료, 계좌자료, 인도·열쇠반환 자료 및 최신 공식 원문을 별도로 확인해야 하며, 서명·납부·제출은 사용자가 직접 수행한다.",
+        ]
+    )
     return "\n".join(lines).strip() + "\n"
 
 

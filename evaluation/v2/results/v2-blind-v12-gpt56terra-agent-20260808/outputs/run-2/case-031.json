@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "이사회의 구성원 지위는 일신전속적이라고 기재되어 있다.",
+    "선정자 3은 원심 변론종결 후 사망한 것으로 보인다.",
+    "기록은 선정자 3 사망일과 후속 판단을 완결하여 제시하지 않는다."
+  ],
+  "citations": [
+    "대법원 2004. 4. 27. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이사 지위의 상속 가능 여부",
+    "주주총회결의 취소소송의 당사자 지위",
+    "주식 명의개서절차 이행청구"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-031",
+  "supported_facts": [
+    {
+      "claim": "선정자 3의 사망 사실이 언급된다.",
+      "evidence_excerpt": "선정자 3은 원심 변론종결 후인 2015. 9. 23."
+    },
+    {
+      "claim": "명의개서절차 이행청구가 쟁점으로 제시된다.",
+      "evidence_excerpt": "명의개서절차 이행청구 부분에 대하여"
+    }
+  ]
+}

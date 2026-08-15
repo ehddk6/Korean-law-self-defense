@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "특허권등을 제외한 지식재산권은 제24조 제1항의 특별재판적 대상이고, 특허권등은 제24조 제2항의 전속관할 대상이다.",
+    "특허권등 소송은 제24조 제3항에 따라 서울중앙지방법원에도 제기할 수 있다.",
+    "특별재판적 판단에 필요한 구체적 법원 사실이 완전하지 않다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "지식재산권이 특허권등에 해당하는지 여부",
+    "제2조부터 제23조까지에 따른 관할법원 소재지",
+    "서울중앙지방법원 관할 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "지식재산권 청구이나 특별재판적 판단 사실이 불완전하다.",
+      "evidence_excerpt": "\"intellectual_property_claim\": true, \"specific_court_facts_complete\": false"
+    }
+  ]
+}

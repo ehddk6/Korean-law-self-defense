@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "원고들의 2016년 시정요구서와 계약 해제 통지는 참가인에게 송달되지 않았다.",
+    "주식양도계약상 잔금 지급은 가처분 결정 소멸 후 7일 이내로 정해져 있었다.",
+    "참가인은 주식 중 210,000주에 관하여 제3자 명의개서를 하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주식양도대금 미지급에 따른 주식양도계약 해제 여부",
+    "해제 의사표시의 도달 여부",
+    "계약 해제 후 주식 귀속 및 명의개서",
+    "후속 주주총회·이사회 결의의 존재 및 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-033",
+  "supported_facts": [
+    {
+      "claim": "참가인은 계약상 대금을 지급하지 않았다.",
+      "evidence_excerpt": "현재까지 원고들에게 이 사건 계약에서 정한 주식양도대금을 지급하지 않고 있다."
+    },
+    {
+      "claim": "해제 의사표시는 2018년 소송서면으로 참가인 대리인에게 송달되었다.",
+      "evidence_excerpt": "2018. 4. 9. 참가인의 대리인에게 송달되었다."
+    },
+    {
+      "claim": "참가인 명의로 주식 명의개서가 이루어졌다.",
+      "evidence_excerpt": "참가인 명의로 명의개서가 이루어졌다."
+    }
+  ]
+}

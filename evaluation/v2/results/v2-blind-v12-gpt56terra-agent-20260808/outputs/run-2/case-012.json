@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "약관은 갑상선암을 암의 범위에서 제외하는 조항을 두고 있다.",
+    "원심은 원발부위 기준 분류조항이 보험사고 제외 암의 의학적 분류기준을 명확히 한 것에 불과하다고 판단하였다.",
+    "원심은 해당 조항이 거래상 일반적이고 공통된 사항이라고 판단하였다."
+  ],
+  "citations": [
+    "대법원 2004. 8. 20. 선고 [CASE_NUMBER_001] 판결",
+    "대법원 2024. 3. 12. 선고 [CASE_NUMBER_002] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원발부위 기준 분류조항의 약관상 의의",
+    "원발부위 기준 분류조항이 보험자의 설명의무 대상인지 여부",
+    "갑상선암 및 림프절 전이에 대한 보험금 산정"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-012",
+  "supported_facts": [
+    {
+      "claim": "원고는 갑상선암과 림프절 전이 진단을 받았다.",
+      "evidence_excerpt": "갑상선암(C73), 림프절 전이(C77.9"
+    },
+    {
+      "claim": "피고는 갑상선암 기준 보험금을 지급하였다.",
+      "evidence_excerpt": "보험금 4,400,000원"
+    },
+    {
+      "claim": "원심은 설명의무 위반 주장을 배척하였다.",
+      "evidence_excerpt": "피고에게 설명의무 위반을 주장할 수 없다고 판단하였다."
+    }
+  ]
+}

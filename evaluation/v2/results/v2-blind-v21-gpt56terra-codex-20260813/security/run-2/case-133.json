@@ -1,0 +1,59 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T14:01:55+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "adverse_points": {
+        "after": [
+          "동거인이 사리를 분별할 지능이 있는 사람인지 확인되지 않았다.",
+          "근무장소 외의 송달할 장소였는지도 명시되지 않았다.",
+          "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+        ],
+        "before": [
+          "동거인이 사리를 분별할 지능이 있는 사람인지 확인되지 않았다.",
+          "근무장소 외의 송달할 장소였는지도 명시되지 않았다."
+        ]
+      },
+      "confidence": {
+        "after": "low",
+        "before": "high"
+      },
+      "decision_status": {
+        "after": "abstain",
+        "before": "conditional"
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "service"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "post_guard_decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "service"
+  },
+  "post_guard_output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 0,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-133"
+}

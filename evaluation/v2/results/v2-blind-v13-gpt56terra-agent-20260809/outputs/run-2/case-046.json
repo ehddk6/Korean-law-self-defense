@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "기록은 전기통신금융사기죄가 사기죄 구성요건의 모든 요소를 포함하지 않는다고 명시한다.",
+    "기록에는 피고인·피해자·공소사실 또는 양 죄의 구성요건 충족 여부가 전혀 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄가 특별법과 일반법의 관계인지, 아니면 독립된 별개의 구성요건인지가 쟁점이다.",
+    "하나의 행위가 양 죄의 구성요건을 모두 충족할 경우 상상적 경합으로 처벌해야 하는지가 쟁점이나, 구체적 행위와 원심 판단·상고심 결론이 제공되지 않았다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-046",
+  "supported_facts": []
+}

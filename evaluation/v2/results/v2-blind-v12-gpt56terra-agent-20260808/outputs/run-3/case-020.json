@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원고들은 제1 내지 제3 보험증권의 각 보험기간이 종료한 후 하자보수를 요청하였다.",
+    "특별약관 제3조를 보험기간 내 하자보수청구가 없으면 보험금 지급책임이 면제되는 조항으로 해석할 여지가 있다.",
+    "보험기간을 소외인의 하자담보책임기간과 같은 기간으로 정하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "하자 발생 시점과 하자보수 요청 시점에 따른 보증보험금 지급책임",
+    "특별약관 제3조의 해석",
+    "보험기간 내 하자보수청구를 요구하는 약관조항의 효력",
+    "약관법 제6조 제1항상 불공정 약관 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-020",
+  "supported_facts": []
+}

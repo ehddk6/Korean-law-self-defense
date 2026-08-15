@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "원고들은 주식교환 완료로 피고의 주주 지위를 상실하였다.",
+    "완전모회사 주주로서의 이익은 사실상·경제상의 이익에 불과하다고 판단되었다.",
+    "주식교환비율 결정에 주주총회결의나 배당금 지급이 영향을 미쳤다고 단정하기 어렵다.",
+    "주식교환무효 또는 손해배상청구로 직접 다툴 수 있다고 판단되었다."
+  ],
+  "citations": [
+    "상법 제376조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주총회결의 부존재 확인의 소의 확인의 이익",
+    "주주 지위 상실 후 주주총회결의 취소소송의 원고적격",
+    "주식교환 완료 후 기존 주주의 법률상 이익",
+    "배당금 반환과 완전모회사 주주의 간접적 이익"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-036",
+  "supported_facts": []
+}

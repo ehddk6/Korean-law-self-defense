@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "이 사건 소송비에는 건물철거 청구와 공사방해금지 가처분 사건의 비용도 포함되어 있다.",
+    "학교법인은 건설회사의 청구금액 중 일부를 지급하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전용 교육관 신축공사와 직접 관련된 공사대금·하자보수·철거·공사방해금지 사건의 인지대, 송달료, 감정료, 용역비 및 변호사비가 학교교육에 직접 필요한 시설의 취득원가 또는 적법한 교비회계 지출인지",
+    "학교법인이 교육관 신축공사계약을 직접 체결하고 교비회계 건축적립금을 재원으로 집행한 경우, 관련 소송비 지출의 불법영득의사 또는 교비회계 목적 외 사용이 인정되는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-120",
+  "supported_facts": []
+}

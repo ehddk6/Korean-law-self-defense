@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "원고들은 주식교환 완료 후 피고의 주주 지위를 상실하였다.",
+    "원고들이 갖는 이익은 사실상·경제상 이익에 불과하다고 기재되어 있다.",
+    "주식교환비율 결정에 주주총회결의나 배당금 지급이 영향을 미쳤다고 단정하기 어렵다고 기재되어 있다.",
+    "직접 다툴 수 있는 주식교환무효 또는 손해배상청구의 수단이 있다고 기재되어 있다."
+  ],
+  "citations": [
+    "상법 제376조",
+    "대법원 2011. 2. 10. 선고 [CASE_NUMBER_003] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주주총회결의 부존재 확인소송의 확인의 이익",
+    "주식교환 후 기존 주주의 주주총회결의 취소소송 원고적격",
+    "과거 주주총회결의가 주식교환비율에 미친 영향",
+    "주식교환 무효소송 또는 손해배상청구의 대체적 구제수단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-036",
+  "supported_facts": []
+}

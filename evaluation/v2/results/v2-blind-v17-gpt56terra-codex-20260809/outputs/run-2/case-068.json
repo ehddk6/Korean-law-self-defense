@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "희망퇴직으로 생산직 근로자 137명이 퇴직하였다.",
+    "중앙노동위원회는 대상자 선정의 공정성과 성실한 협의가 부족하다고 판단하였다.",
+    "해고 대상자 선정기준의 구체적 적용자료가 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "근로기준법 제24조상 긴박한 경영상 필요성의 인정 기준",
+    "경영진단보고서가 해고 당시 인력감축 필요를 뒷받침하는지",
+    "희망퇴직과 임원·사무직 감축이 해고회피 노력인지",
+    "대상자 선정의 합리성·공정성과 노동조합과의 성실한 협의"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-068",
+  "supported_facts": [
+    {
+      "claim": "기록은 긴박한 경영상 필요성 요건을 쟁점으로 명시한다.",
+      "evidence_excerpt": "쟁점은 이 사건 정리해고가 근로기준법 제24조에 따른 정리해고의 요건 중 긴박한 경영상 필요성 요건을 갖추었는지이다."
+    }
+  ]
+}

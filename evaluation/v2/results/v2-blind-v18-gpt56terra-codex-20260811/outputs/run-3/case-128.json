@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "법정대리인에 대한 송달이면 본인의 영업소나 사무소에서도 송달할 수 있는 예외가 적용될 수 있다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제183조(송달장소)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "민사소송법 제183조제1항은 수령인의 주소등을 송달장소로 정한다.",
+    "제시된 장소는 수령인의 주소이다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달 장소가 수령인의 주소이다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "원고는 통화옵션계약 관련 부분에 구체적인 상고이유를 기재하지 않았다.",
+    "원심은 11. 22.까지 결제일이 도래한 손해 부분은 이미 시효로 소멸하였다고 판단하였다.",
+    "원고가 단순선도환계약에 위험회피회계를 적용한 사정이 존재한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "통화옵션계약 체결 관련 상고이유의 적법성",
+    "단순선도환계약 체결이 적합성 원칙에 위반되는지 여부",
+    "단순선도환계약에 관한 설명의무 위반 여부",
+    "손해배상청구권의 단기소멸시효 기산점과 완성 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": []
+}

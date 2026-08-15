@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "추가수당은 피고인 처 명의 계좌로 수령하기로 약정되었다.",
+    "회생계획안과 월간보고서에는 월 급여 4,400,000원 상당만 수입으로 기재되었다.",
+    "회생계획안의 총급여액에는 추가수당이 포함되지 않았다.",
+    "원심은 이 사건 사기 공소사실을 유죄로 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차에서 수입 누락이 기망행위에 해당하는지 여부",
+    "추가수당 누락과 회생계획인가결정 사이 인과관계",
+    "채무 면제에 따른 사기죄의 재산상 이익 취득 여부",
+    "추가수당의 실제 수입 해당 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-049",
+  "supported_facts": []
+}

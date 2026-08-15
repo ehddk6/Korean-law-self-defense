@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 등기행위가 부인되어 이 사건 부동산이 출연되지 않았음을 전제로 파산채권을 신고하였다.",
+    "원고는 피고가 신고한 파산채권 전부에 이의하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "파산선고 전 채무자가 재단법인의 기본재산으로 출연하고 소유권이전등기를 마친 부동산에 대하여 채무자회생법 제394조 제1항의 등기부인청구가 인정되는지",
+    "등기부인으로 부동산 출연의 효력이 상실된 경우, 피고가 출연 부동산 가액 상당의 파산채권을 가지는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-099",
+  "supported_facts": []
+}

@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "통화옵션계약 부분에 관하여 구체적인 상고이유가 기재되지 않았다.",
+    "원심은 일정 결제일 도래 손해 부분이 이미 시효로 소멸하였다고 판단하였다.",
+    "기록은 단기소멸시효 기산점에 관한 대법원 판단을 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "통화옵션계약 관련 상고이유의 적법성",
+    "단순선도환계약 체결의 적합성 원칙 위반 여부",
+    "단순선도환계약 관련 설명의무 위반 여부",
+    "단기소멸시효의 기산점과 소멸 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": [
+    {
+      "claim": "원고는 통화옵션계약 관련 구체적인 상고이유를 기재하지 않았다.",
+      "evidence_excerpt": "구체적인 상고이유를 기재하지 않았다."
+    },
+    {
+      "claim": "원심은 적합성 원칙 위반을 인정하였다.",
+      "evidence_excerpt": "적합성 원칙을 위반하였고"
+    },
+    {
+      "claim": "원심은 설명의무 위반을 인정하였다.",
+      "evidence_excerpt": "피고의 설명의무 위반을 인정한 제1심판결을 그대로 인용하였다."
+    }
+  ]
+}

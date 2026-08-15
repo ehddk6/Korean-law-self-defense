@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "지급 기준은 부정한 방법의 실적 제출 시 환수를 정한다.",
+    "교육부 감사는 학생지도비 실적 제출 및 연구실적 중복 제출의 부적정을 지적하였다.",
+    "원고들에게 환수금 납부가 통지되었다."
+  ],
+  "citations": [
+    "국립대학회계법 제28조",
+    "국립대학회계법 시행규칙 제22조 제6항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "국립대학 교육·연구 및 학생지도 비용 환수의 법적 성질",
+    "실적 부정 제출 및 중복 제출에 따른 환수 요건",
+    "환수 통지가 행정처분인지 여부",
+    "환수금 납부 요구의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-118",
+  "supported_facts": [
+    {
+      "claim": "원고들은 교육·연구 및 학생지도 비용을 지급받았다.",
+      "evidence_excerpt": "교육·연구 및 학생지도 비용을 지급받았다."
+    },
+    {
+      "claim": "교육부는 환수 및 신분상 조치를 요구하였다.",
+      "evidence_excerpt": "비용 환수 및 신분상 조치를 하도록 요구하였다."
+    },
+    {
+      "claim": "환수 통지에는 환수 사유와 금액이 기재되었다.",
+      "evidence_excerpt": "교육·연구 및 학생지도 비용 552,000원을 환수"
+    }
+  ]
+}

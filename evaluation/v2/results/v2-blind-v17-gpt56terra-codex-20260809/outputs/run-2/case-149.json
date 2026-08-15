@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "손해 및 가해자를 안 날이 특정되면 제766조 제1항의 3년 단기시효 만료일을 계산할 수 있으며, 미성년자 성적 침해 예외가 적용되면 기산점이 달라질 수 있다."
+  ],
+  "citations": [
+    "제766조(손해배상청구권의 소멸시효)"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제766조 제1항의 단기시효는 피해자 또는 법정대리인이 손해 및 가해자를 안 날부터 진행한다.",
+    "손해와 가해자를 안 날이 제시되지 않아 단기시효 만료일을 확정할 수 없다.",
+    "불법행위일은 제766조 제2항의 장기기간과 관련될 수 있으나, 질문한 단기시효의 기산일을 대신하지 않는다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "supported_facts": [
+    {
+      "claim": "인식일은 제시되지 않았다.",
+      "evidence_excerpt": "\"knowledge_date\": null"
+    },
+    {
+      "claim": "불법행위일은 제시되었다.",
+      "evidence_excerpt": "\"tort_date\": \"2025-06-01\""
+    }
+  ]
+}

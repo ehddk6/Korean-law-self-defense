@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "출연행위와 등기행위가 구별되어 부인청구의 대상과 효과가 달라질 수 있다.",
+    "피고의 파산채권은 등기행위 부인만으로 곧바로 확정되지 않는다.",
+    "파산채권 조사확정재판에 대한 이의의 소가 계속 중이어서 채권 존부·가액이 미확정이다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "등기부인청구의 대상이 출연행위인지 등기행위인지",
+    "부인등기의 효력과 부동산 출연의 법률효과",
+    "부인된 수익자의 가액상당 파산채권 성립 여부",
+    "조사확정재판 계속 중 채권확정의 선결성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-099",
+  "supported_facts": [
+    {
+      "claim": "부인등기가 마쳐졌다.",
+      "evidence_excerpt": "피고 명의의 이 사건 등기를 부인하는 내용의 등기가 마쳐졌다"
+    },
+    {
+      "claim": "채권확정 관련 소송이 계속 중이다.",
+      "evidence_excerpt": "그 조사확정재판에 대한 이의의 소가 계속 중이다"
+    }
+  ]
+}

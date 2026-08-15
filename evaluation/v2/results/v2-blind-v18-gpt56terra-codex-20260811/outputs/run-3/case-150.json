@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "특허권등인지 여부와 제2조부터 제23조까지에 따른 관할법원 소재지가 제시되지 않아 적용 법원은 특정할 수 없다.",
+    "서울고등법원이 있는 곳의 지방법원에 관한 서울중앙지방법원 한정 예외의 적용 여부를 확인해야 한다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제24조(지식재산권 등에 관한 특별재판적)",
+    "특허권등의 지식재산권에 관한 소"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민사소송법 제24조의 지식재산권 특별재판적",
+    "특허권등 해당 여부",
+    "제2조부터 제23조까지에 따른 관할법원 소재지",
+    "서울중앙지방법원 한정 예외"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ip-special-forum-subject-to-statute",
+  "scenario_id": "case-150",
+  "supported_facts": [
+    {
+      "claim": "특허권등에 관한 소에는 전속관할 규정이 있다.",
+      "evidence_excerpt": "특허권등의 지식재산권에 관한 소"
+    }
+  ]
+}

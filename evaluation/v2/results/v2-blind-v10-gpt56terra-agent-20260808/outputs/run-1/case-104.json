@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "구 과징금 부과기준은 직접 또는 간접적으로 영향을 받는 서비스의 매출액을 관련 매출액으로 정한다.",
+    "원심은 사고 원인이 이벤트 페이지에만 발생했다는 이유로 쇼핑몰 전체 매출액이 아닌 이벤트 매출액으로 한정하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 유출 과징금 산정에서 ‘위반행위와 관련한 매출액’의 범위",
+    "이벤트 페이지의 캐시 설정 오류와 쇼핑몰 전체 매출액의 관련성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-104",
+  "supported_facts": []
+}

@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "불법행위일만으로는 제766조 제1항의 단기시효 만료일을 산정할 수 없다.",
+    "제766조 제2항의 10년 기간과 단기시효는 별도로 검토되어야 한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "불법행위 손해배상청구권의 3년 단기소멸시효 기산점",
+    "손해 및 가해자를 안 날의 확인"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "knowledge-date-required",
+  "scenario_id": "case-149",
+  "supported_facts": [
+    {
+      "claim": "손해 및 가해자를 안 날이 제공되지 않았다.",
+      "evidence_excerpt": "\"knowledge_date\": null, \"tort_date\": \"2025-06-01\""
+    }
+  ]
+}

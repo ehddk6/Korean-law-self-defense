@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "개인정보 유출은 이벤트 페이지에 적용된 캐시 정책 오류로 발생하였다.",
+    "피고는 쇼핑몰 전체 매출액을 관련 매출액으로 보았다.",
+    "원고는 과태료 및 과징금 18억 5,200만 원 등을 부과받았다."
+  ],
+  "citations": [
+    "구 정보통신망법 제64조의3 제1항 제6호",
+    "구 과징금 부과기준 제4조 제1항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 유출 과징금 산정의 관련 매출액 범위",
+    "이벤트 페이지와 쇼핑몰 전체 서비스의 구분",
+    "캐시 정책 오류와 개인정보 유출의 관련성",
+    "과징금 처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-104",
+  "supported_facts": [
+    {
+      "claim": "이벤트 페이지 이용자 개인정보가 다른 이용자에게 노출되었다.",
+      "evidence_excerpt": "쇼핑몰 이용자 20명의 개인정보가 다른 이용자 29명에게 노출"
+    },
+    {
+      "claim": "웹서버는 분리 운영되었다.",
+      "evidence_excerpt": "웹서버가 서로 분리 운영되었고"
+    },
+    {
+      "claim": "원심은 이벤트 매출액으로 한정해야 한다고 판단하였다.",
+      "evidence_excerpt": "‘이 사건 이벤트로 인한 매출액’으로 한정되어야 한다고 판단하였다."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원고와 피고 사이에는 미성년 딸인 사건본인들이 있다.",
+    "피고는 해외 사업 실패 후 다른 회사에 입사하였다.",
+    "원고는 진단을 받아 치료를 받았다.",
+    "제공된 기록이 원고의 치료 경위 서술 중에 종료되어 원심 및 상고심 판단을 확인할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "혼인파탄의 원인과 당사자 책임",
+    "정신질환 치료 사실이 혼인관계 판단에 미치는 영향",
+    "해외 사업 실패 및 직업 변동이 재산·생활관계에 미치는 영향",
+    "미성년 자녀의 보호와 양육 관련 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-058",
+  "supported_facts": []
+}

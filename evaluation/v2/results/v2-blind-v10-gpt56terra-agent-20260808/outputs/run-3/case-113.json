@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "각 지출은 시기·명목·금액이 달라 별개의 범행으로 볼 여지가 있다.",
+    "학교법인 관련 소송비용 등의 지출이 교비회계 전용에 해당한다는 공소사실이 제시되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "선행 확정판결의 포괄일죄 효력이 이 사건 업무상횡령 부분에 미치는지",
+    "업무상횡령과 사립학교법 위반의 상상적 경합 및 면소 여부"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-113",
+  "supported_facts": []
+}

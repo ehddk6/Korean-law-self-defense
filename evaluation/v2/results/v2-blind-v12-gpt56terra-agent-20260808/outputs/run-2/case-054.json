@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "유책배우자는 원칙적으로 혼인파탄을 사유로 이혼을 청구할 수 없다.",
+    "예외 허용 여부는 상대방 및 자녀 보호, 혼인기간, 별거기간 등 여러 사정을 종합하여 판단한다.",
+    "상대방의 주관적 의사만으로 혼인계속의사를 인정할 수 없다."
+  ],
+  "citations": [
+    "대법원 2015. 9. 15. 선고 [CASE_NUMBER_001] 전원합의체 판결",
+    "민법 제826조 제1항",
+    "대법원 2022. 6. 16. 선고 [CASE_NUMBER_004] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "유책배우자의 이혼청구 허용 여부",
+    "유책배우자 이혼청구의 예외적 허용 사유",
+    "상대방 배우자의 객관적 혼인계속의사 판단",
+    "부부의 상호 협력·보호 의무"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-054",
+  "supported_facts": [
+    {
+      "claim": "유책배우자의 이혼청구는 원칙적으로 허용되지 않는다.",
+      "evidence_excerpt": "원칙적으로 그 파탄을 사유로 하여 이혼을 청구할 수 없다."
+    },
+    {
+      "claim": "특별한 사정이 있으면 예외적으로 허용될 수 있다.",
+      "evidence_excerpt": "예외적으로 유책배우자의 이혼청구를 허용할 수 있다."
+    }
+  ]
+}

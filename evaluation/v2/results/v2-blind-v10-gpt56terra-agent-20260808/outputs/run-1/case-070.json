@@ -1,0 +1,24 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "원심판결 이유와 원심이 적법하게 채택한 증거에 의하면, 다음과 같은 사실을 알 수 있다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-070",
+  "supported_facts": [
+    {
+      "claim": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결하였다.",
+      "evidence_excerpt": "원고는 2010. 7. 5. 참가인과 보험설계사 위촉계약을 체결한 후"
+    },
+    {
+      "claim": "원고는 FP, PSM, AM으로 근무하였다.",
+      "evidence_excerpt": "2010. 7. 5.부터 참가인의 TRI○○지점에서 FP로 근무하였고, 2011. 12. 1.부터 참가인의 TRI△△지점에서 PSM(Pro Sales Manager, 보험인원 모집 및 관리업무를 하는 매니저 직급)으로 근무하였으며, 2013. 7. 1.부터는 참가인의 □□지점 등에서 AM(Assistant Manager, 지점장의 업무를 보조하는 총무 직급)으로 근무하였다."
+    }
+  ]
+}

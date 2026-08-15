@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "피고는 각 100만 원이 사회통념상 이 사건 부동산의 취득가액으로 보기 어렵다고 판단하였다.",
+    "피고는 지방세법 제7조 제15항에 따라 새로운 위탁자인 원고들이 각 지분을 취득하였다고 보아 고액의 취득세 등을 부과하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "부동산 관리신탁의 위탁자 지위를 100만 원에 이전받은 원고들이 지방세법 제7조 제15항에 따라 각 신탁지분을 취득한 것으로 보아 취득세를 과세할 수 있는지",
+    "거래금액 각 100만 원이 이 사건 부동산 지분의 취득가액으로 인정될 수 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-089",
+  "supported_facts": []
+}

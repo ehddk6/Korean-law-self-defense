@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "피고들은 투자제안서와 재무실사보고서를 제공하였다.",
+    "투자자 중 1인이 이 사건 기사에 관한 사실 여부 확인을 요청하자 피고 2 회사가 매도인들 측에 그 취지를 전달하였다.",
+    "이 사건 PEF는 2020년 6월 19일자로 해산등기가 마쳐졌다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "PEF 업무집행사원들이 거래종결 전 투자위험을 고지하고 조사할 주의의무를 부담하는지",
+    "화장품 레시피권 및 공급처 리스크가 투자 판단상 중대한 정보인지",
+    "공급처 자체 공장 신축 관련 정보를 투자자에게 알리지 않은 행위의 위법성",
+    "주의의무 위반과 투자금 손해 사이의 인과관계 및 손해액 입증"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-009",
+  "supported_facts": []
+}

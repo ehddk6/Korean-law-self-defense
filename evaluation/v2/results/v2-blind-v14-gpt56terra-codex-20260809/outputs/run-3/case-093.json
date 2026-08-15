@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "채무가 신청일 기준 1년 이내에 발생하였다.",
+    "채무자는 채무부담 경위를 명확히 밝히지 않았다.",
+    "채권자의 이의신청에도 제1심에서 답변하지 않았다."
+  ],
+  "citations": [
+    "이 사건 신청이 성실하지 않은 경우에 해당한다고 판단하여"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생절차 개시신청이 성실하지 않은 경우에 해당하는지 여부",
+    "신청일 전 1년 이내 발생한 채무의 소명 필요성",
+    "채권자 이의에 대한 채무자의 설명 불응의 효과",
+    "성실성 흠결에 관한 채무자의 소명책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-093",
+  "supported_facts": [
+    {
+      "claim": "재항고인은 2009년 6월 18일 개인회생절차 개시신청을 하였다.",
+      "evidence_excerpt": "2009. 6. 18. 개인회생절차 개시신청을 한 재항고인"
+    },
+    {
+      "claim": "원심은 재항고인의 항고를 기각하였다.",
+      "evidence_excerpt": "재항고인의 항고를 기각하였다."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "기록에는 공소사실과 증거의 요지만 있고, 각 범죄의 법률요건 충족 여부에 관한 법원의 판단과 주문이 없다.",
+    "개인정보 이용에 관하여 동의, 목적 외 이용 예외, 고지 등 판단에 필요한 사정이 기록상 확정되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "담임교사가 학생들의 거절·반항이 어려운 점을 이용한 행위가 위계등추행에 해당하는지",
+    "학부모 주소를 내용증명 발송 및 법률사무실 위임에 사용한 행위가 개인정보 보호법 위반에 해당하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-109",
+  "supported_facts": []
+}

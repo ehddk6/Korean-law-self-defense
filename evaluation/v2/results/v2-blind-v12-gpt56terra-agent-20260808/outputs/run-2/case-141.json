@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "경감된 제재기준은 위반행위 후 법 변경 및 특별규정 부재가 충족되어야 적용된다.",
+    "위반행위 후 법 변경되었다는 사실이 제시되지 않았다.",
+    "특별규정 부재가 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "변경법의 제재기준 경감",
+    "위반행위 후 법 변경 여부",
+    "특별규정 존재 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재처분 사안이다.",
+      "evidence_excerpt": "\"sanction\": true"
+    },
+    {
+      "claim": "후법의 제재기준이 더 가볍다.",
+      "evidence_excerpt": "\"later_law_lighter\": true"
+    }
+  ]
+}

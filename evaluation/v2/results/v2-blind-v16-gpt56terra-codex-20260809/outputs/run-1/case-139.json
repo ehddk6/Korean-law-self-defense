@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "권리행사 가능일이 제시되지 않아 계약일만으로 실제 시효 기산일을 확정할 수 없다.",
+    "적용될 개별 채권의 시효기간 또는 특별규정은 제시되지 않았다."
+  ],
+  "citations": [
+    "①소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민법 제166조 제1항에 따라 시효는 권리를 행사할 수 있는 때부터 진행한다.",
+    "기산일 확정에는 권리행사 가능일이 필요하다.",
+    "계약일은 제시되었으나 권리행사 가능일은 제시되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일만 제시되었다.",
+      "evidence_excerpt": "\"contract_date\": \"2025-04-10\""
+    },
+    {
+      "claim": "권리행사 가능일은 제시되지 않았다.",
+      "evidence_excerpt": "\"right_exercisable_date\": null"
+    }
+  ]
+}

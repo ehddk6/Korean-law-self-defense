@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "법정대리인에게 할 송달에는 본인의 영업소나 사무소도 송달장소가 될 수 있다.",
+    "주소등을 알지 못하거나 그 장소에서 송달할 수 없는 때에는 근무장소 송달이 가능하다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "주소에서 이루어진 송달의 장소 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "address-or-workplace-service",
+  "scenario_id": "case-128",
+  "supported_facts": [
+    {
+      "claim": "송달장소는 수령인의 주소이다.",
+      "evidence_excerpt": "\"place\": \"recipient_address\""
+    }
+  ]
+}

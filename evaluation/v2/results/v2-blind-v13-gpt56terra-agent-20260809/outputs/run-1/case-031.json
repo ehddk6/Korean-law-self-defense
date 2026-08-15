@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "기록은 이사 지위를 일신전속적 지위로 보아 상속 대상이 아니라고 한다.",
+    "선정자 3은 원심 변론종결 후 사망한 것으로 보이나 기록이 날짜에서 중단된다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이사 지위의 상속 가능성: 선정자 3의 주주총회결의 취소소송에서 이사 지위가 일신전속적이어서 상속 대상이 아닌 경우 소송상 지위 승계 또는 청구 유지가 가능한지가 쟁점이나, 선정자 3의 사망 경위와 결론이 절단되어 있다.",
+    "명의개서절차 이행청구: 원고 등과 나머지 선정자들의 명의개서청구에 관한 사실관계·법리·판단이 제공되지 않아 판단할 수 없다."
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-031",
+  "supported_facts": []
+}

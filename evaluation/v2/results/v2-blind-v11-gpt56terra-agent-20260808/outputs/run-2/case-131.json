@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "구체적으로 어느 법령을 적용할지는 특별규정과 적용 곤란 사정의 내용이 추가로 필요하다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청처분에서 처분 당시 법령 적용 곤란 사정"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "당사자 신청에 따른 처분에서 신법 적용이 곤란한 특별사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true, \"party_application\": true"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "지방세 부과제척기간 만료일까지 남은 기간이 3개월 이하인 경우는 과세전적부심사 예외사유로 규정되어 있다.",
+    "과세관청은 추가 조사가 필요하지 않았고 후속 절차를 지연시켰다고 원심이 판단하였다.",
+    "원심은 과세전적부심사의 기회가 박탈되었다고 판단하였다."
+  ],
+  "citations": [
+    "지방세기본법 제88조 제1항",
+    "지방세기본법 제88조 제3항 제3호",
+    "대법원 2016. 4. 15. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "과세예고통지 및 과세전적부심사의 절차적 보장",
+    "지방세기본법 제88조 제3항 제3호 예외 적용 요건",
+    "과세관청의 지연에 따른 과세전적부심사 기회 박탈",
+    "절차적 하자가 과세처분 효력에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-048",
+  "supported_facts": []
+}

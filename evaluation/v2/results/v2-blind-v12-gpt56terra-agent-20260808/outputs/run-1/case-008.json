@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "원고는 통화옵션계약 부분에 “구체적인 상고이유를 기재하지 않았다.”",
+    "원고의 “외화 유입량 및 오버헤지 상태 발생 여부”가 판단 요소로 제시되었다.",
+    "원심은 “이미 시효로 소멸하였다고 판단하였다.”",
+    "기록은 단기소멸시효 기산점에 관한 원심 판단의 일부만 제시한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "통화옵션계약 체결 관련 손해배상청구에 대한 상고이유의 적법성",
+    "단순선도환계약 체결에서 적합성 원칙 위반 여부",
+    "단순선도환계약 체결에서 설명의무 위반 여부",
+    "손해배상청구권의 단기소멸시효 기산점",
+    "결제일 도래 손해의 소멸시효 완성 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-008",
+  "supported_facts": []
+}

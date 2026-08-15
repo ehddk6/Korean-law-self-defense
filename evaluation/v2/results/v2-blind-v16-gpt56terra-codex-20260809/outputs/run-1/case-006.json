@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "피고 1 회사를 대위한 청구는 무자력·피보전채권 등 채권자대위 요건이 기록상 확인되지 않는다.",
+    "499세대 채권양도로 542세대 전체 하자에 관한 청구범위가 뒷받침되는지 다투어진다.",
+    "하자 원인·보수비·책임기간 및 피고별 책임근거가 제시되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "양수한 하자보수청구권 및 손해배상채권의 범위",
+    "499세대 양도와 공용부분·전유부분 청구의 당사자적격",
+    "분양회사와 시공회사별 하자책임의 법적 근거",
+    "도급계약상 하자담보책임을 위한 대위요건",
+    "하자보수를 갈음하는 손해액의 입증"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-006",
+  "supported_facts": [
+    {
+      "claim": "공용·전유부분 하자가 기록되어 있다.",
+      "evidence_excerpt": "이 사건 아파트의 공용부분과 전유부분에 하자가 존재한다."
+    },
+    {
+      "claim": "채권양도 규모가 기록되어 있다.",
+      "evidence_excerpt": "총 542세대 중 499세대 구분소유자들로부터"
+    }
+  ]
+}

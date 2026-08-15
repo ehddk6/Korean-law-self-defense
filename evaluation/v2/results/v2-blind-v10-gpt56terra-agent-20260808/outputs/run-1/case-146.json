@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "행정기본법 제14조는 특별규정이 있는 경우를 예외로 하므로, 원문 없이는 예외 적용 여부를 판단할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "특별규정의 존재 및 내용 미확인",
+    "시간적 적용 판단 불가"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": []
+}

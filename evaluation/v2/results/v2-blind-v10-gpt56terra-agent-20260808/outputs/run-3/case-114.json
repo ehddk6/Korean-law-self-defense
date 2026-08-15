@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "학교생활기록부 기재가 삭제되면 담당교사가 과거 행동 정보를 파악하기 어렵고 학생 선발자료로도 활용되지 못한다.",
+    "학교폭력 예방과 재발 방지를 위해 조치사항 기재를 유지할 필요가 있을 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "선행 집행정지절차에서의 피해학생 등 의견청취가 후속 집행정지결정에도 충분한지",
+    "집행정지결정에 따라 학교생활기록부의 학교폭력 관련 조치사항을 삭제해야 하는지",
+    "회복하기 어려운 손해와 공공복리의 비교·판단"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-114",
+  "supported_facts": []
+}

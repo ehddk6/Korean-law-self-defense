@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 쇼핑몰의 전체 매출액을 관련 매출액으로 보아 과징금을 산정하였다.",
+    "구 과징금 부과기준은 위반행위로 직접 또는 간접적으로 영향을 받는 서비스의 매출액을 관련 매출액으로 정한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 유출에 대한 구 정보통신망법상 과징금의 관련 매출액을 산정할 때, 캐시 설정 오류가 발생한 이벤트 페이지의 매출액으로 한정할지 쇼핑몰 전체 연매출액으로 볼지",
+    "웹서버 분리 운영, 개인정보 데이터베이스 접근경로, 캐시 정책의 적용 범위를 고려할 때 이 사건 이벤트가 위반행위로 직접 또는 간접적으로 영향을 받는 서비스인지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-104",
+  "supported_facts": []
+}

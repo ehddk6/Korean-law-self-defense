@@ -1,0 +1,30 @@
+{
+  "adverse_points": [
+    "참가인은 1차 징계의결 내용을 통보하지 않은 채 정직 처분을 하였다.",
+    "참가행정청은 이를 중대한 절차규정 위반으로 보았다.",
+    "교원징계위원회는 재심의 후 해임 징계를 의결하였다."
+  ],
+  "citations": [
+    "구 사립학교법 제66조의2 제2항",
+    "구 사립학교법 제66조의2 제3항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "사립학교 교원징계의결 통보 절차",
+    "재심의 요구에 따른 재징계의 적법성",
+    "정직 2개월 처분 후 해임 처분의 효력",
+    "소청심사 기각결정의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-116",
+  "supported_facts": [
+    {
+      "claim": "참가행정청은 중징계 해임을 요구하였다.",
+      "evidence_excerpt": "원고에 대한 중징계(해임)를 요구하였다."
+    }
+  ]
+}

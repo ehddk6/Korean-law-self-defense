@@ -1,0 +1,36 @@
+{
+  "adverse_points": [
+    "관련 형사사건에서 원고 27 관련 무죄 부분이 확정되었다.",
+    "피고들은 블랙리스트 작성 관여, 손해 발생 및 인과관계를 인정할 수 없다고 주장한다.",
+    "피고들은 블랙리스트가 작성된 2010. 11.경부터 5년이 경과하여 시효가 완성되었다고 주장한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "블랙리스트 작성·유지·관리와 불법행위책임의 성립 여부",
+    "원고들의 정신적 손해 및 인과관계",
+    "국가배상채권의 소멸시효 완성 여부",
+    "소멸시효 항변이 신의성실 원칙상 권리남용인지 여부",
+    "위자료 500만 원의 적정성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-005",
+  "supported_facts": [
+    {
+      "claim": "원고들은 블랙리스트에 포함되었다.",
+      "evidence_excerpt": "원고들은 위 명단에 모두 포함되어 있다."
+    },
+    {
+      "claim": "관련 형사사건의 일부 무죄가 확정되었다.",
+      "evidence_excerpt": "위 무죄 부분은 그대로 확정되었다."
+    },
+    {
+      "claim": "원고들은 2017년에 손해배상소송을 제기하였다.",
+      "evidence_excerpt": "원고들은 2017. 11. 28. 피고들을 상대로 손해배상을 청구하는 이 사건 소를 제기"
+    }
+  ]
+}

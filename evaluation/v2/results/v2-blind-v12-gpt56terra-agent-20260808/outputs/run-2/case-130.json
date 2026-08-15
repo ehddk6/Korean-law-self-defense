@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "주소가 없거나 알 수 없는 경우에만 거소 또는 마지막 주소 기준이 적용된다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "ready",
+  "issues": [
+    "개인 피고의 보통재판적 기준"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "individual-address-forum",
+  "scenario_id": "case-130",
+  "supported_facts": [
+    {
+      "claim": "피고는 개인이다.",
+      "evidence_excerpt": "\"defendant_type\": \"individual\""
+    },
+    {
+      "claim": "피고의 주소를 알고 있다.",
+      "evidence_excerpt": "\"address_known\": true"
+    }
+  ]
+}

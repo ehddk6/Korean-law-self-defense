@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "공인중개사는 신탁원부를 제시하고 신탁관계의 법적 의미와 효과를 성실하고 정확하게 설명하여야 할 의무가 있다.",
+    "고의 또는 과실로 거래당사자에게 재산상 손해를 발생하게 한 경우 손해배상책임이 규정되어 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신탁관계가 설정된 부동산 임대차 중개 시 공인중개사의 조사·확인 및 설명의무",
+    "수탁자의 사전승낙 또는 사후승인이 없는 임대차계약의 대항력 설명의무"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-024",
+  "supported_facts": [
+    {
+      "claim": "공인중개사는 설명의 근거자료를 제시하여야 한다.",
+      "evidence_excerpt": "공인중개사는 중개를 의뢰받은 경우 중개가 완성되기 전에 해당 중개대상물의 상태·입지 및 권리관계 등을 확인하여 이를 해당 중개대상물에 관한 권리를 취득하고자 하는 중개의뢰인에게 성실·정확하게 설명하고, 그 설명의 근거자료를 제시하여야 한다."
+    }
+  ]
+}

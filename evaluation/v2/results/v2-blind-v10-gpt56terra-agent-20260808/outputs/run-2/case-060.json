@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "혼인생활 중 혼인유지 노력을 게을리한 사정만으로 혼인신고 당시 혼인의사가 없었다고 단정할 수 없다.",
+    "혼인무효 사건에서 혼인의사 부존재는 합리적·객관적 근거로 뒷받침되어야 한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "혼인신고 당시 당사자 사이에 혼인의 합의가 없었는지",
+    "혼인무효와 이혼 사유를 구분할 수 있는지",
+    "외국인 배우자의 혼인의사를 판단할 때 고려할 사정"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-060",
+  "supported_facts": []
+}

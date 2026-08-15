@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "피고는 해외 사업 실패 후 다른 회사에 입사한 것으로 기재되어 있다.",
+    "원고는 두 차례 진단을 받아 치료를 받은 것으로 기재되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "혼인관계 파탄 및 이혼사유 존재 여부",
+    "해외 사업 실패 및 경제적 사정이 혼인관계에 미친 영향",
+    "원고의 치료 이력과 혼인관계 분쟁의 관련성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-058",
+  "supported_facts": [
+    {
+      "claim": "원고와 피고는 미성년 딸인 사건본인들을 두고 있다.",
+      "evidence_excerpt": "미성년 딸인 사건본인들을 두고 있다."
+    },
+    {
+      "claim": "피고는 2013년경 퇴사 후 해외 사업을 추진하였다.",
+      "evidence_excerpt": "피고는 2013. 3.경 퇴사 후 필리핀, 태국 등지에서 해외 사업을 추진하였다가"
+    },
+    {
+      "claim": "원고는 2011년과 2012년에 각 진단을 받고 치료를 받았다.",
+      "evidence_excerpt": "각 진단을 받아 치료를 받았다."
+    }
+  ]
+}

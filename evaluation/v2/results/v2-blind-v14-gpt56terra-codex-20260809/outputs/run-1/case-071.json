@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "원고는 청약당첨일에 이 사건 분양권에 당첨되었다.",
+    "이 사건 양도 당시 원고는 2주택 및 1분양권을 보유한 것으로 신고하였다.",
+    "피고는 분양권의 보유 시기를 청약당첨일로 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "분양권의 보유 시기를 청약당첨일과 분양계약일 중 언제로 볼 것인지",
+    "이 사건 양도 당시 일시적 1세대 2주택 비과세 요건 충족 여부",
+    "분양권 보유 시기에 따른 1세대 3주택 중과세율 적용의 적법성",
+    "양도소득세 경정청구 거부처분의 적법성과 환급 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-071",
+  "supported_facts": [
+    {
+      "claim": "피고는 청약당첨일을 분양권 보유 시기로 보아 경정청구를 거부하였다.",
+      "evidence_excerpt": "피고는 2022. 4. 14. 이 사건 분양권의 보유 시기를 청약당첨일로 보아야 한다는 이유로 원고의 경정청구를 거부하였다"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "부칙 문언이 제공되지 않아 개정 전 사실에 대한 적용례 또는 예외를 확인할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "형법 개정 전 사실에 개정법을 적용할 수 있는지는 해당 개정의 시행일과 부칙의 적용례·경과조치가 정하는 바에 따라 판단하여야 하나, 부칙 문언과 개정일이 제공되지 않았다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "verify-specific-addendum",
+  "scenario_id": "case-132",
+  "supported_facts": [
+    {
+      "claim": "부칙 문언은 제공되지 않았다.",
+      "evidence_excerpt": "\"addendum_text_provided\": false"
+    },
+    {
+      "claim": "개정일은 확인되지 않았다.",
+      "evidence_excerpt": "\"amendment_date_known\": false"
+    }
+  ]
+}

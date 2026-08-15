@@ -1,0 +1,23 @@
+{
+  "agent_id": "019fe072-be51-7f63-8421-eac1222ca2ba",
+  "batch_id": "4c0b01a7ff17f5427d38daaab024bbcf940595bbaa098b33013f6085f92dbc7a",
+  "created_at": "2026-08-08T08:18:59+00:00",
+  "execution_backend": "multi-agent-v1",
+  "format": "legal-workbench-agent-evaluation-provenance-v1",
+  "model": "gpt-5.6-terra",
+  "prompt_sha256": "ad811f3fa0bf14b67a35f7cc9376f204037720db8c3b77ef8855884611c3190a",
+  "raw_transcript_persisted": false,
+  "reasoning_effort": "medium",
+  "response_sha256": "6c6eab59dbe5f3accba74c6253d5726c8eeed3fcaa76c0785e497317bc065156",
+  "run_id": "run-1",
+  "scenario_ids": [
+    "case-125",
+    "case-130",
+    "case-135",
+    "case-140",
+    "case-145",
+    "case-150"
+  ],
+  "tool_call_count": 0,
+  "transcript_sha256": "57e9ca907732f1d00b187073ce748a10e147a7b974c60896e210e05446f72711"
+}

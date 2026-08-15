@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원고 7은 세법학 2부에서, 나머지 원고들은 세법학 1부에서 40점에 미달하였다.",
+    "최초 발표 당시 원고들을 포함한 응시자들은 불합격 처리되었다.",
+    "원고들은 재채점 및 추가합격 발표 후에야 최종 합격하였다.",
+    "기록은 “가. 원심의 판단”에서 끝나 피고들의 구체적 상고이유와 대법원 판단을 제시하지 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "세무사 자격시험 불합격 처분의 위법 여부",
+    "채점기준 변경 및 채점 일관성 부족의 법적 효과",
+    "재채점과 추가합격이 기존 불합격 처분에 미치는 영향",
+    "피고들의 상고이유에 관한 원심판단의 당부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-003",
+  "supported_facts": []
+}

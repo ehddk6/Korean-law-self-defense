@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "제시된 사실상 중단은 없지만, 일반 채권이 아닌 채권이거나 권리행사 가능일이 달라지면 적용 기간 또는 만료일이 달라질 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "민법 제162조 제1항의 일반 채권은 10년간 행사하지 않으면 시효가 완성하고, 제166조 제1항에 따라 권리행사 가능일부터 진행한다.",
+    "제157조 및 제160조 제2항에 따라 초일을 산입하지 않는 연 단위 기간은 기산일 해당일의 전일에 만료하므로 2036-04-09에 만료한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권의 권리행사 가능일은 2026-04-10이고 중단이 없다.",
+      "evidence_excerpt": "\"interruption\": false, \"ordinary_claim\": true, \"right_exercisable_date\": \"2026-04-10\""
+    }
+  ]
+}

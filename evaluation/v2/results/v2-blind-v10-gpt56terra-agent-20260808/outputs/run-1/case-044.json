@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "전기통신금융사기죄와 사기죄는 \"입법 목적을 달리\"한다.",
+    "두 죄는 \"구체적인 구성요건에도 일부 차이\"가 있다.",
+    "전기통신금융사기죄는 사기죄의 모든 요소를 포함하는 외에 다른 요소를 갖춘 경우가 아니라는 법리가 제시되어 있다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 형법상 사기죄의 관계",
+    "전기통신금융사기죄가 사기죄의 모든 구성요건을 포함하는지 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-044",
+  "supported_facts": []
+}

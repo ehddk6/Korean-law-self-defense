@@ -1,0 +1,28 @@
+{
+  "adverse_points": [],
+  "citations": [
+    "제187조(우편송달)"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민사소송법 제187조의 우편송달 요건",
+    "제186조에 따라 송달할 수 없는 사실",
+    "등기우편 등 대법원규칙이 정하는 방법으로 발송한다는 후속 절차"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "postal-service-after-article-186-failure",
+  "scenario_id": "case-138",
+  "supported_facts": [
+    {
+      "claim": "제186조에 따른 송달이 불가능한 것으로 제시되어 있다.",
+      "evidence_excerpt": "\"article_186_service_impossible\": true"
+    },
+    {
+      "claim": "제186조의 규정에 따라 송달할 수 없는 때에는 우편송달을 할 수 있다.",
+      "evidence_excerpt": "제186조의 규정에 따라 송달할 수 없는 때에는 법원사무관등은 서류를 등기우편 등 대법원규칙이 정하는 방법으로 발송할 수 있다."
+    }
+  ]
+}

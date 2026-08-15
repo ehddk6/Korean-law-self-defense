@@ -1,0 +1,32 @@
+{
+  "adverse_points": [
+    "송달받을 사람이 부재중이었다.",
+    "동거인의 사리분별 능력이 확인되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "부재중 동거인에 대한 보충송달 요건",
+    "동거인의 사리분별 능력"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "substitute-service-needs-capable-recipient",
+  "scenario_id": "case-133",
+  "supported_facts": [
+    {
+      "claim": "송달받을 사람이 부재중이었다.",
+      "evidence_excerpt": "\"recipient_absent\": true"
+    },
+    {
+      "claim": "서류는 동거인에게 교부되었다.",
+      "evidence_excerpt": "\"delivered_to_housemate\": true"
+    },
+    {
+      "claim": "동거인의 사리분별 능력은 확인되지 않았다.",
+      "evidence_excerpt": "\"capacity_confirmed\": false"
+    }
+  ]
+}

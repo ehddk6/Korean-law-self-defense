@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "원고 27 관련 형사 무죄가 확정되었다.",
+    "명단 포함만으로 원고별 구체적 손해가 당연히 인정되지는 않는다.",
+    "피고들의 작성·유지·관리 관여를 원고별로 입증해야 한다.",
+    "2010년부터 시효가 진행되었다면 제소 전 완성될 수 있다.",
+    "은폐와 권리행사 장애 또는 시효항변 권리남용이 당연히 증명되지는 않는다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "블랙리스트 관련 행위의 불법행위성",
+    "명단 등재와 구체적 손해의 인과관계",
+    "원고별 정신적 손해와 위자료",
+    "소멸시효 기산점",
+    "시효항변의 신의칙상 권리남용"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-005",
+  "supported_facts": [
+    {
+      "claim": "원고들은 명단에 포함되었다.",
+      "evidence_excerpt": "원고들은 위 명단에 모두 포함되어 있다."
+    },
+    {
+      "claim": "원고 27 관련 무죄 부분은 확정되었다.",
+      "evidence_excerpt": "위 무죄 부분은 그대로 확정되었다."
+    }
+  ]
+}

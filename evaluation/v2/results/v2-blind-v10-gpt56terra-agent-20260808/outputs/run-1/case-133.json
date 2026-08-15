@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "동거인의 사리분별 능력이 확인되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "보충송달 수령인의 사리분별 능력",
+    "송달장소 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "substitute-service-needs-capable-recipient",
+  "scenario_id": "case-133",
+  "supported_facts": []
+}

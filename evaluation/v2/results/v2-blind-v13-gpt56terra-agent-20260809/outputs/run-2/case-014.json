@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "원심은 소외인이 자유로운 의사결정을 할 수 없는 상태에서 자살하였다고 인정하기 어렵다고 판단하였다.",
+    "약관은 피보험자가 고의로 자신을 해친 경우를 보험금 면책사유로 정한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "피보험자가 고의로 자신을 해친 경우의 면책조항이 적용되는지, 또는 자살 당시 심신상실 등으로 자유로운 의사결정을 할 수 없는 상태였다는 예외가 충족되어 보험금 지급책임이 발생하는지가 쟁점이다."
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-014",
+  "supported_facts": []
+}

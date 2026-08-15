@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "임대차계약에는 공동명의자가 연대책임을 진다는 특약이 포함되어 있다.",
+    "소외 1은 식당을 전적으로 운영하고 운영상 모든 금전 지출을 부담하기로 하였다.",
+    "소외 1과 피고는 보증금에서 합계 149,985,396원을 공제하기로 합의하였다.",
+    "소외 1의 보증금반환채권 일부에 관하여 압류 및 전부명령이 확정되었다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공동임차인의 임대차보증금반환채권의 법적 성질",
+    "식당 운영관계가 대외적 조합을 형성하는지 여부",
+    "소외 1과 임대인 사이 공제합의의 원고들에 대한 효력",
+    "압류 및 전부명령이 임대차보증금반환채권에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-027",
+  "supported_facts": []
+}

@@ -1,0 +1,26 @@
+{
+  "adverse_points": [
+    "소외인은 일반 경찰관에서 화물차 운전기사로 직업을 변경하였다.",
+    "상해보험계약의 보험증권에는 소외인의 직업이 일반 경찰관으로 기재되어 있었다.",
+    "보험약관은 직업 변경 사실을 알리지 않은 경우 보험금 감액을 정하고 있다.",
+    "피고는 계약 후 알릴 의무 위반을 이유로 보험금 감액을 통지하였다."
+  ],
+  "citations": [
+    "제24조 제1항",
+    "제24조 제3항, 제4항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "계약 후 직업·직무 변경 알릴 의무의 위반 여부",
+    "보험자의 직업 변경 사실 인지 여부",
+    "직업 변경 후 보험금 감액조항의 적용 여부",
+    "후유장해 보험금 청구 범위"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-018",
+  "supported_facts": []
+}

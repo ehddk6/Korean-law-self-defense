@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "선정자 3의 사망 시점과 소송수계 또는 소의 적법성에 관한 판단이 기록에서 절단되어 있다.",
+    "명의개서절차 이행청구에 관한 사실관계와 원심 판단이 제공되지 않았다.",
+    "최종 주문이 없어 상고 결과를 특정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "이사 지위가 상속의 대상인지",
+    "선정자 3의 사망이 주주총회결의 취소 청구에 미치는 영향",
+    "선정당사자와 나머지 선정자들의 소송수행 적법성",
+    "명의개서절차 이행청구의 요건과 판단"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-031",
+  "supported_facts": [
+    {
+      "claim": "기록은 이사 지위의 일신전속성을 전제로 한다.",
+      "evidence_excerpt": "이사는 주식회사의 의사결정기관인 이사회의 구성원이고, 의사결정기관 구성원으로서의 지위는 일신전속적인 것이어서 상속의 대상이 되지 않기 때문이다"
+    }
+  ]
+}

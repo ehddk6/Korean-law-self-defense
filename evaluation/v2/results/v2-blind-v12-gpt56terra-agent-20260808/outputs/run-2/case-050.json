@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "피고인은 자신의 계좌로 입금된 금원을 인출하여 제3자에게 전달하였다.",
+    "피고인은 은행원과 경찰관에게 자금 출처 등에 관하여 허위로 답변하라는 지시를 받았다.",
+    "피고인은 피해자 공소외 2의 출생연도와 전화번호 뒷자리를 전달받았다."
+  ],
+  "citations": [
+    "대법원 2004. 5. 14. 선고 [CASE_NUMBER_001] 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보이스피싱 범행에 대한 공모공동정범 성립 여부",
+    "피고인의 미필적 고의 및 범의 인정 여부",
+    "계좌 제공·현금 인출·전달 행위의 의미",
+    "검사의 주관적 구성요건 증명 정도"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-050",
+  "supported_facts": [
+    {
+      "claim": "피고인은 보이스피싱 조직원 제안을 승낙한 것으로 공소사실에 기재되어 있다.",
+      "evidence_excerpt": "제안을 받고 이를 승낙하여"
+    },
+    {
+      "claim": "피고인은 980만 원을 인출하여 전달하였다.",
+      "evidence_excerpt": "전액 수표로 인출하였다."
+    },
+    {
+      "claim": "기록은 피고인이 보이스피싱을 의심한 사정이 없다고 본다.",
+      "evidence_excerpt": "의심하였다고 볼 만한 사정은 전혀 찾아볼 수 없다."
+    }
+  ]
+}

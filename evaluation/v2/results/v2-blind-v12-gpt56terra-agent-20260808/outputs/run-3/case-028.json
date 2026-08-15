@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "원고는 경매절차에서 보증금 중 일부만 배당받았다.",
+    "임차인의 대항요건이 존속되어야 양수인에게 임대차관계의 존속을 주장할 수 있다.",
+    "보증금 잔액이 반환되지 않은 상태가 전제된다."
+  ],
+  "citations": [
+    "주택임대차보호법 제3조 제1항",
+    "주택임대차보호법 제3조의2 제7항"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택임차인의 대항력 유지 여부",
+    "우선변제권 행사 및 일부 배당 후 임대차관계 존속 여부",
+    "보증금반환채권을 양수한 금융기관과 임차인의 권리관계",
+    "임차주택 양수인의 임대인 지위 승계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-028",
+  "supported_facts": []
+}

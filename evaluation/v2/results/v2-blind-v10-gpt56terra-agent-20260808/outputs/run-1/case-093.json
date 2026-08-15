@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "채무가 \"신청일 기준 1년 이내에 발생한 것\"이다.",
+    "재항고인이 \"채무를 부담하게 된 경위를 ... 명확히 밝히지\" 않았다.",
+    "채권자의 요구에도 제1심에서 \"어떠한 답변을 하지 않았다.\""
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신청일 기준 1년 이내 발생한 채무와 채무부담경위 미소명이 개인회생신청의 불성실 사유인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-093",
+  "supported_facts": []
+}

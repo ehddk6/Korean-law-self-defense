@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "투자제안서 등에는 안정적 계약관계와 성장 가능성이 기재되어 있었다.",
+    "기사 내용은 이후 수정되었다.",
+    "레시피권 귀속과 OEM 제조 차질 문제는 거래종결 전 확정된 사실로 기록되어 있지 않다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "PEF 업무집행사원의 투자자에 대한 거래종결 전 주의의무",
+    "투자위험 정황의 고지 및 합리적 조사 의무",
+    "기사 및 이메일이 중대한 투자위험을 구성하는지",
+    "레시피권·공급처 위험과 투자손해의 인과관계",
+    "PEF 존속기간 만료 및 SPC 채무가 손해 산정에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-009",
+  "supported_facts": [
+    {
+      "claim": "피고들은 거래종결 전 위험 정황을 알았다고 원심이 판단하였다.",
+      "evidence_excerpt": "투자대상인 이 사건 회사에 관한 중대한 투자위험이 존재할 수 있다는 정황을 발견하였으므로"
+    }
+  ]
+}

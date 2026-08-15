@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "전직 정식이사 지위는 일신전속적이어서 상속 대상이 아니라는 법리가 직접 제시되어 있다.",
+    "원고들이 원심판결 선고 후 사망하여 소송상 지위 승계가 문제 된다.",
+    "사망 전의 구체적 권리보호이익 또는 다른 원고들의 청구 범위는 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원고 사망 후 소송절차의 승계 가능성",
+    "전직 정식이사 지위의 일신전속성",
+    "전현직이사협의체 의견제출 권리의 상속성",
+    "사망한 원고 부분에 대한 소송종료 또는 각하 판단"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-115",
+  "supported_facts": [
+    {
+      "claim": "원고 1과 원고 2는 원심판결 선고 후 사망했다.",
+      "evidence_excerpt": "원고 1은 2021. 12. 19.에, 원고 2는 2022. 5. 31.에 각각 사망하였음이 명백하다."
+    },
+    {
+      "claim": "전직 정식이사 지위의 상속성이 부정되어 있다.",
+      "evidence_excerpt": "전직 정식이사의 지위는 일신전속적인 것이어서 상속의 대상이 되지 않는다"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "기존 과업지시서는 특별한 사정이 없는 한 고용승계를 요구하였다.",
+    "정규직 전환은 최소 수준의 전환심사를 거치도록 설계되었다.",
+    "원고는 합의서 제출을 요구하였고 제출 거부자와 근로계약을 체결하지 않았다.",
+    "구체적인 소송 청구와 원심 및 상고심 판단은 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "공공부문 정규직 전환에 따른 고용승계 기대권",
+    "자회사 정규직 전환 채용 요건의 적법성",
+    "단속적 근로조건 합의서 제출 요구의 정당성",
+    "합의서 제출 거부자를 채용하지 않은 조치의 효력"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-062",
+  "supported_facts": []
+}

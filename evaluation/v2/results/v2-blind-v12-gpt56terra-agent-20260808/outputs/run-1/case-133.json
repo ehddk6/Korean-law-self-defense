@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "동거인의 사리를 분별할 지능이 확인되지 않았다.",
+    "수령인이 사리를 분별할 지능이 있는 동거인이어야 한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "부재중 동거인에 대한 보충송달의 수령인 적격",
+    "동거인의 사리를 분별할 지능 보유 여부",
+    "송달 장소가 근무장소 외의 장소인지 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "substitute-service-needs-capable-recipient",
+  "scenario_id": "case-133",
+  "supported_facts": [
+    {
+      "claim": "송달받을 사람이 부재중이었다.",
+      "evidence_excerpt": "\"recipient_absent\": true"
+    },
+    {
+      "claim": "서류는 동거인에게 교부되었다.",
+      "evidence_excerpt": "\"delivered_to_housemate\": true"
+    },
+    {
+      "claim": "동거인의 수령 능력은 확인되지 않았다.",
+      "evidence_excerpt": "\"capacity_confirmed\": false"
+    }
+  ]
+}

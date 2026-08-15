@@ -1,0 +1,35 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-08T11:21:23+00:00",
+  "decision_policy": {
+    "applied": true,
+    "changes": {
+      "confidence": {
+        "after": "low",
+        "before": "high"
+      },
+      "required_action": {
+        "after": null,
+        "before": "민법 개정의 부칙 전문, 시행일, 개정 전 사실의 발생일 및 경과규정 적용 여부를 확인하라."
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "transitional-provision"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 1,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "raw_answer_persisted": false,
+  "run_id": "run-3",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-122"
+}

@@ -1,0 +1,49 @@
+{
+  "categories": {},
+  "confirmed_pii_count": 0,
+  "created_at": "2026-08-13T09:37:28+00:00",
+  "decision_policy": {
+    "applied": false,
+    "changes": {},
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "masked-official-decision"
+  },
+  "detection_count": 0,
+  "format": "legal-workbench-evaluation-security-event-v1",
+  "output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 1,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "pattern_hit_count": 0,
+  "persisted_residual_count": 0,
+  "post_guard_decision_policy": {
+    "applied": true,
+    "changes": {
+      "supported_facts": {
+        "after": [
+          {
+            "claim": "제시 기록에 판단 관련 문구가 포함되어 있음",
+            "evidence_excerpt": "상고이유를 판단한다.\n1. 검사의 상고이유에 관하여\n「전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법」의 취지 및 내용 등에 비추어 보면, 전기통신금융사기죄는 형법상 사기죄와 입법 목적을 달리할 뿐만 아니라 구체적인 구성요건에도 일부 차이가 있어, 전기통신금융사기죄 구성요건이 사기죄 구성요건의 모든 요소를 포함하는 외에 다른 요소를 구비하는 경우에 해당하지 않는다. 7. 3. 선고 [CASE_NUMBER_001] 판결 등 참조).\n12. 9. 선고 80도384 전원합의체 판결, 위 대법원 [CASE_NUMBER_001] 판결 등 참조)."
+          }
+        ],
+        "before": []
+      }
+    },
+    "expected_answer_used": false,
+    "format": "legal-workbench-decision-policy-report-v1",
+    "kind": "masked-official-decision"
+  },
+  "post_guard_output_guard": {
+    "confidence_adjusted": false,
+    "removed_unsupported_facts": 1,
+    "removed_unverified_citations": 0,
+    "status_adjusted": false
+  },
+  "raw_answer_persisted": false,
+  "run_id": "run-2",
+  "sanitized_before_storage": true,
+  "scenario_id": "case-044"
+}

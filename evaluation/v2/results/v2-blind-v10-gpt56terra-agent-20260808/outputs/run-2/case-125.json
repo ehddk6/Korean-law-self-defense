@@ -1,0 +1,20 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "기본 관할"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "defendant-general-forum",
+  "scenario_id": "case-125",
+  "supported_facts": [
+    {
+      "claim": "소는 피고의 보통재판적이 있는 곳의 법원이 관할한다.",
+      "evidence_excerpt": "소(訴)는 피고의 보통재판적(普通裁判籍)이 있는 곳의 법원이 관할한다."
+    }
+  ]
+}

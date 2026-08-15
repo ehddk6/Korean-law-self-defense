@@ -1,0 +1,17 @@
+{
+  "adverse_points": [
+    "특별규정이 있다는 주장만 있고 원문이 제공되지 않아 제14조의 원칙 또는 예외 적용을 확정할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "시간적 적용 특별규정의 존재 및 내용"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": []
+}

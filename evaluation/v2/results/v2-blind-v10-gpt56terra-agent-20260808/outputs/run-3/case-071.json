@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "피고는 이 사건 분양권의 보유 시기를 청약당첨일로 보아 경정청구를 거부하였다.",
+    "청약당첨일을 기준으로 하면 원고는 이 사건 양도에 관하여 1세대 3주택(2주택 및 1분양권)으로 신고ㆍ납부하였다."
+  ],
+  "citations": [
+    "‘이 사건 분양권의 보유 시기(始期)를 분양계약일로 보면 이 사건 종전주택 양도 당시 일시적 1세대 2주택 비과세 대상에 해당한다.’",
+    "이 사건 분양권의 보유 시기를 청약당첨일로 보아야 한다"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "분양권 보유 시기의 시작일을 청약당첨일 또는 분양계약일 중 어느 때로 볼 것인지",
+    "이 사건 양도 당시 일시적 1세대 2주택 비과세 대상 해당 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-071",
+  "supported_facts": []
+}

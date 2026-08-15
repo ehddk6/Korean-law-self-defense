@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "직접적·일차적 책임이 있는 배우자의 이혼청구는 원칙적으로 제한된다.",
+    "상대방이 혼인관계 회복을 위해 노력했을 가능성은 배제할 수 없다.",
+    "별거기간·자녀·생활보장 등 예외 판단의 구체적 사실이 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "혼인파탄의 직접적·일차적 책임 소재",
+    "상대방의 대처와 세월 경과로 유책성이 희석되었는지",
+    "부부의 동거·협조의무 위반이 파탄에 미친 영향",
+    "유책배우자 이혼청구의 예외적 허용 요건"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-056",
+  "supported_facts": [
+    {
+      "claim": "기록은 유책배우자 청구의 예외를 제시한다.",
+      "evidence_excerpt": "당초의 유책성이 상당 기간 경과 후에도 그 이혼청구를 배척해야 할 정도로 남아 있지 아니한 사정"
+    },
+    {
+      "claim": "기록은 부부의 협조의무를 적시한다.",
+      "evidence_excerpt": "부부가 동고동락하며 정신적·육체적·경제적인 각 방면에서 서로 협조하여 공동생활을 영위할 의무"
+    }
+  ]
+}

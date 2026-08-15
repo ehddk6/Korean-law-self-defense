@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "회생절차개시결정 후 파산절차가 중지된다는 규정은 파산선고 취소를 직접 규정하지 않는다.",
+    "회생계획인가 시 중지된 파산절차가 효력을 잃는다는 별도 규정이 존재한다.",
+    "항고심의 구체적 판단 및 회생절차의 종료 여부가 기록에 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차개시결정으로 중지된 파산절차의 법적 효력",
+    "중지 중인 파산선고결정 항고심에서 취소·기각의 허용 여부",
+    "회생절차와 기존 파산절차의 연속성 및 소송경제",
+    "기왕 파산선고 이해관계인의 신뢰보호"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-097",
+  "supported_facts": [
+    {
+      "claim": "기록은 파산선고 취소·신청기각이 소송경제와 신뢰보호에 반한다고 설시한다.",
+      "evidence_excerpt": "기왕의 파산선고에 이해관계를 가진 사람의 신뢰 역시 보호받지 못하는 결과가 된다."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "유책배우자의 이혼청구는 원칙적으로 허용되지 않는다.",
+    "상대방 배우자의 주관적 의사만으로 혼인계속의사를 판단할 수 없다.",
+    "예외 허용 여부는 자녀의 양육·교육·복지 등 다양한 사정을 고려하여야 한다.",
+    "구체적 혼인관계와 당사자 사정이 제공되지 않았다."
+  ],
+  "citations": [
+    "민법 제840조",
+    "민법 제826조 제1항",
+    "대법원 2015. 9. 15. 선고 [CASE_NUMBER_001] 전원합의체 판결"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "재판상 이혼에서 유책주의의 적용",
+    "유책배우자 이혼청구의 예외적 허용 여부",
+    "상대방 배우자의 객관적 혼인계속의사 판단",
+    "부부 간 포괄적 협력의무"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-057",
+  "supported_facts": []
+}

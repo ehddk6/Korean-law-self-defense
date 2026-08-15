@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "소외 3 회사는 말레이시아 조세특례로 도매업 소득에 대한 과세를 면제받았다.",
+    "세무당국은 실제발생소득 대비 부담세액이 15%에 미달한다고 보았다.",
+    "조세심판원은 유보소득 배당간주 부분을 제외한 나머지 심판청구를 기각하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "특정외국법인의 유보소득 배당간주 규정 적용 요건",
+    "말레이시아 조세특례에 따른 부담세액 기준 충족 여부",
+    "특수관계 성립 여부",
+    "법인세 부과처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-087",
+  "supported_facts": [
+    {
+      "claim": "피고는 유보소득을 배당받은 것으로 간주하였다.",
+      "evidence_excerpt": "배당 가능한 유보소득 합계 180,420,920,864원을 원고가 배당받은 것으로 간주"
+    },
+    {
+      "claim": "원고는 처분 취소소송을 제기하였다.",
+      "evidence_excerpt": "그 취소를 구하는 이 사건 소를 제기하였다."
+    }
+  ]
+}

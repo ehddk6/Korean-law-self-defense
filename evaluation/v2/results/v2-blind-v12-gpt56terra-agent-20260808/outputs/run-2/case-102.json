@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "제59조 제2호 위반 사실을 알면서 개인정보를 제공받아야 한다.",
+    "영리 또는 부정한 목적이 요구된다.",
+    "개인정보처리자의 업무상 개인정보 누설 또는 무권한 제공이 전제된다."
+  ],
+  "citations": [
+    "개인정보 보호법 제59조 제2호",
+    "개인정보 보호법 제71조 제5호"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보 제공받은 자의 형사처벌 요건",
+    "개인정보처리자로부터 직접 제공받아야 하는지 여부",
+    "영리 또는 부정한 목적과 위법 제공 사정의 인식"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-102",
+  "supported_facts": [
+    {
+      "claim": "개인정보처리자는 업무상 개인정보를 누설하거나 무권한 제공해서는 안 된다.",
+      "evidence_excerpt": "업무상 알게 된 개인정보를 누설하거나 권한 없이 다른 사람이 이용하도록 제공하는 행위"
+    },
+    {
+      "claim": "직접 제공받지 않아도 제공받은 자에 해당할 수 있다.",
+      "evidence_excerpt": "직접 개인정보를 제공받지 아니하더라도"
+    },
+    {
+      "claim": "제71조 제5호는 제공받은 자를 처벌한다.",
+      "evidence_excerpt": "개인정보를 제공받은 자를 처벌"
+    }
+  ]
+}

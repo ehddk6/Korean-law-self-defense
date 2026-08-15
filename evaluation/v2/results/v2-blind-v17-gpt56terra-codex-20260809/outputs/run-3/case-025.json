@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "임차인이 양도사실을 안 뒤 상당한 기간 내 이의를 제기하지 않았다면 법정승계의 구속에서 벗어날 수 없다.",
+    "대항요건을 갖춘 임대차라면 양수인이 임대인의 권리·의무 일체를 승계한다.",
+    "임차인의 이의제기 사실·시기와 양도사실 인지시점이 기록에 없다."
+  ],
+  "citations": [
+    "대법원 2002. 9. 4. 선고 [CASE_NUMBER_002] 판결 참조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "주택 양수인의 임대인 지위 법정승계 여부",
+    "양수인의 보증금반환채무 면책적 인수 여부",
+    "임차인의 승계 거부 이의제기 가능 여부",
+    "이의제기의 상당한 기간 준수 및 입증 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-025",
+  "supported_facts": [
+    {
+      "claim": "임차인의 이의제기 예외 법리가 제시되어 있다.",
+      "evidence_excerpt": "임차인이 임대인의 지위승계를 원하지 않는 경우"
+    }
+  ]
+}

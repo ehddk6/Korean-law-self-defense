@@ -1,0 +1,22 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": "2036-04-10",
+  "decision_status": "ready",
+  "issues": [
+    "일반 채권의 10년 소멸시효",
+    "권리행사 가능일부터의 기산",
+    "초일 불산입과 역법 계산"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "ten-year-ordinary-claim",
+  "scenario_id": "case-124",
+  "supported_facts": [
+    {
+      "claim": "일반 채권이며 권리행사 가능일이 특정되었다.",
+      "evidence_excerpt": "\"ordinary_claim\": true, \"right_exercisable_date\": \"2026-04-10\""
+    }
+  ]
+}

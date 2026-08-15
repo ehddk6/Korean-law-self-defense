@@ -1,0 +1,22 @@
+{
+  "adverse_points": [
+    "우편송달은 제186조에 따라 송달할 수 없는 경우에 한하여 가능하다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보충송달·유치송달 불능 시 우편송달 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "postal-service-after-article-186-failure",
+  "scenario_id": "case-138",
+  "supported_facts": [
+    {
+      "claim": "제186조에 따른 송달이 불가능하다.",
+      "evidence_excerpt": "\"article_186_service_impossible\": true"
+    }
+  ]
+}

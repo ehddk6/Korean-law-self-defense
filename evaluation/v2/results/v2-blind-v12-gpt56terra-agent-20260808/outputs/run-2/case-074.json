@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "요양원은 시설 내 세탁을 하면서 위생원을 두지 않았다.",
+    "원고들은 세탁물을 전량 위탁한 것처럼 사실과 다르게 신고한 것으로 처분사유가 제시되었다.",
+    "환수금액은 합계 616,733,800원이다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "장기요양기관의 위생원 배치 및 세탁물 위탁 기준",
+    "장기요양급여비용 부당청구 여부",
+    "장기요양급여비용 환수처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-074",
+  "supported_facts": [
+    {
+      "claim": "이 사건 요양원의 정원은 48명이다.",
+      "evidence_excerpt": "이 사건 요양원의 정원은 48명"
+    },
+    {
+      "claim": "요양원은 위생원을 두지 않았다.",
+      "evidence_excerpt": "시설 내에서 세탁하면서도 위생원을 두지 않았다."
+    },
+    {
+      "claim": "피고는 환수처분을 하였다.",
+      "evidence_excerpt": "합계 616,733,800원을 환수하는 처분"
+    }
+  ]
+}

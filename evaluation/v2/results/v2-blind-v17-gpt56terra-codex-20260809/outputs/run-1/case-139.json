@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "권리행사 가능일이 계약일과 같다는 사실은 제시되지 않았으므로 계약일을 기산일로 볼 수 없다."
+  ],
+  "citations": [
+    "제166조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "제166조 제1항상 소멸시효는 권리를 행사할 수 있는 때부터 진행한다.",
+    "권리행사 가능일은 null로 제시되어 있어 계약일만으로 기산일을 확정할 수 없다.",
+    "부작위를 목적으로 하는 채권이면 제166조 제2항의 별도 기산점이 적용될 수 있다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "starts-when-right-exercisable",
+  "scenario_id": "case-139",
+  "supported_facts": [
+    {
+      "claim": "계약일만 제시됨",
+      "evidence_excerpt": "contract_date"
+    },
+    {
+      "claim": "권리행사 가능일 미제시",
+      "evidence_excerpt": "right_exercisable_date"
+    },
+    {
+      "claim": "기산점 규정",
+      "evidence_excerpt": "소멸시효는 권리를 행사할 수 있는 때로부터 진행한다."
+    }
+  ]
+}

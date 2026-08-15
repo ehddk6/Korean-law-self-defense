@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "동거인이 사리를 분별할 지능이 있는 사람인지 확인되지 않았다.",
+    "근무장소 외의 송달할 장소였는지도 명시되지 않았다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제186조(보충송달ㆍ유치송달)"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "민사소송법 제186조 제1항: 수령인을 만나지 못한 경우 사리를 분별할 지능이 있는 동거인에게 교부할 수 있다.",
+    "수령인 부재와 동거인 교부 사실은 제시되었으나, 동거인의 수령능력은 확인되지 않았다.",
+    "근무장소 송달에는 제186조 제2항의 별도 요건이 적용된다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "substitute-service-needs-capable-recipient",
+  "scenario_id": "case-133",
+  "supported_facts": [
+    {
+      "claim": "수령능력 있는 동거인에 대한 보충송달 요건",
+      "evidence_excerpt": "동거인으로서 사리를 분별할 지능이 있는 사람에게 서류를 교부할 수 있다."
+    }
+  ]
+}

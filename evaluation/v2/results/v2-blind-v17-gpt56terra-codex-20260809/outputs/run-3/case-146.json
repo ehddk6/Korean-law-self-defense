@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "특별규정의 원문이 없어 그 적용시기와 일반원칙 배제 범위를 판단할 수 없다."
+  ],
+  "citations": [
+    "행정기본법",
+    "제14조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "적용 조문: 행정기본법 제14조 제1항부터 제3항.",
+    "필수 사실: 주장된 특별규정의 원문, 적용대상 및 시행시기.",
+    "예외: 특별규정이 있으면 각 항의 일반원칙 또는 단서와 다른 적용이 가능하다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정은 주장되나 그 내용이 제공되지 않았다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    },
+    {
+      "claim": "특별규정은 일반원칙의 예외로 규정되어 있다.",
+      "evidence_excerpt": "법령등에 특별한 규정이 있는 경우를 제외하고는"
+    }
+  ]
+}

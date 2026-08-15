@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "공소사실은 저장장치의 은닉으로 녹화영상정보가 전부 삭제되었다고 기재한다.",
+    "원심은 피고인이 안전성 확보 조치를 하지 않았다고 판단하였다.",
+    "원심은 피고인의 행위로 CCTV 영상정보가 훼손당하였다고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 영유아보육법상 CCTV 영상정보 안전성 확보 의무의 내용",
+    "영상정보를 훼손당한 자의 의미",
+    "저장장치 은닉 및 영상 삭제가 안전성 확보 조치 위반에 해당하는지",
+    "의무 위반과 영상정보 훼손 사이의 인과관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-106",
+  "supported_facts": [
+    {
+      "claim": "원심은 저장장치 은닉으로 인한 영상 훼손을 인정하였다.",
+      "evidence_excerpt": "피고인이 자신이 운영하는 어린이집에 설치된 CCTV의 영상이 녹화·저장된 컴퓨터 하드디스크를 버려 은닉하였고 그로 인해서 피고인이 운영하는 어린이집의 CCTV 영상정보가 훼손당하였다."
+    }
+  ]
+}

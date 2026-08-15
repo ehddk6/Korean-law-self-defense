@@ -1,0 +1,21 @@
+{
+  "adverse_points": [
+    "보험약관은 피보험자가 고의로 자신을 해친 경우를 면책사유로 정하고 있다.",
+    "원심은 소외인이 자유로운 의사결정을 할 수 없는 상태에서 자살하였다고 인정하기 어렵다고 판단하였다.",
+    "사망 경위는 오피스텔 15층에서 투신한 것이다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "자살이 보험약관상 고의로 자신을 해친 경우에 해당하는지 여부",
+    "심신상실 등 자유로운 의사결정을 할 수 없는 상태의 예외 적용 여부",
+    "보험금청구권의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-014",
+  "supported_facts": []
+}

@@ -1,0 +1,31 @@
+{
+  "adverse_points": [
+    "상대방 배우자 및 자녀에 대한 보호와 배려가 유책성을 상쇄할 정도였다는 사실이 기록에 없다.",
+    "세월의 경과로 유책성과 정신적 고통이 약화되었다는 구체적 사실이 제시되지 않았다.",
+    "상대방의 객관적 혼인계속의사를 판단할 사실관계가 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "민법 제840조의 유책주의 적용",
+    "유책배우자 이혼청구의 예외적 허용 요건",
+    "상대방 배우자의 객관적 혼인계속의사",
+    "부부의 포괄적 협력의무와 파탄 책임"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-057",
+  "supported_facts": [
+    {
+      "claim": "기록은 유책배우자의 이혼청구 원칙을 설명한다.",
+      "evidence_excerpt": "혼인생활의 파탄에 주된 책임이 있는 배우자는 그 파탄을 사유로 하여 이혼을 청구할 수 없는 것이 원칙이다."
+    },
+    {
+      "claim": "기록은 객관적 판단 기준을 제시한다.",
+      "evidence_excerpt": "혼인생활의 전 과정 및 이혼소송이 진행되는 중 드러난 상대방 배우자의 언행 및 태도를 종합하여"
+    }
+  ]
+}

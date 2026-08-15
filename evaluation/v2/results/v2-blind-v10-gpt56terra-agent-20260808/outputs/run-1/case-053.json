@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "통신비밀보호법 제3조 제1항 본문은 법률상 정한 경우 외 통신사실확인자료의 제공을 금지한다.",
+    "위반자는 통화내역 자료 제공이 협조의무로 규정되어 있지 않다고 회신하였다.",
+    "위반자는 압수수색영장 요청에 한하여 자료 제공이 가능하다고 회신하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "통신사실확인자료가 민사소송법상 문서제출명령의 대상인지",
+    "전기통신사업자가 통신비밀보호법 제3조 제1항 본문을 이유로 통화내역 제출을 거부할 수 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-053",
+  "supported_facts": []
+}

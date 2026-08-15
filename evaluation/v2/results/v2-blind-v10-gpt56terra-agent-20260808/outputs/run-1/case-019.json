@@ -1,0 +1,20 @@
+{
+  "adverse_points": [
+    "소외인이 보험청약서의 ‘피보험자 자필서명’란에 원고의 이름을 기재하고 서명하였다.",
+    "제시된 기록만으로 원고의 서명 동의 또는 추인 여부는 확인되지 않는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "피보험자 자필서명 요건 충족 여부",
+    "보험계약의 효력 및 보험금 청구 가능 여부",
+    "척추 장해분류표상 장해 해당 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-019",
+  "supported_facts": []
+}

@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "개인정보를 제공한 자가 누구인지에 관하여 문언상 제한이 없다고 보았다.",
+    "개인정보 처리자에게서 직접 제공받지 않았더라도 제공받은 자에 해당할 수 있다고 보았다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "구 개인정보 보호법 제71조 제5호 후단의 ‘개인정보를 제공받은 자’ 범위",
+    "개인정보 처리자에게서 직접 제공받지 않은 자의 처벌 가능성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-102",
+  "supported_facts": []
+}

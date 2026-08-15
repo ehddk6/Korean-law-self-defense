@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "구 영유아보육법의 처벌대상이 영상정보를 훼손당한 자인지 문언상 다툼이 가능하다.",
+    "저장장치 은닉과 영상정보 전부 삭제의 인과관계가 구체적으로 제시되지 않았다.",
+    "안전성 확보 조치의 구체적 내용과 이행 여부에 대한 증거가 제한적이다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "어린이집 운영자의 CCTV 영상정보 안전성 확보의무",
+    "구 영유아보육법상 영상정보를 훼손당한 자의 의미",
+    "운영자가 저장장치를 은닉한 경우 영상정보 훼손당함의 성립",
+    "안전성 확보조치 미이행과 영상정보 훼손의 인과관계"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-106",
+  "supported_facts": [
+    {
+      "claim": "원심은 위 공소사실을 유죄로 판단하였다.",
+      "evidence_excerpt": "원심은 다음과 같은 이유로 위 공소사실을 유죄로 판단하였다."
+    }
+  ]
+}

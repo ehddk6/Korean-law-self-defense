@@ -1,0 +1,34 @@
+{
+  "adverse_points": [
+    "고의 자해는 약관상 면책사유다.",
+    "투신은 고의 자해로 볼 여지가 크다.",
+    "심신상실 예외는 자유의사 상실을 요구한다.",
+    "원심은 예외 상태를 인정하기 어렵다고 보았다.",
+    "정신의학적 증거가 기록에 제시되지 않았다."
+  ],
+  "citations": [
+    "피보험자가 고의로 자신을 해친 경우"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "투신 사망이 고의 자해 면책에 해당하는지",
+    "심신상실 등 예외의 법률요건",
+    "자유로운 의사결정 불능의 충족 여부",
+    "면책 및 예외사유의 증명책임",
+    "정신상태 자료의 증거가치",
+    "원심 증거평가의 위법 여부",
+    "예외 충족 시 보험금 지급 효과"
+  ],
+  "outcome": "dismissed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-014",
+  "supported_facts": [
+    {
+      "claim": "소외인이 투신하여 사망하였다.",
+      "evidence_excerpt": "소외인은 2021. 11. 30. 오피스텔 15층에서 투신하여 사망하였다."
+    }
+  ]
+}

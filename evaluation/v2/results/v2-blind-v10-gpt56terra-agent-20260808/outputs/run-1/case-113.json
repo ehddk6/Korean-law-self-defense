@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "원심은 이 사건 업무상횡령 부분과 선행사건 범죄사실 전부를 포괄일죄로 보았다.",
+    "이 사건 사립학교법 위반행위는 대응하는 업무상횡령 행위와 상상적 경합 관계라고 보았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "선행 확정판결의 포괄일죄 효력이 후속 공소사실에 미치는지",
+    "업무상횡령과 사립학교법 위반의 상상적 경합 및 면소 여부"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-113",
+  "supported_facts": []
+}

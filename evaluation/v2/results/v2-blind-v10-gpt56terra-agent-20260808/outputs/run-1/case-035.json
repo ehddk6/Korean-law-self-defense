@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "상법 제371조 제1항은 상법 제409조 제2항의 의결권 없는 주식을 발행주식총수에 산입하지 않는 주식으로 명시하지 않는다.",
+    "각 주주의 3% 초과 주식이 발행주식총수에 산입된다고 보는 해석이 제기될 수 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "감사 선임 시 3% 초과 주식의 발행주식총수 산입 여부",
+    "감사 선임 결의의 의결정족수 충족 여부"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-035",
+  "supported_facts": []
+}

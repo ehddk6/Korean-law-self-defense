@@ -1,0 +1,29 @@
+{
+  "adverse_points": [
+    "특별규정의 존재와 그 내용에 따라 제14조 제2항의 예외에 따른 구체적 적용법이 달라질 수 있다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제2항상 처분 당시 법령 적용이 곤란한 특별한 사정은 처분 당시 법령 적용 원칙의 예외다.",
+    "제시된 조문은 예외가 있을 때 적용할 구체적 법령을 별도로 정하지 않는다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-131",
+  "supported_facts": [
+    {
+      "claim": "신청 처분에 신법 적용이 곤란한 사정이 있다.",
+      "evidence_excerpt": "\"new_law_application_difficult\": true"
+    },
+    {
+      "claim": "신법 적용 곤란 사정은 처분 당시 법령 적용의 예외다.",
+      "evidence_excerpt": "처분 당시의 법령등을 적용하기 곤란한 특별한 사정이 있는 경우를 제외하고는 처분 당시의 법령등에 따른다."
+    }
+  ]
+}

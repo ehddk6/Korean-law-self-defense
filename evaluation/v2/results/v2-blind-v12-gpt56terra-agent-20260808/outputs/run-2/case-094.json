@@ -1,0 +1,35 @@
+{
+  "adverse_points": [
+    "채무초과 상태에서 점포임차보증금 2천만 원을 양도하였다.",
+    "아파트 매각 잔여금 약 1,870만 원의 사용처에 관한 소명자료가 없다.",
+    "아파트 처분 후 6개월도 되지 않아 개인회생신청을 하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생절차가 채권자 일반의 이익에 적합한지 여부",
+    "신청 전 재산처분과 부인권 대상 여부",
+    "청산가치 및 변제율 산정",
+    "개인회생절차 개시신청 기각의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-094",
+  "supported_facts": [
+    {
+      "claim": "임차보증금 양도는 부인권 대상이 될 수 있다.",
+      "evidence_excerpt": "부인권 대상이 될 수 있는 점"
+    },
+    {
+      "claim": "매각 잔여금은 변제예정액보다 크다.",
+      "evidence_excerpt": "변제계획안의 총변제예정액보다도 큰 금액"
+    },
+    {
+      "claim": "원심은 개시신청 기각결정을 유지하였다.",
+      "evidence_excerpt": "제1심결정을 그대로 유지하였다."
+    }
+  ]
+}

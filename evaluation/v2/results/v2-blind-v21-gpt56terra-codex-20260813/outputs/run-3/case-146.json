@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "특별규정의 원문과 적용대상·시행시기가 제시되지 않아 제14조의 예외 여부를 판단할 수 없다.",
+    "특별규정·예외요건·기산점 또는 관할 사실의 누락은 결론을 바꿀 수 있다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "제14조 적용",
+    "시간적 적용에 관한 특별규정의 내용",
+    "특별규정의 적용대상과 시행시기"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되나 그 내용이 제시되지 않았다.",
+      "evidence_excerpt": "special_rule_claimed_but_missing"
+    }
+  ]
+}

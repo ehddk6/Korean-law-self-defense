@@ -1,0 +1,7 @@
+gold ?…ë¦½ ê²€? ê? ?¤íŒ¨?ˆìŠµ?ˆë‹¤: 76-80
+À§Ä¡ C:\Users\ehddk\OneDrive\¹®¼­\¹ý 2\scripts\prepare-v2-gold.ps1:174 ¹®ÀÚ:13
++             throw "gold ?…ë¦½ ê²€? ê? ?¤íŒ¨?ˆìŠµ?ˆë‹¤: $start-$end"
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (gold ?…ë¦½ ê²€? ê? ?¤íŒ¨?ˆìŠµ?ˆë‹¤: 76-80:String) [], RuntimeException
+    + FullyQualifiedErrorId : gold ?…ë¦½ ê²€? ê? ?¤íŒ¨?ˆìŠµ?ˆë‹¤: 76-80
+ 

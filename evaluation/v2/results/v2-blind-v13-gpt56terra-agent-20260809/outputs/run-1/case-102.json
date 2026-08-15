@@ -1,0 +1,18 @@
+{
+  "adverse_points": [
+    "개인정보 보호법 제71조 제5호는 해당 사정을 알면서 영리 또는 부정한 목적으로 개인정보를 제공받은 자를 처벌한다.",
+    "개인정보 보호법 제59조 제2호는 업무상 알게 된 개인정보를 누설하거나 권한 없이 이용하도록 제공하는 행위를 금지한다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인정보를 처리하거나 처리하였던 자가 업무상 알게 된 개인정보를 누설하거나 권한 없이 이용하도록 제공한 사정을 알면서 영리 또는 부정한 목적으로 개인정보를 제공받은 자가 직접 제공받지 않았어도 개인정보 보호법 제71조 제5호의 제공받은 자에 해당하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-102",
+  "supported_facts": []
+}

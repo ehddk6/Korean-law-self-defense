@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "서울지방국세청장은 수익권증서 발행금액인 324억 원을 기준으로 시가를 평가하여야 한다고 보았다.",
+    "피고들은 소외 1 회사의 이 사건 토지 저가양수 이익을 원고들이 각 주식보유비율만큼 증여받았다고 보아 증여세 및 가산세를 부과하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "수익권증서 발행금액 324억 원이 이 사건 토지 양도 시가인지 여부",
+    "저가양수에 따른 이익의 증여의제 적용 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-085",
+  "supported_facts": [
+    {
+      "claim": "제1차 및 제2차 담보신탁계약의 수익권증서 발행금액은 총 324억 원이었다.",
+      "evidence_excerpt": "제2차 담보신탁계약에서도 수익권증서 발행금액은 총 324억 원으로 정해졌다."
+    }
+  ]
+}

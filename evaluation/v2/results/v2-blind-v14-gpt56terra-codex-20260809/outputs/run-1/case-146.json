@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "특별규정 원문과 적용 대상·시점이 제공되지 않아 시간적 적용을 판단할 수 없다."
+  ],
+  "citations": [
+    "제14조"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "abstain",
+  "issues": [
+    "행정기본법 제14조의 특별규정 예외",
+    "특별규정 원문 및 적용요건 확인"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-146",
+  "supported_facts": [
+    {
+      "claim": "특별규정이 주장되지만 원문이 제공되지 않았다.",
+      "evidence_excerpt": "\"special_rule_claimed_but_missing\": true"
+    }
+  ]
+}

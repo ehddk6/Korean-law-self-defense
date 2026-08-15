@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "청약서 질문에 ‘아니오.’라고 답변하였다.",
+    "보험계약 체결 전 급성 신우신염으로 입원치료를 받았다.",
+    "피고는 고지의무 위반을 이유로 해지 통지를 하였고 그 통지가 원고에게 도달하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "계약 전 입원치료 및 진료의뢰서 발급 사실이 고지대상인지",
+    "청약서 질문에 대한 ‘아니오.’ 답변이 고지의무 위반인지",
+    "미고지 사실과 보험사고인 만성 골수성 백혈병 사이의 관련성",
+    "보험자의 해지 통지가 고지의무 위반에 따른 해지 요건을 충족하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-015",
+  "supported_facts": [
+    {
+      "claim": "소외 1은 계약 체결 전 입원치료를 받았다.",
+      "evidence_excerpt": "소외 1은 이 사건 보험계약 체결 전인 2019. 11. 14.부터 2019. 11. 25.까지 급성 신우신염으로 △△△병원에서 입원치료를 받았다"
+    }
+  ]
+}

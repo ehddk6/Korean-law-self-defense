@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "피고는 거래금액 각 100만 원이 사회통념상 이 사건 부동산의 취득가액으로 보기 어렵다고 보았다.",
+    "피고는 새로운 위탁자인 원고들이 제1, 2지분을 각각 취득하였다고 보았다."
+  ],
+  "citations": [
+    "지방세법 제7조 제15항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신탁계약상 위탁자 지위 이전이 지방세법 제7조 제15항에 따른 부동산 취득에 해당하는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-089",
+  "supported_facts": [
+    {
+      "claim": "원고들은 위탁자 지위 이전과 관련하여 각 100만 원을 과세표준으로 취득세 등을 신고·납부하였다.",
+      "evidence_excerpt": "원고들 명의로 종전 위탁자 소외 3 회사에 지급된 각 100만 원을 각 과세표준으로 하여 산정한 취득세 등 합계 각 134,000원을 신고 및 납부하였다."
+    }
+  ]
+}

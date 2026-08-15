@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "제재기준이 가벼워졌더라도 법 변경이 위반 후가 아니거나 특별규정이 있으면 변경법을 적용할 수 없다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제14조 제3항 단서의 시간요건: 위반행위 후 법령 변경이 있었는지가 확인되지 않아 경감된 신법 적용 여부를 확정할 수 없다.",
+    "제14조 제3항 단서의 특별규정 요건: 특별규정이 없을 때에만 위반행위가 비위반이 되거나 제재기준이 가벼워진 변경법을 적용한다."
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": [
+    {
+      "claim": "제재처분 사안에서 후속 법령이 제재기준을 가볍게 한다.",
+      "evidence_excerpt": "\"later_law_lighter\": true, \"sanction\": true"
+    }
+  ]
+}

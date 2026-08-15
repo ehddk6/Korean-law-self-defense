@@ -1,0 +1,25 @@
+{
+  "adverse_points": [
+    "확정되지 않은 사실을 전제로 판단할 위험"
+  ],
+  "citations": [
+    "계약일은 2025-01-06이다.",
+    "계약일은 2025-02-06이다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상충 진술의 신빙성 판단"
+  ],
+  "outcome": null,
+  "required_action": "fact-marked-disputed",
+  "rule_answer": null,
+  "scenario_id": "case-180",
+  "supported_facts": [
+    {
+      "claim": "입력 자료에 서로 다른 진술이 존재함",
+      "evidence_excerpt": "계약일은 2025-01-06이다."
+    }
+  ]
+}

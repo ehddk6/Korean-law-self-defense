@@ -1,0 +1,27 @@
+{
+  "adverse_points": [
+    "약관은 암의 정의에서 갑상선암을 제외한다고 정한다.",
+    "원고는 갑상선암 및 림프절 전이 진단을 받았다.",
+    "원심은 원발부위 기준 분류조항이 설명의무 대상이 아니라고 판단하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "원발부위 기준 분류조항이 보험자의 설명의무 대상인지 여부",
+    "갑상선암과 림프절 전이가 별개의 보험사고인지 여부",
+    "원발부위 기준 분류조항이 암의 보장범위를 제한하거나 명확히 하는 조항인지 여부",
+    "설명의무 위반이 약관조항의 계약 편입 및 보험금 지급범위에 미치는 효과"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-012",
+  "supported_facts": [
+    {
+      "claim": "원심은 설명의무 위반 주장을 받아들이지 않았다.",
+      "evidence_excerpt": "보험자인 피고에게 설명의무 위반을 주장할 수 없다고 판단하였다."
+    }
+  ]
+}

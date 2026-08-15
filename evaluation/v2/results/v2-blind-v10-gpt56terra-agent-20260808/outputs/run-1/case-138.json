@@ -1,0 +1,20 @@
+{
+  "adverse_points": [],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "우편송달의 선행 요건"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "postal-service-after-article-186-failure",
+  "scenario_id": "case-138",
+  "supported_facts": [
+    {
+      "claim": "제186조에 따라 송달할 수 없는 때 우편송달이 가능하다.",
+      "evidence_excerpt": "제186조의 규정에 따라 송달할 수 없는 때에는 법원사무관등은 서류를 등기우편 등 대법원규칙이 정하는 방법으로 발송할 수 있다."
+    }
+  ]
+}

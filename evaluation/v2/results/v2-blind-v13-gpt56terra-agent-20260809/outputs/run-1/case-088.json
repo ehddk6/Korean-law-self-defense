@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "신축주택에서의 거주기간이 2년이 되지 않으면 청산금납부분에는 표 2가 아니라 표 1 공제만 적용된다.",
+    "표 2의 높은 공제율에 거주요건을 추가한 개정 취지는 1주택 특례를 실수요자 중심으로 엄격히 적용하는 데 있다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "재건축사업에서 청산금을 납부하여 취득한 신축주택을 양도한 경우, 청산금납부분 양도차익에 표 2 장기보유 특별공제를 적용하려면 신축주택에서 2년 이상 거주해야 하는지",
+    "기존건물분과 달리 청산금납부분의 거주기간에 기존건물 거주기간을 통산할 수 있는지"
+  ],
+  "outcome": "affirmed",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-088",
+  "supported_facts": []
+}

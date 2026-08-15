@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "원심은 관련 메시지를 우연히 발견한 뒤 탐색을 중단하고 제2 영장을 발부받았다고 보았다.",
+    "원심은 피고인들의 검찰 진술과 계약서 사이의 인과관계가 희석 또는 단절되었다고 보았다."
+  ],
+  "citations": [
+    "검찰이 이 사건 휴대전화를 대상으로 다시 디지털포렌식 절차를 진행한 흔적은 찾아볼 수 없다.",
+    "원심은 다음과 같은 이유 등을 들어 이 사건 공소사실을 유죄로 판단한 제1심판결을 그대로 유지하였다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "제1 영장과 무관한 전자정보 탐색의 적법성",
+    "제2 영장 발부 전 전자정보의 증거능력",
+    "위법수집증거 및 2차적 증거의 배제 여부"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-045",
+  "supported_facts": [
+    {
+      "claim": "제2 영장 후 휴대전화에 대한 재포렌식 흔적은 기록상 확인되지 않는다.",
+      "evidence_excerpt": "검찰이 이 사건 휴대전화를 대상으로 다시 디지털포렌식 절차를 진행한 흔적은 찾아볼 수 없다."
+    }
+  ]
+}

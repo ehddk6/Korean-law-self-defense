@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "신청일 기준 1년 이내 발생한 채무는 성실성 심사에서 불리한 사정이 될 수 있다.",
+    "채무부담 경위를 명확히 밝히지 않은 점은 절차 남용 여부에 관한 의심을 키운다.",
+    "채권자의 설명 요구에도 제1심에서 답변하지 않은 점은 성실하지 않은 신청이라는 판단을 지지한다."
+  ],
+  "citations": [
+    "이 사건 신청이 성실하지 않은 경우에 해당한다고 판단하여"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "개인회생 신청의 성실성 판단 기준",
+    "신청일 전 1년 이내 발생 채무의 의미",
+    "채무부담경위 미소명의 효과",
+    "채권자의 이의신청에 대한 답변 부재가 개시신청에 미치는 영향"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-093",
+  "supported_facts": [
+    {
+      "claim": "재항고인의 채무는 신청일 기준 1년 이내에 발생하였다.",
+      "evidence_excerpt": "재항고인의 채무는 신청일 기준 1년 이내에 발생한 것이고"
+    },
+    {
+      "claim": "원심은 항고를 기각하였다.",
+      "evidence_excerpt": "재항고인의 항고를 기각하였다."
+    }
+  ]
+}

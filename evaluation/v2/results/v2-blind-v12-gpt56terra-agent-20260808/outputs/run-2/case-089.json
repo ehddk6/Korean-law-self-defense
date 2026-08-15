@@ -1,0 +1,37 @@
+{
+  "adverse_points": [
+    "원고들은 위탁자 지위 이전 대가로 각 100만 원을 지급하였다.",
+    "피고는 100만 원이 부동산 취득가액으로 보기 어렵다고 보았다.",
+    "피고는 원고들이 각 지분을 취득하였다고 보아 취득세 등을 부과하였다."
+  ],
+  "citations": [
+    "지방세법 제7조 제15항"
+  ],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "신탁계약상 위탁자 지위 이전의 취득세 과세대상성",
+    "지방세법 제7조 제15항상 새로운 위탁자의 부동산 취득 여부",
+    "거래금액 100만 원의 과세표준 적정성",
+    "취득세 등 부과처분의 적법성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-089",
+  "supported_facts": [
+    {
+      "claim": "각 지분에 관한 신탁등기가 마쳐졌다.",
+      "evidence_excerpt": "소유권일부이전등기 및 신탁등기가 각각 마쳐졌다."
+    },
+    {
+      "claim": "원고들은 취득세 등을 신고·납부하였다.",
+      "evidence_excerpt": "취득세 등 합계 각 134,000원을 신고 및 납부하였다."
+    },
+    {
+      "claim": "피고는 취득세 등을 부과·고지하였다.",
+      "evidence_excerpt": "취득세 63,255,780원, 지방교육세 1,920,820원 등을 각각 부과 및 고지"
+    }
+  ]
+}

@@ -12,8 +12,15 @@ from legal_workbench.evaluation import (
     manifest_status,
     write_manifest,
 )
-from legal_workbench.models import CaseRecord, CaseStage
-from legal_workbench.services import SERVICES, build_service_bundle, list_services
+from legal_workbench.models import STAGE_ORDER, CaseRecord, CaseStage
+from legal_workbench.services import (
+    SERVICES,
+    build_all_service_bundles,
+    build_service_bundle,
+    draft_all_service_outputs,
+    draft_service_catalog,
+    list_services,
+)
 from legal_workbench.storage import CaseStore
 
 
@@ -177,3 +184,24 @@ def test_lawyer_service_catalog_and_stage_gate(tmp_path: Path) -> None:
         assert "최소" in str(exc)
     else:
         raise AssertionError("상태 게이트가 동작하지 않았습니다.")
+
+
+def test_all_service_bundles_create_a_catalog_without_inventing_case_inputs(tmp_path: Path) -> None:
+    store = CaseStore(tmp_path, "case-service-all")
+    store.create_case(CaseRecord(case_id="case-service-all", title="업무 사건", domain="civil-contract-tort"))
+    for target in STAGE_ORDER[1 : STAGE_ORDER.index(CaseStage.DRAFTED) + 1]:
+        store.transition(target, reason="전체 업무 묶음 시험")
+
+    result = build_all_service_bundles("case-service-all", worksets_home=tmp_path)
+
+    assert len(result["generated"]) == len(SERVICES)
+    catalog = Path(result["path"])
+    assert catalog.is_file()
+    payload = json.loads(catalog.read_text(encoding="utf-8"))
+    assert len(payload["services"]) == len(SERVICES)
+    assert all(item["case_fit"] == "additional-case-facts-required" for item in payload["services"])
+    guide = draft_service_catalog("case-service-all", formats=["md"], worksets_home=tmp_path)
+    assert "이 프로젝트로 할 수 있는 일" in guide["md"].read_text(encoding="utf-8")
+    outputs = draft_all_service_outputs("case-service-all", formats=["md"], worksets_home=tmp_path)
+    assert len(outputs["generated"]) == len(SERVICES)
+    assert all(Path(item["paths"]["md"]).is_file() for item in outputs["generated"])

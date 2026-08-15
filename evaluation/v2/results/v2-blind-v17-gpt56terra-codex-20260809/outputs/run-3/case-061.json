@@ -1,0 +1,33 @@
+{
+  "adverse_points": [
+    "취업규칙은 재고용 적부를 심사한 뒤 결정하도록 한다.",
+    "단체협약은 촉탁직으로 재고용할 수 있다고 정한다.",
+    "참가인 1의 촉탁계약은 기간을 명시한다."
+  ],
+  "citations": [
+    "원고에게 정년퇴직자를 촉탁직근로자로 재고용할 의무를 부과하는 취지의 규정은 없다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "취업규칙상 촉탁 재고용 조항이 재고용의무를 발생시키는지",
+    "단체협약상 재고용 조항이 개별 근로자에게 기대권을 주는지",
+    "참가인 1의 기간만료가 해고에 해당하는지",
+    "참가인 2의 미재고용이 부당해고 구제 대상인지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-061",
+  "supported_facts": [
+    {
+      "claim": "재고용은 심사 후 결정된다.",
+      "evidence_excerpt": "그 적부를 심사한 후에 결정한다"
+    },
+    {
+      "claim": "참가인 1에게 계약만료 통보가 있었다.",
+      "evidence_excerpt": "근로계약기간이 만료된다고 통보하였다"
+    }
+  ]
+}

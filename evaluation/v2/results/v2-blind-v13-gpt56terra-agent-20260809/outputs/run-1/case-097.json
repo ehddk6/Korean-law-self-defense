@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "채무자회생법 제58조 제2항 제1호는 회생절차개시결정이 있는 때 파산절차가 중지된다고 규정한다.",
+    "회생계획인가결정이 있으면 중지되었던 파산절차는 효력을 잃는다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "회생절차개시결정으로 중지된 파산절차가 회생절차 종료 전에도 파산선고결정에 대한 항고심에서 파산선고를 취소하고 파산신청을 기각할 수 있는지",
+    "회생절차개시 후 파산선고를 취소할 경우 회생계획 불인가 또는 회생절차폐지 시 기왕 파산절차의 연속성, 소송경제 및 이해관계인의 신뢰를 침해하는지"
+  ],
+  "outcome": "reversed-remanded",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-097",
+  "supported_facts": []
+}

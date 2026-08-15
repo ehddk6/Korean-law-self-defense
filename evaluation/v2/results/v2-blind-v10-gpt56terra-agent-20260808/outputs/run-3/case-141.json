@@ -1,0 +1,19 @@
+{
+  "adverse_points": [
+    "신법 경감 사실은 있으나 특별규정 유무가 제공되지 않았다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "위반행위 당시 법령 적용 원칙",
+    "변경 법령의 특별규정 유무",
+    "신법의 비위반화 또는 제재기준 경감 여부"
+  ],
+  "outcome": null,
+  "required_action": null,
+  "rule_answer": "article-14-fact-dependent",
+  "scenario_id": "case-141",
+  "supported_facts": []
+}

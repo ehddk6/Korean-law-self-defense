@@ -1,0 +1,24 @@
+{
+  "adverse_points": [
+    "특례기간 연체 차임 잔액이 24,556,080원으로 산정되었다.",
+    "원고와 피고는 차임 및 관리비 연체액이 3개월분에 달하면 자동 해지되는 것으로 정하였다.",
+    "특례기간 연체 차임은 임대인의 계약 해지권 등의 행사가 제한되어 상대적으로 변제이익이 적다."
+  ],
+  "citations": [
+    "민법 제477조"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "상가임대차법 제10조의9 특례기간 연체 차임의 범위",
+    "특례기간 연체 차임에 대한 변제충당 순서",
+    "임대인의 지정변제충당과 상가임대차법 제15조의 관계",
+    "조정상 자동 해지사유의 성립 여부"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-026",
+  "supported_facts": []
+}

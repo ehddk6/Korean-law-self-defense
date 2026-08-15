@@ -1,0 +1,28 @@
+{
+  "adverse_points": [
+    "관련 형사사건에서 원고 27 관련 직권남용 및 업무방해 혐의 무죄가 확정되었다.",
+    "피고들은 블랙리스트 작성 관여와 손해·인과관계가 증명되지 않았다고 주장한다.",
+    "피고들은 원고별 사정 없이 위자료 500만 원을 일괄 산정한 것은 부당하다고 주장한다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "블랙리스트 작성·유지·관리의 불법행위성",
+    "피고 2·피고 3의 관여 및 원고별 정신손해 인과관계",
+    "관련 형사 무죄 확정의 민사상 증명력",
+    "국가배상채권의 소멸시효 기산점",
+    "은폐·권리행사 장애에 따른 소멸시효 항변의 신의칙 제한"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-005",
+  "supported_facts": [
+    {
+      "claim": "원고들은 블랙리스트에 포함되어 있다.",
+      "evidence_excerpt": "원고들은 위 명단에 모두 포함되어 있다."
+    }
+  ]
+}

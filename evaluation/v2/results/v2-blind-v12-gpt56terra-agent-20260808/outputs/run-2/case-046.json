@@ -1,0 +1,38 @@
+{
+  "adverse_points": [
+    "전기통신금융사기죄는 사기죄와 입법 목적을 달리한다.",
+    "양 죄의 구성요건에는 일부 차이가 있다.",
+    "상상적 경합은 하나의 행위가 각 구성요건을 충족하는 경우에 한정된다."
+  ],
+  "citations": [
+    "「전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법」",
+    "대법원 2025. 7. 3. 선고 [CASE_NUMBER_001] 판결",
+    "12. 9. 선고 80도384 전원합의체 판결"
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전기통신금융사기죄와 사기죄의 특별법 관계",
+    "전기통신금융사기죄와 사기죄의 상상적 경합 여부",
+    "두 범죄의 독립된 구성요건"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-046",
+  "supported_facts": [
+    {
+      "claim": "전기통신금융사기죄는 사기죄의 특별법이 아니다.",
+      "evidence_excerpt": "특별법의 관계에 있다고 볼 수 없고"
+    },
+    {
+      "claim": "두 죄는 독립된 구성요건이다.",
+      "evidence_excerpt": "각기 독립된 별개의 구성요건"
+    },
+    {
+      "claim": "하나의 행위가 두 죄를 충족하면 상상적 경합이다.",
+      "evidence_excerpt": "상상적 경합의 관계에 있다고 보아야 한다"
+    }
+  ]
+}

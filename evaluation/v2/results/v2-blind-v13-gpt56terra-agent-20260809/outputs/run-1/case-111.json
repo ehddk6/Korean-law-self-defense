@@ -1,0 +1,17 @@
+{
+  "adverse_points": [
+    "피고는 384세대 아파트 전부에 관하여 학교용지부담금 1,476,850,330원을 부과하였다."
+  ],
+  "citations": [],
+  "confidence": "low",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "지역주택조합이 사업계획승인 및 입주자모집 승인을 받아 건축하는 384세대 아파트 전부에 학교용지법 제5조 제1항 본문 및 제5조의2에 따른 학교용지부담금을 부과할 수 있는지"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-111",
+  "supported_facts": []
+}

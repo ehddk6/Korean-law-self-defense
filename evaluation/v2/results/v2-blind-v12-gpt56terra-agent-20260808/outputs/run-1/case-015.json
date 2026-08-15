@@ -1,0 +1,23 @@
+{
+  "adverse_points": [
+    "원고는 청약서 질문에 “아니오.”라고 답변하였다.",
+    "소외 1은 보험계약 체결 전 급성 신우신염으로 입원치료를 받았다.",
+    "진료의뢰서에는 “지속적인 백혈구증가증” 등이 기재되어 있다.",
+    "피고는 입원치료 및 진료의뢰서 발급 사실을 알리지 않았다는 이유로 계약 해지를 통지하였다."
+  ],
+  "citations": [],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "보험계약 전 알릴 의무 위반 여부",
+    "입원치료 및 진료의뢰서 발급 사실의 고지 대상성",
+    "고지의무 위반과 보험계약 해지의 적법성",
+    "고지의무 위반과 보험사고 사이의 관계"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-015",
+  "supported_facts": []
+}

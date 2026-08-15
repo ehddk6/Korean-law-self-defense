@@ -1,0 +1,36 @@
+{
+  "adverse_points": [
+    "원고 1과 원고 2는 원심판결 선고 후 사망하였다.",
+    "전직 정식이사의 지위는 일신전속적인 것으로 판단된다.",
+    "전현직이사협의체 구성 및 의견제출 권리는 전직 정식이사 지위에서 파생된다."
+  ],
+  "citations": [
+    "원고 1은 2021. 12. 19.에, 원고 2는 2022. 5. 31.에 각각 사망하였음이 명백하다."
+  ],
+  "confidence": "medium",
+  "deadline_date": null,
+  "decision_status": "conditional",
+  "issues": [
+    "전직 정식이사 지위에서 파생되는 권리 또는 지위가 상속되는지 여부",
+    "소송 계속 중 사망한 원고들의 소송수계 가능 여부",
+    "전현직이사협의체 구성 및 정식이사 후보자 의견제출 권리의 일신전속성"
+  ],
+  "outcome": "unknown",
+  "required_action": null,
+  "rule_answer": null,
+  "scenario_id": "case-115",
+  "supported_facts": [
+    {
+      "claim": "원심판결은 2021년 12월 9일 선고되었다.",
+      "evidence_excerpt": "원심판결은 2021. 12. 9. 선고되었고"
+    },
+    {
+      "claim": "원고 1은 2021년 12월 19일 사망하였다.",
+      "evidence_excerpt": "원고 1은 2021. 12. 19.에"
+    },
+    {
+      "claim": "원고 2는 2022년 5월 31일 사망하였다.",
+      "evidence_excerpt": "원고 2는 2022. 5. 31.에 각각 사망하였음이 명백하다"
+    }
+  ]
+}
