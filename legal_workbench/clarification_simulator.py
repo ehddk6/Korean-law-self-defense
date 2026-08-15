@@ -1,34 +1,16 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
-from .models import new_id, utc_now
+from .models import ClarificationQuestion, ClarificationRecord, new_id
 from .security import atomic_json_write
 from .workflow import store_for
 
 
-@dataclass(slots=True)
-class ClarificationQuestion:
-    target_fact: str
-    judge_question: str
-    required_evidence: str
-
-
-@dataclass(slots=True)
-class ClarificationRecord:
-    clarification_id: str
-    case_id: str
-    questions: list[ClarificationQuestion]
-    created_at: str = field(default_factory=utc_now)
-
-    def to_dict(self) -> dict[str, Any]:
-        return asdict(self)
-
-
 def simulate_clarification(case_id: str, worksets_home: Path | None = None) -> dict[str, Any]:
     store = store_for(case_id, worksets_home)
+    store.get_case()
     facts = store.list_payloads("facts")
     evidence = store.list_payloads("evidence")
     issues = store.list_payloads("issues")

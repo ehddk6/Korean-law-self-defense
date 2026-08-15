@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from .models import CaseStage
+from .models import CaseStage, new_id, utc_now
 from .security import atomic_json_write
 from .workflow import store_for
 
@@ -63,7 +63,7 @@ def build_adversarial_brief(
             }
         )
 
-    brief_id = f"ab_{case_id[:16]}"
+    brief_id = new_id("ab")
     result = {
         "format": "legal-workbench-adversarial-brief-v1",
         "case_id": case_id,
@@ -78,10 +78,12 @@ def build_adversarial_brief(
             "미확인 사실이 남아 있으면 제출 전 확인하십시오.",
             "확인한 공개 자료에서 발견하지 못한 반대 근거는 없다고 단정하지 말고 재검색 기록을 남기십시오.",
         ],
+        "created_at": utc_now(),
     }
     brief_dir = store.case_dir / "adversarial_briefs"
     brief_dir.mkdir(parents=True, exist_ok=True)
     path = brief_dir / f"{brief_id}.json"
     atomic_json_write(path, result)
+    store.add_adversarial_brief(result)
     result["path"] = str(path)
     return result

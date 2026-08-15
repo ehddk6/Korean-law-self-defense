@@ -1,33 +1,11 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
-from .models import new_id, utc_now
+from .models import QuantumRecord, QuantumResult, new_id
 from .security import atomic_json_write
 from .workflow import store_for
-
-
-@dataclass(slots=True)
-class QuantumResult:
-    base_claim: float
-    mitigation_ratio: float
-    offset_amount: float
-    final_expected_amount: float
-    calculation_formula: str
-    basis_note: str = ""
-
-
-@dataclass(slots=True)
-class QuantumRecord:
-    quantum_id: str
-    case_id: str
-    result: QuantumResult
-    created_at: str = field(default_factory=utc_now)
-
-    def to_dict(self) -> dict[str, Any]:
-        return asdict(self)
 
 
 def calculate_quantum(

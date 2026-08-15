@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from .models import CaseStage
+from .models import CaseStage, new_id, utc_now
 from .security import atomic_json_write
 from .workflow import store_for
 
@@ -58,7 +58,7 @@ def build_evidence_checklist(
     evidence_by_id = {item["evidence_id"]: item for item in evidence}
     fact_by_id = {item["fact_id"]: item for item in facts}
 
-    checklist_id = f"ec_{case_id[:16]}"
+    checklist_id = new_id("ec")
     items: list[dict[str, Any]] = []
     warnings: list[dict[str, Any]] = []
     for issue in issues:
@@ -109,10 +109,12 @@ def build_evidence_checklist(
         "illegal_evidence_hints": list(ILLEGAL_EVIDENCE_HINTS),
         "items": items,
         "warnings": warnings,
+        "created_at": utc_now(),
     }
     checklist_dir = store.case_dir / "evidence_checklists"
     checklist_dir.mkdir(parents=True, exist_ok=True)
     path = checklist_dir / f"{checklist_id}.json"
     atomic_json_write(path, result)
+    store.add_evidence_checklist(result)
     result["path"] = str(path)
     return result

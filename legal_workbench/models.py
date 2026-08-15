@@ -286,7 +286,6 @@ class QuantumResult:
     offset_amount: float
     final_expected_amount: float
     calculation_formula: str
-    mitigation_evidence_refs: list[str] = field(default_factory=list)
     basis_note: str = ""
 
 
