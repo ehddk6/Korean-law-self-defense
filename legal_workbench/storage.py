@@ -11,12 +11,16 @@ from .models import (
     AuthorityRecord,
     CaseRecord,
     CaseStage,
+    ClarificationRecord,
     DeadlineRecord,
     EvidenceRecord,
     FactRecord,
     IssueRecord,
     OpinionRecord,
+    PleadingStrategyRecord,
+    QuantumRecord,
     STAGE_ORDER,
+    VirtualTrialRecord,
     utc_now,
 )
 from .security import validate_safe_identifier
@@ -103,6 +107,38 @@ CREATE TABLE IF NOT EXISTS opinions (
     created_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS virtual_trials (
+    trial_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_virtual_trials_case ON virtual_trials(case_id);
+
+CREATE TABLE IF NOT EXISTS pleading_strategies (
+    strategy_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_pleading_strategies_case ON pleading_strategies(case_id);
+
+CREATE TABLE IF NOT EXISTS clarifications (
+    clarification_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_clarifications_case ON clarifications(case_id);
+
+CREATE TABLE IF NOT EXISTS quantums (
+    quantum_id TEXT PRIMARY KEY,
+    case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
+    payload_json TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_quantums_case ON quantums(case_id);
+
 CREATE TABLE IF NOT EXISTS audit_reports (
     audit_id TEXT PRIMARY KEY,
     case_id TEXT NOT NULL REFERENCES cases(case_id) ON DELETE CASCADE,
@@ -145,7 +181,19 @@ class CaseStore:
 
     def initialize_directories(self) -> None:
         self.case_dir.mkdir(parents=True, exist_ok=True)
-        for name in ("documents", "authorities", "drafts", "visual", "audits", "bundles", "exports"):
+        for name in (
+            "documents",
+            "authorities",
+            "drafts",
+            "visual",
+            "audits",
+            "bundles",
+            "exports",
+            "virtual_trials",
+            "pleading_strategies",
+            "clarifications",
+            "quantums",
+        ):
             (self.case_dir / name).mkdir(exist_ok=True)
 
     @contextmanager
@@ -294,6 +342,22 @@ class CaseStore:
     def add_opinion(self, record: OpinionRecord) -> None:
         self._insert_payload("opinions", "opinion_id", record.opinion_id, record.to_dict())
 
+    def add_virtual_trial(self, record: VirtualTrialRecord) -> None:
+        self._insert_payload("virtual_trials", "trial_id", record.trial_id, record.to_dict())
+
+    def add_pleading_strategy(self, record: PleadingStrategyRecord) -> None:
+        self._insert_payload(
+            "pleading_strategies", "strategy_id", record.strategy_id, record.to_dict()
+        )
+
+    def add_clarification(self, record: ClarificationRecord) -> None:
+        self._insert_payload(
+            "clarifications", "clarification_id", record.clarification_id, record.to_dict()
+        )
+
+    def add_quantum(self, record: QuantumRecord) -> None:
+        self._insert_payload("quantums", "quantum_id", record.quantum_id, record.to_dict())
+
     def add_audit_report(self, payload: dict[str, Any]) -> None:
         validate_safe_identifier(str(payload["audit_id"]), field="audit_id")
         with self.connect() as conn:
@@ -334,6 +398,10 @@ class CaseStore:
             "deadlines",
             "opinions",
             "audit_reports",
+            "virtual_trials",
+            "pleading_strategies",
+            "clarifications",
+            "quantums",
         }
         if table not in allowed:
             raise ValueError(f"허용되지 않은 테이블: {table}")
@@ -423,6 +491,10 @@ class CaseStore:
             ("issues", "issue_id"),
             ("deadlines", "deadline_id"),
             ("opinions", "opinion_id"),
+            ("virtual_trials", "trial_id"),
+            ("pleading_strategies", "strategy_id"),
+            ("clarifications", "clarification_id"),
+            ("quantums", "quantum_id"),
         }
         if (table, id_column) not in allowed:
             raise ValueError("허용되지 않은 payload 테이블입니다.")

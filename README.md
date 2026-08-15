@@ -47,11 +47,17 @@ legal service draft --case CASE-001 --type demand-letter --format md --format do
 legal service draft-all --case CASE-001 --format md
 legal draft --case CASE-001 --type complaint --format md --format docx --format pdf --format hwpx
 legal visual-review --case CASE-001 --file .\visual-review.json
+legal optimize-pleadings --case CASE-001
+legal simulate-clarification --case CASE-001
+legal calculate-quantum --case CASE-001 --claim 10000000 --mitigation 0.2 --offset 0
+legal virtual-trial --case CASE-001
 legal audit --case CASE-001
 legal export --case CASE-001
 ```
 
 상담은 질문을 정리하는 `start`와 공식 근거를 붙여 결론을 검증하는 `finish`로 분리된다. `--dry-run`은 파일을 만들지 않고 비식별·긴급질문 게이트만 확인한다. `entities`가 없으면 현재 입력 해시, `reviewer=local-redactor`, 검토시각과 도구버전을 담은 구조화 `pii_attestation`이 필요하며 단순 `pii_reviewed=true` 자기선언은 인정하지 않는다. 비식별 과정에서 생기는 대응표는 `LegalMappings`에만 저장한다. `ready`는 intake에 등록된 증거, 해시가 맞는 blind 독립분석 파일, 근거별 MCP 메타데이터와 P1에 연결된 기한 검토가 모두 있어야 한다.
+
+`legal optimize-pleadings`는 저장된 쟁점·구제수단·검증 근거를 바탕으로 주위적·예비적 청구원인 전략을 제안하고, `simulate-clarification`은 증거가 부족한 사실에 재판부의 석명·보정 질문을 만든다. `calculate-quantum`은 청구액·과실상계·공제를 사용자가 확인한 값으로만 계산하며 근거가 없는 비율은 임의로 만들지 않는다. `virtual-trial`은 조사 완료 후에만 실행되며 원고·피고 변호사 시뮬레이션, 재판부 사실인정, 정성적 승소 가능성(높음·보통·낮음·판단보류)과 모의 판결문 초안을 만든다. 승소 확률 숫자를 찍어내지 않고, 모의 판결문은 변호사법 제109조 경계 문구와 증거 보강 액션 플랜을 포함한다.
 
 `legal guide`는 사건기록을 일반인이 읽을 수 있는 쉬운 설명서로 바꾼다. 핵심 결론, 확인된 사실, 지금 챙길 자료, 상대방 주장, 기한과 프로젝트가 할 수 있는 일을 평이한 말로 출력한다. `legal service guide`는 지원 업무 전체를 현재 사건에 직접 적용 가능한 업무와 별도 사실관계가 필요한 업무로 나눈다. `plan-all`은 현 단계에서 가능한 36개 업무 묶음을 만들고, `draft-all`은 직접 관련 업무에는 사건별 준비 초안을, 관련 없는 업무에는 필요한 자료와 제한을 적은 안전한 준비 문서를 만든다. 이 명령들은 사실이 없는 다른 사건을 꾸며내지 않는다.
 

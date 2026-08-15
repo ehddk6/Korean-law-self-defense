@@ -38,7 +38,18 @@ def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
     case.pop("updated_at", None)
     records = {
         table: store.list_payloads(table)
-        for table in ("evidence", "facts", "authorities", "issues", "deadlines", "opinions")
+        for table in (
+            "evidence",
+            "facts",
+            "authorities",
+            "issues",
+            "deadlines",
+            "opinions",
+            "virtual_trials",
+            "pleading_strategies",
+            "clarifications",
+            "quantums",
+        )
     }
     files: list[dict[str, Any]] = []
     for document in store.list_documents():
@@ -51,7 +62,7 @@ def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
                 "sha256": sha256_file(path) if path.is_file() else None,
             }
         )
-    for folder_name in ("bundles", "drafts", "visual"):
+    for folder_name in ("bundles", "drafts", "visual", "virtual_trials", "pleading_strategies", "clarifications", "quantums"):
         folder = store.case_dir / folder_name
         if not folder.exists():
             continue

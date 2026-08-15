@@ -215,6 +215,92 @@ class OpinionRecord:
         return asdict(self)
 
 
+class TrialVerdict(StrEnum):
+    FAVORABLE = "favorable"
+    PARTIAL = "partial"
+    UNFAVORABLE = "unfavorable"
+    ABSTAIN = "abstain"
+
+
+@dataclass(slots=True)
+class VirtualTrialRecord:
+    trial_id: str
+    case_id: str
+    plaintiff_counsel_argument: str
+    defense_counsel_argument: str
+    judge_fact_finding: list[dict[str, Any]]
+    judge_reasoning: str
+    verdict: TrialVerdict
+    winning_probability: str
+    evidence_strength_score: float
+    mock_judgment_ref: str | None = None
+    created_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class PleadingNode:
+    claim_type: str
+    legal_basis: str
+    required_facts: list[str]
+    matched_evidence_score: float
+
+
+@dataclass(slots=True)
+class PleadingStrategyRecord:
+    strategy_id: str
+    case_id: str
+    primary_claim: PleadingNode
+    contingent_claims: list[PleadingNode]
+    recommendation: str
+    created_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class ClarificationQuestion:
+    target_fact: str
+    judge_question: str
+    required_evidence: str
+
+
+@dataclass(slots=True)
+class ClarificationRecord:
+    clarification_id: str
+    case_id: str
+    questions: list[ClarificationQuestion]
+    created_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(slots=True)
+class QuantumResult:
+    base_claim: float
+    mitigation_ratio: float
+    offset_amount: float
+    final_expected_amount: float
+    calculation_formula: str
+    mitigation_evidence_refs: list[str] = field(default_factory=list)
+    basis_note: str = ""
+
+
+@dataclass(slots=True)
+class QuantumRecord:
+    quantum_id: str
+    case_id: str
+    result: QuantumResult
+    created_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
 @dataclass(slots=True)
 class AuditFinding:
     finding_id: str

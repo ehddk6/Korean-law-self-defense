@@ -131,6 +131,23 @@ def build_parser() -> argparse.ArgumentParser:
     guide.add_argument("--case", required=True)
     guide.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
 
+    virtual_trial = subparsers.add_parser(
+        "virtual-trial", help="변호사·판사 시뮬레이터 기반 가상 재판 및 모의 판결문 생성"
+    )
+    virtual_trial.add_argument("--case", required=True)
+
+    pleadings = subparsers.add_parser("optimize-pleadings", help="주위적/예비적 청구원인 전략 구성")
+    pleadings.add_argument("--case", required=True)
+
+    clarify = subparsers.add_parser("simulate-clarification", help="재판부 석명권 및 보정명령 시뮬레이션")
+    clarify.add_argument("--case", required=True)
+
+    quantum = subparsers.add_parser("calculate-quantum", help="손해배상액 및 과실상계 정밀 산정")
+    quantum.add_argument("--case", required=True)
+    quantum.add_argument("--claim", type=float, required=True, help="청구 금액")
+    quantum.add_argument("--mitigation", type=float, help="사용자가 확인한 과실상계율 0~1 (기본: 근거 미확인이라 미적용)")
+    quantum.add_argument("--offset", type=float, default=0.0, help="손익상계·공제액")
+
     visual_review = subparsers.add_parser("visual-review", help="렌더 이미지와 문서 해시를 시각검토 기록으로 고정")
     visual_review.add_argument("--case", required=True)
     visual_review.add_argument("--file", type=Path, required=True)
@@ -371,6 +388,28 @@ def dispatch(args: argparse.Namespace) -> Any:
                 worksets_home=worksets,
             ).items()
         }
+    if args.command == "virtual-trial":
+        from .virtual_trial import run_virtual_trial
+
+        return run_virtual_trial(args.case, worksets_home=worksets)
+    if args.command == "optimize-pleadings":
+        from .pleading_engine import build_pleading_strategy
+
+        return build_pleading_strategy(args.case, worksets_home=worksets)
+    if args.command == "simulate-clarification":
+        from .clarification_simulator import simulate_clarification
+
+        return simulate_clarification(args.case, worksets_home=worksets)
+    if args.command == "calculate-quantum":
+        from .quantum_computation import calculate_quantum
+
+        return calculate_quantum(
+            args.case,
+            args.claim,
+            mitigation_ratio=args.mitigation,
+            offset_amount=args.offset,
+            worksets_home=worksets,
+        )
     if args.command == "visual-review":
         return import_visual_review(args.case, load_json(args.file), worksets_home=worksets)
     if args.command == "audit":
