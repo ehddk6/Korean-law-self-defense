@@ -75,6 +75,60 @@ PII_PATTERNS: tuple[tuple[str, str, re.Pattern[str]], ...] = (
 )
 
 
+# 잔존 PII 스캔은 비식별 치환에 쓰는 PII_PATTERNS와 의도적으로 분리한다.
+# 비식별이 놓치는 구분자 변형(엔대시·가운데점·괄호 at/dot)까지 검출해야 하므로
+# 더 넓은 분리 패턴셋을 사용하고, 비식별 직후 재사용으로 검사가 공허해지는 것을 막는다.
+_RESIDUAL_SEPARATORS = r"[\-\u2010-\u2015\u2212\uFF0D\u00B7\u30FB.\s]?"
+
+RESIDUAL_PII_PATTERNS: tuple[tuple[str, str, re.Pattern[str]], ...] = (
+    (
+        "RESIDENT_ID",
+        "resident-registration-number-variant",
+        re.compile(rf"(?<!\d)\d{{6}}\s*{_RESIDUAL_SEPARATORS}\s*[1-8]\d{{6}}(?!\d)"),
+    ),
+    (
+        "PHONE",
+        "mobile-or-landline-number-variant",
+        re.compile(
+            rf"(?<!\d)(?:01[016789]|0[2-6][1-5]?)\s*{_RESIDUAL_SEPARATORS}\s*\d{{3,4}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{4}}(?!\d)"
+        ),
+    ),
+    (
+        "EMAIL",
+        "email-address-defanged",
+        re.compile(
+            r"(?i)(?<![A-Z0-9._%+-])[A-Z0-9._%+-]+\s*(?:\[at\]|\(at\))\s*"
+            r"[A-Z0-9.-]+\s*(?:\[dot\]|\(dot\))\s*[A-Z]{2,}(?![A-Z0-9.-])"
+        ),
+    ),
+    (
+        "EMAIL",
+        "email-address",
+        PII_PATTERNS[2][2],
+    ),
+    (
+        "BIRTH_DATE",
+        "birth-date-with-birth-marker",
+        PII_PATTERNS[3][2],
+    ),
+    (
+        "CASE_NUMBER",
+        "korean-case-number",
+        PII_PATTERNS[4][2],
+    ),
+    (
+        "ACCOUNT",
+        "probable-account-number",
+        re.compile(rf"(?<!\d)(?:\d{{2,6}}{_RESIDUAL_SEPARATORS}){{2,4}}\d{{2,6}}(?!\d)"),
+    ),
+    (
+        "ADDRESS",
+        "probable-korean-address",
+        PII_PATTERNS[6][2],
+    ),
+)
+
+
 INJECTION_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     (
         "override-instructions",
@@ -216,11 +270,12 @@ def redact_text(
 
 def scan_residual_pii(text: str) -> list[SecurityFinding]:
     findings: list[SecurityFinding] = []
-    for category, rule, pattern in PII_PATTERNS:
+    date_exclusion = re.compile(
+        rf"(?:19|20)\d{{2}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{1,2}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{1,2}}"
+    )
+    for category, rule, pattern in RESIDUAL_PII_PATTERNS:
         for match in pattern.finditer(text):
-            if category == "ACCOUNT" and re.fullmatch(
-                r"(?:19|20)\d{2}-\d{2}-\d{2}", match.group(0).strip()
-            ):
+            if category == "ACCOUNT" and date_exclusion.fullmatch(match.group(0).strip()):
                 continue
             if category == "ACCOUNT":
                 line_start = text.rfind("\n", 0, match.start()) + 1

@@ -157,6 +157,12 @@ def ingest_document(
         custom_entities=custom_entities,
     )
     residual = scan_residual_pii(sanitized_text)
+    if residual:
+        categories = sorted({item.category for item in residual})
+        raise PermissionError(
+            "비식별 후에도 개인정보 패턴이 남아 있어 문서를 저장할 수 없습니다. "
+            f"원본을 수정하거나 entities에 이름을 추가한 뒤 다시 수집하십시오. 범주: {', '.join(categories)}"
+        )
     injections = scan_prompt_injection(sanitized_text)
     document_id = new_id("doc")
     evidence_id = new_id("ev")
@@ -715,6 +721,14 @@ def _capture_authority_text(
     source = Path(str(value)).expanduser().resolve()
     if not source.is_file():
         raise FileNotFoundError(f"P1 {label} 원문 파일을 찾을 수 없습니다: {source}")
+    residual = scan_residual_pii(source.read_text(encoding="utf-8", errors="replace"))
+    if residual:
+        categories = sorted({item.category for item in residual})
+        raise PermissionError(
+            f"P1 {label} 원문에서 개인정보 패턴이 검출되어 비식별 저장소에 복사할 수 없습니다. "
+            "공식 원문은 익명화·비식별 처리 후 다시 지정하십시오. "
+            f"범주: {', '.join(categories)}"
+        )
     destination = (store.case_dir / "authorities" / f"{authority_id}.{label}.txt").resolve()
     destination.parent.mkdir(parents=True, exist_ok=True)
     if source != destination:

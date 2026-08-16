@@ -4,10 +4,19 @@ import { LawApiClient } from "../node_modules/korean-law-mcp/build/lib/api-clien
 import { searchPrecedentsStructured } from "../node_modules/korean-law-mcp/build/tools/precedent-search-core.js";
 import { findLaws } from "../node_modules/korean-law-mcp/build/lib/law-search.js";
 import { guardOfficialApiResponses, sanitizePrecedentSearchResult } from "./law-api-guard.mjs";
+import { sanitizeMcpString, sanitizeMcpValue } from "./mcp-output-sanitizer.mjs";
+
+// 법제처가 응답 본문·링크에 OC를 되돌려 주는 경우에 대비해
+// 모든 표준 출력·오류 메시지는 새니타이저를 거쳐 내보낸다.
+const OUTPUT_SECRET = process.env.LAW_OC || "";
 
 function fail(message) {
-  process.stderr.write(`${message}\n`);
+  process.stderr.write(`${sanitizeMcpString(message, OUTPUT_SECRET)}\n`);
   process.exitCode = 2;
+}
+
+function emit(payload) {
+  process.stdout.write(`${JSON.stringify(sanitizeMcpValue(payload, OUTPUT_SECRET))}\n`);
 }
 
 function requireLawOc() {
@@ -67,7 +76,7 @@ async function main() {
       },
       { fallbackPolicy: "none" },
     );
-    process.stdout.write(`${JSON.stringify(sanitizePrecedentSearchResult(result))}\n`);
+    emit(sanitizePrecedentSearchResult(result));
     return;
   }
   if (command === "precedent-detail") {
@@ -79,25 +88,25 @@ async function main() {
       type: "JSON",
       extraParams: { ID: id },
     });
-    process.stdout.write(`${JSON.stringify(cleanPrecedentDetail(JSON.parse(response), id))}\n`);
+    emit(cleanPrecedentDetail(JSON.parse(response), id));
     return;
   }
   if (command === "law-search") {
     const query = String(input.query || "").trim();
     if (!query) throw new Error("법령 검색어가 필요합니다.");
     const laws = await findLaws(client, query, undefined, Number(input.max || 10), 100);
-    process.stdout.write(`${JSON.stringify({ laws })}\n`);
+    emit({ laws });
     return;
   }
   if (command === "law-detail") {
     const mst = String(input.mst || "").trim();
     if (!/^\d+$/.test(mst)) throw new Error("법령일련번호(MST)는 숫자여야 합니다.");
     const response = await client.getLawText({ mst, jo: input.jo || undefined });
-    process.stdout.write(`${JSON.stringify({
+    emit({
       mst,
       source_url: `https://www.law.go.kr/법령/법령정보?lsiSeq=${encodeURIComponent(mst)}`,
       payload: JSON.parse(response),
-    })}\n`);
+    });
     return;
   }
   throw new Error("지원 명령: precedent-search, precedent-detail, law-search, law-detail");
