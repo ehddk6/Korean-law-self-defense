@@ -211,6 +211,12 @@ def build_parser() -> argparse.ArgumentParser:
     preflight = subparsers.add_parser("preflight", help="저장 없는 사전 감사와 최신 감사 대비 변경(drift) 보고")
     preflight.add_argument("--case", required=True)
 
+    audits = subparsers.add_parser("audits", help="저장된 감사 이력과 finding 증감 추적 조회(읽기 전용)")
+    audits.add_argument("--case", required=True)
+
+    next_action = subparsers.add_parser("next-action", help="도과·임박 기한과 미확인 사항을 묶은 지금 할 일 요약(읽기 전용)")
+    next_action.add_argument("--case", required=True)
+
     consult = subparsers.add_parser("consult", help="공식 근거 기반 한국법 상담")
     consult_sub = consult.add_subparsers(dest="consult_command", required=True)
     consult_start = consult_sub.add_parser("start", help="비식별 상담 접수와 조사 묶음 생성")
@@ -613,7 +619,34 @@ def dispatch(args: argparse.Namespace) -> Any:
                 change = "added" if old is None else ("removed" if new is None else "changed")
                 drift["files"].append({"kind": key[0], "name": key[1], "change": change})
         payload["drift"] = drift
+        recommendations: list[str] = []
+        critical_codes = sorted(
+            {str(item["code"]) for item in payload["findings"] if str(item["severity"]) == "critical"}
+        )
+        if critical_codes:
+            recommendations.append(
+                f"CRITICAL 감사 항목 {len(critical_codes)}종을 먼저 해결하십시오: {', '.join(critical_codes)}"
+            )
+        if drift["latest_audit_id"] is None:
+            recommendations.append("저장된 감사가 없습니다. 서면 작성 완료 후 'legal audit'으로 감사를 저장하십시오.")
+        elif not drift["snapshot_match"]:
+            recommendations.append("마지막 감사 이후 기록이 변경됐습니다. 배포 전에 'legal audit'으로 감사를 갱신하십시오.")
+        elif payload.get("release_allowed"):
+            recommendations.append("배포 게이트를 통과한 최신 감사와 현재 기록이 일치합니다.")
+        payload["recommendations"] = recommendations
         return payload
+    if args.command == "audits":
+        from .audit import audit_history
+
+        store = store_for(args.case, worksets)
+        store.get_case()
+        return audit_history(store)
+    if args.command == "next-action":
+        from .audit import next_action_digest
+
+        store = store_for(args.case, worksets)
+        store.get_case()
+        return next_action_digest(store)
     if args.command == "consult":
         if args.consult_command == "start":
             entities = load_json(args.entities) if args.entities else None

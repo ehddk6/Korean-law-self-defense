@@ -1067,8 +1067,103 @@ def case_timeline(store: CaseStore) -> list[dict[str, Any]]:
                 "flags": [],
             }
         )
+    for item in store.list_payloads("opinions"):
+        occurred = _parse_date(str(item.get("created_at") or "")[:10])
+        if not occurred:
+            continue
+        entries.append(
+            {
+                "date": occurred.isoformat(),
+                "kind": "opinion",
+                "record_id": item["opinion_id"],
+                "title": item.get("conclusion"),
+                "flags": [str(item.get("status") or "unknown")],
+            }
+        )
     entries.sort(key=lambda entry: (entry["date"], entry["kind"], str(entry["record_id"])))
     return entries
+
+
+def audit_history(store: CaseStore) -> dict[str, Any]:
+    """저장된 감사 이력을 시간순으로 요약하고 인접 감사 간 finding 증감을 추적한다."""
+    reports = sorted(
+        store.list_payloads("audit_reports"),
+        key=lambda item: (str(item.get("created_at") or ""), str(item.get("audit_id") or "")),
+    )
+    entries: list[dict[str, Any]] = []
+    previous_codes: set[str] | None = None
+    for report in reports:
+        findings = report.get("findings") or []
+        codes = {str(item.get("code")) for item in findings if item.get("code")}
+        severity_counts = {"critical": 0, "major": 0, "minor": 0}
+        for item in findings:
+            key = str(item.get("severity") or "").lower()
+            if key in severity_counts:
+                severity_counts[key] += 1
+        entry: dict[str, Any] = {
+            "audit_id": report.get("audit_id"),
+            "created_at": report.get("created_at"),
+            "passed": report.get("passed"),
+            "release_allowed": report.get("release_allowed"),
+            "finding_count": len(findings),
+            "severity_counts": severity_counts,
+            "codes": sorted(codes),
+        }
+        if previous_codes is None:
+            entry["resolved_codes"] = []
+            entry["new_codes"] = sorted(codes)
+        else:
+            entry["resolved_codes"] = sorted(previous_codes - codes)
+            entry["new_codes"] = sorted(codes - previous_codes)
+        previous_codes = codes
+        entries.append(entry)
+    return {"case_id": store.case_id, "audit_count": len(entries), "audits": entries}
+
+
+def next_action_digest(store: CaseStore) -> dict[str, Any]:
+    """지금 확인해야 할 도과·임박 기한, 최신 감사의 CRITICAL, 미확정 사실·누락 사실을 묶어 반환한다."""
+    urgent_deadlines = [row for row in deadline_overview(store) if row["status"] in {"도과", "임박"}]
+    latest = store.latest_audit()
+    latest_summary: dict[str, Any] | None = None
+    if latest is not None:
+        critical_codes = sorted(
+            {
+                str(item.get("code"))
+                for item in latest.get("findings") or []
+                if item.get("code") and str(item.get("severity") or "").lower() == "critical"
+            }
+        )
+        latest_summary = {
+            "audit_id": latest.get("audit_id"),
+            "release_allowed": latest.get("release_allowed"),
+            "critical_codes": critical_codes,
+        }
+    opinions = store.list_payloads("opinions")
+    latest_opinion = opinions[-1] if opinions else None
+    fact_by_id = {item["fact_id"]: item for item in store.list_payloads("facts")}
+    unconfirmed_facts: list[dict[str, Any]] = []
+    if latest_opinion:
+        for fact_id in latest_opinion.get("fact_ids") or []:
+            fact = fact_by_id.get(fact_id)
+            if fact and fact.get("status") != "confirmed":
+                unconfirmed_facts.append(
+                    {"fact_id": fact_id, "status": fact.get("status"), "text": fact.get("text")}
+                )
+    missing_facts = sorted(
+        {
+            str(item)
+            for issue in store.list_payloads("issues")
+            for item in issue.get("missing_facts") or []
+        }
+    )
+    return {
+        "case_id": store.case_id,
+        "checked_on": date.today().isoformat(),
+        "urgent_deadlines": urgent_deadlines,
+        "latest_audit": latest_summary,
+        "unconfirmed_facts": unconfirmed_facts,
+        "missing_facts": missing_facts,
+    }
 
 
 def _analysis_result_valid(store: CaseStore, value: Any, expected_hash: Any, role: str) -> bool:
