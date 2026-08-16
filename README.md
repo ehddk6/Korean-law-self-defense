@@ -69,6 +69,20 @@ legal export --case CASE-001
 
 `legal guide`는 사건기록을 일반인이 읽을 수 있는 쉬운 설명서로 바꾼다. 핵심 결론, 확인된 사실, 지금 챙길 자료, 상대방 주장, 기한과 프로젝트가 할 수 있는 일을 평이한 말로 출력한다. `legal service guide`는 지원 업무 전체를 현재 사건에 직접 적용 가능한 업무와 별도 사실관계가 필요한 업무로 나눈다. `plan-all`은 현 단계에서 가능한 36개 업무 묶음을 만들고, `draft-all`은 직접 관련 업무에는 사건별 준비 초안을, 관련 없는 업무에는 필요한 자료와 제한을 적은 안전한 준비 문서를 만든다. 이 명령들은 사실이 없는 다른 사건을 꾸며내지 않는다.
 
+## 조회·환경 진단(읽기 전용)
+
+```powershell
+legal search-all --query '보증금' --limit 5
+legal proof-matrix --case CASE-001
+legal answer-map --case CASE-001
+legal readiness --case CASE-001
+legal doctor
+legal overview
+legal service forms --type civil-complaint
+```
+
+`search-all`은 전체 사건 문서를 가로지르는 전문검색이고, `proof-matrix`·`answer-map`·`readiness`는 각각 요건-입증 행렬, 상대방 주장 대응표, 공판·절차 준비도 통합 점검표를 조회한다. `doctor`는 저장소 경로·사건 데이터베이스·이벤트 체인 무결성을 점검하고, `overview`는 전체 사건의 단계·긴급 기한·감사 상태를 한 장의 관리표로 요약한다. `service forms`는 업무 유형별 법원 양식 검색 키워드를 안내하며, 양식 번호는 대한민국 법원 전자소송 포털 공개 양식모음에서 최종 확인해야 한다. 이 명령들은 모두 기록을 변경하지 않는다.
+
 ## 공식 자료와 MCP
 
 `korean-law-mcp`는 `4.7.4`로 고정되어 로컬 STDIO로만 실행된다. `LAW_OC`는 환경변수로 전달하며 저장소와 로그에 넣지 않는다. 벤더 MCP를 직접 실행하지 말고 설정된 안전 래퍼를 사용한다. MCP 검색 결과는 발견 도구이고, 핵심 결론은 국가법령정보센터·대법원·헌법재판소 등의 공식 P1 원문으로 다시 확인한다. 검색 결과가 없다는 사실은 판례가 없다는 뜻으로 표현하지 않는다.
@@ -87,7 +101,7 @@ legal eval seal --manifest evaluation\manifest.json
 legal eval review-gold --manifest evaluation\manifest.json --start 1 --end 25 --reviewer-id reviewer-a --model gpt-5.4 --output evaluation\reviews\gold-001-025.json
 legal eval distill-gold --manifest evaluation\manifest.json --start 1 --end 20 --model gpt-5.4 --output evaluation\reviews\distill-001-020.json
 legal eval apply-distilled-gold --manifest evaluation\manifest.json --report evaluation\reviews\distill-001-020.json # 120건 전체 보고서가 함께 있어야 적용됨
-legal eval approve-gold --manifest evaluation\manifest.json --report evaluation\reviews\gold-001-025.json # 150건 전체를 정확히 한 번 포함해야 승인됨
+legal eval approve-gold --manifest evaluation\manifest.json --report evaluation\reviews\gold-001-025.json # 180건 전체를 정확히 한 번 포함해야 승인됨
 legal eval status --manifest evaluation\manifest.json
 legal eval curate --manifest evaluation\manifest.json --scenario case-001 --record evaluation\record.json
 legal eval run --manifest evaluation\manifest.json --runs 3 --model gpt-5.5 --batch-size 12 --output-dir evaluation\results\v1
@@ -115,18 +129,18 @@ legal eval probe-report --manifest evaluation\v2\manifest.json --results evaluat
 
 합성 공격 30건은 즉시 실행 가능한 고정 fixture다. 공식 판결 120건과 행위시법·송달·시효·관할 30건은 공식 원문, 결론을 가린 입력, 비공개 기대답안을 연결해야 한다. 180건 전체를 세 번 실행하고 모든 기준을 통과하기 전에는 `v1_certified`가 참이 되지 않는다.
 
-`review-gold`는 평가 모델과 다른 격리 모델로 source·fixture·expected를 대조한다. `distill-gold`는 결론을 가린 fixture에서 정확한 근거 문구로 추적되는 쟁점 3개와 반론 2개를 제안할 뿐이며, 120건 보고서가 모두 완성되고 다시 gold review를 통과하기 전에는 현재 기대답안을 바꾸지 않는다. 결론 적중률은 `ready`만 계산하고, `conditional`은 답변률에는 포함하되 조건부 예측 오차로 별도 관찰한다.
+`review-gold`는 평가 모델과 다른 격리 모델로 source·fixture·expected를 대조한다. `distill-gold`는 결론을 가린 fixture에서 정확한 근거 문구로 추적되는 쟁점 3개와 반론 2개를 제안할 뿐이며, 120건 보고서가 모두 완성되고 다시 gold review를 통과하기 전에는 현재 기대답안을 바꾸지 않는다. 결론 적중률은 `ready`만 계산하고, `conditional`은 답변률에는 포함하되 조건부 예측 오차로 별도 관찰한다. 조건부 결론의 기대값 일치율은 채점 결과의 `conditional_observation`(split별 `conditional_accuracy`)으로 관측 전용 제공되며 인증 합격 기준에는 반영되지 않는다.
 
 모델 응답에서 개인정보 패턴이 발견되면 원문 응답을 저장하지 않고 즉시 `[MODEL_*]` 토큰으로 치환한다. 탐지 건수와 범주를 해시된 보안 보고서에 남기므로 최종 점수의 `pii_leaks=0` 기준을 우회할 수 없다. 입력에 없는 인용과 근거문구는 최종 출력 전에 제거되고 제거 건수도 같은 보고서에 기록된다.
 
-합격 시 `evaluation/certification.json`이 manifest·실행 결과·runner/audit/scorer 코드·모델/프롬프트/Skill 설정 해시에 결박된다. 인증을 읽을 때 540개 output과 감사 결과를 다시 계산하므로 수동 인증 파일은 인정되지 않는다. development와 holdout이 각각 기준을 통과하지 못하거나 참조 파일이 바뀌면 사건별 감사가 통과했더라도 `legal export`는 차단된다.
+합격 시 `evaluation/v2/certification.json`이 manifest·실행 결과·runner/audit/scorer 코드·모델/프롬프트/Skill 설정 해시에 결박된다. 인증을 읽을 때 540개 output과 감사 결과를 다시 계산하므로 수동 인증 파일은 인정되지 않는다. development와 holdout이 각각 기준을 통과하지 못하거나 참조 파일이 바뀌면 사건별 감사가 통과했더라도 `legal export`는 차단된다.
 
 ## 검증
 
 ```powershell
 $env:PYTHONUTF8=1
 .\.venv\Scripts\python.exe -m pytest
-.\.venv\Scripts\python.exe C:\Users\ehddk\.codex\skills\.system\skill-creator\scripts\quick_validate.py .\.agents\skills\korean-legal-workbench
+.\.venv\Scripts\python.exe scripts\quick_validate.py .\.agents\skills\korean-legal-workbench
 npm audit --omit=dev
 git diff --check
 ```

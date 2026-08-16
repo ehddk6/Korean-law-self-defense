@@ -186,6 +186,87 @@ def audit_case(store: CaseStore) -> AuditReport:
     fact_by_id = {item["fact_id"]: item for item in facts}
     as_of_date = _parse_date(case.get("as_of_date"))
 
+    action_date = _parse_date(case.get("action_date"))
+    today = date.today()
+    latest_opinion = opinions[-1] if opinions else None
+
+    # 감사 규칙은 독립 헬퍼가 호출 순서대로 실행해 findings 순서를 결정론적으로 유지한다.
+    _audit_evidence(findings, evidence, document_ids, document_by_id)
+    _audit_facts(findings, facts, evidence_ids, as_of_date)
+    verified_p1_ids = _audit_authorities(findings, authorities, action_date)
+    _audit_issues(findings, issues, authority_ids, fact_ids)
+
+    _audit_deadline_verification(findings, deadlines, authority_ids, verified_p1_ids)
+
+    _audit_documents(findings, documents, store)
+
+    action_logs = store.list_payloads("action_logs")
+    deadline_by_id = {item["deadline_id"]: item for item in deadlines}
+    _audit_action_logs(findings, action_logs, deadline_by_id, today)
+    referenced_deadline_ids = {item.get("deadline_id") for item in action_logs if item.get("deadline_id")}
+    _audit_unreferenced_deadlines(findings, deadlines, referenced_deadline_ids, today)
+
+    _audit_mock_hearings(findings, store.list_payloads("mock_hearings"), issue_ids, evidence_ids, latest_opinion)
+    _audit_record_surface(findings, case, facts, issues, deadlines, opinions)
+    _audit_opinion(
+        findings,
+        store,
+        latest_opinion,
+        fact_ids=fact_ids,
+        authority_ids=authority_ids,
+        issue_ids=issue_ids,
+        fact_by_id=fact_by_id,
+        verified_p1_ids=verified_p1_ids,
+        deadlines=deadlines,
+        action_date=action_date,
+    )
+
+    document_validation = validate_generated_documents(store.case_dir / "drafts", findings)
+    visual_validation = validate_visual_review(store, findings)
+    chain_ok = store.verify_event_chain()
+    integrity = store.integrity_check()
+    if not chain_ok:
+        findings.append(_finding(Severity.CRITICAL, "EVENT_CHAIN_BROKEN", "감사 이벤트 해시 체인이 손상됐습니다."))
+    if integrity != ["ok"]:
+        findings.append(_finding(Severity.CRITICAL, "DATABASE_INTEGRITY", f"SQLite 무결성 오류: {integrity}"))
+
+    critical_or_major = [item for item in findings if item.severity in {Severity.CRITICAL, Severity.MAJOR}]
+    ready = latest_opinion and latest_opinion.get("status") == str(OpinionStatus.READY)
+    passed = not any(item.severity == Severity.CRITICAL for item in findings)
+    release_allowed = bool(passed and not critical_or_major and ready)
+    checks.update(
+        {
+            "case_stage": case["stage"],
+            "documents": len(documents),
+            "evidence": len(evidence),
+            "facts": len(facts),
+            "authorities": len(authorities),
+            "verified_p1": len(verified_p1_ids),
+            "issues": len(issues),
+            "deadlines": len(deadlines),
+            "event_chain": chain_ok,
+            "sqlite_integrity": integrity,
+            "generated_documents": document_validation,
+            "visual_review": visual_validation,
+        }
+    )
+    return AuditReport(
+        audit_id=new_id("audit"),
+        case_id=store.case_id,
+        passed=passed,
+        release_allowed=release_allowed,
+        findings=findings,
+        checks=checks,
+    )
+
+
+def _audit_evidence(
+    findings: list[AuditFinding],
+    evidence: list[dict[str, Any]],
+    document_ids: set[str],
+    document_by_id: dict[str, dict[str, Any]],
+) -> None:
+    """증거-문서 연결·해시·위치 표시를 검사한다."""
     for item in evidence:
         if item["document_id"] not in document_ids:
             findings.append(
@@ -219,6 +300,15 @@ def audit_case(store: CaseStore) -> AuditReport:
                     item["evidence_id"],
                 )
             )
+
+
+def _audit_facts(
+    findings: list[AuditFinding],
+    facts: list[dict[str, Any]],
+    evidence_ids: set[str],
+    as_of_date: date | None,
+) -> None:
+    """확정 사실의 증거 연결과 판단 기준일 이후 사실을 검사한다."""
     for item in facts:
         linked = set(item.get("evidence_ids") or [])
         if item.get("status") == "confirmed" and not linked:
@@ -254,8 +344,14 @@ def audit_case(store: CaseStore) -> AuditReport:
                 )
             )
 
+
+def _audit_authorities(
+    findings: list[AuditFinding],
+    authorities: list[dict[str, Any]],
+    action_date: date | None,
+) -> set[str]:
+    """P1 이중 검증과 부정 검색 한계를 검사하고 검증된 P1 ID를 반환한다."""
     verified_p1_ids: set[str] = set()
-    action_date = _parse_date(case.get("action_date"))
     for item in authorities:
         if item.get("source_tier") == "P1":
             failures = p1_verification_failures(item, action_date=action_date)
@@ -273,7 +369,16 @@ def audit_case(store: CaseStore) -> AuditReport:
                     item["authority_id"],
                 )
             )
+    return verified_p1_ids
 
+
+def _audit_issues(
+    findings: list[AuditFinding],
+    issues: list[dict[str, Any]],
+    authority_ids: set[str],
+    fact_ids: set[str],
+) -> None:
+    """쟁점의 참조 무결성·불리 근거·요건·입증책임을 검사한다."""
     for item in issues:
         referenced = set(item.get("favorable_authority_ids") or []) | set(item.get("adverse_authority_ids") or [])
         missing = referenced - authority_ids
@@ -339,6 +444,14 @@ def audit_case(store: CaseStore) -> AuditReport:
                 )
             )
 
+
+def _audit_deadline_verification(
+    findings: list[AuditFinding],
+    deadlines: list[dict[str, Any]],
+    authority_ids: set[str],
+    verified_p1_ids: set[str],
+) -> None:
+    """기한의 근거 연결·검증 필수항목·재계산 일치를 검사한다."""
     for item in deadlines:
         if item.get("authority_id") not in authority_ids:
             findings.append(
@@ -416,6 +529,13 @@ def audit_case(store: CaseStore) -> AuditReport:
                     )
                 )
 
+
+def _audit_documents(
+    findings: list[AuditFinding],
+    documents: list[dict[str, Any]],
+    store: CaseStore,
+) -> None:
+    """비식별 문서의 잔존 PII·추출 상태·파일 해시·metadata를 검사한다."""
     for document in documents:
         if document.get("residual_pii"):
             findings.append(
@@ -501,12 +621,14 @@ def audit_case(store: CaseStore) -> AuditReport:
                     )
                 )
 
-    action_logs = store.list_payloads("action_logs")
-    mock_hearings = store.list_payloads("mock_hearings")
-    deadline_by_id = {item["deadline_id"]: item for item in deadlines}
-    latest_opinion = opinions[-1] if opinions else None
 
-    today = date.today()
+def _audit_action_logs(
+    findings: list[AuditFinding],
+    action_logs: list[dict[str, Any]],
+    deadline_by_id: dict[str, dict[str, Any]],
+    today: date,
+) -> None:
+    """공식 조치의 증빙 해시와 연결 기한의 도과·임박을 검사한다."""
     for item in action_logs:
         action_id = item["action_id"]
         if not item.get("official_receipt_hash"):
@@ -570,7 +692,14 @@ def audit_case(store: CaseStore) -> AuditReport:
                         )
                     )
 
-    referenced_deadline_ids = {item.get("deadline_id") for item in action_logs if item.get("deadline_id")}
+
+def _audit_unreferenced_deadlines(
+    findings: list[AuditFinding],
+    deadlines: list[dict[str, Any]],
+    referenced_deadline_ids: set[str],
+    today: date,
+) -> None:
+    """조치 기록과 연결되지 않은 기한을 직접 스캔해 도과·임박을 검사한다."""
     for item in deadlines:
         if item["deadline_id"] in referenced_deadline_ids:
             continue
@@ -600,6 +729,15 @@ def audit_case(store: CaseStore) -> AuditReport:
                 )
             )
 
+
+def _audit_mock_hearings(
+    findings: list[AuditFinding],
+    mock_hearings: list[dict[str, Any]],
+    issue_ids: set[str],
+    evidence_ids: set[str],
+    latest_opinion: dict[str, Any] | None,
+) -> None:
+    """모의 심리의 참조 무결성과 제출 가능 판정의 의견 조건을 검사한다."""
     for item in mock_hearings:
         hearing_id = item["hearing_id"]
         referenced_issues = [value for value in str(item.get("issue_id") or "").split(",") if value]
@@ -640,6 +778,16 @@ def audit_case(store: CaseStore) -> AuditReport:
                 )
             )
 
+
+def _audit_record_surface(
+    findings: list[AuditFinding],
+    case: dict[str, Any],
+    facts: list[dict[str, Any]],
+    issues: list[dict[str, Any]],
+    deadlines: list[dict[str, Any]],
+    opinions: list[dict[str, Any]],
+) -> None:
+    """사건 레코드 자유기술 표면을 모아 잔존 PII와 지시문을 검사한다."""
     record_surface = json.dumps(
         {
             "case": {
@@ -687,143 +835,121 @@ def audit_case(store: CaseStore) -> AuditReport:
     if scan_prompt_injection(record_surface):
         findings.append(_finding(Severity.CRITICAL, "RECORD_INSTRUCTION_TEXT", "사건 레코드에 실행 지시 형태의 텍스트가 남아 있습니다."))
 
+
+def _audit_opinion(
+    findings: list[AuditFinding],
+    store: CaseStore,
+    latest_opinion: dict[str, Any] | None,
+    *,
+    fact_ids: set[str],
+    authority_ids: set[str],
+    issue_ids: set[str],
+    fact_by_id: dict[str, dict[str, Any]],
+    verified_p1_ids: set[str],
+    deadlines: list[dict[str, Any]],
+    action_date: date | None,
+) -> None:
+    """최종 의견의 추적 관계와 ready 요건 충족을 검사한다."""
     if latest_opinion is None:
         findings.append(_finding(Severity.CRITICAL, "OPINION_MISSING", "최종 의견이 없습니다."))
-    else:
-        missing_facts = set(latest_opinion.get("fact_ids") or []) - fact_ids
-        missing_authorities = set(latest_opinion.get("authority_ids") or []) - authority_ids
-        missing_issues = set(latest_opinion.get("issue_ids") or []) - issue_ids
-        if missing_facts or missing_authorities or missing_issues:
+        return
+    missing_facts = set(latest_opinion.get("fact_ids") or []) - fact_ids
+    missing_authorities = set(latest_opinion.get("authority_ids") or []) - authority_ids
+    missing_issues = set(latest_opinion.get("issue_ids") or []) - issue_ids
+    if missing_facts or missing_authorities or missing_issues:
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "OPINION_TRACE_BROKEN",
+                "의견의 사실·근거·쟁점 추적 관계가 끊겼습니다.",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    if latest_opinion.get("status") != str(OpinionStatus.READY):
+        return
+    if not action_date:
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "READY_WITHOUT_ACTION_DATE",
+                "ready 의견에는 행위일·처분일 등 적용법 기준일이 필요합니다.",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    if not deadlines:
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "DEADLINE_REVIEW_MISSING",
+                "ready 의견에 기한 검토 레코드가 없습니다.",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    unresolved_facts = [
+        fact_id
+        for fact_id in latest_opinion.get("fact_ids") or []
+        if fact_by_id.get(fact_id, {}).get("status") != "confirmed"
+    ]
+    if unresolved_facts:
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "READY_USES_UNCONFIRMED_FACT",
+                f"ready 의견이 미확정·분쟁 사실을 결론 근거로 사용합니다: {unresolved_facts}",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    used_p1 = set(latest_opinion.get("authority_ids") or []) & verified_p1_ids
+    if not used_p1:
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "READY_WITHOUT_VERIFIED_P1",
+                "ready 의견에 이중 검증된 P1 근거가 없습니다.",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    if not latest_opinion.get("applicable_law_verified"):
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "APPLICABLE_LAW_NOT_VERIFIED",
+                "ready 의견에 행위시법·현행법·부칙 검증 완료 기록이 없습니다.",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    if not latest_opinion.get("adverse_authority_reviewed"):
+        findings.append(
+            _finding(
+                Severity.CRITICAL,
+                "ADVERSE_REVIEW_NOT_VERIFIED",
+                "ready 의견에 불리한 근거와 상대방 최선 반론 검토 완료 기록이 없습니다.",
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
+    for role in ("primary", "independent"):
+        if not _analysis_result_valid(
+            store,
+            latest_opinion.get(f"{role}_analysis_ref"),
+            latest_opinion.get(f"{role}_analysis_sha256"),
+            role,
+        ):
             findings.append(
                 _finding(
                     Severity.CRITICAL,
-                    "OPINION_TRACE_BROKEN",
-                    "의견의 사실·근거·쟁점 추적 관계가 끊겼습니다.",
+                    f"{role.upper()}_ANALYSIS_INVALID",
+                    f"{role} 분석 결과 파일·역할·SHA-256을 검증하지 못했습니다.",
                     "opinion",
                     latest_opinion["opinion_id"],
                 )
             )
-        if latest_opinion.get("status") == str(OpinionStatus.READY):
-            if not action_date:
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "READY_WITHOUT_ACTION_DATE",
-                        "ready 의견에는 행위일·처분일 등 적용법 기준일이 필요합니다.",
-                        "opinion",
-                        latest_opinion["opinion_id"],
-                    )
-                )
-            if not deadlines:
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "DEADLINE_REVIEW_MISSING",
-                        "ready 의견에 기한 검토 레코드가 없습니다.",
-                        "opinion",
-                        latest_opinion["opinion_id"],
-                    )
-                )
-            unresolved_facts = [
-                fact_id
-                for fact_id in latest_opinion.get("fact_ids") or []
-                if fact_by_id.get(fact_id, {}).get("status") != "confirmed"
-            ]
-            if unresolved_facts:
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "READY_USES_UNCONFIRMED_FACT",
-                        f"ready 의견이 미확정·분쟁 사실을 결론 근거로 사용합니다: {unresolved_facts}",
-                        "opinion",
-                        latest_opinion["opinion_id"],
-                    )
-                )
-            used_p1 = set(latest_opinion.get("authority_ids") or []) & verified_p1_ids
-            if not used_p1:
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "READY_WITHOUT_VERIFIED_P1",
-                        "ready 의견에 이중 검증된 P1 근거가 없습니다.",
-                        "opinion",
-                        latest_opinion["opinion_id"],
-                    )
-                )
-            if not latest_opinion.get("applicable_law_verified"):
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "APPLICABLE_LAW_NOT_VERIFIED",
-                        "ready 의견에 행위시법·현행법·부칙 검증 완료 기록이 없습니다.",
-                        "opinion",
-                        latest_opinion["opinion_id"],
-                    )
-                )
-            if not latest_opinion.get("adverse_authority_reviewed"):
-                findings.append(
-                    _finding(
-                        Severity.CRITICAL,
-                        "ADVERSE_REVIEW_NOT_VERIFIED",
-                        "ready 의견에 불리한 근거와 상대방 최선 반론 검토 완료 기록이 없습니다.",
-                        "opinion",
-                        latest_opinion["opinion_id"],
-                    )
-                )
-            for role in ("primary", "independent"):
-                if not _analysis_result_valid(
-                    store,
-                    latest_opinion.get(f"{role}_analysis_ref"),
-                    latest_opinion.get(f"{role}_analysis_sha256"),
-                    role,
-                ):
-                    findings.append(
-                        _finding(
-                            Severity.CRITICAL,
-                            f"{role.upper()}_ANALYSIS_INVALID",
-                            f"{role} 분석 결과 파일·역할·SHA-256을 검증하지 못했습니다.",
-                            "opinion",
-                            latest_opinion["opinion_id"],
-                        )
-                    )
-
-    document_validation = validate_generated_documents(store.case_dir / "drafts", findings)
-    visual_validation = validate_visual_review(store, findings)
-    chain_ok = store.verify_event_chain()
-    integrity = store.integrity_check()
-    if not chain_ok:
-        findings.append(_finding(Severity.CRITICAL, "EVENT_CHAIN_BROKEN", "감사 이벤트 해시 체인이 손상됐습니다."))
-    if integrity != ["ok"]:
-        findings.append(_finding(Severity.CRITICAL, "DATABASE_INTEGRITY", f"SQLite 무결성 오류: {integrity}"))
-
-    critical_or_major = [item for item in findings if item.severity in {Severity.CRITICAL, Severity.MAJOR}]
-    ready = latest_opinion and latest_opinion.get("status") == str(OpinionStatus.READY)
-    passed = not any(item.severity == Severity.CRITICAL for item in findings)
-    release_allowed = bool(passed and not critical_or_major and ready)
-    checks.update(
-        {
-            "case_stage": case["stage"],
-            "documents": len(documents),
-            "evidence": len(evidence),
-            "facts": len(facts),
-            "authorities": len(authorities),
-            "verified_p1": len(verified_p1_ids),
-            "issues": len(issues),
-            "deadlines": len(deadlines),
-            "event_chain": chain_ok,
-            "sqlite_integrity": integrity,
-            "generated_documents": document_validation,
-            "visual_review": visual_validation,
-        }
-    )
-    return AuditReport(
-        audit_id=new_id("audit"),
-        case_id=store.case_id,
-        passed=passed,
-        release_allowed=release_allowed,
-        findings=findings,
-        checks=checks,
-    )
 
 
 def validate_generated_documents(drafts_dir: Path, findings: list[AuditFinding]) -> dict[str, Any]:

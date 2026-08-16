@@ -185,12 +185,19 @@ python -m legal_workbench rehydrate --case 사건ID --source 초안파일 --name
 | `status --case ID` | 사건 상태와 감사 게이트 요약 |
 | `cases` | 작업공간의 사건 목록 |
 | `search --case ID --query 단어` | 문서 본문 전문검색(FTS5) |
+| `search-all --query 단어 [--limit N]` | 전체 사건 문서를 가로지르는 전문검색(사건당 최대 결과 수 지정) |
 | `deadlines --case ID` | 기한 만료일·잔여일(도과/임박/예정) |
 | `events --case ID [--limit N]` | 이벤트 해시 체인 조회(체인 유효성 포함) |
 | `timeline --case ID` | 사실·기한·조치·의견 통합 연표 |
 | `preflight --case ID` | 저장 없는 사전 감사 + 최신 감사 대비 drift + 권장 조치 |
 | `audits --case ID` | 감사 이력과 finding 증감 추적 |
 | `next-action --case ID` | 지금 할 일 요약(도과·임박 기한, CRITICAL, 미확정 사실) |
+| `proof-matrix --case ID` | 쟁점별 요건-입증 행렬 |
+| `answer-map --case ID` | 상대방 주장 대응(인낙·부인·부지) 준비표 |
+| `readiness --case ID` | 공판·절차 준비도 통합 점검표 |
+| `doctor` | 저장소 경로·사건 데이터베이스·이벤트 체인 무결성 환경 진단 |
+| `overview` | 전체 사건 단계·긴급 기한·감사 상태 관리표 요약 |
+| `service forms --type 업무유형` | 업무별 법원 양식 검색 키워드 안내(읽기 전용) |
 
 ### 예시
 
@@ -211,6 +218,12 @@ python -m legal_workbench next-action --case 사건ID
 `timeline` 항목의 `flags`에는 `overdue`, `no-action-log`, `fact-after-as-of-date`,
 의견 상태(`ready` 등)가 붙습니다. `preflight`의 `recommendations`는
 CRITICAL 해결, 감사 저장·갱신 필요 등 다음 행동을 문장으로 제시합니다.
+
+`doctor`는 저장소 경로 규칙(OneDrive 거부 포함), 사건 데이터베이스 존재 여부,
+이벤트 해시 체인 무결성을 한 번에 점검합니다. `overview`는 모든 사건의
+현재 단계, 임박·도과 기한, 최신 감사 상태를 한 장의 관리표로 묶습니다.
+`service forms`는 양식 번호 대신 검색 키워드만 안내하며, 최종 양식은
+대한민국 법원 전자소송 포털 공개 양식모음에서 직접 확인해야 합니다.
 
 ---
 
@@ -266,7 +279,7 @@ python -m legal_workbench consult list
 
 ## 9. 서비스 카탈로그(service)
 
-변호사 업무 전 과정 34종을 사건 기록 기반으로 안내합니다. 도메인을 단정하지 않고
+변호사 업무 전 과정 36종을 사건 기록 기반으로 안내합니다. 도메인을 단정하지 않고
 저장된 사실·쟁점·근거 유무로 직접 적용 가능 여부(`case_fit`)를 판정합니다.
 
 ```powershell
@@ -276,6 +289,7 @@ python -m legal_workbench service plan-all --case ID    # 가능한 전체 묶�
 python -m legal_workbench service guide --case ID --format md           # 기능 안내서
 python -m legal_workbench service draft --case ID --type demand-letter --format md
 python -m legal_workbench service draft-all --case ID --format md       # 전체 초안
+python -m legal_workbench service forms --type civil-complaint          # 법원 양식 검색 키워드
 ```
 
 각 업무는 최소 단계 게이트(예: 내용증명은 `independently_analyzed` 이상)를 가지며,

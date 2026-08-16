@@ -571,7 +571,14 @@ def score_results(
         name: defaultdict(list) for name in bucket_totals
     }
     bucket_counts = {
-        name: {"ready_decisions": 0, "correct": 0, "covered": 0, "runs": 0}
+        name: {
+            "ready_decisions": 0,
+            "correct": 0,
+            "covered": 0,
+            "runs": 0,
+            "conditional_decisions": 0,
+            "conditional_matches": 0,
+        }
         for name in bucket_totals
     }
     results_root = Path(results_path).resolve().parent
@@ -659,6 +666,13 @@ def score_results(
                 for bucket in bucket_names:
                     bucket_counts[bucket]["ready_decisions"] += 1
                     bucket_counts[bucket]["correct"] += int(_answer_matches_expected(answer, expected))
+            elif answer.get("decision_status") == "conditional":
+                # 조건부 결론의 기대값 일치율은 인증 기준에 넣지 않고 관측만 한다.
+                for bucket in bucket_names:
+                    bucket_counts[bucket]["conditional_decisions"] += 1
+                    bucket_counts[bucket]["conditional_matches"] += int(
+                        _answer_matches_expected(answer, expected)
+                    )
     split_metrics: dict[str, dict[str, Any]] = {}
     for bucket in bucket_totals:
         counts = bucket_counts[bucket]
@@ -674,6 +688,21 @@ def score_results(
             "answer_coverage": counts["covered"] / counts["runs"] if counts["runs"] else 0.0,
         }
     metrics = split_metrics["overall"]
+    # conditional_accuracy는 관측 전용 지표다. 인증 저장·재계산 지표(metrics·split_metrics)에
+    # 포함하지 않아 기존 인증 결박을 깨지 않으며, 합격 기준에도 반영하지 않는다.
+    conditional_observation = {
+        bucket: {
+            "conditional_decisions": bucket_counts[bucket]["conditional_decisions"],
+            "conditional_matches": bucket_counts[bucket]["conditional_matches"],
+            "conditional_accuracy": (
+                bucket_counts[bucket]["conditional_matches"]
+                / bucket_counts[bucket]["conditional_decisions"]
+                if bucket_counts[bucket]["conditional_decisions"]
+                else None
+            ),
+        }
+        for bucket in bucket_totals
+    }
     thresholds = manifest["thresholds"]
     failures = []
     exact_zero = (
@@ -703,6 +732,7 @@ def score_results(
     result = {
         "metrics": metrics,
         "split_metrics": split_metrics,
+        "conditional_observation": conditional_observation,
         "thresholds": thresholds,
         "failures": failures,
         "v1_certified": not failures,

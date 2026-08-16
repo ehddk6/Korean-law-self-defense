@@ -662,7 +662,7 @@ def export_case(case_id: str, *, worksets_home: Path | None = None) -> Path:
     from .evaluation import certification_status
 
     evaluation_manifest = Path(
-        os.environ.get("LEGAL_EVALUATION_MANIFEST", str(Path.cwd() / "evaluation" / "manifest.json"))
+        os.environ.get("LEGAL_EVALUATION_MANIFEST", str(Path.cwd() / "evaluation" / "v2" / "manifest.json"))
     )
     certification = certification_status(evaluation_manifest)
     if not certification["v1_certified"]:
