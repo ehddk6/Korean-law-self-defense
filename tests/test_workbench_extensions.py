@@ -40,6 +40,7 @@ def _seed_case_data(
     tmp_path: Path,
     case_id: str,
     *,
+    extra_facts: list[dict[str, object]] | None = None,
     extra_issues: list[dict[str, object]] | None = None,
     deadline_due: str | None = None,
 ) -> CaseStore:
@@ -95,6 +96,17 @@ def _seed_case_data(
         },
         worksets_home=tmp_path,
     )
+    for extra_fact in extra_facts or []:
+        add_fact(
+            case_id,
+            {
+                "fact_id": extra_fact["fact_id"],
+                "text": str(extra_fact["text"]),
+                "status": str(extra_fact.get("status", "unknown")),
+                "evidence_ids": list(extra_fact.get("evidence_ids") or []),
+            },
+            worksets_home=tmp_path,
+        )
     authority_source = tmp_path / "auth-source.txt"
     authority_verification = tmp_path / "auth-verification.txt"
     authority_source.write_text("공식 원문", encoding="utf-8")

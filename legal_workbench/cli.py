@@ -217,6 +217,15 @@ def build_parser() -> argparse.ArgumentParser:
     next_action = subparsers.add_parser("next-action", help="도과·임박 기한과 미확인 사항을 묶은 지금 할 일 요약(읽기 전용)")
     next_action.add_argument("--case", required=True)
 
+    proof = subparsers.add_parser("proof-matrix", help="쟁점별 요건-입증 행렬 조회(읽기 전용)")
+    proof.add_argument("--case", required=True)
+
+    answer = subparsers.add_parser("answer-map", help="상대방 주장 대응(인낙·부인·부지) 준비표 조회(읽기 전용)")
+    answer.add_argument("--case", required=True)
+
+    readiness = subparsers.add_parser("readiness", help="공판·절차 준비도 통합 점검표 조회(읽기 전용)")
+    readiness.add_argument("--case", required=True)
+
     consult = subparsers.add_parser("consult", help="공식 근거 기반 한국법 상담")
     consult_sub = consult.add_subparsers(dest="consult_command", required=True)
     consult_start = consult_sub.add_parser("start", help="비식별 상담 접수와 조사 묶음 생성")
@@ -647,6 +656,17 @@ def dispatch(args: argparse.Namespace) -> Any:
         store = store_for(args.case, worksets)
         store.get_case()
         return next_action_digest(store)
+    if args.command in {"proof-matrix", "answer-map", "readiness"}:
+        from .trial_prep import answer_map, proof_matrix, readiness_report
+
+        store = store_for(args.case, worksets)
+        store.get_case()
+        function = {
+            "proof-matrix": proof_matrix,
+            "answer-map": answer_map,
+            "readiness": readiness_report,
+        }[args.command]
+        return function(store)
     if args.command == "consult":
         if args.consult_command == "start":
             entities = load_json(args.entities) if args.entities else None
