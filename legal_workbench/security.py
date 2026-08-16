@@ -5,6 +5,7 @@ import json
 import os
 import re
 import tempfile
+import unicodedata
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Iterable
@@ -228,6 +229,69 @@ def _next_token(category: str, mapping: dict[str, str]) -> str:
     return f"[{prefix}_{highest + 1:03d}]"
 
 
+def _nfkc_view(text: str) -> tuple[str, list[int]]:
+    """NFKC 정규화 사본과 정규화 위치→원문 위치 대응표를 만든다.
+
+    전각 숫자·호환 문자 같은 동형 변형을 ASCII 기준 패턴이 잡을 수 있게 하되,
+    치환·보고 위치는 항상 원문 기준으로 되돌려 준다.
+    """
+    chars: list[str] = []
+    index_map: list[int] = []
+    for position, char in enumerate(text):
+        for normalized_char in unicodedata.normalize("NFKC", char):
+            chars.append(normalized_char)
+            index_map.append(position)
+    return "".join(chars), index_map
+
+
+def _split_view(text: str) -> tuple[str, list[int]]:
+    """줄 경계에서 조각난 숫자 그룹을 이어 붙인 뷰와 위치 대응표를 만든다.
+
+    `010-123\\n4-5678`처럼 숫자 그룹 한가운데가 줄바꿈으로 끊긴 우회만 잡도록,
+    앞뒤가 모두 숫자인 줄바꿈만 접는다. 그 외 줄바꿈은 공백으로 보존해 서로
+    무관한 인접 줄의 숫자가 결합하지 않게 하고, 위치 대응표로 매치를 원문
+    스팬으로 되돌린다.
+    """
+    chars: list[str] = []
+    index_map: list[int] = []
+    previous_digit = False
+    for position, char in enumerate(text):
+        if char in {"\n", "\r"}:
+            next_char = text[position + 1] if position + 1 < len(text) else ""
+            if previous_digit and next_char.isdigit():
+                continue
+            chars.append(" ")
+            index_map.append(position)
+            previous_digit = False
+            continue
+        chars.append(char)
+        index_map.append(position)
+        previous_digit = char.isdigit()
+    return "".join(chars), index_map
+
+
+def _residual_matches(view: str) -> list[tuple[str, str, int, int]]:
+    """주어진 텍스트 뷰에서 잔존 PII 패턴 매치를 (범주, 규칙, 시작, 끝)로 반환한다."""
+    date_exclusion = re.compile(
+        rf"(?:19|20)\d{{2}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{1,2}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{1,2}}"
+    )
+    matches: list[tuple[str, str, int, int]] = []
+    for category, rule, pattern in RESIDUAL_PII_PATTERNS:
+        for match in pattern.finditer(view):
+            if category == "ACCOUNT" and date_exclusion.fullmatch(match.group(0).strip()):
+                continue
+            if category == "ACCOUNT":
+                line_start = view.rfind("\n", 0, match.start()) + 1
+                prefix = view[line_start : match.start()]
+                suffix = view[match.end() : match.end() + 1]
+                if re.search(r"https?://\S*$", prefix) or re.search(r"[A-Za-z_]$", prefix) or re.match(
+                    r"[A-Za-z_]", suffix
+                ):
+                    continue
+            matches.append((category, rule, match.start(), match.end()))
+    return matches
+
+
 def redact_text(
     text: str,
     *,
@@ -242,13 +306,16 @@ def redact_text(
             for match in re.finditer(re.escape(value), text):
                 token = mapping.setdefault(value, _next_token(category, mapping))
                 replacements.append((match.start(), match.end(), token, category, "custom-entity"))
+    normalized, index_map = _nfkc_view(text)
     for category, rule, pattern in PII_PATTERNS:
-        for match in pattern.finditer(text):
+        for match in pattern.finditer(normalized):
             value = match.group(0)
             if category == "ACCOUNT" and re.fullmatch(r"(?:19|20)\d{2}-\d{2}-\d{2}", value.strip()):
                 continue
-            token = mapping.setdefault(value, _next_token(category, mapping))
-            replacements.append((match.start(), match.end(), token, category, rule))
+            start = index_map[match.start()]
+            end = index_map[match.end() - 1] + 1
+            token = mapping.setdefault(text[start:end], _next_token(category, mapping))
+            replacements.append((start, end, token, category, rule))
     replacements.sort(key=lambda item: (item[0], -(item[1] - item[0])))
     accepted: list[tuple[int, int, str, str, str]] = []
     last_end = -1
@@ -269,24 +336,45 @@ def redact_text(
 
 
 def scan_residual_pii(text: str) -> list[SecurityFinding]:
+    # 스캔은 원문이 아니라 NFKC 정규화 사본에서 실행해 전각 숫자·호환 문자
+    # 동형 변형을 잡고, 위치는 대응표로 원문에 되돌려 보고한다.
     findings: list[SecurityFinding] = []
-    date_exclusion = re.compile(
-        rf"(?:19|20)\d{{2}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{1,2}}\s*{_RESIDUAL_SEPARATORS}\s*\d{{1,2}}"
-    )
-    for category, rule, pattern in RESIDUAL_PII_PATTERNS:
-        for match in pattern.finditer(text):
-            if category == "ACCOUNT" and date_exclusion.fullmatch(match.group(0).strip()):
+    normalized, index_map = _nfkc_view(text)
+    for category, rule, start, end in _residual_matches(normalized):
+        original_start = index_map[start]
+        original_end = index_map[end - 1] + 1
+        findings.append(
+            SecurityFinding(category, "<redacted-in-report>", original_start, original_end, rule)
+        )
+    if "\n" in text:
+        # 줄 경계에서 조각난 split PII를 재스캔한다. 앞뒤가 숫자인 줄바꿈만
+        # 접은 뷰에서 매칭하므로 `010-123\n4-5678` 같은 그룹 내부 분할도 잡힌다.
+        # ACCOUNT 등 느슨한 범주는 우연한 숫자 연결 오탐이 커서 제외한다.
+        joined, joined_map = _split_view(text)
+        split_categories = {"RESIDENT_ID", "PHONE", "EMAIL"}
+        for category, rule, start, end in _residual_matches(joined):
+            if category not in split_categories:
                 continue
-            if category == "ACCOUNT":
-                line_start = text.rfind("\n", 0, match.start()) + 1
-                prefix = text[line_start : match.start()]
-                suffix = text[match.end() : match.end() + 1]
-                if re.search(r"https?://\S*$", prefix) or re.search(r"[A-Za-z_]$", prefix) or re.match(
-                    r"[A-Za-z_]", suffix
-                ):
-                    continue
+            original_start = joined_map[start]
+            original_end = joined_map[end - 1] + 1
+            if "\n" not in text[original_start:original_end]:
+                continue
+            # 같은 범주의 기존 finding과 겹칠 때만 중복으로 본다. 느슨한 ACCOUNT
+            # 부분 매치가 더 강한 RESIDENT_ID·PHONE 판정을 억제하면 안 된다.
+            if any(
+                item.category == category
+                and not (original_end <= item.start or item.end <= original_start)
+                for item in findings
+            ):
+                continue
             findings.append(
-                SecurityFinding(category, "<redacted-in-report>", match.start(), match.end(), rule)
+                SecurityFinding(
+                    category,
+                    "<redacted-in-report>",
+                    original_start,
+                    original_end,
+                    f"{rule}-split-across-lines",
+                )
             )
     return findings
 

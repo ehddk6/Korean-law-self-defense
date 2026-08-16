@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import calendar
 import json
+import re
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Callable
@@ -10,7 +11,7 @@ from urllib.parse import urlparse
 from .documents import DocumentError, extract_document, validate_docx, validate_hwpx, validate_pdf
 from .models import AuditFinding, AuditReport, OpinionStatus, Severity, new_id
 from .security import scan_prompt_injection, scan_residual_pii, sha256_file, sha256_text
-from .storage import CaseStore
+from .storage import CaseStore, canonical_json
 
 
 P1_HOST_SUFFIXES = (
@@ -75,6 +76,10 @@ def p1_verification_failures(
     if item.get("case_number") or item.get("court"):
         if not (item.get("case_number") and item.get("court") and item.get("decision_date")):
             failures.append(("DECISION_METADATA_INCOMPLETE", "판결·결정 P1에 사건번호·기관·선고일이 모두 필요합니다."))
+        elif not _parse_date(item.get("decision_date")):
+            failures.append(
+                ("DECISION_DATE_INVALID", "판결·결정 P1의 선고일이 ISO 날짜(YYYY-MM-DD)로 해석되지 않습니다.")
+            )
     elif not item.get("effective_from"):
         failures.append(("LAW_EFFECTIVE_DATE_MISSING", "법령 P1에 시행일 또는 적용 시작일이 없습니다."))
     if action_date and item.get("effective_from"):
@@ -95,6 +100,25 @@ def authority_is_verified_p1(
     if item.get("source_tier") != "P1":
         return False
     return not p1_verification_failures(item, action_date=action_date, files_check=files_check)
+
+
+# release 스냅샷이 지문을 만들 기록 테이블과 그 ID 필드.
+_RECORD_TABLE_ID_FIELDS = {
+    "evidence": "evidence_id",
+    "facts": "fact_id",
+    "authorities": "authority_id",
+    "issues": "issue_id",
+    "deadlines": "deadline_id",
+    "opinions": "opinion_id",
+    "virtual_trials": "trial_id",
+    "pleading_strategies": "strategy_id",
+    "clarifications": "clarification_id",
+    "quantums": "quantum_id",
+    "action_logs": "action_id",
+    "mock_hearings": "hearing_id",
+    "evidence_checklists": "checklist_id",
+    "adversarial_briefs": "brief_id",
+}
 
 
 def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
@@ -157,11 +181,26 @@ def build_release_snapshot(store: CaseStore) -> dict[str, Any]:
                 }
             )
     material = {"case": case, "documents": store.list_documents(), "records": records, "files": files}
+    # 기록 단위 지문은 기존 material에서 파생되는 표시용 목록이라 전체 해시에
+    # 영향을 주지 않으며, preflight drift가 어떤 기록이 바뀌었는지 항목화하는 데
+    # 사용된다.
+    record_fingerprints: list[dict[str, Any]] = []
+    for table, id_field in _RECORD_TABLE_ID_FIELDS.items():
+        for item in records.get(table) or []:
+            record_fingerprints.append(
+                {
+                    "table": table,
+                    "record_id": str(item.get(id_field) or ""),
+                    "sha256": sha256_text(canonical_json(item)),
+                }
+            )
+    record_fingerprints.sort(key=lambda item: (item["table"], item["record_id"]))
     return {
         "format": "legal-workbench-release-snapshot-v1",
         "sha256": sha256_text(json.dumps(material, ensure_ascii=False, sort_keys=True, separators=(",", ":"))),
         "file_count": len(files),
         "files": files,
+        "records": record_fingerprints,
     }
 
 
@@ -194,7 +233,7 @@ def audit_case(store: CaseStore) -> AuditReport:
     _audit_evidence(findings, evidence, document_ids, document_by_id)
     _audit_facts(findings, facts, evidence_ids, as_of_date)
     verified_p1_ids = _audit_authorities(findings, authorities, action_date)
-    _audit_issues(findings, issues, authority_ids, fact_ids)
+    _audit_issues(findings, issues, authority_ids, fact_ids, fact_by_id)
 
     _audit_deadline_verification(findings, deadlines, authority_ids, verified_p1_ids)
 
@@ -222,6 +261,16 @@ def audit_case(store: CaseStore) -> AuditReport:
     )
 
     document_validation = validate_generated_documents(store.case_dir / "drafts", findings)
+    known_record_ids = (
+        set(document_ids)
+        | evidence_ids
+        | fact_ids
+        | authority_ids
+        | issue_ids
+        | {item["deadline_id"] for item in deadlines}
+        | {item["opinion_id"] for item in opinions}
+    )
+    _audit_draft_provenance(findings, store.case_dir / "drafts", known_record_ids)
     visual_validation = validate_visual_review(store, findings)
     chain_ok = store.verify_event_chain()
     integrity = store.integrity_check()
@@ -377,8 +426,9 @@ def _audit_issues(
     issues: list[dict[str, Any]],
     authority_ids: set[str],
     fact_ids: set[str],
+    fact_by_id: dict[str, dict[str, Any]],
 ) -> None:
-    """쟁점의 참조 무결성·불리 근거·요건·입증책임을 검사한다."""
+    """쟁점의 참조 무결성·불리 근거·요건·입증책임·사실 충돌을 검사한다."""
     for item in issues:
         referenced = set(item.get("favorable_authority_ids") or []) | set(item.get("adverse_authority_ids") or [])
         missing = referenced - authority_ids
@@ -439,6 +489,35 @@ def _audit_issues(
                     Severity.MAJOR,
                     "ISSUE_CRITICAL_FACTS_MISSING",
                     "쟁점에 결론을 좌우할 미확인 사실이 남아 있습니다.",
+                    "issue",
+                    item["issue_id"],
+                )
+            )
+        linked_fact_statuses = {
+            str(fact_by_id[fact_id].get("status") or "")
+            for fact_id in item.get("fact_ids") or []
+            if fact_id in fact_by_id
+        }
+        if "confirmed" in linked_fact_statuses and (
+            "opponent_allegation" in linked_fact_statuses or "disputed" in linked_fact_statuses
+        ):
+            findings.append(
+                _finding(
+                    Severity.MINOR,
+                    "ISSUE_FACT_CONTESTED",
+                    "쟁점에 확정 사실과 상대방 주장·분쟁 사실이 함께 걸려 있습니다. "
+                    "충돌 지점을 answer-map과 반대 신문 준비에서 명시적으로 다뤄야 합니다.",
+                    "issue",
+                    item["issue_id"],
+                )
+            )
+        overlap = set(item.get("favorable_authority_ids") or []) & set(item.get("adverse_authority_ids") or [])
+        if overlap:
+            findings.append(
+                _finding(
+                    Severity.MINOR,
+                    "AUTHORITY_BOTH_SIDES",
+                    f"동일 근거가 유리·불리 양쪽에 동시에 기록되어 있습니다: {sorted(overlap)}",
                     "issue",
                     item["issue_id"],
                 )
@@ -868,6 +947,27 @@ def _audit_opinion(
         )
     if latest_opinion.get("status") != str(OpinionStatus.READY):
         return
+    # 구조화 전제({text, resolved}) 중 미해소 항목이 ready 의견에 남아 있으면
+    # "완료처럼 보이는 판단" 위험 신호로 알린다. 기존 문자열 전제는 하위 호환을
+    # 위해 대상에서 제외한다.
+    open_assumptions = [
+        item
+        for item in latest_opinion.get("assumptions") or []
+        if isinstance(item, dict)
+        and str(item.get("text") or "").strip()
+        and item.get("resolved") is not True
+    ]
+    if open_assumptions:
+        findings.append(
+            _finding(
+                Severity.MINOR,
+                "OPINION_OPEN_ASSUMPTIONS",
+                f"ready 의견에 미해소 전제 {len(open_assumptions)}건이 남아 있습니다: "
+                + "; ".join(str(item.get("text")) for item in open_assumptions[:3]),
+                "opinion",
+                latest_opinion["opinion_id"],
+            )
+        )
     if not action_date:
         findings.append(
             _finding(
@@ -948,6 +1048,42 @@ def _audit_opinion(
                     f"{role} 분석 결과 파일·역할·SHA-256을 검증하지 못했습니다.",
                     "opinion",
                     latest_opinion["opinion_id"],
+                )
+            )
+
+
+# 초안 본문에서 사건 기록 ID 토큰을 추출해 역추적 감사에 사용한다.
+# \b는 유니코드 단어 문자 기준이라 한글 조사와 붙은 ID(`증거 ev_abcd…에`)는
+# 경계가 없어 놓친다. ASCII 식별자 문자 기준으로만 경계를 판정한다.
+_RECORD_ID_TOKEN = re.compile(
+    r"(?<![0-9A-Za-z_])(?:fact|ev|auth|issue|deadline|doc|opinion|act)_[0-9a-f]{16}(?![0-9A-Za-z_])"
+)
+
+
+def _audit_draft_provenance(
+    findings: list[AuditFinding],
+    drafts_dir: Path,
+    known_record_ids: set[str],
+) -> None:
+    """초안 마크다운에 적힌 기록 ID가 실제 사건 기록으로 역추적되는지 검사한다."""
+    if not drafts_dir.exists():
+        return
+    for path in sorted(drafts_dir.iterdir()):
+        if not path.is_file() or path.suffix.lower() != ".md":
+            continue
+        try:
+            body = path.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            continue
+        unknown = sorted(set(_RECORD_ID_TOKEN.findall(body)) - known_record_ids)
+        for record_id in unknown:
+            findings.append(
+                _finding(
+                    Severity.MAJOR,
+                    "DRAFT_UNKNOWN_RECORD_ID",
+                    f"초안이 존재하지 않는 사건 기록 ID를 참조합니다: {record_id}",
+                    "document",
+                    path.name,
                 )
             )
 
@@ -1193,6 +1329,29 @@ def case_timeline(store: CaseStore) -> list[dict[str, Any]]:
                 "flags": [],
             }
         )
+    # 분석 결과 수입도 판단 형성 과정의 일부라 연표에 포함한다.
+    bundles_dir = store.case_dir / "bundles"
+    if bundles_dir.exists():
+        for path in sorted(bundles_dir.glob("analysis-*-result.json")):
+            try:
+                wrapper = json.loads(path.read_text(encoding="utf-8"))
+            except (ValueError, OSError):
+                continue
+            if wrapper.get("format") != "legal-workbench-analysis-result-v1":
+                continue
+            occurred = _parse_date(str(wrapper.get("completed_at") or "")[:10])
+            if not occurred:
+                continue
+            role = str(wrapper.get("role") or "").replace("-analysis-result", "") or "unknown"
+            entries.append(
+                {
+                    "date": occurred.isoformat(),
+                    "kind": "analysis",
+                    "record_id": path.name,
+                    "title": f"{role} 분석 결과 수입",
+                    "flags": [role],
+                }
+            )
     for item in store.list_payloads("opinions"):
         occurred = _parse_date(str(item.get("created_at") or "")[:10])
         if not occurred:
@@ -1252,17 +1411,29 @@ def next_action_digest(store: CaseStore) -> dict[str, Any]:
     latest = store.latest_audit()
     latest_summary: dict[str, Any] | None = None
     if latest is not None:
-        critical_codes = sorted(
+        critical_findings = [
+            item
+            for item in latest.get("findings") or []
+            if item.get("code") and str(item.get("severity") or "").lower() == "critical"
+        ]
+        explained = [
             {
-                str(item.get("code"))
-                for item in latest.get("findings") or []
-                if item.get("code") and str(item.get("severity") or "").lower() == "critical"
+                "code": str(item.get("code")),
+                "message": item.get("message"),
+                "record_type": item.get("record_type"),
+                "record_id": item.get("record_id"),
+                "guidance": _CRITICAL_ACTION_GUIDANCE.get(
+                    str(item.get("code")),
+                    "감사 메시지를 확인해 해당 기록을 바로잡은 뒤 audit를 다시 실행합니다.",
+                ),
             }
-        )
+            for item in sorted(critical_findings, key=lambda item: (str(item.get("code")), str(item.get("record_id") or "")))
+        ]
         latest_summary = {
             "audit_id": latest.get("audit_id"),
             "release_allowed": latest.get("release_allowed"),
-            "critical_codes": critical_codes,
+            "critical_codes": sorted({str(item["code"]) for item in explained}),
+            "critical_findings": explained,
         }
     opinions = store.list_payloads("opinions")
     latest_opinion = opinions[-1] if opinions else None
@@ -1290,6 +1461,36 @@ def next_action_digest(store: CaseStore) -> dict[str, Any]:
         "unconfirmed_facts": unconfirmed_facts,
         "missing_facts": missing_facts,
     }
+
+
+# CRITICAL 감사 코드별 다음 행동 안내. next-action이 코드 나열에 그치지 않고
+# "왜 이 행동을 해야 하는지"까지 설명하도록 정적 매핑으로 유지한다.
+_CRITICAL_ACTION_GUIDANCE: dict[str, str] = {
+    "EVIDENCE_DOCUMENT_MISSING": "증거가 가리키는 문서가 없습니다. 해당 문서를 ingest로 다시 등록하거나 증거를 그 문서에 연결합니다.",
+    "EVIDENCE_HASH_MISMATCH": "증거 원본 해시가 문서와 다릅니다. 원본을 다시 ingest해 해시를 맞추기 전까지 이 증거를 인용하지 않습니다.",
+    "EVIDENCE_LOCATION_MISSING": "증거에 페이지·문단 위치를 추가해 서면에서 원문을 바로 찾아볼 수 있게 합니다.",
+    "CONFIRMED_FACT_WITHOUT_EVIDENCE": "확정 사실에 증거 ID를 연결하거나, 증거가 없다면 상태를 inferred·unknown으로 낮춥니다.",
+    "FACT_EVIDENCE_MISSING": "사실이 참조하는 증거 ID가 존재하지 않습니다. 오타면 고치고 없으면 증거를 먼저 등록합니다.",
+    "ISSUE_AUTHORITY_MISSING": "쟁점이 참조하는 근거 ID가 없습니다. 근거를 먼저 등록하거나 참조를 제거합니다.",
+    "ISSUE_FACT_MISSING": "쟁점이 참조하는 사실 ID가 없습니다. 사실을 먼저 등록하거나 참조를 제거합니다.",
+    "P1_NON_OFFICIAL_URL": "공식 원문 URL(law.go.kr·scourt.go.kr·ccourt.go.kr 등)을 찾아 근거를 다시 등록합니다.",
+    "P1_NOT_DUAL_VERIFIED": "서로 다른 두 번째 공식 경로에서 원문을 재검증하고 검증 시각·URL을 기록합니다.",
+    "P1_INVALID_VERIFICATION_URL": "재검증 URL은 원문과 다른 공식 경로여야 합니다. 다른 공식 사이트의 동일 원문으로 교체합니다.",
+    "P1_TEXT_HASH_UNVERIFIED": "원문·재검증 원문 파일을 저장하고 SHA-256을 기록에 채웁니다.",
+    "P1_MCP_VERIFICATION_MISSING": "고정 버전 한국법 MCP로 조회·검증한 기록을 근거에 추가합니다.",
+    "DECISION_METADATA_INCOMPLETE": "판결 근거에 사건번호·기관·선고일을 모두 채웁니다.",
+    "DECISION_DATE_INVALID": "선고일을 ISO 날짜(YYYY-MM-DD) 형식으로 바로잡습니다.",
+    "LAW_EFFECTIVE_DATE_MISSING": "법령 근거에 시행일을 채워 행위시법 검사가 가능하게 합니다.",
+    "APPLICABLE_LAW_DATE_MISMATCH": "이 근거의 시행기간이 행위일을 덮지 못합니다. 행위 당시 시행 법령을 다시 조사합니다.",
+    "EVENT_CHAIN_BROKEN": "감사 이벤트 체인이 손상됐습니다. 저장소를 직접 수정하지 말고 사건을 새로 접수해 기록을 옮깁니다.",
+    "DATABASE_INTEGRITY": "SQLite 무결성 오류입니다. 백업에서 복원하거나 사건을 새로 접수합니다.",
+    "GENERATED_DOCUMENT_PII": "산출 문서에 개인정보 패턴이 남았습니다. 원 기록의 비식별을 바로잡고 초안을 다시 생성합니다.",
+    "GENERATED_DOCUMENT_INSTRUCTION_TEXT": "산출 문서에 실행 지시 형태 텍스트가 남았습니다. 출처 기록을 점검하고 초안을 다시 생성합니다.",
+    "GENERATED_DOCUMENT_INVALID": "산출 문서 형식이 깨졌습니다. 초안을 다시 생성하고 렌더 검토를 다시 기록합니다.",
+    "DEADLINE_OVERDUE": "기한이 이미 지났습니다. 추완·추가 접수 등 구제 수단이 있는지 즉시 확인하고, 없다면 그 영향(실권·지연이자 등)을 기록에 남깁니다.",
+    "DEADLINE_CALCULATION_MISMATCH": "기한 계산이 검증 기록과 다릅니다. 기산일·기간·공휴일 보정을 공식 근거로 다시 계산해 기록을 일치시킵니다.",
+    "OPINION_MISSING": "최종 의견이 없습니다. primary·independent 분석을 수입하고 이중 검증 요건을 갖춘 의견을 등록합니다.",
+}
 
 
 def _analysis_result_valid(store: CaseStore, value: Any, expected_hash: Any, role: str) -> bool:
