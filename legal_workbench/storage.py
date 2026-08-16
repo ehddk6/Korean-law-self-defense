@@ -591,6 +591,51 @@ class CaseStore:
             )
             self._append_event(conn, f"{table}_added", {id_column: record_id})
 
+    def update_payload(
+        self,
+        table: str,
+        id_column: str,
+        record_id: str,
+        payload: dict[str, Any],
+    ) -> None:
+        """기존 payload 레코드를 같은 ID로 갱신하고 감사 이벤트를 남긴다.
+
+        삽입이 아니라 갱신이므로 이벤트 체인에는 `{table}_updated`로 기록되어
+        "무엇이 언제 바뀌었는지"를 감사할 수 있다. 전제 해소처럼 레코드 상태를
+        결정론적으로 바꾸는 명령에서 사용한다.
+        """
+        allowed = {
+            ("evidence", "evidence_id"),
+            ("facts", "fact_id"),
+            ("authorities", "authority_id"),
+            ("issues", "issue_id"),
+            ("deadlines", "deadline_id"),
+            ("opinions", "opinion_id"),
+            ("virtual_trials", "trial_id"),
+            ("pleading_strategies", "strategy_id"),
+            ("clarifications", "clarification_id"),
+            ("quantums", "quantum_id"),
+            ("action_logs", "action_id"),
+            ("mock_hearings", "hearing_id"),
+            ("evidence_checklists", "checklist_id"),
+            ("adversarial_briefs", "brief_id"),
+        }
+        if (table, id_column) not in allowed:
+            raise ValueError("허용되지 않은 payload 테이블입니다.")
+        record_id = validate_safe_identifier(record_id, field=id_column)
+        with self.connect() as conn:
+            cursor = conn.execute(
+                f"SELECT 1 FROM {table} WHERE {id_column}=? AND case_id=?",
+                (record_id, self.case_id),
+            )
+            if cursor.fetchone() is None:
+                raise ValueError(f"갱신 대상 레코드가 없습니다: {table}/{record_id}")
+            conn.execute(
+                f"UPDATE {table} SET payload_json=? WHERE {id_column}=? AND case_id=?",
+                (canonical_json(payload), record_id, self.case_id),
+            )
+            self._append_event(conn, f"{table}_updated", {id_column: record_id})
+
     def _append_event(self, conn: sqlite3.Connection, event_type: str, payload: dict[str, Any]) -> None:
         row = conn.execute(
             "SELECT event_hash FROM events WHERE case_id=? ORDER BY sequence DESC LIMIT 1",

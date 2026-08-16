@@ -27,7 +27,15 @@ def build_pleading_strategy(case_id: str, worksets_home: Path | None = None) -> 
         remedies = [str(item) for item in (issue.get("remedies") or []) if str(item).strip()]
         favorable = issue.get("favorable_authority_ids") or []
         legal_basis = _legal_basis_for(issue, authority_by_id)
-        required_facts = [f["text"] for f in facts if f["fact_id"] in (issue.get("fact_ids") or [])]
+        linked_fact_ids = sorted(
+            fact_id for fact_id in (issue.get("fact_ids") or []) if fact_id in fact_by_id
+        )
+        required_facts = [fact_by_id[fact_id]["text"] for fact_id in linked_fact_ids]
+        # 초안·감사에서 서면 노드를 사건 기록으로 역추적할 수 있도록
+        # 근거가 된 사실·근거 ID를 노드에 함께 보존한다.
+        authority_ids = sorted(
+            authority_id for authority_id in favorable if authority_id in authority_by_id
+        )
         score = _evidence_score_for(issue, fact_by_id, evidence_by_id)
         if not remedies:
             remedies = ["구제수단 확인 필요"]
@@ -38,6 +46,8 @@ def build_pleading_strategy(case_id: str, worksets_home: Path | None = None) -> 
                     legal_basis=f"{remedy} - {legal_basis}" if legal_basis else f"{remedy} - 법적 근거 확인 필요",
                     required_facts=required_facts,
                     matched_evidence_score=score,
+                    fact_ids=linked_fact_ids,
+                    authority_ids=authority_ids,
                 )
             )
 

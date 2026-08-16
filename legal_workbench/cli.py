@@ -67,6 +67,7 @@ from .workflow import (
     import_visual_review,
     intake_case,
     mapping_path_for,
+    resolve_opinion_assumption,
     run_audit,
     store_for,
 )
@@ -173,6 +174,15 @@ def build_parser() -> argparse.ArgumentParser:
     log_action.add_argument("--receipt-hash", help="공식 영수증·접수번호의 SHA-256")
     log_action.add_argument("--deadline-id", help="관련 기한 레코드 ID")
     log_action.add_argument("--notes")
+
+    resolve_assumption = subparsers.add_parser(
+        "resolve-assumption", help="의견 전제 하나를 해소·미해소 상태로 갱신(결정론적)"
+    )
+    resolve_assumption.add_argument("--case", required=True)
+    resolve_assumption.add_argument("--opinion", required=True, help="갱신할 의견 레코드 ID")
+    resolve_assumption.add_argument("--index", type=int, required=True, help="전제 인덱스(0부터)")
+    resolve_assumption.add_argument("--unresolved", action="store_true", help="해소 취소(미해소로 되돌림)")
+    resolve_assumption.add_argument("--note", help="해소 근거·확인 결과 메모")
 
     evidence_checklist = subparsers.add_parser(
         "evidence-checklist", help="쟁점별 필요한 증거와 위법성 경고 체크리스트 생성"
@@ -515,6 +525,15 @@ def dispatch(args: argparse.Namespace) -> Any:
             notes=args.notes,
             worksets_home=worksets,
         )
+    if args.command == "resolve-assumption":
+        return resolve_opinion_assumption(
+            args.case,
+            args.opinion,
+            args.index,
+            resolved=not args.unresolved,
+            note=args.note,
+            worksets_home=worksets,
+        )
     if args.command == "evidence-checklist":
         from .evidence_checklist import build_evidence_checklist
 
@@ -644,6 +663,7 @@ def dispatch(args: argparse.Namespace) -> Any:
             "latest_audit_id": (latest or {}).get("audit_id"),
             "snapshot_match": bool(latest and latest_snapshot.get("sha256") == snapshot["sha256"]),
             "files": [],
+            "records": [],
         }
         if latest and not drift["snapshot_match"]:
             previous_files = {
@@ -661,6 +681,28 @@ def dispatch(args: argparse.Namespace) -> Any:
                     continue
                 change = "added" if old is None else ("removed" if new is None else "changed")
                 drift["files"].append({"kind": key[0], "name": key[1], "change": change})
+            # 기록 테이블 변경도 항목화한다. 이전 감사 스냅샷에 기록 지문 필드가
+            # 없는 구버전이면 대조 기준이 없으므로 목록을 비워 둔다(전체를
+            # added로 오인하지 않도록).
+            if "records" in latest_snapshot:
+                previous_records = {
+                    (item.get("table"), item.get("record_id")): item.get("sha256")
+                    for item in latest_snapshot.get("records") or []
+                }
+                current_records = {
+                    (item["table"], item["record_id"]): item["sha256"]
+                    for item in snapshot.get("records") or []
+                }
+                for key in sorted(
+                    set(previous_records) | set(current_records),
+                    key=lambda item: (str(item[0]), str(item[1])),
+                ):
+                    old = previous_records.get(key)
+                    new = current_records.get(key)
+                    if old == new:
+                        continue
+                    change = "added" if old is None else ("removed" if new is None else "changed")
+                    drift["records"].append({"table": key[0], "record_id": key[1], "change": change})
         payload["drift"] = drift
         recommendations: list[str] = []
         critical_codes = sorted(
@@ -673,7 +715,18 @@ def dispatch(args: argparse.Namespace) -> Any:
         if drift["latest_audit_id"] is None:
             recommendations.append("저장된 감사가 없습니다. 서면 작성 완료 후 'legal audit'으로 감사를 저장하십시오.")
         elif not drift["snapshot_match"]:
-            recommendations.append("마지막 감사 이후 기록이 변경됐습니다. 배포 전에 'legal audit'으로 감사를 갱신하십시오.")
+            changed_records = drift["records"]
+            if changed_records:
+                record_summary = ", ".join(
+                    f"{item['table']}/{item['record_id']}({item['change']})" for item in changed_records[:8]
+                )
+                more = f" 외 {len(changed_records) - 8}건" if len(changed_records) > 8 else ""
+                recommendations.append(
+                    f"마지막 감사 이후 기록 {len(changed_records)}건이 변경됐습니다: {record_summary}{more}. "
+                    "배포 전에 'legal audit'으로 감사를 갱신하십시오."
+                )
+            else:
+                recommendations.append("마지막 감사 이후 기록이 변경됐습니다. 배포 전에 'legal audit'으로 감사를 갱신하십시오.")
         elif payload.get("release_allowed"):
             recommendations.append("배포 게이트를 통과한 최신 감사와 현재 기록이 일치합니다.")
         payload["recommendations"] = recommendations

@@ -227,6 +227,7 @@ def add_fact(case_id: str, payload: dict[str, Any], *, worksets_home: Path | Non
         occurred_at=payload.get("occurred_at"),
         actor_token=payload.get("actor_token"),
         confidence=str(payload.get("confidence", "unknown")),
+        covers_elements=[str(item) for item in (payload.get("covers_elements") or []) if str(item).strip()],
     )
     store.add_fact(record)
     return record
@@ -502,6 +503,29 @@ def import_analysis_result(
     return {"path": str(destination), "sha256": sha256_file(destination)}
 
 
+def normalize_assumption(item: Any) -> dict[str, Any]:
+    """전제 항목을 {text, resolved, resolution_note} 구조로 정규화한다.
+
+    기존 자유 텍스트 문자열도 그대로 받으므로 하위 호환이 유지되고,
+    해소 여부 추적이 필요한 전제는 dict로 전달하면 된다.
+    """
+    if isinstance(item, dict):
+        text = str(item.get("text") or "").strip()
+        return {
+            "text": text,
+            "resolved": item.get("resolved") is True,
+            "resolution_note": str(item.get("resolution_note") or "").strip() or None,
+        }
+    return {"text": str(item).strip(), "resolved": False, "resolution_note": None}
+
+
+def assumption_text(item: Any) -> str:
+    """문자열·구조화 전제 항목 모두에서 표시용 텍스트만 추출한다."""
+    if isinstance(item, dict):
+        return str(item.get("text") or "")
+    return str(item)
+
+
 def import_opinion(case_id: str, payload: dict[str, Any], *, worksets_home: Path | None = None) -> OpinionRecord:
     store = store_for(case_id, worksets_home)
     case = store.get_case()
@@ -516,7 +540,11 @@ def import_opinion(case_id: str, payload: dict[str, Any], *, worksets_home: Path
         opinion_id=payload.get("opinion_id") or new_id("opinion"),
         status=status,
         conclusion=str(payload.get("conclusion") or "공식 근거 또는 핵심 사실 부족으로 판단 보류"),
-        assumptions=list(payload.get("assumptions") or []),
+        assumptions=[
+            normalized
+            for normalized in (normalize_assumption(item) for item in (payload.get("assumptions") or []))
+            if normalized["text"]
+        ],
         favorable_scenario=str(payload.get("favorable_scenario") or "확인 필요"),
         contested_scenario=str(payload.get("contested_scenario") or "확인 필요"),
         adverse_scenario=str(payload.get("adverse_scenario") or "확인 필요"),
@@ -539,6 +567,55 @@ def import_opinion(case_id: str, payload: dict[str, Any], *, worksets_home: Path
     store.add_opinion(record)
     store.transition(CaseStage.INDEPENDENTLY_ANALYZED, reason="1차 분석과 독립 재분석 결과 가져오기")
     return record
+
+
+def resolve_opinion_assumption(
+    case_id: str,
+    opinion_id: str,
+    index: int,
+    *,
+    resolved: bool = True,
+    note: str | None = None,
+    worksets_home: Path | None = None,
+) -> dict[str, Any]:
+    """의견의 전제 하나를 해소 상태로 갱신한다.
+
+    미해소 전제가 ready 의견에 남으면 감사가 OPINION_OPEN_ASSUMPTIONS로
+    알리므로, "무엇이 확보되면 판단이 달라지는지"를 추적하고 해소할 수 있는
+    결정론적 경로를 제공한다. 문자열 전제는 {text, resolved, resolution_note}
+    구조로 승격해 보존한다.
+    """
+    store = store_for(case_id, worksets_home)
+    opinions = store.list_payloads("opinions")
+    target = next(
+        (item for item in reversed(opinions) if item.get("opinion_id") == opinion_id),
+        None,
+    )
+    if target is None:
+        raise ValueError(f"존재하지 않는 의견입니다: {opinion_id}")
+    assumptions = list(target.get("assumptions") or [])
+    if not 0 <= index < len(assumptions):
+        raise ValueError(
+            f"전제 인덱스가 범위를 벗어났습니다: {index} (전제 {len(assumptions)}건)"
+        )
+    item = assumptions[index]
+    if isinstance(item, dict):
+        updated: dict[str, Any] = {
+            "text": str(item.get("text") or "").strip(),
+            "resolved": resolved,
+            "resolution_note": str(note or "").strip() or item.get("resolution_note"),
+        }
+    else:
+        updated = {
+            "text": str(item).strip(),
+            "resolved": resolved,
+            "resolution_note": str(note or "").strip() or None,
+        }
+    assumptions[index] = updated
+    target = dict(target)
+    target["assumptions"] = assumptions
+    store.update_payload("opinions", "opinion_id", opinion_id, target)
+    return target
 
 
 def draft_case(
@@ -773,8 +850,17 @@ def _draft_markdown(store: CaseStore, case: dict[str, Any], opinion: dict[str, A
         "## 검토 범위 및 전제",
         "이 문서는 저장된 비식별 사실, 증거 메타데이터 및 검증된 법적 근거를 바탕으로 한 사용자 검토용 초안이다.",
     ]
-    for assumption in opinion.get("assumptions") or ["별도 전제 없음"]:
-        lines.append(f"- 전제: {assumption}")
+    assumptions = opinion.get("assumptions") or []
+    if not assumptions:
+        lines.append("- 전제: 별도 전제 없음")
+    for assumption in assumptions:
+        if isinstance(assumption, dict):
+            state = "해소" if assumption.get("resolved") else "미해소"
+            note = assumption.get("resolution_note")
+            suffix = f" ({note})" if note else ""
+            lines.append(f"- 전제 [{state}]: {assumption.get('text')}{suffix}")
+        else:
+            lines.append(f"- 전제: {assumption}")
     lines.extend(
         [
             "",

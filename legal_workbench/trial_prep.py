@@ -67,6 +67,44 @@ def proof_matrix(store: CaseStore) -> dict[str, Any]:
         )
         missing = list(issue.get("missing_facts") or [])
 
+        # 요건 단위 피복: 사실에 covers_elements 매핑이 기록된 경우에만
+        # 요건별 충족·공백을 판정하고, 매핑 자체가 없으면 단정하지 않고
+        # unmapped로 보고한다.
+        element_coverage: list[dict[str, Any]] = []
+        mapping_present = any(item.get("covers_elements") for item in linked)
+        if mapping_present:
+            for element in issue.get("legal_elements") or []:
+                covering_facts = [
+                    item
+                    for item in confirmed
+                    if element in (item.get("covers_elements") or [])
+                ]
+                covering_evidence = sorted(
+                    {
+                        evidence_id
+                        for item in covering_facts
+                        for evidence_id in item.get("evidence_ids") or []
+                        if evidence_id in evidence_ids
+                    }
+                )
+                if covering_facts and covering_evidence:
+                    coverage_status = "covered"
+                elif covering_facts:
+                    coverage_status = "weak"
+                else:
+                    coverage_status = "gap"
+                element_coverage.append(
+                    {
+                        "element": element,
+                        "status": coverage_status,
+                        "fact_ids": sorted(item["fact_id"] for item in covering_facts),
+                        "evidence_ids": covering_evidence,
+                    }
+                )
+        coverage_gap = mapping_present and any(
+            row["status"] == "gap" for row in element_coverage
+        )
+
         gaps: list[str] = []
         if not confirmed:
             gaps.append("쟁점에 연결된 확정 사실이 없습니다.")
@@ -74,12 +112,17 @@ def proof_matrix(store: CaseStore) -> dict[str, Any]:
             gaps.append("확정 사실에 저장된 증거가 연결되지 않았습니다.")
         if not favorable_verified:
             gaps.append("이중 검증된 P1 유리 근거가 없습니다.")
+        if coverage_gap:
+            uncovered = sorted(
+                row["element"] for row in element_coverage if row["status"] == "gap"
+            )
+            gaps.append(f"증거로 뒷받침되지 않은 요건: {', '.join(uncovered)}")
         if missing:
             gaps.append(f"기록된 미확인 사실: {', '.join(missing)}")
 
         if not confirmed or not favorable_verified:
             sufficiency = "insufficient"
-        elif missing or not confirmed_evidence:
+        elif missing or not confirmed_evidence or coverage_gap:
             sufficiency = "partial"
         else:
             sufficiency = "substantial"
@@ -97,6 +140,7 @@ def proof_matrix(store: CaseStore) -> dict[str, Any]:
                 "verified_favorable_authority_ids": favorable_verified,
                 "verified_adverse_authority_ids": adverse_verified,
                 "missing_facts": missing,
+                "element_coverage": element_coverage,
                 "sufficiency": sufficiency,
                 "gaps": gaps,
             }
@@ -153,6 +197,11 @@ def readiness_report(store: CaseStore) -> dict[str, Any]:
     insufficient_issues = [
         row["issue_id"] for row in matrix["issues"] if row["sufficiency"] == "insufficient"
     ]
+    element_gap_issues = [
+        row["issue_id"]
+        for row in matrix["issues"]
+        if any(item["status"] == "gap" for item in row["element_coverage"])
+    ]
     urgent_deadlines = [
         row["deadline_id"]
         for row in deadline_overview(store)
@@ -182,6 +231,16 @@ def readiness_report(store: CaseStore) -> dict[str, Any]:
                 f"입증 부족 쟁점: {', '.join(insufficient_issues)}. "
                 "확정 사실과 이중 검증 P1 근거를 연결하십시오."
                 if insufficient_issues
+                else ""
+            ),
+        },
+        {
+            "item": "요건 피복 공백 없음",
+            "satisfied": not element_gap_issues,
+            "guidance": (
+                f"요건 공백 쟁점: {', '.join(element_gap_issues)}. "
+                "쟁점 요건을 covers_elements로 매핑된 확정 사실·증거로 뒷받침하십시오."
+                if element_gap_issues
                 else ""
             ),
         },

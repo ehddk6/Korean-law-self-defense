@@ -93,6 +93,7 @@ class FactRecord:
     occurred_at: str | None = None
     actor_token: str | None = None
     confidence: str = "unknown"
+    covers_elements: list[str] = field(default_factory=list)
     created_at: str = field(default_factory=utc_now)
 
     def to_dict(self) -> dict[str, Any]:
@@ -194,7 +195,7 @@ class OpinionRecord:
     opinion_id: str
     status: OpinionStatus
     conclusion: str
-    assumptions: list[str]
+    assumptions: list[Any]
     favorable_scenario: str
     contested_scenario: str
     adverse_scenario: str
@@ -246,6 +247,8 @@ class PleadingNode:
     legal_basis: str
     required_facts: list[str]
     matched_evidence_score: float
+    fact_ids: list[str] = field(default_factory=list)
+    authority_ids: list[str] = field(default_factory=list)
 
 
 @dataclass(slots=True)

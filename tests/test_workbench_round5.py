@@ -89,7 +89,7 @@ def test_readiness_report_checklist_levels(tmp_path: Path) -> None:
     store = CaseStore(tmp_path, "case-r5-ready-a")
     report = readiness_report(store)
     assert report["stage"] == "researched"
-    assert len(report["checklist"]) == 5
+    assert len(report["checklist"]) == 6
     by_item = {entry["item"]: entry for entry in report["checklist"]}
     assert by_item["의견 기록 존재"]["satisfied"] is False
     assert by_item["입증 부족 쟁점 없음"]["satisfied"] is True
