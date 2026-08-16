@@ -41,6 +41,7 @@ from .plain_language import build_plain_language_guide
 from .services import (
     build_all_service_bundles,
     build_service_bundle,
+    court_form_guidance,
     draft_all_service_outputs,
     draft_service_catalog,
     draft_service_output,
@@ -198,6 +199,10 @@ def build_parser() -> argparse.ArgumentParser:
     search.add_argument("--query", required=True)
     search.add_argument("--limit", type=int, default=20)
 
+    search_all = subparsers.add_parser("search-all", help="전체 사건 문서 가로지르는 전문검색(읽기 전용)")
+    search_all.add_argument("--query", required=True)
+    search_all.add_argument("--limit", type=int, default=5, help="사건당 최대 결과 수")
+
     deadlines = subparsers.add_parser("deadlines", help="저장된 기한의 만료일·잔여일 조회")
     deadlines.add_argument("--case", required=True)
 
@@ -225,6 +230,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     readiness = subparsers.add_parser("readiness", help="공판·절차 준비도 통합 점검표 조회(읽기 전용)")
     readiness.add_argument("--case", required=True)
+
+    doctor = subparsers.add_parser("doctor", help="저장소·사건 무결성 환경 진단(읽기 전용)")
+
+    overview = subparsers.add_parser("overview", help="전체 사건 단계·기한·감사 상태 관리표 요약(읽기 전용)")
 
     consult = subparsers.add_parser("consult", help="공식 근거 기반 한국법 상담")
     consult_sub = consult.add_subparsers(dest="consult_command", required=True)
@@ -258,6 +267,8 @@ def build_parser() -> argparse.ArgumentParser:
     service_draft_all = service_sub.add_parser("draft-all", help="현재 단계에서 가능한 전체 업무 초안 생성")
     service_draft_all.add_argument("--case", required=True)
     service_draft_all.add_argument("--format", action="append", choices=["md", "docx", "pdf", "hwpx"], default=[])
+    service_forms = service_sub.add_parser("forms", help="업무별 법원 양식 검색 안내 조회(읽기 전용)")
+    service_forms.add_argument("--type", required=True, dest="service_type")
 
     evaluation = subparsers.add_parser("eval", help="180건 잠금 평가셋 관리")
     eval_sub = evaluation.add_subparsers(dest="eval_command", required=True)
@@ -565,6 +576,29 @@ def dispatch(args: argparse.Namespace) -> Any:
         store = store_for(args.case, worksets)
         store.get_case()
         return {"case_id": args.case, "query": args.query, "results": store.search_documents(args.query, limit=args.limit)}
+    if args.command == "search-all":
+        from .storage import discover_cases
+
+        matches: list[dict[str, Any]] = []
+        for case_id in discover_cases(worksets):
+            store = store_for(case_id, worksets)
+            try:
+                store.get_case()
+            except KeyError:
+                continue
+            hits = store.search_documents(args.query, limit=args.limit)
+            if not hits:
+                continue
+            matches.append({"case_id": case_id, "hit_count": len(hits), "results": hits})
+        return {"query": args.query, "matched_case_count": len(matches), "matches": matches}
+    if args.command == "doctor":
+        from .diagnostics import run_doctor
+
+        return run_doctor(worksets)
+    if args.command == "overview":
+        from .diagnostics import worksets_overview
+
+        return worksets_overview(worksets)
     if args.command == "deadlines":
         from .audit import deadline_overview
 
@@ -705,6 +739,8 @@ def dispatch(args: argparse.Namespace) -> Any:
     if args.command == "service":
         if args.service_command == "list":
             return list_services()
+        if args.service_command == "forms":
+            return court_form_guidance(args.service_type)
         if args.service_command == "plan":
             return {"bundle": str(build_service_bundle(args.case, args.service_type, worksets_home=worksets))}
         if args.service_command == "plan-all":

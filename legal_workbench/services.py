@@ -418,6 +418,49 @@ def list_services() -> list[dict[str, Any]]:
     return [SERVICES[key].to_dict() for key in sorted(SERVICES)]
 
 
+# 전자소송 포털 공개 양식모음 검색용 키워드. 양식 번호·양식은 수시로 개정되므로
+# 번호를 하드코딩하지 않고 검색어만 제공하며, 제출용 최종 확인은 공식 양식모음에서 한다.
+COURT_FORM_KEYWORDS: dict[str, tuple[str, ...]] = {
+    "civil-complaint": ("소장", "민사 본안"),
+    "civil-answer": ("답변서",),
+    "payment-order-small-claim": ("지급명령 신청서", "독촉", "소액사건"),
+    "provisional-relief": ("가압류 신청서", "가처분 신청서", "담보제공"),
+    "enforcement-plan": ("강제집행", "재산조회", "채권압류 및 추심명령"),
+    "appeal-plan": ("항소장", "상고장",),
+    "criminal-complaint": ("고소장", "고발장"),
+    "family-proceeding": ("조정신청서", "가사", "이혼"),
+    "inheritance-estate": ("상속", "승인·포기", "재산분할"),
+    "rehabilitation-bankruptcy": ("개인회생 신청서", "파산·면책 신청서"),
+    "administrative-remedy": ("행정소송", "취소소송", "집행정지"),
+    "labor-remedy": ("부당해고 구제신청", "임금", "노동위원회"),
+    "tax-remedy": ("조세", "취소소송", "이의신청"),
+    "mediation-arbitration": ("조정신청서", "중재"),
+    "registration-filing": ("등기", "등록세"),
+    "detention-relief": ("구속", "보석", "적부심"),
+}
+
+COURT_FORM_NOTICE = (
+    "양식 번호·서식은 수시로 개정됩니다. 전자소송 포털 공개 양식모음에서 최신 양식을 "
+    "검색·다운로드해 제출용으로 최종 확인하십시오."
+)
+
+
+def court_form_guidance(service_type: str) -> dict[str, Any]:
+    """업무 유형에 해당하는 법원 양식 검색 안내를 조회 전용으로 반환한다."""
+    spec = SERVICES.get(service_type)
+    if spec is None:
+        raise ValueError(f"알 수 없는 서비스 유형입니다: {service_type}")
+    keywords = COURT_FORM_KEYWORDS.get(service_type, ())
+    return {
+        "service_type": service_type,
+        "label": spec.label,
+        "form_keywords": list(keywords),
+        "has_direct_court_form": bool(keywords),
+        "form_source": "대한민국 법원 전자소송 포털 공개 양식모음",
+        "notice": COURT_FORM_NOTICE,
+    }
+
+
 def _case_fit(store: CaseStore) -> str:
     """사건 도메인을 단정하지 않고 저장된 기록만으로 직접 적용 가능 여부를 판정한다."""
     facts = store.list_payloads("facts")

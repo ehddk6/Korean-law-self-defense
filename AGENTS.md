@@ -31,6 +31,6 @@
 ## 검증
 
 - Python 검증은 `python -m pytest`로 실행한다.
-- Skill 검증은 `quick_validate.py`로 실행한다.
+- Skill 검증은 `python scripts/quick_validate.py .agents/skills/korean-legal-workbench`로 실행한다.
 - 문서 산출물은 구조 검사와 렌더링 검사를 모두 통과해야 한다.
 - 변경 후 `git diff --check`와 `git status --short`로 범위를 확인한다.

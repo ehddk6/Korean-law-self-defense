@@ -29,3 +29,6 @@ exports/
 tmp/
 output/
 evaluation/results/
+
+# 하니스 보고서 등 로컬 도구 산출물
+.qoder/
