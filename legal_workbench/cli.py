@@ -46,6 +46,13 @@ from .services import (
     draft_service_catalog,
     draft_service_output,
     list_services,
+    offline_legal_db_search,
+)
+from .court_forms import (
+    bind_generated_document,
+    default_court_forms_home,
+    register_court_form,
+    validate_court_form_binding,
 )
 from .security import load_mapping
 from .workflow import (
@@ -106,6 +113,29 @@ def build_parser() -> argparse.ArgumentParser:
     authority = subparsers.add_parser("authority", help="법적 근거 레코드 추가")
     authority.add_argument("--case", required=True)
     authority.add_argument("--file", type=Path, required=True)
+
+    offline_search = subparsers.add_parser("offline-search", help="오프라인 법률 DB에서 P1 재검증용 조사 단서 검색")
+    offline_search.add_argument("--query", required=True)
+    offline_search.add_argument("--database", type=Path, required=True)
+    offline_search.add_argument("--limit", type=int, default=10)
+
+    court_form = subparsers.add_parser("court-form", help="공식 법원 양식 미러와 문서 결속을 관리")
+    court_form_subparsers = court_form.add_subparsers(dest="court_form_command", required=True)
+    court_form_register = court_form_subparsers.add_parser("register", help="사용자 내려받기 공식 양식을 로컬 미러에 등록")
+    court_form_register.add_argument("--source", type=Path, required=True)
+    court_form_register.add_argument("--form-id", required=True)
+    court_form_register.add_argument("--title", required=True)
+    court_form_register.add_argument("--version", required=True)
+    court_form_register.add_argument("--official-url", required=True)
+    court_form_register.add_argument("--effective-from")
+    court_form_register.add_argument("--mirror-root", type=Path, default=default_court_forms_home())
+    court_form_bind = court_form_subparsers.add_parser("bind", help="생성 문서를 등록 양식의 버전·해시에 결속")
+    court_form_bind.add_argument("--document", type=Path, required=True)
+    court_form_bind.add_argument("--form-id", required=True)
+    court_form_bind.add_argument("--mirror-root", type=Path, default=default_court_forms_home())
+    court_form_verify = court_form_subparsers.add_parser("verify", help="생성 문서의 양식 결속을 검증")
+    court_form_verify.add_argument("--document", type=Path, required=True)
+    court_form_verify.add_argument("--mirror-root", type=Path, default=default_court_forms_home())
 
     issue = subparsers.add_parser("issue", help="쟁점 레코드 추가")
     issue.add_argument("--case", required=True)
@@ -435,6 +465,28 @@ def dispatch(args: argparse.Namespace) -> Any:
             "deadline": add_deadline,
         }[args.command]
         return function(args.case, payload, worksets_home=worksets).to_dict()
+    if args.command == "offline-search":
+        return offline_legal_db_search(args.query, database_path=args.database, limit=args.limit)
+    if args.command == "court-form":
+        if args.court_form_command == "register":
+            return register_court_form(
+                args.source,
+                form_id=args.form_id,
+                title=args.title,
+                version=args.version,
+                official_url=args.official_url,
+                effective_from=args.effective_from,
+                mirror_root=args.mirror_root,
+            )
+        if args.court_form_command == "bind":
+            return bind_generated_document(
+                args.document,
+                form_id=args.form_id,
+                mirror_root=args.mirror_root,
+            )
+        if args.court_form_command == "verify":
+            return validate_court_form_binding(args.document, mirror_root=args.mirror_root)
+        raise ValueError("지원하지 않는 court-form 명령입니다.")
     if args.command == "research":
         if args.complete:
             return complete_research(args.case, worksets_home=worksets)

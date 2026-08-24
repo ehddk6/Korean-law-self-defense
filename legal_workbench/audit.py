@@ -9,6 +9,7 @@ from typing import Any, Callable
 from urllib.parse import urlparse
 
 from .documents import DocumentError, extract_document, validate_docx, validate_hwpx, validate_pdf
+from .court_forms import default_court_forms_home, validate_court_form_binding
 from .models import AuditFinding, AuditReport, OpinionStatus, Severity, new_id
 from .security import scan_prompt_injection, scan_residual_pii, sha256_file, sha256_text
 from .storage import CaseStore, canonical_json
@@ -1088,12 +1089,17 @@ def _audit_draft_provenance(
             )
 
 
-def validate_generated_documents(drafts_dir: Path, findings: list[AuditFinding]) -> dict[str, Any]:
+def validate_generated_documents(
+    drafts_dir: Path,
+    findings: list[AuditFinding],
+    *,
+    court_forms_root: Path | None = None,
+):
     results: dict[str, Any] = {}
     if not drafts_dir.exists():
         return results
     for path in sorted(drafts_dir.iterdir()):
-        if not path.is_file():
+        if not path.is_file() or path.name.endswith(".court-form.json"):
             continue
         try:
             if path.suffix.lower() == ".docx":
@@ -1120,6 +1126,19 @@ def validate_generated_documents(drafts_dir: Path, findings: list[AuditFinding])
                             Severity.CRITICAL,
                             "GENERATED_DOCUMENT_INSTRUCTION_TEXT",
                             f"산출 문서에 실행 지시 형태의 텍스트가 남아 있습니다: {path.name}",
+                            "document",
+                            path.name,
+                        )
+                    )
+            binding = validate_court_form_binding(path, mirror_root=court_forms_root or default_court_forms_home())
+            if binding["present"]:
+                results.setdefault(path.name, {})["court_form_binding"] = binding
+                if not binding["valid"]:
+                    findings.append(
+                        _finding(
+                            Severity.CRITICAL,
+                            "COURT_FORM_BINDING_INVALID",
+                            f"법원 양식 원본·버전 결속 검증 실패: {path.name}: {binding['status']}",
                             "document",
                             path.name,
                         )

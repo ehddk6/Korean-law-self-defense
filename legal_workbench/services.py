@@ -6,6 +6,7 @@ from typing import Any
 
 from .models import CaseStage, STAGE_ORDER, utc_now
 from .documents import create_docx, create_hwpx, create_pdf
+from .offline_legal_db import search_offline_legal_db
 from .security import atomic_json_write, scan_prompt_injection, scan_residual_pii
 from .workflow import store_for
 
@@ -459,6 +460,21 @@ def court_form_guidance(service_type: str) -> dict[str, Any]:
         "form_source": "대한민국 법원 전자소송 포털 공개 양식모음",
         "notice": COURT_FORM_NOTICE,
     }
+
+
+def offline_legal_db_search(
+    query: str,
+    *,
+    database_path: Path,
+    limit: int = 10,
+) -> dict[str, Any]:
+    """오프라인 법률 DB 후보를 반환한다.
+
+    이 결과는 P1 근거나 사건 결론이 아니다. AuthorityRecord로 가져오기 전에는
+    기존 P1 이중 검증·행위시법·부칙 게이트를 모두 통과해야 한다.
+    """
+
+    return search_offline_legal_db(query, database_path=database_path, limit=limit)
 
 
 def _case_fit(store: CaseStore) -> str:

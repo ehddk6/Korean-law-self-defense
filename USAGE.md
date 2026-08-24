@@ -225,6 +225,34 @@ CRITICAL 해결, 감사 저장·갱신 필요 등 다음 행동을 문장으로 
 `service forms`는 양식 번호 대신 검색 키워드만 안내하며, 최종 양식은
 대한민국 법원 전자소송 포털 공개 양식모음에서 직접 확인해야 합니다.
 
+### 오프라인 법률 DB 폴백(발견 전용)
+
+```powershell
+python -m legal_workbench offline-search --query "계약 해제" --database D:\legal-db\official-snapshot.sqlite
+```
+
+- DB에는 `metadata(key, value)`와 `legal_sources` 테이블이 필요합니다.
+- 결과는 검색 단서이며, P1 근거·사건 결론·`ready` 상태로 자동 승격되지 않습니다.
+- 각 후보는 서로 다른 공식 HTTPS 원문, 원문 해시, 행위시법·부칙을 다시 확인한 뒤에만 AuthorityRecord로 등록합니다.
+- 검색어에 개인정보나 실행 지시 형태의 문자열이 있으면 외부 MCP 조회와 마찬가지로 차단됩니다.
+
+### 법원 양식 미러와 문서 결속
+
+```powershell
+# 사용자가 직접 내려받은 공식 양식만 등록합니다. 네트워크 다운로드·제출은 하지 않습니다.
+python -m legal_workbench court-form register --source D:\downloads\civil-complaint.hwpx `
+  --form-id civil-complaint --title "민사 소장" --version 2026-v1 `
+  --official-url "https://ecfs.scourt.go.kr/..."
+
+# 생성 문서의 해시를 양식 원본·버전에 결속하고, 감사 전에 다시 확인합니다.
+python -m legal_workbench court-form bind --document C:\LegalWorksets\case\drafts\complaint.hwpx --form-id civil-complaint
+python -m legal_workbench court-form verify --document C:\LegalWorksets\case\drafts\complaint.hwpx
+```
+
+결속 sidecar는 문서 또는 미러 원본의 해시·버전이 달라지면 감사에서
+`COURT_FORM_BINDING_INVALID` CRITICAL finding을 만듭니다. 이는 전자소송 e-Form
+입력이나 제출 적합성을 자동 보장하지 않으며, 포털의 최신 요구사항 확인과 실제 제출은 사용자가 직접 합니다.
+
 ---
 
 ## 6. 조치 기록
